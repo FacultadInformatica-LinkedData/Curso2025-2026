@@ -1,0 +1,15 @@
+@prefix ex: <http://example.org> .
+@prefix xml: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: Class01 xml:includes ex:Sensor029,
+                                ex:Computer101 .
+ex:Sensor347 xml:hasMeasurement ex:Measurement8401 .
+
+ex:Measurement8401 
+        xml:atTime "2010-06-12T12:00:12";
+        xml:hasTemperature "29" .
+
+
+ex:Table322 xml:hasOwner ex:User10A .
+
+ex:User10A xml:hasName "Pedro" .

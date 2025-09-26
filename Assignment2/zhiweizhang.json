@@ -1,0 +1,21 @@
+{
+  "fullName": "Zhiwei Zhang",
+  "hometown": "Segovia",
+  "age": 21,
+  "almaMater": "UPM",
+  "parents": ["Jorge", "Laura"],
+  "subjects": [
+    {
+      "name": "Web Semántica y Linked Data",
+      "teachers": [
+        "CALLEJA IBAÑEZ PABLO",
+        "CORCHO GARCIA OSCAR",
+        "GARCIA CASTRO RAUL",
+        "GARIJO VERDEJO DANIEL",
+        "IGLESIAS MOLINA ANA",
+        "SANCHEZ GONZALEZ LUCIA"
+      ],
+      "description": "Asignatura sobre RDF, RDFS, SPARQL, RDFa y JSON-LD."
+    }
+  ]
+}
