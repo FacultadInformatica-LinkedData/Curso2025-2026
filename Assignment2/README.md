@@ -8,6 +8,6 @@ Assgnment 2- Part B:
 
 Assgnment 2- Part A:
   -exercise 1: Create a graph from a file files:
-    Graft of assignment1- exercise 1
+    Graft of assignment2- part A exercise 1
   -exercise 2: Create files from a graph files:
     assignment2-partA.TTL
