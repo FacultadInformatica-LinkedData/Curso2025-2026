@@ -1,0 +1,15 @@
+@prefix ex: <http://example.org> .
+@prefix xml: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: ClassRoom03 xml:contains ex:Sensor347,
+                                ex:Table322 .
+ex:Sensor347 xml:hasMeasurement ex:Measurement8432 .
+
+ex:Measurement8432 
+        xml:atTime "2022-09-12T12:01:12";
+        xml:hasTemperature "29" .
+
+
+ex:Table322 xml:hasOwner ex:ETSIInformaticos .
+
+ex:ETSIInformaticos xml:hasName "ETSI Informaticos" .
