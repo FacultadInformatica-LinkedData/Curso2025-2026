@@ -1,4 +1,3 @@
-<img width="1817" height="2137" alt="JDCusme-JesúsCusme" src="https://github.com/user-attachments/assets/09259a15-a27a-4d56-bf1f-62216506f9cb" />{
   "@context": {
     "schema": "http://schema.org/",
     "ex": "http://example.org/",
