@@ -1,0 +1,27 @@
+{
+  "fullName": "Bayron Viamonte",
+  "hometown": "Puerto Plata, Rep. Dom.",
+  "age": 24,
+  "almaMater": "ETS Ingenieros Informáticos, Universidad Politécnica de Madrid",
+  "parents": [
+    { "name": "Graciela", "role": "Madre" },
+    { "name": "Carlos", "role": "Padre" }
+  ],
+  "subjects": [
+    {
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho García"],
+      "description": "Añade una breve descripción aquí"
+    },
+    {
+      "name": "Ingeniería del Software II",
+      "teachers": ["Ana María Moreno Sánchez Capuchino"],
+      "description": "Añade una breve descripción aquí"
+    },
+    {
+      "name": "Gestión de procesos de la tecnología de la información",
+      "teachers": ["Edmundo Tovar"],
+      "description": "Añade una breve descripción aquí"
+    }
+  ]
+}
