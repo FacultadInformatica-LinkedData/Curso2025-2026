@@ -1,0 +1,14 @@
+@prefix inst:   <http://example.org/instances/> .
+@prefix voc:  <http://example.org/vocab/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+inst:ClassRoom03	voc:contains 	inst:Sensor347 , inst:Table322 .
+
+inst:Sensor347		voc:hasMeasurement 	 inst:Measurement8432 .
+
+inst:Measurement8432 	voc:hasTemperature 		29 ;
+						voc:atTime			    "2022-09-12T12:01:12"^^xsd:dateTime .
+
+inst:Table322			voc:hasOwner 			inst:ETSIInformaticos .
+
+inst:ETSIInformaticos	voc:hasName				"ETSI Informáticos" .

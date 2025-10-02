@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+# Espacios
+@prefix ns1: <http://example.org/resource/> .
+@prefix ns2: <http://example.org/def/> .
+
+# Tipos y clases de los nodos del grafo
+ns1:ClassRoom03      rdf:type ns2:ClassRoom .
+ns1:Sensor347        rdf:type ns2:Sensor .
+ns1:Measurement8432  rdf:type ns2:Measurement .
+ns1:Table322         rdf:type ns2:Table .
+ns1:ETSIInformaticos rdf:type ns2:Organization .
+
+# Relaciones del grafo
+ns1:ClassRoom03  ns2:contains ns1:Sensor347 ,
+                              ns1:Table322 .
+
+ns1:Sensor347    ns2:hasMeasurement ns1:Measurement8432 .
+
+ns1:Measurement8432
+    ns2:hasTemperature "29"^^xsd:integer ;
+    ns2:atTime        "2022-09-12T12:01:12"^^xsd:dateTime .
+
+ns1:Table322     ns2:hasOwner ns1:ETSIInformaticos .
+
+ns1:ETSIInformaticos   ns2:hasName "ETSI Informáticos" .
+

@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@vocab": "http://example.org/ontology#",
+    "hasTemperature": {
+      "@type": "xsd:integer"
+    },
+    "atTime": {
+      "@type": "xsd:dateTime"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "Class01",
+      "@type": "Class",
+      "includes": [
+        { "@id": "Sensor029" },
+        { "@id": "Computer101" }
+      ]
+    },
+    {
+      "@id": "Sensor029",
+      "@type": "Sensor",
+      "hasMeasurement": {
+        "@id": "Measurement8401"
+      }
+    },
+    {
+      "@id": "Computer101",
+      "@type": "Computer",
+      "hasOwner": {
+        "@id": "User10A"
+      }
+    },
+    {
+      "@id": "Measurement8401",
+      "@type": "Measurement",
+      "hasTemperature": 29,
+      "atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "User10A",
+      "@type": "User",
+      "hasName": "Pedro"
+    }
+  ]
+}

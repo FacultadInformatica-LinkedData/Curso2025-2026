@@ -1,0 +1,19 @@
+@base <http://example.org/instances/> .
+@prefix inst: <http://example.org/instances/> .
+@prefix voc:  <http://example.org/vocab/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ---- Instances
+inst:ClassRoom03 a voc:Room .
+inst:Sensor347   a voc:Sensor .
+inst:Measurement8432 a voc:Measurement .
+inst:Table322    a voc:Table .
+inst:ETSIInformaticos a voc:Organization .
+
+# ---- Edges 
+inst:ClassRoom03 voc:contains       inst:Sensor347 , inst:Table322 .
+inst:Sensor347   voc:hasMeasurement inst:Measurement8432 .
+inst:Measurement8432 voc:hasTemperature 29 ;
+                    voc:atTime        "2022-09-12T12:01:12"^^xsd:dateTime .
+inst:Table322    voc:hasOwner       inst:ETSIInformaticos .
+inst:ETSIInformaticos voc:hasName   "ETSI Informáticos" .

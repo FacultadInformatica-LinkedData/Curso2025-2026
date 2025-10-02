@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "etsi": "http://example.org/etsi#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "includes": { "@id": "etsi:includes", "@type": "@id" },
+    "hasMeasurement": { "@id": "etsi:hasMeasurement", "@type": "@id" },
+    "hasTemperature": { "@id": "etsi:hasTemperature", "@type": "xsd:integer" },
+    "atTime": { "@id": "etsi:atTime", "@type": "xsd:dateTime" },
+    "hasOwner": { "@id": "etsi:hasOwner", "@type": "@id" },
+    "hasName": { "@id": "etsi:hasName" }
+  },
+  "@graph": [
+    {
+      "@id": "etsi:Class01",
+      "includes": ["etsi:Sensor029", "etsi:Computer101"]
+    },
+    {
+      "@id": "etsi:Sensor029",
+      "hasMeasurement": "etsi:Measurement8401"
+    },
+    {
+      "@id": "etsi:Measurement8401",
+      "hasTemperature": 29,
+      "atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "etsi:Computer101",
+      "hasOwner": "etsi:User10A"
+    },
+    {
+      "@id": "etsi:User10A",
+      "hasName": "Pedro"
+    }
+  ]
+}

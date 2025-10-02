@@ -1,0 +1,88 @@
+{
+			
+			"@context":{
+			"inst":"https://www.example.org/instances#",
+			"voc":"https://www.example.org/vocab#",
+			"people":"voc:people",
+			"uni":"voc:uni",
+			"sub":"uni:subject",
+			"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+			"xsd": "http://www.w3.org/2001/XMLSchema#",
+			
+			"name":"people:name",
+			"surname":"people:surname",
+			"hometown":"people:hometown",
+			"age":"people:age",
+			"almaMater":"people:almaMater",
+			"father":"people:father",
+			"mother":"people:mother",
+			"nameSub":"sub:nameSub",
+			"teachers":"sub:teachers"
+			
+			},
+			
+
+			"@id":"inst:a180185",
+			"@type":"people:Person",
+			"name":"Sergio ",
+			"surname":"Zaballos",
+			"hometown":"Madrid",
+			"age":25,
+			"almaMater":"ETSIINF UPM",
+			"father":"Juan",
+			"mother":"Ana",
+			"subjects":[	
+						{	
+							"@id":"inst:s01",
+							"@type":"sub:Subject",
+							"nameSub":"Semantic Web",
+							"teachers":[
+										{"@id":"p01","@type":"people:Person","name":"Raul"},
+										{"@id":"p02","@type":"people:Person","name":"Oscar"}
+										],
+							"definition":"knowledge graphs and linked data"
+
+							     	},
+						{
+							"@id":"inst:s02",
+							"@type":"sub:Subject",
+							"nameSub":"Ing Software 2",
+							"teachers":[
+										{"@id":"p03","@type":"people:Person","name":"Ana"},
+										{"@id":"p04","@type":"people:Person","name":"Tomas"}
+										],
+							"definition":"continuacion INGSOFT"
+							     	},
+						{
+							"@id":"inst:s03",
+							"@type":"sub:Subject",
+							"nameSub":"Administracion Sistemas Inf",
+							"teachers":[
+										{"@id":"p05","@type":"people:Person","name":"Fernando"},
+										{"@id":"p06","@type":"people:Person","name":"Francisco"}
+										],
+							"definition":"continuacion de SSOO"
+							     	},
+						{
+							"@id":"inst:s04",
+							"@type":"sub:Subject",
+							"nameSub":"APAIT",
+							"teachers":[
+										{"@id":"p07","@type":"people:Person","name":"Consuelo"},
+										{"@id":"p08","@type":"people:Person","name":"Maria"}
+										],
+							"definition":"satelites, imagenes"
+							     	},
+						{
+							"@id":"inst:s05",
+							"@type":"sub:Subject",
+							"nameSub":"GPTI",
+							"teachers":[
+										{"@id":"p09","@type":"people:Person","name":"Francy"},
+										{"@id":"p10","@type":"people:Person","name":"Edmundo"}
+										],
+							"definition":"tecnologicas informaticas y procesos"
+							     	}
+							]
+				}
+				

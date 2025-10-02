@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "res": "http://example.org/resources/",
+    "prop": "http://example.org/properties/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "fullName": "prop:fullName",
+    "hometown": "prop:hometown",
+    "age": { "@id": "prop:age", "@type": "xsd:integer" },
+    "almaMater": "prop:almaMater",
+    "parents": "prop:parents",
+    "subjects": "prop:subjects",
+    "name": "prop:name",
+    "teachers": "prop:teachers",
+    "description": "prop:description"
+  },
+
+  "@id": "res:ChristopherLoganCarrillo",
+  "@type": "prop:Person",
+  "fullName": "Christopher Logan Carrillo Hernandez",
+  "hometown": "Madrid",
+  "age": 21,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": ["Ligia Dayana", "Luis Carrillo"],
+
+  "subjects": [
+    {
+      "@id": "res:Subject01",
+      "@type": "prop:Subject",
+      "name": "Investigación Operativa",
+      "teachers": [
+        "D. Alfonso Mateos Caballero",
+        "D. Antonio Jiménez Martín"
+      ],
+      "description": "Curso avanzado de programación lineal continua y no continua"
+    },
+    {
+      "@id": "res:Subject02",
+      "@type": "prop:Subject",
+      "name": "Gestion de Procesos de la tecnología de la informacion",
+      "teachers": [
+        "Edmundo Tovar",
+        "Ricardo Colomo"
+      ],
+      "description": "Curso sobre el uso y origen de los procesos en las IT"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+ {
+	"@context": {
+		"name": "http://schema.org/name",
+		"hometown": "http://schema.org/hometown",
+		"age": "http://schema.org/age",
+		"almaMater": "http://schema.org/almaMater",
+		"University": "http://schema.org/University",
+		"parents": "http://schema.org/parent",
+		"subjects": "http://schema.org/subjects",
+		"teachers": "http://schema.org/teacher",
+		"description": "http://schema.org/description",
+		"Course": "http://schema.org/Course",
+		"Person": "http://schema.org/Person"
+	},
+	"@type": "Person",
+	"name": "Nerea Tanarro Ferrero",
+	"hometown": "Madrid",
+	"age": 23,
+	"almaMater": {
+		"@type": "University",
+		"name": "Universidad Politécnica de Madrid - ETSIINF"
+	},
+	"parents": [
+		{"@type": "Person", "name": "Charo"},
+		{"@type": "Person", "name": "Paulino"}
+	],
+	"subjects": [
+		{
+			"@type": "Course",
+			"name": "Semantic Web Linked Data and Knowledge Graphs",
+			"teachers": [
+				{"@type": "Person", "name": "Oscar Corcho García"},
+				{"@type": "Person", "name": "Raul García Castro"},
+				{"@type": "Person", "name": "Daniel Garijo Verdejo"}
+			],
+			"description": "Estudio de la base teórico-práctica para generar y publicar vocabularios y datos enlazados en la Web Semántica mediante grafos de conocimiento, ontologías, lenguajes y fuentes representativas como DBpedia, Geonames o Wikidata."
+		},
+		{
+			"@type": "Course",
+			"name": "Administración de Sistemas Informáticos",
+			"teachers":[
+				{"@type": "Person", "name": "Fernando Pérez Costoya"},
+				{"@type": "Person", "name": "Francisco Rosales García"}
+			],
+			"description": "Estudio de los fundamentos generales de las tareas y responsabilidades del administrador de sistemas Linux."
+		},
+		{
+			"@type": "Course",
+			"name": "Algoritmos de procesado y análisis de imagen. Aplicación a teledetección",
+			"teachers":[
+				{"@type": "Person", "name": "Angel Mario García Pedrero"},
+				{"@type": "Person", "name": "Consuelo Gonzalo Martín"},
+				{"@type": "Person", "name": "M. Estibaliz Martínez Izquierdo"}
+			],
+			"description":"Estudio de los conocimientos básicos del área de proceso digital de imágenes."
+		},
+		{
+			"@type": "Course",
+			"name": "Nanotecnología",
+			"teachers": [
+				{"@type": "Person", "name": "M. Estibaliz Martínez Izquierdo"},
+				{"@type": "Person", "name": "Laura Ortiz Martín"}
+			],
+			"description": "Formación introductoria sobre las diferentes investigaciones y aplicaciones que existen actualmente dentro de la Nanotecnología."
+		}
+	]
+ }
+ 

@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "knows": "ex:knows",
+    "subClassOf": "rdfs:subClassOf"
+  },
+  "@graph": [
+    { "@id": "ex:Alice", "@type": "ex:Person", "knows": { "@id": "ex:Bob" } },
+    { "@id": "ex:Bob", "@type": "ex:Student" },
+    { "@id": "ex:Student", "subClassOf": { "@id": "ex:Person" } }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix etsi: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+etsi:ClassRoom03 etsi:contains etsi:Sensor347 .
+etsi:ClassRoom03 etsi:contains etsi:Table322 .
+
+etsi:Sensor347 etsi:hasMeasurement etsi:Measurement8432 .
+
+etsi:Measurement8432 etsi:hasTemperature "29"^^xsd:integer .
+etsi:Measurement8432 etsi:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+etsi:Table322 etsi:hasOwner etsi:ETSIInformatics .
+
+etsi:ETSIInformatics etsi:hasName "ETSI Informáticos" .

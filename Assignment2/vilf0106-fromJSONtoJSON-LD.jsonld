@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "name": "schema:name",
+    "homeLocation": "schema:homeLocation",
+    "age": "schema:age",
+    "alumniOf": "schema:alumniOf",
+    "parent": "schema:parent",
+    "hasPart": "schema:hasPart",
+    "description": "schema:description",
+    "instructor": "schema:instructor",
+    "hasCourseInstance": "schema:hasCourseInstance",
+    "value": "schema:value",
+    "unitText": "schema:unitText",
+
+    "Course": "schema:Course",
+    "CourseInstance": "schema:CourseInstance",
+    "Place": "schema:Place",
+    "EducationalOrganization": "schema:EducationalOrganization",
+    "QuantitativeValue": "schema:QuantitativeValue",
+    "Person": "schema:Person"
+  },
+  "@type": "Person",
+  "name": "ZHENGWEI FANG",
+  "homeLocation": { "@type": "Place", "name": "Costa Adeje" },
+  "age": { "@type": "QuantitativeValue", "value": 21, "unitText": "years" },
+  "alumniOf": { "@type": "EducationalOrganization", "name": "Universidad Politécnica de Madrid (UPM) – ETSI Informáticos" },
+  "parent": [
+    { "@type": "Person", "name": "PING WENG" },
+    { "@type": "Person", "name": "QING FANG" }
+  ],
+  "hasPart": [
+    {
+      "@type": "Course",
+      "name": "Ingeniería de Software II",
+      "description": "Asignatura obligatoria de 6 ECTS, de cuarto curso (séptimo semestre). Grado en Ingeniería Informática y Doble Grado en Ingeniería Informática y ADE.",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "instructor": [
+          { "@type": "Person", "name": "Jose A. Calvo-Manzano Villalón" }
+        ]
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Nanotecnología",
+      "description": "Introducción a la nanotecnología y la nanociencia; biomimetismo y sus aplicaciones (nanotecnología biomimética, ingeniería y arquitectura biomiméticas); métodos de fabricación y caracterización (enfoques top-down y bottom-up, microscopía, espectroscopia y técnicas afines); tecnologías cuánticas (computación, comunicaciones, simulación y metrología; puertas lógicas y protocolos de criptografía; computación cuántica con superconductores); y aplicaciones: MEMS/NEMS, energía, medio ambiente, agricultura y procesado de alimentos, medicina y salud, y otras tecnologías.",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "instructor": [
+          { "@type": "Person", "name": "M. Estíbaliz Martínez Izquierdo" }
+        ]
+      }
+    }
+  ]
+}
+
+

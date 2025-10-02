@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "res": "https://www.example.org/resources#",
+    "prop": "https://www.example.org/properties#",
+    "people": "prop:people",
+    "sub": "prop:subject",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "name": "people:name",
+    "secondName": "people:secondName",
+    "homeLocation": "people:homeLocation",
+    "age": "people:age",
+    "almaMater": "people:almaMater",
+    "parents": {
+        "@id": "people:parents",
+        "@type": "@id"
+    },    
+    "subject": "sub:subject",
+    "teachers": "sub:teachers",
+    "description": "sub:description"
+  },
+
+  "@id": "res:a2025001",
+  "@type": "people:Person",
+  "name": "Fernando",
+  "secondName": "Fernandez Carrasco",
+  "homeLocation": "Las Rozas de Madrid",
+  "age": 22,
+  "almaMater": "ETSIINF UPM",
+  "parents":{
+    "father": "Fernando",
+    "mother": "Virginia"
+  },
+
+  "subjects": [
+    {
+      "@id": "res:s01",
+      "@type": "sub:Subject",
+      "subject": "El arte de programar",
+      "teachers": [
+        { "@id": "res:p01", "@type": "people:Person", "name": "Julio Mariño" }
+      ],
+      "description": "Study different algorithmic techniques to efficiently solve programming problems of a certain complexity."
+    },
+    {
+      "@id": "res:s02",
+      "@type": "sub:Subject",
+      "subject": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": [
+        { "@id": "res:p02", "@type": "people:Person", "name": "Oscar Corcho Garcia" }
+      ],
+      "description": "Study publication of propabularies and data on the Web of Linked Data, as well as knowledge graphs."
+    },
+    {
+      "@id": "res:s03",
+      "@type": "sub:Subject",
+      "subject": "Tecnologías de Red Cisco: CCNA",
+      "teachers": [
+        { "@id": "res:p03", "@type": "people:Person", "name": "Javier Soriano" }
+      ],
+      "description": "Topics related to CISCO network certification."
+    }
+  ]
+}
