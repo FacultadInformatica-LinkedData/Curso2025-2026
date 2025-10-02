@@ -1,0 +1,20 @@
+@prefix res:   <http://example.org/resources/> .
+@prefix prop:  <http://example.org/properties/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+res:ClassRoom03
+    prop:contains res:Sensor347 ,
+                  res:Table322 .
+
+res:Sensor347
+    prop:hasMeasurement res:Measurement8432 .
+
+res:Measurement8432
+    prop:hasTemperature 29 ;
+    prop:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+res:Table322
+    prop:hasOwner res:ETSIInformaticos .
+
+res:ETSIInformaticos
+    prop:hasName "ETSI Informáticos" .

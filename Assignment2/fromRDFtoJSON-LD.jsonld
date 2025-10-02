@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "mn": "http://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gid": "@id",
+    "gtype": "@type",
+    "includes": {
+      "@id": "mn:contains",
+      "@type": "@id"
+    },
+    "hasOwner": {
+      "@id": "mn:hasOwner",
+      "@type": "@id"
+    },
+    "hasName": {
+      "@id": "mn:hasName"
+    },
+    "hasMeasurement": {
+      "@id": "mn:hasMeasurement",
+      "@type": "@id"
+    },
+    "hasTemperature": {
+      "@id": "mn:hasTemperature"
+    },
+    "atTime": {
+      "@id": "mn:atTime"
+    }
+  },
+  "@graph": [
+    {
+      "gid": "mn:ClassRoom03",
+      "gtype": "mn:Room",
+      "includes": [
+        "mn:Sensor347",
+        "mn:Table322"
+      ]
+    },
+    {
+      "gid": "mn:Sensor347",
+      "gtype": "mn:Sensor",
+      "hasMeasurement": "mn:Measurement8432"
+    },
+    {
+      "gid": "mn:Measurement8432",
+      "gtype": "mn:Measurement",
+      "hasTemperature": {
+        "@value": 29,
+        "@type": "xsd:integer"
+      },
+      "atTime": {
+        "@value": "2022-09-12T12:01:12",
+        "@type": "xsd:dateTime"
+      }
+    },
+    {
+      "gid": "mn:Table322",
+      "gtype": "mn:Table",
+      "hasOwner": "mn:ETSIInformatics"
+    },
+    {
+      "gid": "mn:ETSIInformatics",
+      "gtype": "mn:Organization",
+      "hasName": {
+        "@value": "ETSI Informáticos",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

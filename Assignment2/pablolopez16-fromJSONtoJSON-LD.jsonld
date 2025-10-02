@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "etsi": "https://www.example.org/etsiources#",
+    "prop": "https://www.example.org/properties#",
+    "people": "prop:people",
+    "sub": "prop:subject",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "name": "people:name",
+    "secondName": "people:secondName",
+    "homeLocation": "people:homeLocation",
+    "age": "people:age",
+    "almaMater": "people:almaMater",
+    "parents": {
+        "@id": "people:parents",
+        "@type": "@id"
+    },    
+    "subject": "sub:subject",
+    "teachers": "sub:teachers",
+    "description": "sub:description"
+  },
+
+  "@id": "etsi:assigment2b",
+  "@type": "people:Person",
+  "name": "Pablo",
+  "secondName": "López Fernández",
+  "homeLocation": "Alcorcon,Madrid",
+  "age": 22,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": {
+    "father": "Tomas Lopez",
+    "mother": "Inmaculada Fernández"
+  },
+
+  "subjects": [
+    {
+      "@id": "etsi:s01",
+      "@type": "sub:Subject",
+      "subject": "Administracion de sistemas informaticos",
+      "teachers": [
+        { "@id": "etsi:p01", "@type": "people:Person", "name": "Fernando Pérez Costoya" },
+        { "@id": "etsi:p02", "@type": "people:Person", "name": "Francisco Rosales García" }
+      ],
+      "description": "Administracion de sistemas informaticos usando como casos de estudio los sistemas de la familia Unix(Linux)"
+    },
+    {
+      "@id": "etsi:s02",
+      "@type": "sub:Subject",
+      "subject": "Fundamentos Cloud",
+      "teachers": [
+        { "@id": "etsi:p03", "@type": "people:Person", "name": "Sonia de Frutos " }
+      ],
+      "description": "La asignatura proporcionará a los estudiantes una primera toma de contacto con las insfraestructuras cloud y aprenderán sus conceptos básicos"
+    } 
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "ex": "http://example.org/ontology#",
+    "fullName": "schema:name",
+    "hometown": "schema:homeLocation",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "ex:attendsCourse",
+    "name": "schema:name",
+    "teachers": "schema:teacher",
+    "description": "schema:description"
+  },
+  "@type": "schema:Person",
+  "fullName": "Jose Angel Galan Blazquez",
+  "hometown": "Madrid",
+  "age": 20,
+  "almaMater": {
+    "@type": "schema:CollegeOrUniversity",
+    "name": "UPM"
+  },
+  "parents": [
+    {
+      "@type": "schema:Person",
+      "name": "Jose"
+    },
+    {
+      "@type": "schema:Person",
+      "name": "Cristina"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Fundamentos cloud",
+      "teachers": {
+        "@type": "schema:Person",
+        "name": "Sonia de Frutos"
+      },
+      "description": "Primera toma de contacto con las insfraestructuras cloud"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "name": "Oscar Corcho"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Daniel Garijo"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Raúl García"
+        }
+      ],
+      "description": "Main foundations of the Semantic Web, the Web of Linked Data and Knowledge Graphs"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Algoritmos de procesado y análisis de imagen. Aplicación a teledetección",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "name": "Angel Mario García Pedrero"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Consuelo Gonzalo Martín"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "M. Estibaliz Martínez Izquierdo"
+        }
+      ],
+      "description": "Identificación, análisis e interpretación de la información contenida en imágenes"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Ingeniería del Software II",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "name": "Jose A. Calvo-Manzano Villalón"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Ana Maria Moreno Sanchez-Capuchino"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Tomás San Feliu Gilabert"
+        }
+      ],
+      "description": "Técnicas de Estimación, Planificación, Monitorización y Control de Proyectos"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Investigacion operativa",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "name": "Alfonso Mateos Caballero"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Antonio Jiménez Martín"
+        }
+      ],
+      "description": "Modelizar y resolver distintos problemas de optimización en redes, programación lineal continua, entera y multiobjetivo"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Gestión de procesos de tecnologías de la información",
+      "teachers": [
+        {
+          "@type": "schema:Person",
+          "name": "Ricardo Colomo Palacios"
+        },
+        {
+          "@type": "schema:Person",
+          "name": "Edmundo Tovar Caro"
+        }
+      ],
+      "description": "Elementos de una organización, las normas para el mercado digital y el Gobierno y Gestión de las TI."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "knows": "ex:knows"
+  },
+  "@graph": [
+    { "@id": "ex:Alice", "@type": "ex:Person", "knows": { "@id": "ex:Bob" } },
+    { "@id": "ex:Bob", "@type": "ex:Student" }
+  ]
+}

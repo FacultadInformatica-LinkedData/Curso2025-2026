@@ -1,0 +1,610 @@
+﻿FID;Shape;IdStation;Activate;Address;DockBikes;FreeBases;PosicionST;Ligth;Name;NoAvailabl;number;TotalBases;POINT_X;POINT_Y
+0;Point;1406;1;Calle Miguel Moya nº 1,;15;12;-3.7056899999999997 40.4204;2;2 - Metro Callao;0;2;27;-3,70569;40,4204
+1;Point;1407;1;Plaza Conde Surchill, 4 ,;3;16;-3.7072537000000003 40.4303223;0;3 - Plaza Conde Suchil;0;3;19;-3,707254;40,430322
+2;Point;1408;1;Calle Manuela Malasaña nº 3,;2;25;-3.7025 40.4286259;0;4 - Malasaña;0;4;27;-3,7025;40,428626
+3;Point;1409;1;Calle Fuencarral nº 106,;4;23;-3.7021354 40.4285212;0;5 - Fuencarral;0;5;27;-3,702135;40,428521
+4;Point;1410;1;Calle Hortaleza nº 63,;9;9;-3.6984469999999994 40.424148;2;6 - Colegio Arquitectos;0;6;19;-3,698447;40,424148
+5;Point;1411;1;Calle Hortaleza nº 75,;18;1;-3.6977715000000004 40.4251906;1;7 - Hortaleza;0;7;19;-3,697771;40,425191
+6;Point;1412;1;Plaza de Alonso Martínez nº 6,;19;5;-3.6954403000000005 40.4278682;1;8 - Metro Alonso Martínez;0;8;24;-3,69544;40,427868
+7;Point;1413;1;Plaza de San Miguel nº 10,;12;12;-3.7095084 40.4156057;2;9 - Plaza de San Miguel;0;9;24;-3,709508;40,415606
+8;Point;1414;1;Calle Marqués de la Ensenada (junto a edif, Centro Colón),;21;2;-3.6921040000000005 40.425403;1;10 - Marqués de la Ensenada;0;10;23;-3,692104;40,425403
+9;Point;1415;1;Calle San Andrés nº 18 - 20,;2;21;-3.7036 40.427;0;11 - Plaza del Dos de Mayo;0;11;23;-3,7036;40,427
+10;Point;1416;1;Calle San Bernardo nº 85 - 87,;11;16;-3.7061405999999995 40.4284667;2;12 - San Hermenegildo;0;12;27;-3,706141;40,428467
+11;Point;1417;1;Calle Conde Duque nº 22,;3;20;-3.7104999999999997 40.4273;0;13 - Conde Duque;0;13;23;-3,7105;40,4273
+12;Point;1418;1;Ventura Rodríguez, 3,;5;22;-3.7133069 40.4260425;0;14 - Ventura Rodríguez;0;14;27;-3,713307;40,426043
+13;Point;1419;1;Calle norte nº 10,;1;18;-3.7074453 40.4262383;0;15 - Norte;0;15;19;-3,707445;40,426238
+14;Point;1420;1;Calle San Bernardo nº 22,;7;12;-3.7074808485065 40.4229374;2;16 - San Bernardo;0;16;19;-3,707481;40,422937
+15;Point;1421;1;Plaza de Carlos Cambronero nº 2,;6;17;-3.7041659999999994 40.423126;0;17 - Plaza de Carlos Cambronero;0;17;23;-3,704166;40,423126
+16;Point;1422;1;Plaza de Pedro Zerolo nº 20,;9;15;-3.6996776 40.4209251;2;18 - Plaza de Pedro Zerolo;0;18;24;-3,699678;40,420925
+17;Point;1423;1;Calle Prim nº 4,;20;8;-3.6954982999999997 40.4218616;1;19 - Prim;0;19;28;-3,695498;40,421862
+18;Point;1424;1;Calle Alcalá nº 48,;15;12;-3.6952465 40.4188076;2;20A - Banco de España;0;20A;27;-3,695247;40,418808
+19;Point;1426;1;Plaza de Santo Domingo nº 1,;6;18;-3.708249 40.4202595;0;23 - Santo Domingo;0;23;24;-3,708249;40,42026
+20;Point;1427;1;Calle Carlos III nº 1,;12;6;-3.7106495 40.417767;2;24 - Palacio de Oriente;0;24;18;-3,71065;40,417767
+21;Point;1428;1;Plaza de Celenque nº 1,;6;18;-3.7057791 40.4173703;0;25A - Plaza de Celenque A;0;25A;24;-3,705779;40,41737
+22;Point;1429;1;Plaza de Celenque nº 1,;13;11;-3.7058976 40.4173687;2;25B - Plaza de Celenque B;0;25B;24;-3,705898;40,417369
+23;Point;1430;1;Plaza de las Salesas nº 2,;15;12;-3.6945 40.4239;2;26 - Plaza de las Salesas;0;26;27;-3,6945;40,4239
+24;Point;1431;1;Calle Jesús nº 6,;15;12;-3.6957000000000004 40.4133;2;27 - Huertas;0;27;27;-3,6957;40,4133
+25;Point;1432;1;Calle Alcalá nº 28,;17;1;-3.6984583 40.41806;1;28 - Metro Sevilla;0;28;18;-3,698458;40,41806
+26;Point;1433;1;Calle del Marqués de Cubas nº 25,;20;3;-3.6957434000000005 40.4163838;1;29 - Marqués de Cubas;0;29;23;-3,695743;40,416384
+27;Point;1434;1;Calle Pavía nº 4,;8;19;-3.711504 40.4192095;0;30 - San Quintín;0;30;27;-3,711504;40,41921
+28;Point;1435;1;Calle Mayor nº 16,;18;9;-3.7068969 40.4163638;2;31 - Mayor;0;31;27;-3,706897;40,416364
+29;Point;1436;1;Plaza de la Provincia (esquina calle Gerona),;17;1;-3.7061032000000003 40.4150099;1;32 - Plaza de la Provincia;0;32;18;-3,706103;40,41501
+30;Point;1437;1;Calle Carretas nº 3,;19;4;-3.7033305 40.4165873;1;33 - Puerta del Sol;0;33;23;-3,70333;40,416587
+31;Point;1438;1;Plaza de Jacinto Benavente,;3;21;-3.7036825 40.4146755;0;34 - Jacinto Benavente;0;34;24;-3,703683;40,414676
+32;Point;1439;1;Plaza del Cordón nº1,;18;6;-3.7103284999999997 40.4141931;1;35 - Plaza del Cordón;0;35;24;-3,710329;40,414193
+33;Point;1440;1;Plaza de Ramales nº1,;14;10;-3.7118300000000004 40.4168;2;36 - Plaza Ramales;0;36;24;-3,71183;40,4168
+34;Point;1441;1;Plaza de San Francisco,;13;11;-3.714113 40.4108;2;37 - Plaza de San Francisco;0;37;24;-3,714113;40,4108
+35;Point;1442;1;Carrera de San Francisco enfrente del nº 2 ,;17;9;-3.7115898000000005 40.4113586;2;38 - Plaza de los Carros;0;38;27;-3,71159;40,411359
+36;Point;1443;1;Plaza de la Cebada nº 3,;4;27;-3.7088337 40.4112744;0;39 - Plaza de la Cebada;0;39;31;-3,708834;40,411274
+37;Point;1444;1;Plaza del Conde de Romanones nº 2,;2;16;-3.7047949666162405 40.413778406369765;0;40 - Conde de Romanones;0;40;18;-3,704795;40,413778
+38;Point;1445;1;Calle Atocha nº 56,;12;7;-3.6991147000000004 40.4122047;2;41 - Metro Antón Martín;0;41;19;-3,699115;40,412205
+39;Point;1446;1;Calle Santa Isabel 32,;0;26;-3.6982922 40.4108488;0;42 - Santa Isabel;0;42;27;-3,698292;40,410849
+40;Point;1447;1;Calle Jesús y María, 38 ,;12;6;-3.7024709999999996 40.4100387;2;43 - Jesús y María;0;43;18;-3,702471;40,410039
+41;Point;1448;1;Plaza Nelson Mandela, 44 ,;1;18;-3.7038640533106597 40.40979071254635;0;44 - Plaza de Nelson Mandela;0;44;19;-3,703864;40,409791
+42;Point;1449;1;Puerta de Toledo 1 ,;9;10;-3.7111033999999994 40.4068659;2;45 - Metro Puerta de Toledo;0;45;19;-3,711103;40,406866
+43;Point;1450;1;Calle Ribera de Curtidores nº 28,;14;13;-3.7071258999999994 40.4053153;2;46 - Ribera de Curtidores;0;46;27;-3,707126;40,405315
+44;Point;1451;1;Glorieta de Embajadores, 7 ,;11;13;-3.7027998 40.4045772;2;47 - Renfe/Cercanías Embajadores;0;47;24;-3,7028;40,404577
+45;Point;1452;1;Glorieta de Embajadores nº 7,;18;6;-3.7020565999999997 40.4054815;1;48 - Casa de baños Embajadores;0;48;24;-3,702057;40,405482
+46;Point;1453;1;Ronda de Atocha nº 34,;12;15;-3.6992774 40.4060533;2;49 - Casa Encendida;0;49;27;-3,699277;40,406053
+47;Point;1454;1;Calle de Santa Isabel (esquina con plaza del Emperador Carlos V),;22;2;-3.6933462999999995 40.4083684;1;50 - Museo Reina Sofía;0;50;24;-3,693346;40,408368
+48;Point;1455;1;Ronda de Atocha (esquina con Plaza del Emperador Carlos V),;24;3;-3.6935205000000004 40.4075606;1;51 - Ronda de Atocha;0;51;27;-3,69352;40,407561
+49;Point;1456;1;Plaza de Santa Ana nº 10,;9;6;-3.7007163999999997 40.4144226;2;52 - Plaza de Santa Ana;0;52;15;-3,700716;40,414423
+50;Point;1457;1;Plazuela de Ana Diosdado,;8;16;-3.700754126389314 40.40830870823806;2;53 - Plaza de Lavapiés;0;53;24;-3,700754;40,408309
+51;Point;1458;1;Calle Barceló nº 9,;15;4;-3.700392997553259 40.426599101766264;1;54 - Metro Tribunal;0;54;19;-3,700393;40,426599
+52;Point;1459;1;Plaza de San Ildefonso nº4,;3;21;-3.7020842 40.4239757;0;55 - Plaza de San Ildefonso;0;55;24;-3,702084;40,423976
+53;Point;1460;1;Plaza del Carmen nº 1,;14;9;-3.7032414 40.4184192;2;56 - Plaza del Carmen;0;56;23;-3,703241;40,418419
+54;Point;1461;1;Calle Santa Cruz del Marcenado nº 26,;18;5;-3.7126299 40.4295658;1;57 - Santa Cruz de Marcenado;0;57;23;-3,71263;40,429566
+55;Point;1462;1;Calle Augusto Figueroa nº 33,;7;20;-3.6978583000000005 40.4222783;0;58 - Metro Chueca;0;58;27;-3,697858;40,422278
+56;Point;1463;1;Calle Espíritu Santo nº 30,;4;15;-3.7043418 40.4255495;0;59 - Plaza de Juan Pujol;0;59;19;-3,704342;40,42555
+57;Point;1464;1;Plaza de la Independencia, s/n ,;10;13;-3.688398 40.419752;2;60 - Puerta de Alcalá;0;60;23;-3,688398;40,419752
+58;Point;1465;1;Calle O Donnell nº 30,;24;3;-3.6753139 40.4214551;1;61 - O Donnell - Narváez;0;61;27;-3,675314;40,421455
+59;Point;1466;1;Calle O Donnell nº 48,;22;5;-3.6724968 40.4213148;1;62 - Hospital M. Infantil Gregorio Marañón;0;62;27;-3,672497;40,421315
+60;Point;1467;1;Calle Ibiza nº 64,;4;19;-3.6708958999999997 40.4179237;0;63 - Hospital Gral. Uni. Gregorio Marañón;0;63;23;-3,670896;40,417924
+61;Point;1468;1;Calle Antonio Maura nº 13,;22;2;-3.6894247979427686 40.4167014469994;1;65 - Parque del Retiro - Calle Antonio Maura;0;65;24;-3,689425;40,416701
+62;Point;1469;1;Calle Almadén 26,;23;0;-3.693225 40.4108472;1;67 - CaixaForum Madrid;0;67;23;-3,693225;40,410847
+63;Point;1470;1;Calle Espalter nº 3,;11;8;-3.6913231999999994 40.4127692;2;68 - Espalter - Ruiz de Alarcón;0;68;19;-3,691323;40,412769
+64;Point;1471;1;Avenida de Alfonso XII nº 54,;8;19;-3.688822 40.409808;0;69 - Parque del Retiro - Puerta Ángel Caído;0;69;27;-3,688822;40,409808
+65;Point;1472;1;Avenida de Menéndez Pelayo nº 63,;17;10;-3.677872542327878 40.415382385574716;2;70 - Hospital Uni. Infantil Niño Jesús;0;70;27;-3,677873;40,415382
+66;Point;1473;1;Calle Doce de Octubre nº 28,;5;18;-3.6739 40.4161;0;71 - Plaza del Doctor Laguna;0;71;23;-3,6739;40,4161
+67;Point;1474;1;Calle Doctor Esquerdo nº 62,;7;16;-3.6696000000000004 40.4159;0;72 - Metro Sáinz de Baranda;0;72;23;-3,6696;40,4159
+68;Point;1475;1;Calle de los Astros, nº5 ,;9;14;-3.6687 40.4115;2;73 - Plaza de los Astros;0;73;23;-3,6687;40,4115
+69;Point;1476;1;Avenida de Menéndez Pelayo nº 69,;20;7;-3.6765887637889834 40.41206290978386;1;74 - Parque Retiro - Jardines Cecilio Rguez;0;74;27;-3,676589;40,412063
+70;Point;1477;1;Avenida Menéndez pelayo (esquina con calle Poeta Esteban Villegas),;9;18;-3.6784749 40.4082717;2;75 - Parque del Retiro - Plaza Mariano Cavia;0;75;27;-3,678475;40,408272
+71;Point;1478;1;Avenida del Mediterráneo nº 19,;4;20;-3.6751020000000003 40.407271;0;76 - Avenida del Mediterráneo, 19;0;76;24;-3,675102;40,407271
+72;Point;1479;1;Plaza del Conde de Casal nº 8,;13;5;-3.6707132 40.4064784;1;77 - Plaza del Conde de Casal;0;77;18;-3,670713;40,406478
+73;Point;1480;1;Calle Cerro de la Plata nº 4,;12;15;-3.674524060049444 40.40063747422422;2;78 - Metro Pacífico;0;78;27;-3,674524;40,400637
+74;Point;1481;1;Avenida de Menéndez Pelayo nº 38,;8;19;-3.680439824323069 40.405110193977585;0;79 - Metro Menéndez Pelayo;0;79;27;-3,68044;40,40511
+75;Point;1484;1;Calle Claudio Moyano, nº5 ,;0;24;-3.691833220071059 40.40934261188139;0;81 - Cuesta de Moyano;0;81;24;-3,691833;40,409343
+76;Point;1485;1;Calle Lira, nº1 ,;1;22;-3.6697526 40.4084556;0;82 - Doctor Esquerdo - Metro Conde de Casal;0;82;23;-3,669753;40,408456
+77;Point;1486;1;Calle Pío Baroja nº8,;6;17;-3.6744795 40.4132995;0;83 - Pío Baroja;0;83;23;-3,674479;40,4133
+78;Point;1487;1;Calle Doctor Esquerdo nº 191,;3;20;-3.672481575393678 40.40357156992851;0;84 - Biblioteca Pública Elena Fortún;0;84;23;-3,672482;40,403572
+79;Point;1488;1;Avenida de Menéndez Pelayo, 9,;11;16;-3.6798909999999996 40.4213143;2;85 - Parque del Retiro - Puerta de O´Donnell;0;85;27;-3,679891;40,421314
+80;Point;1489;1;Paseo del Prado, 1B ,;22;2;-3.6933498 40.4186516;1;86 - Cibeles;0;86;24;-3,69335;40,418652
+81;Point;1490;1;Calle Ayala nº 46,;22;1;-3.6832565999999995 40.427736;1;87 - Ayala - Velázquez;0;87;23;-3,683257;40,427736
+82;Point;1491;1;Calle Velázquez, 13 ,;21;2;-3.6838303 40.4313576;1;88 - Velázquez-Padilla;0;88;23;-3,68383;40,431358
+83;Point;1492;1;Calle Ayala nº 104,;16;7;-3.6752024 40.4272582;2;89 - Ayala - Conde de Peñalver;0;89;23;-3,675202;40,427258
+84;Point;1493;1;Calle Goya, 20 ,;19;8;-3.6838415999999996 40.4251493;1;90 - Metro Velázquez;0;90;27;-3,683842;40,425149
+85;Point;1494;1;Calle Hermosilla nº 71,;8;15;-3.6786285 40.426049;2;91 - Hermosilla - General Pardiñas;0;91;23;-3,678628;40,426049
+86;Point;1495;1;Calle Claudio Coello, 43 ,;22;1;-3.6865463 40.4262945;1;92 - Claudio Coello - Hermosilla;0;92;23;-3,686546;40,426294
+87;Point;1496;1;Calle Goya (esquina calle Marqués de Zurgeña),;23;0;-3.6893361690338162 40.42575853342561;1;93 - Plaza de Margaret Tatcher;0;93;23;-3,689336;40,425759
+88;Point;1497;1;Paseo de Recoletos nº 20,;20;3;-3.6907560000000004 40.4232153;1;94 - Estación de tren de Recoletos;0;94;23;-3,690756;40,423215
+89;Point;1498;1;Calle Claudio Coello nº 19,;22;1;-3.6869293000000005 40.4225428;1;95 - Claudio Coello - Villanueva;0;95;23;-3,686929;40,422543
+90;Point;1499;1;Calle Alcalá nº 111,;18;9;-3.682204798770403 40.42201515498424;2;96 - Alcalá - Castelló;0;96;27;-3,682205;40,422015
+91;Point;1500;1;Avenida Menéndez Pelayo (esquina calle Alcalá),;13;14;-3.6802556 40.4225364;2;97 - Metro Príncipe de Vergara;0;97;27;-3,680256;40,422536
+92;Point;1501;1;Calle Narváez, 3 ,;20;4;-3.6757676 40.4241325;1;98 - Plaza de Felipe II;0;98;24;-3,675768;40,424132
+93;Point;1502;1;Calle Alcántara, 4 ,;5;18;-3.6740178 40.4260391;0;99 - Alcántara - Hermosilla;0;99;23;-3,674018;40,426039
+94;Point;1503;1;Calle Goya nº 99,;6;21;-3.6738400000000007 40.42478;0;100 - Wizink Center;0;100;27;-3,67384;40,42478
+95;Point;1504;1;Calle Jorge Juán, 129 ,;18;6;-3.6696803999999994 40.4230771;1;101 - Metro O Donnell;0;101;24;-3,66968;40,423077
+96;Point;1505;1;Calle Alcalá nº 95,;23;0;-3.6842317 40.4211845;1;102 - Metro Retiro;0;102;23;-3,684232;40,421185
+97;Point;1506;1;Calle José Ortega y Gasset, 6 ,;19;4;-3.6867439999999996 40.43053;1;103 - Ortega y Gasset - Serrano;0;103;23;-3,686744;40,43053
+98;Point;1507;1;Paseo de la Castellana nº 4,;21;2;-3.6895799999999994 40.42677;1;104 - Castellana - Hermosilla;0;104;23;-3,68958;40,42677
+99;Point;1508;1;Calle Serrano nº 46,;20;3;-3.6875418000000004 40.4270832;1;105 - Serrano, 46;0;105;23;-3,687542;40,427083
+100;Point;1510;1;Calle Serrano nº 32,;19;0;-3.6878899999999994 40.424776;1;106B - Plaza de Colón B;0;106B;19;-3,68789;40,424776
+101;Point;1511;1;Calle Serrano nº 8,;16;7;-3.6883841104507464 40.42156087297841;2;107 - Serrano - Conde de Aranda;0;107;23;-3,688384;40,421561
+102;Point;1512;1;Calle Mártires Concepcionistas nº 2,;18;9;-3.6706519999999996 40.427402;2;108 - Mártires Concepcionistas - Alcalá;0;108;27;-3,670652;40,427402
+103;Point;1513;1;Calle José Ortega y Gasset nº 30,;22;1;-3.6814521000000004 40.4301245;1;109 - Marqués de Salamanca;0;109;23;-3,681452;40,430124
+104;Point;1514;1;Paseo de Moret nº 1,;3;20;-3.7201021 40.434745;0;110 - Intercambiador de Moncloa;0;110;23;-3,720102;40,434745
+105;Point;1515;1;Calle Arcipreste de Hita nº 8,;4;19;-3.7175248000000005 40.4336027;0;111A - Metro Moncloa A;0;111A;23;-3,717525;40,433603
+106;Point;1516;1;Calle Arcipreste de Hita nº 12,;1;22;-3.7177433999999994 40.433913;0;111B - Metro Moncloa B;0;111B;23;-3,717743;40,433913
+107;Point;1517;1;Paseo Moret, 9 ,;17;6;-3.7247360000000005 40.4326901;1;112 - Paseo de Moret - Parque del Oeste;0;112;23;-3,724736;40,43269
+108;Point;1518;1;Paseo del Pintor Rosales frente al nº 38,;16;8;-3.7207263 40.427538;2;113 - Teleférico Madrid - Estación Rosales;0;113;24;-3,720726;40,427538
+109;Point;1519;1;Calle Quintana nº 13,;11;12;-3.7174631000000002 40.4278379;2;114 - Quintana - Juan Álvarez de Mendizábal;0;114;23;-3,717463;40,427838
+110;Point;1520;1;Paseo de Pintor Rosales (esquina Marqués de Cerralbo),;5;18;-3.7170515055225373 40.42531476841791;0;115 - Ferraz - Templo de Debod;0;115;23;-3,717052;40,425315
+111;Point;1521;1;Plaza de España nº16,;10;8;-3.7130430000000003 40.423679;2;116A - Plaza de España - Martín de los Heros;0;116A;18;-3,713043;40,423679
+112;Point;1522;1;Calle de los Reyes, nº10,;14;4;-3.71046 40.423684;1;116B - Metro Plaza de España;0;116B;18;-3,71046;40,423684
+113;Point;1523;1;Calle Altamirano nº 24,;1;22;-3.7188898000000004 40.4309797;0;117 - Altamirano  - Martín de los Heros;0;117;23;-3,71889;40,43098
+114;Point;1524;1;Calle Juan Martínez el empeciado (esquina calle Bustamante) ,;15;8;-3.6882407 40.400781;2;118 - OFICINA DEL SER, APR Y BICIREGISTRO;0;118;23;-3,688241;40,400781
+115;Point;1525;1;Calle Méndez Álvaro nº 11,;18;5;-3.6862652999999996 40.4012905;1;119 - Méndez Álvaro;0;119;23;-3,686265;40,401291
+116;Point;1526;1;Calle Palos de la Frontera nº 27,;25;2;-3.6948251018524214 40.403090451430614;1;120 - Metro Palos de la Frontera;0;120;27;-3,694825;40,40309
+117;Point;1527;1;Paseo de Santa María de la Cabeza nº 58,;8;19;-3.6986027000000004 40.4017487;0;121 - Glorieta de Santa María de la Cabeza;0;121;27;-3,698603;40,401749
+118;Point;1528;1;Calle Santa Engracia nº 14,;18;5;-3.6963659 40.4295362;1;122 - Santa Engracia - Zurbarán;0;122;23;-3,696366;40,429536
+119;Point;1529;1;Calle Guzmán el Bueno nº 2,;13;14;-3.7133412 40.4306458;2;123 - Metro Argüelles;0;123;27;-3,713341;40,430646
+120;Point;1530;1;Calle Manuel Silvela nº 20,;2;25;-3.6993695 40.430969;0;124 - Metro Bilbao;0;124;27;-3,699369;40,430969
+121;Point;1531;1;Calle Fernández de la Hoz nº 29,;21;6;-3.6948 40.4353;1;125 - Fdez. de la Hoz - Gral. Martínez Campos;0;125;27;-3,6948;40,4353
+122;Point;1532;1;Calle del General Álvarez de Castro, 6 ,;4;23;-3.7018044 40.4345976;0;126 - General Álvarez de Castro;0;126;27;-3,701804;40,434598
+123;Point;1533;1;Calle Fernando el Católico nº 19,;3;24;-3.708439 40.4338516;0;127 - Mercado Municipal de Vallehermoso;0;127;27;-3,708439;40,433852
+124;Point;1534;1;Calle Cea Bermúdez nº 59,;20;7;-3.7154 40.4392;1;128 - Metro Islas Filipinas;0;128;27;-3,7154;40,4392
+125;Point;1535;1;Calle de José Abascal, 33-35 ,;0;27;-3.6982353 40.4383865;0;129 - Metro Alonso Cano;0;129;27;-3,698235;40,438387
+126;Point;1536;1;Calle de Santa Engracia, 129 ,;19;4;-3.7016399999999994 40.44156;1;130 - Metro Ríos Rosas;0;130;23;-3,70164;40,44156
+127;Point;1537;1;Calle Bravo Murillo nº 44,;8;15;-3.7040312299999996 40.4417884;2;131 - Plaza de Juan Zorrilla;0;131;23;-3,704031;40,441788
+128;Point;1538;1;Calle Santa Engracia, 164 ,;14;13;-3.703605250412747 40.446377501314885;2;132 - Glorieta de Cuatro Caminos;0;132;27;-3,703605;40,446378
+129;Point;1539;1;Calle Dulcinea, 3 ,;0;24;-3.7001669 40.447125;0;133 - Raimundo Fdez. Villaverde - Dulcinea;0;133;24;-3,700167;40,447125
+130;Point;1540;1;Calle María de Guzmán nº 58,;2;21;-3.6955687 40.4441818;0;134 - María de Guzmán - Agustín de Betancourt;0;134;23;-3,695569;40,444182
+131;Point;1541;1;Plaza de San Juan de la Cruz, 10 ,;23;0;-3.692734 40.441481;1;135 - Plaza de San Juan de la Cruz;0;135;23;-3,692734;40,441481
+132;Point;1542;1;Paseo de la Castellana nº 106,;21;2;-3.690769 40.4451244;1;136 - Metro Nuevos Ministerios;0;136;23;-3,690769;40,445124
+133;Point;1543;1;Plaza de la republica argentina, 7 ,;19;5;-3.6853377000000003 40.4454477;1;137 - Plaza de la República Argentina;0;137;24;-3,685338;40,445448
+134;Point;1544;1;Paseo de la Castellana, 63 ,;13;10;-3.6914063 40.4457414;2;138 - Estación de tren Nuevos Ministerios;0;138;23;-3,691406;40,445741
+135;Point;1545;1;Calle Pedro de Valdivia, 2 ,;16;8;-3.690419307270818 40.43939562033124;2;139 - José Gutiérrez Abascal - Castellana;0;139;24;-3,690419;40,439396
+136;Point;1546;1;Calle Velázquez, 134 ,;22;5;-3.6830583 40.4387566;1;140 - Velázquez - López de Hoyos;0;140;27;-3,683058;40,438757
+137;Point;1547;1;Paseo de la Castellana nº 43,;8;4;-3.6893917 40.4354047;2;141 - Plaza de Emilio Castelar;0;141;12;-3,689392;40,435405
+138;Point;1548;1;Paseo de la Castellana nº 42,;20;3;-3.6879154 40.4334087;1;142 - Bajo elevado de Eduardo Dato;0;142;23;-3,687915;40,433409
+139;Point;1549;1;Calle General Pardiñas, 58 ,;13;10;-3.6783015999999997 40.4289804;2;186 - General Pardiñas - Don Ramón de la Cruz;0;186;23;-3,678302;40,42898
+140;Point;1550;1;Calle de Juan Bravo, 51 ,;15;12;-3.675556 40.4324081;2;144 - Metro Diego de León;0;144;27;-3,675556;40,432408
+141;Point;1551;1;Calle Ortega y Gasset nº 87,;2;21;-3.6712823 40.429887;0;145 - Ortega y Gasset 87;0;145;23;-3,671282;40,429887
+142;Point;1552;1;Calle de María Francisca, 3,;10;9;-3.6788499 40.4442541;2;146 - María Francisca, 3;0;146;19;-3,67885;40,444254
+143;Point;1553;1;Avenida del Doctor Arce nº 45,;4;19;-3.6794000000000002 40.4484;0;147 - Doctor Arce 45;0;147;23;-3,6794;40,4484
+144;Point;1554;1;Calle Serrano nº 210,;9;14;-3.6813971 40.451117;2;148 - Serrano 210;0;148;23;-3,681397;40,451117
+145;Point;1555;1;Paseo de la Habana nº 42,;20;3;-3.6879303 40.4498515;1;149 - Plaza de Quito;0;149;23;-3,68793;40,449852
+146;Point;1557;1;Calle Orense nº 12,;24;3;-3.695359265012366 40.44881224951987;1;151 - Orense 12;0;151;27;-3,695359;40,448812
+147;Point;1558;1;Avenida del General Perón, 4 ,;3;20;-3.6989 40.4525;0;152 - General Perón, 4;0;152;23;-3,6989;40,4525
+148;Point;1559;1;Avenida del General Perón, 36 ,;20;3;-3.6935999999999996 40.4523;1;153 - General Perón - Poeta Joan Maragall;0;153;23;-3,6936;40,4523
+149;Point;1560;1;Calle Orense nº 36,;12;12;-3.6946218 40.4548456;2;154 - Orense 36;0;154;24;-3,694622;40,454846
+150;Point;1561;1;Calle San Germán nº 57,;0;23;-3.700930190178302 40.4573342300643;0;155 - San Germán 57;0;155;23;-3,70093;40,457334
+151;Point;1562;1;Calle Sor Ángela de la Cruz nº 2,;21;3;-3.691533 40.4592351;1;156 - Sor Ángela de la Cruz-Paseo Castellana;0;156;24;-3,691533;40,459235
+152;Point;1564;1;Avenida de Alberto Alcocer nº 22,;12;11;-3.6846250000000005 40.45869;2;158 - Alberto Alcocer - Padre Damián;0;158;23;-3,684625;40,45869
+153;Point;1565;1;Paseo de la Habana nº 63,;13;10;-3.6835925999999994 40.4543852;2;159 - Paseo de la Habana 63;0;159;23;-3,683593;40,454385
+154;Point;1566;1;Calle Colombia, 11 ,;3;21;-3.6763439 40.4572466;0;160 - Metro Colombia;0;160;24;-3,676344;40,457247
+155;Point;1567;1;Paseo de la Florida nº 8,;3;24;-3.7220993214090403 40.422192474165534;0;161 - Intercambiador de Príncipe Pío A;0;161;27;-3,722099;40,422192
+156;Point;1568;1;Paseo de los Olmos, 26 ,;13;10;-3.7105765 40.4034968;2;162 - Metro Pirámides;0;162;23;-3,710577;40,403497
+157;Point;1569;1;Paseo de la Esperanza, 2A ,;11;8;-3.7064450000000004 40.4037586;2;163 - Metro Acacias;0;163;19;-3,706445;40,403759
+158;Point;1570;1;Paseo de las Delicias nº 94,;7;20;-3.69461 40.39723;0;164 - Paseo de las Delicias - Tomás Bretón;0;164;27;-3,69461;40,39723
+159;Point;1571;1;Paseo de la Chopera frente 51 ,;12;31;-3.697596 40.392888;0;165 - Entrada Matadero - Paseo de la Chopera;0;165;43;-3,697596;40,392888
+160;Point;1572;1;Calle Segovia nº 26,;15;12;-3.713377023313513 40.41390473235381;2;166 - Viaducto de Segovia;0;166;27;-3,713377;40,413905
+161;Point;1573;1;Calle Segovia nº 45,;9;18;-3.7174891703237303 40.41374770742206;2;167 - Segovia 45;0;167;27;-3,717489;40,413748
+162;Point;1574;1;Paseo Santa María de la Cabeza frente al 30 ,;9;14;-3.6959 40.4046;2;168 - Santa María Cabeza - Batalla del Salado;0;168;23;-3,6959;40,4046
+163;Point;1575;1;Calle Toledo nº 181,;22;2;-3.713823 40.401589;1;169 - Glorieta de Pirámides;0;169;24;-3,713823;40,401589
+164;Point;1576;1;Paseo de la Esperanza nº 21,;14;10;-3.7043956 40.4010554;2;170 - Paseo de la Esperanza, 21;0;170;24;-3,704396;40,401055
+165;Point;1577;1;Calle Embajadores nº 97,;15;12;-3.6984023000000006 40.3997013;2;171 - Embajadores-Cáceres;0;171;27;-3,698402;40,399701
+166;Point;1578;1;Calle Bustamante nº 3,;8;15;-3.6934925999999995 40.4008279;2;172 - Estación de tren de Delicias;0;172;23;-3,693493;40,400828
+167;Point;1579;1;Paseo de la Esperanza nº 59,;1;23;-3.7024839 40.3983467;0;173 - Paseo Esperanza - Santa María Cabeza;0;173;24;-3,702484;40,398347
+168;Point;1580;1;Paseo de Yeserías nº 45,;1;26;-3.7065258846557603 40.39742958306358;0;174 - Paseo de las Yeserías, 45;0;174;27;-3,706526;40,39743
+169;Point;1581;1;Calle Jaime el Conquistador nº 30,;2;17;-3.6983445200000005 40.3962264;0;175 - Jaime el Conquistador - Divino Vallés;0;175;19;-3,698345;40,396226
+170;Point;1583;1;Calle Bolívar nº 3,;23;0;-3.6941876374343896 40.391447085678806;1;177 - Metro Legazpi;0;177;23;-3,694188;40,391447
+171;Point;1584;1;Calle León Gil de Palacio nº 1,;4;20;-3.6788343 40.4029202;0;178 - Junta Municipal Distrito de Retiro;0;178;24;-3,678834;40,40292
+172;Point;1585;1;Avenida de la Albufera nº 6,;12;12;-3.6692724000000005 40.3979273;2;179 - Metro Puente de Vallecas;0;179;24;-3,669272;40,397927
+173;Point;1586;1;Calle Retama (esquina con calle Acanto),;22;1;-3.67589 40.3940423;1;180 - Estación Sur Méndez Álvaro B;0;180;23;-3,67589;40,394042
+174;Point;1587;1;Calle Ibiza nº 16,;6;21;-3.6764435404754696 40.41816932665331;0;181 - Ibiza - Narváez;0;181;27;-3,676444;40,418169
+175;Point;1588;1;Alcalde Sainz de Baranda (esquina con calle de Juan Espladiu),;15;8;-3.6657776999999996 40.4186666;2;182 - Parque Roma;0;182;23;-3,665778;40,418667
+176;Point;1589;1;Calle Hermosilla, 135,;3;20;-3.6693389999999995 40.425635;0;183 - Hermosilla - Doctor Esquerdo;0;183;23;-3,669339;40,425635
+177;Point;1590;1;Paseo del Marqués Zafra, 24 ,;4;20;-3.6653055 40.426;0;184 - Marqués de Zafra, 24;0;184;24;-3,665306;40,426
+178;Point;1591;1;Calle Sancho Dávila, 35 ,;7;17;-3.6615277000000006 40.4250833;0;185 - Parque Quinta de la Fuente del Berro;0;185;24;-3,661528;40,425083
+179;Point;1592;1;Calle de Diego de León, 54 ,;3;20;-3.6780802000000006 40.434676;0;143 - Diego de León - General Pardiñas;0;143;23;-3,67808;40,434676
+180;Point;1593;1;Alcala-Ventas ,;10;13;-3.6638249 40.4301326;2;187 - Alejandro González - Alcalá;0;187;23;-3,663825;40,430133
+181;Point;1594;1;Avenida de Daroca, 2 ,;16;11;-3.6590286000000005 40.4312562;2;188 - Puente de Ventas;0;188;27;-3,659029;40,431256
+182;Point;1595;1;Avenida donostiarra,;1;22;-3.6554918000000005 40.4351256;0;189 - Virgen de la Alegría;0;189;23;-3,655492;40,435126
+183;Point;1596;1;Calle Velázquez, 91 ,;15;8;-3.6833753 40.4343053;2;190 - Velázquez - Diego de León;0;190;23;-3,683375;40,434305
+184;Point;1597;1;Calle de Alfonso Heredia, 2 ,;1;18;-3.6740777840614403 40.434569387142616;0;191 - Metro Diego de León;0;191;19;-3,674078;40,434569
+185;Point;1598;1;Avenida de los Toreros, 3 ,;15;12;-3.6714677183853106 40.431826464468664;2;192 - Avda. de los Toreros - Fco. Silvela;0;192;27;-3,671468;40,431826
+186;Point;1599;1;Avenida De los Toreros, 49 ,;11;16;-3.6655555 40.4324722;2;193 - Plaza de las Ventas;0;193;27;-3,665555;40,432472
+187;Point;1600;1;Calle Francisco Silvela, 87 ,;22;2;-3.6771534999999997 40.4372638;1;194 - Intercambiador de Avenida de América;0;194;24;-3,677154;40,437264
+188;Point;1601;1;Calle Mataelpino, 1 ,;22;2;-3.6754444 40.4392222;1;195 - Indalecio Hernández - Mataelpino;0;195;24;-3,675444;40,439222
+189;Point;1602;1;Calle Suero de Quiñones, 4 ,;2;25;-3.6752218 40.4442237;0;196 - Metro Prosperidad;0;196;27;-3,675222;40,444224
+190;Point;1603;1;Avenida de Concha Espina, 36 ,;9;14;-3.677916 40.4516059;2;197 - Parque de Berlín;0;197;23;-3,677916;40,451606
+191;Point;1604;1;Paseo de las Castellana, 33 ,;21;2;-3.6890999999999994 40.432;1;198 - Metro Rubén Darío;0;198;23;-3,6891;40,432
+192;Point;1605;1;Calle Fernando el Católico, 61 ,;4;23;-3.7149166 40.4343611;0;199 - Fernando el Católico, 61;0;199;27;-3,714917;40,434361
+193;Point;1606;1;Glorieta de Quevedo, 4 ,;15;9;-3.7045789811585412 40.43375360585919;2;200 - Metro Quevedo;0;200;24;-3,704579;40,433754
+194;Point;1607;1;Calle José Abascal, 2 ,;10;13;-3.7038332999999994 40.4386944;2;201 - Metro Canal;0;201;23;-3,703833;40,438694
+195;Point;1608;1;Calle de Santander, 1 ,;13;14;-3.7083 40.4413;2;202 - Parque de Santander;0;202;27;-3,7083;40,4413
+196;Point;1609;1;Calle General de Ampudia 2,;17;7;-3.7144722 40.44175;1;203 - General Ampudia - San Francisco Sales;0;203;24;-3,714472;40,44175
+197;Point;1610;1;Calle Doctor Santero, 1 ,;5;18;-3.7040397 40.4476488;0;204 - Doctor Santero - Bravo Murillo;0;204;23;-3,70404;40,447649
+198;Point;1611;1;Calle Navarra, 1 ,;3;20;-3.7032776999999997 40.4535;0;205 - Metro Estrecho;0;205;23;-3,703278;40,4535
+199;Point;1612;1;Calle Marqués de Viana, 3 ,;1;22;-3.698915521426396 40.4607466894426;0;206 - Metro Tetuán;0;206;23;-3,698916;40,460747
+200;Point;1613;1;Calle Azucenas, 2 ,;0;19;-3.6973352000000004 40.4630443;0;207 - Plaza de la Remonta;0;207;19;-3,697335;40,463044
+201;Point;1614;1;Paseo de la Castellana, 216 ,;0;18;-3.6890611 40.4662811;0;208 - Intercambiador de Plaza de Castilla;0;208;18;-3,689061;40,466281
+202;Point;1615;1;Plaza de Castilla, 9 ,;1;22;-3.6887000000000003 40.4657;0;209 - Plaza de Castilla - Fundación Canal;0;209;23;-3,6887;40,4657
+203;Point;1616;1;Calle de las Tres Cruces,;23;4;-3.7027164000000004 40.4196518;1;210 - Calle de las Tres Cruces - Gran Vía;0;210;27;-3,702716;40,419652
+204;Point;1617;1;Calle de el Desengaño, 4 ,;15;8;-3.70239 40.42059;2;211 - Desengaño - Valverde;0;211;23;-3,70239;40,42059
+205;Point;1618;1;Glorieta Marqués de Vadillo, 9,;13;14;-3.7165910000000006 40.398247;2;212 - Metro Marqués de Vadillo;0;212;27;-3,716591;40,398247
+206;Point;1619;1;Calle de Antonio López, 129 ,;10;13;-3.7002247 40.3889918;2;213 - Glorieta de Cádiz;0;213;23;-3,700225;40,388992
+207;Point;1620;1;Calle Condesa de Venadito, 2 ,;23;1;-3.6569031 40.4434316;1;214 - Condesa de Venadito - Albacete;0;214;24;-3,656903;40,443432
+208;Point;1621;1;Calle Gutierre de Cetina, 77 ,;7;16;-3.6408092999999995 40.429588;0;215 - Gutierre de Cetina - Ascao;0;215;23;-3,640809;40,429588
+209;Point;1622;1;Plaza Puerta del Ángel, 3 ,;4;23;-3.72897 40.4141;0;216 - Plaza de Puerta del Ángel;0;216;27;-3,72897;40,4141
+210;Point;1623;1;Calle Pedro Rico, 4 ,;20;3;-3.6890757999999995 40.480884;1;217 - Hospital Universitario La Paz;0;217;23;-3,689076;40,480884
+211;Point;1624;1;Camino de Vinateros, 28 ,;6;17;-3.6572967 40.4105478;0;218 - Camino de los Vinateros A;0;218;23;-3,657297;40,410548
+212;Point;1625;1;Camino de los Vinateros, 108 ,;7;11;-3.6467337999999994 40.4083593;2;219 - Camino de los Vinateros B;0;219;18;-3,646734;40,408359
+213;Point;1626;1;Calle Arrollo de las Pilillas, 2 ,;14;10;-3.651384 40.406156;2;220 - Plaza del Encuentro;0;220;24;-3,651384;40,406156
+214;Point;1627;1;Calle Hacienda de Pavones, 148 ,;20;3;-3.6347444787322485 40.400492026660594;1;221 - Metro Pavones;0;221;23;-3,634744;40,400492
+215;Point;1628;1;Calle Eugenio Caxes, 14 ,;15;8;-3.7026789 40.3917871;2;222 - Eugenio Caxes - Antonio López;0;222;23;-3,702679;40,391787
+216;Point;1629;1;Paseo de la Ermita del Santo, 48 ,;10;17;-3.724576 40.406448;2;223 - Ermita del Santo;0;223;27;-3,724576;40,406448
+217;Point;1630;1;Calle Caramuel, 51 ,;3;24;-3.7287000000000003 40.409;0;224 - Parque de Caramuel;0;224;27;-3,7287;40,409
+218;Point;1631;1;Calle Sierra Toledana, 33 ,;10;14;-3.660345 40.402506;2;225 - Sierra Toledana - Doctor Lozano;0;225;24;-3,660345;40,402506
+219;Point;1632;1;Camino Valderribas, 94 ,;0;23;-3.6607768678037744 40.39901531507069;0;226 - Sierra Toledana - Camino de Valderribas;0;226;23;-3,660777;40,399015
+220;Point;1633;1;Calle Arrollo del Olivar, 3 ,;0;24;-3.665936242935637 40.39382977920336;0;227 - Arroyo del Olivar;0;227;24;-3,665936;40,39383
+221;Point;1634;1;Calle San Delfín, 10 ,;0;18;-3.7080429728445568 40.39440607959559;0;228 - San Delfín - Antonio López;0;228;18;-3,708043;40,394406
+222;Point;1635;1;Calle José del Hierro, 6 ,;0;23;-3.6486508 40.4369378;0;229 - Centro Deportivo Municipal Concepción;0;229;23;-3,648651;40,436938
+223;Point;1636;1;Calle Carlota O Neill, 30-32 ,;2;22;-3.6488254 40.4436792;0;230 - Carlota O´Neill - Agastia;0;230;24;-3,648825;40,443679
+224;Point;1637;1;Calle Derechos Humanos, 14 ,;9;15;-3.6557193 40.4398283;2;231 - Derechos Humanos - Verdaguer y García;0;231;24;-3,655719;40,439828
+225;Point;1638;1;Calle De José Maria Pereda, 1 ,;15;12;-3.6486169000000004 40.4327663;2;232 - José María de Pereda - Alcalá;0;232;27;-3,648617;40,432766
+226;Point;1639;1;Calle Marqués de Corbera, 12 ,;12;12;-3.6555789000000005 40.4229522;2;233 - El dragón de La Elipa;0;233;24;-3,655579;40,422952
+227;Point;1640;1;Avenida Marques de Corbera, 52 ,;8;16;-3.6510917000000003 40.4261278;2;234 - Metro La Elipa;0;234;24;-3,651092;40,426128
+228;Point;1641;1;Calle del Sodio, 1B ,;11;12;-3.691076 40.389041;2;235 - Sodio - Embajadores;0;235;23;-3,691076;40,389041
+229;Point;1642;1;Paseo Imperial, 31 ,;21;6;-3.7170785 40.4075794;1;236 - Paseo Imperial;0;236;27;-3,717078;40,407579
+230;Point;1644;1;CalleSan Germán, 5 ,;22;2;-3.6932611 40.4561825;1;238 - San Germán, 5;0;238;24;-3,693261;40,456182
+231;Point;1645;1;Calle de Francos Rodríguez, 62 ,;3;20;-3.7078331000000007 40.4567132;0;239 - Francos Rodríguez - José Calvo;0;239;23;-3,707833;40,456713
+232;Point;1646;1;Avenida De Brasilia, 9 ,;4;19;-3.66096 40.43666;0;240 - Brasilia - Parque Breogán;0;240;23;-3,66096;40,43666
+233;Point;1647;1;Calle Camilo José Cela, 27,;2;21;-3.6677899999999997 40.4378;0;241 - Camilo José Cela;0;241;23;-3,66779;40,4378
+234;Point;1648;1;Avenida De Bruselas, 56 ,;14;9;-3.6629280000000004 40.439513;2;242 - Metro Parque de las Avenidas;0;242;23;-3,662928;40,439513
+235;Point;1649;1;Calle Cartagena, 37,;3;20;-3.6701200000000003 40.43503;0;243 - Cartagena;0;243;23;-3,67012;40,43503
+236;Point;1650;1;Calle Isaac Peral, 42 ,;10;13;-3.71757 40.44003;2;244 - Hospital Clínico San Carlos;0;244;23;-3,71757;40,44003
+237;Point;1651;1;Calle Galileo, 63 ,;2;22;-3.7101381 40.4363637;0;245 - Galileo - Donoso Cortés;0;245;24;-3,710138;40,436364
+238;Point;1652;1;Calle de Santa Engracia, 85-87 ,;23;4;-3.699248472404664 40.43595788149785;1;246 - Metro Iglesia;0;246;27;-3,699248;40,435958
+239;Point;1653;1;Calle de Zurbano, 90 ,;18;5;-3.69281 40.43837;1;247 - Zurbano - José Abascal;0;247;23;-3,69281;40,43837
+240;Point;1654;1;Calle de Sinesio Delgado, 2 ,;22;5;-3.6879973 40.4743209;1;248 - Sinesio Delgado - Cuatro Torres;0;248;27;-3,687997;40,474321
+241;Point;1655;1;Paseo de la Castellana, 298 ,;23;1;-3.6853186000000004 40.4795018;1;249 - Castellana - Cuatro Torres;0;249;24;-3,685319;40,479502
+242;Point;1656;1;Calle Serrano, 111 ,;16;11;-3.6858096 40.4406491;2;250 - Serrano - CSIC;0;250;27;-3,68581;40,440649
+243;Point;1657;1;Calle Santa Hortensia, 31 ,;2;21;-3.66683 40.44421;0;251 - Santa Hortensia - Corazón de María;0;251;23;-3,66683;40,44421
+244;Point;1658;1;Calle Agustín de Foxá, 40 ,;1;22;-3.6839695 40.4717403;0;252 - Est. tren Chamartín - Clara Campoamor;0;252;23;-3,683969;40,47174
+245;Point;1659;1;Calle del Doctor Fleming, 7 ,;19;0;-3.6884400000000004 40.45546;1;253 - Doctor Fleming - Estadio S. Bernabéu;0;253;19;-3,68844;40,45546
+246;Point;1660;1;Avenida De Pio XII, 3 ,;6;17;-3.6765599999999994 40.461;0;254 - Plaza del Perú;0;254;23;-3,67656;40,461
+247;Point;1661;1;Calle General López pozas, 2 ,;9;14;-3.685292 40.46361;2;255 - General López Pozas - Apolonio Morales;0;255;23;-3,685292;40,46361
+248;Point;1662;1;Calle Beatriz de Bobadilla, 4 ,;4;19;-3.7138299999999997 40.44635;0;256 - Reina Victoria - Beatriz de Bobadilla;0;256;23;-3,71383;40,44635
+249;Point;1663;1;Avenida Juan Herrera, 1 ,;22;1;-3.7305269999999995 40.438873;1;257 - Ciudad Universitaria - INEF;0;257;23;-3,730527;40,438873
+250;Point;1664;1;Ciudad Universitaria, 1 ,;24;0;-3.7269389999999993 40.444311;1;258 - Metro Ciudad Universitaria A;0;258;24;-3,726939;40,444311
+251;Point;1665;1;Ciudad Universitaria, 2 ,;19;0;-3.726752004160312 40.44270528449462;1;259 - Metro Ciudad Universitaria B;0;259;19;-3,726752;40,442705
+252;Point;1666;1;Facultad de Biología,;20;4;-3.7272945 40.4483322;1;260 - Ciudad Universitaria - Fac. de Biología;0;260;24;-3,727295;40,448332
+253;Point;1667;1;Avenida Complutense, 21 ,;23;0;-3.7296756 40.4505516;1;261 - Ciudad Universitaria - Facultad Derecho;0;261;23;-3,729676;40,450552
+254;Point;1951;1;Calle Amparo Usera, 46 ,;22;1;-3.7061449 40.38707469;1;384 - Metro Usera;0;384;23;-3,706145;40,387075
+255;Point;1952;1;Calle Doctor Tolosa Latour, 7 ,;13;10;-3.7004147799999996 40.37837955;2;388 - Estación tren - Hospital 12 de Octubre;0;388;23;-3,700415;40,37838
+256;Point;1953;1;Calle Campotejar , 25,;12;11;-3.7038867099999995 40.36721104;2;385 - Estación de tren Orcasitas;0;385;23;-3,703887;40,367211
+257;Point;1954;1;Calle Isabelita Usera, 44 ,;10;13;-3.7077397199999997 40.38272256;2;387 - Isabelita Usera, 44;0;387;23;-3,70774;40,382723
+258;Point;1955;1;Avenida de la Perla, 35,;20;3;-3.6939702000000003 40.3700017;1;383 - Metro San Fermín-Orcasur;0;383;23;-3,69397;40,370002
+259;Point;1956;1;Avenida de los Poblados, 130,;11;12;-3.7133152099999998 40.37347443;2;386 - Avenida de los Poblados, 130;0;386;23;-3,713315;40,373474
+260;Point;1957;1;Avenida Ramon y Cajal, 101,;2;21;-3.662016 40.453493;0;476 - Metro Avenida de la Paz;0;476;23;-3,662016;40,453493
+261;Point;1958;1;Calle de los Misterios, 2 ,;4;19;-3.6389040000000006 40.438278;0;477 - Metro Ciudad Lineal;0;477;23;-3,638904;40,438278
+262;Point;1959;1;Calle José del Hierro esquina con Arturo Soria ,;1;22;-3.6410572000000005 40.44152084;0;478 - José del Hierro - Misterios;0;478;23;-3,641057;40,441521
+263;Point;1960;1;Angel Muñoz, 1,;15;12;-3.655837131282797 40.45478362295884;2;479 - Metro Arturo Soria;0;479;27;-3,655837;40,454784
+264;Point;1961;1;Calle Vicente Muzas, 13 ,;8;15;-3.6604425500000004 40.45903315;2;480 - Vicente Muzas - Arturo Soria;0;480;23;-3,660443;40,459033
+265;Point;1962;1;Diego Ayllon, 2,;4;19;-3.6521906299999998 40.45117857;0;481 - Diego Ayllón - Arturo Soria;0;481;23;-3,652191;40,451179
+266;Point;1963;1;Calle de Velero, 16 ,Comunidad de Madrid España;2;25;-3.5940999999999996 40.453;0;554 - Metro El Capricho;0;554;27;-3,5941;40,453
+267;Point;1964;1;Avda. de Burgos, 17 ,;8;15;-3.6757900294303902 40.473593878889254;2;284 - Avenida de Burgos, 17;0;284;23;-3,67579;40,473594
+268;Point;1965;1;Campuzano, 1,;3;20;-3.6423386 40.4356873;0;482 - Metro Pueblo Nuevo;0;482;23;-3,642339;40,435687
+269;Point;1966;1;Calle Marcelino Álvarez, 31 ,;10;13;-3.6534324 40.4297428;2;483 - Marcelino Álvarez - Daroca;0;483;23;-3,653432;40,429743
+270;Point;1967;1;Calle Luis Campos, 3,;18;5;-3.6323890000000003 40.42893071;1;484 - Metro García Noblejas;0;484;23;-3,632389;40,428931
+271;Point;1968;1;Calle carretera de canillas, 17 ,;11;12;-3.65089253 40.4628701;2;523 - Carretera de Canillas;0;523;23;-3,650893;40,46287
+272;Point;1969;1;Calle Santa María Magdalena, 15 ,;19;4;-3.6706 40.4631;1;285 - Santa María Magdalena - La Drácena;0;285;23;-3,6706;40,4631
+273;Point;1970;1;Plaza Duque de Pastrana, 2 ,;7;16;-3.6778999999999997 40.4679;0;286 - Plaza Duque de Pastrana;0;286;23;-3,6779;40,4679
+274;Point;1971;1;Calle de la Yuca, 1,;12;11;-3.6762 40.4765;2;287 - Metro Bambú;0;287;23;-3,6762;40,4765
+275;Point;1972;1;Calle Caídos de la División Azul, 28 ,;18;5;-3.6723 40.4664;1;288 - Caídos de la División Azul;0;288;23;-3,6723;40,4664
+276;Point;1973;1;Glorieta de Luís Rosales (esquina con López De Hoyos) ,;9;14;-3.6542999999999997 40.4673;2;524 - Glorieta Luis Rosales;0;524;23;-3,6543;40,4673
+277;Point;1974;1;Fuente Carrantona , 33,;4;23;-3.63192261 40.4070216;0;460 - Fuente Carrantona - Doctor García Tapia;0;460;27;-3,631923;40,407022
+278;Point;1975;1;Luis de Hoyos Sainz, 198,;6;17;-3.6292746499999997 40.400094;0;455 - Luis de Hoyos Sainz,  198;0;455;23;-3,629275;40,400094
+279;Point;1976;1;Encomienda de Palacios, 8,;4;19;-3.6464000000000003 40.4005;0;456 - Encomienda de Palacios, 8;0;456;23;-3,6464;40,4005
+280;Point;1977;1;Calle Ramirez Tomé, 33 ,;2;25;-3.645973936176305 40.38875618103898;0;416 - Ramírez Tomé;0;416;27;-3,645974;40,388756
+281;Point;1978;1;Calle Romeo y Julieta, 12 ,;10;17;-3.6621756300000006 40.37873799;2;417 - Romeo y Julieta, 12;0;417;27;-3,662176;40,378738
+282;Point;1979;1;Calle Puerto de Arlabán, 83 ,;3;24;-3.6674999999999995 40.3864;0;418 - Puerto de Arlabán - San Diego;0;418;27;-3,6675;40,3864
+283;Point;1980;1;Calle Cronos, 57 ,;26;1;-3.6194333 40.4384695;1;496 - Cronos;0;496;27;-3,619433;40,438469
+284;Point;1981;1;Calle Hermanos García Noblejas, 137 ,;8;15;-3.6241999999999996 40.4191;2;501 - Metro Alsacia;0;501;23;-3,6242;40,4191
+285;Point;1982;1;Calle Alcalá, 546,;12;15;-3.6178316999999995 40.44313349999999;2;498 - Metro Torre Arias;0;498;27;-3,617832;40,443134
+286;Point;1983;1;Calle Alcala, 590,;1;22;-3.6121996 40.4466561;0;499 - Biblioteca Pública Municipal Canillejas;0;499;23;-3,6122;40,446656
+287;Point;1984;1;Calle Aracne, 17,;2;25;-3.5895 40.445;0;500 - Aracne, 17;0;500;27;-3,5895;40,445
+288;Point;1985;1;Calle Alcalá, 506,;22;1;-3.6274 40.4407;1;497 - Metro Suances;0;497;23;-3,6274;40,4407
+289;Point;1986;1;Calle Puerto Serrano, 1 enfrente del nº 6 ,;2;21;-3.6884609999999998 40.385412;0;265 - Puerto Serrano - Embajadores;0;265;23;-3,688461;40,385412
+290;Point;1987;1;Calle Comandante Fontanés, 1 ,;5;18;-3.7211209 40.3951415;0;351 - Comandante Fontanes - General Ricardos;0;351;23;-3,721121;40,395142
+291;Point;1988;1;Calle Ervigio, 22 ,;9;14;-3.7315 40.3947;2;350 - Ervigio - Amalarico;0;350;23;-3,7315;40,3947
+292;Point;1989;1;Calle Julio Merino, 5 ,;6;17;-3.7032 40.3831;0;389 - Julio Merino - Pilarica;0;389;23;-3,7032;40,3831
+293;Point;1990;1;Calle avena, 10 ,;15;8;-3.7159000000000004 40.3773;2;390 - Avena - Mijo;0;390;23;-3,7159;40,3773
+294;Point;1991;1;Avenida de Cantabria, 6,;11;13;-3.5877220100000002 40.45462514;2;556 - Cantabria, 6;0;556;24;-3,587722;40,454625
+295;Point;1992;1;Paseo de la Alameda de Osuna, 48,;13;14;-3.5981217100000005 40.45476837;2;555 - Parque del Capricho;0;555;27;-3,598122;40,454768
+296;Point;1993;1;Calle Francisco Villaespesa, 37 ,;8;15;-3.6464629 40.4293263;2;485 - Francisco Villaespesa - Ledesma;0;485;23;-3,646463;40,429326
+297;Point;1994;1;Calle Arzobispo Morcillo, 6,;9;18;-3.6938 40.4815;2;570 - Uni. Autónoma Madrid - Facul. Medicina;0;570;27;-3,6938;40,4815
+298;Point;1995;1;Calle Hernani, 59 ,;23;0;-3.6972000000000005 40.4481;1;295 - Hernani - Edgar Neville;0;295;23;-3,6972;40,4481
+299;Point;1996;1;Calle de la Costa Verde, 25-23 ,;8;15;-3.696862 40.469477;2;296 - Costa Verde;0;296;23;-3,696862;40,469477
+300;Point;1997;1;Calle Simancas, 2,;2;21;-3.6951129800000007 40.4655;0;297 - Simancas - Pinos Alta;0;297;23;-3,695113;40,4655
+301;Point;1998;1;Calle Gallur, 5,;2;21;-3.7359 40.3984;0;323 - Centro Deportivo Municipal Gallur;0;323;23;-3,7359;40,3984
+302;Point;1999;1;Calle de las Higueras, 49,;17;6;-3.7450961521148636 40.40457132475174;1;324 - Metro Lucero;0;324;23;-3,745096;40,404571
+303;Point;2000;1;Hacienda de Pavones, 148,;5;18;-3.6419 40.4026;0;457 - Hacienda de Pavones, 148;0;457;23;-3,6419;40,4026
+304;Point;2001;1;Calle de la Maquinilla, 8-10 ,;17;7;-3.6364842400000006 40.38078101;1;432 - Maquinilla - Tranvía Blanco;0;432;24;-3,636484;40,380781
+305;Point;2002;1;Calle Marqués de Viana, 85 ,;0;19;-3.704478 40.463643;0;298 - Marques de Viana - Bellver;0;298;19;-3,704478;40,463643
+306;Point;2003;1;Calle Sierra de Guadalupe, 11 ,;4;22;-3.6237645700000005 40.38135158;0;437 - Metro Sierra de Guadalupe;0;437;27;-3,623765;40,381352
+307;Point;2004;1;Calle de la Verdad, 29,;18;5;-3.7171600000000002 40.391787;1;358 - Verdad;0;358;23;-3,71716;40,391787
+308;Point;2005;1;Calle Algorta, 2,;14;9;-3.72745169 40.39162261454714;2;352 - Algorta  - General Ricardos;0;352;23;-3,727452;40,391623
+309;Point;2006;1;Fernando Gabriel, 2 ,;1;23;-3.6394989099999995 40.42466356;0;492 - Metro La Almudena;0;492;24;-3,639499;40,424664
+310;Point;2007;1;Paseo de los Jesuitas, 69 ,;2;25;-3.7350999999999996 40.408;0;322 - Ps. Jesuitas - Mercado Alto Extremadura;0;322;27;-3,7351;40,408
+311;Point;2008;1;Avenida Córdoba, enfrente nº 21 ,;21;2;-3.697856 40.38268;1;392 - Metro Almendrales;0;392;23;-3,697856;40,38268
+312;Point;2009;1;Calle Candilejas, 5 ,;19;4;-3.6630038299999996 40.38263599;1;420 - Candilejas, 5;0;420;23;-3,663004;40,382636
+313;Point;2010;1;Calle Puerto de Balbarán, 10,;17;10;-3.655868 40.3762374;2;419 - Estación de tren de El Pozo;0;419;27;-3,655868;40,376237
+314;Point;2011;1;Calle Cabeza de Mesada, 5,;15;12;-3.6294129999999996 40.37647902;2;439 - Cabeza Mesada - Parque de Valdeperdices;0;439;27;-3,629413;40,376479
+315;Point;2012;1;Avenida de Orovilla, 53,;23;4;-3.6895 40.3587;1;398 - Orovilla - Felicidad;0;398;27;-3,6895;40,3587
+316;Point;2013;1;Avenida Monforte de Lemos, 13 ,;16;7;-3.6964999999999995 40.4795;2;569 - C. Deportivo Mpal. Vicente del Bosque;0;569;23;-3,6965;40,4795
+317;Point;2014;1;Calle Melchor Fernandez Almagro, 80,;16;7;-3.710326199999999 40.4756475;2;571 - Melchor Fernández Almagro - Plaza Tuy;0;571;23;-3,710326;40,475648
+318;Point;2015;1;Calle Valle de Mena, 5,;2;21;-3.7152724500000005 40.46962735;0;304 - Valle de Mena, 5;0;304;23;-3,715272;40,469627
+319;Point;2017;1;Calle del Cobre, 6 ,;17;6;-3.689031463575172 40.39338327980599;1;268 - Metro Arganzuela-Planetario;0;268;23;-3,689031;40,393383
+320;Point;2019;1;Paseo de la Florida, 37,;10;13;-3.72317757 40.42276114;2;305 - Intercambiador de Príncipe Pío B;0;305;23;-3,723178;40,422761
+321;Point;2020;1;Avenida Del Santo Ángel de la Guarda, 6 ,;2;21;-3.7121965 40.4617959;0;306 - Centro Deportivo Mpal Fernando Martín;0;306;23;-3,712197;40,461796
+322;Point;2021;1;Calle Serrano Galvache 1,;18;5;-3.6679379 40.471382;1;486 - Serrano Galvache - Arturo Soria;0;486;23;-3,667938;40,471382
+323;Point;2022;1;Calle de Puertollano, 4-2 ,;18;5;-3.6237372 40.4425157;1;502 - Puertollano - Veinticinco de Septiembre;0;502;23;-3,623737;40,442516
+324;Point;2023;1;Calle Gallegos 27,;16;11;-3.6102747000000006 40.40240379;2;462 - Gallegos - Lavadero Viejo;0;462;27;-3,610275;40,402404
+325;Point;2024;1;Calle Arroyo del Olivar, 63,;2;22;-3.653269 40.388435;0;421 - Arroyo del Olivar - Buenos Aires;0;421;24;-3,653269;40,388435
+326;Point;2025;1;Calle Manuel Uribe, 1,;9;14;-3.66503419 40.46434131;2;487 - Manuel Uribe - Arturo Soria;0;487;23;-3,665034;40,464341
+327;Point;2026;1;422 - Travesia de Palomeras, 7,;1;23;-3.6705179 40.39017003;0;422 - Travesia de Palomeras, 7;0;422;24;-3,670518;40,39017
+328;Point;2027;1;Avenida de Entrevias, 56,;11;13;-3.6685501300000003 40.38138801;2;423 - Estación de tren Asamblea de Madrid;0;423;24;-3,66855;40,381388
+329;Point;2028;1;Camino de Valderribas, 47,;17;7;-3.663958 40.4002231;1;424 - Camino de Valderribas, 47;0;424;24;-3,663958;40,400223
+330;Point;2029;1;Calle Ramón Pérez de Ayala, 45 ,;5;19;-3.65381017 40.40003472;0;425 - Ramón Perez Ayala - Pque. Cerro Tío Pío;0;425;24;-3,65381;40,400035
+331;Point;2030;1;Calle Humanes, 3,;18;6;-3.64932678 40.3952121;1;426 - Humanes - Benjamín Palencia;0;426;24;-3,649327;40,395212
+332;Point;2031;1;Calle de los Andaluces, 2,;13;11;-3.64148304 40.3914244;2;427 - Andaluces, 2;0;427;24;-3,641483;40,391424
+333;Point;2032;1;Avenida La Albufera, 136 ,;12;12;-3.6570999999999994 40.3919;2;428 - Estadio de Vallecas;0;428;24;-3,6571;40,3919
+334;Point;2033;1;Calle Manuel Noya, 29 ,;18;6;-3.7117979 40.3853787;1;393 - Manuel Noya , 29;0;393;24;-3,711798;40,385379
+335;Point;2034;1;Serrano Galvache, 56,;17;7;-3.67144504 40.47675257;1;489 - Serrano Galvache - Yerma;0;489;24;-3,671445;40,476753
+336;Point;2035;1;Calle Hermanos García Nobleza (esquina Plaza del Reloj Solar) ,;8;16;-3.62888094 40.42427523;2;490 - Hnos.García Noblejas-FcoLargo Caballero;0;490;24;-3,628881;40,424275
+337;Point;2036;1;Calle Ricardo Ortiz, 33,;6;18;-3.6579643900000005 40.42657032;0;488 - Ricardo Ortiz, 33;0;488;24;-3,657964;40,42657
+338;Point;2037;1;Calle Bacares, 20 ,;10;14;-3.6626902900000005 40.47675499;2;525 - Metro Manoteras;0;525;24;-3,66269;40,476755
+339;Point;2038;1;Calle de San Roman del Valle, 20,;8;16;-3.623466935545257 40.42309928573645;2;504 - Biblioteca Pública Municipal San Blas;0;504;24;-3,623467;40,423099
+340;Point;2039;1;Calle Zaldivar, 19 ,;21;3;-3.62650373 40.43209033;1;503 - Zaldívar - Valdecanillas;0;503;24;-3,626504;40,43209
+341;Point;2040;1;Calle Arroyo Bueno, 53 ,;4;23;-3.7109850000000004 40.349111;0;404 - Junta Municipal Distrito de Villaverde;0;404;27;-3,710985;40,349111
+342;Point;2041;1;Calle Mercedes Arteaga, 21,;12;12;-3.7222175704754585 40.39251608002938;2;353 - Mercedes Arteaga, 21;0;353;24;-3,722218;40,392516
+343;Point;2042;1;Calle de la Vía, 56 ,;11;13;-3.7182338 40.3854641;2;355 - Intercambiador de Plaza Elíptica;0;355;24;-3,718234;40,385464
+344;Point;2043;1;Calle Francisco Tejada, 1 ,;13;11;-3.739615781020349 40.40937950320982;2;326 - Metro Alto de Extremadura;0;326;24;-3,739616;40,40938
+345;Point;2044;1;Calle El Greco, 27 ,;4;20;-3.7472615299999994 40.40741199;0;327 - El Greco, 27 - C. Cultural El Greco;0;327;24;-3,747262;40,407412
+346;Point;2045;1;Calle del Arroyo Belincoso, 26,;8;16;-3.6525660400000004 40.40991083;2;458 - Metro Vinateros;0;458;24;-3,652566;40,409911
+347;Point;2046;1;Avenida Moratalaz, 33 ,;10;14;-3.66000272 40.40750626;2;459 - Moratalaz;0;459;24;-3,660003;40,407506
+348;Point;2047;1;Corregidor licenciado Antonio de Mena, sn,;11;13;-3.6408 40.4099;2;461 - Plaza Corregidor Ldo. Antonio de Mena;0;461;24;-3,6408;40,4099
+349;Point;2048;1;Calle Portalegre, 9 ,;22;2;-3.72364769 40.38937686;1;356 - Portalegre - Tinamús;0;356;24;-3,723648;40,389377
+350;Point;2049;1;Avenida Monforte de Lemos, 123,;14;10;-3.70997335 40.47810429;2;572 - Junta Mpal. Dtto. Fuencarral - El Pardo;0;572;24;-3,709973;40,478104
+351;Point;2050;1;Calle Melchor Fernandez Almagro, 16,;8;16;-3.69962571 40.47772776;2;573 - Melchor Fernández Almagro - Villa Marín;0;573;24;-3,699626;40,477728
+352;Point;2051;1;Ginzo de Limia, 36,;10;14;-3.703526 40.47817;2;575 - Metro Barrio del Pilar;0;575;24;-3,703526;40,47817
+353;Point;2052;1;Calle Chantada, 14,;8;16;-3.7106779999999997 40.472695;2;574 - Chantada;0;574;24;-3,710678;40,472695
+354;Point;2053;1;Paseo de Federico García Lorca, 2 ,;15;3;-3.62144691 40.3795035;1;440 - Metro Villa de Vallecas;0;440;18;-3,621447;40,379503
+355;Point;2054;1;Calle Seis (esquina con Avenida Quinta),;2;22;-3.5965029500000005 40.44845033;0;507 - Seis - Sexta;0;507;24;-3,596503;40,44845
+356;Point;2055;1;Calle Rosario Pino, 17 ,;5;19;-3.6919324599999994 40.46204955;0;299 - Rosario Pino - Joan Maragall;0;299;24;-3,691932;40,46205
+357;Point;2056;1;Calle Capitan Blanco Argibay, 112 ,;1;23;-3.7031881999999996 40.4667435;0;300 - Capitan Blanco Argibay - Alfalfa;0;300;24;-3,703188;40,466743
+358;Point;2057;1;Calle Muller, 34 ,;1;23;-3.69837565 40.46518187;0;301 - Muller - Capitan Blanco Argibay;0;301;24;-3,698376;40,465182
+359;Point;2059;1;Gran Avenida, 27,;16;8;-3.70760649 40.36997711;2;396 - Gran Avenida, 27;0;396;24;-3,707606;40,369977
+360;Point;2060;1;Calle Periana, 24 ,;0;24;-3.6876580500000005 40.36672327;0;394 - Periana, 24;0;394;24;-3,687658;40,366723
+361;Point;2061;1;Calle Moreja, 30 ,;21;3;-3.6983803799999997 40.36809336;1;397 - Centro Deportivo Municipal Orcasur;0;397;24;-3,69838;40,368093
+362;Point;2062;1;Calle Bohemios, 1 ,;10;14;-3.6939009999999994 40.356536;2;399 - Bohemios - Gigantes y Cabezudos;0;399;24;-3,693901;40,356536
+363;Point;2063;1;Calle Torremolinos, 1 ,;9;15;-3.6417899899999995 40.38500948;2;430 - Torremolinos - Rafael Alberti;0;430;24;-3,64179;40,385009
+364;Point;2064;1;Calle Ariel, 11 ,;10;14;-3.6797017663398797 40.393023802369754;2;269 - Ariel, 7 - Parque Enrique Tierno Galván;0;269;24;-3,679702;40,393024
+365;Point;2065;1;Calle Esteban Collantes 63,;16;8;-3.6376629999999994 40.432883;2;491 - Esteban Collantes - José Arcones Gil;0;491;24;-3,637663;40,432883
+366;Point;2066;1;Calle Velacho Alto, 4-16 ,;6;18;-3.6592688399999997 40.47250314;0;527 - Velacho Alto - Trinquete;0;527;24;-3,659269;40,472503
+367;Point;2067;1;Plaza del Liceo (esquina con Calle Silvano) ,;6;18;-3.64441924 40.45754368;0;526 - Plaza del Liceo;0;526;24;-3,644419;40,457544
+368;Point;2068;1;Calle Estación de Canfrac, 18 ,;13;11;-3.6634 40.3969;2;431 - Puerto Canfranc, 18;0;431;24;-3,6634;40,3969
+369;Point;2069;1;Calle Carlos Martín Álvarez, 38 ,;9;14;-3.6635 40.3895;2;429 - Carlos M. Alvarez - Javier de Miguel;0;429;23;-3,6635;40,3895
+370;Point;2070;1;Calle del Sorbe , 20,;9;15;-3.7132091699999994 40.3898701;2;357 - Sorbe - Baleares;0;357;24;-3,713209;40,38987
+371;Point;2071;1;Calle Teresa López Valcarcel (esquina calle Teniente Coronel Noreña),;9;15;-3.69328771 40.38862908;2;270 - Teresa L. Valcárcel - Tte. Cnel. Noreña;0;270;24;-3,693288;40,388629
+372;Point;2072;1;Calle Arturo Soria (esquina con calle Jazmín),;10;13;-3.6684167 40.47636724;2;493 - Arturo Soria - San Luis;0;493;23;-3,668417;40,476367
+373;Point;2073;1;Calle Villalobos, 28 ,;14;10;-3.6507603700000004 40.38161669;2;433 - Villalobos, 28;0;433;24;-3,65076;40,381617
+374;Point;2074;1;Calle Alan Turing, 2 ,;17;6;-3.62713659 40.3901675;1;436 - Campus Sur UPM;0;436;23;-3,627137;40,390167
+375;Point;2075;1;Calle Charleroi, 1 ,;10;14;-3.6321937200000005 40.38191654;2;434 - Charleroi - Cocherón de la Villa;0;434;24;-3,632194;40,381917
+376;Point;2076;1;Calle Albarracin, sn,;23;1;-3.6325164100000005 40.43397327;1;506 - Albarracín - Julián Camarillo;0;506;24;-3,632516;40,433973
+377;Point;2077;1;Calle Castillo de Ucles, 37,;16;8;-3.62306578 40.4315255;2;505 - Castillo de Uclés, 37;0;505;24;-3,623066;40,431525
+378;Point;2078;1;Calle San Claudio, 150 ,;11;13;-3.63953994 40.38902883;2;435 - San Claudio;0;435;24;-3,63954;40,389029
+379;Point;2079;0;Calle Alcala  (acera de tránsito peatonal),;0;0;-3.6096010400000003 40.44910362;3;508-old - Alcala  (acera de tránsito peatonal);1;508-old;0;-3,609601;40,449104
+380;Point;2080;1;Paseo de la Dirección, 330, (enfrente) ,;1;23;-3.703955 40.4702445774;0;302 - Ps. Dirección B - Pque A. Rguez Sahagún;0;302;24;-3,703955;40,470245
+381;Point;2081;1;Calle Casalarreina, 18,;11;13;-3.612318798052458 40.40939089860396;2;463 - Casalarreina, 18;0;463;24;-3,612319;40,409391
+382;Point;2082;1;Avenida de Daroca 321,;13;11;-3.61283416 40.40634029;2;464 - Univ. Rey Juan Carlos - Campus Madrid;0;464;24;-3,612834;40,40634
+383;Point;2083;1;Paseo de los Gigantes y Cabezudos, 4,;13;11;-3.69399661 40.36064659;2;400 - Metro Ciudad de los Ángeles;0;400;24;-3,693997;40,360647
+384;Point;2084;1;Calle San Restituto, 74,;9;15;-3.71693008 40.46588016;2;307 - Metro Valdezarza;0;307;24;-3,71693;40,46588
+385;Point;2085;1;Paseo de la Dirección, 161,;14;10;-3.7080850848120277 40.46778929738312;2;303 - Ps. Dirección A - Pque A. Rguez Sahagún;0;303;24;-3,708085;40,467789
+386;Point;2086;1;Avenida El Ferrol, 18,;4;20;-3.70510525 40.47431313;0;576 - El Ferrol, 18;0;576;24;-3,705105;40,474313
+387;Point;2087;1;Calle Aurora boreal, 19 ,;12;12;-3.70566914 40.47899993;2;577 - Monforte de Lemos - Plaza de Mondariz;0;577;24;-3,705669;40,479
+388;Point;2088;1;Calle Ofelia Nieto, 75,;0;24;-3.7087339999999998 40.462051;0;309 - Ofelia Nieto - Villaamil;0;309;24;-3,708734;40,462051
+389;Point;2089;1;Calle María Auxiliadora, 1 ,;2;22;-3.7134614699999995 40.45772941;0;308 - María Auxiliadora - Francos Rodríguez;0;308;24;-3,713461;40,457729
+390;Point;2090;1;Avenida de Guadalajara, 101,;12;12;-3.6134619899999993 40.42218968;2;510 - Metro Avenida de Guadalajara;0;510;24;-3,613462;40,42219
+391;Point;2091;1;Calle Aquitania, 31,;3;24;-3.61726728 40.41912347;0;511 - Aquitania 31;0;511;27;-3,617267;40,419123
+392;Point;2092;1;Calle de los Aparejadores, 24,;9;15;-3.61537023 40.42667885;2;512 - Semilla - Aparejadores;0;512;24;-3,61537;40,426679
+393;Point;2093;1;Avenida de Niza, 9,;10;17;-3.6064541399999994 40.4271211;2;513 - Centro Deportivo Mpal. Pepu Hernández;0;513;27;-3,606454;40,427121
+394;Point;2094;1;Calle Maria Sevilla Diago, 5,;3;21;-3.6109507700000005 40.43283006;0;514 - María Sevilla Diago;0;514;24;-3,610951;40,43283
+395;Point;2095;1;Avenida de Hellin, 13,;9;15;-3.61579967 40.43091667;2;515 - Avenida de Hellin, 13;0;515;24;-3,6158;40,430917
+396;Point;2096;1;Calle de El Toboso, 115,;11;12;-3.7363397 40.3929901;2;359 - El Toboso - Zaida;0;359;23;-3,73634;40,39299
+397;Point;2097;1;Avenida Nuestra Señora de Fatima, 34,;7;16;-3.7470882000000003 40.3840155;0;360 - Ntra. Sra. Fátima - Ntra. Sra. de Luz;0;360;23;-3,747088;40,384015
+398;Point;2098;1;Avenida de Abrantes, 106 ,;16;7;-3.73266666 40.37734672;2;361 - Metro Pan Bendito;0;361;23;-3,732667;40,377347
+399;Point;2099;1;Avenida Santa Eugenia,1 ,;14;10;-3.6094815299999996 40.38600753;2;441 - Estación de tren de Santa Eugenia;0;441;24;-3,609482;40,386008
+400;Point;2100;1;Avenida de Santa Eugenia con Calle sauzal, 1 ,;10;17;-3.60463 40.38305936;2;442 - Santa Eugenia - Zazuar;0;442;27;-3,60463;40,383059
+401;Point;2101;1;Calle Fuentespina, 33,;10;14;-3.6072475500000003 40.37941487;2;443 - Fuentespina, 33;0;443;24;-3,607248;40,379415
+402;Point;2102;1;Calle Hilario Herránz Establos , 36,;18;9;-3.7266379999999995 40.372839;2;362 - Hilario Herranz Establos, 36;0;362;27;-3,726638;40,372839
+403;Point;2103;1;Calle Rioja, 13,;8;16;-3.5881514300000004 40.45746674;2;557 - Metro Alameda de Osuna;0;557;24;-3,588151;40,457467
+404;Point;2104;1;Calle Francisco Suárez, 28 ,;8;15;-3.6799441599999994 40.46437817;2;290 - Francisco Suárez - Paseo de La Habana;0;290;23;-3,679944;40,464378
+405;Point;2105;1;Calle López de Hoyos, 478,;12;11;-3.649843 40.47175;2;529 - Lopez de Hoyos , 478;0;529;23;-3,649843;40,47175
+406;Point;2106;1;Calle de los Emigrantes, 15,;21;6;-3.6378834900000006 40.4685745;1;530 - Metro Mar de Cristal;0;530;27;-3,637883;40,468575
+407;Point;2107;1;Calle de Santa Virgilia, 6,;0;23;-3.6450740999999995 40.4768782;0;531 - Metro Parque de Santa María;0;531;23;-3,645074;40,476878
+408;Point;2109;1;Avenida de San Luis, 23,;3;20;-3.6551145499999995 40.47148748;0;533 - San Luis, 23;0;533;23;-3,655115;40,471487
+409;Point;2110;1;Calle Serrano nº 32,;13;6;-3.687807 40.424924;2;106A - Plaza de Colón A;0;106A;19;-3,687807;40,424924
+410;Point;2111;1;Calle de la Isla Graciosa, 2,;8;16;-3.6862657 40.49262243;2;582 - Isla Graciosa - Isla de Java;0;582;24;-3,686266;40,492622
+411;Point;2112;1;Calle de Angel Mugica, 3,;19;5;-3.68529048 40.48468297;1;583 - Ángel Múgica - Marcos de Orueta;0;583;24;-3,68529;40,484683
+412;Point;2113;1;Avenida Monasterio de Silos, 63A,;1;23;-3.6960334500000003 40.50501029;0;584 - Metro Montecarmelo;0;584;24;-3,696033;40,50501
+413;Point;2114;1;Calle Molins de Rey, 8,;3;21;-3.69374813 40.4954662;0;585 - Metro Fuencarral;0;585;24;-3,693748;40,495466
+414;Point;2115;1;Calle Caldas de Estrach, 14,;2;21;-3.6974724999999995 40.4963916;0;586 - Caldas Estrach - San Cugat del Vallés;0;586;23;-3,697472;40,496392
+415;Point;2116;1;Calle Mesena, 102 ,;5;19;-3.6634063399999994 40.46772408;0;534 - Mesena, 102;0;534;24;-3,663406;40,467724
+416;Point;2117;1;Calle de las Delicias, 41 ,;7;12;-3.6909183100000003 40.40381914;2;273 - Delicias - General Lacy;0;273;19;-3,690918;40,403819
+417;Point;2118;1;Calle Costa Brava, 14,;26;1;-3.7086574400000005 40.49892399;1;587 - Metro Paco de Lucía;0;587;27;-3,708657;40,498924
+418;Point;2119;1;Av. del Campo de Calatrava, 17,;2;25;-3.69112254 40.50052161;0;588 - Campo Calatrava - Rda Ingenioso Hidalgo;0;588;27;-3,691123;40,500522
+419;Point;2120;1;Avenida Monasterio de Silos, 37,;24;0;-3.70290315 40.50340494;1;589 - Monast. Silos - Monast. Montesclaros;0;589;24;-3,702903;40,503405
+420;Point;2121;1;Calle Ramón Power, 2 ,;1;26;-3.634999 40.463575;0;535 - Metro Canillas;0;535;27;-3,634999;40,463575
+421;Point;2122;1;Calle de Cebreros, 97 ,;3;20;-3.7521916999999996 40.4032379;0;328 - Cebreros, 97;0;328;23;-3,752192;40,403238
+422;Point;2123;1;Calle Alhambra, 56 ,;12;11;-3.7444520800000003 40.3988162;2;329 - Metro Laguna;0;329;23;-3,744452;40,398816
+423;Point;2124;1;Calle Duquesa de Parcent, 14 ,;11;12;-3.7447281 40.39500224;2;330 - Duquesa de Parcent - Marcelino Castillo;0;330;23;-3,744728;40,395002
+424;Point;2125;1;Calle Valmojado, 33 ,;11;13;-3.75757186 40.39649629;2;331 - Valmojado;0;331;24;-3,757572;40,396496
+425;Point;2126;1;Calle de los Yébenes, 159 ,;0;23;-3.75181704 40.39302789;0;332 - Los Yébenes, 159;0;332;23;-3,751817;40,393028
+426;Point;2127;1;Avenida de Oporto, 102,;20;3;-3.72987333 40.38745087;1;363 - Metro Oporto;0;363;23;-3,729873;40,387451
+427;Point;2128;1;Avenida de Oporto, 34,;13;10;-3.7237806400000006 40.38550735;2;364 - Metro Opañel;0;364;23;-3,723781;40,385507
+428;Point;2129;1;Calle de Boj, 4 ,;8;15;-3.6180818 40.4560204;2;536 - Boj;0;536;23;-3,618082;40,45602
+429;Point;2130;1;Avenida de Machupichu, 23,;16;11;-3.6257943900000003 40.45841466;2;537 - Plaza López de la Plata;0;537;27;-3,625794;40,458415
+430;Point;2131;1;Calle de Haendel, 8,;17;10;-3.6253213100000004 40.46275082;2;538 - Haendel, 8;0;538;27;-3,625321;40,462751
+431;Point;2132;1;Calle Illescas, 104 ,;0;23;-3.7562323 40.392175;0;333 - Illescas - Camarena;0;333;23;-3,756232;40,392175
+432;Point;2133;1;Avenida Plaza de Toros, 3 ,;15;8;-3.7372590799999994 40.38537202;2;365 - Palacio Vistalegre Arena;0;365;23;-3,737259;40,385372
+433;Point;2134;1;Paseo de Marcelino Camacho, 53 ,;23;0;-3.7445210000000007 40.387737;1;366 - Metro Carabanchel;0;366;23;-3,744521;40,387737
+434;Point;2135;1;Avenida Alfonso XIII, 113,;16;7;-3.66790332 40.45866532;2;291 - Plaza José María Soler;0;291;23;-3,667903;40,458665
+435;Point;2136;1;Calle Pradillo, 33,;7;16;-3.6717937 40.44904126;0;292 - Centro Deportivo Municipal Pradillo;0;292;23;-3,671794;40,449041
+436;Point;2137;1;Arturo Soria, 332,;7;16;-3.666529 40.480694;0;494 - Metro Pinar de Chamartín;0;494;23;-3,666529;40,480694
+437;Point;2138;1;Calle Juan Ignacio Luca de Tena, 13 ,;21;6;-3.6311025499999996 40.44796778;1;516 - Juan Ignacio Luca Tena - Quinta Molinos;0;516;27;-3,631103;40,447968
+438;Point;2139;1;Calle Eugenia de Montijo, 57 ,;14;1;-3.7470606799999997 40.3791024;1;368 - Eugenia de Montijo;0;368;15;-3,747061;40,379102
+439;Point;2140;1;Plaza De la Parroquia, 19 ,;4;19;-3.7415832000000004 40.3802446;0;369 - Junta Municipal Distrito de Carabanchel;0;369;23;-3,741583;40,380245
+440;Point;2141;1;Calle de Avefria, 26,;1;22;-3.7308024999999994 40.38386939;0;370 - Avefría - Plaza de Tarifa;0;370;23;-3,730802;40,383869
+441;Point;2142;1;Calle Maria de Maeztu, 50,;1;26;-3.72757227 40.49093014;0;590 - Metro Arroyofresno;0;590;27;-3,727572;40,49093
+442;Point;2143;1;Calle de San Mariano, 52-60 ,;27;0;-3.61190481 40.44175279;1;517 - San Mariano - Circe;0;517;27;-3,611905;40,441753
+443;Point;2144;1;Calle Tampico, 71 ,;8;15;-3.6353449999999996 40.444569;2;518 - Tampico - Plaza Barbados;0;518;23;-3,635345;40,444569
+444;Point;2145;1;Calle Joaquin Turina, 49,;14;13;-3.7618199999999997 40.372458;2;371 - Joaquin Turina, 49;0;371;27;-3,76182;40,372458
+445;Point;2146;1;Calle Lonja de la Seda, 33,;12;11;-3.76158263 40.36612215;2;372 - Lonja de la Seda, 33;0;372;23;-3,761583;40,366122
+446;Point;2147;1;Calle Salvador Allende, 28 ,;11;12;-3.75787005 40.36277848;2;373 - Metro La Peseta;0;373;23;-3,75787;40,362778
+447;Point;2148;1;Calle del Dinero, 38,;6;21;-3.7501466 40.3625707;0;374 - Dinero - La Peseta;0;374;27;-3,750147;40,362571
+448;Point;2149;1;Calle Calderilla, 4,;19;8;-3.7386602999999994 40.3651497;1;375 - Calderilla, 4;0;375;27;-3,73866;40,36515
+449;Point;2150;1;Av.Ventisquero de la Condesa, 37,;15;4;-3.7162292099999994 40.49108225;1;591 - Metro Mirasierra;0;591;19;-3,716229;40,491082
+450;Point;2151;1;Calle de Gloria Fuertes, 180,;8;19;-3.7249527 40.4956969;0;592 - Estación de tren de Pitis;0;592;27;-3,724953;40,495697
+451;Point;2152;1;Calle del Pinzón, 111 ,;7;17;-3.7405438000000006 40.39229225;0;376 - Metro Carpetana;0;376;24;-3,740544;40,392292
+452;Point;2153;1;Avenida De Abrantes, 55 ,;15;8;-3.72783615 40.38091762;2;377 - Metro Abrantes;0;377;23;-3,727836;40,380918
+453;Point;2154;1;Calle Mota del Cuervo, 72 ,;13;11;-3.6313571499999995 40.4648762;2;539 - Mota del Cuervo;0;539;24;-3,631357;40,464876
+454;Point;2155;1;Calle Seseña, 93 ,;10;14;-3.76815631 40.39497294;2;334 - Metro Campamento;0;334;24;-3,768156;40,394973
+455;Point;2156;1;Plaza Patricio, 5 ,;18;6;-3.7705754100000006 40.39659757;1;335 - Cardaño, 10;0;335;24;-3,770575;40,396598
+456;Point;2157;1;Calle Troya, 11,;16;8;-3.61191521 40.43699597;2;519 - Troya, 11;0;519;24;-3,611915;40,436996
+457;Point;2158;1;Calle Eugenia de Montijo, 83,;11;13;-3.7509732999999996 40.37562288;2;378 - Eugenia de Montijo, 83;0;378;24;-3,750973;40,375623
+458;Point;2159;1;Calle Antonia Rodriguez Sacristan, 4,;20;4;-3.74765739 40.37313777;1;379 - Antonia Rodríguez Sacristán - Valeriana;0;379;24;-3,747657;40,373138
+459;Point;2160;1;Calle Caleruega, 14 ,;13;11;-3.6705880000000004 40.478746;2;495 - Caleruega;0;495;24;-3,670588;40,478746
+460;Point;2161;1;Calle Islas Cies, 27,;15;9;-3.7186906700000004 40.48027409;2;593 - Metro Avenida de la Ilustración;0;593;24;-3,718691;40,480274
+461;Point;2162;1;Calle Pedro Rico, 49,;5;19;-3.7039180000000003 40.48194;0;594 - Calle Pedro Rico, 49;0;594;24;-3,703918;40,48194
+462;Point;2163;1;Avenida de Betanzos, 68,;17;7;-3.7132206 40.48178815;1;595 - Betanzos - Fermín Caballero;0;595;24;-3,713221;40,481788
+463;Point;2164;1;Calle Ramon Gomez de la Serna, 37,;7;17;-3.72382554 40.48432751;0;596 - Metro Lacoma;0;596;24;-3,723826;40,484328
+464;Point;2165;1;Calle Dulce Chacón, S/N ,;18;6;-3.6636484 40.4845596;1;540 - Estación de tren Fuente de la Mora;0;540;24;-3,663648;40,48456
+465;Point;2166;1;Calle Oliva de Plasencia, 1,;4;20;-3.7791518300000004 40.37850071;0;336 - Calle Oliva de Plasencia, 1;0;336;24;-3,779152;40,378501
+466;Point;2167;1;Calle Valmojado, 295,;10;8;-3.7604892299999997 40.38614104;2;337 - Metro Aluche;0;337;18;-3,760489;40,386141
+467;Point;2168;1;Calle Guareña, 22 ,;10;8;-3.7653391035306 40.386362337060476;2;338 - Guareña - Luis Chamizo;0;338;18;-3,765339;40,386362
+468;Point;2169;1;Avenida de las Aguilas , 110,;19;5;-3.78061952 40.38132642;1;339 - Estación de tren Las Águilas;0;339;24;-3,78062;40,381326
+469;Point;2170;1;Calle de la Foresta nº8,;8;15;-3.66777681 40.49853277;2;597 - Foresta, 8;0;597;23;-3,667777;40,498533
+470;Point;2172;1;Calle La Cabrera, sn,;13;14;-3.7192044300000004 40.47223267;2;599 - Instalación Deportiva La Cabrera;0;599;27;-3,719204;40,472233
+471;Point;2173;1;Calle Fuente de Lima, 10,;10;13;-3.7833930099999997 40.38358975;2;343 - Metro Aviación Española;0;343;23;-3,783393;40,38359
+472;Point;2174;1;Calle Ocaña, 103,;8;15;-3.75292035 40.38586273;2;344 - Ocaña, 103;0;344;23;-3,75292;40,385863
+473;Point;2175;1;Paseo de Juan XXIII, 24,;26;1;-3.7169358999999997 40.448084;1;313 - Juan XXIII, 24;0;313;27;-3,716936;40,448084
+474;Point;2176;1;Avenida Valladolid, 47D ,;26;1;-3.73068 40.42966;1;314 - Av. Valladolid - Parque de la Bombilla;0;314;27;-3,73068;40,42966
+475;Point;2177;1;Calle de Caroli, 10,;8;15;-3.784627 40.45862;2;315 - Caroli;0;315;23;-3,784627;40,45862
+476;Point;2178;1;Calle Antonio Machado, s/n ,;5;14;-3.71995383 40.46439687;0;316 - C. Deportivo Mpal. Ciudad De Los Poetas;0;316;19;-3,719954;40,464397
+477;Point;2179;1;Calle Antonio Machado, 30,;1;26;-3.7192171199999997 40.46826955;0;317 - Antonio Machado, 30;0;317;27;-3,719217;40,46827
+478;Point;2180;1;Calle Fuente del Tiro, 72 ,;8;16;-3.7798000999999997 40.38308791;2;345 - Fuente del Tiro - Avd. de las Águilas;0;345;24;-3,7798;40,383088
+479;Point;2182;1;Calle del Pico Chilegua, 3,;14;10;-3.6186910599999997 40.37286701;2;449 - Metro Congosto;0;449;24;-3,618691;40,372867
+480;Point;2183;1;Calle Camino de las Hormigueras, 161,;13;11;-3.6370762 40.3762555;2;450 - Camino de las Hormigueras, 161;0;450;24;-3,637076;40,376255
+481;Point;2184;1;Calle Clara del Rey, 17 ,;16;8;-3.6723389999999996 40.440944;2;294 - Edificio Torres Blancas;0;294;24;-3,672339;40,440944
+482;Point;2185;1;Avenida del Camino de Santiago, 4,;8;15;-3.6695521499999995 40.50910428;2;604 - Metro Las Tablas;0;604;23;-3,669552;40,509104
+483;Point;2186;1;Calle José de cadalso, 62 ,;8;19;-3.7702477799999996 40.37959145;0;348 - José de Cadalso - Rafael Finat;0;348;27;-3,770248;40,379591
+484;Point;2187;1;Calle Enrique Garcia Alvarez, 5,;15;12;-3.6140607000000005 40.3804482;2;438 - Biblioteca Pública Luis Martín Santos;0;438;27;-3,614061;40,380448
+485;Point;2188;1;Calle Granja de San Idelfonso, 14 ,;15;12;-3.62283116 40.36813427;2;451 -  La Granja de San Ildefonso, 14;0;451;27;-3,622831;40,368134
+486;Point;2189;1;Avenida de Las Suertes, 15,;3;20;-3.6078539000000003 40.3713613;0;452 - Las Suertes, 15;0;452;23;-3,607854;40,371361
+487;Point;2190;1;Avenida del Ensanche de Vallecas, 9,;14;13;-3.61253028 40.37043968;2;453 - Metro La Gavia;0;453;27;-3,61253;40,37044
+488;Point;2191;1;Calle Gran Via del Sureste, 22,;9;18;-3.5897045000000003 40.3631604;2;454 - Gran Vía del Sureste - Las Suertes;0;454;27;-3,589704;40,36316
+489;Point;2205;1;Paseo de la Chopera, 31 ,Comunidad de Madrid España;7;16;-3.700399664723874 40.39500000000003;0;267 - Paseo de la Chopera - Fernando Poo;0;267;23;-3,7004;40,395
+490;Point;2207;1;Calle Rafaela Ybarra, 22,Comunidad de Madrid España;19;4;-3.711296220901499 40.3817026328731;1;391 - Junta Municipal Distrito de Usera;0;391;23;-3,711296;40,381703
+491;Point;2214;1;c/ Ginzo de Limia, 47,;3;20;-3.7069039999999998 40.48337;0;580 - Metro Herrera Oria;0;580;23;-3,706904;40,48337
+492;Point;2224;1;Paseo de la castellana, 124 ,;19;4;-3.6908 40.4491;1;150 - Castellana - Hermanos Pinzón;0;150;23;-3,6908;40,4491
+493;Point;2225;1;Paseo de la Castellana, 164 ,Comunidad de Madrid España;16;7;-3.6894151 40.4591366;2;157 - Plaza de Cuzco;0;157;23;-3,689415;40,459137
+494;Point;2226;1;Calle Guetaria, 84B,;20;4;-3.71569102 40.36916772;1;395 - Guetaria, 84B;0;395;23;-3,715691;40,369168
+495;Point;2233;1;Calle Eduardo Mazón, 1 ,;15;8;-3.6154156999999993 40.4521484;2;548 - Eduardo Mazón - Guadalajara;0;548;23;-3,615416;40,452148
+496;Point;2234;1;Calle Santa Rita, 1 ,;1;22;-3.6682881999999997 40.4457928;0;293 - Santa Rita - Clara del Rey;0;293;23;-3,668288;40,445793
+497;Point;2235;1;Av/ de Niza, 67 ,;8;15;-3.6081157800000003 40.4342806;2;520 - Niza - Plaza de Grecia;0;520;23;-3,608116;40,434281
+498;Point;2236;1;Amposta s/n (esquina Arcos de Jalón),;15;8;-3.61865045 40.42218951;2;509 - Amposta - Arcos de Jalón;0;509;23;-3,61865;40,42219
+499;Point;2237;1;CalleBahía de Cádiz (cruce con Avenida Logroño) ,;10;13;-3.5937120000000005 40.461137;2;558 - Biblioteca Pública Mpal. Gloria Fuertes;0;558;23;-3,593712;40,461137
+500;Point;2238;1;Calle Cristo del Gran Poder (cruce con calle Alas) ,;22;1;-3.5857510000000006 40.472048;1;561 - Plaza Nuestra Señora de Loreto;0;561;23;-3,585751;40,472048
+501;Point;2239;1;Calle Tomillar, 18 ,;9;18;-3.5844145999999997 40.4630993;2;562 - Tomillar - Tintín y Milú;0;562;27;-3,584415;40,463099
+502;Point;2240;1;Calle playa de Zarauz (esquina con Playa de Caleta) ,;18;5;-3.5906847 40.4731404;1;560 - Playa de Zarauz - Playa de la Caleta;0;560;23;-3,590685;40,47314
+503;Point;2241;1;Avenida del Partenón, 6 ,;13;14;-3.6178336 40.4632802;2;568 - IFEMA A;0;568;27;-3,617834;40,46328
+504;Point;2243;1;Paseo Alberto Palacios, 42,;12;11;-3.7129039644180377 40.3449259916087;2;405 - Paseo Alberto Palacios, 42;0;405;23;-3,712904;40,344926
+505;Point;2244;1;Calle Eduardo Maristany, 7,;18;9;-3.6831269999999994 40.353285;2;401 - Estación de tren de Villaverde Bajo;0;401;27;-3,683127;40,353285
+506;Point;2245;1;Calle Cifuentes, 5,;17;6;-3.6960817 40.3486;1;406 - La Nave de Madrid;0;406;23;-3,696082;40,3486
+507;Point;2246;1;Calle Auñón, 16,;5;18;-3.6775241999999997 40.3504944;0;403 - Auñón, 16;0;403;23;-3,677524;40,350494
+508;Point;2247;1;Paseo de los Melancólicos, 73 ,;18;5;-3.7185689999999996 40.401782;1;280 - Ps de los Melancólicos - San Epifanio;0;280;23;-3,718569;40,401782
+509;Point;2248;1;Calle Albox, 35 ,;10;13;-3.7398400000000005 40.373972;2;367 - Metro San Francisco;0;367;23;-3,73984;40,373972
+510;Point;2249;1;Paseo de los Jesuitas, 4 ,;11;12;-3.7305543000000005 40.4106918;2;325 - Ps. Jesuitas - Pza. Cerro Bermejo;0;325;23;-3,730554;40,410692
+511;Point;2250;1;Calle Sierra de Atapuerca, 19,;3;20;-3.6704248799999997 40.50292982;0;578 - Sierra de Atapuerca - Viloria de Rioja;0;578;23;-3,670425;40,50293
+512;Point;2251;1;Calle Puerto de Porzuna, 34,;21;2;-3.6236297000000004 40.373826;1;446 - C. Deportivo Mpal. Miguel Guillén Prim;0;446;23;-3,62363;40,373826
+513;Point;2252;1;Parque Eugenia de Montijo, 2,;15;9;-3.7545821999999998 40.3783501;2;382 -Parque Eugenia de Montijo, 2;0;382;24;-3,754582;40,37835
+514;Point;2254;1;Calle transversal sexta (enfrente del colegio Villamadrid),;9;15;-3.6992665 40.3325463;2;410 - Est. de tren de S. Cristóbal Industrial;0;410;24;-3,699266;40,332546
+515;Point;2255;1;Calle Valdesangil, 34 ,;12;12;-3.7166729 40.4684218;2;319 - Valdesangil;0;319;24;-3,716673;40,468422
+516;Point;2256;1;Calle María Tubau, 3 ,;20;4;-3.671703587033564 40.51399230680476;1;579 - Maria Tubau - Isabel Colbrand;0;579;24;-3,671704;40,513992
+517;Point;2257;1;Calle del Monasterio de Sobrado, nº6,;9;15;-3.6928369999999995 40.5093225;2;602 - Monasterio Sobrado - Monasterio Silos;0;602;24;-3,692837;40,509323
+518;Point;2258;1;Calle Ubeda esquina Plaza Virgen de la capilla ,;1;23;-3.7149566 40.4825507;0;600 - Centro Deportivo Municipal La Masó;0;600;24;-3,714957;40,482551
+519;Point;2259;1;Avenida de Logroño, 112 ,;18;6;-3.5815033 40.4703472;1;566 - Avenida de Logroño;0;566;24;-3,581503;40,470347
+520;Point;2260;1;Calle Playa de Riazor, 65 ,;13;11;-3.5838869 40.47563573;2;565 - Metro Barajas;0;565;24;-3,583887;40,475636
+521;Point;2261;1;467 -  Calle Villardondiego  nº32,;6;18;-3.6084888 40.4062361;0;467 - Univ. Rey Juan Carlos - Facultad  CJS;0;467;24;-3,608489;40,406236
+522;Point;2262;1;469 - Ladera de los Almendros, 6,;14;10;-3.6229899999999997 40.40343;2;469 - C. Deportivo Mpal Faustina Valladolid;0;469;24;-3,62299;40,40343
+523;Point;2263;1;Avenida Real, 3,;8;10;-3.6063672000000007 40.4021519;2;470 - Avenida Real - Galeote;0;470;18;-3,606367;40,402152
+524;Point;2264;1;Calle Molino Viejo frente , 14,;0;18;-3.60666 40.396301;0;471 - Molino Viejo - Minerva;0;471;18;-3,60666;40,396301
+525;Point;2265;1;Calle Amaltea, 1 ,;16;8;-3.68317 40.394706;2;271 - Amaltea-Meneses;0;271;24;-3,68317;40,394706
+526;Point;2266;1;Calle Villablanca 7,;15;8;-3.6078326500000006 40.40894698;2;466 - Villablanca - Vereda del Pinar;0;466;23;-3,607833;40,408947
+527;Point;2267;1;Paseo Juan Antonio Vallejo-Nájera Botas, 25 ,;8;15;-3.7082123 40.4020545;2;275 - Juan Antonio Vallejo-Nájera Botas, 25;0;275;23;-3,708212;40,402054
+528;Point;2268;1; Avenida de la Aurora Boreal, 19,;4;19;-3.603668 40.399236;0;475 - Aurora Boreal - Minerva;0;475;23;-3,603668;40,399236
+529;Point;2269;1;Calle Méndez Álvaro, 73 ,;19;4;-3.6813434600000003 40.39675755;1;274 - Estación Sur Méndez Álvaro A;0;274;23;-3,681343;40,396758
+530;Point;2270;1;Calle Nuria nº24,;15;9;-3.7048829999999997 40.491644;2;605 - Nuria - Peña Sirio;0;605;24;-3,704883;40,491644
+531;Point;2271;1;Avenida Arcentales (frente Estadio Metropolitano),;8;16;-3.60097542 40.43333298;2;522 - Metro Estadio Metropolitano;0;522;24;-3,600975;40,433333
+532;Point;2272;1;Calle Ginebra (esquina con Suecia),;10;14;-3.6048180999999997 40.423893;2;521 - Metro Las Rosas;0;521;24;-3,604818;40,423893
+533;Point;2273;1;Intercambiador de Canillejas,;16;8;-3.609553 40.449095;2;508 - Metro Canillejas;0;508;24;-3,609553;40,449095
+534;Point;2274;1;Avenida Ciudad de Barcelona (esquina con Plaza de Carlos V),;5;18;-3.690538 40.407573;0;80A - Estación de Atocha A;0;80A;23;-3,690538;40,407573
+535;Point;2275;1;Avenida Ciudad de Barcelona (esquina con Plaza de Carlos V),;20;7;-3.6904748 40.4075211;1;80B - Estación de Atocha B;0;80B;27;-3,690475;40,407521
+536;Point;2276;1;Calle Adolfo Bioy Casares, 3 ,;19;8;-3.5981935 40.3668504;1;447 - Adolfo Bioy Casares - Las Suertes;0;447;27;-3,598193;40,36685
+537;Point;2278;1;Calle San Jenaro, 1,;13;11;-3.7043083000000006 40.3500291;2;412 - Estación de tren de Puente de Alcocer;0;412;24;-3,704308;40,350029
+538;Point;2279;1;Calle Diamante, 10 ,;7;17;-3.6877534 40.3532609;0;415 - Diamante - Delmira Agustini;0;415;24;-3,687753;40,353261
+539;Point;2280;1;Calle Doctor Martín Arévalo enfrente del N°16 ,;14;10;-3.707413 40.345928;2;413 - Doctor Martín Arévalo;0;413;24;-3,707413;40,345928
+540;Point;2281;1;Calle Zapatoca, 8,;15;8;-3.63335803 40.47285235;2;545 - Zapatoca, 8;0;545;23;-3,633358;40,472852
+541;Point;2282;1;Plaza Mayor de Barajas, 24,;10;14;-3.5776537 40.4733252;2;567 - Plaza Mayor de Barajas;0;567;24;-3,577654;40,473325
+542;Point;2283;1;Calle soto Hidalgo, 3 ,;26;1;-3.5820745 40.4606465;1;563 - Soto Hidalgo;0;563;27;-3,582075;40,460647
+543;Point;2285;1;Paseo de Reina Cristina, 6 ,;17;6;-3.6831862 40.4067247;1;281 - Reina Cristina - Julián Gayarre;0;281;23;-3,683186;40,406725
+544;Point;2286;1;Ronda de la Comunicación, s/n,;7;16;-3.6626887 40.5157202;0;609 - Metro Ronda de la Comunicación;0;609;23;-3,662689;40,51572
+545;Point;2287;1;Calle de Moncada, 102 ,;10;13;-3.692444 40.341725;2;408 - Metro San Cristóbal;0;408;23;-3,692444;40,341725
+546;Point;2288;1;Calle Eduardo Barreiros, 114,;9;14;-3.7046436000000003 40.3553495;2;409 - Eduardo Barreiros, 114;0;409;23;-3,704644;40,35535
+547;Point;2289;1;Calle Fermín Caballero 2,;8;15;-3.6984849999999994 40.487363;2;606 - Fermín Caballero - Sangenjo;0;606;23;-3,698485;40,487363
+548;Point;2290;1;Calle Huerta de Catañeda, 26 ,;8;16;-3.74201882097404 40.40622095698234;2;349 - Huerta de Castañeda 26;0;349;24;-3,742019;40,406221
+549;Point;2291;1;calle Gregorio Sánchez Herráez 14,;7;16;-3.6365700000000003 40.477248;0;544 - Gregorio Sánchez Herráez 14;0;544;23;-3,63657;40,477248
+550;Point;2292;1;Calle Oña s/n,;12;11;-3.6658565 40.4891872;2;551 - Oña;0;551;23;-3,665856;40,489187
+551;Point;2293;1;Calle Ana de Austria, 52 ,;5;22;-3.6531502 40.4994394;0;552 - Ana de Austria - Ignacio Aldecoa;0;552;27;-3,65315;40,499439
+552;Point;2294;1;Avenida Fuerzas Armadas (Renfe Valdebebas) ,;10;14;-3.6157178000000005 40.4819961;2;542 - Estación de tren de Valdebebas;0;542;24;-3,615718;40,481996
+553;Point;2297;1;Paseo de la Puerta del Ángel, 10 ,;8;11;-3.7345247000000006 40.4167792;2;320 - Metro Lago;0;320;19;-3,734525;40,416779
+554;Point;2298;1;Calle Estella, 21,;19;4;-3.6743568 40.4968198;1;608 - Estella - Camino de Santiago;0;608;23;-3,674357;40,49682
+555;Point;2299;1;Paseo de los Pontones, 26 ,;2;21;-3.7196 40.4040433;0;278 - Paseo los Pontones - Ps. Melancólicos;0;278;23;-3,7196;40,404043
+556;Point;2300;1;Calle luis de Salazar, 16 ,;1;22;-3.6649258000000002 40.4474166;0;289 - Luis de Salazar - Padre Claret;0;289;23;-3,664926;40,447417
+557;Point;2301;1;Calle Rafaela Aparicio, 1 ,;12;15;-3.6312178999999998 40.4792396;2;547 - Rafaela Aparicio - Maruja Mallo;0;547;27;-3,631218;40,47924
+558;Point;2302;1;Calle de Berrocal, 9 ,;2;25;-3.67615 40.344115;0;402 - Berrocal, 9;0;402;27;-3,67615;40,344115
+559;Point;2303;1;Calle Tomás Redondo, 9 ,;11;12;-3.6291380199999996 40.47178414;2;543 - Tomas Redondo;0;543;23;-3,629138;40,471784
+560;Point;2304;1;Paseo Virgen del Puerto, 27 ,;1;14;-3.7211780000000005 40.411622;0;277 - Virgen del Puerto;0;277;15;-3,721178;40,411622
+561;Point;2305;1;Calle del Tejo, 22 ,;18;5;-3.679186 40.39663;1;272 - Tejo - Parque La Ronda;0;272;23;-3,679186;40,39663
+562;Point;2306;1;Avenida Menéndez Pelayo enfrente del nº33 ,;17;6;-3.6787796 40.4181327;1;282 - Parque Retiro - Puerta Reina Mercedes;0;282;23;-3,67878;40,418133
+563;Point;2307;1;Calle Mayor , 6,;16;7;-3.7054098 40.416465;2;1 - Metro Sol;0;1;23;-3,70541;40,416465
+564;Point;2308;1;Avenida Gran Vía de San Francisco, 6,;8;15;-3.712793282384579 40.40833880815136;2;263 - Gran Vía de San Francisco;0;263;23;-3,712793;40,408339
+565;Point;2309;1; Calle Babilonia, 19,;18;5;-3.5882346999999997 40.4675299;1;559 - Calle Babilonia, 19;0;559;23;-3,588235;40,46753
+566;Point;2311;1;Camino de Ganapanes, 32-40 ,;6;18;-3.7163093000000003 40.4764797;0;581 - Metro Peñagrande;0;581;24;-3,716309;40,47648
+567;Point;2312;1;Calle San Modesto, 44,;6;18;-3.6923396 40.4858012;0;598 - Hospital Ramón y Cajal;0;598;24;-3,69234;40,485801
+568;Point;2313;1;Calle Escalona, 2,;0;27;-3.76182259 40.39834576;0;341 - Escalona - Seseña;0;341;27;-3,761823;40,398346
+569;Point;2314;1;Calle de Tembleque, 31 ,;4;20;-3.7664844 40.3907438;0;346 - Metro Empalme;0;346;24;-3,766484;40,390744
+570;Point;2315;1;Avenida de las Aguilas, 27 ,;16;8;-3.7686029999999997 40.383554;2;347 - Est. tren Mtra Justa Freire-Poli Aluche;0;347;24;-3,768603;40,383554
+571;Point;2316;1;Calle Albelda, 6,;24;0;-3.6573666 40.4494225;1;528 - Albelda - Torrelaguna;0;528;24;-3,657367;40,449422
+572;Point;2317;1;Paseo de la Venta, 1,;17;10;-3.7528559 40.4077495;2;312 - Metro Batán;0;312;27;-3,752856;40,40775
+573;Point;2318;1;Carretera del zoo s/n (metro Casa de Campo) ,;13;14;-3.7610509999999997 40.40316;2;321 - Metro Casa de Campo;0;321;27;-3,761051;40,40316
+574;Point;2319;1;Calle Rosas de Aravaca, s/n ,;18;5;-3.7845536000000006 40.4490509;1;310 - Estación de tren de Aravaca;0;310;23;-3,784554;40,449051
+575;Point;2320;1;Calle Profesor Aranguren, 1 ,;25;2;-3.7335740000000004 40.448553;1;311 - C. Universitaria - F. Geografía e Histo;0;311;27;-3,733574;40,448553
+576;Point;2321;1;Calle Felipe IV, 5 ,;17;6;-3.6919057 40.4152082;1;283 - Museo Nacional del Prado;0;283;23;-3,691906;40,415208
+577;Point;2322;1;Avenida Del Partenón, 18 ,;7;16;-3.6138669999999995 40.463861;0;564 - IFEMA B;0;564;23;-3,613867;40,463861
+578;Point;2323;1;Calle Caños de San Pedro, 12,;10;13;-3.601920499999999 40.4029976;2;468 - Caños de San Pedro - San Cipriano;0;468;23;-3,60192;40,402998
+579;Point;2324;1;465 - Cordel de Pavones, 48,;15;9;-3.619645 40.397375;2;465 - Cordel de Pavones - Bulevar José Prat;0;465;24;-3,619645;40,397375
+580;Point;2325;1;Calle Santa Petronila, 7 ,;4;20;-3.692163 40.350985;0;414 - Metro Villaverde Bajo-Cruce;0;414;24;-3,692163;40,350985
+581;Point;2326;1;Calle de la Oca, 22 ,;14;10;-3.7335492000000006 40.3894333;2;380 - Oca;0;380;24;-3,733549;40,389433
+582;Point;2327;1;Calle Domingo Párraga, 38 ,;11;12;-3.7118182999999996 40.3417533;2;411 - Estación de tren de Villaverde Alto;0;411;23;-3,711818;40,341753
+583;Point;2328;1;Calle Jacinto Verdaguer, 12 ,;5;19;-3.7160526116262793 40.39593854704345;0;354 - Jacinto Verdaguer - Lola de Membrives;0;354;24;-3,716053;40,395939
+584;Point;2329;1;Calle Santa Pola, 22 ,;21;2;-3.7370276473602226 40.43205131007265;1;318 - C. Deportivo Mpal. José María Cagigal;0;318;23;-3,737028;40,432051
+585;Point;2330;1;Avenida Francisco Pi y Margall, 29 ,;2;17;-3.6503543999999994 40.4866354;0;549 - Francisco Pi y Maragall;0;549;19;-3,650354;40,486635
+586;Point;2331;1;Paseo de los Melancólicos, 1 ,;10;13;-3.7184815999999996 40.4104448;2;279 - Paseo de los Melancólicos, 1;0;279;23;-3,718482;40,410445
+587;Point;2332;1;Calle Carmen de Burgos, 4,;7;16;-3.6847883 40.3575459;0;407 - Carmen de Burgos, 4;0;407;23;-3,684788;40,357546
+588;Point;2333;1;Paseo de las Yeserías, 15,;12;10;-3.7099166 40.39900539;2;276 - Paseo de las Yeserías, 15;0;276;23;-3,709917;40,399005
+589;Point;2334;1;Calle Illescas, 1 ,;21;6;-3.7656975999999998 40.3970983;1;340 - Illescas - Seseña;0;340;27;-3,765698;40,397098
+590;Point;2335;1;Calle Osa de la Vega, 1 ,;3;20;-3.7733810000000005 40.374979;0;342 - Osa de la Vega - Rafael Finat;0;342;23;-3,773381;40,374979
+591;Point;2337;1;Calle Alfredo Aleix, 9 ,;8;16;-3.7553916 40.3684767;2;381 - Alfredo Aleix - Mercedes Rodríguez;0;381;24;-3,755392;40,368477
+592;Point;2339;1;Calle Valderrebollo, 18 ,;22;1;-3.6276352 40.3743481;1;444 - Valderrebollo, 18;0;444;23;-3,627635;40,374348
+593;Point;2340;1;Avenida Del Ensanche de Vallecas, 80 ,;14;13;-3.5993520000000006 40.363376;2;448 - Metro Las Suertes;0;448;27;-3,599352;40,363376
+594;Point;2341;1;Calle de los Pinillas, 19,;4;23;-3.6211484999999994 40.3987974;0;472 - Metro Valdebernardo;0;472;27;-3,621148;40,398797
+595;Point;2342;1;Calle Villa Blanca, 85 ,;21;6;-3.59888007 40.40500033;1;473 - Villablanca - Parque Forestal Vicálvaro;0;473;27;-3,59888;40,405
+596;Point;2343;1;Calle San Cipriano, 71 ,;10;17;-3.596875 40.402255;2;474 - Estación de tren de Vicálvaro;0;474;27;-3,596875;40,402255
+597;Point;2347;1;Avenida Gran Vía de Hortaleza, 68 ,;8;15;-3.6468591 40.4682706;2;541 - Metro Pinar del Rey;0;541;23;-3,646859;40,468271
+598;Point;2348;1;Calle Andorra, 2 ,;5;18;-3.6467519000000004 40.4628976;0;546 - Andorra - Canillas;0;546;23;-3,646752;40,462898
+599;Point;2349;1;Calle del Príncipe Carlos, 54 ,;2;21;-3.6566739999999998 40.4941108;0;550 - Príncipe Carlos, 54;0;550;23;-3,656674;40,494111
+600;Point;2350;1;Calle María de Portugal, 44 ,;11;12;-3.658921 40.499909;2;553 - María Portugal - Niceto Alcalá Zamora;0;553;23;-3,658921;40,499909
+601;Point;2351;1;Calle Antonio de Cabezón, s/n (Estacion Cercanías Fuencarral),;3;20;-3.6824686999999994 40.5015588;0;601 - Estación de tren de Fuencarral;0;601;23;-3,682469;40,501559
+602;Point;2352;1;Calle Castiello de Jaca, nº14 ,;0;23;-3.6782027 40.5091982;0;603 - Castiello de Jaca, 14;0;603;23;-3,678203;40,509198
+603;Point;2359;1;Calle Valcarlos, nº20 ,Comunidad de Madrid España;21;6;-3.6641571 40.5051915;1;607 - Metro Ligero - Palas de Rey;0;607;27;-3,664157;40,505192
+604;Point;2360;1;Bardegueral nº16,Comunidad de Madrid España;7;16;-3.7719096999999997 40.4501721;0;610 - Bardegueral;0;610;23;-3,77191;40,450172
+605;Point;2362;1;Calle Francisco Balseiro, 2 ,Comunidad de Madrid España;0;24;-3.7102736 40.4516819;0;237 - Acueducto de Amaniel;0;237;24;-3,710274;40,451682
+606;Point;2365;1;Calle María de las Mercedes de Borbón, 214,;9;14;-3.620114 40.4928683;2;262 - María de las Mercedes de Borbón B;0;262;23;-3,620114;40,492868
+607;Point;2366;1;Calle María de las Mercedes de Borbón, 98,;2;21;-3.6121068531215528 40.490908297996654;0;611 - María de las Mercedes de Borbón A;0;611;23;-3,612107;40,490908
+608;Point;2368;1;Calle Alicante, nº3 ,;0;0;-3.6939412 40.3941856;3;176 - Plaza de la Beata María Ana de Jesús;1;176;0;-3,693941;40,394186

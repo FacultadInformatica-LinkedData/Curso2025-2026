@@ -1,0 +1,33 @@
+{
+	"@context":{
+		"inst":"https://www.example.org/instances/",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"vocab":"https://www.example.org/vocab/"
+		
+	},
+	
+	"@id":"inst:Class01",
+	"@type":"vocab:Class",
+	"vocab:includes":[	
+						{
+							"@id":"inst:Sensor029",
+							"@type":"vocab:Sensor",
+							"vocab:hasMeasurement":{
+														"@id":"inst:Measurement8401",
+														"@type":"vocab:Measurement",
+														"vocab:hasTemperature":29,
+														"vocab:atTime":"2010-06-12T12:00:12"
+												    }
+						},
+						{
+							"@id":"inst:Computer101",
+							"@type":"vocab:Computer",
+							"vocab:hasOwner":{
+												"@id":"inst:User10A",
+												"@type":"vocab:User",
+												"vocab:hasName":"Pedro"
+											}
+						}
+					]	
+	}

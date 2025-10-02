@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "fullName": "http://schema.org/name",
+    "hometown": "http://schema.org/address",
+    "age": "http://schema.org/age",
+    "almaMater": "http://schema.org/alumniOf",
+    "parents": "http://schema.org/parent",
+    "subjects": "http://schema.org/hasCourse",
+    "teacher": "http://schema.org/teacher",
+    "description": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "fullName": "Daniel Jiménez Calderón",
+  "hometown": "Boadilla del Monte",
+  "age": 21,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": {
+    "father": "Virgilio",
+    "mother": "Pilar"
+  },
+  "subjects": [
+    {
+      "@type": "Course",
+      "name": "Gestión de Procesos de Tecnologías de la Información",
+      "teachers": ["Ricardo Colomo", "Edmundo Tovar"],
+      "description": "En esta asignatura se tratan los elementos de una organización, las normas para el mercado digital y el Gobierno y Gestión de las TI."
+    },
+    {
+      "@type": "Course",
+      "name": "Ingeniería del Software II",
+      "teachers": ["Jose Antonio Calvo-Manzano"],
+      "description": "La asignatura de Ingeniería del Software II se enfoca en aplicar los aspectos de gestión al desarrollo software."
+    },
+    {
+      "@type": "Course",
+      "name": "English for Professional and Academic Communication",
+      "teachers": ["Hanane Benali"],
+      "description": "The main objective of this course is to make students aware of the importance of effective communication skills in academic or professional settings."
+    },
+    {
+      "@type": "Course",
+      "name": "Algoritmos de Procesado y Análisis de Imagen",
+      "teachers": ["Consuelo Gonzalo", "Angel Mario Garcia"],
+      "description": "El objetivo de esta asignatura es que el alumno adquiera los conocimientos básicos del área de procesado digital de imágenes."
+    },
+    {
+      "@type": "Course",
+      "name": "Web Semántica, Linked Data y Grafos de Conocimientos",
+      "teachers": ["Raul Garcia", "Oscar Corcho", "Daniel Garijo"],
+      "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos en la Web de datos enlazados."
+    },
+    {
+      "@type": "Course",
+      "name": "Introducción a la Biocomputación",
+      "teachers": ["Alfonso Rodriguez-Paton"],
+      "description": "En este curso estudiaremos los conceptos básicos de la computación con ADN, la biología sintética o biología programable y unos conceptos básicos sobre la inteligencia artificial aplicada a la microbiología y la biomedicina."
+    },
+    {
+      "@type": "Course",
+      "name": "Minería de Datos",
+      "teachers": ["Pedro Maria Larrañaga", "Maria Concepcion Bielza"],
+      "description": "La Minería de Datos trata de construir sistemas informáticos cuando no existe experiencia humana o cuando no es fácilmente explicable."
+    },
+    {
+      "@type": "Course",
+      "name": "Sistemas Dinámicos, Fractales y Caos",
+      "teachers": ["M. Del Carmen Escribano"],
+      "description": "La asignatura está dividida en dos partes, en primer lugar se introducirá al alumno en los conceptos básicos de sistemas dinámicos discretos, las características más significativas del caos y el concepto de atractor."
+    },
+    {
+      "@type": "Course",
+      "name": "Developing Open, Interoperable Semantic Resources",
+      "teachers": ["Maria Poveda", "Daniel Garijo"],
+      "description": "The objective of this course is for students to learn the fundamentals of open science, specifically the principles of FAIR data publishing."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "includes": { "@id": "ex:includes", "@type": "@id" },
+    "hasMeasurement": { "@id": "ex:hasMeasurement", "@type": "@id" },
+    "hasTemperature": { "@id": "ex:hasTemperature", "@type": "xsd:integer" },
+    "atTime": { "@id": "ex:atTime", "@type": "xsd:dateTime" },
+    "hasOwner": { "@id": "ex:hasOwner", "@type": "@id" },
+    "hasName": "ex:hasName"
+  },
+  "@graph": [
+    {
+      "@id": "ex:Class01",
+      "includes": ["ex:Sensor029", "ex:Computer101"]
+    },
+    {
+      "@id": "ex:Sensor029",
+      "hasMeasurement": "ex:Measurement8401"
+    },
+    {
+      "@id": "ex:Measurement8401",
+      "hasTemperature": 29,
+      "atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "ex:Computer101",
+      "hasOwner": "ex:User10A"
+    },
+    {
+      "@id": "ex:User10A",
+      "hasName": "Pedro"
+    }
+  ]
+}
