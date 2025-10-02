@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .dataset-section {
+            margin-bottom: 40px;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Dataset Requirements</h1>
+<p>This document identifies the selected datasets, their licenses, linkable entities, and optional documentation or multiple sources.</p>
+
+<div class="dataset-section">
+    <h2>1. Selected Datasets</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Dataset</th>
+            <th>License</th>
+            <th>Linkable Entities (in selected dataset)</th>
+            <th>Linkable Entities (in other datasets)</th>
+            <th>Documentation / Notes (R5)</th>
+            <th>Multiple Sources (R6)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bomberos. Parques de bomberos</td>
+            <td><a href="https://datos.madrid.es/egob/catalogo/aviso-legal" target="_blank">Open Data License</a>
+            </td>
+            <td>Coordinates (LATITUD, LONGITUD, COORDENADA-X, COORDENADA-Y), Geographic areas (LOCALIDAD, PROVINCIA, BARRIO, DISTRITO), Location identifiers (CODIGO-POSTAL, NOMBRE-VIA, NUM, TIPO-NUM)</td>
+            <td>Coordinates (LAT/LON), Geographic areas (LOCALIDAD, BARRIO, DISTRITO), Location identifiers (CODIGO-POSTAL, NOMBRE-VIA, NUM, TIPO-NUM)
+            </td>
+            <td><a href="https://datos.madrid.es/FWProjects/egob/Catalogo/XComun/Ficheros/Estructura_DS_ConjuntoDatos.pdf" target="_blank">Documentation</a> </td>
+            <td>Yes / Multiple sources: Data comes from the Generaldirektion Feuerwehr, published by the City Council of Madrid, also available on www.madrid.es</td>
+        </tr>
+        <tr>
+            <td>Dataset 2</td>
+            <td>[License]</td>
+            <td>[Entities in this dataset]</td>
+            <td>[Entities in other datasets]</td>
+            <td><a href="[Documentation URL]">Link</a> / [Comments]</td>
+            <td>[Yes/No or Comments]</td>
+        </tr>
+        <!-- Add more datasets as needed -->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
