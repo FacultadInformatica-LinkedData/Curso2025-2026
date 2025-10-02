@@ -1,0 +1,163 @@
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Requisitos de la aplicación — MoviSalud Madrid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            line-height: 1.5;
+            margin: 2rem;
+            max-width: 1000px;
+        }
+
+        h1,
+        h2 {
+            margin-top: 1.25rem
+        }
+
+        ul {
+            margin-left: 1.25rem
+        }
+
+        code,
+        pre {
+            background: #f6f8fa;
+            padding: .25rem .5rem;
+            border-radius: 4px
+        }
+
+        .mockup {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #fafafa;
+            margin: .5rem 0
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Requirements of the DataBases</h1>
+
+
+
+    <section>
+        <h2>Database Used</h2>
+        <ul>
+            <li>bikestationbicimad_csv.csv
+                (https://datasetsearch.research.google.com/search?src=0&query=BiciMAD%20estaciones&docid=L2cvMTF4bmN0eWx6Ng%3D%3D)
+            </li>
+            <li>ica-ultima-hora.csv
+                (https://datasetsearch.research.google.com/search?src=0&query=Calidad%20del%20aire%20–%20estaciones&docid=L2cvMTFsemZnMnpweg%3D%3D)
+            </li>
+            <li>muertos_en_accidentes_de_trafico_en_los_ultimos_10_años.csv
+                (https://datasetsearch.research.google.com/search?src=0&query=Accidentes%20de%20tráfico&docid=L2cvMTFqbnozNzI2Yw%3D%3D)
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section>
+        <h2>Functional Requirements</h2>
+        <li>
+            <strong>BiciMAD dataset</strong>
+            <ul>
+                <li><strong>R1</strong>: The dataset covers bicycle mobility in the city of Madrid (BiciMAD stations).
+                </li>
+                <li><strong>R2</strong>: The data are available in <abbr title="Comma-Separated Values">CSV</abbr>.</li>
+                <li><strong>R3</strong>: The dataset is licensed under
+                    <a href="https://creativecommons.org/licenses/by/4.0/"><strong>CC BY 4.0 (Attribution
+                            4.0)</strong></a>.
+                </li>
+                <li><strong>R4</strong>: The resource provides geographic coordinates and location fields that allow
+                    linking to real-world entities.</li>
+                <li><strong>R5</strong>: Documentation is available on the official portal:
+                    <a href="https://datos.emtmadrid.es/dataset/estaciones-de-bicimad?res_format=PDF"><strong>BiciMAD
+                            stations — PDF documentation</strong></a>.
+                </li>
+                <li><strong>R6</strong>: The dataset is listed in other catalogues:
+                    <ul>
+                        <li><a
+                                href="https://datos.gob.es/ca/catalogo/l01280796-bicimad-bases-del-servicio-publico-de-bicicleta-electrica-de-la-ciudad-de-madrid1">datos.gob.es
+                                — catalogue entry</a></li>
+                        <li><a
+                                href="https://datasetsearch.research.google.com/search?src=0&query=BiciMAD%20estaciones&docid=L2cvMTF4bmN0eWx6Ng%3D%3D">Google
+                                Dataset Search — BiciMAD stations</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <strong>Air Quality dataset</strong>
+            <ul>
+                <li><strong>R1</strong>: The dataset provides real-time air quality measurements in Madrid (pollutant
+                    levels at monitoring stations).</li>
+                <li><strong>R2</strong>: The data are available in <abbr title="Comma-Separated Values">CSV</abbr> and
+                    sometimes JSON via the open data portal.</li>
+                <li><strong>R3</strong>: The dataset is licensed under
+                    <a href="https://creativecommons.org/licenses/by/4.0/"><strong>CC BY 4.0 (Attribution
+                            4.0)</strong></a>.
+                </li>
+                <li><strong>R4</strong>: The dataset includes station identifiers with geographic coordinates, enabling
+                    linking to real-world locations.</li>
+                <li><strong>R5</strong>: Official documentation exists on the portal:
+                    <a href="https://datos.madrid.es/egob/catalogo/212504-0-calidad-aire-tiempo-real">Air quality
+                        stations — documentation</a>.
+                </li>
+                <li><strong>R6</strong>: The dataset is also referenced in other catalogues:
+                    <ul>
+                        <li><a href="https://datos.gob.es/es/catalogo/ea0010587-calidad-del-aire-tiempo-real-madrid">datos.gob.es
+                                — catalogue entry</a></li>
+                        <li><a
+                                href="https://datasetsearch.research.google.com/search?query=calidad%20del%20aire%20madrid">Google
+                                Dataset Search — Air quality Madrid</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Traffic accidents -->
+        <li>
+            <strong>Traffic Accidents dataset</strong>
+            <ul>
+                <li><strong>R1</strong>: The dataset covers traffic accidents with fatalities in Madrid over the last 10
+                    years.</li>
+                <li><strong>R2</strong>: The data are published in <abbr title="Comma-Separated Values">CSV</abbr>
+                    format on the open data portal.</li>
+                <li><strong>R3</strong>: The dataset is distributed under
+                    <a href="https://creativecommons.org/licenses/by/4.0/"><strong>CC BY 4.0 (Attribution
+                            4.0)</strong></a>.
+                </li>
+                <li><strong>R4</strong>: Accident records include geographic references (district, coordinates when
+                    available) and temporal attributes (year, month, day, hour).</li>
+                <li><strong>R5</strong>: Documentation is provided on the portal with data dictionaries and field
+                    descriptions:
+                    <a href="https://datos.madrid.es/egob/catalogo/201032-0-accidentes-trafico">Traffic accidents —
+                        documentation</a>.
+                </li>
+                <li><strong>R6</strong>: The dataset appears in additional catalogues:
+                    <ul>
+                        <li><a
+                                href="https://datos.gob.es/es/catalogo/l01280796-accidentes-de-trafico-con-victimas-en-madrid">datos.gob.es
+                                — catalogue entry</a></li>
+                        <li><a
+                                href="https://datasetsearch.research.google.com/search?query=accidentes%20de%20tr%C3%A1fico%20madrid">Google
+                                Dataset Search — Traffic accidents Madrid</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </section>
+
+
+
+</body>
+
+</html>
