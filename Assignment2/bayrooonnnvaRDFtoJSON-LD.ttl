@@ -1,0 +1,20 @@
+@prefix res:   <http://example.org/resources/> .
+@prefix prop:  <http://example.org/properties/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+res:Class01
+    prop:includes res:Sensor029 ,
+                  res:Computer101 .
+
+res:Sensor029
+    prop:hasMeasurement res:Measurement8401 .
+
+res:Measurement8401
+    prop:hasTemperature 29 ;
+    prop:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+res:Computer101
+    prop:hasOwner res:User10A .
+
+res:User10A
+    prop:hasName "Pedro" .

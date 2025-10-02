@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:ns2="http://purl.org/dc/terms/"
+	xmlns:ns3="https://datos.bne.es/def/" >
+  <rdf:Description rdf:about="https://datos.bne.es/resource/a3316285">
+    <rdf:type rdf:resource="https://datos.bne.es/def/C1003" />
+    <rdfs:label>Actas de las II Jornadas sobre Ontologías Web y Semántica</rdfs:label>
+    <ns2:language rdf:resource="http://id.loc.gov/vocabulary/languages/spa" />
+    <ns3:id>a3316285</ns3:id>
+    <ns3:OP3001 rdf:resource="https://datos.bne.es/resource/1000003906" />
+    <ns3:OP3001 rdf:resource="https://datos.bne.es/resource/1000003907" />
+    <ns3:OP3001 rdf:resource="https://datos.bne.es/resource/1000003908" />
+    <ns3:OP3004 rdf:resource="https://datos.bne.es/resource/XX4435380" />
+    <ns3:OP3006 rdf:resource="https://datos.bne.es/resource/XX4430054" />
+    <ns3:OP3006 rdf:resource="https://datos.bne.es/resource/XX1464262" />
+    <ns3:OP3008 rdf:resource="https://datos.bne.es/resource/XX771271" />
+    <ns3:OP3008 rdf:resource="https://datos.bne.es/resource/XX4436602" />
+    <ns3:P3001>Thomson</ns3:P3001>
+    <ns3:P3002>Actas de las II Jornadas sobre Ontologías Web y Semántica</ns3:P3002>
+    <ns3:P3003>Madrid</ns3:P3003>
+    <ns3:P3004>IV, 75 p.</ns3:P3004>
+    <ns3:P3005>[Texto impreso]</ns3:P3005>
+    <ns3:P3006>[2007]</ns3:P3006>
+    <ns3:P3007>24 cm</ns3:P3007>
+    <ns3:P3008>WebSemántica&#39;2007 ; editores, Óscar Corcho ... [et al.]</ns3:P3008>
+    <ns3:P3009>M 38241-2007</ns3:P3009>
+    <ns3:P3012>il.</ns3:P3012>
+    <ns3:P3013>978-84-9732-612-4</ns3:P3013>
+    <ns3:P3015>Incluye referencias bibliográficas e índice</ns3:P3015>
+    <ns3:P3015>&quot;Web Semántica España&quot;</ns3:P3015>
+    <ns3:P3015>Textos en español e inglés</ns3:P3015>
+    <ns3:P3015>Jornadas desarrolladas en el marco del II Congreso Español de Informática (CEDI 2007) celebrado en Zaragoza del 11 al 14 de septiembre de 2007</ns3:P3015>
+    <ns3:P3064>Libro</ns3:P3064>
+  </rdf:Description>
+</rdf:RDF>

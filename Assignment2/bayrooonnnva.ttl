@@ -1,0 +1,19 @@
+@prefix ex:  <http://example.org/iot#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Nodos (recursos)
+ex:ClassRoom03      a ex:ClassRoom .
+ex:Sensor347        a ex:Sensor .
+ex:Measurement8432  a ex:Measurement .
+ex:Table322         a ex:Furniture .
+ex:ETSIInformaticos a ex:Organization .
+
+# Aristas (propiedades del grafo)
+ex:ClassRoom03 ex:contains       ex:Sensor347 , ex:Table322 .
+ex:Sensor347   ex:hasMeasurement ex:Measurement8432 .
+ex:Measurement8432
+    ex:hasTemperature  29 ;
+    ex:atTime          "2022-09-12T12:01:12"^^xsd:dateTime .
+
+ex:Table322        ex:hasOwner  ex:ETSIInformaticos .
+ex:ETSIInformaticos ex:hasName  "ETSI Informáticos"@es .
