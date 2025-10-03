@@ -1,0 +1,42 @@
+{
+	"@context": {
+		"ont": "http://example.org/ontology/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+
+		"includes": { "@id": "ont:includes", "@type": "@id" },
+		"hasMeasurement": { "@id": "ont:hasMeasurement", "@type": "@id" },
+		"hasTemperature":  { "@id": "ont:hasTemperature", "@type": "xsd:integer" },
+		"atTime":  { "@id": "ont:atTime", "@type": "xsd:dateTime" },
+		"hasOwner": { "@id": "ont:hasOwner", "@type": "@id" },
+		"hasName": { "@id": "ont:hasName", "@type": "xsd:string" }
+
+	},
+	"@graph": [
+		{
+			"@id": "http://example.org/resource/Class01",
+			"@type": "ont:ClassRoom",
+			"includes": [
+				{
+					"@id": "http://example.org/resource/Sensor029",
+					"@type": "ont:Sensor",
+					"hasMeasurement": {
+						"@id": "http://example.org/resource/Measurement8401",
+						"@type": "ont:Measurement",
+						"hasTemperature": 29,
+						"atTime": "2010-06-12T12:00:12"
+					}
+				},
+				{
+					"@id": "http://example.org/resource/Computer101",
+					"@type": "ont:Computer",
+					"hasOwner": {
+						"@id": "http://example.org/resource/User10A",
+						"@type": "ont:User",
+						"hasName": "Pedro"
+					}
+				}
+			]
+		}
+	]
+}
+

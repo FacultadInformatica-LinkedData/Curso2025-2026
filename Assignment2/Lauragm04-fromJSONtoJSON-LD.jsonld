@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "ex": "http://example.org/ontology#",
+    "fullName": "schema:name",
+    "hometown": "schema:homeLocation",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "ex:attendsCourse",
+    "name": "schema:name",
+    "teachers": "schema:teacher",
+    "description": "schema:description"
+  },
+  "@type": "schema:Person",
+  "fullName": "Laura Granero Martín",
+  "hometown": "Madrid",
+  "age": 21,
+  "almaMater": {
+    "@type": "schema:CollegeOrUniversity",
+    "name": "UPM - ETSIINF"
+  },
+  "parents": [
+    {
+      "@type": "schema:Person",
+      "name": "Raul Granero"
+    },
+    {
+      "@type": "schema:Person",
+      "name": "Marian Martín"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Ingeniería del Software II",
+      "teachers": [
+        { "@type": "schema:Person", "name": "Ana Maria Moreno Sanchez-Capuchino" },
+        { "@type": "schema:Person", "name": "Tomas San Feliu Gilabert" },
+        { "@type": "schema:Person", "name": "Jose Antonio CalvoManzano Villalon" }
+      ],
+      "description": "Se enfoca en aplicar los aspectos de gestión al desarrollo software"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Nanotecnología",
+      "teachers": [
+        { "@type": "schema:Person", "name": "M.estibaliz Martinez Izquierdo" },
+        { "@type": "schema:Person", "name": "Laura Ortiz Martin" }
+      ],
+      "description": "Formación introductoria sobre las diferentes investigaciones y aplicaciones que existen actualmente dentro de la Nanotecnología."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Web Semántica, Linked Data y Grafos de Conocimientos",
+      "teachers": [
+        { "@type": "schema:Person", "name": "Oscar Corcho" },
+        { "@type": "schema:Person", "name": "Daniel Garijo" },
+        { "@type": "schema:Person", "name": "Raul Garcia Castro" }
+      ],
+      "description": "Proporciona la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos en la Web de datos enlazados."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Gestión de las Tecnologías de la Información",
+      "teachers": [
+        { "@type": "schema:Person", "name": "Ricardo Colomo Palacios" },
+        { "@type": "schema:Person", "name": "Edmundo Tovar Caro" }
+      ],
+      "description": "Se tratan los elementos de una organización, las normas para el mercado digital y el Gobierno y Gestión de las TI."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "English For Professional And Academic Communication",
+      "teachers": [
+        { "@type": "schema:Person", "name": "Hanane Benali Taouis" },
+        { "@type": "schema:Person", "name": "Elena Montiel Ponsoda" }
+      ],
+      "description": "Desarrollo de las habilidades de comunicación efectiva en entornos académicos y profesionales en inglés de ingeniería informática."
+    }
+  ]
+}
