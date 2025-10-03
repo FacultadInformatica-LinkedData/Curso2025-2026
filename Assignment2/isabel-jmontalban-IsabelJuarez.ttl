@@ -1,0 +1,35 @@
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Clases
+ex:Persona a rdfs:Class .
+ex:Profesor a rdfs:Class ;
+    rdfs:subClassOf ex:Persona .
+ex:Estudiante a rdfs:Class ;
+    rdfs:subClassOf ex:Persona .
+ex:Asignatura a rdfs:Class .
+
+# Propiedades
+ex:enseña a rdf:Property ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Asignatura .
+
+ex:matriculadoEn a rdf:Property ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:range ex:Asignatura .
+
+ex:tieneNombre a rdf:Property ;
+    rdfs:domain ex:Persona ;
+    rdfs:range rdfs:Literal .
+
+# Instancias
+ex:ana a ex:Estudiante ;
+    ex:tieneNombre "Ana" ;
+    ex:matriculadoEn ex:Matematicas .
+
+ex:juan a ex:Profesor ;
+    ex:tieneNombre "Juan" ;
+    ex:enseña ex:Matematicas .
+
+ex:Matematicas a ex:Asignatura .
