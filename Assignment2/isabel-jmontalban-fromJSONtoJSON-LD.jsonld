@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "ex": "http://example.org/ontology#",
+    "fullName": "schema:name",
+    "hometown": "schema:birthPlace",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "ex:attendsCourse",
+    "name": "schema:name",
+    "teachers": "schema:provider",
+    "description": "schema:description"
+  },
+  "@type": "schema:Person",
+  "fullName": "Isabel Juarez Montalban",
+  "hometown": {
+    "@type": "schema:Place",
+    "name": "Ciudad Real"
+  },
+  "age": 21,
+  "almaMater": {
+    "@type": "schema:CollegeOrUniversity",
+    "name": "Universidad Politecnica de Madrid"
+  },
+  "parents": [
+    {
+      "@type": "schema:Person",
+      "fullName": "Andres Juarez"
+    },
+    {
+      "@type": "schema:Person",
+      "fullName": "Isabel Montalban"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Sistemas operativos",
+      "teachers": {
+        "@type": "schema:Person",
+        "fullName": "F Rosales"
+      },
+      "description": "Funcionalidad de los sistemas"
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Ingenieria del Software II",
+      "teachers": {
+        "@type": "schema:Person",
+        "fullName": "Ana Maria Moreno"
+      },
+      "description": "Comprender proyectos"
+    }
+  ]
+}
+
