@@ -1,44 +1,57 @@
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Isabel Juarez Montalban",
-  "birthPlace": {
-    "@type": "Place",
+  "@context": {
+    "schema": "https://schema.org/",
+    "ex": "http://example.org/ontology#",
+    "fullName": "schema:name",
+    "hometown": "schema:birthPlace",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "ex:attendsCourse",
+    "name": "schema:name",
+    "teachers": "schema:provider",
+    "description": "schema:description"
+  },
+  "@type": "schema:Person",
+  "fullName": "Isabel Juarez Montalban",
+  "hometown": {
+    "@type": "schema:Place",
     "name": "Ciudad Real"
   },
   "age": 21,
-  "alumniOf": {
-    "@type": "University",
+  "almaMater": {
+    "@type": "schema:CollegeOrUniversity",
     "name": "Universidad Politecnica de Madrid"
   },
-  "parent": [
+  "parents": [
     {
-      "@type": "Person",
-      "name": "Andres Juarez"
+      "@type": "schema:Person",
+      "fullName": "Andres Juarez"
     },
     {
-      "@type": "Person",
-      "name": "Isabel Montalban"
+      "@type": "schema:Person",
+      "fullName": "Isabel Montalban"
     }
   ],
-  "hasCourse": [
+  "subjects": [
     {
-      "@type": "Course",
+      "@type": "schema:Course",
       "name": "Sistemas operativos",
-      "provider": {
-        "@type": "Person",
-        "name": "F Rosales"
+      "teachers": {
+        "@type": "schema:Person",
+        "fullName": "F Rosales"
       },
       "description": "Funcionalidad de los sistemas"
     },
     {
-      "@type": "Course",
+      "@type": "schema:Course",
       "name": "Ingenieria del Software II",
-      "provider": {
-        "@type": "Person",
-        "name": "Ana Maria Moreno"
+      "teachers": {
+        "@type": "schema:Person",
+        "fullName": "Ana Maria Moreno"
       },
       "description": "Comprender proyectos"
     }
   ]
 }
+
