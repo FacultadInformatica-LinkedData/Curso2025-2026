@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Isabel Juarez Montalban",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Ciudad Real"
+  },
+  "age": 21,
+  "alumniOf": {
+    "@type": "University",
+    "name": "Universidad Politecnica de Madrid"
+  },
+  "parent": [
+    {
+      "@type": "Person",
+      "name": "Andres Juarez"
+    },
+    {
+      "@type": "Person",
+      "name": "Isabel Montalban"
+    }
+  ],
+  "hasCourse": [
+    {
+      "@type": "Course",
+      "name": "Sistemas operativos",
+      "provider": {
+        "@type": "Person",
+        "name": "F Rosales"
+      },
+      "description": "Funcionalidad de los sistemas"
+    },
+    {
+      "@type": "Course",
+      "name": "Ingenieria del Software II",
+      "provider": {
+        "@type": "Person",
+        "name": "Ana Maria Moreno"
+      },
+      "description": "Comprender proyectos"
+    }
+  ]
+}
