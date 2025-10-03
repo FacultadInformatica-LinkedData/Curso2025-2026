@@ -1,0 +1,4 @@
+datetime,station_id,station_name,lat,lon,pollutant,unit,value,validated
+2024-11-01T08:00:00,GRAC1,Gràcia - Estació 1,41.405,2.156,NO2,ug/m3,36,true
+2024-11-01T08:00:00,EIX2,Eixample - Estació 2,41.392,2.168,PM10,ug/m3,21,true
+2024-11-01T09:00:00,GRAC1,Gràcia - Estació 1,41.405,2.156,O3,ug/m3,47,false

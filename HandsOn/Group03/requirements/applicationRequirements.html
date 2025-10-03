@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Requirements - Calidad del Aire</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #222; }
+    h1, h2 { color: #0a67a3; }
+    .mock { border: 1px solid #ccc; border-radius: 6px; padding: 10px; margin: 15px 0; background: #f9f9f9; }
+  </style>
+</head>
+<body>
+  <h1>Requisitos de la Aplicación</h1>
+  <p>La aplicación mostrará el <strong>estado actual de la calidad del aire</strong> en la Comunidad de Madrid, estación por estación.</p>
+
+  <h2>Requisitos principales</h2>
+  <ul>
+    <li>Visualizar un mapa con todas las estaciones de calidad del aire.</li>
+    <li>Al hacer clic en una estación, mostrar su estado actual (ej. niveles de NO₂, O₃, PM10, PM2_%, BTX).</li>
+    <li>Los datos se obtienen del dataset oficial de la Comunidad de Madrid.</li>
+  </ul>
+
+  <h2>Mock-ups</h2>
+
+  <div class="mock">
+    <h3>Vista 1: Mapa</h3>
+    <p>[Mapa con iconos marcando cada estación]</p>
+    <p>Ejemplo: círculos verdes/amarillos/rojos según calidad del aire.</p>
+  </div>
+
+  <div class="mock">
+    <h3>Vista 2: Detalle de Estación</h3>
+    <p>[Panel con nombre de la estación y valores actuales]</p>
+    <ul>
+      <li>NO₂: 45 µg/m³</li>
+      <li>O₃: 30 µg/m³</li>
+      <li>PM10: 18 µg/m³</li>
+    </ul>
+  </div>
+</body>
+</html>

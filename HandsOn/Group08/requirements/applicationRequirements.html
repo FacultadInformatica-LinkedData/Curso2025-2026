@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Application Requirements — Hands-on 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;margin:24px;line-height:1.6;color:#111}
+    h1,h2{margin:0 0 12px}
+    section{margin:20px 0}
+    ul{margin:6px 0 0 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .card{border:1px solid #e5e7eb;border-radius:14px;padding:16px;background:#fff}
+    .mock{border:2px dashed #94a3b8;border-radius:16px;padding:14px;height:320px;display:flex;flex-direction:column;gap:8px}
+    .bar{height:26px;border-radius:8px;border:1px solid #cbd5e1;background:#f8fafc}
+    .row{flex:1;border-radius:10px;border:1px solid #cbd5e1;background:#f1f5f9}
+    .footer{height:20px;border-radius:8px;border:1px dashed #cbd5e1;background:#f8fafc}
+    code{background:#f1f5f9;border:1px solid #e2e8f0;padding:2px 6px;border-radius:6px}
+    small{color:#475569}
+  </style>
+</head>
+<body>
+  <h1>Proposed application: <em>BCN Mobility & Air Explorer</em></h1>
+  <p>Web app integrating <strong>air quality</strong>, <strong>traffic by segments</strong>, and <strong>Bicing stations</strong> to (i) explore city status, (ii) compare areas, and (iii) suggest micromobility routes through less congested areas with better air quality.</p>
+
+  <section>
+    <h2>Users and goals</h2>
+    <ul>
+      <li>Citizens using Bicing: find nearby stations and healthier routes.</li>
+      <li>Data journalism / research: analyze traffic–pollution correlation.</li>
+      <li>City administration: identify critical segments for action.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Functional requirements</h2>
+    <ul>
+      <li>FR1. Base map with layers: Bicing stations, traffic segments, air quality stations.</li>
+      <li>FR2. Filters by date/time and by neighborhood/district.</li>
+      <li>FR3. Detail panel on click (indicators, basic time series).</li>
+      <li>FR4. “Healthier route” search between two points (avoiding dense/very dense segments and prioritizing zones with lower NO₂/PM10).</li>
+      <li>FR5. Export results to <code>CSV</code> and <code>GeoJSON</code>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Non-functional requirements</h2>
+    <ul>
+      <li>NFR1. Data and metadata will be published as <strong>RDF</strong> using vocabularies: <code>schema.org</code> (place), <code>SOSA/SSN</code> (observations), <code>Time Ontology</code>, <code>DCAT</code> (catalog), and <code>GeoSPARQL</code>.</li>
+      <li>NFR2. External links: districts/municipal boundaries (open cartography), Wikidata for geographic entities.</li>
+      <li>NFR3. Licenses preserved in metadata (<code>dcterms:license</code>).</li>
+      <li>NFR4. Accessibility (WCAG 2.1 AA) and a public SPARQL API.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mockups (wireframes)</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Home — Map</h3>
+        <div class="mock">
+          <div class="bar"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="footer"></div>
+        </div>
+        <small>Map with toggleable layers and legend for traffic and air quality states.</small>
+      </div>
+      <div class="card">
+        <h3>Station detail</h3>
+        <div class="mock">
+          <div class="bar"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="footer"></div>
+        </div>
+        <small>Card with time series and context (NO₂, PM10, traffic state).</small>
+      </div>
+      <div class="card">
+        <h3>Healthy route</h3>
+        <div class="mock">
+          <div class="bar"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="footer"></div>
+        </div>
+        <small>Origin/destination input and results with exposure estimation.</small>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>RDF modeling and linking plan</h2>
+    <ul>
+      <li>Air quality observations → <code>sosa:Observation</code> with <code>sosa:observedProperty</code> (NO₂, O₃, PM10), <code>time:Instant</code>, and <code>sosa:hasFeatureOfInterest</code> the station (<code>schema:Place</code> + <code>geo:Point</code>).</li>
+      <li>Traffic segments → <code>schema:Route</code>/<code>geo:Feature</code>, status as <code>sosa:Result</code> or <code>skos:Concept</code> (very fluid… congestion).</li>
+      <li>Bicing stations → <code>schema:CivicStructure</code>/<code>schema:BicycleParking</code> with capacity and type.</li>
+      <li>External links: Barcelona districts on Wikidata (QIDs), municipal cartography, GeoNames, etc.</li>
+    </ul>
+  </section>
+</body>
+</html>

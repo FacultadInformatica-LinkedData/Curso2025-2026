@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dataset Requirements Assessment (R1–R6) – Air Quality Network Stations (Madrid)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root { --fg:#111827; --muted:#6b7280; --ok:#0b7a50; --opt:#1d4ed8; --bg:#ffffff; --shade:#f6f8fa; }
+    html, body { background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; }
+    main { max-width: 960px; margin: 40px auto; padding: 0 16px; }
+    h1, h2 { line-height: 1.25; }
+    code, pre { background: var(--shade); padding: 2px 6px; border-radius: 4px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #e5e7eb; padding: 6px 8px; text-align: left; }
+    th { background: #f1f5f9; }
+    .req { color: var(--ok); font-weight: 700; }
+    .opt { color: var(--opt); font-weight: 700; }
+    .muted { color: var(--muted); }
+    details { margin: 8px 0 16px; }
+    ul.summary li { margin: 4px 0; }
+    a { color: #1d4ed8; text-decoration: none; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Dataset Requirements Assessment (R1–R6)</h1>
+  <p><strong>Dataset:</strong> Información de estaciones – Red de calidad del aire (Madrid)<br>
+     <strong>Source / Portal:</strong> <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=9e42c176313eb410VgnVCM1000000b205a0aRCRD">Ayuntamiento de Madrid – “Calidad del aire. Estaciones de control”</a><br>
+     <strong>Format:</strong> CSV (semicolon <code>;</code> delimited) with <strong>25 columns</strong> and <strong>24 rows</strong> (file provided to the team)<br>
+     <strong>Last accessed:</strong> 2025-09-30</p>
+
+  <h2>R1. Smart City Domain <span class="req">[Required]</span></h2>
+  <p><strong>Environment / Air Quality.</strong> The dataset lists air-quality monitoring stations, their locations and identifiers, which fits the environment domain.</p>
+
+  <h2>R2. Availability as CSV <span class="req">[Required]</span></h2>
+  <ul>
+    <li>CSV is available on the official portal (see the stations page “Descargas → CSV”).</li>
+    <li>Team-provided CSV analysed here has <strong>24</strong> records and <strong>25</strong> fields; delimiter is <code>;</code>.</li>
+  </ul>
+  <details>
+    <summary><strong>Detected columns</strong></summary>
+    <table>
+      <thead><tr><th>#</th><th>Column name</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>CODIGO</td></tr><tr><td>2</td><td>CODIGO_CORTO</td></tr><tr><td>3</td><td>ESTACION</td></tr><tr><td>4</td><td>DIRECCION</td></tr><tr><td>5</td><td>LONGITUD_ETRS89</td></tr><tr><td>6</td><td>LATITUD_ETRS89</td></tr><tr><td>7</td><td>ALTITUD</td></tr><tr><td>8</td><td>COD_TIPO</td></tr><tr><td>9</td><td>NOM_TIPO</td></tr><tr><td>10</td><td>NO2</td></tr><tr><td>11</td><td>SO2</td></tr><tr><td>12</td><td>CO</td></tr><tr><td>13</td><td>PM10</td></tr><tr><td>14</td><td>PM2_5</td></tr><tr><td>15</td><td>O3</td></tr><tr><td>16</td><td>BTX</td></tr><tr><td>17</td><td>COD_VIA</td></tr><tr><td>18</td><td>VIA_CLASE</td></tr><tr><td>19</td><td>VIA_PAR</td></tr><tr><td>20</td><td>VIA_NOMBRE</td></tr><tr><td>21</td><td>Fecha alta</td></tr><tr><td>22</td><td>COORDENADA_X_ETRS89</td></tr><tr><td>23</td><td>COORDENADA_Y_ETRS89</td></tr><tr><td>24</td><td>LONGITUD</td></tr><tr><td>25</td><td>LATITUD</td></tr>
+      </tbody>
+    </table>
+  </details>
+
+  <h2>R3. Open License <span class="req">[Required]</span></h2>
+  <p>Madrid Open Data applies the city’s <a href="https://datos.madrid.es/egob/catalogo/aviso-legal"><em>general reuse conditions</em></a>, which permit reuse for commercial and non‑commercial purposes, including copying, diffusion, modification and combination of the information, with the duty to <strong>cite the source</strong> and not imply sponsorship, among other conditions.</p>
+
+  <h2>R4. Linkability to Real‑World Entities <span class="req">[Required]</span></h2>
+  <p>Fields supporting linkage to other datasets:</p>
+  <ul>
+    <li><strong>Coordinates</strong>: LONGITUD_ETRS89, LATITUD_ETRS89, COORDENADA_X_ETRS89, COORDENADA_Y_ETRS89, LONGITUD, LATITUD</li>
+    <li><strong>Stable IDs</strong>: CODIGO, CODIGO_CORTO, COD_TIPO, COD_VIA</li>
+    <li><strong>Addresses</strong>: DIRECCION, COD_VIA, VIA_CLASE, VIA_PAR, VIA_NOMBRE</li>
+    <li><strong>Temporal</strong>: Fecha alta</li>
+  </ul>
+  <p>These enable joins with OSM/IGN layers, administrative divisions, and weather series (by coordinates and date/time).</p>
+
+  <h2>R5. Documentation <span class="opt">[Optional]</span></h2>
+  <ul>
+    <li>Associated document (data interpretation / structure): available from the stations page as <em>“Documento de estructura Estaciones de Control (PDF)”</em>.</li>
+    <li>For real‑time observations, the portal’s “Datos en tiempo real” page explains the refresh cadence (approx. every 20 minutes at :15, :35, :55) and links a detailed PDF for interpretation.</li>
+    <li>See also: <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextoid=41e01e007c9db410VgnVCM2000000c205a0aRCRD">Calidad del aire – Datos en tiempo real</a>.</li>
+  </ul>
+
+  <h2>R6. Multiple Sources <span class="opt">[Optional]</span></h2>
+  <p><strong>Not multi‑source.</strong> Based on the official dataset pages, this dataset does <em>not</em> appear to integrate multiple external sources. The <em>Responsible unit</em> is <strong>Dirección General de Sostenibilidad y Control Ambiental</strong> and the <em>Editor</em> is <strong>Ayuntamiento de Madrid</strong>, indicating a single institutional source (see the <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=9e42c176313eb410VgnVCM1000000b205a0aRCRD">stations dataset page</a>). The real‑time page indicates the values are <em>automatically produced by the monitoring stations</em>, with no mention of external aggregation (see <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextoid=41e01e007c9db410VgnVCM2000000c205a0aRCRD">real‑time dataset page</a>). Therefore, R6 is <strong>not met</strong> (discussed). If multi‑source integration is desired for extra credit, consider joining with external datasets (e.g., meteorological series) using station codes and/or coordinates plus timestamps.</p>
+
+  <h2>Summary</h2>
+  <ul class="summary">
+    <li>R1: <strong>Meets</strong></li>
+    <li>R2: <strong>Meets</strong></li>
+    <li>R3: <strong>Meets</strong> (city Open Data general reuse terms)</li>
+    <li>R4: <strong>Meets</strong> (rich geospatial/ID fields)</li>
+    <li>R5: <strong>Optional – Partially met</strong> (documentation available)</li>
+    <li>R6: <strong>Optional – Not met</strong> (single institutional source; discussion provided)</li>
+  </ul>
+
+  <h2>Known Issues / Risks</h2>
+  <ul>
+    <li>Specify/validate coordinate reference systems (ETRS89 vs WGS84) when linking with external GIS layers.</li>
+    <li>Check for nulls and consistency across identifiers/addresses.</li>
+    <li>Comply with attribution under the Madrid Open Data reuse conditions when publishing.</li>
+  </ul>
+
+  <hr>
+  <p class="muted">Links: <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=9e42c176313eb410VgnVCM1000000b205a0aRCRD">Stations dataset page</a> • <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextoid=41e01e007c9db410VgnVCM2000000c205a0aRCRD">Real‑time data page</a> • <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">License / reuse conditions</a></p>
+</main>
+</body>
+</html>

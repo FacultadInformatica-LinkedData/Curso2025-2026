@@ -1,0 +1,4 @@
+station_id,name,lat,lon,capacity,type,status
+24,Bruc - Diputació,41.391,-2.170,32,electrical,OPERATIONAL
+154,Marina - Pujades,41.398,2.195,28,mechanical,OPERATIONAL
+210,Sants Estació,41.381,2.140,40,electrical,MAINTENANCE

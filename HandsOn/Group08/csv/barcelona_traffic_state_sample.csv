@@ -1,0 +1,4 @@
+datetime,segment_id,street_name,status_current,status_forecast,speed_kmh
+2025-04-01T10:00:00,TRAM-001,Gran Via de les Corts,3,4,24
+2025-04-01T10:15:00,TRAM-001,Gran Via de les Corts,4,4,18
+2025-04-01T10:15:00,TRAM-117,Av. Diagonal,2,3,35

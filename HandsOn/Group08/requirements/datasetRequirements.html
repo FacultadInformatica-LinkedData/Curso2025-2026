@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dataset Requirements — Hands-on 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;margin:24px;line-height:1.5;color:#111}
+    h1,h2{margin:0 0 12px}
+    .ds{border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:16px 0}
+    table{border-collapse:collapse;width:100%;margin-top:12px}
+    th,td{border:1px solid #e5e7eb;padding:8px;text-align:left;vertical-align:top}
+    th{background:#f8fafc}
+    .ok{color:#047857;font-weight:600}
+    .opt{color:#475569}
+    .warn{color:#b45309}
+    .small{font-size:0.92rem;color:#334155}
+    code{background:#f1f5f9;border:1px solid #e2e8f0;padding:2px 6px;border-radius:6px}
+    a{color:#0ea5e9;text-decoration:none}
+    .meta{font-size:0.9rem;color:#475569;margin-top:8px}
+  </style>
+</head>
+<body>
+  <h1>Requirement check (R1–R6)</h1>
+  <p class="small">Each dataset is evaluated against the assignment requirements. R1–R4 are mandatory; R5–R6 are optional but discussed.</p>
+
+  <div class="ds">
+    <h2>Dataset A — Air quality (station-level, Barcelona)</h2>
+    <p class="meta">Portal: Open Data BCN — monthly CSV resource (e.g., <em>2024_11_Novembre_qualitat_aire_BCN.csv</em>). License: <strong>CC BY 4.0</strong>. See the dataset and resource pages in the portal.</p>
+    <table>
+      <thead><tr><th>Req</th><th>Satisfies?</th><th>Justification</th></tr></thead>
+      <tbody>
+        <tr><td>R1 — Smart city domain</td><td class="ok">Yes</td><td>Environment / urban air quality.</td></tr>
+        <tr><td>R2 — Data available as CSV</td><td class="ok">Yes</td><td>The portal publishes monthly <em>CSV</em> files with station readings.</td></tr>
+        <tr><td>R3 — Open license</td><td class="ok">Yes</td><td><strong>Creative Commons BY 4.0</strong> stated in the dataset page.</td></tr>
+        <tr><td>R4 — Easily linkable to generic entities</td><td class="ok">Yes</td><td>Includes station IDs and coordinates; linkable to <code>schema:Place</code>, <code>geo:Point</code>, districts, etc.</td></tr>
+        <tr><td>R5 — Documentation exists</td><td class="ok">Yes</td><td>The dataset page describes fields and resources.</td></tr>
+        <tr><td>R6 — Multiple sources</td><td class="opt">N/A</td><td>Will be combined with datasets B and C for enrichment (optional).</td></tr>
+      </tbody>
+    </table>
+    <p class="small">References: dataset page and monthly CSV resource in Open Data BCN.</p>
+  </div>
+
+  <div class="ds">
+    <h2>Dataset B — Traffic status by segments (TRAMS), Barcelona</h2>
+    <p class="meta">Portal: Open Data BCN — monthly CSV resource (e.g., <em>2025_04_Abril_TRAMS_TRAMS.csv</em>). License: <strong>CC BY 4.0</strong>.</p>
+    <table>
+      <thead><tr><th>Req</th><th>Satisfies?</th><th>Justification</th></tr></thead>
+      <tbody>
+        <tr><td>R1 — Smart city domain</td><td class="ok">Yes</td><td>Mobility / traffic intensity by road segment.</td></tr>
+        <tr><td>R2 — Data available as CSV</td><td class="ok">Yes</td><td>Monthly <em>CSV</em> publication with current and forecasted status.</td></tr>
+        <tr><td>R3 — Open license</td><td class="ok">Yes</td><td><strong>CC BY 4.0</strong> on the dataset page.</td></tr>
+        <tr><td>R4 — Easily linkable to generic entities</td><td class="ok">Yes</td><td>Includes geo-referenced segments/IDs; linkable to roads, neighborhoods, or coordinates.</td></tr>
+        <tr><td>R5 — Documentation exists</td><td class="ok">Yes</td><td>Page describes columns such as current and forecast status by time slot.</td></tr>
+        <tr><td>R6 — Multiple sources</td><td class="opt">N/A</td><td>Will be combined with A (air) and C (Bicing).</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ds">
+    <h2>Dataset C — Bicing stations (Barcelona)</h2>
+    <p class="meta">Portal: Open Data BCN — CSV (historical and/or status). License: <strong>CC BY 4.0</strong>.</p>
+    <table>
+      <thead><tr><th>Req</th><th>Satisfies?</th><th>Justification</th></tr></thead>
+      <tbody>
+        <tr><td>R1 — Smart city domain</td><td class="ok">Yes</td><td>Sustainable mobility / micromobility.</td></tr>
+        <tr><td>R2 — Data available as CSV</td><td class="ok">Yes</td><td>Station resources in <em>CSV</em> (e.g., 2019 historical) and status.</td></tr>
+        <tr><td>R3 — Open license</td><td class="ok">Yes</td><td><strong>CC BY 4.0</strong> stated in the dataset page.</td></tr>
+        <tr><td>R4 — Easily linkable to generic entities</td><td class="ok">Yes</td><td>Contains coordinates and station IDs; linkable to streets, neighborhoods, and air quality by spatial joins.</td></tr>
+        <tr><td>R5 — Documentation exists</td><td class="ok">Yes</td><td>Dataset page with description and resources.</td></tr>
+        <tr><td>R6 — Multiple sources</td><td class="ok">Yes (optional)</td><td>Complements A and B for a multimodal use case.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="small">See exact dataset/resource URLs in <code>csv/README.md</code> and the <code>scripts/fetch_data.sh</code> script.</p>
+</body>
+</html>
