@@ -1,0 +1,44 @@
+@prefix ex:    <https://example.org/group15/def/> .
+@prefix ent:   <https://example.org/group15/> .
+@prefix schema:<http://schema.org/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# ---- Air quality station + multiple measurements
+ent:station/air/47 a ex:AirQualityStation ;
+  ex:stationId "47" ;
+  schema:address "Plaza del Carmen, Madrid" ;
+  geo:lat 40.4183 ; geo:long -3.7038 .
+
+ent:measurement/air/47/2025/09/20/NO2 a ex:Measurement ;
+  ex:observedProperty "NO2" ;
+  ex:observedValue 37.2 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/47/2025/09/20/PM10 a ex:Measurement ;
+  ex:observedProperty "PM10" ;
+  ex:observedValue 21.0 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/47/2025/09/21/NO2 a ex:Measurement ;
+  ex:observedProperty "NO2" ;
+  ex:observedValue 44.5 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
+
+ent:station/air/47 ex:hasMeasurement ent:measurement/air/47/2025/09/20/NO2 ,
+                                      ent:measurement/air/47/2025/09/20/PM10 ,
+                                      ent:measurement/air/47/2025/09/21/NO2 .
+
+# ---- Bicycle station
+ent:station/bike/123 a ex:BicycleStation ;
+  ex:stationId "123" ;
+  schema:address "Calle Alcalá 1, Madrid" ;
+  geo:lat 40.4189 ; geo:long -3.7019 .
+
+# ---- Sports facility
+ent:facility/456 a ex:SportsFacility ;
+  schema:address "Centro Deportivo Municipal Example" ;
+  geo:lat 40.4100 ; geo:long -3.7000 .
