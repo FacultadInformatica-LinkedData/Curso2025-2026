@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>applicationRequirements</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; max-width: 900px; margin: 2rem auto; }
+    h1, h2, h3 { margin-top: 1.2rem; }
+    ul { margin-bottom: 0.8rem; }
+    img { max-width: 100%; height: auto; border: 1px solid #ccc; padding: 4px; }
+    code { background: #f6f6f6; padding: 2px 4px; }
+  </style>
+</head>
+<body>
+  <h1>Requisitos de la Aplicación — “Urban Environmental Insights”</h1>
+
+  <p>
+    La aplicación integra tres datasets: (1) índice de verde urbano (Milán), 
+    (2) gasto empresarial en protección ambiental (España), y 
+    (3) niveles de NO₂ en zonas urbanas. 
+    El objetivo es ofrecer una vista integrada para analizar la relación entre cobertura verde, contaminación y gasto en sostenibilidad.
+  </p>
+
+  <h2>Usuarios objetivo</h2>
+  <ul>
+    <li>Técnicos municipales y planificadores urbanos.</li>
+    <li>Investigadores y estudiantes.</li>
+    <li>Ciudadanos interesados en calidad del aire y sostenibilidad.</li>
+  </ul>
+
+  <h2>Historias de usuario</h2>
+  <ul>
+    <li>Como técnico municipal, quiero ver un <b>mapa</b> con estaciones y zonas verdes.</li>
+    <li>Como investigador, quiero <b>filtrar</b> por fechas y descargar subconjuntos de datos.</li>
+    <li>Como ciudadano, quiero comparar <b>tendencias</b> de NO₂ y verde urbano por zona.</li>
+  </ul>
+
+  <h2>Requisitos funcionales</h2>
+  <ul>
+    <li>F1. Mapa interactivo con capas de NO₂ e índice verde.</li>
+    <li>F2. Panel de filtros (fecha, zona, variable).</li>
+    <li>F3. Series temporales y KPIs.</li>
+    <li>F4. Ficha de zona/estación con detalles.</li>
+    <li>F5. Exportación a CSV.</li>
+  </ul>
+
+  <h2>Requisitos no funcionales</h2>
+  <ul>
+    <li>NF1. Publicación en RDF enlazando con GeoNames/Wikidata/OSM.</li>
+    <li>NF2. Licenciamiento abierto.</li>
+    <li>NF3. Desempeño aceptable con grandes volúmenes de datos.</li>
+    <li>NF4. Accesibilidad (WCAG 2.1 AA mínimo).</li>
+  </ul>
+
+  <h2>Datos y enlazado RDF</h2>
+  <ul>
+    <li>Vocabs: <code>DCAT</code>, <code>GeoSPARQL</code>/<code>WGS84</code>, <code>SOSA/SSN</code>, <code>QB</code>.</li>
+    <li>URIs estables para estaciones y zonas.</li>
+    <li>Enlaces a entidades externas: GeoNames, Wikidata, NUTS/LAU.</li>
+  </ul>
+
+  <h2>Mockups</h2>
+  <p>Prototipos de interfaz:</p>
+  <img src="mockup-dashboard.png" alt="Mockup Dashboard">
+  <img src="mockup-station.png" alt="Mockup Ficha Zona/Estación">
+
+  <h2>Métricas clave</h2>
+  <ul>
+    <li>NO₂ medio por zona y periodo.</li>
+    <li>% de cobertura verde.</li>
+    <li>Evolución del gasto en protección ambiental.</li>
+  </ul>
+
+  <h2>Roadmap</h2>
+  <ol>
+    <li>Limpieza y normalización de CSVs.</li>
+    <li>Publicación preliminar y validación de esquemas.</li>
+    <li>Transformación a RDF y enlazado externo.</li>
+    <li>Prototipo del dashboard y pruebas con usuarios.</li>
+  </ol>
+</body>
+</html>

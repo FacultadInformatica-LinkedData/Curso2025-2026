@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>datasetRequirements</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; max-width: 900px; margin: 2rem auto; }
+    h1, h2, h3 { margin-top: 1.2rem; }
+    ul { margin-bottom: 0.8rem; }
+    hr { margin: 1.2rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación de requisitos (R1–R6) de los datasets seleccionados</h1>
+  <p>Este documento evalúa, para cada dataset, el cumplimiento de los requisitos obligatorios (R1–R4) y la situación respecto a los opcionales (R5–R6). 
+  Las verificaciones de licencia y documentación deben confirmarse en el portal de origen.</p>
+
+  <h2>Urban Green Index — Sezioni di Censimento 2011 (Milán)</h2>
+  <ul>
+    <li><b>Archivo:</b> ds2816_spotted-milan-urbangreenindex-sezionicensimento2011-01072024_31072024.csv</li>
+    <li><b>Columnas (muestra):</b> ... (según CSV)</li>
+    <li><b>Columnas geográficas/enlazables detectadas:</b> sección censal, distrito</li>
+    <li><b>Columnas temporales detectadas:</b> fecha</li>
+  </ul>
+  <h3>Evaluación de requisitos</h3>
+  <ul>
+    <li><b>R1:</b> Dominio Smart City (medio ambiente / planificación urbana, índice verde).</li>
+    <li><b>R2:</b> CSV disponible.</li>
+    <li><b>R3:</b> Verificar licencia (CC-BY/ODC) en portal de origen.</li>
+    <li><b>R4:</b> Enlazable con entidades (secciones censales, distritos).</li>
+    <li><b>R5:</b> Revisar documentación en el portal.</li>
+    <li><b>R6:</b> Puede complementarse con otras fuentes (ej. datos OSM).</li>
+  </ul>
+  <hr/>
+
+  <h2>Gasto de las empresas en protección ambiental — Total industria (España)</h2>
+  <ul>
+    <li><b>Archivo:</b> gasto-de-las-empresas-en-proteccion-ambiental-total-industria.csv</li>
+    <li><b>Columnas (muestra):</b> ... (según CSV)</li>
+    <li><b>Columnas geográficas/enlazables detectadas:</b> No detectadas automáticamente (dataset de ámbito nacional).</li>
+    <li><b>Columnas temporales detectadas:</b> Año.</li>
+  </ul>
+  <h3>Evaluación de requisitos</h3>
+  <ul>
+    <li><b>R1:</b> Dominio Smart City (economía circular / sostenibilidad).</li>
+    <li><b>R2:</b> CSV disponible.</li>
+    <li><b>R3:</b> Verificar licencia (probablemente datos abiertos INE).</li>
+    <li><b>R4:</b> Enlazable solo con entidades temporales (años); no incluye georreferencias.</li>
+    <li><b>R5:</b> Revisar documentación en el portal del INE/datos.gob.es.</li>
+    <li><b>R6:</b> Puede complementarse con otras fuentes económicas.</li>
+  </ul>
+  <hr/>
+
+  <h2>Valor medio de contaminación atmosférica — NO₂</h2>
+  <ul>
+    <li><b>Archivo:</b> valor-medio-de-contaminacion-atmosferica-dioxido-de-nitrogeno-no2.csv</li>
+    <li><b>Columnas (muestra):</b> ... (según CSV)</li>
+    <li><b>Columnas geográficas/enlazables detectadas:</b> Estación, municipio, provincia.</li>
+    <li><b>Columnas temporales detectadas:</b> Fecha, año, mes.</li>
+  </ul>
+  <h3>Evaluación de requisitos</h3>
+  <ul>
+    <li><b>R1:</b> Dominio Smart City (calidad del aire / medio ambiente).</li>
+    <li><b>R2:</b> CSV disponible.</li>
+    <li><b>R3:</b> Verificar licencia (ej. CC-BY 4.0).</li>
+    <li><b>R4:</b> Fácilmente enlazable con entidades geográficas.</li>
+    <li><b>R5:</b> Revisar documentación en el portal.</li>
+    <li><b>R6:</b> Puede complementarse con otras fuentes (ej. OpenAQ).</li>
+  </ul>
+  <hr/>
+
+  <p><i>Nota:</i> La detección de columnas geográficas y temporales se ha hecho automáticamente; conviene revisar manualmente en caso de duda.</p>
+</body>
+</html>
