@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Dataset Requirements — Group01</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;line-height:1.5}
+    h1,h2{margin:0 0 .4rem} .pill{display:inline-block;padding:.2rem .6rem;border-radius:999px;background:#eef}
+    code{background:#f6f6f8;padding:.15rem .35rem;border-radius:4px}
+    .ok{color:#047857}.warn{color:#b45309}
+    article{border:1px solid #eee;border-radius:10px;padding:1rem;margin:1rem 0;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+  </style>
+</head>
+<body>
+  <h1>Dataset Requirements — Group01</h1>
+  <p><span class="pill">Domain: Smart City / Air Quality (Madrid)</span></p>
+
+  <article>
+    <h2>R1 — Smart City domain <span class="ok">✔</span></h2>
+    <p>Calidad del aire urbano (NO<sub>2</sub>, PM10, …) — claro encaje en *environmental monitoring*.</p>
+  </article>
+
+  <article>
+    <h2>R2 — Available as CSV <span class="ok">✔</span></h2>
+    <p>El portal del Ayuntamiento publica ficheros mensuales en CSV. Ejemplo de septiembre 2025.</p>
+  </article>
+
+  <article>
+    <h2>R3 — Open license <span class="ok">✔</span></h2>
+    <p>Datos abiertos con licencia de reutilización de la Administración (compatible con publicación).</p>
+  </article>
+
+  <article>
+    <h2>R4 — Linkable to real-world entities <span class="ok">✔</span></h2>
+    <p>Cada registro incluye estación (ID), fecha y ubicación → enlazable a <em>Wikidata</em>, <em>DBpedia</em>,
+       y a capas de barrios/distritos (geoespacial).</p>
+  </article>
+
+  <article>
+    <h2>R5 — Documentation exists (optional) <span class="warn">◐</span></h2>
+    <p>Existe documentación de magnitudes/códigos en el portal; es sucinta pero suficiente.</p>
+  </article>
+
+  <article>
+    <h2>R6 — Multiple sources (optional) <span class="warn">◐</span></h2>
+    <p>Varias estaciones → múltiples fuentes físicas; posible combinar con meteorología (AEMET) más adelante.</p>
+  </article>
+
+  <hr/>
+  <p><strong>Dataset principal:</strong> “Calidad del aire Madrid (mediciones diarias)”.
+     Portal: datos.madrid.es — CSV. En el repositorio se incluye una muestra en <code>csv/madrid_air_quality_sample.csv</code>.</p>
+</body>
+</html>

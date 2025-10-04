@@ -1,0 +1,6 @@
+fecha,estacion_id,barrio,lat,lon,magnitud,unidad,valor
+2025-09-20,28079004,Retiro,40.411,-3.683,NO2,µg/m3,31
+2025-09-20,28079039,Plaza de España,40.423,-3.712,NO2,µg/m3,27
+2025-09-20,28079056,Plaza Elíptica,40.385,-3.718,PM10,µg/m3,24
+2025-09-21,28079004,Retiro,40.411,-3.683,NO2,µg/m3,35
+2025-09-21,28079039,Plaza de España,40.423,-3.712,NO2,µg/m3,29

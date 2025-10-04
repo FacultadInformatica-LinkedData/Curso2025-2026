@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Application Requirements — Group01</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:980px;margin:40px auto;line-height:1.55}
+    h1,h2{margin:0 0 .5rem}
+    section{margin:1.2rem 0;padding:1rem;border:1px solid #eee;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+    ul{margin:.4rem 0 .4rem 1.2rem}
+    .mock{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .card{border:1px dashed #cbd5e1;border-radius:10px;padding:12px;background:#f8fafc}
+    small{color:#475569}
+    code{background:#f6f6f8;padding:.1rem .35rem;border-radius:4px}
+  </style>
+</head>
+<body>
+  <h1>Application Requirements — “Madrid Air Now”</h1>
+  <p>Aplicación web para visualizar y explorar la calidad del aire por estación/barrio/fecha, con gráficos y mapa.</p>
+
+  <section>
+    <h2>Functional requirements</h2>
+    <ul>
+      <li>F1. Selector de fecha/intervalo y estación/barrio.</li>
+      <li>F2. Mapa con marcadores de estaciones (color por nivel NO<sub>2</sub>/PM10).</li>
+      <li>F3. Serie temporal por estación y magnitud.</li>
+      <li>F4. Tabla descargable (CSV) del subconjunto filtrado.</li>
+      <li>F5. Enlaces externos (Wikidata/DBpedia) para cada estación/localización.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Non-functional requirements</h2>
+    <ul>
+      <li>N1. Datos abiertos (licencia compatible).</li>
+      <li>N2. Rendimiento: carga inicial &lt; 3s con muestra local / paginación para histórico.</li>
+      <li>N3. Accesibilidad AA y diseño responsive.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Data & linking plan</h2>
+    <ul>
+      <li>CSV ➜ RDF (Turtle/JSON-LD) con vocabularios <code>QUDT</code>/<code>SSN</code>/<code>Geo</code>.</li>
+      <li>Identificadores estables para estaciones; <em>sameAs</em> a entidades externas cuando existan.</li>
+      <li>Posible enriquecimiento con meteorología (temperatura, viento).</li>
+    </ul>
+  </section>
+
+  <section class="mock">
+    <div class="card">
+      <h3>Mockup — Home</h3>
+      <small>Filtros + mapa + tarjeta resumen.</small>
+      <img alt="Home mockup" src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' width='480' height='260'>
+        <rect width='100%%' height='100%%' fill='%23eef'/>
+        <rect x='20' y='20' width='440' height='140' fill='%23cbd5e1'/>
+        <rect x='20' y='180' width='140' height='60' fill='%2394a3b8'/>
+        <rect x='170' y='180' width='140' height='60' fill='%2394a3b8'/>
+        <rect x='320' y='180' width='140' height='60' fill='%2394a3b8'/>
+        </svg>" />
+    </div>
+    <div class="card">
+      <h3>Mockup — Station detail</h3>
+      <small>Serie temporal + tabla + enlaces externos.</small>
+      <img alt="Detail mockup" src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' width='480' height='260'>
+        <rect width='100%%' height='100%%' fill='%23eef'/>
+        <rect x='20' y='20' width='440' height='120' fill='%23fecaca'/>
+        <rect x='20' y='160' width='440' height='80' fill='%23fef08a'/>
+        </svg>" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Acceptance criteria</h2>
+    <ul>
+      <li>AC1. El usuario puede filtrar por fecha y estación y ver el mapa coloreado.</li>
+      <li>AC2. Se muestra la serie temporal y se puede descargar CSV filtrado.</li>
+      <li>AC3. Cada estación tiene enlaces “Más info” a fuentes externas.</li>
+    </ul>
+  </section>
+</body>
+</html>

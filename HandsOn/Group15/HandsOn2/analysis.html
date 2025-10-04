@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Group15 – Analysis & Resource Naming Strategy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family:system-ui; max-width:1000px; margin:40px auto; line-height:1.55">
+
+<h1>Group 15 – Assignment 2</h1>
+
+<h2>1. Analysis of the dataset</h2>
+<p>We will work with three Madrid smart-city datasets that are reusable across the course:</p>
+<ol>
+  <li><b>Air Quality – Daily data since 2001</b> (Ayto. de Madrid). 
+      <br>URL: <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=aecb88a7e2b73410VgnVCM2000000c205a0aRCRD">Calidad del aire. Datos diarios desde 2001</a>
+      <br>Schema (CSV yearly): station_code, date, pollutant, value, unit.</li>
+  <li><b>BiciMAD – Stations</b> (Ayto./EMT). 
+      <br>URL: <a href="https://www.madrid.es/go/DatosAbiertos/Bicimad">Estaciones de Bicimad (CSV)</a>
+      <br>Schema: station_id, name, address, lat, lon, capacity, status.</li>
+  <li><b>Sports facilities – Municipal basic facilities</b> (Ayto. de Madrid).
+      <br>URL: <a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextoid=8690aed774503410VgnVCM1000000b205a0aRCRD">Instalaciones Deportivas Básicas Municipales</a>
+      <br>Schema: facility_id, name, address, lat, lon, type.</li>
+</ol>
+<p>Linkability: all three include location (coordinates/address), enabling links to neighborhoods/districts or external gazetteers. Temporal coverage: air quality provides long-term time series.</p>
+
+<h2>2. Licensing</h2>
+<ul>
+  <li><b>Portal license</b>: <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">Condiciones de uso – Datos Abiertos Ayuntamiento de Madrid</a> (compatible con CC BY 4.0-style attribution).</li>
+  <li>Each dataset page lists this license explicitly (see links above).</li>
+  <li>Implications: attribution required; redistribution and derivative works allowed; commercial use allowed.</li>
+</ul>
+
+<h2>3. Resource Naming Strategy</h2>
+<p>We adopt HTTP <b>slash</b> URIs for scalability, caching and clarity. Base namespace:</p>
+<pre>https://example.org/group15/</pre>
+<p>Collections & resources:</p>
+<ul>
+  <li>Ontology terms: <code>https://example.org/group15/def/</code></li>
+  <li>Air quality stations: <code>https://example.org/group15/station/air/{stationId}</code></li>
+  <li>BiciMAD stations: <code>https://example.org/group15/station/bike/{stationId}</code></li>
+  <li>Sports facilities: <code>https://example.org/group15/facility/{facilityId}</code></li>
+  <li>Measurements (daily): <code>https://example.org/group15/measurement/{stationId}/{yyyy}/{mm}/{dd}/{pollutant}</code></li>
+</ul>
+<p><b>Persistence policy</b>: URIs are stable; if resources move we will preserve identifiers and use HTTP redirections. Content negotiation will provide HTML (humans) and RDF (machines).</p>
+
+<h2>4. Ontology design</h2>
+<p>We provide a lightweight ontology reusing standard vocabularies:</p>
+<ul>
+  <li>Reuse: <code>schema:address</code>, <code>geo:lat</code>, <code>geo:long</code>.</li>
+  <li>Core classes: <code>ex:Station</code>, <code>ex:AirQualityStation</code>, <code>ex:BicycleStation</code>, <code>ex:SportsFacility</code>, <code>ex:Measurement</code>.</li>
+  <li>Object properties: <code>ex:hasMeasurement</code>.</li>
+  <li>Datatype properties: <code>ex:stationId</code>, <code>ex:observedValue</code>, <code>ex:unit</code>, <code>ex:observedProperty</code>, <code>ex:dateTime</code>.</li>
+</ul>
+
+</body>
+</html>
