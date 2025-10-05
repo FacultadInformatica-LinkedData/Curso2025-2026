@@ -1,0 +1,101 @@
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mg: <https://w3id.org/Group06/madrid-green/ontology#> .
+
+#################################################################
+# Sample instances — follows the Resource Naming Strategy (RNS)
+# IRIs are written as full <https://…> to allow '/' in paths.
+# Namespaces (mg:) match your ontology.
+#################################################################
+
+### 1) Two zones / parks
+<https://w3id.org/Group06/madrid-green/id/zone/ret>
+  a mg:Park ;
+  schema:name "Parque de El Retiro"@es ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  mg:hasGeometry [
+    a geo:Geometry ;
+    # Example point (LON LAT) — replace with real geometry or remove
+    geo:asWKT "POINT(-3.682 40.415)"^^geo:wktLiteral
+  ] .
+
+<https://w3id.org/Group06/madrid-green/id/zone/cdc>
+  a mg:Park ;
+  schema:name "Casa de Campo"@es ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  mg:hasGeometry [
+    a geo:Geometry ;
+    geo:asWKT "POINT(-3.759 40.419)"^^geo:wktLiteral
+  ] .
+
+### 2) Three species
+<https://w3id.org/Group06/madrid-green/id/species/platanus-hispanica>
+  a mg:Species ;
+  mg:scientificName "Platanus × hispanica" ;
+  mg:commonName "London plane"@en .
+
+<https://w3id.org/Group06/madrid-green/id/species/pinus-pinea>
+  a mg:Species ;
+  mg:scientificName "Pinus pinea" ;
+  mg:commonName "Stone pine"@en .
+
+<https://w3id.org/Group06/madrid-green/id/species/celtis-australis>
+  a mg:Species ;
+  mg:scientificName "Celtis australis" ;
+  mg:commonName "European nettle tree"@en .
+
+### 3) Five trees (example instances)
+# -- Retiro --
+<https://w3id.org/Group06/madrid-green/id/tree/ret-0001>
+  a mg:Tree ;
+  mg:inZone <https://w3id.org/Group06/madrid-green/id/zone/ret> ;
+  mg:hasSpecies <https://w3id.org/Group06/madrid-green/id/species/platanus-hispanica> ;
+  mg:heightM "18.2"^^xsd:decimal ;
+  mg:diameterCm "34.6"^^xsd:decimal ;
+  mg:plantedOn "2007-03-16"^^xsd:date ;
+  wgs84:lat "40.415"^^xsd:decimal ;
+  wgs84:long "-3.684"^^xsd:decimal .
+
+<https://w3id.org/Group06/madrid-green/id/tree/ret-0002>
+  a mg:Tree ;
+  mg:inZone <https://w3id.org/Group06/madrid-green/id/zone/ret> ;
+  mg:hasSpecies <https://w3id.org/Group06/madrid-green/id/species/pinus-pinea> ;
+  mg:heightM "12.5"^^xsd:decimal ;
+  mg:diameterCm "28.0"^^xsd:decimal ;
+  mg:plantedOn "2010-10-01"^^xsd:date ;
+  wgs84:lat "40.417"^^xsd:decimal ;
+  wgs84:long "-3.682"^^xsd:decimal .
+
+# -- Casa de Campo --
+<https://w3id.org/Group06/madrid-green/id/tree/cdc-0001>
+  a mg:Tree ;
+  mg:inZone <https://w3id.org/Group06/madrid-green/id/zone/cdc> ;
+  mg:hasSpecies <https://w3id.org/Group06/madrid-green/id/species/celtis-australis> ;
+  mg:heightM "14.4"^^xsd:decimal ;
+  mg:diameterCm "31.0"^^xsd:decimal ;
+  mg:plantedOn "2005-05-20"^^xsd:date ;
+  wgs84:lat "40.420"^^xsd:decimal ;
+  wgs84:long "-3.760"^^xsd:decimal .
+
+<https://w3id.org/Group06/madrid-green/id/tree/cdc-0002>
+  a mg:Tree ;
+  mg:inZone <https://w3id.org/Group06/madrid-green/id/zone/cdc> ;
+  mg:hasSpecies <https://w3id.org/Group06/madrid-green/id/species/pinus-pinea> ;
+  mg:heightM "11.9"^^xsd:decimal ;
+  mg:diameterCm "26.2"^^xsd:decimal ;
+  mg:plantedOn "2009-09-12"^^xsd:date ;
+  wgs84:lat "40.422"^^xsd:decimal ;
+  wgs84:long "-3.758"^^xsd:decimal .
+
+<https://w3id.org/Group06/madrid-green/id/tree/cdc-0003>
+  a mg:Tree ;
+  mg:inZone <https://w3id.org/Group06/madrid-green/id/zone/cdc> ;
+  mg:hasSpecies <https://w3id.org/Group06/madrid-green/id/species/platanus-hispanica> ;
+  mg:heightM "20.3"^^xsd:decimal ;
+  mg:diameterCm "39.5"^^xsd:decimal ;
+  mg:plantedOn "2001-11-02"^^xsd:date ;
+  wgs84:lat "40.418"^^xsd:decimal ;
+  wgs84:long "-3.763"^^xsd:decimal .
