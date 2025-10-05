@@ -1,0 +1,40 @@
+@prefix wifi: <https://smartcity.linkeddata.es/wifi-madrid/ontology#> .
+@prefix ex: <https://smartcity.linkeddata.es/wifi-madrid/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:instalacion001 a wifi:Instalacion ;
+    wifi:identificador "001"^^xsd:string ;
+    wifi:descripcionEntidad "Biblioteca Pública Municipal Eugenio Trías - Casa de Fieras de El Retiro"^^xsd:string ;
+    wifi:descripcion "Biblioteca situada en el parque de El Retiro que ofrece acceso WiFi gratuito."^^xsd:string ;
+    wifi:horario "Lunes a Viernes 08:30 - 21:00, Sábados 09:10 - 17:50"^^xsd:string ;
+    wifi:equipamiento "Zona de lectura, ordenadores, WiFi gratuito"^^xsd:string ;
+    wifi:transporte "Metro: Retiro (L2), Autobuses: 20, 26, 61, 63, 152"^^xsd:string ;
+    wifi:codigoPostal "28009"^^xsd:string ;
+    wifi:latitud 40.4154 ;
+    wifi:longitud -3.6822 ;
+    wifi:contentUrl <https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Descarga/Wifi/BibliotecaEugenioTrias.pdf> ;
+    wifi:tieneDistrito ex:distritoRetiro ;
+    wifi:tieneBarrio ex:barrioIbiza ;
+    wifi:tieneVia ex:viaCasaFieras ;
+    wifi:tieneContacto ex:contactoBibliotecaTrias ;
+    rdfs:comment "Ejemplo de instalación con WiFi gratuito en Madrid." .
+
+# Distrito
+ex:distritoRetiro a wifi:Distrito ;
+    rdfs:label "Retiro"^^xsd:string .
+
+# Barrio
+ex:barrioIbiza a wifi:Barrio ;
+    rdfs:label "Ibiza"^^xsd:string .
+
+# Vía
+ex:viaCasaFieras a wifi:Via ;
+    wifi:nombreVia "Casa de Fieras de El Retiro"^^xsd:string ;
+    wifi:numVia "s/n"^^xsd:string .
+
+# Contacto
+ex:contactoBibliotecaTrias a wifi:Contacto ;
+    wifi:email "bp.eugeniotrias@madrid.es"^^xsd:string ;
+    wifi:telefono "915 573 280"^^xsd:string .

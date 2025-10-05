@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Análisis del dataset y licencia — WiFi municipales Madrid</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height:1.5; margin: 24px; color:#222; }
+        h1 { color:#1f4f7a; margin:0 0 10px 0; }
+        h2 { color:#2a80b9; margin-top:20px; }
+        table { width:100%; border-collapse:collapse; margin-top:8px; }
+        th, td { border:1px solid #ddd; padding:8px; text-align:left; vertical-align:top; }
+        th { background:#f5f8fb; }
+        code { background:#f4f4f4; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+    </style>
+</head>
+<body>
+    <h1>Análisis del dataset — Instalaciones municipales con zonas WiFi gratuitas (Madrid)</h1>
+
+    <div class="section">
+        <h2>1. Resumen del dataset</h2>
+        <p>
+            El dataset contiene información sobre instalaciones municipales de Madrid que ofrecen zonas WiFi gratuitas. 
+            El fichero analizado cuenta con 241 registros y 32 columnas. 
+            Incluye datos como identificación, localización, descripción de la entidad, horarios, equipamiento disponible, transporte cercano y descripciones adicionales.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>2. Atributos del dataset</h2>
+        <table>
+            <thead>
+                <tr><th>Atributo</th><th>Descripción</th><th>Ejemplo</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PK</td>
+                    <td>Identificador único del registro.</td>
+                    <td>"12345"</td>
+                </tr>
+                <tr>
+                    <td>DESCRIPCION-ENTIDAD</td>
+                    <td>Identifica el tipo de instalación (biblioteca, centro cultural, etc.).</td>
+                    <td>"Biblioteca Pública Municipal Pablo Neruda"</td>
+                </tr>
+                <tr>
+                    <td>HORARIO</td>
+                    <td>Franja horaria de apertura al público.</td>
+                    <td>"De lunes a viernes, de 9:00 a 21:00 horas"</td>
+                </tr>
+                <tr>
+                    <td>EQUIPAMIENTO</td>
+                    <td>Servicios disponibles en la instalación.</td>
+                    <td>"Puestos de Internet: 18; Sala de estudio"</td>
+                </tr>
+                <tr>
+                    <td>TRANSPORTE</td>
+                    <td>Medios de transporte cercanos.</td>
+                    <td>"Metro: Lavapiés (L3); Bus: 27, 34"</td>
+                </tr>
+                <tr>
+                    <td>DESCRIPCION</td>
+                    <td>Información detallada sobre la instalación.</td>
+                    <td>"Superficie: 712 m². Puestos de lectura: 130."</td>
+                </tr>
+                <tr>
+                    <td>NOMBRE-VIA / NUM-VIA</td>
+                    <td>Nombre y número de la calle donde se ubica la instalación.</td>
+                    <td>"Calle Alcalá, 45"</td>
+                </tr>
+                <tr>
+                    <td>CODIGO-POSTAL</td>
+                    <td>Código postal correspondiente a la instalación.</td>
+                    <td>"28014"</td>
+                </tr>
+                <tr>
+                    <td>DISTRITO / BARRIO</td>
+                    <td>Distrito y barrio de Madrid donde se localiza.</td>
+                    <td>"Centro / Embajadores"</td>
+                </tr>
+                <tr>
+                    <td>LATITUD / LONGITUD</td>
+                    <td>Coordenadas geográficas de la instalación.</td>
+                    <td>"40.4167, -3.7038"</td>
+                </tr>
+                <tr>
+                    <td>EMAIL / TELEFONO</td>
+                    <td>Datos de contacto de la instalación.</td>
+                    <td>"biblioteca@munimadrid.es / 915123456"</td>
+                </tr>
+                <tr>
+                    <td>CONTENT-URL</td>
+                    <td>Enlace web con información adicional.</td>
+                    <td>"https://www.madrid.es/biblioteca-pabloneruda"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>3. Limpieza de datos</h2>
+        <p>
+            Se aplicó clustering en OpenRefine sobre los campos principales para unificar valores con diferencias tipográficas o de formato, reduciendo duplicados y mejorando la coherencia de los datos.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>4. Licencia</h2>
+        <p>
+            El dataset está publicado por el Ayuntamiento de Madrid en el portal <a href="https://datos.gob.es/es/catalogo/l01280796-instalaciones-municipales-con-zonas-wifi-gratuitas" target="_blank">datos.gob.es</a>. 
+            Su reutilización está permitida para fines comerciales y no comerciales, siempre que se cite la fuente y se respeten las condiciones generales de reutilización.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>5. Estrategia de nombrado de recursos</h2>
+        <p>
+            Se usará como URI base: 
+            <br><code>https://smartcity.linkeddata.es/wifi-madrid/</code>
+        </p>
+        <p>
+            Los términos ontológicos se representarán en:
+            <br><code>https://smartcity.linkeddata.es/wifi-madrid/ontology#</code>
+        </p>
+        <p>
+            Las instancias de recursos concretos se nombrarán en:
+            <br><code>https://smartcity.linkeddata.es/wifi-madrid/resource/{ClassName}/{ID}</code>
+        </p>
+    </div>
+</body>
+</html>

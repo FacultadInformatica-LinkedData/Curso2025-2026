@@ -1,0 +1,126 @@
+@prefix wifi: <https://smartcity.linkeddata.es/wifi-madrid/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+# Ontology metadata
+<https://smartcity.linkeddata.es/wifi-madrid/ontology>
+    a owl:Ontology ;
+    rdfs:label "WiFi Madrid Ontology" ;
+    rdfs:comment "Ontology to represent municipal installations in Madrid with free WiFi access." ;
+    owl:versionInfo "1.0" .
+
+### Classes
+wifi:Instalacion a owl:Class ;
+    rdfs:label "Instalación" ;
+    rdfs:comment "Municipal installation that provides free WiFi." .
+
+wifi:Distrito a owl:Class ;
+    rdfs:label "Distrito" ;
+    rdfs:comment "Administrative district of Madrid where the installation is located." .
+
+wifi:Barrio a owl:Class ;
+    rdfs:label "Barrio" ;
+    rdfs:comment "Neighborhood within a district of Madrid." .
+
+wifi:Via a owl:Class ;
+    rdfs:label "Vía" ;
+    rdfs:comment "Street or road where the installation is located." .
+
+wifi:Contacto a owl:Class ;
+    rdfs:label "Contacto" ;
+    rdfs:comment "Contact information for the installation (email, phone)." .
+
+### Object Properties
+wifi:tieneDistrito a owl:ObjectProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range wifi:Distrito ;
+    rdfs:label "tiene distrito" .
+
+wifi:tieneBarrio a owl:ObjectProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range wifi:Barrio ;
+    rdfs:label "tiene barrio" .
+
+wifi:tieneVia a owl:ObjectProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range wifi:Via ;
+    rdfs:label "tiene vía" .
+
+wifi:tieneContacto a owl:ObjectProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range wifi:Contacto ;
+    rdfs:label "tiene contacto" .
+
+### Datatype Properties
+wifi:identificador a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Identificador único" .
+
+wifi:descripcionEntidad a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Descripción de la entidad" .
+
+wifi:descripcion a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Descripción detallada" .
+
+wifi:horario a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Horario de apertura" .
+
+wifi:equipamiento a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Equipamiento disponible" .
+
+wifi:transporte a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Transporte cercano" .
+
+wifi:codigoPostal a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Código postal" .
+
+wifi:latitud a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:float ;
+    rdfs:label "Latitud" .
+
+wifi:longitud a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:float ;
+    rdfs:label "Longitud" .
+
+wifi:nombreVia a owl:DatatypeProperty ;
+    rdfs:domain wifi:Via ;
+    rdfs:range xsd:string ;
+    rdfs:label "Nombre de vía" .
+
+wifi:numVia a owl:DatatypeProperty ;
+    rdfs:domain wifi:Via ;
+    rdfs:range xsd:string ;
+    rdfs:label "Número de vía" .
+
+wifi:email a owl:DatatypeProperty ;
+    rdfs:domain wifi:Contacto ;
+    rdfs:range xsd:string ;
+    rdfs:label "Correo electrónico" .
+
+wifi:telefono a owl:DatatypeProperty ;
+    rdfs:domain wifi:Contacto ;
+    rdfs:range xsd:string ;
+    rdfs:label "Teléfono" .
+
+wifi:contentUrl a owl:DatatypeProperty ;
+    rdfs:domain wifi:Instalacion ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "URL de contenido" .
