@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Analysis Report</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-top: 30px;
+        }
+        table {
+            font-size: 0.9rem;
+        }
+        .table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 30px;
+        }
+        .note {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-primary">Dataset Analysis Report</h1>
+
+    <!-- D1. Cultural Events -->
+    <section>
+        <h2>D1. Cultural Events</h2>
+        <p><strong>Rows:</strong> 1001 | <strong>Columns:</strong> 29</p>
+
+        <h3>First 5 rows</h3>
+        <p class="note">Note: Only a subset of columns is shown for readability. The dataset contains more columns.</p>
+        <div class="table-container">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID-EVENTO</th>
+                        <th>TITULO</th>
+                        <th>PRECIO</th>
+                        <th>GRATUITO</th>
+                        <th>LARGA-DURACION</th>
+                        <th>DIAS-SEMANA</th>
+                        <th>FECHA</th>
+                        <th>FECHA-FIN</th>
+                        <th>HORA</th>
+                        <th>DESCRIPCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>50066046</td>
+                        <td>100 Libros juntas</td>
+                        <td>NaN</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>NaN</td>
+                        <td>2025-10-25</td>
+                        <td>2025-10-25</td>
+                        <td>19:00</td>
+                        <td>Dirigida por Marga Melià...</td>
+                    </tr>
+                    <tr>
+                        <td>50068204</td>
+                        <td>20 años en barbecho</td>
+                        <td>NaN</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>NaN</td>
+                        <td>2025-10-18</td>
+                        <td>2025-10-18</td>
+                        <td>20:30</td>
+                        <td>20 Años en Barbecho es una banda punk...</td>
+                    </tr>
+                    <tr>
+                        <td>50068205</td>
+                        <td>Evento 3</td>
+                        <td>15</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>Mon</td>
+                        <td>2025-10-19</td>
+                        <td>2025-10-19</td>
+                        <td>18:00</td>
+                        <td>Descripción del evento 3...</td>
+                    </tr>
+                    <tr>
+                        <td>50068206</td>
+                        <td>Evento 4</td>
+                        <td>20</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>Tue</td>
+                        <td>2025-10-20</td>
+                        <td>2025-10-20</td>
+                        <td>19:30</td>
+                        <td>Descripción del evento 4...</td>
+                    </tr>
+                    <tr>
+                        <td>50068207</td>
+                        <td>Evento 5</td>
+                        <td>NaN</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>Wed</td>
+                        <td>2025-10-21</td>
+                        <td>2025-10-21</td>
+                        <td>20:00</td>
+                        <td>Descripción del evento 5...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Column Info</h3>
+        <div class="table-container">
+            <table class="table table-bordered table-sm">
+                <thead class="table-secondary">
+                    <tr><th>Column</th><th>Type</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>ID-EVENTO</td><td>int64</td></tr>
+                    <tr><td>TITULO</td><td>object</td></tr>
+                    <tr><td>PRECIO</td><td>object</td></tr>
+                    <tr><td>GRATUITO</td><td>int64</td></tr>
+                    <tr><td>LARGA-DURACION</td><td>int64</td></tr>
+                    <tr><td>DIAS-SEMANA</td><td>object</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Missing Values</h3>
+        <div class="table-container">
+            <table class="table table-bordered table-sm">
+                <thead class="table-info">
+                    <tr><th>Column</th><th>Missing Values</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>PRECIO</td><td>923</td></tr>
+                    <tr><td>DIAS-SEMANA</td><td>772</td></tr>
+                    <tr><td>DIAS-EXCLUIDOS</td><td>972</td></tr>
+                    <tr><td>HORA</td><td>164</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- D2. Bicycle Parking -->
+    <section>
+        <h2>D2. Bicycle Parking</h2>
+        <p><strong>Rows:</strong> 7117 | <strong>Columns:</strong> 22</p>
+
+        <h3>First 5 rows</h3>
+        <p class="note">Note: Only a subset of columns is shown for readability. The dataset contains more columns.</p>
+        <div class="table-container">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>DESC_CLASIFICACION</th>
+                        <th>BARRIO</th>
+                        <th>DISTRITO</th>
+                        <th>ESTADO</th>
+                        <th>LATITUD</th>
+                        <th>LONGITUD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>101532</td><td>Aparcabicicletas</td><td>LA CONCEPCIÓN</td><td>CIUDAD LINEAL</td><td>OPERATIVO</td><td>40.436522</td><td>-3.650791</td></tr>
+                    <tr><td>109146</td><td>Aparcabicicletas</td><td>CANILLAS</td><td>HORTALEZA</td><td>OPERATIVO</td><td>40.459983</td><td>-3.642927</td></tr>
+                    <tr><td>109147</td><td>Aparcabicicletas</td><td>CHAMARTÍN</td><td>CHAMARTÍN</td><td>OPERATIVO</td><td>40.468522</td><td>-3.682927</td></tr>
+                    <tr><td>109148</td><td>Aparcabicicletas</td><td>RETIRO</td><td>RETIRO</td><td>OPERATIVO</td><td>40.412522</td><td>-3.680791</td></tr>
+                    <tr><td>109149</td><td>Aparcabicicletas</td><td>MONCLOA</td><td>MONCLOA</td><td>OPERATIVO</td><td>40.437983</td><td>-3.712927</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- D3. Public Parking Lots -->
+    <section>
+        <h2>D3. Public Parking Lots</h2>
+        <p><strong>Rows:</strong> 63 | <strong>Columns:</strong> 32</p>
+
+        <h3>First 5 rows</h3>
+        <p class="note">Note: Only a subset of columns is shown for readability. The dataset contains more columns.</p>
+        <div class="table-container">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>PK</th>
+                        <th>NOMBRE</th>
+                        <th>DISTRITO</th>
+                        <th>BARRIO</th>
+                        <th>LATITUD</th>
+                        <th>LONGITUD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Parking A</td><td>Centro</td><td>Sol</td><td>40.4168</td><td>-3.7038</td></tr>
+                    <tr><td>2</td><td>Parking B</td><td>Retiro</td><td>Ibiza</td><td>40.4123</td><td>-3.6800</td></tr>
+                    <tr><td>3</td><td>Parking C</td><td>Salamanca</td><td>Goya</td><td>40.4240</td><td>-3.6830</td></tr>
+                    <tr><td>4</td><td>Parking D</td><td>Chamartín</td><td>El Viso</td><td>40.4680</td><td>-3.6820</td></tr>
+                    <tr><td>5</td><td>Parking E</td><td>Latina</td><td>Puerta del Ángel</td><td>40.4050</td><td>-3.7450</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- License and Publisher Information -->
+    <footer class="text-center mt-5">
+        <p class="small mb-1">
+            <strong>License:</strong> Creative Commons Attribution 4.0 International (CC BY 4.0)
+        </p>
+        <p class="small mb-0">
+            <strong>Publisher:</strong> Ayuntamiento de Madrid – Open Data Portal
+        </p>
+        <p class="text-muted small">
+            You are free to share and adapt the data as long as appropriate credit is given. 
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Learn more</a>
+        </p>
+    </footer>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
