@@ -17,7 +17,7 @@
 
   <section>
     <h2>1. Resumen</h2>
-    <p><strong>BeSafe</strong> integra tres datasets abiertos de Madrid — <em>Meteorología en tiempo real/acumulado</em>, <em>Episodios de alta contaminación</em> y <em>Calidad del aire (datos horarios desde 2001)</em> — para <strong>avisar a la ciudadanía</strong> cuando no es recomendable realizar deporte al aire libre por picos de <strong>O₃/NO₂/PM</strong>. La app ofrece un mapa de estaciones, un panel horario por contaminante y un “<em>semáforo de riesgo</em>” configurable por usuario.</p>
+    <p><strong>BeSafe</strong> integra tres datasets abiertos de Madrid — <em>Meteorología en tiempo real/acumulado</em>, <em>Episodios de ozono</em> y <em>Calidad del aire (datos horarios desde 2001)</em> — para <strong>avisar a la ciudadanía</strong> cuando no es recomendable realizar deporte al aire libre por picos de <strong>O₃/NO₂/PM</strong>. La app ofrece un mapa de estaciones, un panel horario por contaminante y un “<em>semáforo de riesgo</em>” configurable por usuario.</p>
   </section>
 
   <section>
@@ -35,18 +35,18 @@
       <li><strong>CU1:</strong> Ver si hoy a una hora concreta es seguro correr en su zona (semáforo por contaminante).</li>
       <li><strong>CU2:</strong> Consultar mapa de estaciones con último valor por contaminante y tendencia 24–72h.</li>
       <li><strong>CU3:</strong> Recibir un aviso visual cuando se superen umbrales configurables.</li>
-      <li><strong>CU4:</strong> Ver episodios oficiales activos (intervalo, escenario y medidas) y su relación con las series.</li>
+      <li><strong>CU4:</strong> Ver episodios oficiales activos (intervalo y medidas) y su relación con las series.</li>
     </ul>
   </section>
 
   <section>
     <h2>4. Requisitos Funcionales (FR)</h2>
     <ol>
-      <li><strong>FR1:</strong> Cargar y validar CSV de <em>meteorología</em>, <em>calidad del aire horaria</em> y <em>episodios</em>.</li>
+      <li><strong>FR1:</strong> Cargar y validar CSV de <em>meteorología</em>, <em>calidad del aire horaria</em> y <em>episodios de ozono</em>.</li>
       <li><strong>FR2:</strong> Integrar datos por <code>código_estación</code> y <code>fecha-hora</code>; homogeneizar unidades y magnitudes.</li>
       <li><strong>FR3:</strong> Mapa con estaciones y marcador por contaminante (último valor válido y estado semáforo).</li>
       <li><strong>FR4:</strong> Panel horario (24–72h) por estación/contaminante con cálculo de semáforo por hora.</li>
-      <li><strong>FR5:</strong> Mostrar episodios oficiales (inicio/fin, escenario, medidas) y resaltar horas afectadas.</li>
+      <li><strong>FR5:</strong> Mostrar episodios oficiales (inicio/fin y medidas) y resaltar horas afectadas.</li>
       <li><strong>FR6:</strong> Configurar umbrales locales por contaminante (verde/ámbar/rojo) y disparar alerta in-app.</li>
       <li><strong>FR7:</strong> Exportar datos filtrados a CSV (opcional) y registrar fecha/hora de actualización.</li>
     </ol>
@@ -57,7 +57,7 @@
     <ul>
       <li><strong>NFR1 (Accesibilidad):</strong> Cumplir AA (contraste, foco, texto alternativo). Responsive móvil/desktop.</li>
       <li><strong>NFR2 (Rendimiento):</strong> Carga de vistas &lt; 2 s con ficheros de muestra; operaciones básicas en memoria.</li>
-      <li><strong>NFR3 (Calidad de datos):</strong> Usar solo valores con validación <code>V</code>; tratar faltantes/outliers.</li>
+      <li><strong>NFR3 (Calidad de datos):</strong> Usar solo valores con validación <code>V</code> (en los “*-updated.csv” se han eliminado Vxx y se dejan vacíos cuando no son válidos).</li>
       <li><strong>NFR4 (Licencias y atribución):</strong> Mostrar fuente “Ayuntamiento de Madrid – Datos Abiertos” y fecha de datos.</li>
       <li><strong>NFR5 (Trazabilidad):</strong> Versionado en GitHub; scripts y CSV en carpetas dedicadas.</li>
     </ul>
@@ -66,9 +66,9 @@
   <section>
     <h2>6. Requisitos de Datos</h2>
     <ul>
-      <li><strong>Meteorología:</strong> <code>PROVINCIA</code>, <code>MUNICIPIO</code>, <code>ESTACION</code>, <code>MAGNITUD</code>, <code>PUNTO_MUESTREO</code>, <code>AÑO</code>, <code>MES</code>, <code>DIA</code>, <code>H01..H24</code> con <code>V01..V24</code>. (Se usan sólo Hxx con Vxx=<code>V</code>).</li>
-      <li><strong>Calidad del aire (horaria):</strong> mismo esquema (códigos de estación, magnitud y técnica; valores H01..H24 + validación).</li>
-      <li><strong>Episodios:</strong> <code>FECHA INICIO</code>, <code>HORA INICIO</code>, <code>FECHA FIN</code>, <code>HORA FIN</code>, <code>EPISODIO</code>, <code>ESCENARIO</code>, <code>MEDIDA</code>.</li>
+      <li><strong>Meteorología:</strong> <code>PROVINCIA</code>, <code>MUNICIPIO</code>, <code>ESTACION</code>, <code>MAGNITUD</code>, <code>PUNTO_MUESTREO</code>, <code>ANO</code>, <code>MES</code>, <code>DIA</code>, <code>H01..H24</code> con <code>V01..V24</code> en el CSV original. <em>En “*-updated.csv” se usan solo Hxx con Vxx=<code>V</code> y se eliminan las columnas de validación.</em></li>
+      <li><strong>Calidad del aire (horaria):</strong> mismo esquema que meteorología (H01..H24 y V01..V24 en origen). <em>En “*-updated.csv” quedan únicamente las Hxx válidas, sin columnas Vxx.</em></li>
+      <li><strong>Episodios de ozono:</strong> <code>FECHA INICIO</code>, <code>FECHA FIN</code>, <code>EPISODIO OZONO</code>, <code>MEDIDA POBLACION</code>. (Fechas normalizadas a ISO 8601 cuando aplica).</li>
       <li><strong>Estrategia de enlace:</strong> unión por <em>código de estación</em> + <em>fecha-hora</em> (meteorología/calidad aire) y solape temporal con <em>episodios</em>; coordenadas para mapa (si procede).</li>
     </ul>
   </section>
@@ -85,7 +85,7 @@
     </div>
     <div class="mockup">
       <h3>Episodios activos</h3>
-      <p>Listado de episodios (inicio/fin, escenario, medidas) con resaltado de horas afectadas en la serie.</p>
+      <p>Listado de episodios (inicio/fin y medidas) con resaltado de horas afectadas en la serie.</p>
     </div>
   </section>
 
@@ -102,3 +102,4 @@
   </section>
 </body>
 </html>
+

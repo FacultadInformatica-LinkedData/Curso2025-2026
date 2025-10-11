@@ -25,21 +25,21 @@
     <tr>
       <td>1</td>
       <td>Datos meteorológicos – tiempo real/acumulado</td>
-      <td>csv/meteo_tiemporeal.csv</td>
+      <td>csv/METEOROLOGIA-HORARIOS20250813-updated.csv</td>
       <td><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=4985724ec1acd610VgnVCM1000001d4a900aRCRD">Portal oficial</a></td>
       <td><a href="https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/DatosMeteorologicos/Ficheros/Interpretaci%C3%B3n_datos_meteorologicos.pdf">PDF documentación</a></td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Episodios de alta contaminación por ozono</td>
-      <td>csv/JUEGO_DATOS_activacion_protocolo_O3.csv</td>
+      <td>Episodios de ozono</td>
+      <td>csv/JUEGO-DATOS-activacion-protocolo-O3-updated.csv</td>
       <td><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=af9140c2df29e610VgnVCM1000001d4a900aRCRD">Portal oficial</a></td>
       <td><a href="https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/Aire/Ficheros/EstructuraDSEpisodiosOzono.pdf">PDF documentación</a></td>
     </tr>
     <tr>
       <td>3</td>
       <td>Calidad del aire – datos horarios desde 2001</td>
-      <td>csv/CALIDAD_AIRE_HORARIOS20250813.csv</td>
+      <td>csv/CALIDAD-AIRE-HORARIOS20250813-updated.csv</td>
       <td><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=defaultURL&vgnextoid=f3c0f7d512273410VgnVCM2000000c205a0aRCRD">Portal oficial</a></td>
       <td><a href="https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/Aire/Ficheros/Interprete_ficheros_%20calidad_%20del_%20aire_global.pdf">PDF documentación</a></td>
     </tr>
@@ -49,15 +49,23 @@
   <p class="ok">Cumple. Los tres datasets pertenecen al dominio <strong>Medio ambiente / Salud pública</strong>, típico de Smart City (calidad del aire y meteorología).</p>
 
   <h2>R2. Datos en CSV</h2>
-  <p class="ok">Cumple. Los tres datasets se publican oficialmente en formato CSV (además de TXT/XML). Las versiones CSV están en la carpeta <code>/csv</code>.</p>
+  <p class="ok">
+    Cumple. Los tres datasets se publican oficialmente en formato CSV. En el repositorio se incluyen versiones
+    <code>*-updated.csv</code> ya depuradas con OpenRefine (valores no válidos eliminados, cabeceras corregidas y fechas normalizadas cuando aplica),
+    junto con los historiales de operaciones (<code>/openrefine/*.json</code>).
+  </p>
 
   <h2>R3. Licencia abierta</h2>
-  <p class="ok">Cumple. Los datasets del portal de datos abiertos del Ayuntamiento de Madrid se publican con licencia de reutilización abierta apta para proyectos educativos y de investigación.</p>
+  <p class="ok">
+    Cumple. Los datasets del portal de datos abiertos del Ayuntamiento de Madrid se publican bajo la
+    <a href="http://datos.madrid.es/egob/catalogo/aviso-legal">Licencia de reutilización del Ayuntamiento de Madrid</a>,
+    apta para uso, distribución y transformación en proyectos educativos y de investigación.
+  </p>
 
   <h2>R4. Enlazabilidad con entidades reales</h2>
   <ul>
     <li><strong>Meteorología:</strong> registros por estación con fecha/hora → enlazable a ubicación y tiempo.</li>
-    <li><strong>Episodios ozono:</strong> inicio/fin, escenario y medida → enlazable a periodos temporales y zonas.</li>
+    <li><strong>Episodios de ozono:</strong> <code>FECHA INICIO</code>, <code>FECHA FIN</code>, <code>EPISODIO OZONO</code>, <code>MEDIDA POBLACION</code> → enlazable a periodos temporales y zonas.</li>
     <li><strong>Calidad del aire horaria:</strong> por <code>código_estación</code>, contaminante y fecha/hora → enlazable con coordenadas de estaciones, distritos y contaminantes estándar (NO₂, O₃, PM10…).</li>
   </ul>
   <p class="ok">Cumple. Identificadores claros (códigos de estación, magnitudes, coordenadas, fechas) permiten enlace con fuentes externas (GeoNames, Wikidata, AEMET).</p>
@@ -69,6 +77,6 @@
   <p class="partial">Parcial. Todos provienen del mismo portal municipal, pero representan <em>fuentes lógicas</em> distintas (meteorología, episodios normativos, mediciones). Se puede complementar más adelante con AEMET o Wikidata.</p>
 
   <h2>Conclusión</h2>
-  <p>Los tres datasets cumplen <strong>R1–R4</strong> y satisfacen bien <strong>R5–R6</strong>. Son adecuados para construir <em>BeSafe</em>: combinan meteorología, mediciones horarias y episodios oficiales de contaminación en Madrid.</p>
+  <p>Los tres datasets cumplen <strong>R1–R4</strong> y satisfacen bien <strong>R5–R6</strong>. Son adecuados para construir <em>BeSafe</em>: combinan meteorología, mediciones horarias y episodios oficiales de ozono en Madrid.</p>
 </body>
 </html>

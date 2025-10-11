@@ -1,42 +1,29 @@
 @prefix besafe: <http://besafe.org/ns/ambiental#> .
-@prefix data: <http://besafe.org/data/> . # URI base para los datos / Instancias
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix data:   <http://besafe.org/data/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix geo:    <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-#estación 11(instancia estqación)
+### Estación 11 (instancia de Estacion)
 data:estacion_11
     a besafe:Estacion ;
     rdfs:label "Estación de Calidad del Aire 11 (Pza. España)"@es ;
     besafe:codigoEstacion 11 .
 
-
-#O3 de 2003(instancia episodio)
+### Episodio de ozono (instancia de EpisodioOzono)
 data:episodio_O3_20130703
-    a besafe:EpisodioContaminacion ;
-    rdfs:label "Episodio O3 2013-07-03 - Información a la población"@es ;
-    
-    # Se utiliza xsd:dateTime para inicio, incluso si el campo original es solo FECHA INICIO
-    besafe:fechaHora "2013-07-03T18:00:00"^^xsd:dateTime ;
-    
+    a besafe:EpisodioOzono ;
+    rdfs:label "Episodio O₃ 2013-07-03 – Información a la población"@es ;
     besafe:escenario "INFORMACIÓN A LA POBLACIÓN" ;
-    besafe:medidaAplicada "Comunicación a personas, departamentos y organismos competentes." .
+    besafe:inicio "2013-07-03T18:00:00"^^xsd:dateTime ;
+    besafe:fin "2013-07-04T17:00:00"^^xsd:dateTime ;
+    besafe:medidaPoblacion "Comunicación a personas, departamentos y organismos competentes." .
 
-
-#NO2 de 2025(instancia de medición horaria)
+### Medición NO₂ de 2025-01-01 01h (instancia de MedicionHoraria)
 data:medicion_11_NO2_20250101T01
     a besafe:MedicionHoraria ;
-    rdfs:label "Medición NO2, E-11, 2025-01-01 01h"@es ;
-    
-    #relaciones(Propiedades de Objeto)
+    rdfs:label "Medición NO₂, E-11, 2025-01-01 01h"@es ;
     besafe:tieneLugarEn data:estacion_11 ;
-    
-    # Aunque no se solapan, relacionamos el dato para demostrar la existencia de la propiedad
-    besafe:solapaConEpisodio data:episodio_O3_20130703 ; 
-    
-    #atributos
     besafe:magnitud "NO2" ;
-    besafe:valor "29.0"^^xsd:float ; 
-    besafe:validacion "V" ;
-    # Combina AÑO, MES, DIA y H01
+    besafe:valor "29.0"^^xsd:decimal ;
     besafe:fechaHora "2025-01-01T01:00:00"^^xsd:dateTime .
