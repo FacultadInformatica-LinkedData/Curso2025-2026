@@ -1,0 +1,471 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Días laborables:  Lunes a  jueves, de 8:30 a 17 horas Viernes de 8:30 a 14 horas   Julio y agosto: lunes a viernes de 8:30 a 14 horas  Avisos: Cerrada los sábados y los días 24 y 31 de diciembre Los sábados no hay ningún registro abierto  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado 'Servicios'",
+          "Días laborables:  Lunes a jueves, de 8:30 a 17 horas. Viernes de 8:30 a 14 horas.   Julio y agosto: lunes a viernes de 8:30 a 14 horas.  Avisos: Cerrada los sábados y los días 24 y 31 de diciembre. Los sábados no hay ningún registro abierto.  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado Servicios.",
+          "Días laborables:   Lunes a  jueves, de 8:30 a 17 horas Viernes de 8:30 a 14 horas   Julio y agosto: lunes a viernes de 8:30 a 14 horas  Avisos: Cerrada los sábados y los días 24 y 31 de diciembre Los sábados no hay ningún registro abierto  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado 'Servicios'",
+          "Días laborables:  Lunes a  jueves, 8:30 a 17 horas. Viernes 8:30 a 14 horas.   Julio y agosto : lunes a viernes 8:30 a 14 horas.   Avisos: Cerrada los sábados y los días 24 y 31 de diciembre. Los sábados no hay ningún registro abierto.  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado 'Servicios'.",
+          "Días laborables:  Lunes a  jueves, de 8:30 a 17 horas. Viernes de 8:30 a 14 horas.   Julio y agosto: lunes a viernes de 8:30 a 14 horas.  Avisos: Cerrada los sábados y los días 24 y 31 de diciembre. Los sábados no hay ningún registro abierto.  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado Servicios.",
+          "Días laborables:  Lunes a  jueves, de 8:30 a 17 horas. Viernes de 8:30 a 14 horas.   Julio y agosto: lunes a viernes de 8:30 a 14 horas. AVISOS: Cerrada los sábados y los días 24 y 31 de diciembre. Los sábados no hay ningún registro abierto.  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado Servicios."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Días laborables:  Lunes a  jueves, de 8:30 a 17 horas Viernes de 8:30 a 14 horas   Julio y agosto: lunes a viernes de 8:30 a 14 horas  Avisos: Cerrada los sábados y los días 24 y 31 de diciembre Los sábados no hay ningún registro abierto  El último tique podrá expedirse 15 minutos antes del horario de cierre, a fin de poder atender a todas las personas en espera. Atención en otros idiomas y lenguaje de signos ver apartado 'Servicios'"
+      },
+      {
+        "from": [
+          "Horario del centro:    De lunes a viernes, de 9 a 22 horas. Julio: de lunes a viernes, de 9 a 15 horas.  Sábados, domingos, festivos y agosto, cerrado.   Horario de secretaría:   De lunes a viernes, de 9 a 13:45 y de 17 a 18:45 horas.  Julio: de lunes a viernes, de 9 a 13:45 horas..   Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen.",
+          "Horario del centro:    De lunes a viernes, de 9 a 22 horas. Julio: de lunes a viernes, de 9 a 15 horas. Sábados, domingos, festivos y agosto, cerrado.   Horario de secretaría:   De lunes a viernes, de 9 a 13:45 y de 17 a 18:45 horas. Julio: de lunes a viernes, de 9 a 13:45 horas.  Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Horario del centro:    De lunes a viernes, de 9 a 22 horas. Julio: de lunes a viernes, de 9 a 15 horas.  Sábados, domingos, festivos y agosto, cerrado.   Horario de secretaría:   De lunes a viernes, de 9 a 13:45 y de 17 a 18:45 horas.  Julio: de lunes a viernes, de 9 a 13:45 horas..   Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen."
+      },
+      {
+        "from": [
+          "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero.",
+          "Lunes a domingo, de 9 a 21 horas . Cerrado 25 diciembre y 1 enero."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunes a domingo, de 9 a 21 horas. Cerrado 25 diciembre y 1 enero."
+      },
+      {
+        "from": [
+          "Lunes a domingo, de 9 a 21 horas",
+          "Lunes a domingo, de 9 a 21 horas."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunes a domingo, de 9 a 21 horas"
+      },
+      {
+        "from": [
+          "Horario del centro:   De lunes a viernes, de 9 a 14 y de 16 a 21 horas.  Sábados, domingos, festivos y agosto cerrado.   Horario de secretaría:   De lunes a jueves, de 9:30 a 13:30 horas y de 16:30 A 18 horas. Viernes, de 9:30 a 13:30. Julio: de lunes a viernes, de 9:30 a 13:30 horas.  Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen.",
+          "Horario del centro:   De lunes a viernes, de 9 a 14 y de 16 a 21 horas.  Sábados, domingos, festivos y agosto cerrado.   Horario de secretaría:   De lunes a jueves, de 9:30 a 13:30 horas y de 16:30 a 18 horas. Viernes, de 9:30 a 13:30. Julio: de lunes a viernes, de 9:30 a 13:30 horas.  Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Horario del centro:   De lunes a viernes, de 9 a 14 y de 16 a 21 horas.  Sábados, domingos, festivos y agosto cerrado.   Horario de secretaría:   De lunes a jueves, de 9:30 a 13:30 horas y de 16:30 A 18 horas. Viernes, de 9:30 a 13:30. Julio: de lunes a viernes, de 9:30 a 13:30 horas.  Fuera de este horario el centro permanecerá abierto durante la celebración de las actividades que se programen."
+      }
+    ],
+    "description": "Editar celdas en masa en columna HORARIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguo Twitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:",
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'x' (antiguo Twitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:",
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguo Twitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:",
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones. requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguo Twitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguo Twitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:"
+      },
+      {
+        "from": [
+          "Para recibir atención en el centro de servicios sociales, debe solicitar cita previa.  Para pedir la cita puede utilizar cualquiera de las alternativas que le ofrece Línea Madrid:    Internet en Atención Servicios Sociales           Chat online de www.madrid.es    Redes sociales  @lineamadrid de Twitter y Facebook   Teléfono 010  o marcando el 914 800 010 si llama desde fuera del municipio de Madrid.  También puede solicitar cita a través del correo electrónico o el teléfono del centro de servicios sociales en horario de 9 a 14 horas de lunes a viernes. Si necesita saber qué centro le corresponde a su zona, puede consultarlo en el siguiente listado organizado por distritos.",
+          "Para recibir atención en el centro de servicios sociales, debe solicitar cita previa.  Para pedir la cita puede utilizar cualquiera de las alternativas que le ofrece Línea Madrid:    Internet en Atención Servicios Sociales           Chat online de www.madrid.es   Redes sociales  @lineamadrid de Twitter y Facebook   Teléfono 010 o marcando el 914 800 010 si llama desde fuera del municipio de Madrid.  También puede solicitar cita a través del correo electrónico o el teléfono del centro de servicios sociales en horario de 9 a 14 horas de lunes a viernes. Si necesita saber qué centro le corresponde a su zona, puede consultarlo en el siguiente listado organizado por distritos.",
+          "Para recibir atención en el centro de servicios sociales, debe solicitar cita previa.  Para pedir la cita puede utilizar cualquiera de las alternativas que le ofrece Línea Madrid:    Internet  en Atención Servicios Sociales           Chat online de www.madrid.es   Redes sociales  @lineamadrid de Twitter y Facebook   Teléfono 010  o marcando el 914 800 010 si llama desde fuera del municipio de Madrid.  También puede solicitar cita a través del correo electrónico o el teléfono del centro de servicios sociales en horario de 9 a 14 horas de lunes a viernes. Si necesita saber qué centro le corresponde a su zona, puede consultarlo en el siguiente listado organizado por distritos.",
+          "Para recibir atención en el centro de servicios sociales, debe solicitar cita previa. Para pedir la cita puede utilizar cualquiera de las alternativas que le ofrece Línea Madrid:  Internet en Atención Servicios Sociales        Chat online de www.madrid.es  Redes sociales @lineamadrid de Twitter y Facebook  Teléfono 010 o marcando el 914 800 010 si llama desde fuera del municipio de Madrid.  También puede solicitar cita a través del correo electrónico o el teléfono del centro de servicios sociales en horario de 9 a 14 horas de lunes a viernes. Si necesita saber qué centro le corresponde a su zona, puede consultarlo en el siguiente listado organizado por distritos."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Para recibir atención en el centro de servicios sociales, debe solicitar cita previa.  Para pedir la cita puede utilizar cualquiera de las alternativas que le ofrece Línea Madrid:    Internet en Atención Servicios Sociales           Chat online de www.madrid.es    Redes sociales  @lineamadrid de Twitter y Facebook   Teléfono 010  o marcando el 914 800 010 si llama desde fuera del municipio de Madrid.  También puede solicitar cita a través del correo electrónico o el teléfono del centro de servicios sociales en horario de 9 a 14 horas de lunes a viernes. Si necesita saber qué centro le corresponde a su zona, puede consultarlo en el siguiente listado organizado por distritos."
+      },
+      {
+        "from": [
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguoTwitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:",
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguoTwitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:",
+          "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguoTwitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Las Oficinas de Atención a la Ciudadanía de Línea Madrid son equipamientos del Ayuntamiento de Madrid en los que se puede solicitar información sobre la ciudad y realizar múltiples gestiones, requiriendo alguna de ellas de cita previa. Se puede solicitar cita a través de los siguientes canales de Línea Madrid:   En Línea: accediendo al sistema municipal de cita previa y posteriormente seleccionando la gestión deseada.  Telefónico: a través del teléfono gratuito 010, si llama desde la ciudad de Madrid, o del 914 800 010, si llama desde la ciudad de Madrid o desde fuera (se factura como cualquier otra llamada al municipio de Madrid, en función de las tarifas que tenga contratado el abonado llamante). Ambos teléfonos están operativos las 24 horas del día, los 7 días de la semana, los 365 días del año.  Redes sociales:   'X' (antiguoTwitter) @Lineamadrid.   Messenger de Facebook @Lineamadrid .    Chat en línea pulsando el icono &amp;ldquo;Chat on line Línea Madrid&amp;rdquo; que encontrará flotando en esta misma página.  Presencialmente en cualquiera de las Oficinas de Atención a la Ciudadanía.  Está prohibido el acceso de animales de compañía. Esta oficina cuenta con las siguientes ayudas de accesibilidad para personas con dificultades especiales:"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EQUIPAMIENTO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Atención en otros idiomas:   De manera presencial:    Lengua de signos española  e inglés: 8:30 a 17 horas.  Rumano, árabe y chino mandarín: 8:30 a 14:15 horas.   A través de videollamada:    Lengua de signos española, inglés, rumano, árabe y chino mandarín: 8:30 a 17 horas.   Zona wifi.",
+          "Atención en otros idiomas:   De manera presencial:    Lengua de signos española  e inglés: 8:30 a 17 horas.  Rumano: 8:30 a 14:15 horas.   A través de videollamada:    Lengua de signos española, inglés, rumano, árabe y chino mandarín: 8:30 a 17 horas.   Zona wifi.",
+          "Atención en otros idiomas:   De manera presencial:    Lengua de signos española  e inglés: 8:30 a 17 horas.  Árabe y chino mandarín: 8:30 a 14:15 horas.   A través de videollamada:    Lengua de signos española, inglés, rumano, árabe y chino mandarín: 8:30 a 17 horas.   Zona wifi."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Atención en otros idiomas:   De manera presencial:    Lengua de signos española  e inglés: 8:30 a 17 horas.  Rumano, árabe y chino mandarín: 8:30 a 14:15 horas.   A través de videollamada:    Lengua de signos española, inglés, rumano, árabe y chino mandarín: 8:30 a 17 horas.   Zona wifi."
+      },
+      {
+        "from": [
+          "Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.   Herramientas de apoyo a la accesibilidad:   Silla de ruedas. Préstamo de lupas línea guía y lupas tarjeta. Préstamo en sala de telelupa. Lector de pantalla NVDA en los puestos de internet. Bucle magnético en el mostrador de información.",
+          "Préstamo de libros, multimedia, revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.   Herramientas de apoyo a la accesibilidad:   Silla de ruedas. Préstamo de lupas línea guía y lupas tarjeta. Préstamo en sala de telelupa. Lector de pantalla NVDA en los puestos de internet. Bucle magnético en el mostrador de información."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.   Herramientas de apoyo a la accesibilidad:   Silla de ruedas. Préstamo de lupas línea guía y lupas tarjeta. Préstamo en sala de telelupa. Lector de pantalla NVDA en los puestos de internet. Bucle magnético en el mostrador de información."
+      },
+      {
+        "from": [
+          "Sala de lectura y estudio 7 aulas Zona wifi",
+          "Sala de lectura y estudio. 7 aulas. Zona wifi."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sala de lectura y estudio 7 aulas Zona wifi"
+      },
+      {
+        "from": [
+          "Puestos de lectura: 16 Zona wifi",
+          "Puestos de lectura: 16. Zona WIFI."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puestos de lectura: 16 Zona wifi"
+      },
+      {
+        "from": [
+          "Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.   Herramientas de apoyo a la accesibilidad:   Préstamo de lupas línea guía y lupas tarjeta. Préstamo en sala de telelupa. Lector de pantalla NVDA en los puestos de internet. Bucle magnético en el mostrador de información.",
+          "Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.    Herramientas de apoyo a la accesibilidad:   Préstamo de lupas línea guía y lupas tarjeta. Préstamo en sala de telelupa. Lector de pantalla NVDA en los puestos de internet. Bucle magnético en el mostrador de información."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Préstamo de libros, multimedia y revistas. Servicio de acceso público a Internet. Zona wifi. Información bibliográfica. Animación a la lectura y formación de usuarios.   Herramientas de apoyo a la accesibilidad:   Préstamo de lupas línea guía y lupas tarjeta. Préstamo en sala de telelupa. Lector de pantalla NVDA en los puestos de internet. Bucle magnético en el mostrador de información."
+      },
+      {
+        "from": [
+          "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnológicas, excursiones, visitas culturales, recreativas y de ocio); talleres, actividades preventivas y de autocuidado; podología; peluquería; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi.",
+          "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnólogicas, excursiones, visitas culturales, recreativas y de ocio);  talleres, actividades preventivas y de autocuidado; podología; peluquería; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Animación sociocultural a traves de programas socioculturales, ocupacionales y formativos (actividades físicas, culturales, artísticas, tecnológicas, excursiones, visitas culturales, recreativas y de ocio); talleres, actividades preventivas y de autocuidado; podología; peluquería; comedor y cafetería; biblioteca, sala de lectura y prensa diaria.  Zona wifi."
+      },
+      {
+        "from": [
+          "Su actividad fundamental está orientada a:  Planificar y ejecutar la política de formación del Ayuntamiento de Madrid para empleados públicos y personal directivo, sin perjuicio de las competencias atribuidas en esta materia al Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias. Desarrollar programas de formación especializada en colaboración con otras instituciones públicas o privadas, centros u órganos de formación. Colaborar en la organización y desarrollo de los cursos de formación, selectivos o de carácter complementario, subsiguientes a las pruebas selectivas de ingreso en la función pública del Ayuntamiento de Madrid, y los correspondientes a los procesos de promoción interna del personal. Colaborar y cooperar con las universidades, fundaciones y demás instituciones públicas y privadas que puedan contribuir al desarrollo de actividades formativas, desarrollando programas de formación para el personal municipal. Coordinar, gestionar y realizar el seguimiento de los convenios de colaboración con universidades que incluyan, dentro de sus cláusulas, la realización de prácticas no remuneradas de estudiantes en el Ayuntamiento de Madrid, sin perjuicio de las competencias atribuidas al titular de la Coordinación General de la Alcaldía en materia de relaciones con otras instituciones y administraciones públicas. Organizar encuentros formativos nacionales e internacionales relativos al estudio de materias relacionadas con el gobierno y la administración local bajo la supervisión de la Coordinación General de la Alcaldía.  Wifi",
+          "Su actividad fundamental está orientada a:  Planificar y ejecutar la política de formación del Ayuntamiento de Madrid para empleados públicos y personal directivo, sin perjuicio de las competencias atribuidas en esta materia al Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias. Desarrollar programas de formación especializada en colaboración con otras instituciones públicas o privadas, centros u órganos de formación. Colaborar en la organización y desarrollo de los cursos de formación, selectivos o de carácter complementario, subsiguientes a las pruebas selectivas de ingreso en la función pública del Ayuntamiento de Madrid, y los correspondientes a los procesos de promoción interna del personal. Colaborar y cooperar con las universidades, fundaciones y demás instituciones públicas y privadas que puedan contribuir al desarrollo de actividades formativas, desarrollando programas de formación para el personal municipal. Coordinar, gestionar y realizar el seguimiento de los convenios de colaboración con universidades que incluyan, dentro de sus cláusulas, la realización de prácticas no remuneradas de estudiantes en el Ayuntamiento de Madrid, sin perjuicio de las competencias atribuidas al titular de la Coordinación General de la Alcaldía en materia de relaciones con otras instituciones y administraciones públicas. Organizar encuentros formativos nacionales e internacionales relativos al estudio de materias relacionadas con el gobierno y la administración local bajo la supervisión de la Coordinación General de la Alcaldía.  Wifi."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Su actividad fundamental está orientada a:  Planificar y ejecutar la política de formación del Ayuntamiento de Madrid para empleados públicos y personal directivo, sin perjuicio de las competencias atribuidas en esta materia al Área de Gobierno de Vicealcaldía, Portavoz, Seguridad y Emergencias. Desarrollar programas de formación especializada en colaboración con otras instituciones públicas o privadas, centros u órganos de formación. Colaborar en la organización y desarrollo de los cursos de formación, selectivos o de carácter complementario, subsiguientes a las pruebas selectivas de ingreso en la función pública del Ayuntamiento de Madrid, y los correspondientes a los procesos de promoción interna del personal. Colaborar y cooperar con las universidades, fundaciones y demás instituciones públicas y privadas que puedan contribuir al desarrollo de actividades formativas, desarrollando programas de formación para el personal municipal. Coordinar, gestionar y realizar el seguimiento de los convenios de colaboración con universidades que incluyan, dentro de sus cláusulas, la realización de prácticas no remuneradas de estudiantes en el Ayuntamiento de Madrid, sin perjuicio de las competencias atribuidas al titular de la Coordinación General de la Alcaldía en materia de relaciones con otras instituciones y administraciones públicas. Organizar encuentros formativos nacionales e internacionales relativos al estudio de materias relacionadas con el gobierno y la administración local bajo la supervisión de la Coordinación General de la Alcaldía.  Wifi"
+      },
+      {
+        "from": [
+          "Puestos de lectura: 20 Zona wifi",
+          "Puestos de lectura: 20. Zona WIFI."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puestos de lectura: 20 Zona wifi"
+      },
+      {
+        "from": [
+          "Equipamientos:   Zona Wifi   Servicios:    Información, orientación y asesoramiento sobre derechos y recursos sociales. Tramitación y gestión de servicios sociales municipales (ayudas a domicilio, teleasistencia, centros de día municipales, pisos tutelados, etc.) y prestaciones económicas necesarias en la intervención social. Gestión y tramitación de servicios y prestaciones de la Comunidad de Madrid (dependencia, residencias de mayores, discapacidad, mujer, menores, etc.) Renta Mínima de Inserción (RMI) y diferentes prestaciones económicas de inserción social. Información y gestión de los programas de prevención dirigidos a menores, adolescentes, personas adultas, mayores, etc.",
+          "Equipamientos:   Zona Wifi   Servicios:   Información, orientación y asesoramiento sobre derechos y recursos sociales. Tramitación y gestión de servicios sociales municipales (ayudas a domicilio, teleasistencia, centros de día municipales, pisos tutelados, etc.) y prestaciones económicas necesarias en la intervención social. Gestión y tramitación de servicios y prestaciones de la Comunidad de Madrid (dependencia, residencias de mayores, discapacidad, mujer, menores, etc.) Renta Mínima de Inserción (RMI) y diferentes prestaciones económicas de inserción social. Información y gestión de los programas de prevención dirigidos a menores, adolescentes, personas adultas, mayores, etc."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Equipamientos:   Zona Wifi   Servicios:    Información, orientación y asesoramiento sobre derechos y recursos sociales. Tramitación y gestión de servicios sociales municipales (ayudas a domicilio, teleasistencia, centros de día municipales, pisos tutelados, etc.) y prestaciones económicas necesarias en la intervención social. Gestión y tramitación de servicios y prestaciones de la Comunidad de Madrid (dependencia, residencias de mayores, discapacidad, mujer, menores, etc.) Renta Mínima de Inserción (RMI) y diferentes prestaciones económicas de inserción social. Información y gestión de los programas de prevención dirigidos a menores, adolescentes, personas adultas, mayores, etc."
+      },
+      {
+        "from": [
+          "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas,  emocionales y de desarrollo de nuevas tecnologías e informática. Además de actividades culturales y programación mensual de interés para los usuarios del centro, se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades.",
+          "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas,  emocionales y de desarrollo de nuevas tecnologías e informática. Además, actividades culturales y programación mensual de interés para los usuarios del centro y se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Se ofrecen servicios de podología, peluquería, comedor y cafetería, prensa, wifi, servicio de fisioterapia preventiva, servicio de animación sociocultural con el desarrollo de talleres en las siguientes áreas: físicas, culturales, artísticas, plásticas,  emocionales y de desarrollo de nuevas tecnologías e informática. Además de actividades culturales y programación mensual de interés para los usuarios del centro, se desarrolla también el programa de terapia ocupacional con talleres de estimulación cognitiva, gerontogimnasia y manualidades."
+      }
+    ],
+    "description": "Editar celdas en masa en columna EQUIPAMIENTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TRANSPORTE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Consulta los siguientes enlaces",
+          "Consulta los siguientes enlaces:",
+          "Consulta los siguientes enlaces."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Consulta los siguientes enlaces"
+      },
+      {
+        "from": [
+          "Metro: Alsacia ( línea 2)",
+          "Metro: Alsacia (línea 2)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Alsacia ( línea 2)"
+      },
+      {
+        "from": [
+          "Consultar los siguientes enlaces:",
+          "Consultar los siguientes enlaces"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Consultar los siguientes enlaces:"
+      },
+      {
+        "from": [
+          "Metro: Valdebernardo (línea 9)",
+          "Metro: Valdebernardo (línea 9)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Valdebernardo (línea 9)"
+      },
+      {
+        "from": [
+          "Metro: Villa de Vallecas (línea 1)",
+          "Metro: Villa de Vallecas (Línea 1)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Villa de Vallecas (línea 1)"
+      },
+      {
+        "from": [
+          "Metro: Francos Rodríguez (línea 7)",
+          "Metro: Francos Rodríguez (línea 7)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Francos Rodríguez (línea 7)"
+      },
+      {
+        "from": [
+          "Metro: Buenos Aires (línea 1), Portazgo (línea 1).",
+          "Metro: Portazgo, Buenos Aires (línea 1)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Buenos Aires (línea 1), Portazgo (línea 1)."
+      },
+      {
+        "from": [
+          "Metro: La Elipa (línea 2)",
+          "Metro: La Elipa (línea 2)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: La Elipa (línea 2)"
+      },
+      {
+        "from": [
+          "Metro: Nueva Numancia (línea 1), Puente de Vallecas (línea 1)",
+          "Metro: Puente de Vallecas (línea 1), Nueva Numancia (línea 1)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro: Nueva Numancia (línea 1), Puente de Vallecas (línea 1)"
+      }
+    ],
+    "description": "Editar celdas en masa en columna TRANSPORTE"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LEONOR GONGORA",
+          "Leonor Góngora"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LEONOR GONGORA"
+      },
+      {
+        "from": [
+          "FERNAN NUÑEZ",
+          "FERNÁN NÚÑEZ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FERNÁN NUÑEZ"
+      }
+    ],
+    "description": "Editar celdas en masa en columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASE-VIAL",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      }
+    ],
+    "description": "Editar celdas en masa en columna CLASE-VIAL"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PK",
+    "expression": "grel:\"wifi-madrid-\" + cells[\"PK\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "ID",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna ID en el índice 1 basada en la columna PK usando la expresión grel:\"wifi-madrid-\" + cells[\"PK\"].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORARIO",
+    "expression": "grel:value.replace(/(?i)horario( general| del centro|:)?[:]?/,\"\").trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna HORARIO usando la expresión grel:value.replace(/(?i)horario( general| del centro|:)?[:]?/,\"\").trim()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Eliminar columna PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Eliminar columna ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Eliminar columna ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Eliminar columna PLANTA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "grel:value.split(\"/\")[3]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna TIPO usando la expresión grel:value.split(\"/\")[3]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "expression": "grel:value.trim().toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna NOMBRE-VIA usando la expresión grel:value.trim().toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "grel:value.split(\"/\")[value.split(\"/\").length() - 1]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna TIPO usando la expresión grel:value.split(\"/\")[value.split(\"/\").length() - 1]"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "TELEFONO",
+    "keyColumnName": "PK",
+    "mode": "separator",
+    "separator": "//",
+    "regex": false,
+    "description": "Separa celdas con múltiples valores en columna TELEFONO"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "TELEFONO",
+    "keyColumnName": "PK",
+    "mode": "separator",
+    "separator": "/",
+    "regex": false,
+    "description": "Separa celdas con múltiples valores en columna TELEFONO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TELEFONO",
+    "expression": "grel:value.replace(/(\\d{3})(\\d{3})(\\d{3})/, \"$1 $2 $3\").trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna TELEFONO usando la expresión grel:value.replace(/(\\d{3})(\\d{3})(\\d{3})/, \"$1 $2 $3\").trim()"
+  }
+]
