@@ -1,4 +1,4 @@
-# Instructions for assignment 4
+# Instructions for assignment 4.
 Please follow the instructions below to successfully validate your assignments and do a pull request.
 
 1. Synchronize your fork with the source repository: Go to YOUR fork in GitHub, and click on "Sync fork" like we did in class.
