@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "includes": "ex:includes",
+    "hasMeasurement": "ex:hasMeasurement",
+    "hasTemperature": "ex:hasTemperature",
+    "atTime": "ex:atTime",
+    "hasOwner": "ex:hasOwner",
+    "hasName": "ex:hasName"
+  },
+  "@graph": [
+    {
+      "@id": "ex:Class01",
+      "@type": "ex:Class",
+      "includes": [
+        {
+          "@id": "ex:Sensor029"
+        },
+        {
+          "@id": "ex:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "ex:Sensor029",
+      "@type": "ex:Sensor",
+      "hasMeasurement": {
+        "@id": "ex:Measurement8401"
+      }
+    },
+    {
+      "@id": "ex:Measurement8401",
+      "@type": "ex:Measurement",
+      "hasTemperature": 29,
+      "atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "ex:Computer101",
+      "@type": "ex:Computer",
+      "hasOwner": {
+        "@id": "ex:User10A"
+      }
+    },
+    {
+      "@id": "ex:User10A",
+      "@type": "ex:User",
+      "hasName": "Pedro"
+    }
+  ]
+}

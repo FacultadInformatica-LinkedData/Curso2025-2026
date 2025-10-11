@@ -1,0 +1,28 @@
+@base <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix et: <http://example.org/et#> .
+
+# ClassRoom03 and its relationships
+<ClassRoom03> rdf:type ex:ClassRoom ;
+    ex:contains <Sensor047> ;
+    ex:contains <Table322> .
+
+# Sensor047 and its measurement
+<Sensor047> rdf:type ex:Sensor ;
+    ex:hasMeasurement <Measurement> .
+
+<Measurement> rdf:type ex:Measurement ;
+    ex:hasMeasurementID23 <MeasurementID23> ;
+    ex:hasSensorID <Sensor047> .
+
+<MeasurementID23> rdf:type ex:MeasurementID ;
+    rdf:value "2022-08-*/21 14:21:12" .
+
+# Table322 and its information
+<Table322> rdf:type ex:Table ;
+    ex:hasOwner et:Informations .
+
+et:Informations rdf:type et:Information ;
+    ex:hasName "ET:Id-Informations" .
