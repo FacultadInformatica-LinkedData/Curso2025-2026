@@ -1,0 +1,398 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q33506",
+        "name": "museum"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE to type Q33506"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PK",
+    "description": "Eliminar columna PK"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCALIDAD",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column LOCALIDAD to type Q2074737"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCALIDAD",
+    "similarValue": "MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        "Q2074737",
+        "Q1200957",
+        "Q200250"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Madrid (Q2807) para las celdas que contienen \"MADRID\" en la columna LOCALIDAD"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10742",
+        "name": "autonomous community of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q10742"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO to type Q10267336"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO to type Q3032114"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO-NUM",
+    "description": "Eliminar columna TIPO-NUM"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE-VIA to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "ALFONSO XII",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5659170",
+      "name": "Calle de Alfonso XII",
+      "types": [
+        "Q79007"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Calle de Alfonso XII (Q5659170) para las celdas que contienen \"ALFONSO XII\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "CARLOS ARNICHES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q25410886",
+      "name": "Calle de Carlos Arniches, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Calle de Carlos Arniches, Madrid (Q25410886) para las celdas que contienen \"CARLOS ARNICHES\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740840",
+      "name": "calle de Fuencarral",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento calle de Fuencarral (Q5740840) para las celdas que contienen \"FUENCARRAL\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "MARQUES DEL RISCAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29035468",
+      "name": "Calle del Marqués del Riscal, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Calle del Marqués del Riscal, Madrid (Q29035468) para las celdas que contienen \"MARQUES DEL RISCAL\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "BAILEN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740811",
+      "name": "Bailén street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Bailén street (Q5740811) para las celdas que contienen \"BAILEN\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "ARTURO SORIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8255504",
+      "name": "calle de Arturo Soria",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento calle de Arturo Soria (Q8255504) para las celdas que contienen \"ARTURO SORIA\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "SERRANO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740879",
+      "name": "Serrano Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Serrano Street (Q5740879) para las celdas que contienen \"SERRANO\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "PRADO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2079615",
+      "name": "Paseo del Prado",
+      "types": [
+        "Q787113",
+        "Q54114",
+        "Q79007"
+      ],
+      "score": 59
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Paseo del Prado (Q2079615) para las celdas que contienen \"PRADO\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA",
+    "similarValue": "ALCALA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2424746",
+      "name": "Alcalá Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 77
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Alcalá Street (Q2424746) para las celdas que contienen \"ALCALA\" en la columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Eliminar columna ORIENTACION"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NUM",
+    "expression": "grel:\"Número: \" + value + if(isBlank(cells[\"PLANTA\"].value), \"\", \". Planta: \" + cells[\"PLANTA\"].value) + if(isBlank(cells[\"PUERTA\"].value), \"\", \". Puerta: \" + cells[\"PUERTA\"].value) + if(isBlank(cells[\"ESCALERAS\"].value), \"\", \". Escaleras: \" + cells[\"ESCALERAS\"].value)",
+    "onError": "set-to-blank",
+    "newColumnName": "Address",
+    "columnInsertIndex": 11,
+    "description": "Crear la columna Address en el índice 11 basada en la columna NUM usando la expresión grel:\"Número: \" + value + if(isBlank(cells[\"PLANTA\"].value), \"\", \". Planta: \" + cells[\"PLANTA\"].value) + if(isBlank(cells[\"PUERTA\"].value), \"\", \". Puerta: \" + cells[\"PUERTA\"].value) + if(isBlank(cells[\"ESCALERAS\"].value), \"\", \". Escaleras: \" + cells[\"ESCALERAS\"].value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Eliminar columna PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Eliminar columna PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Eliminar columna ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NUM",
+    "description": "Eliminar columna NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Address",
+    "newColumnName": "ADDRESS",
+    "description": "Renombra la columna Address a ADDRESS"
+  }
+]
