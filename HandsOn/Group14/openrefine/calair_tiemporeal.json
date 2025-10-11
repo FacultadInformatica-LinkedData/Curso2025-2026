@@ -1,0 +1,21 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:cells[\"PROVINCIA\"].value + cells[\"MUNICIPIO\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "CODIGO",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna CODIGO en el índice 1 basada en la columna PROVINCIA usando la expresión grel:cells[\"PROVINCIA\"].value + cells[\"MUNICIPIO\"].value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO",
+    "index": 0,
+    "description": "Mueve la columna CODIGO a la posición 0"
+  }
+]

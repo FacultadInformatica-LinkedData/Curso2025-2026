@@ -1,0 +1,95 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:value.substring(0, 2)",
+    "onError": "set-to-blank",
+    "newColumnName": "PROVINCIA",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna PROVINCIA en el índice 1 basada en la columna CODIGO usando la expresión grel:value.substring(0, 2)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:value.substring(2, 5)",
+    "onError": "set-to-blank",
+    "newColumnName": "MUNICIPIO",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna MUNICIPIO en el índice 1 basada en la columna CODIGO usando la expresión grel:value.substring(2, 5)"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "PROVINCIA",
+    "index": 1,
+    "description": "Mueve la columna PROVINCIA a la posición 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "PROVINCIA",
+    "index": 0,
+    "description": "Mueve la columna PROVINCIA a la posición 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO",
+    "index": 2,
+    "description": "Mueve la columna CODIGO a la posición 2"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO",
+    "index": 1,
+    "description": "Mueve la columna CODIGO a la posición 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO",
+    "index": 0,
+    "description": "Mueve la columna CODIGO a la posición 0"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:value.substring(0, 5)",
+    "onError": "set-to-blank",
+    "newColumnName": "CODIGO1",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna CODIGO1 en el índice 1 basada en la columna CODIGO usando la expresión grel:value.substring(0, 5)"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO1",
+    "index": 0,
+    "description": "Mueve la columna CODIGO1 a la posición 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO1",
+    "index": 1,
+    "description": "Mueve la columna CODIGO1 a la posición 1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGO",
+    "newColumnName": "ID",
+    "description": "Renombra la columna CODIGO a ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGO1",
+    "newColumnName": "CODIGO",
+    "description": "Renombra la columna CODIGO1 a CODIGO"
+  }
+]
