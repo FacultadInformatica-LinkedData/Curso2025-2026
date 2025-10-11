@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    "hometown": "http://schema.org/addressLocality",
+    "age": "http://schema.org/age",
+    "almaMater": "http://schema.org/alumniOf",
+    "father": "http://schema.org/parent",
+    "mother": "http://schema.org/parent",
+    "subjects": "http://schema.org/course",
+    "teacher": "http://schema.org/teacher",
+    "description": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "name": "Ngoc Phuc Mario Nguyen",
+  "hometown": "Düsseldorf",
+  "age": 22,
+  "almaMater": "HHU",
+  "father": "Phu",
+  "mother": "Thuy",
+  "subjects": [
+    {
+      "@type": "Course",
+      "name": "logic",
+      "teacher": "Damiano Zanardini",
+      "description": "mathematical logic"
+    },
+    {
+      "@type": "Course",
+      "name": "programming 1",
+      "teacher": "Javier Galve Frances",
+      "description": "java language"
+    },
+    {
+      "@type": "Course",
+      "name": "EPAC",
+      "teacher": "Hanane Benali Taouis",
+      "description": "communication skills"
+    },
+    {
+      "@type": "Course",
+      "name": "Web semantics",
+      "teacher": "Oscar Corcho Garcia",
+      "description": "linked data and knowledge graphs"
+    },
+    {
+      "@type": "Course",
+      "name": "Spanish",
+      "teacher": "Almudena Diaz Garcia",
+      "description": "level A1 + A2"
+    }
+  ]
+}
