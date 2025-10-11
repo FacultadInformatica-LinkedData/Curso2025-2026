@@ -6,10 +6,10 @@
 
 # ===== Estación =====
 <http://airecalidadbcn.linkeddata.es/g05/resource/Station/Gracia> a aq:Station ;
-    aq:stationName "Barcelona - Gràcia"@ca ;
-    aq:latitude "41.3987"^^xsd:float ;
-    aq:longitude "2.1534"^^xsd:float ;
-    rdfs:comment "Qualitat global: Bona; codi_dtes=IJ; zqa=01; codi_eoi=08019044"@ca .
+    aq:stationName "Gràcia"@ca ;
+    aq:latitude "41.3987"^^xsd:double ;
+    aq:longitude "2.1534"^^xsd:double ;
+    rdfs:comment "Calidad global: Buena; codi_dtes=IJ; zqa=01; codi_eoi=08019044"@es .
 
 # ===== Contaminantes =====
 <http://airecalidadbcn.linkeddata.es/g05/resource/Contaminant/O3> a aq:Contaminant ;
@@ -26,23 +26,24 @@
 <http://airecalidadbcn.linkeddata.es/g05/resource/Sample/20180611T070503Z_Gracia_O3> a aq:Sample ;
     aq:madeAt <http://airecalidadbcn.linkeddata.es/g05/resource/Station/Gracia> ;
     aq:measuresContaminant <http://airecalidadbcn.linkeddata.es/g05/resource/Contaminant/O3> ;
-    aq:value "51.0"^^xsd:float ;
+    aq:value "51.0"^^xsd:double ;
     aq:unit "µg/m³" ;
     aq:dateTime "2018-06-11T07:05:03Z"^^xsd:dateTime ;
-    rdfs:comment "Qualitat O3: Bona; hora=8h"@ca .
+    rdfs:comment "Calidad O3: Buena; hora=8h"@es .
 
 <http://airecalidadbcn.linkeddata.es/g05/resource/Sample/20180611T070503Z_Gracia_NO2> a aq:Sample ;
     aq:madeAt <http://airecalidadbcn.linkeddata.es/g05/resource/Station/Gracia> ;
     aq:measuresContaminant <http://airecalidadbcn.linkeddata.es/g05/resource/Contaminant/NO2> ;
-    aq:value "44.0"^^xsd:float ;
+    aq:value "44.0"^^xsd:double ;
     aq:unit "µg/m³" ;
     aq:dateTime "2018-06-11T07:05:03Z"^^xsd:dateTime ;
-    rdfs:comment "Qualitat NO2: Bona; hora=8h"@ca .
+    rdfs:comment "Calidad NO2: Buena; hora=8h"@es .
 
 <http://airecalidadbcn.linkeddata.es/g05/resource/Sample/20180611T070503Z_Gracia_PM10> a aq:Sample ;
     aq:madeAt <http://airecalidadbcn.linkeddata.es/g05/resource/Station/Gracia> ;
     aq:measuresContaminant <http://airecalidadbcn.linkeddata.es/g05/resource/Contaminant/PM10> ;
-    aq:value "23.0"^^xsd:float ;
+    aq:value "23.0"^^xsd:double ;
     aq:unit "µg/m³" ;
     aq:dateTime "2018-06-11T07:05:03Z"^^xsd:dateTime ;
-    rdfs:comment "Qualitat PM10: Bona; hora=9h"@ca .
+    rdfs:comment "Calidad PM10: Buena; hora=9h"@es .
+
