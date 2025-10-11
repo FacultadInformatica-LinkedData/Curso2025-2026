@@ -1,0 +1,37 @@
+nº radar,ubicacion,carretera o vial,ubicacion calle 30,pk,sentido,Tipo,Carril,Longitud inicio tramo,Latitud inicio tramo,X (WGS84),Y (WGS84),Longitud,Latitud,Velocidad limite,Responsable
+1,"m-30, entrada de la a-1, sentido puente de ventas p.k. 0,500",m-30,00nc50,0+500,calzada interior,fijo,fijo carril 4,,,442843.00,4481180.00,-3.67433808,40.47934148,90,dgp
+2,"m-30, entrada de la a-1, sentido puente de ventas p.k. 0,500",m-30,00nc50,0+500,calzada interior,fijo,fijo carril 5,,,442847.00,4481180.00,-3.67429089,40.47934175,90,dgp
+3,"paso inferior costa rica, sentido principe de vergara",paso inferior (tunel),,,,fijo,todos,,,443295.00,4478910.00,-3.66880283,40.45892328,50,dgp
+4,"m-30, pte. de ventas. sentido sur a o´donnell p.k. 6,700",m-30,m-30,6+700,tronco calzada interior,fijo,fijo carril 1,,,444002.00,4475270.00,-3.66014384,40.42618023,90,dgp
+5,"m-30, pte. de ventas. sentido sur a o´donnell p.k. 6,700",m-30,m-30,6+700,tronco calzada interior,fijo,fijo carril 3,,,444009.00,4475271.00,-3.66006141,40.42618971,90,dgp
+6,"m-30, enlace o´donnell sentido norte a pte. de ventas pk 7,800",m-30,m-30,7+800,tronco calzada exterior,fijo,fijo carril 2,,,444069.00,4474210.00,-3.65926082,40.41663568,90,dgp
+7,"m-30, enlace o´donnell sentido norte a pte. de ventas pk 7,800",m-30,m-30,7+800,tronco calzada exterior,fijo,fijo carril 3,,,444066.00,4474211.00,-3.65929627,40.41664449,90,dgp
+8,"tunel baipas, sentido norte a pte. de ventas (mendez alvaro-avda. del metitarraneo)",m-30,10xc30,10+300,calzada exterior,fijo,fijo carril 1,,,,,-3.670048,40.397352,70,dgp
+9,"tunel baipas, sentido norte a pte. de ventas (mendez alvaro-avda. del metitarraneo)",m-30,10xc30,10+300,calzada exterior,fijo,fijo carril 3,,,,,-3.669973,40.397323,70,dgp
+10,"entrada tunel m-30, desde nudo sur hacia pte. de los franceses",m-30,13nl25,13+250,calzada interior,fijo,fijo carril 3,,,,,-3.69499826,40.38678654,90,dgp
+11,"tunel m-30, sentido nudo sur - pte. de los franceses, (gta. legazpi - pº sta. mª de la cabeza)",m-30,13nl86,13+860,calzada interior,fijo,fijo carril 1,,,,,-3.699691,40.39118,70,dgp
+12,"tunel bypass, sentido a-3 a pte. franceses, (gta. legazpi - pº sta. mª de la cabeza)",m-30,14nc20,14+200,calzada interior,fijo,fijo carril 3,,,,,-3.703274,40.394924,70,dgp
+13,"paseo de sta. mª de la cabeza nº 115, entrada",paseo de santa maria de la cabeza,,115,entrada,fijo,todos,,,439726.00,4471345.00,-3.71017703,40.39052318,50,dgp
+14,"tunel bypass, sentido a3 a pte. de los franceses, (enlace pº sta. mª de la cabeza)",m-30,14nc74,14+740,calzada interior,fijo,fijo carril 1,,,,,-3.708108,40.39657,70,dgp
+15,"tunel bypass, sentido a3 a pte. de los franceses, (pº sta. mª de la cabeza - gta. piramides)",m-30,15nl01,15+010,calzada interior,fijo,fijo carril 3,,,,,-3.709684,40.397139,70,dgp
+16,"tunel m-30, sentido pte. de los franceses - a3 (pte. san isidro - gta. marques de vadillo)",m-30,16xc53,16+530,calzada exterior,fijo,fijo multicarril,,,,,-3.722988,40.403114,70,dgp
+17,"tunel m-30, sentido nudo sur - pte. de los franceses, (pasada salida virgen del puerto)",m-30,17nc17,17+170,calzada interior,fijo,fijo carril 1,,,,,-3.721414,40.40939,70,dgp
+18,"tunel avda. de portugal, sentido m-30",a5,04ft15,4+150,entrada de madrid,fijo,fijo carril 1,,,,,-3.731092,40.41389,70,dgp
+19,"tunel avda. de portugal, sentido m-30",a5,04ft15,4+150,entrada de madrid,fijo,fijo carril 4,,,,,-3.73102,40.413797,70,dgp
+20,"a-5 pk 4,000, salida",a5,,4,salida,fijo,fijo carril 3,,,436748.00,4473248.00,-3.74545156,40.40744539,70,dgp
+21,"entrada tunel en marques de monistrol, p.k. 19,060",m-30,19xc06,19+060,calzada exterior,fijo,fijo carril 1,,,,,-3.727663,40.422937,70,dgp
+22,"entrada tunel en marques de monistrol, p.k. 19,060",m-30,19xc06,19+060,calzada exterior,fijo,fijo carril 4,,,,,-3.727724,40.422839,70,dgp
+23,"m-30 marques de monistrol, sentido pte. de los franceses (pte. del rey - pte. franceses) p.k. 19,800",m-30,19nc90,19+900,calzada interior,fijo,fijo carril 3,,,437668.00,4475482.00,-3.73482875,40.42763957,70,dgp
+24,"m-30 marques de monistrol, sentido pte. de los franceses (pte. del rey - pte. franceses) p.k. 19,800",m-30,19nc90,19+900,calzada interior,fijo,fijo carril 2,,,437668.00,4475482.00,-3.73482875,40.42763957,70,dgp
+25,"m-30 sentido avda. de la ilustracion (ctra. del pardo - avda. de la ilustracion) p.k. 25,700",m-30,25nc80,25+700,calzada interior,fijo,todos,,,436823.00,4480674.00,-3.74530618,40.47434710,90,dgp
+26,"m-30 sentido ctra del pardo (avda. de la ilustracion - ctra. del pardo) p.k. 27,300",m-30,,27+300,,fijo,fijo multicarril,,,438043.00,4480491.00,-3.73089695,40.47279048,90,dgp
+27,"paseo de la castellana nº 300, salida",paseo de la castellana,,300,salida,fijo,todos,,,441904.00,4481314.00,-3.68542793,40.48048344,50,dgp
+28,"avenida de cordoba con calle doctor tolosa latour, sentido glorieta de malaga",avenida de cordoba,,inicio: glorieta de cadiz fin: avenida de cordoba con calle doctor tolosa latour,salida,radar de tramo,"salida, radar de tramo",-3.699380,40.387572,440873.00,4470025.29,-3.696519,40.378590,50,dggvc
+29,"a-5 pk 5+750, sentido salida",a5,,p.k 4+000 ----- p.k. 5+750,salida,radar de tramo,"salida, radar de tramo",-3.74574755307117,40.4072412609861,435202.237655954,4472448.48639425,-3.76358611606955,40.4001241953525,70,dggvc
+30,"a-5 pk 4+000, sentido entrada",a5,,p.k. 5+750 ----- p.k 4+000,entrada,radar de tramo,"entrada, radar de tramo",-3.76358611606955,40.4001241953525,436722.693562517,4473225.55366121,-3.74574755307117,40.4072412609861,70,dggvc
+31,"sinesio delgado, sentido ciudad universitaria, farolas 144 -152",calle sinesio delgado,,,ciudad universitaria,radar de tramo,radar de tramo,-3.712945,40.469247,,,-3.714454,40.467149,50,dggvc
+32,"sinesio delgado, sentido ciudad universitaria, farolas 152 - 188",calle sinesio delgado,,,ciudad universitaria,radar de tramo,radar de tramo,-3.714454,40.467149,,,-3.728241,40.460303,50,dggvc
+33,"sinesio delgado, sentido ciudad universitaria, farolas 144 -188",calle sinesio delgado,,,ciudad universitaria,radar de tramo,radar de tramo,-3.712945,40.469247,,,-3.728241,40.460303,50,dggvc
+34,"sinesio delgado, sentido av betanzos, farola 187-152",calle sinesio delgado,,,av betanzos,radar de tramo,radar de tramo,-3.728207,40.460208,,,-3.714454,40.467149,50,dggvc
+35,"sinesio delgado, sentido av betanzos, farola 152- 143",calle sinesio delgado,,,av betanzos,radar de tramo,radar de tramo,-3.714454,40.467149,,,-3.712743,40.469208,50,dggvc
+36,"sinesio delgado, sentido av betanzos, farola 187-143",calle sinesio delgado,,,av betanzos,radar de tramo,radar de tramo,-3.728207,40.460208,,,-3.712743,40.469208,50,dggvc
