@@ -1,0 +1,82 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION-ENTIDAD",
+    "description": "Remove column DESCRIPCION-ENTIDAD",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EQUIPAMIENTO",
+    "description": "Remove column EQUIPAMIENTO",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Remove column PLANTA",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Remove column PUERTA",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Remove column ESCALERAS",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Remove column ORIENTACION",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORARIO",
+    "description": "Remove column HORARIO",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TRANSPORTE",
+    "description": "Remove column TRANSPORTE",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FAX",
+    "description": "Remove column FAX",
+    "comment": "Column removed because it was mostly or entirely blank (sparse data)."
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "grel:value.replace(\"/contenido/entidadesYorganismos/AparcamientosPublicos\", \"Public\")\n \t.replace(\"/contenido/entidadesYorganismos/AparcamientosResidentes\", \"Residential\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression grel:value.replace(\"/contenido/entidadesYorganismos/AparcamientosPublicos\", \"Public\")\n \t.replace(\"/contenido/entidadesYorganismos/AparcamientosResidentes\", \"Residential\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ACCESIBILIDAD",
+    "expression": "grel:value.replace(\"1\",\"Yes\").\nreplace(\"0\",\"No\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ACCESIBILIDAD using expression grel:value.replace(\"1\",\"Yes\").\nreplace(\"0\",\"No\")"
+  }
+]
