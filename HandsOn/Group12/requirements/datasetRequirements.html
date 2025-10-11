@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dataset Requirements - Air Quality Madrid</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1, h2 { color: #003366; }
-  </style>
+<meta charset="UTF-8" />
+<title>Dataset Requirements Evaluation — Green Zones (Madrid)</title>
+<style>
+  :root{
+    --ink:#0b2e4e; --muted:#4d6273; --ok:#1a7f37; --warn:#b26a00; --bg:#f7fafc;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:#1f2937;}
+  .wrap{max-width:960px;margin:40px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(16,24,40,.08)}
+  h1{color:var(--ink);margin:0 0 2px;font-size:28px}
+  h2{color:var(--ink);margin:24px 0 8px;font-size:20px}
+  p.lead{color:var(--muted);margin:0 0 12px}
+  ul{margin:8px 0 16px 22px}
+  .item{display:flex;gap:10px;align-items:flex-start;margin:10px 0;padding:12px;border:1px solid #e5e7eb;border-radius:10px}
+  .ok{color:#fff;background:var(--ok);min-width:26px;height:26px;display:inline-grid;place-items:center;border-radius:50%;font-weight:700}
+  .warn{color:#fff;background:var(--warn);min-width:26px;height:26px;display:inline-grid;place-items:center;border-radius:50%;font-weight:700}
+  code{background:#f3f4f6;padding:2px 6px;border-radius:6px}
+  .meta{background:#f8fafc;border:1px dashed #e5e7eb;padding:10px;border-radius:8px}
+</style>
 </head>
 <body>
+<div class="wrap">
   <h1>Dataset Requirements Evaluation</h1>
-  <h2>Dataset: Air Quality in Madrid</h2>
-  <p>Source: <a href="https://datos.madrid.es">Madrid Open Data Portal</a></p>
+  <p class="lead"><strong>Dataset:</strong> Inventario de <em>zonas verdes</em> del Ayuntamiento de Madrid (2024)</p>
 
-  <h3>R1. Smart City domain</h3>
-  <p>✅ Yes. The dataset belongs to the <strong>Environment</strong> domain, specifically <strong>Air Quality</strong>.</p>
+  <div class="meta">
+    <p><strong>Source:</strong> Portal de Datos Abiertos / Geoportal del Ayuntamiento de Madrid.  
+    <br><strong>Local copy:</strong> <code>Zonas_Verdes_2024.xlsx</code> — convertible a CSV.</p>
+  </div>
 
-  <h3>R2. CSV format</h3>
-  <p>✅ Yes. The dataset is available as a <strong>CSV</strong> file.</p>
+  <h2>R1. Smart City domain</h2>
+  <div class="item"><span class="ok">✓</span>Yes — Urban & Environmental: municipal parks, gardens and green areas.</div>
 
-  <h3>R3. Open license</h3>
-  <p>✅ Yes. The dataset is released under <strong>CC BY 4.0</strong>, allowing reuse and publication with attribution.</p>
+  <h2>R2. Open format</h2>
+  <div class="item"><span class="ok">✓</span>Yes — Provided as Excel; can be exported to <code>CSV</code> and published as <code>RDF</code>.</div>
 
-  <h3>R4. Linkable with generic entities</h3>
-  <p>✅ Yes. It contains <strong>geographical coordinates</strong> and <strong>timestamps</strong>, enabling links to GeoNames and W3C Time vocabularies.</p>
+  <h2>R3. Open license</h2>
+  <div class="item"><span class="ok">✓</span>Yes — CC BY 4.0 (reuse allowed with attribution).</div>
 
-  <h3>R5. Documentation (optional)</h3>
-  <p>✅ Yes. The open data portal provides metadata and field descriptions.</p>
+  <h2>R4. Linkable with generic entities</h2>
+  <div class="item"><span class="ok">✓</span>Yes — Contains the <strong>district</strong> attribute; can be linked to administrative entities (e.g., GeoNames or a Madrid districts vocabulary). Future versions may include coordinates to link with WGS84/GeoSPARQL.</div>
 
-  <h3>R6. Multiple sources (optional)</h3>
-  <p>⚠️ Partially. The data comes from a single source but could be enriched with AEMET or Eurostat datasets.</p>
+  <h2>R5. Documentation</h2>
+  <div class="item"><span class="ok">✓</span>Yes — The municipal portal provides metadata and field descriptions.</div>
+
+  <h2>R6. Multiple sources (optional)</h2>
+  <div class="item"><span class="warn">!</span>Partially — Single primary source; can be enriched with the tree inventory, land‑use maps, or air‑quality near parks.</div>
+</div>
 </body>
 </html>
-
-

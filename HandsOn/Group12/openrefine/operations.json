@@ -1,0 +1,74 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Trim leading and trailing whitespace in all columns",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": true,
+    "repeatCount": 8
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Normalize capitalization in Distrito column",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "edits": [
+      {
+        "fromBlank": false,
+        "from": ["centro", "CENTRO "],
+        "to": "CENTRO"
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename columns for RDF alignment",
+    "oldColumnName": "Número de archivo",
+    "newColumnName": "FileNumber"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename columns for RDF alignment",
+    "oldColumnName": "Naturaleza del inmueble",
+    "newColumnName": "PropertyNature"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename columns for RDF alignment",
+    "oldColumnName": "Situación Destino",
+    "newColumnName": "SituationTarget"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename columns for RDF alignment",
+    "oldColumnName": "Destino",
+    "newColumnName": "Destination"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename columns for RDF alignment",
+    "oldColumnName": "Solar",
+    "newColumnName": "Plot"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Add URI column based on row index",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "ZoneURI",
+    "columnInsertIndex": 0,
+    "baseColumnName": "Distrito",
+    "expression": "'http://linkeddata.greenzonesmadrid.org/resource/zone/' + (row.index + 1)",
+    "onError": "set-to-blank"
+  }
+]

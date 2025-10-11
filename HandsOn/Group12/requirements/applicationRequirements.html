@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Application Requirements - AirViz Madrid</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background-color: #f9f9f9; }
-    h1, h2 { color: #003366; }
-    h3 { margin-top: 1.2em; }
-    ul { margin-left: 20px; }
-    .mockup-wrap { margin-top: 16px; display: inline-block; border: 1px solid #ccc; border-radius: 6px; background: #fff; padding: 8px; }
-    .caption { font-size: 0.95rem; color: #555; margin-top: 6px; }
-  </style>
+<meta charset="UTF-8" />
+<title>Proposed Application — GreenZones Madrid</title>
+<style>
+  :root{--ink:#0b2e4e;--muted:#4d6273;--bg:#f7fafc}
+  html,body{margin:0;padding:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:#1f2937}
+  .wrap{max-width:960px;margin:40px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(16,24,40,.08)}
+  h1{color:var(--ink);margin:0 0 6px;font-size:28px}
+  h2{color:var(--ink);margin:20px 0 8px;font-size:20px}
+  ul{margin:6px 0 16px 22px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+  .muted{color:var(--muted)}
+  code{background:#f3f4f6;padding:2px 6px;border-radius:6px}
+  .mock{display:flex;align-items:center;justify-content:center;height:200px;border:2px dashed #d1d5db;border-radius:10px;color:#6b7280}
+</style>
 </head>
 <body>
-  <h1>Proposed Application: AirViz Madrid</h1>
+<div class="wrap">
+  <h1>Proposed Application: <em>GreenZones Madrid</em></h1>
+  <p class="muted">Explore, filter and export the city's green areas using Linked Open Data.</p>
 
   <h2>General Description</h2>
-  <p><strong>AirViz Madrid</strong> is a web application that allows users to visualize, analyze, and compare air quality across different areas of Madrid using linked open data.</p>
+  <p><strong>GreenZones Madrid</strong> lets users browse municipal green areas (parks, gardens and other public green spaces), filter by district and category, and export selections to <code>CSV</code> and <code>RDF (Turtle)</code>.</p>
 
-  <h2>Objectives</h2>
-  <ul>
-    <li>Display an <strong>interactive map</strong> of monitoring stations.</li>
-    <li>Visualize <strong>time series</strong> of pollutant levels.</li>
-    <li>Provide <strong>alerts</strong> when recommended thresholds are exceeded.</li>
-    <li>Enable <strong>historical and comparative analysis</strong>.</li>
-  </ul>
-
-  <h2>Functional Requirements</h2>
-  <ul>
-    <li><strong>FR1:</strong> Display map with pollutant levels by station.</li>
-    <li><strong>FR2:</strong> Filter by pollutant, date range, and location.</li>
-    <li><strong>FR3:</strong> Generate interactive trend charts.</li>
-    <li><strong>FR4:</strong> Allow CSV data export.</li>
-  </ul>
-
-  <h2>Non-functional Requirements</h2>
-  <ul>
-    <li><strong>NFR1:</strong> Responsive and accessible interface.</li>
-    <li><strong>NFR2:</strong> Automatic data updates.</li>
-    <li><strong>NFR3:</strong> Compliance with RDF and Linked Data standards.</li>
-  </ul>
-
-  <h2>Mockups (conceptual)</h2>
-  <p><strong>Screen 1:</strong> Interactive map of Madrid with colored stations.</p>
-  <p><strong>Screen 2:</strong> Line chart comparing NO₂ and PM10 over time.</p>
-  <p><strong>Screen 3:</strong> Alert panel with recommendations.</p>
-
-  <!-- ✅ Self-contained SVG mockup (no external image links) -->
-  <div class="mockup-wrap" role="img" aria-label="Illustrative mockup of a Madrid map with station dots and a simple legend">
-    <svg width="420" height="280" viewBox="0 0 420 280" xmlns="http://www.w3.org/2000/svg">
-      <!-- Map frame -->
-      <rect x="0" y="0" width="420" height="280" fill="#eef4ff" stroke="#b7c4e1"/>
-      <!-- Simplified 'Madrid' shape (abstract) -->
-      <path d="M60,70 L120,50 L190,60 L250,40 L320,70 L360,120 L330,180 L270,210 L200,230 L130,210 L80,160 Z"
-            fill="#d6e6ff" stroke="#7fa7e6" stroke-width="1.5"/>
-
-      <!-- Station points (colors ~ AQI: green/yellow/orange/red) -->
-      <circle cx="155" cy="120" r="7" fill="#2ecc71" stroke="#1b8f4f"/>
-      <circle cx="205" cy="100" r="7" fill="#f1c40f" stroke="#a3860a"/>
-      <circle cx="245" cy="150" r="7" fill="#e67e22" stroke="#9a4f10"/>
-      <circle cx="190" cy="180" r="7" fill="#e74c3c" stroke="#9b2e24"/>
-      <circle cx="280" cy="110" r="7" fill="#2ecc71" stroke="#1b8f4f"/>
-
-      <!-- Simple legend -->
-      <rect x="15" y="15" width="140" height="80" rx="6" ry="6" fill="#ffffff" stroke="#c9d3ea"/>
-      <text x="25" y="32" font-size="13" fill="#29405e" font-weight="bold">Legend (AQI)</text>
-      <circle cx="30" cy="50" r="6" fill="#2ecc71" stroke="#1b8f4f"/><text x="45" y="54" font-size="12" fill="#29405e">Good</text>
-      <circle cx="30" cy="68" r="6" fill="#f1c40f" stroke="#a3860a"/><text x="45" y="72" font-size="12" fill="#29405e">Moderate</text>
-      <circle cx="30" cy="86" r="6" fill="#e74c3c" stroke="#9b2e24"/><text x="45" y="90" font-size="12" fill="#29405e">Unhealthy</text>
-
-      <!-- Title bar -->
-      <rect x="200" y="15" width="205" height="26" rx="4" ry="4" fill="#003366" opacity="0.08"/>
-      <text x="205" y="33" font-size="13" fill="#003366">AirViz Madrid — Station map (concept)</text>
-    </svg>
+  <div class="grid">
+    <div class="card">
+      <h2>Objectives</h2>
+      <ul>
+        <li>Show a searchable list of green zones (by <em>Distrito</em>, <em>Subepígrafe</em>, and <em>Destino</em>).</li>
+        <li>Provide details for each record (Apartado, Nº de archivo, Naturaleza del inmueble, Situación Destino, Solar...).</li>
+        <li>Allow export to CSV/RDF following the <code>gz:</code> ontology.</li>
+        <li>Enable links to related datasets (tree inventory, land‑use, air quality nearby).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Functional Requirements</h2>
+      <ul>
+        <li><strong>FR1:</strong> List + search + filters by district/category.</li>
+        <li><strong>FR2:</strong> Detail page per green zone.</li>
+        <li><strong>FR3:</strong> Export selected items to CSV and RDF (Turtle).</li>
+        <li><strong>FR4:</strong> Basic analytics (count per district, category).</li>
+      </ul>
+    </div>
   </div>
 
-  <p class="caption"><em>Illustrative mockup (embedded SVG) — guaranteed to display offline and on GitHub.</em></p>
+  <div class="grid">
+    <div class="card">
+      <h2>Non‑functional Requirements</h2>
+      <ul>
+        <li><strong>NFR1:</strong> Responsive and accessible UI.</li>
+        <li><strong>NFR2:</strong> Reproducible pipeline (OpenRefine → RDFLib).</li>
+        <li><strong>NFR3:</strong> License and attribution shown in the app.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Conceptual Mockup</h2>
+      <div class="mock">[Map/list mockup goes here]</div>
+      <p class="muted" style="margin-top:8px">Illustrative placeholder — suitable for uploading to GitHub.</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>

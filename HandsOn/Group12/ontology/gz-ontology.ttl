@@ -1,0 +1,58 @@
+@prefix gz:   <http://linkeddata.greenzonesmadrid.org/ontology/gz#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://linkeddata.greenzonesmadrid.org/ontology/gz>
+    a owl:Ontology ;
+    rdfs:label "Green Zones Ontology for Madrid"@en ;
+    rdfs:comment "Lightweight ontology to represent municipal green zones (parks and gardens) of Madrid."@en .
+
+########## Classes ##########
+
+gz:GreenZone a owl:Class ;
+    rdfs:label "Green Zone"@en ;
+    rdfs:comment "Municipal green area such as a park or garden."@en .
+
+########## Datatype properties ##########
+
+gz:district a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "district"@en .
+
+gz:subepigrafe a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "subepígrafe"@es .
+
+gz:apartado a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "apartado"@es .
+
+gz:fileNumber a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "número de archivo"@es .
+
+gz:propertyNature a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "naturaleza del inmueble"@es .
+
+gz:situationTarget a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "situación destino"@es .
+
+gz:destination a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "destino"@es .
+
+gz:plot a owl:DatatypeProperty ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "superficie del solar"@es .

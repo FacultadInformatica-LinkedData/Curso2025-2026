@@ -1,0 +1,52 @@
+@prefix gz:   <http://linkeddata.greenzonesmadrid.org/ontology/gz#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/1> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300000" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE BAILÉN, NÚM. 15" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO." ;
+  gz:plot "5025.42 m2" .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/2> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300001" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE BAILÉN, NÚM. 6" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. Dentro del perímetro se ubica una caseta de guardas." ;
+  gz:plot "26814.00 m2" .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/3> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300002" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DEL MESÓN DE PAREDES, 37; C/ DEL AMPARO, 26" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO." ;
+  gz:plot "2979.20 m2" .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/4> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300003" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE MESÓN DE PAREDES, 68" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO." ;
+  gz:plot "1637.34 m2" .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/5> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300004" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA, 12" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. Afectado totalmente para jardín público (proyecto del barrio histórico)." ;
+  gz:plot "172.90 m2" .

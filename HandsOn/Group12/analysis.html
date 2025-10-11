@@ -1,88 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Hands-On 2 – Data Analysis and Resource Naming Strategy</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background-color: #fdfdfd; color: #333; }
-    h1, h2, h3 { color: #003366; }
-    code { background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; }
-    ul { margin-left: 20px; }
-  </style>
-</head>
-<body>
-
-<h1>Hands-On 2 – Analysis and Resource Naming Strategy</h1>
-<h2>Dataset: Air Quality in Madrid</h2>
-
-<p><strong>Group:</strong> Group12</p>
-<p><strong>Members:</strong> Gonzalo Fernández – <a href="https://github.com/fernan9976">@fernan9976</a></p>
-
-<hr>
-
-<h2>1. Dataset Analysis</h2>
-
-<h3>1.1 Data Overview</h3>
-<p>The dataset contains air quality measurements in Madrid, including the following variables:</p>
-<ul>
-  <li><strong>station_id</strong>: Identifier of the monitoring station (integer).</li>
-  <li><strong>timestamp</strong>: Date and time of measurement (ISO 8601).</li>
-  <li><strong>no2, o3, pm10, pm25</strong>: Pollutant concentrations (µg/m³).</li>
-  <li><strong>latitude, longitude</strong>: Geographical coordinates of the station.</li>
-</ul>
-
-<h3>1.2 Data Quantities</h3>
-<p>Example subset analyzed: 5 rows, corresponding to 2 stations and 2 timestamps each.  
-Values are within expected ranges: NO₂ (30–70 µg/m³), O₃ (20–60 µg/m³), PM10 (15–40 µg/m³), PM2.5 (10–30 µg/m³).</p>
-
-<h3>1.3 Schema</h3>
-<p>The dataset is structured as a simple CSV table with flat attributes, suitable for conversion into RDF triples using a defined ontology.</p>
-
-<hr>
-
-<h2>2. Licensing Analysis</h2>
-
-<h3>2.1 Source</h3>
-<p>Source: <a href="https://datos.madrid.es/portal/site/egob">Madrid Open Data Portal</a></p>
-
-<h3>2.2 License</h3>
-<p>The dataset is licensed under <strong>CC BY 4.0</strong> (Attribution), which allows reuse with attribution.</p>
-
-<h3>2.3 Rightsholder</h3>
-<p>Publisher: Madrid City Council. Rightsholder: Ayuntamiento de Madrid.</p>
-
-<h3>2.4 Derived Dataset License</h3>
-<p>The generated RDF dataset will also be published under <strong>CC BY 4.0</strong>.</p>
-
-<hr>
-
-<h2>3. Resource Naming Strategy</h2>
-
-<h3>3.1 URI Domain</h3>
-<p>URIs will use the base domain:  
-<code>http://linkeddata.airqualitymadrid.org/</code></p>
-
-<h3>3.2 URI Patterns</h3>
-<ul>
-  <li>Ontology: <code>http://linkeddata.airqualitymadrid.org/ontology/airquality#</code></li>
-  <li>Stations: <code>http://linkeddata.airqualitymadrid.org/resource/station/{id}</code></li>
-  <li>Measurements: <code>http://linkeddata.airqualitymadrid.org/resource/measurement/{station_id}_{timestamp}</code></li>
-</ul>
-
-<h3>3.3 Content Negotiation</h3>
-<p>URIs are designed to support content negotiation for HTML and RDF (e.g., via server configuration).</p>
-
-<h3>3.4 Namespace Prefixes</h3>
-<pre>
-@prefix aq: <http://linkeddata.airqualitymadrid.org/ontology/airquality#> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-</pre>
-
-<hr>
-
-<h2>4. Summary</h2>
-<p>This document presents the analysis of the air quality dataset, the licensing information, and a clear URI naming strategy to be applied in the ontology and RDF data.</p>
-
-</body>
-</html>
+<html><body><h1>Análisis</h1><h3>Presentes: Distrito, Subepígrafe, Apartado, Número de archivo, Naturaleza del inmueble, Situación Destino, Destino, Solar</h3><h3>Ausentes: </h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Distrito</th>
+      <th>Subepígrafe</th>
+      <th>Apartado</th>
+      <th>Número de archivo</th>
+      <th>Naturaleza del inmueble</th>
+      <th>Situación Destino</th>
+      <th>Destino</th>
+      <th>Solar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300000</td>
+      <td>URBANA</td>
+      <td>CALLE DE BAILEN NUM 15</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO.</td>
+      <td>5025.42 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300001</td>
+      <td>URBANA</td>
+      <td>CALLE DE BAILEN NUM 6</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. DENTRO DE SU PERÍMETRO SE ENCUENTRA UBICADAUNA CASETA DE GUARDAS.</td>
+      <td>26814.00 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300002</td>
+      <td>URBANA</td>
+      <td>CALLE DEL MESON DE PAREDES, NUM. 37 C/V C/ DE AMPARO NUM 26</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO.</td>
+      <td>2979.20 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300003</td>
+      <td>URBANA</td>
+      <td>CALLE MESON DE PAREDES NUM 68</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO.</td>
+      <td>1637.34 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300004</td>
+      <td>URBANA</td>
+      <td>CALLE DE SEGOVIA NUM 12</td>
+      <td>DOTACIONAL SERVCIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO TOTALMENTE PARA JARDIN PUBLICO. PROYECTODEL BARRIO HISTORICO.</td>
+      <td>172.90 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300005</td>
+      <td>URBANA</td>
+      <td>CALLE DE SEGOVIA, Nº 21-23 Y C/ DE LA MORERÍA, Nº 28</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO TOTALMENTE POR LOS ACCESOS AL VIADUCTO.</td>
+      <td>5462.95 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300006</td>
+      <td>URBANA</td>
+      <td>CALLE DE SEGOVIA, Nº27 C/V CUESTA DE LOS CIEGOS</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADA PARA ZONA VERDE. ACCESOS AL VIADUCTO.</td>
+      <td>1001.53 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300007</td>
+      <td>URBANA</td>
+      <td>CALLE DE SEGOVIA C/V CUESTA DE LA VEGA</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ANTIGUA ALAMEDA DE LA VIRGEN DEL PUERTO YJARDINES DE LA CUESTA DE LA VEGA. DENTRO DE SU PERIMETRO SE ENCUENTRAN UBICADOS UN EVACUATORIO, UNCANTON DE LIMPIEZAS, UNA CASETA DE PERSONAL DE JARDINERÍA Y UNA PISTA POLIVALENTE.</td>
+      <td>106811.18 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300008</td>
+      <td>URBANA</td>
+      <td>CALLE DE SEGOVIA, Nº 31 Y 37 C/V CUESTA DE JAVALQUINTO</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ACCESOS AL VIADUCTO.</td>
+      <td>1999.63 m2</td>
+    </tr>
+    <tr>
+      <td>CENTRO</td>
+      <td>ZONAS VERDES</td>
+      <td>PARQUES Y JARDINES</td>
+      <td>300009</td>
+      <td>URBANA</td>
+      <td>CALLE DE SEGOVIA NUM 35</td>
+      <td>DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO PARA ZONA VERDE. ACCESOS AL VIADUCTO.</td>
+      <td>1374.79 m2</td>
+    </tr>
+  </tbody>
+</table></body></html>
