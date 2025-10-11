@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "id": "@id",
+    "type": "@type"
+  },
+  "id": "https://example.org/book/a3316285",
+  "type": "Book",
+  "name": "Actas de las II Jornadas sobre Ontologías Web y Semántica",
+  "inLanguage": "es",
+  "datePublished": "2007",
+  "bookFormat": "https://schema.org/Hardcover",
+  "numberOfPages": 75,
+  "isbn": "978-84-9732-612-4",
+  "publisher": {
+    "type": "Organization",
+    "name": "Thomson",
+    "address": {
+      "type": "PostalAddress",
+      "addressLocality": "Madrid",
+      "addressCountry": "ES"
+    }
+  },
+  "author": [
+    {
+      "type": "Person",
+      "name": "Óscar Corcho"
+    },
+    {
+      "type": "Person",
+      "name": "Otros (eds.)"
+    }
+  ],
+  "about": [
+    {
+      "type": "Thing",
+      "name": "Web Semántica España"
+    },
+    {
+      "type": "Thing",
+      "name": "Textos en español e inglés"
+    }
+  ]
+}

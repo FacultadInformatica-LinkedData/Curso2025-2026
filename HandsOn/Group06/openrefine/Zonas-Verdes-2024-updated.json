@@ -1,0 +1,584 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número de archivo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Número de archivo using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Subepígrafe",
+    "newColumnName": "subcategory",
+    "description": "Rename column Subepígrafe to subcategory"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito",
+    "newColumnName": "district",
+    "description": "Rename column Distrito to district"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Apartado",
+    "newColumnName": "section",
+    "description": "Rename column Apartado to section"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Situación Destino",
+    "newColumnName": "location",
+    "description": "Rename column Situación Destino to location"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de archivo",
+    "newColumnName": "file_number",
+    "description": "Rename column Número de archivo to file_number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Naturaleza del inmueble",
+    "newColumnName": "property_type",
+    "description": "Rename column Naturaleza del inmueble to property_type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Solar",
+    "newColumnName": "area",
+    "description": "Rename column Solar to area"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Destino",
+    "newColumnName": "land_use",
+    "description": "Rename column Destino to land_use"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column district using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subcategory",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column subcategory using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "section",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column section using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "file_number",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column file_number using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "property_type",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column property_type using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column location using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "land_use",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column land_use using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "area",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column area using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "area",
+    "expression": "grel:value.replace(\" m2\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column area using expression grel:value.replace(\" m2\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "area",
+    "newColumnName": "area_m2",
+    "description": "Rename column area to area_m2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "area_m2",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column area_m2 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column district using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subcategory",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subcategory using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "section",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column section using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "property_type",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column property_type using expression value.toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "land_use",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BÁSICA.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BÁSICA."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. PARQUE URBANO.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. PARQUE URBANO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICA",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICA"
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES."
+      },
+      {
+        "from": [
+          "NO FIGURA COMO ZONA VERDE EN EL PGOUM-97, AUNQUE SI EN EL REGISTRO.",
+          "NO FIGURA COMO ZONA VERDE EN EL PGOUM97, AUNQUE SI EN EL REGISTRO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NO FIGURA COMO ZONA VERDE EN EL PGOUM-97, AUNQUE SI EN EL REGISTRO."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. (SEGREGACIÓN DE PARCELA DEL ACTIVO31/394-35/3165, CUYO VALOR ERA DE 9.340.380 EUROS Y FINCA REGISTRAL 59.091; DADO DE BAJA07/06/2017)). EL ACTIVO ACTUAL FUE DADO DE ALTA POR EL SERVICIO DE CONTABILIDAD.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. SEGREGACIÓN DE PARCELA DEL ACTIVO31/394-35/3165, CUYO VALOR ERA DE 9.340.380 EUROS Y FINCA REGISTRAL 59.091; DADO DE BAJA07/06/2017)). EL ACTIVO ACTUAL FUE DADO DE ALTA POR EL SERVICIO DE CONTABILIDAD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. (SEGREGACIÓN DE PARCELA DEL ACTIVO31/394-35/3165, CUYO VALOR ERA DE 9.340.380 EUROS Y FINCA REGISTRAL 59.091; DADO DE BAJA07/06/2017)). EL ACTIVO ACTUAL FUE DADO DE ALTA POR EL SERVICIO DE CONTABILIDAD."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS VÍA PÚBLICA SECUNDARIA LOCAL SEGÚN PGOUM97.",
+          "DOTACIONAL SERVICIOS COLECTIVOS VÍA PÚBLICA SECUNDARIA LOCAL SEGÚN PGOUM97"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS VÍA PÚBLICA SECUNDARIA LOCAL SEGÚN PGOUM97."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO. SE TRATA DE UNA PARCELA CON USOCUALIFICADO SUPERPUESTO DESTINADO A DOTACIONAL ZONAS VERDES PARQUE URBANO SINGULAR (ZV.10) EN SUPARTE SUPERIOR Y A DOTACIONAL VÍA PÚBLICA PRINCIPAL METROPOLITANA (VP.19) EN SU PARTE INFERIOR QUE SECORRESPONDE CON LA AUTOPISTA DE CIRCUNVALACIÓN M30.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO. SE TRATA DE UNA PARCELA CON USOCUALIFICADO SUPERPUESTO DESTINADO A DOTACIONAL ZONAS VERDES PARQUE URBANO SINGULAR (ZV.10) EN SUPARTE SUPERIOR Y A DOTACIONAL VÍA PÚBLICA PRINCIPAL METROPOLITANA (VP.19) EN SU PARTE INFERIOR QUE SECORRESPONDE CON LA AUTOPISTA DE CIRCUNVALACIÓN M30.\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO. SE TRATA DE UNA PARCELA CON USOCUALIFICADO SUPERPUESTO DESTINADO A DOTACIONAL ZONAS VERDES PARQUE URBANO SINGULAR (ZV.10) EN SUPARTE SUPERIOR Y A DOTACIONAL VÍA PÚBLICA PRINCIPAL METROPOLITANA (VP.19) EN SU PARTE INFERIOR QUE SECORRESPONDE CON LA AUTOPISTA DE CIRCUNVALACIÓN M30."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA. EN ESTA FINCA EXISTE UNA CONCESIÓN A UNIÓN FENOSADISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA EN ESTA FINCA EXISTE UNA CONCESIÓN A UNIÓN FENOSADISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA. EN ESTA FINCA EXISTE UNA CONCESIÓN A UNIÓN FENOSADISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO ZONA VERDE DE BARRIO.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ZONA VERDE DE BARRIO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO ZONA VERDE DE BARRIO."
+      }
+    ],
+    "description": "Mass edit cells in column land_use"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "land_use",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR.PARQUE URBANO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR PARQUE URBANO."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. EN EL INTERIOR DE SU PERÍMETRO SE ENCUENTRANUBICADAS UNA CASETA DE PERSONAL Y ALMACÉN.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO.EN EL INTERIOR DE SU PERÍMETRO SE ENCUENTRANUBICADAS UNA CASETA DE PERSONAL Y ALMACÉN."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. EN EL INTERIOR DE SU PERÍMETRO SE ENCUENTRANUBICADAS UNA CASETA DE PERSONAL Y ALMACÉN."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA. EN ESTA FINCA EXISTE UNA CONCESIÓN A UNIÓN FENOSADISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA. EN ESTA FINCA EXISTE UNA CONCESIÓN A UNIÓN FENOSADISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DE TRANSFORMACIÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONA VERDE BASICA. EN ESTA FINCA EXISTE UNA CONCESIÓN A UNIÓN FENOSADISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. EN ESTA PARCELA EXISTE UNA CONCESIÓN A UNIÓNFENOSA DISTRIBUCION S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN.",
+          "O,,DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. EN ESTA PARCELA EXISTE UNA CONCESIÓN AUNIÓN FENOSA DISTRIBUCIÓN S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. EN ESTA PARCELA EXISTE UNA CONCESIÓN A UNIÓNFENOSA DISTRIBUCION S.A. PARA LA OCUPACIÓN PRIVATIVA DEL SUELO Y EL SUBSUELO CON UN CENTRO DETRANSFORMACIÓN."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES. CAMBIO DE DENOMINACIÓN POR ACUERDO DE LA JUNTA DEGOBIERNO DE LA CIUDAD DE MADRID DEL 30/05/24 (ANTES PARQUE DE LOS LLANOS II).",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES. CAMBIO DE DENOMINACIÓN POR ACUERDO DE LA JUNTA DEGOBIERNO DE LA CIUDAD DE MADRID DEL 30/05/24 (ANTES PARQUE DE LOS LLANOS III)."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES. CAMBIO DE DENOMINACIÓN POR ACUERDO DE LA JUNTA DEGOBIERNO DE LA CIUDAD DE MADRID DEL 30/05/24 (ANTES PARQUE DE LOS LLANOS II)."
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ESTE ACTIVO ES UNA PARTE DEL PARQUE DE MORATALAZ",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ESTE ACTIVO ES UNA PARTE DEL PARQUE DEMORATALAZ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ESTE ACTIVO ES UNA PARTE DEL PARQUE DE MORATALAZ"
+      },
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES.",
+          ": DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES."
+      }
+    ],
+    "description": "Mass edit cells in column land_use"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "land_use",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADA PARA ZONA VERDE. ACCESOS AL VIADUCTO.",
+          "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO PARA ZONA VERDE. ACCESOS AL VIADUCTO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADA PARA ZONA VERDE. ACCESOS AL VIADUCTO."
+      }
+    ],
+    "description": "Mass edit cells in column land_use"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "land_use",
+          "expression": "value",
+          "columnName": "land_use",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "land_use",
+    "expression": "grel:if(isBlank(value),\"UNDEFINED\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column land_use using expression grel:if(isBlank(value),\"UNDEFINED\",value)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "land_use",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "land_use1",
+    "columnInsertIndex": 7,
+    "description": "Create column land_use1 at index 7 based on column land_use using expression grel:value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "land_use",
+    "description": "Remove column land_use"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "land_use1",
+    "newColumnName": "land_use",
+    "description": "Rename column land_use1 to land_use"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AVENIDA DE SALMEDINA C/V C/ DEL EMBALSE DE SAN JUAN",
+          "AVENIDA SALMEDINA C/V C/ DEL EMBALSE DE SAN JUAN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA DE SALMEDINA C/V C/ DEL EMBALSE DE SAN JUAN"
+      }
+    ],
+    "description": "Mass edit cells in column location"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AVENIDA DE LA VILLA DE VALLECAS C/V AV. DEL CERRO MILANO",
+          "AVENIDA VILLA DE VALLECAS  C/V AV. DEL CERRO MILANO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA DE LA VILLA DE VALLECAS C/V AV. DEL CERRO MILANO"
+      }
+    ],
+    "description": "Mass edit cells in column location"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "district",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column district to type Q3032114"
+  }
+]

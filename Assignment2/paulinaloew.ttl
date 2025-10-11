@@ -1,0 +1,33 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:  <http://datos.bne.es/def/> .
+@prefix ns4:  <http://id.loc.gov/terms/> .
+@prefix bne:  <http://datos.bne.es/resource/> .
+
+# Individual Assignment 2a — Selected main triples for BNE resource a3316285
+
+bne:a3316285 a ns2:C1003 ;
+    rdfs:label "Actas de las II Jornadas sobre Ontologías Web y Semántica" ;
+    ns2:P3002 "a3316285" ;
+    ns4:language <http://id.loc.gov/vocabulary/languages/spa> ;
+    ns2:P3001 <https://datos.bne.es/resource/1000003906> ,
+              <https://datos.bne.es/resource/1000003907> ,
+              <https://datos.bne.es/resource/1000003908> ;
+    ns2:P3003 "IV, 75 p." ;
+    ns2:P3004 "Madrid" ;
+    ns2:P3005 "[Texto impreso]" ;
+    ns2:P3006 <https://datos.bne.es/resource/XX4435380> ,
+              <https://datos.bne.es/resource/XX4430054> ,
+              <https://datos.bne.es/resource/XX1464262> ,
+              <https://datos.bne.es/resource/XX771271> ,
+              <https://datos.bne.es/resource/XX4436602> ;
+    ns2:P3007 "[2007]" ;
+    ns2:P3008 "24 cm" ;
+    ns2:P3009 "WebSemántica'2007 ; editores, Óscar Corcho ... [et al.]" ;
+    ns2:P3012 "M 38241-2007" ;
+    ns2:P3013 "M 38241-2007" ;
+    ns2:P3015 "Incluye referencias bibliográficas e índice" ,
+              "\"Web Semántica España\"" ,
+              "Textos en español e inglés" ,
+              "Jornadas desarrolladas en el marco del II Congreso Español de Informática (CEDI 2007) celebrado en Zaragoza del 11 al 14 de septiembre de 2007" ;
+    ns2:P3064 "Libro" .
