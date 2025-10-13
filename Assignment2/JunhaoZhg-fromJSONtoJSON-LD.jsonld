@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "ex": "http://example.org/iot/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Sensor": "ex:Sensor",
+    "temperature": "ex:temperature",
+    "location": "ex:location",
+    "time": "ex:time"
+  },
+  "@id": "ex:Sensor900",
+  "@type": "ex:Sensor",
+  "temperature": { "@value": 25, "@type": "xsd:integer" },
+  "location": "ClassRoom03",
+  "time": { "@value": "2025-10-10T13:30:00", "@type": "xsd:dateTime" }
+}

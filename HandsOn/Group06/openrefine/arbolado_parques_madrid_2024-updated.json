@@ -1,0 +1,385 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE PARQUE",
+    "newColumnName": "park_name",
+    "description": "Rename column NOMBRE PARQUE to park_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESPECIE",
+    "newColumnName": "species_name",
+    "description": "Rename column ESPECIE to species_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UNIDADES 2024",
+    "newColumnName": "units_2024",
+    "description": "Rename column UNIDADES 2024 to units_2024"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "park_name",
+    "expression": "grel:value.toTitlecase().trim().replace(/\\s+/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column park_name using expression grel:value.toTitlecase().trim().replace(/\\s+/, \" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species_name",
+    "expression": "grel:value.toTitlecase().trim().replace(/\\s+/, \" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column species_name using expression grel:value.toTitlecase().trim().replace(/\\s+/, \" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "units_2024",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column units_2024 using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species_name",
+          "expression": "isBlank(value)",
+          "columnName": "species_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species_name",
+          "expression": "isBlank(value)",
+          "columnName": "species_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Quercus Robur",
+          "Quercus robur"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quercus robur"
+      },
+      {
+        "from": [
+          "Pinus Halepensis",
+          "Pinus halepensis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pinus halepensis"
+      },
+      {
+        "from": [
+          "Ligustrum Japonicum",
+          "Ligustrum japonicum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ligustrum japonicum"
+      },
+      {
+        "from": [
+          "Populus Alba 'bolleana'",
+          "Populus alba 'bolleana'"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Populus alba 'Bolleana'"
+      },
+      {
+        "from": [
+          "Gleditsia Triacanthos",
+          "Gleditsia triacanthos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gleditsia triacanthos"
+      },
+      {
+        "from": [
+          "Pinus Pinea",
+          "Pinus pinea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pinus pinea"
+      },
+      {
+        "from": [
+          "Celtis Australis",
+          "Celtis australis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Celtis australis"
+      },
+      {
+        "from": [
+          "Acer Pseudoplatanus",
+          "Acer pseudoplatanus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Acer pseudoplatanus"
+      },
+      {
+        "from": [
+          "Cupressus Sempervirens",
+          "Cupressus sempervirens"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cupressus sempervirens"
+      },
+      {
+        "from": [
+          "Melia Azedarach",
+          "Melia azedarach"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Melia azedarach"
+      },
+      {
+        "from": [
+          "Prunus Dulcis",
+          "Prunus dulcis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prunus dulcis"
+      },
+      {
+        "from": [
+          "Acer Campestre",
+          "Acer campestre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Acer campestre"
+      },
+      {
+        "from": [
+          "Ulmus Pumila",
+          "Ulmus pumila"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ulmus pumila"
+      },
+      {
+        "from": [
+          "Prunus Cerasifera Subsp. Pissardii",
+          "Prunus cerasifera  subsp. pissardii"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prunus cerasifera subsp. pissardii"
+      },
+      {
+        "from": [
+          "Ailanthus Altissima",
+          "Ailanthus altissima"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ailanthus altissima"
+      },
+      {
+        "from": [
+          "Quercus Ilex",
+          "Quercus ilex"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quercus ilex"
+      },
+      {
+        "from": [
+          "Cedrus Deodara",
+          "Cedrus deodara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cedrus deodara"
+      },
+      {
+        "from": [
+          "Cercis Siliquastrum",
+          "Cercis siliquastrum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cercis siliquastrum"
+      },
+      {
+        "from": [
+          "Platanus X Hispanica",
+          "Platanus x hispanica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Platanus x hispanica"
+      },
+      {
+        "from": [
+          "Thuja Occidentalis",
+          "Thuja occidentalis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thuja occidentalis"
+      },
+      {
+        "from": [
+          "Fraxinus Angustifolia",
+          "Fraxinus angustifolia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fraxinus angustifolia"
+      },
+      {
+        "from": [
+          "Ulmus minor",
+          "Ulmus Minor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ulmus minor"
+      },
+      {
+        "from": [
+          "Aesculus Hippocastanum",
+          "Aesculus hippocastanum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aesculus hippocastanum"
+      },
+      {
+        "from": [
+          "Styphnolobium japonicum",
+          "Styphnolobium Japonicum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Styphnolobium japonicum"
+      },
+      {
+        "from": [
+          "Olea Europaea",
+          "Olea europaea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Olea europaea"
+      }
+    ],
+    "description": "Mass edit cells in column species_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species_name",
+          "expression": "isBlank(value)",
+          "columnName": "species_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "park_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parque Madrid Río",
+          "Parque Madrid Rio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parque Madrid Río"
+      }
+    ],
+    "description": "Mass edit cells in column park_name"
+  }
+]

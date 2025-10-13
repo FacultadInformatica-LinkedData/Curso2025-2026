@@ -8,4 +8,5 @@ Please follow the instructions below to successfully validate your assignments a
 5. **IMPORTANT** Comment the line `!pip install rdflib` in your python script (or any additional line with python magic).
 6. Create a NEW folder in `Assignment4`. It should look like `Assignment4/YOURFOLDERNAME`, where `YOURFOLDERNAME` should be your name, last name and id. For example: `Assignment4/Daniel_Garijo_1234`
 7. Place your python scripts only in that folder. Your scripts **must** be named `task0{NUMBER}.py`. For example, `task06.py`. If you don't follow this convention, your PR will fail. 
-8. Create a pull request to the main branch. A professor will activate an automated workflow on your scripts. If the workflow fails, your PR will be closed and you will need to review it, fix it and reopen it.
+8. **COPY** the validation script (`validation.py`) in the same folder you put your assignments. You can find it in `Assignment4/course_materials/python/validation.py`. Therefore, if you submit the mandatory assignment, your PR should ONLY contain three files: `task06.py`, `task07.py` and `validation.py`.
+9. Create a pull request to the main branch. A professor will activate an automated workflow on your scripts. If the workflow fails, your PR will be closed and you will need to review it, fix it and reopen it.

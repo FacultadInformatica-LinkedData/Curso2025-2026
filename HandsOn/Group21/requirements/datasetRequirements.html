@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Requisitos de los conjuntos de datos — SafeRoad España</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+      margin: 2rem;
+      max-width: 1000px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 1.25rem;
+    }
+
+    ul {
+      margin-left: 1.25rem;
+    }
+
+    code,
+    pre {
+      background: #f6f8fa;
+      padding: .25rem .5rem;
+      border-radius: 4px;
+    }
+
+    .mockup {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #fafafa;
+      margin: .5rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Requirements of the DataBases — SafeRoad España</h1>
+
+  <section>
+    <h2>Datasets Used</h2>
+    <ul>
+      <li>2025_Accidentalidad.csv  
+        (https://datos.gob.es/es/catalogo/l01379328-accidentalidad-2025-dgt)
+      </li>
+      <li>poblacion_1_enero.csv  
+        (https://www.ine.es/jaxiT3/Tabla.htm?t=31304)
+      </li>
+      <li>RADARES_FIJOS_vDTT.csv  
+        (https://datos.gob.es/es/catalogo/l01379328-radares-fijos-dgt)
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Functional Requirements</h2>
+
+    <!-- Dataset 1 -->
+    <li>
+      <strong>Accidentalidad 2025 (DGT)</strong>
+      <ul>
+        <li><strong>R1:</strong> The dataset covers road safety and accident data in Spain, including the number of accidents, fatalities, and injuries per municipality or road segment.</li>
+        <li><strong>R2:</strong> Data are provided in <abbr title="Comma-Separated Values">CSV</abbr> format and can be easily processed for RDF transformation.</li>
+        <li><strong>R3:</strong> The dataset is published under an open license  
+          <a href="https://creativecommons.org/licenses/by/4.0/"><strong>CC BY 4.0 (Attribution 4.0)</strong></a>.
+        </li>
+        <li><strong>R4:</strong> Each record includes location information (province, municipality, or coordinates) enabling linking with population and radar datasets.</li>
+        <li><strong>R5:</strong> Documentation is available on the DGT open data portal, describing variables such as “tipo_accidente”, “número_víctimas”, and “fecha”.</li>
+        <li><strong>R6:</strong> The dataset is referenced in other catalogues, including:</li>
+        <ul>
+            <li><a href="https://datos.gob.es/ca/catalogo/l01280796-accidentes-de-trafico-de-la-ciudad-de-madrid1" target="blank">Accidentes de tráfico — Catálogo datos.gob.es</a></li>
+            <li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=7c2843010d9c3610VgnVCM2000001f4a900aRCRD&utm_source=chatgpt.comm" target="blank">Portal de Datos Abiertos Madrid — catálogo entry</a></li>
+        </ul>
+      </ul>
+    </li>
+
+    <!-- Dataset 2 -->
+    <li>
+      <strong>Población a 1 de enero (INE)</strong>
+      <ul>
+        <li><strong>R1:</strong> Provides demographic data for Spanish municipalities, including population counts by date, necessary to normalize accident data per capita.</li>
+        <li><strong>R2:</strong> Data are downloadable as <abbr title="Comma-Separated Values">CSV</abbr> from the INE website.</li>
+        <li><strong>R3:</strong> The dataset is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> open license.</li>
+        <li><strong>R4:</strong> The dataset includes municipality codes and names that can be linked to accident and radar datasets via standardized INE codes.</li>
+        <li><strong>R5:</strong> Official documentation and metadata are available on the INE portal.</li>
+        <li><strong>R6:</strong> The dataset is referenced in multiple national and European open data catalogues:</li>
+        <ul>
+            <li><a href="https://datos.gob.es/es/catalogo/ea0010587-cifras-oficiales-de-poblacion-de-los-municipios-espanoles-revision-del-padron-municipal?utm_source=chatgpt.com" target="blank">Cifras Oficiales de Población municipal - datos.gob.es</a></li>
+            <li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=0cccaebc07c1f710VgnVCM2000001f4a900aRCRD&utm_source=chatgpt.com" target="blank">Población por distrito y barrio - catálogo entry</a></li>
+        </ul>
+      </ul>
+    </li>
+
+    <!-- Dataset 3 -->
+    <li>
+      <strong>Radares Fijos DGT</strong>
+      <ul>
+        <li><strong>R1:</strong> The dataset contains information on fixed-speed cameras installed by the DGT across Spain, contributing to road safety.</li>
+        <li><strong>R2:</strong> Data are provided in <abbr title="Comma-Separated Values">CSV</abbr> format, with columns for coordinates, road name, and radar type.</li>
+        <li><strong>R3:</strong> Published under an open license <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+        <li><strong>R4:</strong> Each radar includes geographic coordinates (latitude/longitude), allowing linking to accident records and population data via municipality or spatial proximity.</li>
+        <li><strong>R5:</strong> Metadata and documentation are available in the DGT open data portal.</li>
+        <li><strong>R6:</strong> Dataset appears in additional catalogues, such as:</li>
+        <ul>
+            <li><a href="https://nap.dgt.es/dataset/radares-fijos-dgt?utm_source=chatgpt.com" target="blank">Radares fijos DGT - NAP DGT</a></li>
+            <li><a href="https://datos.gob.es/en/catalogo/l01280796-radares?utm_source=chatgpt.com" target="blank">Radares - datos.gob.es</a></li>
+            <li><a href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=4678f7de62435510VgnVCM2000001f4a900aRCRD" target="blank">Radares - catálogo entry</a></li>
+        </ul>
+      </ul>
+    </li>
+  </section>
+
+</body>
+</html>
+
+

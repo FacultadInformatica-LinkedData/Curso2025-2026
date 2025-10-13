@@ -22,7 +22,7 @@
   <!-- Sección de Datos -->
   <section class="section">
     <h2>1. Análisis de los Datos</h2>
-    <p><strong>Descripción de los datasets:</strong> Los datasets utilizados en esta aplicación incluyen datos meteorológicos, episodios de contaminación por ozono y calidad del aire medida en tiempo real. A continuación se presenta un análisis de los principales atributos de cada dataset:</p>
+    <p><strong>Descripción de los datasets:</strong> Los datasets utilizados en esta aplicación incluyen datos meteorológicos, <strong>episodios de ozono</strong> y calidad del aire medida en tiempo real. A continuación se presenta un análisis de los principales atributos de cada dataset:</p>
     
     <!-- Datos meteorológicos -->
 <h3>Datos meteorológicos (Tiempo real / Acumulado)</h3>
@@ -33,12 +33,12 @@
       <td>
         Este dataset contiene información meteorológica recopilada por las estaciones de control ambiental de Madrid.
         Incluye valores horarios de magnitudes como temperatura, humedad, presión, viento o radiación solar.
-        Cada fila corresponde a una estación, fecha y tipo de magnitud medida, junto con las 24 horas del día y sus validaciones.
+        Cada fila corresponde a una estación, fecha y tipo de magnitud medida, junto con las 24 horas del día (una columna por hora).
       </td>
     </tr>
     <tr>
       <th>Dimensiones</th>
-      <td>94 registros y 56 columnas.</td>
+      <td>Decenas de miles de registros y 56 columnas (varía según el periodo descargado).</td>
     </tr>
     <tr>
       <th>Campos (cabeceras exactas)</th>
@@ -78,6 +78,7 @@
           <li><strong>V = válido</strong></li>
           <li><strong>N = no válido</strong> (valor descartado por error o mantenimiento)</li>
         </ul>
+        <p><em>Nota:</em> en los CSV “*-updated.csv” usados para RDF se han eliminado las columnas Vxx y solo se mantienen valores horarios cuando la validación era <strong>V</strong>; el resto quedan como celdas vacías.</p>
       </td>
     </tr>
     <tr>
@@ -92,29 +93,22 @@
 
 
     <!-- Episodios de ozono -->
-<h3>Episodios de alta contaminación por ozono</h3>
+<h3>Episodios de ozono</h3>
 <div class="table-container">
   <table>
     <tr>
       <th>Campos (cabeceras exactas)</th>
-      <td>FECHA INICIO, HORA INICIO, FECHA FIN, HORA FIN, EPISODIO, PROTOCOLO, ESCENARIO, MEDIDA</td>
+      <td>FECHA INICIO, FECHA FIN, EPISODIO OZONO, MEDIDA POBLACION</td>
     </tr>
     <tr>
       <th>Rango temporal</th>
-      <td>Desde 2013-07-03 18:00 hasta 2025-08-07 17:00 (fechas y horas parseadas en formato DD/MM/YYYY HH:MM).</td>
-    </tr>
-    <tr>
-      <th>Valores categóricos</th>
-      <td>
-        PROTOCOLO: OZONO (100%)<br/>
-        ESCENARIO: INFORMACIÓN A LA POBLACIÓN (100%)
-      </td>
+      <td>Desde 2013-07-03 18:00 hasta 2025-08-07 17:00 (normalizado en los “*-updated.csv” a formato ISO 8601 cuando aplica).</td>
     </tr>
     <tr>
       <th>Observaciones</th>
       <td>
-        Cada fila representa un episodio con su intervalo de inicio/fin y la medida informativa asociada.<br/>
-        <em>Nota técnica:</em> si la primera columna aparece con un valor como cabecera (p. ej. “16:08”), debe renombrarse a <strong>FECHA INICIO</strong>.
+        Cada fila representa un episodio con su intervalo de inicio/fin y la medida informativa asociada a la población.<br/>
+        <em>Nota técnica:</em> en el CSV original algunas cabeceras venían corruptas (p. ej. “16:08”); en OpenRefine se renombraron y se combinaron fecha y hora.
       </td>
     </tr>
   </table>
@@ -135,7 +129,7 @@
     </tr>
     <tr>
       <th>Dimensiones</th>
-      <td>Más de 14&nbsp;000 registros y 56 columnas (dependiendo de la actualización del portal).</td>
+      <td>Millones de registros históricos y 56 columnas (según el periodo seleccionado).</td>
     </tr>
     <tr>
       <th>Campos (cabeceras exactas)</th>
@@ -177,6 +171,7 @@
           <li><strong>N = no válido</strong> (dato descartado por error o mantenimiento)</li>
           <li><strong>—</strong> indica ausencia de dato para esa hora</li>
         </ul>
+        <p><em>Nota:</em> en los CSV “*-updated.csv” usados para RDF se han eliminado las columnas Vxx y solo se mantienen valores horarios cuando la validación era <strong>V</strong>; el resto quedan como celdas vacías.</p>
       </td>
     </tr>
     <tr>
@@ -210,7 +205,7 @@
         <th>Ontología (términos)</th>
         <td>
           <code>@prefix besafe: &lt;http://besafe.org/ns/ambiental#&gt;</code><br/>
-          (clases y propiedades: <code>besafe:Estacion</code>, <code>besafe:MedicionHoraria</code>, <code>besafe:EpisodioContaminacion</code>,
+          (clases y propiedades: <code>besafe:Estacion</code>, <code>besafe:MedicionHoraria</code>, <code>besafe:EpisodioOzono</code>,
           <code>besafe:tieneLugarEn</code>, <code>besafe:valor</code>, <code>besafe:fechaHora</code>, etc.)
         </td>
       </tr>
@@ -245,7 +240,7 @@
         <td><code>http://besafe.org/data/measurement/11/2025/01/01/01</code></td>
       </tr>
       <tr>
-        <td>Episodio de contaminación</td>
+        <td>Episodio de ozono</td>
         <td>
           <code>http://besafe.org/data/episode/{tipo}/{YYYYMMDD}</code>
         </td>
@@ -263,7 +258,7 @@
   </ul>
 
   <h3>3.3. Negociación de contenido</h3>
-  <p>Las URIs de datos deben poder **de-referenciarse** y servir distintas representaciones:</p>
+  <p>Las URIs de datos deben poder <strong>de-referenciarse</strong> y servir distintas representaciones:</p>
   <ul>
     <li><code>text/html</code> (vista humana).</li>
     <li><code>text/turtle</code> o <code>application/ld+json</code> (vista máquina).</li>

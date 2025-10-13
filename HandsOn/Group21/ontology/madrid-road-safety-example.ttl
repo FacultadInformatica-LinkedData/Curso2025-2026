@@ -1,0 +1,98 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology namespace (términos)
+@prefix ns:   <https://www.trafficsafetydata.com/ontology#> .
+# Resource namespace (individuos/recursos)
+@prefix res:  <https://www.trafficsafetydata.com/resource/> .
+
+############################################################
+# ADMINISTRATIVE UNITS
+############################################################
+
+# District: Chamartín (código 5)
+res:District/Chamartin
+    a ns:District ;
+    ns:hasDistrictCode 5 ;
+    ns:hasDistrictName "Chamartín" .
+
+# Neighborhood dentro de Chamartín (ej. El Viso, código interno de ejemplo 51)
+res:Neighborhood/El_Viso
+    a ns:Neighborhood ;
+    ns:hasNeighborhoodCode 51 ;
+    ns:hasNeighborhoodName "El Viso" ;
+    ns:belongsToDistrict res:District/Chamartin .
+
+############################################################
+# POPULATION (para normalizar tasas)
+############################################################
+
+# Registro de población del distrito en una fecha de referencia
+res:PopulationRecord/Chamartin/2025-01-01
+    a ns:PopulationRecord ;
+    ns:hasPopulationDate  "2025-01-01"^^xsd:date ;
+    ns:hasPopulationCount 141180 .
+
+# Enlazamos la población al distrito
+res:District/Chamartin
+    ns:hasPopulation res:PopulationRecord/Chamartin/2025-01-01 .
+
+############################################################
+# ROAD & SPEED CAMERA (Radar)
+############################################################
+
+# Carretera/túnel (ejemplo: M-30)
+res:Road/M-30
+    a ns:Road ;
+    rdfs:label "M-30" .
+
+# Radar fijo en la M-30
+res:Radar/M30_SC_0001
+    a ns:Radar ;
+    ns:hasCameraType "Fixed" ;
+    ns:hasSpeedLimit 70 ;
+    ns:hasLaneInfo "Inner carriageway, PK 0+500" ;
+    ns:hasCameraLatitude  40.4475 ;
+    ns:hasCameraLongitude -3.6762 ;
+    ns:radarOnRoad res:Road/M-30 .
+
+############################################################
+# ACCIDENT + PERSON + VEHICLE
+############################################################
+
+# Accidente con id del expediente
+res:Accident/2025S000056
+    a ns:Accident ;
+    ns:hasAccidentId   "2025S000056" ;
+    ns:hasAccidentDate "2025-03-18"^^xsd:date ;
+    ns:hasAccidentTime "14:25:00"^^xsd:time ;
+    ns:hasStreetText   "Calle Príncipe de Vergara 120" ;
+    ns:hasUTMX         445200.0 ;
+    ns:hasUTMY         4478200.0 ;
+    ns:hasLatitude     40.4412 ;
+    ns:hasLongitude    -3.6789 ;
+    ns:takesPlaceInDistrict    res:District/Chamartin ;
+    ns:takesPlaceInNeighborhood res:Neighborhood/El_Viso ;
+    ns:locatedOnRoad  res:Road/M-30 ;
+    ns:hasInvolvedPerson res:Person/2025S000056-1 .
+
+# Persona involucrada
+res:Person/2025S000056-1
+    a ns:PersonInvolved ;
+    ns:hasSex "M" ;
+    ns:hasAgeBand "30-34" ;
+    ns:hasAlcoholPositive false ;
+    ns:hasDrugPositive    false ;
+    ns:hasSeverity        res:InjurySeverity/Minor ;
+    ns:usesVehicle        res:Vehicle/2025S000056-1 .
+
+# Vehículo usado por la persona
+res:Vehicle/2025S000056-1
+    a ns:Vehicle ;
+    ns:hasVehicleType "Car" .
+
+# Concepto de severidad (controlado por vosotros)
+res:InjurySeverity/Minor
+    a ns:InjurySeverity ;
+    rdfs:label "Minor injury"@en .

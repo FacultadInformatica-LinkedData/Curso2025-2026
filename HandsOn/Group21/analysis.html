@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hands-On · Analyse Data Set · Road Safety in Madrid</title>
+    <style>
+        :root {
+            --fg: #0b132b;
+            --muted: #666;
+            --bg: #fff;
+            --acc: #2a9d8f
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
+            line-height: 1.5
+        }
+
+        header {
+            padding: 2rem 1.25rem;
+            border-bottom: 1px solid #eee
+        }
+
+        h1 {
+            margin: .2rem 0 0;
+            font-size: 1.8rem
+        }
+
+        h2 {
+            margin: 2rem 0 .6rem;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--acc);
+            padding-left: .6rem
+        }
+
+        h3 {
+            margin: 1rem 0 .3rem;
+            font-size: 1.1rem
+        }
+
+        p {
+            margin: .4rem 0 1rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .box {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 1rem
+        }
+
+        .grid {
+            display: grid;
+            gap: 1rem
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0
+        }
+
+        th,
+        td {
+            border: 1px solid #eee;
+            padding: .5rem;
+            text-align: left;
+            vertical-align: top
+        }
+
+        th {
+            background: #fafafa
+        }
+
+        code {
+            background: #f6f8fa;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: .1rem .35rem
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            border-top: 1px solid #eee;
+            color: var(--muted);
+            font-size: .9rem
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="muted">Academic Year 2025–2026 · Group 21</div>
+        <h1>Analyse Data Set · Road Safety in Madrid</h1>
+        <p class="muted">Concise analysis of three CSV datasets used in this project (schema, quantities, value ranges,
+            and units), plus licensing information.</p>
+    </header>
+
+    <main class="grid">
+
+        <!-- LICENSING -->
+        <section class="box" id="licensing">
+            <h2>Licensing</h2>
+            <p><strong>Dataset Responsible:</strong> Dirección General de Contratación y Servicios — Subdirección
+                General de Estadística</p>
+            <p><strong>Publisher (Editor):</strong> Ayuntamiento de Madrid</p>
+            <p><strong>Place:</strong> Madrid</p>
+            <p><strong>License (Legal Notice):</strong>
+                <a href="https://datos.madrid.es/egob/catalogo/aviso-legal" target="_blank"
+                    rel="noopener">https://datos.madrid.es/egob/catalogo/aviso-legal</a>
+            </p>
+
+            <h3>Our License (derived dataset)</h3>
+            <p>This project’s derived dataset and documentation are released under
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+            </p>
+            <ul>
+                <li><strong>Attribution:</strong> Credit “City of Madrid — Dirección General de Contratación y
+                    Servicios, Subdirección General de Estadística (original data)” and “Group 21 (derived dataset)”,
+                    include links to the license and legal notice, and indicate any modifications.</li>
+                <li><strong>Reuse:</strong> Sharing and adaptation (including commercial use) permitted under CC BY 4.0.
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- DATASET 1: RADARS -->
+        <section class="box" id="dataset-radars">
+            <h2>DATASET 1 · Speed Cameras (Radars) — City of Madrid</h2>
+            <p><strong>Summary:</strong> Inventory of speed cameras (mostly fixed) with location, road/PK, direction,
+                lane and posted speed limit. Useful to provide speed-control context when interpreting accident rates.
+            </p>
+
+            <h3>Schema (main fields)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nº RADAR</td>
+                        <td>integer/string</td>
+                        <td>Radar identifier.</td>
+                    </tr>
+                    <tr>
+                        <td>Ubicacion</td>
+                        <td>string</td>
+                        <td>Descriptive location (e.g., “M-30, entrance A-1, P.K. 0+500”).</td>
+                    </tr>
+                    <tr>
+                        <td>Carretera o vial</td>
+                        <td>string</td>
+                        <td>Main road or tunnel (e.g., M-30).</td>
+                    </tr>
+                    <tr>
+                        <td>PK</td>
+                        <td>string</td>
+                        <td>Kilometric point (e.g., <code>0+500</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>Sentido</td>
+                        <td>string</td>
+                        <td>Traffic direction (e.g., inner/outer carriageway).</td>
+                    </tr>
+                    <tr>
+                        <td>Tipo</td>
+                        <td>string</td>
+                        <td>Camera type (Fixed, Section, Traffic-light).</td>
+                    </tr>
+                    <tr>
+                        <td>Carril</td>
+                        <td>string</td>
+                        <td>Affected lane(s) (e.g., “Fixed lane 4”, “All”).</td>
+                    </tr>
+                    <tr>
+                        <td>Longitud inicio tramo / Latitud inicio tramo</td>
+                        <td>float</td>
+                        <td>Start point of a section control (WGS84), if applicable.</td>
+                    </tr>
+                    <tr>
+                        <td>X (WGS84)</td>
+                        <td>float</td>
+                        <td>Easting in meters (UTM/ETRS89 Zone 30 by range).</td>
+                    </tr>
+                    <tr>
+                        <td>Y (WGS84)</td>
+                        <td>float</td>
+                        <td>Northing in meters (UTM/ETRS89 Zone 30 by range).</td>
+                    </tr>
+                    <tr>
+                        <td>Longitud</td>
+                        <td>float</td>
+                        <td>Longitude (WGS84, decimal degrees).</td>
+                    </tr>
+                    <tr>
+                        <td>Latitud</td>
+                        <td>float</td>
+                        <td>Latitude (WGS84, decimal degrees).</td>
+                    </tr>
+                    <tr>
+                        <td>Velocidad límite</td>
+                        <td>integer</td>
+                        <td>Speed limit at location (km/h).</td>
+                    </tr>
+                    <tr>
+                        <td>Responsable</td>
+                        <td>string</td>
+                        <td>Responsible body (e.g., DGP / City Council).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Quantities & Value Ranges</h3>
+            <p><strong>Volume:</strong> several dozen cameras across the city.</p>
+            <p><strong>Coordinates (Madrid expected):</strong> WGS84 lat ≈ 40.33–40.52; lon ≈ −3.78 to −3.57. UTM/ETRS89
+                (EPSG:25830) X ≈ 438,000–456,000; Y ≈ 4,442,000–4,505,000 (meters).</p>
+            <p><strong>Speed limit:</strong> 30–90 km/h.</p>
+        </section>
+
+        <!-- DATASET 2: POPULATION -->
+        <section class="box" id="dataset-population">
+            <h2>DATASET 2 · Population by District and Neighbourhood (Annual)</h2>
+            <p><strong>Summary:</strong> Annual resident population for Madrid’s administrative units. Used to normalize
+                accident counts into rates per 100,000 inhabitants.</p>
+
+            <h3>Schema (main fields)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fecha</td>
+                        <td>date/string</td>
+                        <td>Reference date (e.g., “1 de enero de 2024”).</td>
+                    </tr>
+                    <tr>
+                        <td>cod_municipio</td>
+                        <td>string</td>
+                        <td>Municipality code (Madrid = 28079).</td>
+                    </tr>
+                    <tr>
+                        <td>municipio</td>
+                        <td>string</td>
+                        <td>Municipality name.</td>
+                    </tr>
+                    <tr>
+                        <td>cod_distrito</td>
+                        <td>integer</td>
+                        <td>District code (1–21).</td>
+                    </tr>
+                    <tr>
+                        <td>distrito</td>
+                        <td>string</td>
+                        <td>District name.</td>
+                    </tr>
+                    <tr>
+                        <td>cod_barrio</td>
+                        <td>integer</td>
+                        <td>Neighbourhood code (within its district).</td>
+                    </tr>
+                    <tr>
+                        <td>barrio</td>
+                        <td>string</td>
+                        <td>Neighbourhood name.</td>
+                    </tr>
+                    <tr>
+                        <td>num_personas</td>
+                        <td>integer</td>
+                        <td>Total residents.</td>
+                    </tr>
+                    <tr>
+                        <td>num_personas_hombres</td>
+                        <td>integer</td>
+                        <td>Male residents.</td>
+                    </tr>
+                    <tr>
+                        <td>num_personas_mujeres</td>
+                        <td>integer</td>
+                        <td>Female residents.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Quantities & Value Ranges</h3>
+            <p><strong>Coverage:</strong> ≈131 neighbourhoods × years; 21 districts × years.</p>
+            <p><strong>Population:</strong> integer ≥ 0; from thousands (neighbourhoods) to hundreds of thousands
+                (districts).</p>
+        </section>
+
+        <!-- DATASET 3: ACCIDENTS -->
+        <section class="box" id="dataset-accidents">
+            <h2>DATASET 3 · Traffic Accidents — City of Madrid (Per Involved Person)</h2>
+            <p><strong>Summary:</strong> Microdata per person involved in each accident: date/time, location, district,
+                contributing factors, and injury severity.</p>
+
+            <h3>Schema (main fields)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>num_expediente</td>
+                        <td>string</td>
+                        <td>Accident case ID (shared by all persons in the same crash).</td>
+                    </tr>
+                    <tr>
+                        <td>fecha</td>
+                        <td>date</td>
+                        <td>Date of accident (<code>DD/MM/YYYY</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>hora</td>
+                        <td>time</td>
+                        <td>Time of accident (<code>H:MM:SS</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>localizacion</td>
+                        <td>string</td>
+                        <td>Intersection or street segment.</td>
+                    </tr>
+                    <tr>
+                        <td>numero</td>
+                        <td>string/integer</td>
+                        <td>Street number / position.</td>
+                    </tr>
+                    <tr>
+                        <td>cod_distrito</td>
+                        <td>integer</td>
+                        <td>District code.</td>
+                    </tr>
+                    <tr>
+                        <td>distrito</td>
+                        <td>string</td>
+                        <td>District name.</td>
+                    </tr>
+                    <tr>
+                        <td>tipo_accidente</td>
+                        <td>string</td>
+                        <td>Collision type (e.g., head-on, side, run-over).</td>
+                    </tr>
+                    <tr>
+                        <td>estado_meteorológico</td>
+                        <td>string</td>
+                        <td>Weather (clear, rain, fog…).</td>
+                    </tr>
+                    <tr>
+                        <td>tipo_vehiculo</td>
+                        <td>string</td>
+                        <td>Vehicle class (car, moped, motorcycle, VMP…).</td>
+                    </tr>
+                    <tr>
+                        <td>tipo_persona</td>
+                        <td>string</td>
+                        <td>Role (driver, passenger, pedestrian…).</td>
+                    </tr>
+                    <tr>
+                        <td>rango_edad</td>
+                        <td>string</td>
+                        <td>Age band (e.g., “30–34”).</td>
+                    </tr>
+                    <tr>
+                        <td>sexo</td>
+                        <td>string</td>
+                        <td>Sex.</td>
+                    </tr>
+                    <tr>
+                        <td>cod_lesividad</td>
+                        <td>integer</td>
+                        <td>Injury code.</td>
+                    </tr>
+                    <tr>
+                        <td>lesividad</td>
+                        <td>string</td>
+                        <td>Injury description (e.g., “No medical care”, “Serious injury”, “Fatality”).</td>
+                    </tr>
+                    <tr>
+                        <td>coordenada_x_utm</td>
+                        <td>float</td>
+                        <td>Easting (UTM/ETRS89 Zone 30, meters).</td>
+                    </tr>
+                    <tr>
+                        <td>coordenada_y_utm</td>
+                        <td>float</td>
+                        <td>Northing (UTM/ETRS89 Zone 30, meters).</td>
+                    </tr>
+                    <tr>
+                        <td>positiva_alcohol</td>
+                        <td>string</td>
+                        <td>Alcohol positive test (Y/N).</td>
+                    </tr>
+                    <tr>
+                        <td>positiva_droga</td>
+                        <td>string</td>
+                        <td>Drug positive test (Y/N).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Quantities & Value Ranges</h3>
+            <p><strong>Volume:</strong> tens of thousands of rows per year (persons). Time range 00:00–23:59.</p>
+            <p><strong>Coordinates (UTM/ETRS89 Z30):</strong> X ≈ 438,000–456,000; Y ≈ 4,442,000–4,505,000 (meters).</p>
+            <p><strong>Severity:</strong> coded (e.g., 0–14) plus textual labels.</p>
+        </section>
+
+        <!-- INTEGRATION -->
+        <section class="box" id="integration">
+            <h2>Minimal Integration Across Datasets</h2>
+            <ul>
+                <li><strong>Rate per 100,000 inhabitants</strong> (year × district/neighbourhood):
+                    <code>rate = (accidents or victims / population) × 100,000</code>.
+                </li>
+                <li><strong>Speed-control context:</strong> compare rates in areas <em>with</em> vs <em>without</em> a
+                    speed camera; if installation date exists, run a before/after comparison.</li>
+                <li><strong>Keys:</strong> temporal join by <em>year</em> (derived from <code>fecha</code>), spatial
+                    join by <em>cod_distrito / distrito</em> (and <em>cod_barrio / barrio</em> where used). Optionally
+                    use geometry to compute distance from accident to nearest camera.</li>
+            </ul>
+        </section>
+
+        <!-- RANGES & UNITS SUMMARY -->
+        <section class="box" id="ranges">
+            <h2>Ranges & Units (Summary)</h2>
+            <ul>
+                <li><strong>Speed limit (radars):</strong> 30–90 <em>km/h</em>.</li>
+                <li><strong>Population:</strong> persons (integer ≥ 0).</li>
+                <li><strong>Accidents:</strong> counts (event or involved person).</li>
+                <li><strong>Coordinates:</strong> UTM/ETRS89 Zone 30 (meters) and WGS84 (decimal degrees) where
+                    provided.</li>
+            </ul>
+        </section>
+
+
+
+        
+        <!-- RESOURCE NAMING STRATEGY -->
+        <section class="box" id="resource-naming-strategy">
+            <h2>Resource Naming Strategy</h2>
+            <h4>Domain:</h4>
+            <p><strong>https://www.roadsafetydata.com/</strong></p>
+            <p>The URIs are divided into two types:</p>
+            <ul>
+                <li>URIs for defining the ontology</li>
+                <li>URIs for defining the initialized resources</li>
+            </ul>
+
+            <h4>Ontology URIs</h4>
+            <p>All custom ontology URIs begin with: <strong>https://www.roadsafetydata.com/ontology#</strong></p>
+            <p>Example classes:</p>
+            <ul>
+                <li>Accident</li>
+                <li>Radar</li>
+                <li>District</li>
+                <li>Population</li>
+            </ul>
+            <p>Example object properties:</p>
+            <ul>
+                <li>hasRadar</li>
+                <li>takesPlaceIn</li>
+                <li>hasPopulation</li>
+            </ul>
+            <p>Example datatype properties:</p>
+            <ul>
+                <li>hasAccidentDate</li>
+                <li>hasVehicleType</li>
+                <li>hasSeverity</li>
+                <li>hasPopulationCount</li>
+            </ul>
+
+            <h4>Resource URIs</h4>
+            <p>Resource URIs should follow the format:</p>
+            <ul>
+                <li>General Format: <code>https://www.roadsafetydata.com/resource/Accident/{num_expedient}</code></li>
+                <li>Specific Example: <code>https://www.roadsafetydata.com/resource/Accident/2025S000056</code></li>
+                <li>Other Examples:
+                    <ul>
+                        <li><code>https://www.roadsafetydata.com/resource/Radar/M-30_EntradA1</code></li>
+                        <li><code>https://www.roadsafetydata.com/resource/District/Chamartín</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        Group 21 · Academic Year 2025–2026 — Hands-On (Linked Data generation).
+    </footer>
+</body>
+
+</html>

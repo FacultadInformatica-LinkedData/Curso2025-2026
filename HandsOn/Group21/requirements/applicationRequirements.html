@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Application Requirements — SafeRoad España</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 2rem; max-width: 1000px; }
+    h1, h2 { margin-top: 1.25rem; }
+    ul { margin-left: 1.25rem; }
+    .mockup { border: 1px solid #ccc; padding: 1rem; border-radius: 8px; background: #fafafa; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Application Requirements — SafeRoad España</h1>
+
+  <section>
+    <h2>1. Summary</h2>
+    <p>
+      The proposed application, <strong>SafeRoad España</strong>, integrates three open datasets —
+      <em>Traffic Accident Statistics</em>, <em>Population Data</em>, and <em>Fixed Traffic Radars</em> —
+      to analyze and visualize the relationship between accident frequency, population density, and radar presence across Spain.
+      The goal is to provide insights into how traffic radars may contribute to reducing accident rates and improving road safety.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Scope</h2>
+    <ul>
+      <li><strong>In:</strong> Visualization of accident density per municipality, radar locations, and population-based normalization (accidents per 10,000 inhabitants); generation of safety indicators and maps.</li>
+      <li><strong>Out:</strong> Real-time accident prediction, individual vehicle tracking, or closed data sources.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Actors & Use Cases</h2>
+    <ul>
+      <li><strong>Actor:</strong> Researcher, policymaker, or citizen interested in road safety analysis.</li>
+      <li><strong>UC1:</strong> Visualize accident density and radar distribution on an interactive map.</li>
+      <li><strong>UC2:</strong> Compare accident rates normalized by population for different provinces or municipalities.</li>
+      <li><strong>UC3:</strong> Identify municipalities with high accident rates and no nearby radars.</li>
+      <li><strong>UC4:</strong> Export aggregated results for further statistical or RDF-based analysis.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Functional Requirements (FR)</h2>
+    <ol>
+      <li><strong>FR1:</strong> Display a national map combining radar locations and accident data.</li>
+      <li><strong>FR2:</strong> Calculate accident rate per capita using population data (accidents per 10,000 inhabitants).</li>
+      <li><strong>FR3:</strong> Compute a <em>Safety Index</em> per municipality, considering accident density, radar coverage, and population.</li>
+      <li><strong>FR4:</strong> Highlight municipalities with above-average accident rates and low radar density.</li>
+      <li><strong>FR5:</strong> Allow exporting results as CSV or provide RDF/SPARQL endpoint access for linked data queries.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>5. Non-Functional Requirements (NFR)</h2>
+    <ul>
+      <li><strong>NFR1:</strong> All datasets converted into RDF using vocabularies such as GeoSPARQL, Schema.org, and DCTerms.</li>
+      <li><strong>NFR2:</strong> Data hosted and versioned in GitHub; optional SHACL validation of RDF consistency.</li>
+      <li><strong>NFR3:</strong> Respect open data license attribution and ensure source citation for each dataset.</li>
+      <li><strong>NFR4:</strong> Accessible and responsive web interface for desktop and mobile users.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Data Requirements</h2>
+    <ul>
+      <li><strong>Accidentalidad dataset:</strong> Municipality, date, type of accident, fatalities, coordinates.</li>
+      <li><strong>Población dataset:</strong> Municipality, total population, year.</li>
+      <li><strong>Radares dataset:</strong> Radar ID, coordinates, road section, municipality.</li>
+      <li><strong>Linking strategy:</strong> Match datasets by municipality name or INE code; optional geographic proximity for radar–accident links.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Mock-ups</h2>
+    <div class="mockup">
+      <h3>Home / Map View</h3>
+      <p>Interactive map showing radar locations (icons) and accident density (heatmap). Hovering over a municipality displays the Safety Index.</p>
+    </div>
+    <div class="mockup">
+      <h3>Municipality Comparison</h3>
+      <p>Sortable table: Municipality | Safety Index | Accidents per 10k inhabitants | Number of radars | Population.</p>
+    </div>
+    <div class="mockup">
+      <h3>Detail View</h3>
+      <p>Card view for a selected municipality: accident trend over time, radar presence, population, and risk level.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Acceptance Criteria</h2>
+    <ul>
+      <li><strong>FR1:</strong> When loading the map, all radars and accidents appear with distinct markers or layers.</li>
+      <li><strong>FR2:</strong> When filtering by year 2025, only the corresponding accident data are displayed.</li>
+      <li><strong>FR3:</strong> When computing the Safety Index, values are normalized (0–100) and shown per municipality.</li>
+      <li><strong>FR4:</strong> When exporting data, CSV or RDF files reflect the same aggregated indicators shown in the interface.</li>
+    </ul>
+  </section>
+</body>
+</html>
+

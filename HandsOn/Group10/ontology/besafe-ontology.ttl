@@ -35,10 +35,10 @@ besafe:MedicionHoraria
     rdfs:label "Medición Horaria"@es ;
     rdfs:comment "Un valor medido de una magnitud (ej. NO2, O3 o Temp) en una hora específica."@es .
 
-besafe:EpisodioContaminacion
+besafe:EpisodioOzono
     a owl:Class ;
-    rdfs:label "Episodio de Contaminación"@es ;
-    rdfs:comment "Activación de un escenario de protocolo por alta contaminación (O3/NO2)."@es .
+    rdfs:label "Episodio de Ozono"@es ;
+    rdfs:comment "Activación de un escenario del protocolo por alta contaminación de ozono (O3)."@es .
 
 
 #relaciones
@@ -49,13 +49,6 @@ besafe:tieneLugarEn
     rdfs:domain besafe:MedicionHoraria ;
     rdfs:range besafe:Estacion .
 
-#relación:Medicion -> Episodio (Clave de unión: solape temporal)
-besafe:solapaConEpisodio
-    a owl:ObjectProperty ;
-    rdfs:label "solapa con episodio"@es ;
-    rdfs:comment "Indica si el momento de la medición coincide temporalmente con un episodio activo."@es ;
-    rdfs:domain besafe:MedicionHoraria ;
-    rdfs:range besafe:EpisodioContaminacion .
 
 
 #atributos
@@ -65,11 +58,12 @@ besafe:codigoEstacion
     rdfs:domain besafe:Estacion ;
     rdfs:range xsd:integer .
 
-besafe:nombreEstacion
-    a owl:DatatypeProperty ;
-    rdfs:label "nombre de la estación"@es ;
-    rdfs:domain besafe:Estacion ;
-    rdfs:range xsd:string .
+#besafe:nombreEstacion
+#    a owl:DatatypeProperty ;
+#    rdfs:label "nombre de la estación"@es ;
+#    rdfs:domain besafe:Estacion ;
+#    rdfs:range xsd:string .
+#    # No utilizada en los CSV para cumplir mapeo estricto propiedad <-> columna.
     
 besafe:fechaHora
     a owl:DatatypeProperty ;
@@ -92,29 +86,45 @@ besafe:valor
     rdfs:domain besafe:MedicionHoraria ;
     rdfs:range xsd:decimal .
 
-besafe:unidad
-    a owl:DatatypeProperty ;
-    rdfs:label "unidad"@es ;
-    rdfs:comment "Unidad de la medida (p. ej., µg/m³, mg/m³, °C)."@es ;
-    rdfs:domain besafe:MedicionHoraria ;
-    rdfs:range xsd:string .
-
-    
-besafe:validacion
-    a owl:DatatypeProperty ;
-    rdfs:label "validez de dato"@es ;
-    rdfs:comment "Indica si el dato es Válido (V) o nulo/invalidado (N) - Requisito NFR3."@es ;
-    rdfs:domain besafe:MedicionHoraria ;
-    rdfs:range xsd:string .
+#besafe:unidad
+#    a owl:DatatypeProperty ;
+#    rdfs:label "unidad"@es ;
+#    rdfs:comment "Unidad de la medida (p. ej., µg/m³, mg/m³, °C)."@es ;
+#    rdfs:domain besafe:MedicionHoraria ;
+#    rdfs:range xsd:string .
+#    # No utilizada en los CSV actualizados.
 
 besafe:escenario
     a owl:DatatypeProperty ;
     rdfs:label "escenario protocolo"@es ;
-    rdfs:domain besafe:EpisodioContaminacion ;
+    rdfs:domain besafe:EpisodioOzono ;
     rdfs:range xsd:string .
 
-besafe:medidaAplicada
+besafe:medidaPoblacion
     a owl:DatatypeProperty ;
-    rdfs:label "medida aplicada"@es ;
-    rdfs:domain besafe:EpisodioContaminacion ;
+    rdfs:label "medida población"@es ;
+    rdfs:comment "Medida/comunicación dirigida a la población asociada al episodio de ozono."@es ;
+    rdfs:domain besafe:EpisodioOzono ;
     rdfs:range xsd:string .
+
+# Propiedades añadidas para enlazar columnas FECHA INICIO y FECHA FIN
+besafe:inicio
+    a owl:DatatypeProperty ;
+    rdfs:label "inicio"@es ;
+    rdfs:domain besafe:EpisodioOzono ;
+    rdfs:range xsd:dateTime .
+
+besafe:fin
+    a owl:DatatypeProperty ;
+    rdfs:label "fin"@es ;
+    rdfs:domain besafe:EpisodioOzono ;
+    rdfs:range xsd:dateTime .
+
+
+
+## Properties a borrar:
+## - Validación
+## - solapaConEpisodio (no la veo en ningún .csv)
+
+## Cambiar los nombres de episodio contaminación a episodio ozono y medida aplicada a medida población
+## Se puede si no editar directamente los .csv según la ontología o viceversa

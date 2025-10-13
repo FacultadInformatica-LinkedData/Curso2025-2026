@@ -1,0 +1,239 @@
+@prefix :    <https://www.trafficsafetydata.com/ontology#> .
+@prefix ns:  <https://www.trafficsafetydata.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@base        <https://www.trafficsafetydata.com/ontology#> .
+
+<https://www.trafficsafetydata.com/ontology#> rdf:type owl:Ontology ;
+  
+
+#################################################################
+#    Object Properties
+#################################################################
+
+### Accident → Administrative unit
+ns:takesPlaceInDistrict rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  ns:District ;
+  rdfs:comment "States that an Accident takes place in a District (cod_distrito / distrito)."@en .
+
+ns:takesPlaceInNeighborhood rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  ns:Neighborhood ;
+  rdfs:comment "States that an Accident takes place in a Neighborhood (cod_barrio / barrio)."@en .
+
+### Accident composition
+ns:hasInvolvedPerson rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  ns:PersonInvolved ;
+  rdfs:comment "Links an Accident to a Person involved in it (driver, passenger, pedestrian…)."@en .
+
+ns:usesVehicle rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:PersonInvolved ;
+  rdfs:range  ns:Vehicle ;
+  rdfs:comment "The involved person used a given Vehicle."@en .
+
+ns:hasSeverity rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:PersonInvolved ;
+  rdfs:range  ns:InjurySeverity ;
+  rdfs:comment "Injury severity category for the involved person."@en .
+
+### Cameras & roads
+ns:hasRadar rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:District ;
+  rdfs:range  ns:Radar ;
+  rdfs:comment "A District has one or more speed cameras (radars) located within it."@en .
+
+ns:locatedOnRoad rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  ns:Road ;
+  rdfs:comment "Accident is located on a Road or tunnel (e.g., M-30)."@en .
+
+ns:radarOnRoad rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:Radar ;
+  rdfs:range  ns:Road ;
+  rdfs:comment "Radar is installed on a Road/segment (context for enforcement)."@en .
+
+### Population links
+ns:hasPopulation rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:District ;
+  rdfs:range  ns:PopulationRecord ;
+  rdfs:comment "Associates a District with a PopulationRecord for a given date."@en .
+
+ns:hasNeighborhood rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:District ;
+  rdfs:range  ns:Neighborhood ;
+  rdfs:comment "A District has (contains) Neighborhoods."@en .
+
+ns:belongsToDistrict rdf:type owl:ObjectProperty ;
+  rdfs:domain ns:Neighborhood ;
+  rdfs:range  ns:District ;
+  rdfs:comment "Neighborhood belongs to a District."@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+### Accident
+ns:hasAccidentId rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Accident case ID (num_expediente)."@en .
+
+ns:hasAccidentDate rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:date ;
+  rdfs:comment "Date of accident (fecha)."@en .
+
+ns:hasAccidentTime rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:time ;
+  rdfs:comment "Time of accident (hora)."@en .
+
+ns:hasStreetText rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Free text location (localizacion / numero)."@en .
+
+ns:hasUTMX rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:float ;
+  rdfs:comment "Easting UTM/ETRS89 Zone 30 (coordenada_x_utm)."@en .
+
+ns:hasUTMY rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:float ;
+  rdfs:comment "Northing UTM/ETRS89 Zone 30 (coordenada_y_utm)."@en .
+
+ns:hasLatitude rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:float ;
+  rdfs:comment "Latitude (WGS84, decimal degrees) if provided."@en .
+
+ns:hasLongitude rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Accident ;
+  rdfs:range  xsd:float ;
+  rdfs:comment "Longitude (WGS84, decimal degrees) if provided."@en .
+
+### Person involved
+ns:hasSex rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:PersonInvolved ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Sex (sexo)."@en .
+
+ns:hasAgeBand rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:PersonInvolved ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Age band (rango_edad), e.g., '30-34'."@en .
+
+ns:hasAlcoholPositive rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:PersonInvolved ;
+  rdfs:range  xsd:boolean ;
+  rdfs:comment "Alcohol positive test (positiva_alcohol)."@en .
+
+ns:hasDrugPositive rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:PersonInvolved ;
+  rdfs:range  xsd:boolean ;
+  rdfs:comment "Drug positive test (positiva_droga)."@en .
+
+### Vehicle
+ns:hasVehicleType rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Vehicle ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Vehicle class (tipo_vehiculo): car, moped, motorcycle, VMP, etc."@en .
+
+### Radar (speed camera)
+ns:hasSpeedLimit rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Radar ;
+  rdfs:range  xsd:integer ;
+  rdfs:comment "Posted speed limit at location (Velocidad límite, km/h)."@en .
+
+ns:hasCameraType rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Radar ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Camera type: Fixed, Section, Traffic-light (Tipo)."@en .
+
+ns:hasLaneInfo rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Radar ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Lane/direction info (Carril / Sentido / PK / Ubicacion)."@en .
+
+ns:hasCameraLatitude rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Radar ;
+  rdfs:range  xsd:float ;
+  rdfs:comment "Radar latitude (WGS84, decimal degrees)."@en .
+
+ns:hasCameraLongitude rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Radar ;
+  rdfs:range  xsd:float ;
+  rdfs:comment "Radar longitude (WGS84, decimal degrees)."@en .
+
+### Administrative units
+ns:hasDistrictCode rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:District ;
+  rdfs:range  xsd:integer ;
+  rdfs:comment "District code (cod_distrito, 1–21)."@en .
+
+ns:hasDistrictName rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:District ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "District name (distrito)."@en .
+
+ns:hasNeighborhoodCode rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Neighborhood ;
+  rdfs:range  xsd:integer ;
+  rdfs:comment "Neighborhood code (cod_barrio)."@en .
+
+ns:hasNeighborhoodName rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:Neighborhood ;
+  rdfs:range  xsd:string ;
+  rdfs:comment "Neighborhood name (barrio)."@en .
+
+### Population (for normalization)
+ns:hasPopulationCount rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:PopulationRecord ;
+  rdfs:range  xsd:integer ;
+  rdfs:comment "Resident population (num_personas)."@en .
+
+ns:hasPopulationDate rdf:type owl:DatatypeProperty ;
+  rdfs:domain ns:PopulationRecord ;
+  rdfs:range  xsd:date ;
+  rdfs:comment "Reference date for the population record (fecha)."@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+### Core accident model
+ns:Accident rdf:type owl:Class ;
+  rdfs:comment "Traffic accident event (per case), used with person-level microdata."@en .
+
+ns:PersonInvolved rdf:type owl:Class ;
+  rdfs:comment "A person involved in an accident (driver, passenger, pedestrian…)."*@en .
+
+ns:Vehicle rdf:type owl:Class ;
+  rdfs:comment "Vehicle related to a PersonInvolved (car, moped, motorcycle, VMP…)."@en .
+
+### Infrastructure & context
+ns:Radar rdf:type owl:Class ;
+  rdfs:comment "Speed camera (radar): Fixed, Section, or Traffic-light."@en .
+
+ns:Road rdf:type owl:Class ;
+  rdfs:comment "Road or tunnel (e.g., M-30) where accidents or radars are located."@en .
+
+### Administrative units
+ns:District rdf:type owl:Class ;
+  rdfs:comment "Madrid administrative district (codes 1–21)."@en .
+
+ns:Neighborhood rdf:type owl:Class ;
+  rdfs:comment "Neighborhood within a District of Madrid."@en .
+
+### Controlled vocabularies / records
+ns:InjurySeverity rdf:type owl:Class ;
+  rdfs:comment "Coded injury severity categories for a person involved."@en .
+
+ns:PopulationRecord rdf:type owl:Class ;
+  rdfs:comment "Population measurement for a District (or Neighborhood) at a date."@en .

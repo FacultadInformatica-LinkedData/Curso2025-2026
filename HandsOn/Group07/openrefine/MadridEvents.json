@@ -1,0 +1,565 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "PRECIO",
+    "description": "Eliminar columna PRECIO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "GRATUITO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna GRATUITO usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID-EVENTO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna ID-EVENTO usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TITULO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna TITULO usando la expresión value.toString()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LARGA-DURACION",
+    "description": "Eliminar columna LARGA-DURACION"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIAS-EXCLUIDOS",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna DIAS-EXCLUIDOS usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna FECHA usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA-FIN",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna FECHA-FIN usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HORA",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna HORA usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna ACCESIBILIDAD-INSTALACION usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM-INSTALACION",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna NUM-INSTALACION usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODIGO-POSTAL-INSTALACION",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna CODIGO-POSTAL-INSTALACION usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-X",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna COORDENADA-X usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADA-Y",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna COORDENADA-Y usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LATITUD usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LONGITUD usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "AUDIENCIA",
+    "description": "Eliminar columna AUDIENCIA"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "TITULO-ACTIVIDAD",
+    "index": 9,
+    "description": "Mueve la columna TITULO-ACTIVIDAD a la posición 9"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "TITULO-ACTIVIDAD",
+    "index": 0,
+    "description": "Mueve la columna TITULO-ACTIVIDAD a la posición 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "TITULO-ACTIVIDAD",
+    "index": 1,
+    "description": "Mueve la columna TITULO-ACTIVIDAD a la posición 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "TITULO-ACTIVIDAD",
+    "index": 2,
+    "description": "Mueve la columna TITULO-ACTIVIDAD a la posición 2"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DESCRIPCION",
+    "index": 8,
+    "description": "Mueve la columna DESCRIPCION a la posición 8"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DESCRIPCION",
+    "index": 7,
+    "description": "Mueve la columna DESCRIPCION a la posición 7"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DESCRIPCION",
+    "index": 6,
+    "description": "Mueve la columna DESCRIPCION a la posición 6"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DESCRIPCION",
+    "index": 5,
+    "description": "Mueve la columna DESCRIPCION a la posición 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DESCRIPCION",
+    "index": 4,
+    "description": "Mueve la columna DESCRIPCION a la posición 4"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DESCRIPCION",
+    "index": 3,
+    "description": "Mueve la columna DESCRIPCION a la posición 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIAS-EXCLUIDOS",
+    "description": "Eliminar columna DIAS-EXCLUIDOS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ACCESIBILIDAD-INSTALACION",
+    "description": "Eliminar columna ACCESIBILIDAD-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "Más información disponible en la liga"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESCRIPCION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "URL-ACTIVIDAD",
+    "description": "Eliminar columna URL-ACTIVIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "URL-INSTALACION",
+    "description": "Eliminar columna URL-INSTALACION"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE-INSTALACION",
+          "expression": "value",
+          "columnName": "NOMBRE-INSTALACION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "description": "Vaciar las celdas en la columna NOMBRE-INSTALACION"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE-INSTALACION",
+          "expression": "value",
+          "columnName": "NOMBRE-INSTALACION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DISTRITO-INSTALACION",
+          "expression": "value",
+          "columnName": "DISTRITO-INSTALACION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "DISTRITO",
+                "l": "DISTRITO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "BARRIO-INSTALACION",
+          "expression": "value",
+          "columnName": "BARRIO-INSTALACION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO-INSTALACION",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "MONCLOA-ARAVACA"
+      }
+    ],
+    "description": "Editar celdas en masa en columna BARRIO-INSTALACION"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "/contenido/actividades/otras"
+      }
+    ],
+    "description": "Editar celdas en masa en columna TIPO"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "DIAS-SEMANA",
+    "keyColumnName": "ID-EVENTO",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Separa celdas con múltiples valores en columna DIAS-SEMANA"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO-INSTALACION",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO-INSTALACION to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO-INSTALACION",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO-INSTALACION to type Q10267336"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TITULO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Madrid Otra Mirada 2025 - Demostración de caligrafía",
+          "Madrid Otra Mirada 2025 -Demostración de caligrafía",
+          "Madrid Otra Mirada 2025- Demostración de caligrafía"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madrid Otra Mirada 2025 - Demostración de caligrafía"
+      },
+      {
+        "from": [
+          "Dos hermanas",
+          "Dos Hermanas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dos hermanas"
+      },
+      {
+        "from": [
+          "Concierto 'Día de la Hispanidad'",
+          "Concierto Día de la Hispanidad"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Concierto 'Día de la Hispanidad'"
+      },
+      {
+        "from": [
+          "Cleo y el Mar",
+          "Cleo y el mar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cleo y el Mar"
+      },
+      {
+        "from": [
+          "LUDOTECAS",
+          "Ludotecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LUDOTECAS"
+      },
+      {
+        "from": [
+          "Pequeños vanguardistas",
+          "Pequeños Vanguardistas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pequeños vanguardistas"
+      },
+      {
+        "from": [
+          "Entre líneas y ciencia con el CSIC:  'Bichos, la jungla en casa'",
+          "Entre líneas y ciencia con el CSIC: 'Bichos, la jungla en casa'"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Entre líneas y ciencia con el CSIC:  'Bichos, la jungla en casa'"
+      },
+      {
+        "from": [
+          "Laboratorio Infantil: 'Preparando Halloween'",
+          "Laboratorio infantil: Preparando Halloween"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Laboratorio Infantil: 'Preparando Halloween'"
+      },
+      {
+        "from": [
+          "MADRID DISTRITO EN CORTO",
+          "Madrid Distrito en Corto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MADRID DISTRITO EN CORTO"
+      }
+    ],
+    "description": "Editar celdas en masa en columna TITULO"
+  }
+]

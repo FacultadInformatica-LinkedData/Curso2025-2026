@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "ex": "http://example.org/",
+    "name": "schema:name",
+    "hometown": "schema:homeLocation",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "ex:enrolledIn",
+    "subjectName": "schema:name",
+    "teachers": "ex:taughtBy",
+    "description": "schema:description"
+  },
+  "@type": "schema:Person",
+  "@id": "ex:Jesus",
+  "name": "Jesus Daniel Cusme Gavilanez",
+  "hometown": "Almería",
+  "age": 21,
+  "almaMater": "ETSIINF UPM",
+  "parents": [
+    "Lucia",
+    "Jesús"
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "subjectName": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": [
+        "Oscar Corcho Garcia"
+      ],
+      "description": "Study the data on the Web of Linked Data, as well as knowledge graphs"
+    }
+  ]
+}

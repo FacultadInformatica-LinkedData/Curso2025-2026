@@ -1,0 +1,343 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_expediente",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_expediente usando la expresión value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_expediente",
+    "expression": "grel:value.replace(/\\s+/,\"\").toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_expediente usando la expresión grel:value.replace(/\\s+/,\"\").toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna fecha usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora",
+    "expression": "grel:with(value.trim(), v,\n  with(v.split(\":\"), p,\n    (if(p[0].length()==1,\"0\"+p[0],p[0])) + \":\" + (if(p[1].length()==1,\"0\"+p[1],p[1]))\n  )\n)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna hora usando la expresión grel:with(value.trim(), v,\n  with(v.split(\":\"), p,\n    (if(p[0].length()==1,\"0\"+p[0],p[0])) + \":\" + (if(p[1].length()==1,\"0\"+p[1],p[1]))\n  )\n)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna localizacion usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "numero",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna numero usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_distrito",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna cod_distrito usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "grel:value.trim().replace(/\\s+/,\" \").toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna localizacion usando la expresión grel:value.trim().replace(/\\s+/,\" \").toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna localizacion usando la expresión grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna localizacion usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna distrito usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna distrito usando la expresión grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_accidente",
+    "expression": "grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_accidente usando la expresión grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna estado_meteorológico usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna estado_meteorológico usando la expresión grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_vehiculo usando la expresión grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_persona usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_persona usando la expresión grel:value\n.trim()\n.replace(/\\s+/,\" \")\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"A\").replace(\"É\",\"E\").replace(\"Í\",\"I\").replace(\"Ó\",\"O\").replace(\"Ú\",\"U\")\n.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "grel:with(value.toLowercase().trim(), v,\n  v.replace(\"de \",\"\")\n   .replace(\"años\",\"\")\n   .replace(\"a\",\"-\")\n   .replace(/\\s+/,\"\")\n   .trim()\n)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna rango_edad usando la expresión grel:with(value.toLowercase().trim(), v,\n  v.replace(\"de \",\"\")\n   .replace(\"años\",\"\")\n   .replace(\"a\",\"-\")\n   .replace(/\\s+/,\"\")\n   .trim()\n)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "grel:if(value.toLowercase().trim()==\"hombre\",\"H\", if(value.toLowercase().trim()==\"mujer\",\"M\", value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna sexo usando la expresión grel:if(value.toLowercase().trim()==\"hombre\",\"H\", if(value.toLowercase().trim()==\"mujer\",\"M\", value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_lesividad",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna cod_lesividad usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lesividad",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna lesividad usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna coordenada_x_utm usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna coordenada_y_utm usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/row-duplicate-removal",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "criteria": [
+      "num_expediente",
+      "fecha",
+      "hora",
+      "localizacion",
+      "numero",
+      "cod_distrito",
+      "distrito",
+      "tipo_accidente",
+      "estado_meteorológico",
+      "tipo_vehiculo",
+      "tipo_persona",
+      "rango_edad",
+      "sexo",
+      "cod_lesividad",
+      "lesividad",
+      "coordenada_x_utm",
+      "coordenada_y_utm",
+      "positiva_alcohol",
+      "positiva_droga"
+    ],
+    "description": "Remove duplicate rows"
+  }
+]

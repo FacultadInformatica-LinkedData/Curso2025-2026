@@ -1,0 +1,319 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna fecha usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_municipio",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna cod_municipio usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_distrito",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna cod_distrito usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_barrio",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna cod_barrio usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas_hombres",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas_hombres usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas_mujeres",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas_mujeres usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna barrio usando la expresión value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "expression": "grel:value.trim().replace(/\\s+/,\" \").toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna barrio usando la expresión grel:value.trim().replace(/\\s+/,\" \").toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "expression": "grel:value\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\")\n.replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"ñ\",\"n\")\n.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna barrio usando la expresión grel:value\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\")\n.replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"ñ\",\"n\")\n.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "grel:value\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\")\n.replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"ñ\",\"n\")\n.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna distrito usando la expresión grel:value\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\")\n.replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"ñ\",\"n\")\n.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "expression": "grel:value\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\")\n.replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"ñ\",\"n\")\n.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna municipio usando la expresión grel:value\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\")\n.replace(\"ó\",\"o\").replace(\"ú\",\"u\").replace(\"ñ\",\"n\")\n.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "expression": "grel:value.trim().replace(/\\s+/,\" \").toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna municipio usando la expresión grel:value.trim().replace(/\\s+/,\" \").toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "grel:value.trim().replace(/\\s+/,\" \").toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna distrito usando la expresión grel:value.trim().replace(/\\s+/,\" \").toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "expression": "grel:value.trim().replace(/\\s+/,\" \").toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna barrio usando la expresión grel:value.trim().replace(/\\s+/,\" \").toTitlecase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "num_personas",
+    "expression": "grel:cells[\"num_personas_hombres\"].value + cells[\"num_personas_mujeres\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "check_total",
+    "columnInsertIndex": 8,
+    "description": "Crear la columna check_total en el índice 8 basada en la columna num_personas usando la expresión grel:cells[\"num_personas_hombres\"].value + cells[\"num_personas_mujeres\"].value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "check_total",
+    "description": "Eliminar columna check_total"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas_mujeres",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas_mujeres usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas_hombres",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas_hombres usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "expression": "grel:valuevalue\n.toLowercase()\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"a\").replace(\"É\",\"e\").replace(\"Í\",\"i\").replace(\"Ó\",\"o\").replace(\"Ú\",\"u\")\n.replace(/\\s+/,\"_\")\n.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna barrio usando la expresión grel:valuevalue\n.toLowercase()\n.replace(\"á\",\"a\").replace(\"é\",\"e\").replace(\"í\",\"i\").replace(\"ó\",\"o\").replace(\"ú\",\"u\")\n.replace(\"Á\",\"a\").replace(\"É\",\"e\").replace(\"Í\",\"i\").replace(\"Ó\",\"o\").replace(\"Ú\",\"u\")\n.replace(/\\s+/,\"_\")\n.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "grel:with(value.toLowercase().trim(), v,\n  with(v.split(\" de \"), p,\n    if(p.length()!=3, null,\n      with(p[1].replace(\"setiembre\",\"septiembre\"), mes,\n        with(\n          if(mes==\"enero\",\"01\",\n          if(mes==\"febrero\",\"02\",\n          if(mes==\"marzo\",\"03\",\n          if(mes==\"abril\",\"04\",\n          if(mes==\"mayo\",\"05\",\n          if(mes==\"junio\",\"06\",\n          if(mes==\"julio\",\"07\",\n          if(mes==\"agosto\",\"08\",\n          if(mes==\"septiembre\",\"09\",\n          if(mes==\"octubre\",\"10\",\n          if(mes==\"noviembre\",\"11\",\n          if(mes==\"diciembre\",\"12\",null)))))))))))),\n          mm,\n          if(isBlank(mm), null,\n            (if(p[0].length()==1,\"0\"+p[0],p[0])) + \"/\" + mm + \"/\" + p[2]\n          )\n        )\n      )\n    )\n  )\n)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna fecha usando la expresión grel:with(value.toLowercase().trim(), v,\n  with(v.split(\" de \"), p,\n    if(p.length()!=3, null,\n      with(p[1].replace(\"setiembre\",\"septiembre\"), mes,\n        with(\n          if(mes==\"enero\",\"01\",\n          if(mes==\"febrero\",\"02\",\n          if(mes==\"marzo\",\"03\",\n          if(mes==\"abril\",\"04\",\n          if(mes==\"mayo\",\"05\",\n          if(mes==\"junio\",\"06\",\n          if(mes==\"julio\",\"07\",\n          if(mes==\"agosto\",\"08\",\n          if(mes==\"septiembre\",\"09\",\n          if(mes==\"octubre\",\"10\",\n          if(mes==\"noviembre\",\"11\",\n          if(mes==\"diciembre\",\"12\",null)))))))))))),\n          mm,\n          if(isBlank(mm), null,\n            (if(p[0].length()==1,\"0\"+p[0],p[0])) + \"/\" + mm + \"/\" + p[2]\n          )\n        )\n      )\n    )\n  )\n)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna fecha usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna municipio usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna distrito usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "barrio",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna barrio usando la expresión value.toLowercase()"
+  }
+]

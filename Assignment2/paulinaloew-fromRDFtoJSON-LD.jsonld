@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ns2": "http://datos.bne.es/def/",
+    "ns4": "http://id.loc.gov/terms/",
+    "bne": "http://datos.bne.es/resource/",
+    "label": "rdfs:label",
+    "language": "ns4:language",
+    "type": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "id": "ns2:P3002",
+    "related": {
+      "@id": "ns2:P3001",
+      "@type": "@id"
+    },
+    "extent": "ns2:P3003",
+    "place": "ns2:P3004",
+    "material": "ns2:P3005",
+    "agent": {
+      "@id": "ns2:P3006",
+      "@type": "@id"
+    },
+    "year": "ns2:P3007",
+    "size": "ns2:P3008",
+    "statement": "ns2:P3009",
+    "callNumber": "ns2:P3012",
+    "altId": "ns2:P3013",
+    "note": "ns2:P3015",
+    "kind": "ns2:P3064"
+  },
+  "@id": "bne:a3316285",
+  "type": "ns2:C1003",
+  "label": "Actas de las II Jornadas sobre Ontologías Web y Semántica",
+  "id": "a3316285",
+  "language": "http://id.loc.gov/vocabulary/languages/spa",
+  "related": [
+    "https://datos.bne.es/resource/1000003906",
+    "https://datos.bne.es/resource/1000003907",
+    "https://datos.bne.es/resource/1000003908"
+  ],
+  "extent": "IV, 75 p.",
+  "place": "Madrid",
+  "material": "[Texto impreso]",
+  "agent": [
+    "https://datos.bne.es/resource/XX4435380",
+    "https://datos.bne.es/resource/XX4430054",
+    "https://datos.bne.es/resource/XX1464262",
+    "https://datos.bne.es/resource/XX771271",
+    "https://datos.bne.es/resource/XX4436602"
+  ],
+  "year": "[2007]",
+  "size": "24 cm",
+  "statement": "WebSemántica'2007 ; editores, Óscar Corcho ... [et al.]",
+  "callNumber": "M 38241-2007",
+  "altId": "M 38241-2007",
+  "note": [
+    "Incluye referencias bibliográficas e índice",
+    "\"Web Semántica España\"",
+    "Textos en español e inglés",
+    "Jornadas desarrolladas en el marco del II Congreso Español de Informática (CEDI 2007) celebrado en Zaragoza del 11 al 14 de septiembre de 2007"
+  ],
+  "kind": "Libro"
+}

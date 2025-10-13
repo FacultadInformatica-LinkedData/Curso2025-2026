@@ -1,0 +1,40 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Valor",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Valor usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Año",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Año usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Año",
+    "newColumnName": "Year",
+    "description": "Renombra la columna Año a Year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Concepto",
+    "newColumnName": "Concept",
+    "description": "Renombra la columna Concepto a Concept"
+  }
+]
