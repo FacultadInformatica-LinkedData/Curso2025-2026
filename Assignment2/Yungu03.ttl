@@ -1,0 +1,23 @@
+@base <http://example.org/iot/>.
+@prefix ex:  <http://example.org/iot/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+ex:ETSIInformaticos
+    ex:hasName "ETSI Informáticos";
+    ex:contains ex:ClassRoom03,
+                ex:Sensor347.
+
+ex:ClassRoom03
+    ex:contains ex:Table322,
+                ex:Sensor347.
+
+ex:Sensor347
+    ex:hasOwner ex:ETSIInformaticos;
+    ex:hasMeasurement ex:Measurement8432.
+
+ex:Measurement8432
+    ex:hasTemperature "29"^^xsd:integer;
+    ex:atTime "2022-09-12T12:01:12"^^xsd:dateTime.
+
+ex:Table322
+    ex:hasOwner ex:ETSIInformaticos.
