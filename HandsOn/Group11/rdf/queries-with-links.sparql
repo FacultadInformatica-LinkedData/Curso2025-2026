@@ -1,0 +1,115 @@
+# Query 1: Eventos en lugares históricos (usando enlaces a Wikidata)
+# Esta consulta encuentra eventos que se realizan en lugares que están catalogados como monumentos históricos en Wikidata
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+
+SELECT DISTINCT ?eventName ?placeName ?placeWikidataURI
+WHERE {
+    ?event schema:name ?eventName ;
+           schema:location ?place .
+    ?place schema:name ?placeName ;
+           schema:sameAs ?placeWikidataURI .
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?placeWikidataURI wdt:P31 wd:Q35112127 .  # Instancia de monumento histórico
+    }
+}
+ORDER BY ?eventName
+
+# Query 2: Eventos culturales por distrito con nivel de accesibilidad
+# Esta consulta muestra eventos culturales agrupados por distrito y su nivel de accesibilidad
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
+
+SELECT ?districtName (COUNT(?event) as ?numEvents) ?accessibilityLevel
+WHERE {
+    ?event a schema:Event ;
+           schema:location ?place .
+    ?place schema:address ?address ;
+           mde:accessibility ?accessibilityLevel .
+    ?address mde:district ?district .
+    ?district schema:name ?districtName .
+}
+GROUP BY ?districtName ?accessibilityLevel
+ORDER BY ?districtName ?accessibilityLevel
+
+# Query 3: Eventos de larga duración con precio
+# Muestra eventos que son de larga duración junto con su precio si no son gratuitos
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?eventName ?startDate ?endDate ?price
+WHERE {
+    ?event schema:name ?eventName ;
+           schema:startDate ?startDate ;
+           schema:endDate ?endDate ;
+           mde:longDuration "true"^^xsd:boolean .
+    OPTIONAL { 
+        ?event schema:price ?price .
+        ?event schema:isAccessibleForFree "false"^^xsd:boolean .
+    }
+}
+ORDER BY ?startDate
+
+# Query 4: Eventos por tipo y barrio con enlaces a Wikidata
+# Muestra la distribución de tipos de eventos por barrio, incluyendo enlaces a Wikidata del barrio
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
+
+SELECT ?eventType ?neighborhoodName ?neighborhoodWikidataURI (COUNT(?event) as ?eventCount)
+WHERE {
+    ?event a schema:Event ;
+           mde:eventType ?eventType ;
+           schema:location ?place .
+    ?place schema:address ?address .
+    ?address mde:neighborhood ?neighborhood .
+    ?neighborhood schema:name ?neighborhoodName ;
+                 schema:sameAs ?neighborhoodWikidataURI .
+}
+GROUP BY ?eventType ?neighborhoodName ?neighborhoodWikidataURI
+ORDER BY DESC(?eventCount)
+
+# Query 5: Eventos próximos en lugares accesibles
+# Encuentra eventos futuros en lugares con buena accesibilidad (nivel > 80)
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?eventName ?placeName ?startDate ?accessibilityLevel
+WHERE {
+    ?event schema:name ?eventName ;
+           schema:startDate ?startDate ;
+           schema:location ?place .
+    ?place schema:name ?placeName ;
+           mde:accessibility ?accessibilityLevel .
+    FILTER (?accessibilityLevel > 80)
+    FILTER (?startDate > "2025-10-27T00:00:00"^^xsd:dateTime)
+}
+ORDER BY ?startDate
+
+# Query 6: Análisis de eventos gratuitos vs pagados por distrito
+# Compara la cantidad de eventos gratuitos y de pago en cada distrito
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
+
+SELECT ?districtName 
+       (COUNT(?freeEvent) as ?numFreeEvents)
+       (COUNT(?paidEvent) as ?numPaidEvents)
+WHERE {
+    ?event schema:location ?place .
+    ?place schema:address ?address .
+    ?address mde:district ?district .
+    ?district schema:name ?districtName .
+    OPTIONAL { 
+        ?event schema:isAccessibleForFree "true"^^xsd:boolean .
+        BIND(?event as ?freeEvent)
+    }
+    OPTIONAL { 
+        ?event schema:isAccessibleForFree "false"^^xsd:boolean .
+        BIND(?event as ?paidEvent)
+    }
+}
+GROUP BY ?districtName
+ORDER BY DESC(?numFreeEvents)

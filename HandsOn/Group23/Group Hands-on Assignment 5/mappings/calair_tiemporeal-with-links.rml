@@ -1,0 +1,73 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/airquality/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ssn: <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix schema: <http://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<TriplesMap_Observation>
+  a rr:TriplesMap;
+
+  rr:logicalTable [
+    rr:tableName "calair_tiemporeal-with-links.csv";
+    rr:source [
+      rr:sourceType ex:CSV;
+      rr:delimiter ";"
+    ]
+  ];
+
+  # Subject: Unique URI for each ssn:Observation
+  rr:subjectMap [
+    rr:template "http://example.org/airquality/observation/{PUNTO_MUESTREO}_{DATETIME}";
+    rr:class ssn:Observation
+  ];
+
+  # Predicate-Object Maps
+
+  # Link to Pollutant (Observed Property) - external link
+  rr:predicateObjectMap [
+    rr:predicate ssn:observedProperty;
+    rr:objectMap [ rr:column "POLLUTANT_WIKIDATA_URI"; rr:termType rr:IRI ]
+  ];
+
+  # Observation Date
+  rr:predicateObjectMap [
+    rr:predicate schema:observationDate;
+    rr:objectMap [
+      rr:column "DATETIME";
+      rr:datatype xsd:dateTime
+    ]
+  ];
+
+  # Link to Municipality (Location) - external link
+  rr:predicateObjectMap [
+    rr:predicate schema:location;
+    rr:objectMap [ rr:column "MUNICIPALITY_WIKIDATA_URI"; rr:termType rr:IRI ]
+  ];
+
+  # Observation Value (Nested TriplesMap for the value object)
+  rr:predicateObjectMap [
+    rr:predicate ssn:hasValue;
+    rr:objectMap [
+      rr:subjectMap [
+        rr:class ssn:ObservationValue;
+        rr:template "http://example.org/airquality/value/{PUNTO_MUESTREO}_{DATETIME}";
+      ];
+      rr:predicateObjectMap [
+        rr:predicate ex:value; # The measured value
+        rr:objectMap [
+          rr:column "Value";
+          rr:datatype xsd:float
+        ]
+      ];
+      rr:predicateObjectMap [
+        rr:predicate ex:validationStatus; # The validation flag (V or N)
+        rr:objectMap [
+          rr:column "Validation";
+          rr:datatype xsd:string
+        ]
+      ]
+    ]
+  ].

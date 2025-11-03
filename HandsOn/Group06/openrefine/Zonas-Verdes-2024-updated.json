@@ -557,28 +557,5 @@
       }
     ],
     "description": "Mass edit cells in column location"
-  },
-  {
-    "op": "core/recon",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "district",
-    "config": {
-      "mode": "standard-service",
-      "service": "https://wikidata.reconci.link/en/api",
-      "identifierSpace": "http://www.wikidata.org/entity/",
-      "schemaSpace": "http://www.wikidata.org/prop/direct/",
-      "type": {
-        "id": "Q3032114",
-        "name": "district of Madrid"
-      },
-      "autoMatch": true,
-      "batchSize": 10,
-      "columnDetails": [],
-      "limit": 0
-    },
-    "description": "Reconcile cells in column district to type Q3032114"
   }
 ]

@@ -1,0 +1,120 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rev: <http://purl.org/stuff/rev#>
+PREFIX schema: <http://schema.org/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX vocab: <http://example.org/wifiMadrid#>
+
+
+# 1) Comprobar que hay recursos del tipo vocab:Centro
+
+ASK {
+  ?c rdf:type vocab:Centro .
+}
+
+
+# 2) Mostramos 10 centros con su nombre y enlace a Wikidata
+
+SELECT ?centro ?nombre ?wikidataLocalidad
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  OPTIONAL { ?centro vocab:NOMBRE ?nombre . }
+  OPTIONAL { ?centro vocab:WIKIDATA_LOCALIDAD ?wikidataLocalidad . }
+}
+LIMIT 10
+
+
+# 3) Contamos cuántos centros tienen enlace a Wikidata
+
+SELECT (COUNT(?centro) AS ?numConLink)
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  ?centro vocab:WIKIDATA_LOCALIDAD ?wikidataLocalidad .
+}
+
+
+# 4) Mostrar enlaces tanto a Wikidata como a DBpedia (si existen)
+
+SELECT ?centro ?localidad ?wikidata ?dbpedia
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  OPTIONAL { ?centro vocab:LOCALIDAD ?localidad . }
+  OPTIONAL { ?centro vocab:WIKIDATA_LOCALIDAD ?wikidata . }
+  OPTIONAL { ?centro vocab:DBPEDIA_LOCALIDAD ?dbpedia . }
+}
+LIMIT 20
+
+# 5) Contamos los centros por distrito
+
+SELECT ?distrito (COUNT(?centro) AS ?numCentros)
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  ?centro vocab:DISTRITO ?distrito .
+}
+GROUP BY ?distrito
+ORDER BY DESC(?numCentros)
+LIMIT 15
+
+
+# 6) Comprobar que las coordenadas son numéricas
+
+SELECT ?centro ?lat ?long
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  ?centro vocab:LATITUD ?lat .
+  ?centro vocab:LONGITUD ?long .
+  FILTER (datatype(?lat) = xsd:decimal || datatype(?lat) = xsd:double || datatype(?lat) = xsd:float)
+  FILTER (datatype(?long) = xsd:decimal || datatype(?long) = xsd:double || datatype(?long) = xsd:float)
+}
+LIMIT 20
+
+
+# 7) Mostrar los centros accesibles (si la columna lo indica)
+
+SELECT ?centro ?nombre ?acces
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  OPTIONAL { ?centro vocab:NOMBRE ?nombre . }
+  OPTIONAL { ?centro vocab:ACCESIBILIDAD ?acces . }
+  FILTER regex(?acces, "SI", "i")
+}
+LIMIT 15
+
+
+# 8) Verificar que los links externos son IRIs correctas/validas
+
+SELECT ?centro ?wikidata
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  ?centro vocab:WIKIDATA_LOCALIDAD ?wikidata .
+  FILTER isIRI(?wikidata)
+}
+LIMIT 10
+
+
+# 9) Mostrar todos los predicados usados por un recurso ejemplo
+
+SELECT DISTINCT ?p
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  ?centro ?p ?o .
+}
+LIMIT 100
+
+
+# 10) Buscar todos los centros en el distrito "Centro"
+
+SELECT ?centro ?nombre ?barrio ?email
+WHERE {
+  ?centro rdf:type vocab:Centro .
+  ?centro vocab:DISTRITO "CENTRO" .
+  OPTIONAL { ?centro vocab:NOMBRE ?nombre . }
+  OPTIONAL { ?centro vocab:BARRIO ?barrio . }
+  OPTIONAL { ?centro vocab:EMAIL ?email . }
+}
+LIMIT 30

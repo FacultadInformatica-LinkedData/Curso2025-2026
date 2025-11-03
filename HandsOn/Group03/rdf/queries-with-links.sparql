@@ -1,0 +1,52 @@
+PREFIX schema: <http://schema.org/>
+PREFIX wgs:    <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+
+# A_sameAs: Número de estaciones con admin enlazado vía owl:sameAs (debe salir 24)
+SELECT (COUNT(DISTINCT ?s) AS ?n) WHERE {
+  ?s a schema:Place ;
+     schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD .
+}
+
+# B_sameAs_ok: Cada estación con exactamente 3 enlaces administrativos (vía sameAs) — devuelve 24 filas
+SELECT ?s (COUNT(?adminLocal) AS ?nLinks) WHERE {
+  ?s a schema:Place ;
+     schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD .
+}
+GROUP BY ?s
+HAVING (?nLinks = 3)
+
+# C_sameAs_totalLinks: Total de enlaces administrativos validados con sameAs — debería ser 72
+SELECT (COUNT(?adminWD) AS ?total) WHERE {
+  ?s a schema:Place ;
+     schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD .
+}
+
+# Q4: Listar estaciones con su admin local via owl:sameAs (resultado no vacío)
+SELECT ?station ?name ?adminLocal ?adminLabel WHERE {
+  ?station a schema:Place ;
+           schema:name ?name ;
+           schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD ;
+              rdfs:label ?adminLabel .
+  FILTER(LANG(?adminLabel) = "es")
+}
+LIMIT 50
+
+# Q5: Datos para la app (nombre, coords, admin local) usando owl:sameAs
+SELECT ?station ?name ?lat ?long ?adminLabel WHERE {
+  ?station a schema:Place ;
+           schema:name ?name ;
+           wgs:lat ?lat ;
+           wgs:long ?long ;
+           schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD ;
+              rdfs:label ?adminLabel .
+  FILTER(LANG(?adminLabel) = "es")
+}
+LIMIT 50

@@ -1,0 +1,724 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix mde: <http://madrid-events.es/def/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .<http://madrid-events.es/event/50052187> a schema:Event, schema:DanceEvent ;
+    mde:eventType "DanzaBaile" ;
+    schema:name "39º Certamen Coreográfico de Madrid}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=42781ae2c7839910VgnVCM100000891ecb1aRCRD> ;
+    schema:startDate "2025-12-03T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-12-07T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "centro de cultura contemporánea conde duque" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426480> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE CONDE DUQUE 9> .
+
+<http://madrid-events.es/district/CENTRO> a mde:District ;
+    schema:name "CENTRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q1763376> .
+
+<http://madrid-events.es/neighborhood/UNIVERSIDAD> a mde:Neighborhood ;
+    schema:name "UNIVERSIDAD" ;
+    schema:sameAs <https://wikidata.org/entity/Q10387767> ;
+    mde:isPartOf <http://madrid-events.es/district/CENTRO> .
+
+<http://madrid-events.es/address/CALLE CONDE DUQUE 9> a schema:PostalAddress ;
+    schema:streetAddress "CALLE CONDE DUQUE 9" ;
+    schema:postalCode "28015" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/CENTRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/UNIVERSIDAD> .<http://madrid-events.es/event/50013813> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Abierto x Obras}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=acaca2c35cf48910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-10-16T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2026-01-31T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Entrada libre hasta completar aforo" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "matadero madrid" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56427524> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA LEGAZPI 8> .
+
+<http://madrid-events.es/district/ARGANZUELA> a mde:District ;
+    schema:name "ARGANZUELA" ;
+    schema:sameAs <https://wikidata.org/entity/Q2000929> .
+
+<http://madrid-events.es/neighborhood/CHOPERA> a mde:Neighborhood ;
+    schema:name "CHOPERA" ;
+    schema:sameAs <https://wikidata.org/entity/Q3773750> ;
+    mde:isPartOf <http://madrid-events.es/district/ARGANZUELA> .
+
+<http://madrid-events.es/address/PLAZA LEGAZPI 8> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA LEGAZPI 8" ;
+    schema:postalCode "28045" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/ARGANZUELA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/CHOPERA> .<http://madrid-events.es/event/50043503> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Acción teatro}" ;
+    schema:description """El teatro es utilizar nuestros cinco sentidos para percibir el mundo desde la propia subjetividad, es aceptar el hecho de que somos seres singulares y poner un altavoz a nuestra originalidad. ¿Te atreves a hacer teatro con nosotros? Con la Técnica Conectiva (técnicas teatrales psicofísicas), trataremos de influir en nuestra percepción del mundo y nuestro entorno. Además, hacer teatro ayuda a nuestra autopercepción y nos lleva a reconocernos como creadores y como seres humanos únicos. En este curso trabajaremos sobre todas esas capacidades que nos hacen más flexibles y dinámicos. Porque creemos que todas las personas deben tener un espacio seguro donde desarrollar su arte interpretativo, creando juntos entornos saludables que además mejoren indudablemente nuestra salud emocional y nuestras capacidades. Imparte: Con Causa. Organiza: Casa del Lector. Público: Para mayores de 65 años.""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=2d41770f8ca19910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-10-24T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2026-01-30T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Mayores" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Actividad gratuita con inscripción previa" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "matadero madrid" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56427524> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA LEGAZPI 8> .
+
+<http://madrid-events.es/district/ARGANZUELA> a mde:District ;
+    schema:name "ARGANZUELA" ;
+    schema:sameAs <https://wikidata.org/entity/Q2000929> .
+
+<http://madrid-events.es/neighborhood/CHOPERA> a mde:Neighborhood ;
+    schema:name "CHOPERA" ;
+    schema:sameAs <https://wikidata.org/entity/Q3773750> ;
+    mde:isPartOf <http://madrid-events.es/district/ARGANZUELA> .
+
+<http://madrid-events.es/address/PLAZA LEGAZPI 8> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA LEGAZPI 8" ;
+    schema:postalCode "28045" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/ARGANZUELA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/CHOPERA> .<http://madrid-events.es/event/12622331> a schema:Event, schema:EducationEvent ;
+    mde:eventType "CursosTalleres" ;
+    schema:name "Acompañar en la pérdida}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=197023e4c84d3910VgnVCM2000001f4a900aRCRD> ;
+    schema:startDate "2025-09-16T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-12-16T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=70d879262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=70d879262ef5d010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "biblioteca pública municipal josé saramago" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=70d879262ef5d010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q85820002> ;
+    mde:accessibility "1,5,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/AVENIDA MONFORTE DE LEMOS 38> .
+
+<http://madrid-events.es/district/FUENCARRAL-EL PARDO> a mde:District ;
+    schema:name "FUENCARRAL-EL PARDO" ;
+    schema:sameAs <https://wikidata.org/entity/Q656196> .
+
+<http://madrid-events.es/neighborhood/EL PILAR> a mde:Neighborhood ;
+    schema:name "EL PILAR" ;
+    schema:sameAs <https://wikidata.org/entity/Q3773964> ;
+    mde:isPartOf <http://madrid-events.es/district/FUENCARRAL-EL PARDO> .
+
+<http://madrid-events.es/address/AVENIDA MONFORTE DE LEMOS 38> a schema:PostalAddress ;
+    schema:streetAddress "AVENIDA MONFORTE DE LEMOS 38" ;
+    schema:postalCode "28029" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/FUENCARRAL-EL PARDO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/EL PILAR> .<http://madrid-events.es/event/50011576> a schema:Event, schema:DanceEvent ;
+    mde:eventType "DanzaBaile" ;
+    schema:name "AH AH AH - Retiro}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=611730905b038910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-10-04T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-04T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Familias" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=35e53d0b5e71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=35e53d0b5e71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "centro cultural casa de vacas" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=35e53d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q108328073> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PASEO COLOMBIA 1> .
+
+<http://madrid-events.es/district/RETIRO> a mde:District ;
+    schema:name "RETIRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://madrid-events.es/neighborhood/LOS JERONIMOS> a mde:Neighborhood ;
+    schema:name "LOS JERONIMOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q10306766> ;
+    mde:isPartOf <http://madrid-events.es/district/RETIRO> .
+
+<http://madrid-events.es/address/PASEO COLOMBIA 1> a schema:PostalAddress ;
+    schema:streetAddress "PASEO COLOMBIA 1" ;
+    schema:postalCode "28009" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/RETIRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/LOS JERONIMOS> .<http://madrid-events.es/event/50072099> a schema:Event, schema:VisualArtsEvent ;
+    mde:eventType "ActividadesCalleArteUrbano" ;
+    schema:name "Al son de los palillos}" ;
+    schema:description """Palos Flamencos donde alternamos flamenco puro con temas de cálsico español. Un viaje de los sentidos por la rica cultura de nuestra tierra.""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=6af2540e43a99910VgnVCM100000891ecb1aRCRD> ;
+    schema:startDate "2025-10-12T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-12T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> a schema:Place ;
+    schema:name "parque de amós acero" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q117837260> ;
+    mde:accessibility "2"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE SIERRA MOLINA 1> .
+
+<http://madrid-events.es/district/PUENTE DE VALLECAS> a mde:District ;
+    schema:name "PUENTE DE VALLECAS" ;
+    schema:sameAs <https://wikidata.org/entity/Q2003054> .
+
+<http://madrid-events.es/neighborhood/SAN DIEGO> a mde:Neighborhood ;
+    schema:name "SAN DIEGO" ;
+    schema:sameAs <https://wikidata.org/entity/Q11946851> ;
+    mde:isPartOf <http://madrid-events.es/district/PUENTE DE VALLECAS> .
+
+<http://madrid-events.es/address/CALLE SIERRA MOLINA 1> a schema:PostalAddress ;
+    schema:streetAddress "CALLE SIERRA MOLINA 1" ;
+    schema:postalCode "28053" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/PUENTE DE VALLECAS> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/SAN DIEGO> .<http://madrid-events.es/event/50065971> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Álex Conde Trío. En colaboración con AIEnRuta Jazz}" ;
+    schema:description """Sucede cada año y la presente edición de JAZZMADRID no iba a revelarse diferente. Esta cita, que se celebra desde 2014, sigue firme en su empeño en seguir siendo uno de los centros neurálgicos del jazz en Europa. Su presencia entre nosotros es un fenómeno que la gran afición aguarda expectante cada vez que llega el otoño, y su centro de gravedad permanente sigue estando asociado a la solera cultural de los enclaves municipales donde todo acontece: Teatro Fernán Gómez, CentroCentro y Conteporánea Condeduque. E, igualmente, en aquellas otras escenas donde tienen lugar los conciertos de la enseña Villanos del Jazz, que, por quinto año consecutivo, forman parte de la programación oficial del festival: Teatros Pavón, Albéniz, Barceló y Fernán Gómez, Sala Villanos y diferentes auditorios de hasta cuatro localidades de la Comunidad de Madrid. La muestra se desarrollará a lo largo de los meses de septiembre, octubre y noviembre, abriendo ante los ojos y oídos de la afición un vistoso muestrario jazzístico. En el programa se prestará mucha atención, por una parte, a la defensa de la más estricta ortodoxia histórica del género, y, por otra, estará muy presente también la vigilancia de la reivindicación de su libertad como esencia de la condición creadora que tiene esta música para experimentar. La idea sigue rastreando el mejor modo de mostrar todas las tendencias y coloraciones imaginables, renovadoras y también tradicionales del jazz, pues solo con el compendio de ambas es posible mantener activa la memoria, el reto fundamental de cualquiera de nuestras sociedades, ocupadas demasiadas veces en la ilusión del presente, aunque éste ya sea historia cuando se empieza a ser consciente del paso del tiempo. Luis Martín, director artístico Álex Conde Trío 16.11.2025 19.00 h  De educación pianística clásica, Álex Conde se formó en el Conservatorio Jose Iturbi de Valencia y, con posterioridad, prosiguió estudios en el Berklee College of Music de Boston y en el Aaron Copland Conservatory de Nueva York. En estas últimas instituciones  es importante saber que recibió clases de músicos como Antonio Hart, Mike Mossman o Jimmy Heath, e, igualmente, tuvo ocasión de formarse junto al gran pianista Barry Harris. Ya de regreso a España, y sobre todo si se ha tenido ocasión de verle alguna vez en directo, solo cabe decir que Álex Conde es en nuestra escena actual del jazz un talento musical en auge. Fundador del Piano Flamenco Institute de Nueva York, único dedicado al estudio de esta disciplina, la importante labor de este pianista como impulsor del patrimonio musical nacional es tan incontestable como impagable. Una labor que lleva a cabo dentro y fuera de nuestro país, haciendo síntesis entre el flamenco y el jazz. Esta actividad, cuya principal motivación es la defensa, conservación y divulgación del patrimonio cultural nacional, está muy bien condensada en el proyecto Piano y Copla. Esencialmente, Piano y copla es una grabación realizada a dúo con el histórico tonadillero Alejandro Conde, y en ella se realiza un acercamiento de esta música al público contemporáneo. Igualmente, en otro proyecto, Álex Conde y los Indultados, se percibe una innovadora y atrevida revisión de la música popular tradicional española. Y, con todo, la importante labor de Álex Conde en la recuperación del patrimonio nacional, prosigue en otro de sus proyectos, este más reciente, llamado Álex Conde Flamenco Jazz. En él se sigue apostando por la recuperación, revitalización y transmisión de la cultura musical española. Álex Conde Flamenco Jazz revisa y recupera a Falla, Albéniz o Turina, versionando obras como La Danza del Fuego, El Albaicín, El Puerto, la Nana de Sevilla o la Andaluza, títulos que pertenecen al repertorio clásico español con un acercamiento prodigioso a la improvisación, pero manteniendo, sin embargo, la esencia y el respeto a la obra original. Seis son, finalmente, los discos con los que cuenta Álex Conde, todos con música en su interio""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8e75cb4bf7a79910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-11-16T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-11-16T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Entrada: 5  euros Descuentos disponibles" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "centrocentro" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426764> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA CIBELES 1> .
+
+<http://madrid-events.es/district/RETIRO> a mde:District ;
+    schema:name "RETIRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://madrid-events.es/neighborhood/LOS JERONIMOS> a mde:Neighborhood ;
+    schema:name "LOS JERONIMOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q10306766> ;
+    mde:isPartOf <http://madrid-events.es/district/RETIRO> .
+
+<http://madrid-events.es/address/PLAZA CIBELES 1> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA CIBELES 1" ;
+    schema:postalCode "28014" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/RETIRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/LOS JERONIMOS> .<http://madrid-events.es/event/50042085> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Altar de muertos 2025}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=46570ad1e7919910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-10-01T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-31T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "fernán gómez centro cultural de la villa" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426930> ;
+    mde:accessibility "1,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA COLON 4> .
+
+<http://madrid-events.es/district/SALAMANCA> a mde:District ;
+    schema:name "SALAMANCA" ;
+    schema:sameAs <https://wikidata.org/entity/Q1773521> .
+
+<http://madrid-events.es/neighborhood/RECOLETOS> a mde:Neighborhood ;
+    schema:name "RECOLETOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q3814551> ;
+    mde:isPartOf <http://madrid-events.es/district/SALAMANCA> .
+
+<http://madrid-events.es/address/PLAZA COLON 4> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA COLON 4" ;
+    schema:postalCode "28001" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/SALAMANCA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/RECOLETOS> .<http://madrid-events.es/event/50001393> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "American Buffalo}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=21a420854c8e7910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-09-16T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-26T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Mayores" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Entrada general - 22 euros Tarifa reducida: 18 euros (Todos los días): Carné joven, mayores de 65, familia numerosa, discapacidad y acompañante, desempleados y carné de bibliotecas municipales de Madrid.  Otros:  Amigos TFG - 15 euros. Grupos (+ de 20) -  17 euros Discapacidad y acompañante - 18 euros Personas con movilidad reducida y acompañante - 16 euros Menores de 14 años - 17 euros  Reservas de Amigos TFG.  Contacto y reservas: taquilla.fernangomez@teatrofernangomez.es  /  amigos@teatrofernangomez.com. Tlfonos: 913184733 /734.  Este espectáculo está acogido al Joven Bono Cultural.  Si tienes entre 16 y 26 años, apúntate AQUÍ al JOBO y ven gratis (De martes a viernes incluidos)." ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "fernán gómez centro cultural de la villa" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426930> ;
+    mde:accessibility "1,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA COLON 4> .
+
+<http://madrid-events.es/district/SALAMANCA> a mde:District ;
+    schema:name "SALAMANCA" ;
+    schema:sameAs <https://wikidata.org/entity/Q1773521> .
+
+<http://madrid-events.es/neighborhood/RECOLETOS> a mde:Neighborhood ;
+    schema:name "RECOLETOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q3814551> ;
+    mde:isPartOf <http://madrid-events.es/district/SALAMANCA> .
+
+<http://madrid-events.es/address/PLAZA COLON 4> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA COLON 4" ;
+    schema:postalCode "28001" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/SALAMANCA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/RECOLETOS> .<http://madrid-events.es/event/50072086> a schema:Event, schema:VisualArtsEvent ;
+    mde:eventType "ActividadesCalleArteUrbano" ;
+    schema:name "Anís Guateque}" ;
+    schema:description """Anís Guateque nace de las ganas de baile y jarana, de juerga y alegría. Por eso hacemos cumbia, porque es primitiva, de raíz, y nos mueve porque es sonrisa y desenfado. Además de un repertorio con tintes cubanos y psicodélicos, nuestras cumbitas están sazonadas de un toque muy de cosecha propia, muy 'de los madriles'. El rasguido de la botella de anís, los versos que homenajean lo castizo de nuestras tierras de aquí y allá, los jaleos y 'oles' que se escapan de nuestras gargantas? todo eso es Anís Guateque. Desde el primer trío originario se irán poco a poco aproximando al proyecto varias personillas ansiosas de jarana y sabor, hasta el punto de conformar la actual formación, la verdadera hermandad del Anís Guateque: ocho músicos y músicas bien 'redi' para hacerte menear las caderas. Si afinas el oído, podrás escucharlos cantar, allá en un local de la periferia madrileña, 'Si la cumbia fuera flor hoy sería primavera'.""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8c7f540e43a99910VgnVCM100000891ecb1aRCRD> ;
+    schema:startDate "2025-10-11T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-11T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> a schema:Place ;
+    schema:name "parque de amós acero" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q117837260> ;
+    mde:accessibility "2"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE SIERRA MOLINA 1> .
+
+<http://madrid-events.es/district/PUENTE DE VALLECAS> a mde:District ;
+    schema:name "PUENTE DE VALLECAS" ;
+    schema:sameAs <https://wikidata.org/entity/Q2003054> .
+
+<http://madrid-events.es/neighborhood/SAN DIEGO> a mde:Neighborhood ;
+    schema:name "SAN DIEGO" ;
+    schema:sameAs <https://wikidata.org/entity/Q11946851> ;
+    mde:isPartOf <http://madrid-events.es/district/PUENTE DE VALLECAS> .
+
+<http://madrid-events.es/address/CALLE SIERRA MOLINA 1> a schema:PostalAddress ;
+    schema:streetAddress "CALLE SIERRA MOLINA 1" ;
+    schema:postalCode "28053" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/PUENTE DE VALLECAS> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/SAN DIEGO> .<http://madrid-events.es/event/50067694> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Another way Film Festival 2025 en Mstadero Madrid}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=3665002329089910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-10-14T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-19T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "matadero madrid" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56427524> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA LEGAZPI 8> .
+
+<http://madrid-events.es/district/ARGANZUELA> a mde:District ;
+    schema:name "ARGANZUELA" ;
+    schema:sameAs <https://wikidata.org/entity/Q2000929> .
+
+<http://madrid-events.es/neighborhood/CHOPERA> a mde:Neighborhood ;
+    schema:name "CHOPERA" ;
+    schema:sameAs <https://wikidata.org/entity/Q3773750> ;
+    mde:isPartOf <http://madrid-events.es/district/ARGANZUELA> .
+
+<http://madrid-events.es/address/PLAZA LEGAZPI 8> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA LEGAZPI 8" ;
+    schema:postalCode "28045" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/ARGANZUELA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/CHOPERA> .<http://madrid-events.es/event/50066185> a schema:Event, schema:SocialEvent ;
+    mde:eventType "ConferenciasColoquios" ;
+    schema:name "Antonio Palacios en el 80 aniversario de su fallecimiento}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=624edfabaea79910VgnVCM100000891ecb1aRCRD> ;
+    schema:startDate "2025-10-16T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-22T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=11951e79ee71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=11951e79ee71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "hemeroteca municipal" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=11951e79ee71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q5893994> ;
+    mde:accessibility "1,4,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE CONDE DUQUE 11> .
+
+<http://madrid-events.es/district/CENTRO> a mde:District ;
+    schema:name "CENTRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q1763376> .
+
+<http://madrid-events.es/neighborhood/UNIVERSIDAD> a mde:Neighborhood ;
+    schema:name "UNIVERSIDAD" ;
+    schema:sameAs <https://wikidata.org/entity/Q10387767> ;
+    mde:isPartOf <http://madrid-events.es/district/CENTRO> .
+
+<http://madrid-events.es/address/CALLE CONDE DUQUE 11> a schema:PostalAddress ;
+    schema:streetAddress "CALLE CONDE DUQUE 11" ;
+    schema:postalCode "28015" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/CENTRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/UNIVERSIDAD> .<http://madrid-events.es/event/50059088> a schema:Event, schema:EducationEvent ;
+    mde:eventType "CursosTalleres" ;
+    schema:name "Aprendiendo juegos de rol: 'La llamada de Chtulhu'}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=bc1ab9c5d2859910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-10-04T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-12-13T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b60e92be3c5e210VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b60e92be3c5e210VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "biblioteca pública municipal iván de vargas" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b60e92be3c5e210VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q2886368> ;
+    mde:accessibility "1,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE SAN JUSTO 5> .
+
+<http://madrid-events.es/district/CENTRO> a mde:District ;
+    schema:name "CENTRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q1763376> .
+
+<http://madrid-events.es/neighborhood/PALACIO> a mde:Neighborhood ;
+    schema:name "PALACIO" ;
+    schema:sameAs <https://wikidata.org/entity/Q2136510> ;
+    mde:isPartOf <http://madrid-events.es/district/CENTRO> .
+
+<http://madrid-events.es/address/CALLE SAN JUSTO 5> a schema:PostalAddress ;
+    schema:streetAddress "CALLE SAN JUSTO 5" ;
+    schema:postalCode "28005" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/CENTRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/PALACIO> .<http://madrid-events.es/event/50042035> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Aromas de Soledad}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=70830ad1e7919910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-11-20T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-12-07T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "fernán gómez centro cultural de la villa" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426930> ;
+    mde:accessibility "1,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA COLON 4> .
+
+<http://madrid-events.es/district/SALAMANCA> a mde:District ;
+    schema:name "SALAMANCA" ;
+    schema:sameAs <https://wikidata.org/entity/Q1773521> .
+
+<http://madrid-events.es/neighborhood/RECOLETOS> a mde:Neighborhood ;
+    schema:name "RECOLETOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q3814551> ;
+    mde:isPartOf <http://madrid-events.es/district/SALAMANCA> .
+
+<http://madrid-events.es/address/PLAZA COLON 4> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA COLON 4" ;
+    schema:postalCode "28001" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/SALAMANCA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/RECOLETOS> .<http://madrid-events.es/event/12411724> a schema:Event, schema:ExhibitionEvent ;
+    mde:eventType "Exposiciones" ;
+    schema:name "Artemisia. La magia de la luna}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=91dbd257d6d70910VgnVCM1000001d4a900aRCRD> ;
+    schema:startDate "2024-07-16T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-12-28T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "1"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9c5b069a541f010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9c5b069a541f010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "planetario de madrid" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9c5b069a541f010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q9060456> ;
+    mde:accessibility "1,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/AVENIDA PLANETARIO 16> .
+
+<http://madrid-events.es/district/ARGANZUELA> a mde:District ;
+    schema:name "ARGANZUELA" ;
+    schema:sameAs <https://wikidata.org/entity/Q2000929> .
+
+<http://madrid-events.es/neighborhood/LEGAZPI> a mde:Neighborhood ;
+    schema:name "LEGAZPI" ;
+    schema:sameAs <https://wikidata.org/entity/Q3773990> ;
+    mde:isPartOf <http://madrid-events.es/district/ARGANZUELA> .
+
+<http://madrid-events.es/address/AVENIDA PLANETARIO 16> a schema:PostalAddress ;
+    schema:streetAddress "AVENIDA PLANETARIO 16" ;
+    schema:postalCode "28045" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/ARGANZUELA> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/LEGAZPI> .<http://madrid-events.es/event/50053352> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Arturo Pueyo Quartet. En colaboración con AIEnRuta Jazz}" ;
+    schema:description """Sucede cada año y la presente edición de JAZZMADRID no iba a revelarse diferente. Esta cita, que se celebra desde 2014, sigue firme en su empeño en seguir siendo uno de los centros neurálgicos del jazz en Europa. Su presencia entre nosotros es un fenómeno que la gran afición aguarda expectante cada vez que llega el otoño, y su centro de gravedad permanente sigue estando asociado a la solera cultural de los enclaves municipales donde todo acontece: Teatro Fernán Gómez, CentroCentro y Conteporánea Condeduque. E, igualmente, en aquellas otras escenas donde tienen lugar los conciertos de la enseña Villanos del Jazz, que, por quinto año consecutivo, forman parte de la programación oficial del festival: Teatros Pavón, Albéniz, Barceló y Fernán Gómez, Sala Villanos y diferentes auditorios de hasta cuatro localidades de la Comunidad de Madrid. La muestra se desarrollará a lo largo de los meses de septiembre, octubre y noviembre, abriendo ante los ojos y oídos de la afición un vistoso muestrario jazzístico. En el programa se prestará mucha atención, por una parte, a la defensa de la más estricta ortodoxia histórica del género, y, por otra, estará muy presente también la vigilancia de la reivindicación de su libertad como esencia de la condición creadora que tiene esta música para experimentar. La idea sigue rastreando el mejor modo de mostrar todas las tendencias y coloraciones imaginables, renovadoras y también tradicionales del jazz, pues solo con el compendio de ambas es posible mantener activa la memoria, el reto fundamental de cualquiera de nuestras sociedades, ocupadas demasiadas veces en la ilusión del presente, aunque éste ya sea historia cuando se empieza a ser consciente del paso del tiempo. Luis Martín, director artístico Arturo Pueyo Quartet En colaboración con AIEnRuta Jazz 04.11.2025 19.00 h  Nacido en Ibiza en 1991, Arturo Pueyo inicia sus estudios musicales a los 8 años de edad en el Patronato Municipal de Música de su ciudad natal, y solo cinco más tarde, a los 13 años, entra en el Conservatorio Profesional de Música de Ibiza y Formentera donde recibe clases del importante clarinetista Venancio Rius Martí durante un periodo de tres años. Paralelamente, Arturo participa en cursos intensivos y masterclasses impartidos por el propio Venancio y por Yehuda Gilad, principal figura mundial de la escuela técnica estadounidense de clarinete. El año 2010 contempla el momento en que Arturo Pueyo se inicia en el mundo de la música moderna, participando como miembro de diferentes formaciones en las que experimenta una variada paleta de estilos; swing, blues, funk o rock, entre otros. A estas alturas, Arturo Pueyo ha recibido clases magistrales de figuras como Toni Belenguer, Bob Sands, Jorge Pardo, Nitai Hershkovits, Ari Hoening, Kenny Werner, Johannes Weidenmueller, Shai Maestro y Roman Pilon entre otros. Ha dado clases, asimismo, con el saxofonista Maikel Vistel, y ha tocado profesionalmente -y esto es lo más importante- con músicos como Paquito d?Rivera, Antonio Serrano, Ernesto Aurignac, Bob Sands, Deborah Carter o Miguel Blanco. También ha hecho música junto a grandes artistas de otros géneros, como los flamencos Miguel Poveda y Antonio Carmona; Mustafa Zair (música árabe) o Carlton J. Smith (soul). Y todo ello ha sucedido en lugares como el Teatro Real, Auditorio Nacional, Teatro Fernán Gómez, CondeDuque, o en el Corral de Comedias de Alcalá de Henares y en festivales como Le Guess Who! (Holanda), Eivissa Jazz, Festival Internacional de Jazz de Madrid y Festival Internacional de Canarias Jazz &amp;amp; Más, entre otros. En el año 2022 publicó su primer disco como titular. Esta grabación se llama Derroteros y cuenta con colaboraciones como las de Ariel Brínguez, Ángela Cervantes, Daniel Juárez y Miron Rafajlovic. La música contenida en este álbum ha sido presentada en diferentes ocasiones en Madrid, Asturias, Cantabria, Málaga, Granada, Albacete, Murcia, La Rioja y Baleares.""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8b5b31298bc39910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-11-04T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-11-04T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Entrada: 5  euros Descuentos disponibles" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "centrocentro" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426764> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA CIBELES 1> .
+
+<http://madrid-events.es/district/RETIRO> a mde:District ;
+    schema:name "RETIRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://madrid-events.es/neighborhood/LOS JERONIMOS> a mde:Neighborhood ;
+    schema:name "LOS JERONIMOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q10306766> ;
+    mde:isPartOf <http://madrid-events.es/district/RETIRO> .
+
+<http://madrid-events.es/address/PLAZA CIBELES 1> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA CIBELES 1" ;
+    schema:postalCode "28014" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/RETIRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/LOS JERONIMOS> .<http://madrid-events.es/event/50072077> a schema:Event, schema:VisualArtsEvent ;
+    mde:eventType "ActividadesCalleArteUrbano" ;
+    schema:name "Asociación integrando}" ;
+    schema:description """Asociación que trabaja por la integración plena y con identidad propia de las personas migrantes y por mejorar las condiciones de vida en el mundo.""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=7999540e43a99910VgnVCM100000891ecb1aRCRD> ;
+    schema:startDate "2025-10-11T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-11T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> a schema:Place ;
+    schema:name "parque de amós acero" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c723cd641b99e210VgnVCM2000000c205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q117837260> ;
+    mde:accessibility "2"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE SIERRA MOLINA 1> .
+
+<http://madrid-events.es/district/PUENTE DE VALLECAS> a mde:District ;
+    schema:name "PUENTE DE VALLECAS" ;
+    schema:sameAs <https://wikidata.org/entity/Q2003054> .
+
+<http://madrid-events.es/neighborhood/SAN DIEGO> a mde:Neighborhood ;
+    schema:name "SAN DIEGO" ;
+    schema:sameAs <https://wikidata.org/entity/Q11946851> ;
+    mde:isPartOf <http://madrid-events.es/district/PUENTE DE VALLECAS> .
+
+<http://madrid-events.es/address/CALLE SIERRA MOLINA 1> a schema:PostalAddress ;
+    schema:streetAddress "CALLE SIERRA MOLINA 1" ;
+    schema:postalCode "28053" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/PUENTE DE VALLECAS> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/SAN DIEGO> .<http://madrid-events.es/event/50047774> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Audiovisual más que humano}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=c8a9365445339910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-11-26T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-11-26T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "2,00 euros" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "centro de cultura contemporánea conde duque" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426480> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/CALLE CONDE DUQUE 9> .
+
+<http://madrid-events.es/district/CENTRO> a mde:District ;
+    schema:name "CENTRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q1763376> .
+
+<http://madrid-events.es/neighborhood/UNIVERSIDAD> a mde:Neighborhood ;
+    schema:name "UNIVERSIDAD" ;
+    schema:sameAs <https://wikidata.org/entity/Q10387767> ;
+    mde:isPartOf <http://madrid-events.es/district/CENTRO> .
+
+<http://madrid-events.es/address/CALLE CONDE DUQUE 9> a schema:PostalAddress ;
+    schema:streetAddress "CALLE CONDE DUQUE 9" ;
+    schema:postalCode "28015" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/CENTRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/UNIVERSIDAD> .<http://madrid-events.es/event/50076603> a schema:Event, schema:MusicEvent ;
+    mde:eventType "Musica" ;
+    schema:name "Baile social Forró}" ;
+    
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=7a393e1b42b99910VgnVCM100000891ecb1aRCRD> ;
+    schema:startDate "2025-10-04T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-10-04T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "1"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Ver en página web" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e791bed05ceed310VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e791bed05ceed310VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "biblioteca pública municipal eugenio trías. casa de fieras de el retiro" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e791bed05ceed310VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q85697904> ;
+    mde:accessibility "1,6"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PASEO FERNÁN NÚÑEZ 24> .
+
+<http://madrid-events.es/district/RETIRO> a mde:District ;
+    schema:name "RETIRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://madrid-events.es/neighborhood/LOS JERONIMOS> a mde:Neighborhood ;
+    schema:name "LOS JERONIMOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q10306766> ;
+    mde:isPartOf <http://madrid-events.es/district/RETIRO> .
+
+<http://madrid-events.es/address/PASEO FERNÁN NÚÑEZ 24> a schema:PostalAddress ;
+    schema:streetAddress "PASEO FERNÁN NÚÑEZ 24" ;
+    schema:postalCode "28009" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/RETIRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/LOS JERONIMOS> .<http://madrid-events.es/event/50053368> a schema:Event, schema:Event ;
+    mde:eventType "ProgramacionDestacadaAgendaCultura" ;
+    schema:name "Baldo Martínez}" ;
+    schema:description """Sucede cada año y la presente edición de JAZZMADRID no iba a revelarse diferente. Esta cita, que se celebra desde 2014, sigue firme en su empeño en seguir siendo uno de los centros neurálgicos del jazz en Europa. Su presencia entre nosotros es un fenómeno que la gran afición aguarda expectante cada vez que llega el otoño, y su centro de gravedad permanente sigue estando asociado a la solera cultural de los enclaves municipales donde todo acontece: Teatro Fernán Gómez, CentroCentro y Conteporánea Condeduque. E, igualmente, en aquellas otras escenas donde tienen lugar los conciertos de la enseña Villanos del Jazz, que, por quinto año consecutivo, forman parte de la programación oficial del festival: Teatros Pavón, Albéniz, Barceló y Fernán Gómez, Sala Villanos y diferentes auditorios de hasta cuatro localidades de la Comunidad de Madrid. La muestra se desarrollará a lo largo de los meses de septiembre, octubre y noviembre, abriendo ante los ojos y oídos de la afición un vistoso muestrario jazzístico. En el programa se prestará mucha atención, por una parte, a la defensa de la más estricta ortodoxia histórica del género, y, por otra, estará muy presente también la vigilancia de la reivindicación de su libertad como esencia de la condición creadora que tiene esta música para experimentar. La idea sigue rastreando el mejor modo de mostrar todas las tendencias y coloraciones imaginables, renovadoras y también tradicionales del jazz, pues solo con el compendio de ambas es posible mantener activa la memoria, el reto fundamental de cualquiera de nuestras sociedades, ocupadas demasiadas veces en la ilusión del presente, aunque éste ya sea historia cuando se empieza a ser consciente del paso del tiempo. Luis Martín, director artístico Baldo Martínez 14.11.2025 19.00 h  Las propuestas más renovadoras siguen contando con espacio propio en JAZZMADRID a través de varios conciertos. Uno de ellos, el de este cuarteto del contrabajista Baldo Martínez. En este espacio virtual que sirve a este festival para informarles acerca de los artistas que vienen a la programación, se ha dicho ya alguna vez de Baldo que es como un Dave Holland gallego que cada día se parece más a Barry Guy. Hoy hay que volver a repetirlo. En esta aventura con su Cuarteto Edición Especial, un proyecto que nació hace un par de años, convoca a tres torres de alta tensión del jazz contemporáneo. De un lado, sus admirados Román Filiú en saxos, y Chema Sáiz en guitarra; en el otro, el baterista y percusionista Pier Bruera. Los primeros siguen fieles a su filosofía rupturista, ecléctica, de esquiva clasificación, mantenido muy alto el pabellón de la creatividad y la competencia. El argentino Pier Bruera, por su parte, es otro de esos alumnos aventajados a los que ya nos tiene acostumbrados a ver el Centro Superior de Música Musikene. Su estilo se pasea por la música improvisada y el jazz y hace oportunas paradas en un territorio de influencias musicales muy amplias. Gente, en fin, que, cuando decide unir sus destinos, consigue pleno de diez aludiendo a esta Edición Especial en su nombre, porque lo suyo es un enérgico fogonazo de música libre, realmente diferente y, en efecto, muy especial. Jazz polícromo e impredecible, con un fluido diálogo a cuatro bandas alentado por el imparable motor de la improvisación. Un ejemplo soberbio de individualidad expresiva, solo replicada por la improvisación colectiva. Baldo sigue rebuscando raíces para su música en esas fuentes folclóricas que caracterizan su estilo desde la publicación de aquel disco en 1996, No país dos ananos. Edición Especial es la prolongación de ese universo sonoro, que, como ya sucedió hace algunos años con la convocatoria en JAZZMADRID del Cuarteto Europa, sigue replicando la hegemonía de la escena creativa escandinava. Música del mañana que, como todo lo que hace esta gente, individualmente y en conjunto, sigue disponiendo de una rabiosa contemporaneidad.""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d81c31298bc39910VgnVCM200000f921e388RCRD> ;
+    schema:startDate "2025-11-14T00:00:00Z"^^xsd:dateTime ;
+    schema:endDate "2025-11-14T23:59:00Z"^^xsd:dateTime ;
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+    schema:isAccessibleForFree "0"^^xsd:boolean ;
+    schema:audience "Todos los públicos" ;
+    mde:longDuration "0"^^xsd:boolean ;
+    schema:price "Entrada: 20  euros Descuentos disponibles" ;
+    schema:location <http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> .
+
+<http://madrid-events.es/place/http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> a schema:Place ;
+    schema:name "centrocentro" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD> ;
+    schema:sameAs <https://wikidata.org/entity/Q56426764> ;
+    mde:accessibility "1"^^xsd:integer ;
+    schema:address <http://madrid-events.es/address/PLAZA CIBELES 1> .
+
+<http://madrid-events.es/district/RETIRO> a mde:District ;
+    schema:name "RETIRO" ;
+    schema:sameAs <https://wikidata.org/entity/Q2002296> .
+
+<http://madrid-events.es/neighborhood/LOS JERONIMOS> a mde:Neighborhood ;
+    schema:name "LOS JERONIMOS" ;
+    schema:sameAs <https://wikidata.org/entity/Q10306766> ;
+    mde:isPartOf <http://madrid-events.es/district/RETIRO> .
+
+<http://madrid-events.es/address/PLAZA CIBELES 1> a schema:PostalAddress ;
+    schema:streetAddress "PLAZA CIBELES 1" ;
+    schema:postalCode "28014" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/RETIRO> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/LOS JERONIMOS> .

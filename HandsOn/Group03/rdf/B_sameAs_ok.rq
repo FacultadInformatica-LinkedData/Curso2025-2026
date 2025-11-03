@@ -1,0 +1,8 @@
+﻿PREFIX schema: <http://schema.org/>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+SELECT ?s (COUNT(?adminLocal) AS ?nLinks) WHERE {
+  ?s a schema:Place ; schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD .
+}
+GROUP BY ?s
+HAVING (?nLinks = 3)

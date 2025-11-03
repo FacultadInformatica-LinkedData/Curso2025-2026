@@ -1,0 +1,508 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Can Cui脿s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Can Cuiàs"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Zona Universit脿ria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zona Universitaria"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parc de Montju茂c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parc de Montjuïc"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q928830",
+        "name": "metro station"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOM_ESTACIO to type Q928830"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "similarValue": "Bellvitge",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2547661",
+      "name": "Bellvitge",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Bellvitge (Q2547661) para las celdas que contienen \"Bellvitge\" en la columna NOM_ESTACIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "similarValue": "Universitat",
+    "judgment": "matched",
+    "match": {
+      "id": "Q678668",
+      "name": "Universitat",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Universitat (Q678668) para las celdas que contienen \"Universitat\" en la columna NOM_ESTACIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "similarValue": "Marina",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2251103",
+      "name": "Marina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Marina (Q2251103) para las celdas que contienen \"Marina\" en la columna NOM_ESTACIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "similarValue": "Parc de Montjuïc (Barcelona Metro)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2436833",
+      "name": "Parc de Montjuïc (Barcelona Metro)",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Parc de Montjuïc (Barcelona Metro) (Q2436833) para las celdas que contienen \"Parc de Montjuïc (Barcelona Metro)\" en la columna NOM_ESTACIO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOM_ESTACIO",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_NOM_ESTACIO",
+    "columnInsertIndex": 8,
+    "description": "Crear la columna same_as_wikidata_NOM_ESTACIO en el índice 8 basada en la columna NOM_ESTACIO usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q15079663",
+        "name": "rapid transit railway line"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOM_LINIA to type Q15079663"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L1",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1348946",
+      "name": "Barcelona Metro line 1",
+      "types": [
+        "Q15079663"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 1 (Q1348946) para las celdas que contienen \"L1\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L2",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1348921",
+      "name": "Barcelona Metro line 2",
+      "types": [
+        "Q15079663"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 2 (Q1348921) para las celdas que contienen \"L2\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L3",
+    "judgment": "matched",
+    "match": {
+      "id": "Q385168",
+      "name": "Barcelona Metro line 3",
+      "types": [
+        "Q15079663"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 3 (Q385168) para las celdas que contienen \"L3\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L4",
+    "judgment": "matched",
+    "match": {
+      "id": "Q961384",
+      "name": "Barcelona Metro line 4",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 4 (Q961384) para las celdas que contienen \"L4\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L5",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1348939",
+      "name": "Barcelona Metro line 5",
+      "types": [
+        "Q15079663"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 5 (Q1348939) para las celdas que contienen \"L5\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L9N",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1577033",
+      "name": "Barcelona Metro line 9",
+      "types": [
+        "Q107343049",
+        "Q1192191"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 9 (Q1577033) para las celdas que contienen \"L9N\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L9S",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1577033",
+      "name": "Barcelona Metro line 9",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 9 (Q1577033) para las celdas que contienen \"L9S\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L10N",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1785338",
+      "name": "Barcelona Metro line 10",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 10 (Q1785338) para las celdas que contienen \"L10N\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L10S",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1785338",
+      "name": "Barcelona Metro line 10",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 10 (Q1785338) para las celdas que contienen \"L10S\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "FM",
+    "judgment": "matched",
+    "match": {
+      "id": "Q388195",
+      "name": "Funicular de Montjuïc",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Funicular de Montjuïc (Q388195) para las celdas que contienen \"FM\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOM_LINIA",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_NOM_LINIA",
+    "columnInsertIndex": 13,
+    "description": "Crear la columna same_as_wikidata_NOM_LINIA en el índice 13 basada en la columna NOM_LINIA usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q928830",
+        "name": "metro station"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ORIGEN_SERVEI to type Q928830"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ORIGEN_SERVEI",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_ORIGEN_SERVEI",
+    "columnInsertIndex": 18,
+    "description": "Crear la columna same_as_wikidata_ORIGEN_SERVEI en el índice 18 basada en la columna ORIGEN_SERVEI usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q928830",
+        "name": "metro station"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DESTI_SERVEI to type Q928830"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "similarValue": "Parc de Montjuïc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2436833",
+      "name": "Parc de Montjuïc (Barcelona Metro)",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Parc de Montjuïc (Barcelona Metro) (Q2436833) para las celdas que contienen \"Parc de Montjuïc\" en la columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DESTI_SERVEI",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_DESTI_SERVEI",
+    "columnInsertIndex": 20,
+    "description": "Crear la columna same_as_wikidata_DESTI_SERVEI en el índice 20 basada en la columna DESTI_SERVEI usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

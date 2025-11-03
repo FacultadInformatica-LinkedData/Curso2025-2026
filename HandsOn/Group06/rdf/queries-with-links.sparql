@@ -1,0 +1,68 @@
+# queries-with-links.sparql
+# Validation and exploration queries for Group06 linked RDF
+PREFIX ex:     <https://raw.githubusercontent.com/paulinaloew/Curso2025-2026/master/HandsOn/Group06/def/>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <http://schema.org/>
+
+# 1) Count resources by class
+SELECT ?class (COUNT(?s) AS ?count)
+WHERE {
+  ?s a ?class .
+}
+GROUP BY ?class
+ORDER BY DESC(?count)
+
+# 2) GreenZones without a linked District (should be 0)
+SELECT ?zone
+WHERE {
+  ?zone a ex:GreenZone .
+  FILTER NOT EXISTS { ?zone ex:inDistrict ?d . }
+}
+LIMIT 100
+
+# 3) Districts and how many GreenZones each contains
+SELECT ?districtLabel (COUNT(?zone) AS ?zones)
+WHERE {
+  ?zone a ex:GreenZone ; ex:inDistrict ?district .
+  OPTIONAL { ?district rdfs:label ?districtLabel }
+}
+GROUP BY ?districtLabel
+ORDER BY DESC(?zones)
+
+# 4) Trees missing species or park links (should be 0)
+SELECT ?tree
+WHERE {
+  ?tree a ex:Tree .
+  FILTER NOT EXISTS { ?tree ex:hasSpecies ?sp . }
+  UNION
+  FILTER NOT EXISTS { ?tree ex:inPark ?pk . }
+}
+LIMIT 50
+
+# 5) Top species by treeCount (aggregated over parks)
+SELECT ?species ?label (SUM(?n) AS ?total)
+WHERE {
+  ?t a ex:Tree ; ex:hasSpecies ?species ; ex:treeCount ?n .
+  OPTIONAL { ?species rdfs:label ?label }
+}
+GROUP BY ?species ?label
+ORDER BY DESC(?total)
+LIMIT 20
+
+# 6) Trees per Park (top 20)
+SELECT ?park ?label (SUM(?n) AS ?totalTrees)
+WHERE {
+  ?t a ex:Tree ; ex:inPark ?park ; ex:treeCount ?n .
+  OPTIONAL { ?park rdfs:label ?label }
+}
+GROUP BY ?park ?label
+ORDER BY DESC(?totalTrees)
+LIMIT 20
+
+# 7) Sample of resources to eyeball
+SELECT ?s ?p ?o
+WHERE { ?s ?p ?o }
+LIMIT 100

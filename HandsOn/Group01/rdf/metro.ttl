@@ -117,7 +117,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/124> ;
     ns1:stationOrder 14 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/125_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/125_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/125> ;
     ns1:stationOrder 15 .
@@ -164,7 +165,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/132> ;
     ns1:stationOrder 22 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/133_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/133_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/133> ;
     ns1:stationOrder 23 .
@@ -403,7 +405,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/327> ;
     ns1:stationOrder 14 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/328_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/328_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/328> ;
     ns1:stationOrder 15 .
@@ -594,7 +597,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/432> ;
     ns1:stationOrder 20 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/433_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/433_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/433> ;
     ns1:stationOrder 21 .
@@ -677,7 +681,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/520> ;
     ns1:stationOrder 13 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/521_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/521_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/521> ;
     ns1:stationOrder 14 .
@@ -838,7 +843,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/914> ;
     ns1:stationOrder 9 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/914_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/914_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/914> ;
     ns1:stationOrder 12 .
@@ -903,7 +909,8 @@
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/933> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/933_L94> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/933_L94> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/933> ;
     ns1:stationOrder 3 .
@@ -1051,9 +1058,11 @@
     rdfs:label "Hospital de Bellvitge" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.107241921905464 41.344677306491334)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1989-10-18"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 111 ;
     ns1:stationId 81 ;
     ns1:stationName "Hospital de Bellvitge" .
 
@@ -1073,6 +1082,7 @@
     rdfs:label "L'Hospitalet - Av. Carrilet" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.102631528901838 41.35855331385863)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1987-04-24"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1084,9 +1094,11 @@
     rdfs:label "Trinitat Nova" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1831995355623732 41.44989974745443)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2003-12-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L11" ;
+    ns1:stationCode 1136 ;
     ns1:stationId 65 ;
     ns1:stationName "Trinitat Nova" .
 
@@ -1106,6 +1118,7 @@
     rdfs:label "Torre Baró-Vallbona" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1798835778205032 41.45919574810995)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2003-12-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L11" ;
@@ -1133,6 +1146,7 @@
     ns1:inauguratedDate "1987-04-24"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 114 ;
     ns1:stationId 82 ;
     ns1:stationName "Rambla Just Oliveras" .
 
@@ -1140,6 +1154,7 @@
     rdfs:label "Can Cuiàs" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.173059363097836 41.46241309910048)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2003-12-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L11" ;
@@ -1151,6 +1166,7 @@
     rdfs:label "Can Serra" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1027575190099883 41.367694011134795)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1987-04-24"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1186,6 +1202,7 @@
     rdfs:label "Santa Eulàlia" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1286172553621183 41.36881637467315)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1983-12-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1197,9 +1214,11 @@
     rdfs:label "Mercat Nou" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.133535784694404 41.373002700088556)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 119 ;
     ns1:stationId 128 ;
     ns1:stationName "Mercat Nou" .
 
@@ -1211,6 +1230,7 @@
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 120 ;
     ns1:stationId 124 ;
     ns1:stationName "Plaça de Sants" .
 
@@ -1218,6 +1238,7 @@
     rdfs:label "Hostafrancs" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1432912673316498 41.37525362810128)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1229,6 +1250,7 @@
     rdfs:label "Espanya" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> ;
     ns1:hasGeometry "POINT (2.1493824969898103 41.37551004426985)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1240,6 +1262,7 @@
     rdfs:label "Rocafort" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.154562483439547 41.37923215305268)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1251,6 +1274,7 @@
     rdfs:label "Urgell" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1588909108500465 41.38248740020102)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1262,6 +1286,7 @@
     rdfs:label "Universitat" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1642838555557415 41.385814896985046)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1926-06-10"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1285,9 +1310,11 @@
     rdfs:label "Urquinaona" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> ;
     ns1:hasGeometry "POINT (2.174566581524138 41.389636425102836)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1933-07-01"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 127 ;
     ns1:stationId 40 ;
     ns1:stationName "Urquinaona" .
 
@@ -1299,6 +1326,7 @@
     ns1:inauguratedDate "1933-07-01"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 128 ;
     ns1:stationId 134 ;
     ns1:stationName "Arc de Triomf" .
 
@@ -1306,9 +1334,11 @@
     rdfs:label "Marina" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1858010331425235 41.39472528791244)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1933-04-01"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 129 ;
     ns1:stationId 86 ;
     ns1:stationName "Marina" .
 
@@ -1316,6 +1346,7 @@
     rdfs:label "Glòries" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.187537470950601 41.4022772166665)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1951-06-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1339,9 +1370,11 @@
     rdfs:label "Navas" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1870567842653172 41.41618670887784)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1953-05-08"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
+    ns1:stationCode 132 ;
     ns1:stationId 44 ;
     ns1:stationName "Navas" .
 
@@ -1349,6 +1382,7 @@
     rdfs:label "La Sagrera-Meridiana station" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1869753319473184 41.42236876778433)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1954-01-27"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1372,6 +1406,7 @@
     rdfs:label "Sant Andreu" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1911868908810366 41.43660044290323)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1968-03-14"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1383,6 +1418,7 @@
     rdfs:label "Torras i Bages" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.190670630058029 41.44322471120022)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1968-03-14"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1394,6 +1430,7 @@
     rdfs:label "Trinitat Vella" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.19383728111338 41.448956491210204)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1983-12-21"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1429,6 +1466,7 @@
     rdfs:label "Fondo" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2184351315232798 41.45158314986258)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1992-02-18"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
@@ -1452,6 +1490,7 @@
     rdfs:label "Sant Antoni" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1632411382555055 41.37983283932031)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1995-09-25"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1463,6 +1502,7 @@
     rdfs:label "Universitat" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.163913361869796 41.38476754205573)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1995-09-25"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1486,6 +1526,7 @@
     rdfs:label "Tetuan" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.175559181787991 41.394887450597096)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1995-09-25"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1497,6 +1538,7 @@
     rdfs:label "Monumental" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1794616714099684 41.40052374172786)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1995-09-25"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1520,9 +1562,11 @@
     rdfs:label "Encants" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.182700370252568 41.40723597843338)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1997-09-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
+    ns1:stationCode 217 ;
     ns1:stationId 112 ;
     ns1:stationName "Encants" .
 
@@ -1546,6 +1590,7 @@
     ns1:inauguratedDate "1997-09-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
+    ns1:stationCode 219 ;
     ns1:stationId 113 ;
     ns1:stationName "Bac de Roda" .
 
@@ -1553,6 +1598,7 @@
     rdfs:label "Sant Martí" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2007239139818875 41.419063621458996)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1997-09-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1564,6 +1610,7 @@
     rdfs:label "La Pau" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.205608148173806 41.42403302510149)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1997-09-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1575,6 +1622,7 @@
     rdfs:label "Verneda" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.209883422365895 41.43000446400387)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-04-22"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1586,6 +1634,7 @@
     rdfs:label "Artigues | Sant Adrià" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.217771760065826 41.43384822541837)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-04-22"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1609,9 +1658,11 @@
     rdfs:label "Gorg" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2334409930935344 41.440237216720185)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-04-22"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
+    ns1:stationCode 225 ;
     ns1:stationId 59 ;
     ns1:stationName "Gorg" .
 
@@ -1623,6 +1674,7 @@
     ns1:inauguratedDate "1985-04-22"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
+    ns1:stationCode 226 ;
     ns1:stationId 115 ;
     ns1:stationName "Pep Ventura" .
 
@@ -1630,6 +1682,7 @@
     rdfs:label "Badalona Pompeu Fabra" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.244096816044607 41.44905421071657)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2010-07-11"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
@@ -1645,6 +1698,7 @@
     ns1:inauguratedDate "1975-01-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
+    ns1:stationCode 314 ;
     ns1:stationId 13 ;
     ns1:stationName "Zona Universitària" .
 
@@ -1652,6 +1706,7 @@
     rdfs:label "Palau Reial" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.118538181084618 41.385980056620134)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1975-01-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
@@ -1747,6 +1802,7 @@
     rdfs:label "Paral·lel" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1691181337700103 41.374892188019956)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1970-06-17"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
@@ -1806,6 +1862,7 @@
     rdfs:label "Provença-Diagonal station" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.160047462460906 41.39588794733583)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1924-12-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
@@ -1821,6 +1878,7 @@
     ns1:inauguratedDate "1925-05-31"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
+    ns1:stationCode 329 ;
     ns1:stationId 69 ;
     ns1:stationName "Fontana" .
 
@@ -1828,6 +1886,7 @@
     rdfs:label "Lesseps" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1504071221317904 41.405738025515355)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1924-12-31"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
@@ -1839,9 +1898,11 @@
     rdfs:label "Vallcarca" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.144337309169914 41.411974951406016)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-11-06"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
+    ns1:stationCode 331 ;
     ns1:stationId 72 ;
     ns1:stationName "Vallcarca" .
 
@@ -1861,9 +1922,11 @@
     rdfs:label "Vall d'Hebron" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1425645984456283 41.425282662715574)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-11-06"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
+    ns1:stationCode 333 ;
     ns1:stationId 71 ;
     ns1:stationName "Vall d'Hebron" .
 
@@ -1871,6 +1934,7 @@
     rdfs:label "Montbau" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.145039277808795 41.43062015567553)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-11-06"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
@@ -1894,9 +1958,11 @@
     rdfs:label "Valldaura" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1568778304495613 41.437996077035756)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2001-09-21"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
+    ns1:stationCode 336 ;
     ns1:stationId 137 ;
     ns1:stationName "Valldaura" .
 
@@ -1920,6 +1986,7 @@
     ns1:inauguratedDate "2008-10-04"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
+    ns1:stationCode 338 ;
     ns1:stationId 70 ;
     ns1:stationName "Roquetes" .
 
@@ -1987,9 +2054,11 @@
     rdfs:label "Selva de Mar" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.209122498871073 41.40800151156723)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1977-10-07"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
+    ns1:stationCode 417 ;
     ns1:stationId 91 ;
     ns1:stationName "Selva de Mar" .
 
@@ -2009,6 +2078,7 @@
     rdfs:label "Llacuna" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.197711708647738 41.39942503860002)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1977-10-07"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
@@ -2020,6 +2090,7 @@
     rdfs:label "Bogatell" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.192012401533471 41.395107503840855)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1977-10-07"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
@@ -2031,6 +2102,7 @@
     rdfs:label "Ciutadella-Vila Olímpica" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> ;
     ns1:hasGeometry "POINT (2.1929907067808103 41.38668673570774)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1977-10-07"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
@@ -2078,6 +2150,7 @@
     rdfs:label "Passeig de Gràcia" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.167846312978762 41.390057124825155)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1973-02-05"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
@@ -2149,6 +2222,7 @@
     rdfs:label "Maragall" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1773969166751077 41.42310447161922)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1982-04-19"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
@@ -2164,6 +2238,7 @@
     ns1:inauguratedDate "1982-04-19"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
+    ns1:stationCode 432 ;
     ns1:stationId 107 ;
     ns1:stationName "Llucmajor" .
 
@@ -2207,9 +2282,11 @@
     rdfs:label "Gavarra" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.0792687248839616 41.35799331639214)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1983-12-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
+    ns1:stationCode 510 ;
     ns1:stationId 73 ;
     ns1:stationName "Gavarra" .
 
@@ -2241,6 +2318,7 @@
     rdfs:label "Can Vidalet" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.099445030163751 41.37127879519907)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1976-11-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2252,6 +2330,7 @@
     rdfs:label "Pubilla Cases" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1072090599014683 41.373837586750604)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1973-02-05"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2287,9 +2366,11 @@
     rdfs:label "Plaça de Sants" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> ;
     ns1:hasGeometry "POINT (2.135158937983289 41.37572752856528)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1969-11-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
+    ns1:stationCode 517 ;
     ns1:stationId 6 ;
     ns1:stationName "Plaça de Sants" .
 
@@ -2301,6 +2382,7 @@
     ns1:inauguratedDate "1969-11-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
+    ns1:stationCode 518 ;
     ns1:stationId 77 ;
     ns1:stationName "Sants Estació" .
 
@@ -2308,6 +2390,7 @@
     rdfs:label "Entença" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.145618590090013 41.38446685535986)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1969-11-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2319,6 +2402,7 @@
     rdfs:label "Hospital Clínic" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.151081070999777 41.388607764469285)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1969-11-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2346,6 +2430,7 @@
     ns1:inauguratedDate "1970-06-26"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
+    ns1:stationCode 522 ;
     ns1:stationId 78 ;
     ns1:stationName "Verdaguer" .
 
@@ -2377,6 +2462,7 @@
     rdfs:label "Camp de l'Arpa" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.181497212109148 41.41505960638405)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1970-06-26"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2388,6 +2474,7 @@
     rdfs:label "La Sagrera-Meridiana station" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1865821259707423 41.421296371102905)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1959-07-21"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2399,9 +2486,11 @@
     rdfs:label "Congrés" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.181186224264109 41.42344042865811)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1959-07-21"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
+    ns1:stationCode 527 ;
     ns1:stationId 138 ;
     ns1:stationName "Congrés" .
 
@@ -2409,9 +2498,11 @@
     rdfs:label "Maragall" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> ;
     ns1:hasGeometry "POINT (2.1764850046506017 41.425045349513496)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1959-07-21"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
+    ns1:stationCode 528 ;
     ns1:stationId 30 ;
     ns1:stationName "Maragall" .
 
@@ -2455,6 +2546,7 @@
     rdfs:label "El Carmel" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1550989391746174 41.424449773703074)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2010-07-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2466,6 +2558,7 @@
     rdfs:label "El Coll | La Teixonera" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1483484951724954 41.4219971367312)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2010-07-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
@@ -2537,6 +2630,7 @@
     rdfs:label "Parc Nou" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.0879294280214027 41.316628454057685)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
@@ -2552,6 +2646,7 @@
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
+    ns1:stationCode 906 ;
     ns1:stationId 318 ;
     ns1:stationName "Cèntric" .
 
@@ -2559,6 +2654,7 @@
     rdfs:label "El Prat Estació" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.0899271044508416 41.33199264221667)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
@@ -2570,9 +2666,11 @@
     rdfs:label "Les Moreres" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.103073086929979 41.329118641471766)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
+    ns1:stationCode 909 ;
     ns1:stationId 321 ;
     ns1:stationName "Les Moreres" .
 
@@ -2580,6 +2678,7 @@
     rdfs:label "Mercabarna" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1112537335089394 41.33348460371202)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
@@ -2595,6 +2694,7 @@
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
+    ns1:stationCode 911 ;
     ns1:stationId 323 ;
     ns1:stationName "Parc Logístic (Barcelona Metro)" .
 
@@ -2614,6 +2714,7 @@
     rdfs:label "Europa | Fira station" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1259237814712875 41.35756042682608)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
@@ -2637,9 +2738,11 @@
     rdfs:label "Llefià" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.216906383705608 41.441359580549786)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> ;
     ns1:inauguratedDate "2010-04-18"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10N" ;
+    ns1:stationCode 934 ;
     ns1:stationId 105 ;
     ns1:stationName "Llefià" .
 
@@ -2647,6 +2750,7 @@
     rdfs:label "La Salut" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.224737073931071 41.442817097125406)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> ;
     ns1:inauguratedDate "2010-04-18"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10N" ;
@@ -2662,6 +2766,7 @@
     ns1:inauguratedDate "2010-04-18"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10N" ;
+    ns1:stationCode 936 ;
     ns1:stationId 130 ;
     ns1:stationName "Gorg" .
 
@@ -2721,6 +2826,7 @@
     ns1:inauguratedDate "2009-12-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
+    ns1:stationCode 944 ;
     ns1:stationId 98 ;
     ns1:stationName "Singuerlín" .
 
@@ -2728,6 +2834,7 @@
     rdfs:label "Can Zam" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1985694162738683 41.456666111515304)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2009-12-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
@@ -2767,6 +2874,7 @@
     ns1:inauguratedDate "2021-11-07"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
+    ns1:stationCode 953 ;
     ns1:stationId 334 ;
     ns1:stationName "Port Comercial station" .
 
@@ -2774,6 +2882,7 @@
     rdfs:label "Zona Franca station" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.144964431606467 41.34297610170164)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2020-02-01"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
@@ -2813,6 +2922,7 @@
     ns1:inauguratedDate "2019-11-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
+    ns1:stationCode 958 ;
     ns1:stationId 339 ;
     ns1:stationName "Ildefons Cerdà" .
 
@@ -2832,6 +2942,7 @@
     rdfs:label "Paral·lel" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.168853176999821 41.37384752700368)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1928-10-24"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "FM" ;
@@ -2843,15 +2954,13 @@
     rdfs:label "Parc de Montjuïc (Barcelona Metro)" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.163268768163695 41.36895607486559)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1928-10-24"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "FM" ;
     ns1:stationCode 9902 ;
     ns1:stationId 12 ;
     ns1:stationName "Parc de Montjuïc (Barcelona Metro)" .
-
-<https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> a ns1:StationStatus ;
-    rdfs:label "Planificat" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/914> a ns1:Station ;
     rdfs:label "Can Tries | Gornal" ;
@@ -2893,6 +3002,8 @@
     rdfs:label "La Sagrera-Meridiana station" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.186723178122834 41.42049390964819)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu>,
+        <https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> ;
     ns1:inauguratedDate "2010-06-26"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9NL10N" ;
@@ -2917,9 +3028,12 @@
     rdfs:label "Bon Pastor" ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2052943593324428 41.43620276671675)"^^geo:wktLiteral ;
+    ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu>,
+        <https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> ;
     ns1:inauguratedDate "2010-04-18"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9NL10N" ;
+    ns1:stationCode 933 ;
     ns1:stationId 104 ;
     ns1:stationName "Bon Pastor" .
 
@@ -2978,6 +3092,9 @@
     ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
     ns1:originStation "La Sagrera-Meridiana station" ;
     ns1:textColor "FFFFFF" .
+
+<https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> a ns1:StationStatus ;
+    rdfs:label "Planificat" .
 
 <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> a ns1:MetroLine ;
     rdfs:label "L9N" ;
@@ -3441,11 +3558,11 @@
     ns1:originStation "Hospital de Bellvitge" ;
     ns1:textColor "FFFFFF" .
 
-<https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> a ns1:StationStatus ;
-    rdfs:label "Operatiu" .
-
 <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> a ns1:AccessibilityType ;
     rdfs:label "Accessible" .
+
+<https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> a ns1:StationStatus ;
+    rdfs:label "Operatiu" .
 
 <https://data.example.org/transport/bcn/metro/resource/serviceType/1> a ns1:ServiceType ;
     rdfs:label "Aeroport T1 - Zona Universitaria",

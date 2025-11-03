@@ -1,0 +1,67 @@
+prefixes:
+  rr:  http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql:  http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  ns:  https://data.smartcitymadrid.es/ontology/parking#
+  ex:  https://data.smartcitymadrid.es/id/parking/
+
+mappings:
+  triplesmap1:
+    sources:
+      - [parkings-updated-with-links.csv~csv]
+    s: ex:$(id)
+    po:
+      - [a, ns:Parking]
+
+      - [ns:hasId, $(id)]
+      - [ns:hasFamily, $(family)]
+      - [ns:hasName, $(name)]
+      - [ns:hasEmail, $(email)]
+      - [ns:hasAddress, $(address)]
+
+      - p: ns:hasAreaCode
+        o: { value: $(areaCode), datatype: xsd:integer }
+
+      - [ns:hasArea, $(zrea)]
+      - [owl:sameAs, $(wiki_data_zrea)~iri]
+      - [ns:hasCategory, $(category)]
+
+      - p: ns:hasCategoryCode
+        o: { value: $(catCode), datatype: xsd:integer }  
+
+      - [ns:hasCountry, $(country)]
+      - [owl:sameAs, $(wiki_data_country)~iri]
+      - [ns:hasURLIcon, $(URLIcono)~iri]
+
+      - p: ns:hasLocation
+        o: ex:$(id)/location~iri
+
+  LocationTM:
+    sources:
+      - [parkings-updated-with-links.csv~csv]
+    s: ex:$(id)/location
+    po:
+      - [a, ns:Location]
+
+      - p: ns:hasLongitude
+        o: { value: $(long), datatype: xsd:double }
+
+      - p: ns:hasLatitude
+        o: { value: $(lat), datatype: xsd:double }
+
+      - [ns:hasState, $(state)]
+      - [owl:sameAs, $(wiki_data_state)~iri]
+      - [ns:hasTown, $(town)]
+      - [owl:sameAs, $(wiki_data_town)~iri]
+
+      - p: ns:isEMTParking
+        o: { value: $(emtParking), datatype: xsd:boolean }
+
+      - [ns:hasType, $(type)]

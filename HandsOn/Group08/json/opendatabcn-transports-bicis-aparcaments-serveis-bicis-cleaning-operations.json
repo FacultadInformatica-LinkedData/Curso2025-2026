@@ -766,5 +766,31 @@
     "repeat": false,
     "repeatCount": 0,
     "description": "Text transform on cells in column geo_epgs_4326_lon using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "register_id",
+    "expression": "grel:value.replace(\"﻿\", \"\")",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column register_id using expression grel:value.replace(\"﻿\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "register_id",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column register_id using expression value.toNumber()"
   }
 ]

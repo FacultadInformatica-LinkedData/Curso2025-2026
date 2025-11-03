@@ -1,0 +1,102 @@
+=== Prefix ===
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix mde: <http://madrid-events.es/def/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+=== Row Template ===
+<http://madrid-events.es/event/{{cells['ID-EVENTO'].value}}> a schema:Event, {{
+if(contains(cells['TIPO'].value, 'ActividadesCalleArteUrbano'), 'schema:VisualArtsEvent',
+if(contains(cells['TIPO'].value, 'ActividadesDeportivas'), 'schema:SportsEvent',
+if(contains(cells['TIPO'].value, 'Arte'), 'schema:VisualArtsEvent',
+if(contains(cells['TIPO'].value, 'Campamentos'), 'schema:EducationEvent',
+if(contains(cells['TIPO'].value, 'CapacitacionDigital'), 'schema:EducationEvent',
+if(contains(cells['TIPO'].value, 'CineActividadesAudiovisuales'), 'schema:ScreeningEvent',
+if(contains(cells['TIPO'].value, 'CircoMagia'), 'schema:TheaterEvent',
+if(contains(cells['TIPO'].value, 'ClubesLectura'), 'schema:LiteraryEvent',
+if(contains(cells['TIPO'].value, 'ComemoracionesHomenajes'), 'schema:SocialEvent',
+if(contains(cells['TIPO'].value, 'ConcursosCertamenes'), 'schema:SocialEvent',
+if(contains(cells['TIPO'].value, 'ConferenciasColoquios'), 'schema:SocialEvent',
+if(contains(cells['TIPO'].value, 'CongresosJornadas'), 'schema:BusinessEvent',
+if(contains(cells['TIPO'].value, 'CuentacuentosTiteresMarionetas'), 'schema:TheaterEvent',
+if(contains(cells['TIPO'].value, 'CursosTalleres'), 'schema:EducationEvent',
+if(contains(cells['TIPO'].value, 'DanzaBaile'), 'schema:DanceEvent',
+if(contains(cells['TIPO'].value, 'ExcursionesItinerariosVisitas'), 'schema:TouristTrip',
+if(contains(cells['TIPO'].value, 'Exposiciones'), 'schema:ExhibitionEvent',
+if(contains(cells['TIPO'].value, 'Ferias'), 'schema:ExhibitionEvent',
+if(contains(cells['TIPO'].value, 'Fiestas'), 'schema:Festival',
+if(contains(cells['TIPO'].value, 'Idiomas'), 'schema:EducationEvent',
+if(contains(cells['TIPO'].value, 'ItinerariosOtrasActividadesAmbientales'), 'schema:TouristTrip',
+if(contains(cells['TIPO'].value, 'Musica'), 'schema:MusicEvent',
+if(contains(cells['TIPO'].value, 'ProgramacionDestacadaAgendaCultura'), 'schema:Event',
+if(contains(cells['TIPO'].value, 'RecitalesPresentacionesActosLiterarios'), 'schema:LiteraryEvent',
+if(contains(cells['TIPO'].value, 'TeatroPerformance'), 'schema:TheaterEvent', 'schema:Event'))))))))))))))))))))))))) }} ;
+if(contains(v, 'ActividadesCalleArteUrbano'), 'schema:VisualArtsEvent',
+if(contains(it, 'ActividadesDeportivas'), 'schema:SportsEvent',
+if(contains(it, 'Arte'), 'schema:VisualArtsEvent',
+if(contains(it, 'Campamentos'), 'schema:EducationEvent',
+if(contains(it, 'CapacitacionDigital'), 'schema:EducationEvent',
+if(contains(it, 'CineActividadesAudiovisuales'), 'schema:ScreeningEvent',
+if(contains(it, 'CircoMagia'), 'schema:TheaterEvent',
+if(contains(it, 'ClubesLectura'), 'schema:LiteraryEvent',
+if(contains(it, 'ComemoracionesHomenajes'), 'schema:SocialEvent',
+if(contains(it, 'ConcursosCertamenes'), 'schema:SocialEvent',
+if(contains(it, 'ConferenciasColoquios'), 'schema:SocialEvent',
+if(contains(it, 'CongresosJornadas'), 'schema:BusinessEvent',
+if(contains(it, 'CuentacuentosTiteresMarionetas'), 'schema:TheaterEvent',
+if(contains(it, 'CursosTalleres'), 'schema:EducationEvent',
+if(contains(it, 'DanzaBaile'), 'schema:DanceEvent',
+if(contains(it, 'ExcursionesItinerariosVisitas'), 'schema:TouristTrip',
+if(contains(it, 'Exposiciones'), 'schema:ExhibitionEvent',
+if(contains(it, 'Ferias'), 'schema:ExhibitionEvent',
+if(contains(it, 'Fiestas'), 'schema:Festival',
+if(contains(it, 'Idiomas'), 'schema:EducationEvent',
+if(contains(it, 'ItinerariosOtrasActividadesAmbientales'), 'schema:TouristTrip',
+if(contains(it, 'Musica'), 'schema:MusicEvent',
+if(contains(it, 'ProgramacionDestacadaAgendaCultura'), 'schema:Event',
+if(contains(it, 'RecitalesPresentacionesActosLiterarios'), 'schema:LiteraryEvent',
+if(contains(it, 'TeatroPerformance'), 'schema:TheaterEvent', 'schema:Event')))))))))))))))))))))))))) ;
+    mde:eventType "{{cells['TIPO'].value}}" ;
+    schema:name "{{cells['TITULO'].value.replace('"', '\\"')}}" ;
+{{if(cells['DESCRIPCION'].value != null, '    schema:description """' + cells['DESCRIPCION'].value.replace('"', '\\"') + '""" ;', '')}}
+{{if(cells['CONTENT-URL'].value != null, '    schema:url <' + cells['CONTENT-URL'].value + '> ;', '')}}
+{{if(cells['FECHA'].value != null, '    schema:startDate "' + cells['FECHA'].value + '"^^xsd:dateTime ;', '')}}
+{{if(cells['FECHA-FIN'].value != null, '    schema:endDate "' + cells['FECHA-FIN'].value + '"^^xsd:dateTime ;', '')}}
+    schema:eventAttendanceMode <http://madrid-events.es/def/OfflineEventAttendanceMode> ;
+{{if(cells['GRATUITO'].value != null, '    schema:isAccessibleForFree "' + cells['GRATUITO'].value + '"^^xsd:boolean ;', '')}}
+{{if(cells['AUDIENCIA'].value != null, '    schema:audience "' + cells['AUDIENCIA'].value + '" ;', '')}}
+{{if(cells['LARGA-DURACION'].value != null, '    mde:longDuration "' + cells['LARGA-DURACION'].value + '"^^xsd:boolean ;', '')}}
+{{if(cells['PRECIO'].value != null && cells['PRECIO'].value != "", '    schema:price "' + cells['PRECIO'].value + '" ;', '')}}
+    schema:location <http://madrid-events.es/place/{{cells['URL-INSTALACION'].value}}> .
+
+<http://madrid-events.es/place/{{cells['URL-INSTALACION'].value}}> a schema:Place ;
+{{if(cells['NOMBRE-INSTALACION'].value != null, '    schema:name "' + cells['NOMBRE-INSTALACION'].value.replace('"', '\\"') + '" ;', '')}}
+    schema:url <{{cells['URL-INSTALACION'].value}}> ;
+{{if(cells['NOMBRE-INSTALACION URI'].value != null, '    schema:sameAs <' + cells['NOMBRE-INSTALACION URI'].value + '> ;', '')}}
+{{if(cells['ACCESIBILIDAD-INSTALACION'].value != null, '    mde:accessibility "' + cells['ACCESIBILIDAD-INSTALACION'].value + '"^^xsd:integer ;', '')}}
+    schema:address <http://madrid-events.es/address/{{escape(cells['Dirección'].value)}}> .
+
+<http://madrid-events.es/district/{{escape(cells['DISTRITO-INSTALACION'].value)}}> a mde:District ;
+    schema:name "{{cells['DISTRITO-INSTALACION'].value}}" ;
+{{if(cells['DISTRITO-INSTALACION URI'].value != null, '    schema:sameAs <' + cells['DISTRITO-INSTALACION URI'].value + '> .', '.')}}
+
+<http://madrid-events.es/neighborhood/{{escape(cells['BARRIO-INSTALACION'].value)}}> a mde:Neighborhood ;
+    schema:name "{{cells['BARRIO-INSTALACION'].value}}" ;
+{{if(cells['BARRIO-INSTALACION URI'].value != null, '    schema:sameAs <' + cells['BARRIO-INSTALACION URI'].value + '> ;', '')}}
+    mde:isPartOf <http://madrid-events.es/district/{{escape(cells['DISTRITO-INSTALACION'].value)}}> .
+
+<http://madrid-events.es/address/{{escape(cells['Dirección'].value)}}> a schema:PostalAddress ;
+    schema:streetAddress "{{cells['Dirección'].value.replace('"', '\\"')}}" ;
+{{if(cells['CODIGO-POSTAL-INSTALACION'].value != null, '    schema:postalCode "' + cells['CODIGO-POSTAL-INSTALACION'].value + '" ;', '')}}
+    schema:addressLocality "Madrid" ;
+    schema:addressCountry "ES" ;
+    mde:district <http://madrid-events.es/district/{{escape(cells['DISTRITO-INSTALACION'].value)}}> ;
+    mde:neighborhood <http://madrid-events.es/neighborhood/{{escape(cells['BARRIO-INSTALACION'].value)}}> .
+
+
+=== Row Separator ===
+
+\n
+
+=== Suffix ===

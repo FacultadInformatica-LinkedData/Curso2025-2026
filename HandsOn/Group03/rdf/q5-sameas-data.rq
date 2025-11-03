@@ -1,0 +1,10 @@
+﻿PREFIX schema: <http://schema.org/>
+PREFIX wgs:    <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+SELECT ?station ?name ?lat ?long ?adminLabel WHERE {
+  ?station a schema:Place ; schema:name ?name ; wgs:lat ?lat ; wgs:long ?long ; schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD ; rdfs:label ?adminLabel .
+  FILTER(LANG(?adminLabel) = "es")
+}
+LIMIT 50

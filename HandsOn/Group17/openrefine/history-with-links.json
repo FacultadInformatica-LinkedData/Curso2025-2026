@@ -1,0 +1,829 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q22698",
+        "name": "park"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE PARQUE to type Q22698"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE DEL OESTE - TEMPLO DE DEBOD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2369398",
+      "name": "Parque del Oeste",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Parque del Oeste (Q2369398) para las celdas que contienen \"PARQUE DEL OESTE - TEMPLO DE DEBOD\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDÍN DE LA QUINTA DE LOS MOLINOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6062479",
+      "name": "Quinta de los Molinos Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Quinta de los Molinos Park (Q6062479) para las celdas que contienen \"JARDÍN DE LA QUINTA DE LOS MOLINOS\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5411839",
+      "name": "Quinta de la Fuente del Berro Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Quinta de la Fuente del Berro Park (Q5411839) para las celdas que contienen \"JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDÍN DE 'EL CAPRICHO' DE LA ALAMEDA DE OSUNA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2054035",
+      "name": "El Capricho Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento El Capricho Park (Q2054035) para las celdas que contienen \"JARDÍN DE 'EL CAPRICHO' DE LA ALAMEDA DE OSUNA\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDINES DE SABATINI",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2419365",
+      "name": "Sabatini Gardens",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Sabatini Gardens (Q2419365) para las celdas que contienen \"JARDINES DE SABATINI\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q110747914",
+      "name": "Plaza de Oriente",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Plaza de Oriente (Q110747914) para las celdas que contienen \"JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE DE LA DEHESA DE LA VILLA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4887686",
+      "name": "Dehesa de la Villa Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Dehesa de la Villa Park (Q4887686) para las celdas que contienen \"PARQUE DE LA DEHESA DE LA VILLA\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE MADRID RÍO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6062341",
+      "name": "Madrid Río",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Madrid Río (Q6062341) para las celdas que contienen \"PARQUE MADRID RÍO\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE JUAN CARLOS I",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1583169",
+      "name": "Juan Carlos I Park",
+      "types": [
+        "Q1759852",
+        "Q3845395"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Juan Carlos I Park (Q1583169) para las celdas que contienen \"PARQUE JUAN CARLOS I\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "ZONAS VERDES DISTRITO C - LAS TABLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3076589",
+      "name": "Las Tablas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Las Tablas (Q3076589) para las celdas que contienen \"ZONAS VERDES DISTRITO C - LAS TABLAS\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "ZONAS VERDES DISTRITO C - LAS TABLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3076589",
+      "name": "Las Tablas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Las Tablas (Q3076589) para las celdas que contienen \"ZONAS VERDES DISTRITO C - LAS TABLAS\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE PRINCESA LEONOR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q121427375",
+      "name": "Parque Princesa Leonor",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Parque Princesa Leonor (Q121427375) para las celdas que contienen \"PARQUE PRINCESA LEONOR\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q102341916",
+      "name": "Cuña Verde de O'Donnell Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Cuña Verde de O'Donnell Park (Q102341916) para las celdas que contienen \"CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "ROSALEDA DE MADRID \"RAMON ORTIZ\"",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16626568",
+      "name": "Rosaleda Gardens",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Rosaleda Gardens (Q16626568) para las celdas que contienen \"ROSALEDA DE MADRID \"RAMON ORTIZ\"\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDINES DEL BUEN RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1131807",
+      "name": "El Retiro Park",
+      "types": [
+        "Q22746",
+        "Q22698",
+        "Q1200957",
+        "Q14946335",
+        "Q570116"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento El Retiro Park (Q1131807) para las celdas que contienen \"JARDINES DEL BUEN RETIRO\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDINES DE LA PLAZA DE ESPAÑA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1326261",
+      "name": "plaza de España",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento plaza de España (Q1326261) para las celdas que contienen \"JARDINES DE LA PLAZA DE ESPAÑA\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE DE LA ATALAYUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q115499485",
+      "name": "Atalayuela de El Pardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Atalayuela de El Pardo (Q115499485) para las celdas que contienen \"PARQUE DE LA ATALAYUELA\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "JARDÍN DE LA  QUINTA DE TORRE ARIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q33141667",
+      "name": "Quinta de Torre Arias Park",
+      "types": [
+        "Q22698"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Quinta de Torre Arias Park (Q33141667) para las celdas que contienen \"JARDÍN DE LA  QUINTA DE TORRE ARIAS\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "BOSQUE DE LOS ABRAZOS PERDIDOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q97647080",
+      "name": "Bosque Metropolitano",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Bosque Metropolitano (Q97647080) para las celdas que contienen \"BOSQUE DE LOS ABRAZOS PERDIDOS\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "PARQUE LINEAL DE MANZANARES SUR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24023226",
+      "name": "Lineal Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Lineal Park (Q24023226) para las celdas que contienen \"PARQUE LINEAL DE MANZANARES SUR\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Flagged rows",
+          "expression": "row.flagged",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE PARQUE",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_URI",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna wikidata_URI en el índice 1 basada en la columna NOMBRE PARQUE usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "El Retiro Park",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1131807",
+      "name": "El Retiro Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento El Retiro Park (Q1131807) para las celdas que contienen \"El Retiro Park\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Parque del Oeste",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2369398",
+      "name": "Parque del Oeste",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Parque del Oeste (Q2369398) para las celdas que contienen \"Parque del Oeste\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Sabatini Gardens",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2419365",
+      "name": "Sabatini Gardens",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Sabatini Gardens (Q2419365) para las celdas que contienen \"Sabatini Gardens\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Plaza de Oriente",
+    "judgment": "matched",
+    "match": {
+      "id": "Q110747914",
+      "name": "Plaza de Oriente",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Plaza de Oriente (Q110747914) para las celdas que contienen \"Plaza de Oriente\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Las Tablas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1520216",
+      "name": "Tablas de Daimiel National Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Tablas de Daimiel National Park (Q1520216) para las celdas que contienen \"Las Tablas\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Parque Princesa Leonor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q121427375",
+      "name": "Parque Princesa Leonor",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Parque Princesa Leonor (Q121427375) para las celdas que contienen \"Parque Princesa Leonor\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Rosaleda Gardens",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16626568",
+      "name": "Rosaleda Gardens",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Rosaleda Gardens (Q16626568) para las celdas que contienen \"Rosaleda Gardens\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE PARQUE",
+    "similarValue": "Atalayuela de El Pardo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q115499485",
+      "name": "Atalayuela de El Pardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Atalayuela de El Pardo (Q115499485) para las celdas que contienen \"Atalayuela de El Pardo\" en la columna NOMBRE PARQUE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wikidata_URI",
+    "description": "Eliminar columna wikidata_URI"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE PARQUE: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE PARQUE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE PARQUE",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_URI",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna wikidata_URI en el índice 1 basada en la columna NOMBRE PARQUE usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  }
+]

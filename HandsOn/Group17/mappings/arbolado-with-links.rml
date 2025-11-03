@@ -1,0 +1,101 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://group17.project/madrid-parks/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <http://group17.project/madrid-parks/mappings/> .
+
+#################################################################
+# Logical Source
+#################################################################
+
+<#LogicalSourceArbolado>
+    a rml:LogicalSource ;
+    rml:source "csv/arbolado-clean.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+#################################################################
+# Mapping for TreeCount
+#################################################################
+
+<#TreeCountMapping>
+    a rr:TriplesMap ;
+    rml:logicalSource <#LogicalSourceArbolado> ;
+
+    rr:subjectMap [
+        rr:template "http://group17.project/madrid-parks/treecount/{park_uri}_{species_uri}" ;
+        rr:class ex:TreeCount ;
+    ] ;
+
+    # Relation to Park
+    rr:predicateObjectMap [
+        rr:predicate ex:inPark ;
+        rr:objectMap [
+            rr:template "http://group17.project/madrid-parks/park/{park_uri}" ;
+        ] ;
+    ] ;
+
+    # Relation to Species
+    rr:predicateObjectMap [
+        rr:predicate ex:ofSpecies ;
+        rr:objectMap [
+            rr:template "http://group17.project/madrid-parks/tree/{species_uri}" ;
+        ] ;
+    ] ;
+
+    # Number of Trees
+    rr:predicateObjectMap [
+        rr:predicate ex:numberOfTrees ;
+        rr:objectMap [
+            rml:reference "UNIDADES 2024" ;
+            rr:datatype xsd:integer ;
+        ] ;
+    ] .
+
+#################################################################
+# Mapping for Park
+#################################################################
+
+<#ParkMapping>
+    a rr:TriplesMap ;
+    rml:logicalSource <#LogicalSourceArbolado> ;
+
+    rr:subjectMap [
+        rr:template "http://group17.project/madrid-parks/park/{park_uri}" ;
+        rr:class ex:Park ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:parkName ;
+        rr:objectMap [ rml:reference "NOMBRE PARQUE" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant owl:sameAs ;
+            rr:termType rr:IRI
+        ] ;
+        rr:objectMap [
+            rr:column "wikidata_URI" ;
+            rr:termType rr:IRI
+        ] ;
+    ] .
+
+#################################################################
+# Mapping for Species
+#################################################################
+
+<#SpeciesMapping>
+    a rr:TriplesMap ;
+    rml:logicalSource <#LogicalSourceArbolado> ;
+
+    rr:subjectMap [
+        rr:template "http://group17.project/madrid-parks/tree/{species_uri}" ;
+        rr:class ex:Species ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:scientificName ;
+        rr:objectMap [ rml:reference "ESPECIE" ] ;
+    ] .

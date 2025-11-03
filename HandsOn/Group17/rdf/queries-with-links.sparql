@@ -1,0 +1,42 @@
+# queries-with-links.sparql
+
+#  1. List all TreeCounts with their Park and Species
+SELECT ?treecount ?park ?species ?numTrees
+WHERE {
+    ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> ;
+               <http://group17.project/madrid-parks/ontology/inPark> ?park ;
+               <http://group17.project/madrid-parks/ontology/ofSpecies> ?species ;
+               <http://group17.project/madrid-parks/ontology/numberOfTrees> ?numTrees .
+}
+
+#  2. Verify all Parks have a name and a Wikidata link
+SELECT ?park ?parkName
+WHERE {
+    ?park a <http://group17.project/madrid-parks/ontology/Park> ;
+          <http://group17.project/madrid-parks/ontology/parkName> ?parkName .
+    FILTER(STRSTARTS(STR(?park), "http://www.wikidata.org/entity/") || STRSTARTS(STR(?park), "http://group17.project/madrid-parks/park/"))
+}
+
+#  3. Check all Species URIs and their scientific names
+SELECT ?species ?name
+WHERE {
+    ?species a <http://group17.project/madrid-parks/ontology/Species> ;
+             <http://group17.project/madrid-parks/ontology/scientificName> ?name .
+}
+
+#  4. Count number of trees per Park
+SELECT ?park (SUM(?numTrees) AS ?totalTrees)
+WHERE {
+    ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> ;
+               <http://group17.project/madrid-parks/ontology/inPark> ?park ;
+               <http://group17.project/madrid-parks/ontology/numberOfTrees> ?numTrees .
+}
+GROUP BY ?park
+
+#  5. Find any TreeCounts missing a Park or Species
+SELECT ?treecount
+WHERE {
+    ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> .
+    FILTER NOT EXISTS { ?treecount <http://group17.project/madrid-parks/ontology/inPark> ?park }
+    FILTER NOT EXISTS { ?treecount <http://group17.project/madrid-parks/ontology/ofSpecies> ?species }
+}

@@ -1,0 +1,70 @@
+@base <https://example.org/mappings/> .
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:    <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix schema:<http://schema.org/> .
+@prefix wgs:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+
+<#Stations>
+  rml:logicalSource [
+    rml:source "csv/air-stations-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/{ID_ESTACION}" ;
+    rr:class schema:Place
+  ] ;
+
+  # Identificadores y etiquetas
+  rr:predicateObjectMap [
+    rr:predicate dct:identifier ;
+    rr:objectMap [ rml:reference "CODIGO_CORTO" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "ESTACION" ; rr:language "es" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:name ;
+    rr:objectMap [ rml:reference "ESTACION" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:streetAddress ;
+    rr:objectMap [ rml:reference "DIRECCION" ]
+  ] ;
+
+  # Fecha (tu CSV tiene "Fecha alta" como ISO con Z)
+  rr:predicateObjectMap [
+    rr:predicate schema:foundingDate ;
+    rr:objectMap [ rml:reference "Fecha alta" ; rr:datatype xsd:dateTime ]
+  ] ;
+
+  # Coordenadas WGS84
+  rr:predicateObjectMap [
+    rr:predicate wgs:lat ;
+    rr:objectMap [ rml:reference "LATITUD" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs:long ;
+    rr:objectMap [ rml:reference "LONGITUD" ; rr:datatype xsd:decimal ]
+  ] ;
+  # Enlaces administrativos (Wikidata IRIs)
+  rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace ;
+    rr:objectMap [ rml:reference "municipality_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace ;
+    rr:objectMap [ rml:reference "province_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:containedInPlace ;
+    rr:objectMap [ rml:reference "autonomous_community_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+
+.

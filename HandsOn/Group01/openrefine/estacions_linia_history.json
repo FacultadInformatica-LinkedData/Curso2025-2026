@@ -1010,5 +1010,65 @@
       "limit": 0
     },
     "description": "Reconcile cells in column DESTI_SERVEI to type Q928830"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Can Cui脿s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Can Cuiàs"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Zona Universit脿ria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zona Universitaria"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parc de Montju茂c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parc de Montjuïc"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
   }
 ]

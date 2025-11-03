@@ -1,0 +1,313 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-04>
+  a schema:Place;
+  dct:identifier "4";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Plaza de España";
+  schema:streetAddress "Plaza de España";
+  rdfs:label "Plaza de España"@es;
+  wgs:lat 40.4238823;
+  wgs:long -3.7122567 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-08>
+  a schema:Place;
+  dct:identifier "8";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Escuelas Aguirre";
+  schema:streetAddress "Entre C/ Alcalá y C/ O’ Donell";
+  rdfs:label "Escuelas Aguirre"@es;
+  wgs:lat 40.4215533;
+  wgs:long -3.6823158 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-11>
+  a schema:Place;
+  dct:identifier "11";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Ramón y Cajal";
+  schema:streetAddress "Avda. Ramón y Cajal  esq. C/ Príncipe de Vergara";
+  rdfs:label "Ramón y Cajal"@es;
+  wgs:lat 40.4514734;
+  wgs:long -3.6773491 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-16>
+  a schema:Place;
+  dct:identifier "16";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Arturo Soria";
+  schema:streetAddress "C/ Arturo Soria  esq. C/  Vizconde de los Asilos";
+  rdfs:label "Arturo Soria"@es;
+  wgs:lat 40.4400457;
+  wgs:long -3.6392422 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-17>
+  a schema:Place;
+  dct:identifier "17";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Villaverde";
+  schema:streetAddress "C/ Juan Peñalver";
+  rdfs:label "Villaverde"@es;
+  wgs:lat 40.347147;
+  wgs:long -3.7133167 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-18>
+  a schema:Place;
+  dct:identifier "18";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2001-03-31T00:00:00Z"^^xsd:dateTime;
+  schema:name "Farolillo";
+  schema:streetAddress "C/ Farolillo - C/ Ervigio";
+  rdfs:label "Farolillo"@es;
+  wgs:lat 40.3947825;
+  wgs:long -3.7318356 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-24>
+  a schema:Place;
+  dct:identifier "24";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Casa de Campo";
+  schema:streetAddress "Casa de Campo  (Terminal del Teleférico)";
+  rdfs:label "Casa de Campo"@es;
+  wgs:lat 40.4193577;
+  wgs:long -3.7473445 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-27>
+  a schema:Place;
+  dct:identifier "27";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2002-12-31T00:00:00Z"^^xsd:dateTime;
+  schema:name "Barajas Pueblo";
+  schema:streetAddress "C/ Júpiter, 21";
+  rdfs:label "Barajas Pueblo"@es;
+  wgs:lat 40.4769179;
+  wgs:long -3.5800258 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-35>
+  a schema:Place;
+  dct:identifier "35";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1999-01-11T00:00:00Z"^^xsd:dateTime;
+  schema:name "Plaza del Carmen";
+  schema:streetAddress "Plaza del Carmen esq. Tres Cruces";
+  rdfs:label "Plaza del Carmen"@es;
+  wgs:lat 40.4192091;
+  wgs:long -3.7031662 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-36>
+  a schema:Place;
+  dct:identifier "36";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Moratalaz";
+  schema:streetAddress "Avda. Moratalaz  esq. Camino de los Vinateros";
+  rdfs:label "Moratalaz"@es;
+  wgs:lat 40.4079517;
+  wgs:long -3.6453104 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-38>
+  a schema:Place;
+  dct:identifier "38";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-11T00:00:00Z"^^xsd:dateTime;
+  schema:name "Cuatro Caminos";
+  schema:streetAddress "Avda. Pablo Iglesias esq. C/ Marqués de Lema";
+  rdfs:label "Cuatro Caminos"@es;
+  wgs:lat 40.4455439;
+  wgs:long -3.7071303 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-39>
+  a schema:Place;
+  dct:identifier "39";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1998-01-05T00:00:00Z"^^xsd:dateTime;
+  schema:name "Barrio del Pilar";
+  schema:streetAddress "Avda. Betanzos esq. C/  Monforte de Lemos";
+  rdfs:label "Barrio del Pilar"@es;
+  wgs:lat 40.4782322;
+  wgs:long -3.7115364 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-40>
+  a schema:Place;
+  dct:identifier "40";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "1999-09-30T00:00:00Z"^^xsd:dateTime;
+  schema:name "Vallecas";
+  schema:streetAddress "C/ Arroyo del Olivar  esq. C/  Río Grande.";
+  rdfs:label "Vallecas"@es;
+  wgs:lat 40.3881478;
+  wgs:long -3.6515286 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-47>
+  a schema:Place;
+  dct:identifier "47";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2009-12-21T00:00:00Z"^^xsd:dateTime;
+  schema:name "Méndez Álvaro";
+  schema:streetAddress "C/ Juan de Mariana / Plaza Amanecer Méndez Álvaro";
+  rdfs:label "Méndez Álvaro"@es;
+  wgs:lat 40.3980991;
+  wgs:long -3.6868138 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-48>
+  a schema:Place;
+  dct:identifier "48";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2010-01-02T00:00:00Z"^^xsd:dateTime;
+  schema:name "Castellana";
+  schema:streetAddress "C/ José Gutiérrez Abascal";
+  rdfs:label "Castellana"@es;
+  wgs:lat 40.4398904;
+  wgs:long -3.6903729 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-49>
+  a schema:Place;
+  dct:identifier "49";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2010-01-01T00:00:00Z"^^xsd:dateTime;
+  schema:name "Parque del Retiro";
+  schema:streetAddress "Paseo Venezuela- Palacio de Velázquez";
+  rdfs:label "Parque del Retiro"@es;
+  wgs:lat 40.4144444;
+  wgs:long -3.6824999 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-50>
+  a schema:Place;
+  dct:identifier "50";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2010-01-02T00:00:00Z"^^xsd:dateTime;
+  schema:name "Plaza Castilla";
+  schema:streetAddress "Plaza Castilla (Canal)";
+  rdfs:label "Plaza Castilla"@es;
+  wgs:lat 40.4655841;
+  wgs:long -3.6887449 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-54>
+  a schema:Place;
+  dct:identifier "54";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2009-11-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "Ensanche de Vallecas";
+  schema:streetAddress "Avda. La Gavia / Avda. Las Suertes";
+  rdfs:label "Ensanche de Vallecas"@es;
+  wgs:lat 40.3730118;
+  wgs:long -3.6121394 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-55>
+  a schema:Place;
+  dct:identifier "55";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2010-01-20T00:00:00Z"^^xsd:dateTime;
+  schema:name "Urb. Embajada";
+  schema:streetAddress "C/ Riaño (Barajas)";
+  rdfs:label "Urb. Embajada"@es;
+  wgs:lat 40.4623628;
+  wgs:long -3.5805649 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-56>
+  a schema:Place;
+  dct:identifier "56";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2010-01-18T00:00:00Z"^^xsd:dateTime;
+  schema:name "Plaza Elíptica";
+  schema:streetAddress "Plaza Elíptica - Avda. Oporto";
+  rdfs:label "Plaza Elíptica"@es;
+  wgs:lat 40.3850336;
+  wgs:long -3.7187679 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-57>
+  a schema:Place;
+  dct:identifier "57";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2009-11-23T00:00:00Z"^^xsd:dateTime;
+  schema:name "Sanchinarro";
+  schema:streetAddress "C/ Princesa de Éboli esq. C/ María Tudor";
+  rdfs:label "Sanchinarro"@es;
+  wgs:lat 40.4942012;
+  wgs:long -3.6605173 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-58>
+  a schema:Place;
+  dct:identifier "58";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2009-01-12T00:00:00Z"^^xsd:dateTime;
+  schema:name "El Pardo";
+  schema:streetAddress "Avda. La Guardia";
+  rdfs:label "El Pardo"@es;
+  wgs:lat 40.5180701;
+  wgs:long -3.7746101 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-59>
+  a schema:Place;
+  dct:identifier "59";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2009-12-14T00:00:00Z"^^xsd:dateTime;
+  schema:name "Juan Carlos I";
+  schema:streetAddress "Parque Juan Carlos I (frente oficinas mantenimiento)";
+  rdfs:label "Juan Carlos I"@es;
+  wgs:lat 40.465144;
+  wgs:long -3.609031 .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/station/mad-air-60>
+  a schema:Place;
+  dct:identifier "60";
+  schema:containedInPlace <https://www.wikidata.org/entity/Q24004405>, <https://www.wikidata.org/entity/Q2807>,
+    <https://www.wikidata.org/entity/Q5756>;
+  schema:foundingDate "2010-08-02T00:00:00Z"^^xsd:dateTime;
+  schema:name "Tres Olivos";
+  schema:streetAddress "Plaza Tres Olivos";
+  rdfs:label "Tres Olivos"@es;
+  wgs:lat 40.5005477;
+  wgs:long -3.6897308 .
+
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/municipio/madrid>
+  a schema:Place ;
+  rdfs:label "Madrid"@es ;
+  owl:sameAs <https://www.wikidata.org/entity/Q2807> .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/provincia/madrid>
+  a schema:Place ;
+  rdfs:label "Madrid (provincia)"@es ;
+  owl:sameAs <https://www.wikidata.org/entity/Q24004405> .
+
+<https://facultadinformatica-linkeddata.github.io/Curso2025-2026/HandsOn/Group03/id/ccaa/comunidad-de-madrid>
+  a schema:Place ;
+  rdfs:label "Comunidad de Madrid"@es ;
+  owl:sameAs <https://www.wikidata.org/entity/Q5756> .
+

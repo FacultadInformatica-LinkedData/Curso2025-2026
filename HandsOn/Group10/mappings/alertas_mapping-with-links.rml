@@ -1,0 +1,143 @@
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:    <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vocab: <http://example.org/vocab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <http://example.org/resource/> .
+
+##################################################################
+# TriplesMap: Calidad del Aire (con enlaces reconciliados)
+##################################################################
+<#CalidadAireTriplesMap-with-links>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "csv/CALIDAD-AIRE-HORARIOS20250813-with-links.csv" ;
+    rml:referenceFormulation ql:CSV ;
+    rml:delimiter ";"
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.org/resource/MedicionAire/{ESTACION}/{MAGNITUD}/{Fecha}" ;
+    rr:class vocab:MedicionAire
+  ] ;
+
+  rr:predicateObjectMap [ rr:predicate vocab:provincia ; rr:objectMap [ rml:reference "PROVINCIA" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:municipio ; rr:objectMap [ rml:reference "MUNICIPIO" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:estacion ; rr:objectMap [ rml:reference "ESTACION" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:magnitud ; rr:objectMap [ rml:reference "MAGNITUD" ] ] ;
+  rr:predicateObjectMap [ rr:predicate owl:sameAs ; rr:objectMap [ rml:reference "MAGNITUD URI" ; rr:termType rr:IRI ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:puntoMuestreo ; rr:objectMap [ rml:reference "PUNTO_MUESTREO" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:fecha ; rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:dateTime ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H01 ; rr:objectMap [ rml:reference "H01" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H02 ; rr:objectMap [ rml:reference "H02" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H03 ; rr:objectMap [ rml:reference "H03" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H04 ; rr:objectMap [ rml:reference "H04" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H05 ; rr:objectMap [ rml:reference "H05" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H06 ; rr:objectMap [ rml:reference "H06" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H07 ; rr:objectMap [ rml:reference "H07" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H08 ; rr:objectMap [ rml:reference "H08" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H09 ; rr:objectMap [ rml:reference "H09" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H10 ; rr:objectMap [ rml:reference "H10" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H11 ; rr:objectMap [ rml:reference "H11" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H12 ; rr:objectMap [ rml:reference "H12" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H13 ; rr:objectMap [ rml:reference "H13" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H14 ; rr:objectMap [ rml:reference "H14" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H15 ; rr:objectMap [ rml:reference "H15" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H16 ; rr:objectMap [ rml:reference "H16" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H17 ; rr:objectMap [ rml:reference "H17" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H18 ; rr:objectMap [ rml:reference "H18" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H19 ; rr:objectMap [ rml:reference "H19" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H20 ; rr:objectMap [ rml:reference "H20" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H21 ; rr:objectMap [ rml:reference "H21" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H22 ; rr:objectMap [ rml:reference "H22" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H23 ; rr:objectMap [ rml:reference "H23" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H24 ; rr:objectMap [ rml:reference "H24" ; rr:datatype xsd:float ] ] .
+
+##################################################################
+# TriplesMap: Meteorología (con enlaces reconciliados)
+##################################################################
+<#MeteoTriplesMap-with-links>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "csv/METEOROLOGIA-HORARIOS20250813-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.org/resource/MedicionMeteo/{ESTACION}/{MAGNITUD}/{Fecha}" ;
+    rr:class vocab:MedicionMeteorologica
+  ] ;
+
+  rr:predicateObjectMap [ rr:predicate vocab:provincia ; rr:objectMap [ rml:reference "PROVINCIA" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:municipio ; rr:objectMap [ rml:reference "MUNICIPIO" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:estacion ; rr:objectMap [ rml:reference "ESTACION" ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:variable ; rr:objectMap [ rml:reference "MAGNITUD" ] ] ;
+  rr:predicateObjectMap [ rr:predicate owl:sameAs ; rr:objectMap [ rml:reference "MAGNITUD URI" ; rr:termType rr:IRI ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:fecha ; rr:objectMap [ rml:reference "Fecha" ; rr:datatype xsd:dateTime ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H01 ; rr:objectMap [ rml:reference "H01" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H02 ; rr:objectMap [ rml:reference "H02" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H03 ; rr:objectMap [ rml:reference "H03" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H04 ; rr:objectMap [ rml:reference "H04" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H05 ; rr:objectMap [ rml:reference "H05" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H06 ; rr:objectMap [ rml:reference "H06" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H07 ; rr:objectMap [ rml:reference "H07" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H08 ; rr:objectMap [ rml:reference "H08" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H09 ; rr:objectMap [ rml:reference "H09" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H10 ; rr:objectMap [ rml:reference "H10" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H11 ; rr:objectMap [ rml:reference "H11" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H12 ; rr:objectMap [ rml:reference "H12" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H13 ; rr:objectMap [ rml:reference "H13" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H14 ; rr:objectMap [ rml:reference "H14" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H15 ; rr:objectMap [ rml:reference "H15" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H16 ; rr:objectMap [ rml:reference "H16" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H17 ; rr:objectMap [ rml:reference "H17" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H18 ; rr:objectMap [ rml:reference "H18" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H19 ; rr:objectMap [ rml:reference "H19" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H20 ; rr:objectMap [ rml:reference "H20" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H21 ; rr:objectMap [ rml:reference "H21" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H22 ; rr:objectMap [ rml:reference "H22" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H23 ; rr:objectMap [ rml:reference "H23" ; rr:datatype xsd:float ] ] ;
+  rr:predicateObjectMap [ rr:predicate vocab:H24 ; rr:objectMap [ rml:reference "H24" ; rr:datatype xsd:float ] ] .
+
+##################################################################
+# TriplesMap: Episodios de Ozono (con enlaces reconciliados)
+##################################################################
+<#OzonoTriplesMap-with-links>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "csv/JUEGO-DATOS-activacion-protocolo-O3-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.org/resource/EpisodioOzono/{FECHA INICIO}" ;
+    rr:class vocab:EpisodioOzono
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:inicio ;
+    rr:objectMap [ rml:reference "FECHA INICIO" ; rr:datatype xsd:dateTime ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:fin ;
+    rr:objectMap [ rml:reference "FECHA FIN" ; rr:datatype xsd:dateTime ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:escenario ;
+    rr:objectMap [ rml:reference "EPISODIO OZONO" ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:medidaPoblacion ;
+    rr:objectMap [ rml:reference "MEDIDA POBLACION" ]
+  ] ;
+
+  # 🆕 Enlace externo (columna reconciliada)
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs ;
+    rr:objectMap [ rml:reference "EPISODIO URI" ; rr:termType rr:IRI ]
+  ] .

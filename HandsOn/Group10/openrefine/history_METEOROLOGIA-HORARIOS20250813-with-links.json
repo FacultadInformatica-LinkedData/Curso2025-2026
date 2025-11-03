@@ -1,0 +1,38 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MAGNITUD",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q56910577",
+        "name": "Meteorological variables connected with airborne ragweed pollen in Southern Hungary"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MAGNITUD to type Q56910577"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MAGNITUD",
+    "expression": "grel:\"https://www.wikidata.org/entity/Q56910577\"",
+    "onError": "set-to-blank",
+    "newColumnName": "MAGNITUD URI",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna MAGNITUD URI en el índice 4 basada en la columna MAGNITUD usando la expresión grel:\"https://www.wikidata.org/entity/Q56910577\""
+  }
+]

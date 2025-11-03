@@ -1,0 +1,149 @@
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:    <http://www.w3.org/ns/ql#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+
+@prefix ex: <https://raw.githubusercontent.com/paulinaloew/Curso2025-2026/master/HandsOn/Group06/def/> .
+@base       <https://raw.githubusercontent.com/paulinaloew/Curso2025-2026/master/HandsOn/Group06/> .
+
+########## Logical sources ##########
+<#LS_Trees>
+  rml:source               "../csv/arbolado-parques-madrid-2024-with-links.csv" ;
+  rml:referenceFormulation ql:CSV .
+
+<#LS_Zones>
+  rml:source               "../csv/Zonas-Verdes-2024-with-links.csv" ;
+  rml:referenceFormulation ql:CSV .
+
+########## District (mit Wikidata-Link) ##########
+<#TM_District> a rr:TriplesMap ;
+  rml:logicalSource <#LS_Zones> ;
+  rr:subjectMap [
+    rr:template "district/{district}" ;
+    rr:class ex:District ;
+    rr:termType rr:IRI
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "district" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs ;
+    rr:objectMap [ rml:reference "same_as_wikidata_district" ; rr:termType rr:IRI ]
+  ] .
+
+########## Green Zone ##########
+<#TM_Zone> a rr:TriplesMap ;
+  rml:logicalSource <#LS_Zones> ;
+  rr:subjectMap [
+    rr:template "zone/{file_number}" ;
+    rr:class ex:GreenZone ;
+    rr:termType rr:IRI
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:zoneId ;
+    rr:objectMap [ rml:reference "file_number" ; rr:datatype xsd:string ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:area ;
+    rr:objectMap [ rml:reference "area_m2" ; rr:datatype xsd:decimal ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:subcategory ;
+    rr:objectMap [ rml:reference "subcategory" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:section ;
+    rr:objectMap [ rml:reference "section" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:propertyType ;
+    rr:objectMap [ rml:reference "property_type" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:intendedUse ;
+    rr:objectMap [ rml:reference "land_use" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:address ;
+    rr:objectMap [ rml:reference "location" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:inDistrict ;
+    rr:objectMap [
+      rr:parentTriplesMap <#TM_District> ;
+      rr:joinCondition [ rr:child "district" ; rr:parent "district" ]
+    ]
+  ] .
+
+########## Species (mit Wikidata-Link) ##########
+<#TM_Species> a rr:TriplesMap ;
+  rml:logicalSource <#LS_Trees> ;
+  rr:subjectMap [
+    rr:template "species/{species}" ;
+    rr:class ex:Species ;
+    rr:termType rr:IRI
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "species" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs ;
+    rr:objectMap [ rml:reference "same_as_wikidata_species" ; rr:termType rr:IRI ]
+  ] .
+
+########## Park (mit Wikidata-Link) ##########
+<#TM_Park> a rr:TriplesMap ;
+  rml:logicalSource <#LS_Trees> ;
+  rr:subjectMap [
+    rr:template "park/{parkName}" ;
+    rr:class ex:Park ;
+    rr:termType rr:IRI
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "parkName" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs ;
+    rr:objectMap [ rml:reference "same_as_wikidata_parkName" ; rr:termType rr:IRI ]
+  ] .
+
+########## Tree ##########
+<#TM_Tree> a rr:TriplesMap ;
+  rml:logicalSource <#LS_Trees> ;
+  rr:subjectMap [
+    rr:template "tree/{parkName}/{species}" ;
+    rr:class ex:Tree ;
+    rr:termType rr:IRI
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rr:template "{species} @ {parkName}" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:treeCount ;
+    rr:objectMap [ rml:reference "treeCount" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:hasSpecies ;
+    rr:objectMap [
+      rr:parentTriplesMap <#TM_Species> ;
+      rr:joinCondition [ rr:child "species" ; rr:parent "species" ]
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:inPark ;
+    rr:objectMap [
+      rr:parentTriplesMap <#TM_Park> ;
+      rr:joinCondition [ rr:child "parkName" ; rr:parent "parkName" ]
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:parkName ;
+    rr:objectMap [ rml:reference "parkName" ]
+  ] .

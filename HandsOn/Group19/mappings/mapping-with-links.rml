@@ -1,0 +1,138 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex: <http://group19.linkeddata.es/resource/> .
+@prefix ont: <http://group19.linkeddata.es/def/transport#> .
+
+################################################################################
+# TriplesMap: Aparcamientos públicos (con enlaces a Wikidata)
+################################################################################
+<#TM_Parkings_With_Links>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "202625-0-aparcamientos-publicos-updated-csv.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://group19.linkeddata.es/resource/parking/{id}" ;
+    rr:class ont:ParkingFacility
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:name ;
+    rr:objectMap [ rml:reference "name" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:openingHours ;
+    rr:objectMap [ rml:reference "openingHours" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs:lat ;
+    rr:objectMap [ rml:reference "latitud" ; rr:datatype xsd:float ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs:long ;
+    rr:objectMap [ rml:reference "longitude" ; rr:datatype xsd:float ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:addressLocality ;
+    rr:objectMap [ rml:reference "city_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:provider ;
+    rr:objectMap [ rml:reference "operator_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:addressCountry ;
+    rr:objectMap [ rml:reference "country_wikidata_uri" ; rr:termType rr:IRI ]
+  ] .
+
+################################################################################
+# TriplesMap: Estaciones BiciMAD (con enlaces a Wikidata)
+################################################################################
+<#TM_BikeStations_With_Links>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "bikestationbicimad-csv-updated-csv.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://group19.linkeddata.es/resource/bikestation/{id}" ;
+    rr:class ont:BikeStation
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:name ;
+    rr:objectMap [ rml:reference "name" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:address ;
+    rr:objectMap [ rml:reference "address" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:capacity ;
+    rr:objectMap [ rml:reference "totalDocks" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ont:availableDocks ;
+    rr:objectMap [ rml:reference "availableDocks" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs:lat ;
+    rr:objectMap [ rml:reference "latitude" ; rr:datatype xsd:float ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate wgs:long ;
+    rr:objectMap [ rml:reference "longitude" ; rr:datatype xsd:float ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:addressLocality ;
+    rr:objectMap [ rml:reference "city_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:provider ;
+    rr:objectMap [ rml:reference "operator_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:network ;
+    rr:objectMap [ rml:reference "network_wikidata_uri" ; rr:termType rr:IRI ]
+  ] .
+
+################################################################################
+# TriplesMap: Intensidad de movilidad (con enlaces a Wikidata)
+################################################################################
+<#TM_MobilityIntensity_With_Links>
+  a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "I-M-D-LABORABLES-2024-2025-updated-csv.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+  rr:subjectMap [
+    rr:template "http://group19.linkeddata.es/resource/mobility/{year}/{month}/{zone}" ;
+    rr:class ont:MobilityIntensity
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ont:year ;
+    rr:objectMap [ rml:reference "year" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ont:month ;
+    rr:objectMap [ rml:reference "month" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ont:zone ;
+    rr:objectMap [ rml:reference "zone" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ont:intensity ;
+    rr:objectMap [ rml:reference "intensity" ; rr:datatype xsd:integer ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:addressLocality ;
+    rr:objectMap [ rml:reference "city_wikidata_uri" ; rr:termType rr:IRI ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:addressCountry ;
+    rr:objectMap [ rml:reference "country_wikidata_uri" ; rr:termType rr:IRI ]
+  ] .
