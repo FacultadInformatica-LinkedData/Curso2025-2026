@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "res": "https://www.example.org/resources#",
+    "prop": "https://www.example.org/properties#",
+    "people": "prop:people",
+    "sub": "prop:subject",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "fullName": "people:fullName",
+    "hometown": "people:hometown",
+    "age": "people:age",
+    "almaMater": "people:almaMater",
+    "parents": "people:parents",
+    "subjects": "people:subjects",
+    "name": "people:name",
+    "role": "people:role",
+    "subject": "sub:subject",
+    "teachers": "sub:teachers",
+    "description": "sub:description"
+  },
+
+  "@id": "res:hugodramirez",
+  "@type": "people:Person",
+  "fullName": "Hugo Diaz Ramirez",
+  "hometown": "Madrid",
+  "age": 23,
+  "almaMater": "Universidad Politecnica de Madrid",
+
+  "parents": [
+    { "@id": "res:p01", "@type": "people:Parent", "name": "Victor", "role": "Padre" },
+    { "@id": "res:p02", "@type": "people:Parent", "name": "Maria", "role": "Madre" }
+  ],
+
+  "subjects": [
+    {
+      "@id": "res:s01",
+      "@type": "sub:Subject",
+      "subject": "Tecnicas de Computacion Cientifica",
+      "teachers": [
+        { "@id": "res:t01", "@type": "people:Person", "name": "Juan Pedro Brito Mendez" }
+      ],
+      "description": "Tecnicas de computacion cientifica."
+    },
+    {
+      "@id": "res:s02",
+      "@type": "sub:Subject",
+      "subject": "Administracion de Sistemas Informaticos",
+      "teachers": [
+        { "@id": "res:t02", "@type": "people:Person", "name": "Francisco Rosales" }
+      ],
+      "description": "Administracion de Sistemas Informaticos."
+    },
+    {
+      "@id": "res:s03",
+      "@type": "sub:Subject",
+      "subject": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": [
+        { "@id": "res:t03", "@type": "people:Person", "name": "Oscar Corcho Garcia" }
+      ],
+      "description": "Semantic Web, Linked Data and Knowledge Graphs."
+    },
+    {
+      "@id": "res:s04",
+      "@type": "sub:Subject",
+      "subject": "Trabajo de Fin de Grado",
+      "description": "Trabajo de Fin de Grado."
+    },
+    {
+      "@id": "res:s05",
+      "@type": "sub:Subject",
+      "subject": "EPAC",
+      "description": "EPAC."
+    }
+  ]
+}
