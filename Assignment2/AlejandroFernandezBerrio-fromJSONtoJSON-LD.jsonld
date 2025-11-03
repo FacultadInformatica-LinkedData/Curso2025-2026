@@ -1,0 +1,24 @@
+{
+  "fullName": "Alejandro Fernández Berrio",
+  "hometown": "Rivas VaciaMadrid",
+  "age": 25,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": ["María de los Angeles", "Jose Javier"],
+  "subjects": [
+    {
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho,"],
+      "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos en la Web de datos enlazados, así como en forma de grafos de conocimientos. En concreto, se presentarán: los conceptos de Web Semántica, Web de datos enlazados y grafos de conocimientos, así como de datos abiertos, lenguajes de representación de datos en la Web, metodología y tecnologías de soporte a la generación y publicación de datos enlazados, ontologías y vocabularios utilizados, fuentes de datos representativas, como DBpedia, Geonames, Wikidata, etc., y aplicaciones que hacen uso de datos enlazados y de grafos de conocimientos."
+    },
+    {
+      "name": "Gestión de procesos de tecnologías de la información",
+      "teachers": ["Edmundo Tovar"],
+      "description": "En esta asignatura se tratan los elementos de una organización, las normas para el mercado digital y el Gobierno y Gestión de las TI."
+    },
+    {
+      "name": "Nanotecnología",
+      "teachers": ["Martínez Izquierdo"],
+      "description": "La Nanotecnología es una ciencia emergente en diversos ámbitos científicos con un gran número de aplicaciones en la actualidad. Algunas de sus definiciones confluyen en la idea de que trata sobre la manipulación de la materia a escala atómica, molecular y supramolecular. Una descripción más generalizada de la Nanotecnología, se expresa como la Ciencia que trata de la manipulación de la materia con al menos una dimensión del tamaño de entre 1 a 100 nanometros. Además se puede indicar que el desarrollo de materiales cuánticos ha revolucionado la Nanotecnología. Los materiales tienen propiedades únicas que pueden ser aprovechadas en una escala nanométrica."
+    }
+  ]
+}

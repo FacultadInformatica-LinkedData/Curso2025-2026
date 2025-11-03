@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "ex": "http://example.org/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@vocab": "http://example.org/"
+  },
+  "@graph": [
+    {
+      "@id": "Sensor029",
+      "@type": "ex:Sensor",
+      "ex:includes": { "@id": "Class01" },
+      "ex:hasMeasurement": { "@id": "Measurement8401" }
+    },
+    {
+      "@id": "Class01",
+      "@type": "ex:ClassRoom",
+      "ex:includes": { "@id": "Computer101" }
+    },
+    {
+      "@id": "Computer101",
+      "@type": "ex:Computer",
+      "ex:hasOwner": { "@id": "User10A" }
+    },
+    {
+      "@id": "User10A",
+      "@type": "ex:User",
+      "ex:hasName": "Pedro"
+    },
+    {
+      "@id": "Measurement8401",
+      "@type": "ex:Measurement",
+      "ex:hasTemperature": { "@value": 29, "@type": "xsd:integer" },
+      "ex:atTime": { "@value": "2010-06-12T12:00:12", "@type": "xsd:dateTime" }
+    }
+  ]
+}
