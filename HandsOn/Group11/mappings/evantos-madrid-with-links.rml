@@ -1,0 +1,195 @@
+<#EventMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#TriplesMap> .
+<#EventMap> <http://semweb.mmlab.be/ns/rml#logicalSource> _:b1 .
+_:b1 <http://semweb.mmlab.be/ns/rml#source> "eventos-madrid-updated-with-links.csv" .
+_:b1 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#subjectMap> _:b2 .
+_:b2 <http://www.w3.org/ns/r2rml#template> "http://madrid-events.es/event/{ID-EVENTO}" .
+_:b2 <http://www.w3.org/ns/r2rml#class> <http://schema.org/Event> .
+_:b2 <http://www.w3.org/ns/r2rml#class> _:b3 .
+_:b3 <http://semweb.mmlab.be/ns/rml#reference> "TIPO" .
+_:b3 <http://www.w3.org/ns/r2rml#template> "http://schema.org/{if(contains(?value, 'ActividadesCalleArteUrbano'), 'VisualArtsEvent', if(contains(?value, 'ActividadesDeportivas'), 'SportsEvent', if(contains(?value, 'Arte'), 'VisualArtsEvent', if(contains(?value, 'Campamentos'), 'EducationEvent', if(contains(?value, 'CapacitacionDigital'), 'EducationEvent', if(contains(?value, 'CineActividadesAudiovisuales'), 'ScreeningEvent', if(contains(?value, 'CircoMagia'), 'TheaterEvent', if(contains(?value, 'ClubesLectura'), 'LiteraryEvent', if(contains(?value, 'ComemoracionesHomenajes'), 'SocialEvent', if(contains(?value, 'ConcursosCertamenes'), 'SocialEvent', if(contains(?value, 'ConferenciasColoquios'), 'SocialEvent', if(contains(?value, 'CongresosJornadas'), 'BusinessEvent', if(contains(?value, 'CuentacuentosTiteresMarionetas'), 'TheaterEvent', if(contains(?value, 'CursosTalleres'), 'EducationEvent', if(contains(?value, 'DanzaBaile'), 'DanceEvent', if(contains(?value, 'ExcursionesItinerariosVisitas'), 'TouristTrip', if(contains(?value, 'Exposiciones'), 'ExhibitionEvent', if(contains(?value, 'Ferias'), 'ExhibitionEvent', if(contains(?value, 'Fiestas'), 'Festival', if(contains(?value, 'Idiomas'), 'EducationEvent', if(contains(?value, 'ItinerariosOtrasActividadesAmbientales'), 'TouristTrip', if(contains(?value, 'Musica'), 'MusicEvent', if(contains(?value, 'ProgramacionDestacadaAgendaCultura'), 'Event', if(contains(?value, 'RecitalesPresentacionesActosLiterarios'), 'LiteraryEvent', if(contains(?value, 'TeatroPerformance'), 'TheaterEvent', 'Event')))))))))))))))))))))))))}}" .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b4 .
+_:b4 <http://www.w3.org/ns/r2rml#predicate> <http://madrid-events.es/def/eventType> .
+_:b4 <http://www.w3.org/ns/r2rml#objectMap> _:b5 .
+_:b5 <http://semweb.mmlab.be/ns/rml#reference> "TIPO" .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b6 .
+_:b6 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/name> .
+_:b6 <http://www.w3.org/ns/r2rml#objectMap> _:b7 .
+_:b7 <http://semweb.mmlab.be/ns/rml#reference> "TITULO" .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b8 .
+_:b8 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/description> .
+_:b8 <http://www.w3.org/ns/r2rml#objectMap> _:b9 .
+_:b9 <http://semweb.mmlab.be/ns/rml#reference> "DESCRIPCION" .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b10 .
+_:b10 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/url> .
+_:b10 <http://www.w3.org/ns/r2rml#objectMap> _:b11 .
+_:b11 <http://semweb.mmlab.be/ns/rml#reference> "CONTENT-URL" .
+_:b11 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b12 .
+_:b12 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/startDate> .
+_:b12 <http://www.w3.org/ns/r2rml#objectMap> _:b13 .
+_:b13 <http://semweb.mmlab.be/ns/rml#reference> "FECHA" .
+_:b13 <http://www.w3.org/ns/r2rml#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b14 .
+_:b14 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/endDate> .
+_:b14 <http://www.w3.org/ns/r2rml#objectMap> _:b15 .
+_:b15 <http://semweb.mmlab.be/ns/rml#reference> "FECHA-FIN" .
+_:b15 <http://www.w3.org/ns/r2rml#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b16 .
+_:b16 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/eventAttendanceMode> .
+_:b16 <http://www.w3.org/ns/r2rml#objectMap> _:b17 .
+_:b17 <http://www.w3.org/ns/r2rml#constant> <http://madrid-events.es/def/OfflineEventAttendanceMode> .
+_:b17 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b18 .
+_:b18 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/isAccessibleForFree> .
+_:b18 <http://www.w3.org/ns/r2rml#objectMap> _:b19 .
+_:b19 <http://semweb.mmlab.be/ns/rml#reference> "GRATUITO" .
+_:b19 <http://www.w3.org/ns/r2rml#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b20 .
+_:b20 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/type> .
+_:b20 <http://www.w3.org/ns/r2rml#objectMap> _:b21 .
+_:b21 <http://semweb.mmlab.be/ns/rml#reference> "TIPO" .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b22 .
+_:b22 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/audience> .
+_:b22 <http://www.w3.org/ns/r2rml#objectMap> _:b23 .
+_:b23 <http://semweb.mmlab.be/ns/rml#reference> "AUDIENCIA" .
+
+<#EventMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b24 .
+_:b24 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/location> .
+_:b24 <http://www.w3.org/ns/r2rml#objectMap> _:b25 .
+_:b25 <http://www.w3.org/ns/r2rml#parentTriplesMap> <#PlaceMap> .
+
+<#PlaceMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#TriplesMap> .
+<#PlaceMap> <http://semweb.mmlab.be/ns/rml#logicalSource> _:b26 .
+_:b26 <http://semweb.mmlab.be/ns/rml#source> "eventos-madrid-updated-with-links.csv" .
+_:b26 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+
+<#PlaceMap> <http://www.w3.org/ns/r2rml#subjectMap> _:b27 .
+_:b27 <http://www.w3.org/ns/r2rml#template> "http://madrid-events.es/place/{URL-INSTALACION}" .
+_:b27 <http://www.w3.org/ns/r2rml#class> <http://schema.org/Place> .
+_:b27 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#PlaceMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b28 .
+_:b28 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/name> .
+_:b28 <http://www.w3.org/ns/r2rml#objectMap> _:b29 .
+_:b29 <http://semweb.mmlab.be/ns/rml#reference> "NOMBRE-INSTALACION" .
+
+<#PlaceMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b30 .
+_:b30 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/url> .
+_:b30 <http://www.w3.org/ns/r2rml#objectMap> _:b31 .
+_:b31 <http://semweb.mmlab.be/ns/rml#reference> "URL-INSTALACION" .
+_:b31 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#PlaceMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b32 .
+_:b32 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/sameAs> .
+_:b32 <http://www.w3.org/ns/r2rml#objectMap> _:b33 .
+_:b33 <http://semweb.mmlab.be/ns/rml#reference> "NOMBRE-INSTALACION URI" .
+_:b33 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#PlaceMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b34 .
+_:b34 <http://www.w3.org/ns/r2rml#predicate> <http://madrid-events.es/def/accessibility> .
+_:b34 <http://www.w3.org/ns/r2rml#objectMap> _:b35 .
+_:b35 <http://semweb.mmlab.be/ns/rml#reference> "ACCESIBILIDAD-INSTALACION" .
+_:b35 <http://www.w3.org/ns/r2rml#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+
+<#PlaceMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b36 .
+_:b36 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/address> .
+_:b36 <http://www.w3.org/ns/r2rml#objectMap> _:b37 .
+_:b37 <http://www.w3.org/ns/r2rml#parentTriplesMap> <#AddressMap> .
+
+<#DistrictMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#TriplesMap> .
+<#DistrictMap> <http://semweb.mmlab.be/ns/rml#logicalSource> _:b38 .
+_:b38 <http://semweb.mmlab.be/ns/rml#source> "eventos-madrid-updated-with-links.csv" .
+_:b38 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+
+<#DistrictMap> <http://www.w3.org/ns/r2rml#subjectMap> _:b39 .
+_:b39 <http://www.w3.org/ns/r2rml#template> "http://madrid-events.es/district/{DISTRITO-INSTALACION}" .
+_:b39 <http://www.w3.org/ns/r2rml#class> <http://madrid-events.es/def/District> .
+_:b39 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#DistrictMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b40 .
+_:b40 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/name> .
+_:b40 <http://www.w3.org/ns/r2rml#objectMap> _:b41 .
+_:b41 <http://semweb.mmlab.be/ns/rml#reference> "DISTRITO-INSTALACION" .
+
+<#DistrictMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b42 .
+_:b42 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/sameAs> .
+_:b42 <http://www.w3.org/ns/r2rml#objectMap> _:b43 .
+_:b43 <http://semweb.mmlab.be/ns/rml#reference> "DISTRITO-INSTALACION URI" .
+_:b43 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#NeighborhoodMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#TriplesMap> .
+<#NeighborhoodMap> <http://semweb.mmlab.be/ns/rml#logicalSource> _:b44 .
+_:b44 <http://semweb.mmlab.be/ns/rml#source> "eventos-madrid-updated-with-links.csv" .
+_:b44 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+
+<#NeighborhoodMap> <http://www.w3.org/ns/r2rml#subjectMap> _:b45 .
+_:b45 <http://www.w3.org/ns/r2rml#template> "http://madrid-events.es/neighborhood/{BARRIO-INSTALACION}" .
+_:b45 <http://www.w3.org/ns/r2rml#class> <http://madrid-events.es/def/Neighborhood> .
+_:b45 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#NeighborhoodMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b46 .
+_:b46 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/name> .
+_:b46 <http://www.w3.org/ns/r2rml#objectMap> _:b47 .
+_:b47 <http://semweb.mmlab.be/ns/rml#reference> "BARRIO-INSTALACION" .
+
+<#NeighborhoodMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b48 .
+_:b48 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/sameAs> .
+_:b48 <http://www.w3.org/ns/r2rml#objectMap> _:b49 .
+_:b49 <http://semweb.mmlab.be/ns/rml#reference> "BARRIO-INSTALACION URI" .
+_:b49 <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+<#NeighborhoodMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b50 .
+_:b50 <http://www.w3.org/ns/r2rml#predicate> <http://madrid-events.es/def/isPartOf> .
+_:b50 <http://www.w3.org/ns/r2rml#objectMap> _:b51 .
+_:b51 <http://www.w3.org/ns/r2rml#parentTriplesMap> <#DistrictMap> .
+
+<#AddressMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#TriplesMap> .
+<#AddressMap> <http://semweb.mmlab.be/ns/rml#logicalSource> _:b52 .
+_:b52 <http://semweb.mmlab.be/ns/rml#source> "eventos-madrid-updated-with-links.csv" .
+_:b52 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#subjectMap> _:b53 .
+_:b53 <http://www.w3.org/ns/r2rml#template> "http://madrid-events.es/address/{Dirección}" .
+_:b53 <http://www.w3.org/ns/r2rml#class> <http://schema.org/PostalAddress> .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b54 .
+_:b54 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/streetAddress> .
+_:b54 <http://www.w3.org/ns/r2rml#objectMap> _:b55 .
+_:b55 <http://semweb.mmlab.be/ns/rml#reference> "Dirección" .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b56 .
+_:b56 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/postalCode> .
+_:b56 <http://www.w3.org/ns/r2rml#objectMap> _:b57 .
+_:b57 <http://semweb.mmlab.be/ns/rml#reference> "CODIGO-POSTAL-INSTALACION" .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b58 .
+_:b58 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/addressLocality> .
+_:b58 <http://www.w3.org/ns/r2rml#objectMap> _:b59 .
+_:b59 <http://www.w3.org/ns/r2rml#constant> "Madrid" .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b60 .
+_:b60 <http://www.w3.org/ns/r2rml#predicate> <http://schema.org/addressCountry> .
+_:b60 <http://www.w3.org/ns/r2rml#objectMap> _:b61 .
+_:b61 <http://www.w3.org/ns/r2rml#constant> "ES" .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b62 .
+_:b62 <http://www.w3.org/ns/r2rml#predicate> <http://madrid-events.es/def/district> .
+_:b62 <http://www.w3.org/ns/r2rml#objectMap> _:b63 .
+_:b63 <http://www.w3.org/ns/r2rml#parentTriplesMap> <#DistrictMap> .
+
+<#AddressMap> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:b64 .
+_:b64 <http://www.w3.org/ns/r2rml#predicate> <http://madrid-events.es/def/neighborhood> .
+_:b64 <http://www.w3.org/ns/r2rml#objectMap> _:b65 .
+_:b65 <http://www.w3.org/ns/r2rml#parentTriplesMap> <#NeighborhoodMap> .

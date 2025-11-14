@@ -1,0 +1,56 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MAGNITUD",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q50429805",
+        "name": "air pollutant"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MAGNITUD to type Q50429805"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MAGNITUD",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "MAGNITUD URI",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna MAGNITUD URI en el índice 4 basada en la columna MAGNITUD usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MAGNITUD URI",
+    "description": "Eliminar columna MAGNITUD URI"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MAGNITUD",
+    "expression": "grel:\"https://www.wikidata.org/entity/Q50429805\"",
+    "onError": "set-to-blank",
+    "newColumnName": "MAGNITUD URI",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna MAGNITUD URI en el índice 4 basada en la columna MAGNITUD usando la expresión grel:\"https://www.wikidata.org/entity/Q50429805\""
+  }
+]

@@ -1,0 +1,24 @@
+PREFIX ex: <http://example.org/airquality/>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+
+# Query: Find the observation date and value for Carbon Monoxide (wd:Q202759) in Madrid (wd:Q2807)
+# This checks that both the pollutant link and the location link are correctly applied.
+SELECT ?observation ?datetime ?value
+WHERE {
+  ?observation rdf:type ssn:Observation .
+  
+  # Check the Pollutant Link: Carbon Monoxide (Wikidata Q202759)
+  ?observation ssn:observedProperty wd:Q202759 . 
+  
+  # Check the Location Link: Madrid (Wikidata Q2807)
+  ?observation schema:location wd:Q2807 .       
+  
+  ?observation schema:observationDate ?datetime .
+  ?observation ssn:hasValue ?value_node .
+  ?value_node ex:value ?value .
+}
+ORDER BY ?datetime
+LIMIT 10

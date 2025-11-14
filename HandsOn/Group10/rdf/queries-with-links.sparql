@@ -1,0 +1,176 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX vocab: <http://example.org/vocab#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# ================================================================
+# CONSULTA 1: CONTEO DE INSTANCIAS POR CLASE (Verificación general)
+# ------------------------------------------------
+# Comprueba que las clases definidas en el RDF se han generado 
+# correctamente y muestra cuántas instancias tiene cada una.
+# ================================================================
+SELECT ?clase (COUNT(?instancia) AS ?num_instancias)
+WHERE {
+  ?instancia a ?clase .
+  FILTER(?clase IN (vocab:MedicionAire, vocab:MedicionMeteorologica, vocab:EpisodioOzono))
+}
+GROUP BY ?clase
+ORDER BY ?clase
+
+
+# ================================================================
+# CONSULTA 2: VERIFICAR ENLACES owl:sameAs (Validación de linking)
+# ------------------------------------------------
+# Comprueba que las triples de enlace se han creado correctamente 
+# y muestra un ejemplo de las URIs externas asociadas.
+# ================================================================
+SELECT ?instancia ?enlace
+WHERE {
+  ?instancia owl:sameAs ?enlace .
+}
+LIMIT 20
+
+
+# ================================================================
+# CONSULTA 3: VERIFICACIÓN DE ENLACES EN CALIDAD DEL AIRE
+# ------------------------------------------------
+# Comprueba que las magnitudes del dataset de calidad del aire 
+# (MAGNITUD URI) se han enlazado correctamente a entidades externas.
+# ================================================================
+SELECT ?medicion ?magnitud ?uri
+WHERE {
+  ?medicion a vocab:MedicionAire ;
+            vocab:magnitud ?magnitud ;
+            owl:sameAs ?uri .
+}
+LIMIT 10
+
+
+# ================================================================
+# CONSULTA 4: VERIFICACIÓN DE ENLACES EN METEOROLOGÍA
+# ------------------------------------------------
+# Comprueba que las magnitudes meteorológicas (MAGNITUD_URI)
+# se han enlazado correctamente a entidades externas.
+# ================================================================
+SELECT ?medicion ?variable ?uri
+WHERE {
+  ?medicion a vocab:MedicionMeteorologica ;
+            vocab:variable ?variable ;
+            owl:sameAs ?uri .
+}
+LIMIT 10
+
+
+# ================================================================
+# CONSULTA 5: VERIFICACIÓN DE ENLACES EN EPISODIOS DE OZONO
+# ------------------------------------------------
+# Comprueba que los episodios de ozono incluyen los enlaces 
+# reconciliados en la columna "EPISODIO URI".
+# ================================================================
+SELECT ?episodio ?inicio ?fin ?uri
+WHERE {
+  ?episodio a vocab:EpisodioOzono ;
+             vocab:inicio ?inicio ;
+             vocab:fin ?fin ;
+             owl:sameAs ?uri .
+}
+ORDER BY ?inicio
+LIMIT 10
+
+# ================================================================
+# CONSULTA 6: TOP 10 VALORES MÁS ALTOS DE OZONO (MAGNITUD 08)
+# ------------------------------------------------
+# Muestra las mediciones de ozono más altas registradas a mediodía
+# junto con su enlace a la URI externa de la magnitud.
+# ================================================================
+SELECT ?fecha ?estacion ?valor ?uri
+WHERE {
+  ?medicion a vocab:MedicionAire ;
+            vocab:magnitud "8" ;
+            vocab:H12 ?valor ;
+            vocab:fecha ?fecha ;
+            vocab:estacion ?estacion ;
+            owl:sameAs ?uri .
+}
+ORDER BY DESC(?valor)
+LIMIT 10
+
+
+# ================================================================
+# CONSULTA 7: PROMEDIO DIARIO POR ESTACIÓN (MAGNITUD NO2)
+# ------------------------------------------------
+# Calcula el promedio diario de concentración de NO2 (magnitud 8)
+# agrupado por estación.
+# ================================================================
+SELECT ?estacion (AVG(?valor) AS ?promedio_diario)
+WHERE {
+  ?m a vocab:MedicionAire ;
+     vocab:estacion ?estacion ;
+     vocab:magnitud "8" ;
+     vocab:H12 ?valor .
+}
+GROUP BY ?estacion
+ORDER BY DESC(?promedio_diario)
+LIMIT 10
+
+
+# ================================================================
+# CONSULTA 8: MEDICIONES DE AIRE DURANTE EPISODIOS DE OZONO
+# ------------------------------------------------
+# Cruza los datos de episodios con mediciones horarias
+# para ver qué mediciones se registraron durante los episodios.
+# ================================================================
+SELECT ?episodio ?tipo ?inicio ?fecha ?estacion ?valor
+WHERE {
+  ?episodio a vocab:EpisodioOzono ;
+            vocab:inicio ?inicio ;
+            vocab:fin ?fin ;
+            vocab:escenario ?tipo .
+
+  ?medicion a vocab:MedicionAire ;
+            vocab:fecha ?fecha ;
+            vocab:estacion ?estacion ;
+            vocab:H12 ?valor .
+
+  FILTER(?fecha >= ?inicio && ?fecha <= ?fin)
+}
+ORDER BY ?inicio
+LIMIT 20
+
+
+# ================================================================
+# CONSULTA 9: CORRELACIÓN ENTRE POLUCIÓN Y TEMPERATURA
+# ------------------------------------------------
+# Une datos de contaminación y meteorología en las mismas
+# estaciones y fechas para comparar tendencias.
+# ================================================================
+SELECT ?fecha ?estacion ?valor_polucion ?valor_temp
+WHERE {
+  ?aire a vocab:MedicionAire ;
+        vocab:fecha ?fecha ;
+        vocab:estacion ?estacion ;
+        vocab:magnitud "8" ;
+        vocab:H12 ?valor_polucion .
+
+  ?meteo a vocab:MedicionMeteorologica ;
+         vocab:fecha ?fecha ;
+         vocab:estacion ?estacion ;
+         vocab:variable "80" ;
+         vocab:H12 ?valor_temp .
+}
+LIMIT 50
+
+
+# ================================================================
+# CONSULTA 10: VERIFICACIÓN DE DATOS ENLAZADOS CON WIKIDATA
+# ------------------------------------------------
+# Muestra las instancias del RDF que están enlazadas con URIs
+# que pertenecen a Wikidata o DBpedia.
+# ================================================================
+SELECT ?instancia ?uri
+WHERE {
+  ?instancia owl:sameAs ?uri .
+  FILTER(CONTAINS(STR(?uri), "wikidata.org") || CONTAINS(STR(?uri), "dbpedia.org"))
+}
+LIMIT 20

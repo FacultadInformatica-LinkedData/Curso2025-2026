@@ -20,22 +20,22 @@
     owl:versionInfo "1.0" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-att:Precio a owl:DatatypeProperty ;
+att:precio a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "precio" ;
     rdfs:range xsd:decimal .
 
-att:Aforo a owl:DatatypeProperty ;
+att:aforo a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "aforo" ;
     rdfs:range xsd:integer .
 
-att:Anuncio a owl:DatatypeProperty ;
+att:anuncio a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "anuncio" ;
     rdfs:range xsd:string .
 
-att:Descripcion a owl:DatatypeProperty ;
+att:descripcion a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "descripcion" ;
     rdfs:range xsd:string .
@@ -50,22 +50,22 @@ att:fechaFin a owl:DatatypeProperty ;
     rdfs:label "fecha fin" ;
     rdfs:range xsd:string .
 
-att:FechaInicio a owl:DatatypeProperty ;
+att:fechaInicio a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "fecha inicio" ;
     rdfs:range xsd:string .
 
-att:Inscripcion a owl:DatatypeProperty ;
+att:inscripcion a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "inscripcion" ;
     rdfs:range xsd:string .
 
-att:NumDias a owl:DatatypeProperty ;
+att:numDias a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "num dias" ;
     rdfs:range xsd:integer .
 
-att:Titulo a owl:DatatypeProperty ;
+att:titulo a owl:DatatypeProperty ;
     rdfs:domain base:Actividad ;
     rdfs:label "titulo" ;
     rdfs:range xsd:string .

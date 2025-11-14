@@ -1,0 +1,41 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q2807\"",
+    "onError": "set-to-blank",
+    "newColumnName": "city_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna city_wikidata_uri en el índice 2 basada en la columna name usando la expresión grel:\"http://www.wikidata.org/entity/Q2807\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q1094755\"",
+    "onError": "set-to-blank",
+    "newColumnName": "operator_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna operator_wikidata_uri en el índice 2 basada en la columna name usando la expresión grel:\"http://www.wikidata.org/entity/Q1094755\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q17402113\"",
+    "onError": "set-to-blank",
+    "newColumnName": "network_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna network_wikidata_uri en el índice 2 basada en la columna name usando la expresión grel:\"http://www.wikidata.org/entity/Q17402113\""
+  }
+]

@@ -20,7 +20,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column zrea to type Q10742"
+    "description": "Reconciliar celdas en la columna zrea con el tipo Q10742"
   },
   {
     "op": "core/recon",
@@ -43,7 +43,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column country to type Q6256"
+    "description": "Reconciliar celdas en la columna country con el tipo Q6256"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -112,7 +112,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column state to type Q3624078"
+    "description": "Reconciliar celdas en la columna state con el tipo Q3624078"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -172,7 +172,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconcile cells in column town to type Q2074737"
+    "description": "Reconciliar celdas en la columna town con el tipo Q2074737"
   },
   {
     "op": "core/recon-judge-similar-cells",

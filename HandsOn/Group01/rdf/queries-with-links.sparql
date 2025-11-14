@@ -1,0 +1,238 @@
+PREFIX ns1: <https://data.example.org/transport/bcn/metro/ontology#>
+PREFIX resource: <https://data.example.org/transport/bcn/metro/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+# ========================================
+# QUERY 1: List all metro lines with Wikidata links
+# ========================================
+SELECT ?line ?lineName ?wikidataLink WHERE {
+    ?line rdf:type ns1:MetroLine .
+    OPTIONAL { ?line ns1:lineName ?lineName }
+    OPTIONAL { ?line owl:sameAs ?wikidataLink }
+}
+ORDER BY ?line
+
+# ========================================
+# QUERY 2: Count stations per metro line with Wikidata links
+# ========================================
+SELECT ?line ?lineName ?wikidataLink (COUNT(?station) AS ?stationCount) WHERE {
+    ?line rdf:type ns1:MetroLine .
+    OPTIONAL { ?line ns1:lineName ?lineName }
+    OPTIONAL { ?line owl:sameAs ?wikidataLink }
+    ?stationLine ns1:onLine ?line .
+    ?stationLine ns1:relatesTo ?station .
+}
+GROUP BY ?line ?lineName ?wikidataLink
+ORDER BY DESC(?stationCount)
+
+# ========================================
+# QUERY 3: Find all accessible stations with Wikidata links
+# ========================================
+SELECT ?station ?stationName ?wikidataLink WHERE {
+    ?station rdf:type ns1:Station .
+    ?station ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> .
+    OPTIONAL { ?station ns1:stationName ?stationName }
+    OPTIONAL { ?station owl:sameAs ?wikidataLink }
+}
+ORDER BY ?stationName
+
+# ========================================
+# QUERY 4: Stations on Line 1 with their order and Wikidata links
+# ========================================
+SELECT ?station ?stationName ?order ?wikidataLink WHERE {
+    ?stationLine ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> .
+    ?stationLine ns1:relatesTo ?station .
+    ?stationLine ns1:stationOrder ?order .
+    OPTIONAL { ?station ns1:stationName ?stationName }
+    OPTIONAL { ?station owl:sameAs ?wikidataLink }
+}
+ORDER BY ?order
+
+# ========================================
+# QUERY 5: Find lines with geometry data and Wikidata links
+# ========================================
+SELECT ?line ?lineName ?geometry ?wikidataLink WHERE {
+    ?line rdf:type ns1:MetroLine .
+    ?line ns1:hasGeometry ?geometry .
+    OPTIONAL { ?line ns1:lineName ?lineName }
+    OPTIONAL { ?line owl:sameAs ?wikidataLink }
+}
+ORDER BY ?line
+
+# ========================================
+# QUERY 6: Service types with origin/destination and Wikidata links
+# ========================================
+SELECT ?serviceType ?serviceLabel ?serviceOrigin ?serviceDestination ?originWikidataLink ?destinationWikidataLink WHERE {
+    ?serviceType rdf:type ns1:ServiceType .
+    OPTIONAL { ?serviceType rdfs:label ?serviceLabel }
+    OPTIONAL { ?serviceType ns1:serviceOrigin ?serviceOrigin }
+    OPTIONAL { ?serviceType ns1:serviceDestination ?serviceDestination }
+    OPTIONAL { ?serviceType owl:sameAs ?originWikidataLink }
+    OPTIONAL { ?serviceType owl:sameAs ?destinationWikidataLink }
+}
+ORDER BY ?serviceType
+
+# ========================================
+# QUERY 7: Find stations that serve multiple lines with Wikidata links
+# ========================================
+SELECT ?station ?stationName ?wikidataLink (COUNT(?line) AS ?lineCount) 
+       (GROUP_CONCAT(DISTINCT ?lineName; SEPARATOR=", ") AS ?lineNames) WHERE {
+    ?station rdf:type ns1:Station .
+    ?stationLine ns1:relatesTo ?station .
+    ?stationLine ns1:onLine ?line .
+    OPTIONAL { ?station ns1:stationName ?stationName }
+    OPTIONAL { ?station owl:sameAs ?wikidataLink }
+    OPTIONAL { ?line ns1:lineName ?lineName }
+}
+GROUP BY ?station ?stationName ?wikidataLink
+HAVING (COUNT(?line) > 1)
+ORDER BY DESC(?lineCount)
+
+# ========================================
+# QUERY 8: Lines with origin and destination stations and their Wikidata links
+# ========================================
+SELECT ?line ?lineName ?originStation ?destinationStation ?lineWikidataLink 
+       ?originWikidataLink ?destinationWikidataLink WHERE {
+    ?line rdf:type ns1:MetroLine .
+    OPTIONAL { ?line ns1:lineName ?lineName }
+    OPTIONAL { ?line ns1:originStation ?originStation }
+    OPTIONAL { ?line ns1:destinationStation ?destinationStation }
+    OPTIONAL { ?line owl:sameAs ?lineWikidataLink }
+    OPTIONAL { ?line owl:sameAs ?originWikidataLink }
+    OPTIONAL { ?line owl:sameAs ?destinationWikidataLink }
+}
+ORDER BY ?line
+
+# ========================================
+# QUERY 9: Find first and last stations of each line with Wikidata links
+# ========================================
+SELECT ?line ?lineName ?lineWikidataLink ?firstStation ?firstStationName ?firstStationWikidata 
+       ?lastStation ?lastStationName ?lastStationWikidata WHERE {
+    ?line rdf:type ns1:MetroLine .
+    OPTIONAL { ?line ns1:lineName ?lineName }
+    OPTIONAL { ?line owl:sameAs ?lineWikidataLink }
+    
+    ?firstStationLine ns1:onLine ?line .
+    ?firstStationLine ns1:stationOrder 1 .
+    ?firstStationLine ns1:relatesTo ?firstStation .
+    OPTIONAL { ?firstStation ns1:stationName ?firstStationName }
+    OPTIONAL { ?firstStation owl:sameAs ?firstStationWikidata }
+    
+    {
+        SELECT ?line (MAX(?order) AS ?maxOrder) WHERE {
+            ?stationLine ns1:onLine ?line .
+            ?stationLine ns1:stationOrder ?order .
+        }
+        GROUP BY ?line
+    }
+    ?lastStationLine ns1:onLine ?line .
+    ?lastStationLine ns1:stationOrder ?maxOrder .
+    ?lastStationLine ns1:relatesTo ?lastStation .
+    OPTIONAL { ?lastStation ns1:stationName ?lastStationName }
+    OPTIONAL { ?lastStation owl:sameAs ?lastStationWikidata }
+}
+ORDER BY ?line
+
+# ========================================
+# QUERY 10: Stations with inauguration dates and Wikidata links
+# ========================================
+SELECT ?station ?stationName ?inauguratedDate ?wikidataLink WHERE {
+    ?station rdf:type ns1:Station .
+    ?station ns1:inauguratedDate ?inauguratedDate .
+    OPTIONAL { ?station ns1:stationName ?stationName }
+    OPTIONAL { ?station owl:sameAs ?wikidataLink }
+}
+ORDER BY ?inauguratedDate
+LIMIT 20
+
+# ========================================
+# QUERY 11: Count entities with Wikidata links
+# ========================================
+SELECT ?entityType (COUNT(?entity) AS ?totalCount) 
+       (COUNT(?wikidataLink) AS ?linkedCount) 
+       (ROUND(100.0 * COUNT(?wikidataLink) / COUNT(?entity)) AS ?linkedPercentage) WHERE {
+    {
+        SELECT ?entity (ns1:MetroLine AS ?entityType) ?wikidataLink WHERE {
+            ?entity rdf:type ns1:MetroLine .
+            OPTIONAL { ?entity owl:sameAs ?wikidataLink }
+        }
+    } UNION {
+        SELECT ?entity (ns1:Station AS ?entityType) ?wikidataLink WHERE {
+            ?entity rdf:type ns1:Station .
+            OPTIONAL { ?entity owl:sameAs ?wikidataLink }
+        }
+    } UNION {
+        SELECT ?entity (ns1:ServiceType AS ?entityType) ?wikidataLink WHERE {
+            ?entity rdf:type ns1:ServiceType .
+            OPTIONAL { ?entity owl:sameAs ?wikidataLink }
+        }
+    }
+}
+GROUP BY ?entityType
+ORDER BY ?entityType
+
+# ========================================
+# QUERY 12: Find all owl:sameAs relationships
+# ========================================
+SELECT ?localEntity ?entityType ?wikidataLink WHERE {
+    ?localEntity owl:sameAs ?wikidataLink .
+    {
+        ?localEntity rdf:type ns1:MetroLine .
+        BIND("MetroLine" AS ?entityType)
+    } UNION {
+        ?localEntity rdf:type ns1:Station .
+        BIND("Station" AS ?entityType)
+    } UNION {
+        ?localEntity rdf:type ns1:ServiceType .
+        BIND("ServiceType" AS ?entityType)
+    }
+}
+ORDER BY ?entityType ?localEntity
+
+# ========================================
+# QUERY 13: Lines with complete Wikidata linking (line, origin, destination)
+# ========================================
+SELECT ?line ?lineName ?lineWikidata ?originStation ?originWikidata 
+       ?destinationStation ?destinationWikidata WHERE {
+    ?line rdf:type ns1:MetroLine .
+    ?line ns1:lineName ?lineName .
+    ?line owl:sameAs ?lineWikidata .
+    ?line ns1:originStation ?originStation .
+    ?line ns1:destinationStation ?destinationStation .
+    
+    # Find actual station entities with Wikidata links
+    OPTIONAL {
+        ?originStationEntity rdf:type ns1:Station .
+        ?originStationEntity ns1:stationName ?originStation .
+        ?originStationEntity owl:sameAs ?originWikidata .
+    }
+    OPTIONAL {
+        ?destinationStationEntity rdf:type ns1:Station .
+        ?destinationStationEntity ns1:stationName ?destinationStation .
+        ?destinationStationEntity owl:sameAs ?destinationWikidata .
+    }
+}
+ORDER BY ?line
+
+# ========================================
+# QUERY 14: Transport families and operators
+# ========================================
+SELECT ?family ?familyLabel ?operator ?operatorLabel WHERE {
+    ?line rdf:type ns1:MetroLine .
+    OPTIONAL { 
+        ?line ns1:belongsToFamily ?family .
+        ?family rdfs:label ?familyLabel .
+    }
+    OPTIONAL { 
+        ?line ns1:operatedBy ?operator .
+        ?operator rdfs:label ?operatorLabel .
+    }
+}
+GROUP BY ?family ?familyLabel ?operator ?operatorLabel
+ORDER BY ?familyLabel ?operatorLabel

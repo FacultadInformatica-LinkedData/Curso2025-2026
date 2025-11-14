@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "fullName": "http://schema.org/name",
+    "hometown": "http://schema.org/hometown",
+    "age": "http://schema.org/age",
+    "almaMater": "http://schema.org/alumniOf",
+    "parents": "http://schema.org/parent",
+    "father": "http://schema.org/father",
+    "mother": "http://schema.org/mother",
+    "subjects": "http://schema.org/hasCourse",
+    "name": "http://schema.org/name",
+    "teachers": "http://schema.org/teacher",
+    "description": "http://schema.org/description"
+  },
+  "@type": "Person",
+  "fullName": "Elena de Arriba Jaro",
+  "hometown": "Boadilla del Monte",
+  "age": 21,
+  "almaMater": "UPM",
+  "parents": {
+    "father": "Javier",
+    "mother": "Mercedes"
+  },
+  "subjects": [
+    {
+      "@type": "Course",
+      "name": "Semantic Web",
+      "teachers": ["Óscar Corcho", "Raúl García", "Daniel Garijo"],
+      "description": "Introduction to Semantic Web and linked graphs"
+    },
+    {
+      "@type": "Course",
+      "name": "Ingeniería del Software II",
+      "teachers": ["Profesor X"],
+      "description": "Learn the principles of software engineering in projects"
+    },
+    {
+      "@type": "Course",
+      "name": "GPTI",
+      "teachers": ["Edmundo Tovar"],
+      "description": "Gestión de las Tecnologías de la Información"
+    },
+    {
+      "@type": "Course",
+      "name": "EPAC",
+      "teachers": ["Profesor Z"],
+      "description": "English oriented to project designing"
+    },
+    {
+      "@type": "Course",
+      "name": "Investigación operativa",
+      "teachers": ["Alfonso Mateo Caballeros"],
+      "description": "Rama de las matemáticas y la informática que se centra en la optimización de los recursos"
+    }
+  ]
+}

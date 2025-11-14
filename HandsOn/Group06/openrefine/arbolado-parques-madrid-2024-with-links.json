@@ -1,0 +1,1038 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "UNIDADES 2024",
+    "newColumnName": "treeCount",
+    "description": "Rename column UNIDADES 2024 to treeCount"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESPECIE",
+    "newColumnName": "species",
+    "description": "Rename column ESPECIE to species"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE PARQUE",
+    "newColumnName": "parkName",
+    "description": "Rename column NOMBRE PARQUE to parkName"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "treeCount",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column treeCount using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column species using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column parkName using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Quercus robur",
+          "Quercus robur"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quercus robur"
+      },
+      {
+        "from": [
+          "Pinus halepensis",
+          "Pinus halepensis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pinus halepensis"
+      },
+      {
+        "from": [
+          "Ligustrum japonicum",
+          "Ligustrum japonicum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ligustrum japonicum"
+      },
+      {
+        "from": [
+          "Populus alba 'Bolleana'",
+          "Populus alba 'Bolleana'"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Populus alba 'Bolleana'"
+      },
+      {
+        "from": [
+          "Gleditsia triacanthos",
+          "Gleditsia triacanthos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gleditsia triacanthos"
+      },
+      {
+        "from": [
+          "Pinus pinea",
+          "Pinus pinea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pinus pinea"
+      },
+      {
+        "from": [
+          "Celtis australis",
+          "Celtis australis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Celtis australis"
+      },
+      {
+        "from": [
+          "Acer pseudoplatanus",
+          "Acer pseudoplatanus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Acer pseudoplatanus"
+      },
+      {
+        "from": [
+          "Cupressus sempervirens",
+          "Cupressus sempervirens"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cupressus sempervirens"
+      },
+      {
+        "from": [
+          "Melia azedarach",
+          "Melia azedarach"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Melia azedarach"
+      },
+      {
+        "from": [
+          "Prunus dulcis",
+          "Prunus dulcis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prunus dulcis"
+      },
+      {
+        "from": [
+          "Acer campestre",
+          "Acer campestre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Acer campestre"
+      },
+      {
+        "from": [
+          "Ulmus pumila",
+          "Ulmus pumila"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ulmus pumila"
+      },
+      {
+        "from": [
+          "Prunus cerasifera  subsp. pissardii",
+          "Prunus cerasifera  subsp. pissardii"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prunus cerasifera  subsp. pissardii"
+      },
+      {
+        "from": [
+          "Ailanthus altissima",
+          "Ailanthus altissima"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ailanthus altissima"
+      },
+      {
+        "from": [
+          "Quercus ilex",
+          "Quercus ilex"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quercus ilex"
+      },
+      {
+        "from": [
+          "Cedrus deodara",
+          "Cedrus deodara"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cedrus deodara"
+      },
+      {
+        "from": [
+          "Cercis siliquastrum",
+          "Cercis siliquastrum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cercis siliquastrum"
+      },
+      {
+        "from": [
+          "Platanus x hispanica",
+          "Platanus x hispanica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Platanus x hispanica"
+      },
+      {
+        "from": [
+          "Thuja occidentalis",
+          "Thuja occidentalis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thuja occidentalis"
+      },
+      {
+        "from": [
+          "Fraxinus angustifolia",
+          "Fraxinus angustifolia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fraxinus angustifolia"
+      },
+      {
+        "from": [
+          "Ulmus minor",
+          "Ulmus minor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ulmus minor"
+      },
+      {
+        "from": [
+          "Aesculus hippocastanum",
+          "Aesculus hippocastanum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aesculus hippocastanum"
+      },
+      {
+        "from": [
+          "Styphnolobium japonicum",
+          "Styphnolobium japonicum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Styphnolobium japonicum"
+      },
+      {
+        "from": [
+          "Olea europaea",
+          "Olea europaea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Olea europaea"
+      }
+    ],
+    "description": "Mass edit cells in column species"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species",
+          "expression": "value",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ESPECIE",
+                "l": "ESPECIE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species",
+          "expression": "value",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PARQUE MADRID RÍO",
+          "PARQUE MADRID RIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PARQUE MADRID RÍO"
+      }
+    ],
+    "description": "Mass edit cells in column parkName"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column parkName to type null"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "PARQUE JUAN CARLOS I",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1583169",
+      "name": "Juan Carlos I Park",
+      "types": [
+        "Q1759852",
+        "Q3845395"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Juan Carlos I Park (Q1583169) for cells containing \"PARQUE JUAN CARLOS I\" in column parkName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "JARDINES DEL BUEN RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1131807",
+      "name": "El Retiro Park",
+      "types": [
+        "Q22746",
+        "Q22698",
+        "Q1200957",
+        "Q14946335",
+        "Q570116"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Retiro Park (Q1131807) for cells containing \"JARDINES DEL BUEN RETIRO\" in column parkName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "PARQUE DE LA DEHESA DE LA VILLA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4887686",
+      "name": "Dehesa de la Villa Park",
+      "types": [
+        "Q22698"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item Dehesa de la Villa Park (Q4887686) for cells containing \"PARQUE DE LA DEHESA DE LA VILLA\" in column parkName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "PARQUE MADRID RÍO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6062341",
+      "name": "Madrid Río",
+      "types": [
+        "Q22698"
+      ],
+      "score": 74
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid Río (Q6062341) for cells containing \"PARQUE MADRID RÍO\" in column parkName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "PARQUE DEL OESTE - TEMPLO DE DEBOD",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2369398",
+      "name": "Parque del Oeste",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Parque del Oeste (Q2369398) for cells containing \"PARQUE DEL OESTE - TEMPLO DE DEBOD\" in column parkName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "parkName",
+          "expression": "value",
+          "columnName": "parkName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "JARDÍN DE 'EL CAPRICHO' DE LA ALAMEDA DE OSUNA",
+                "l": "JARDÍN DE 'EL CAPRICHO' DE LA ALAMEDA DE OSUNA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "parkName: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "parkName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "JARDÍN DE 'EL CAPRICHO' DE LA ALAMEDA DE OSUNA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2054035",
+      "name": "El Capricho Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Capricho Park (Q2054035) for cells containing \"JARDÍN DE 'EL CAPRICHO' DE LA ALAMEDA DE OSUNA\" in column parkName"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "parkName",
+          "expression": "value",
+          "columnName": "parkName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "JARDÍN DE LA  QUINTA DE TORRE ARIAS",
+                "l": "JARDÍN DE LA  QUINTA DE TORRE ARIAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "parkName: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "parkName",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "parkName",
+    "similarValue": "JARDÍN DE LA  QUINTA DE TORRE ARIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q33141667",
+      "name": "Quinta de Torre Arias Park",
+      "types": [
+        "Q22698"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Match item Quinta de Torre Arias Park (Q33141667) for cells containing \"JARDÍN DE LA  QUINTA DE TORRE ARIAS\" in column parkName"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q16521",
+        "name": "taxon"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column species to type Q16521"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Prunus dulcis",
+    "judgment": "matched",
+    "match": {
+      "id": "Q39918",
+      "name": "Prunus dulcis",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Prunus dulcis (Q39918) for cells containing \"Prunus dulcis\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Ulmus pumila",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1079824",
+      "name": "Ulmus pumila",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ulmus pumila (Q1079824) for cells containing \"Ulmus pumila\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Gleditsia triacanthos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q157650",
+      "name": "Gleditsia triacanthos",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gleditsia triacanthos (Q157650) for cells containing \"Gleditsia triacanthos\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Fraxinus angustifolia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q518949",
+      "name": "Fraxinus angustifolia",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fraxinus angustifolia (Q518949) for cells containing \"Fraxinus angustifolia\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Olea europaea",
+    "judgment": "matched",
+    "match": {
+      "id": "Q37083",
+      "name": "Olea europaea",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Olea europaea (Q37083) for cells containing \"Olea europaea\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Quercus coccifera",
+    "judgment": "matched",
+    "match": {
+      "id": "Q158178",
+      "name": "Quercus coccifera",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Quercus coccifera (Q158178) for cells containing \"Quercus coccifera\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Robinia pseudoacacia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q157417",
+      "name": "Robinia pseudoacacia",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Robinia pseudoacacia (Q157417) for cells containing \"Robinia pseudoacacia\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Morus alba",
+    "judgment": "matched",
+    "match": {
+      "id": "Q157307",
+      "name": "Morus alba",
+      "types": [
+        "Q16521",
+        "Q188840"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Morus alba (Q157307) for cells containing \"Morus alba\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Acer saccharinum",
+    "judgment": "matched",
+    "match": {
+      "id": "Q158301",
+      "name": "Acer saccharinum",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Acer saccharinum (Q158301) for cells containing \"Acer saccharinum\" in column species"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "species: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "species",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "species",
+    "similarValue": "Quercus faginea",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2432250",
+      "name": "Quercus faginea",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Quercus faginea (Q2432250) for cells containing \"Quercus faginea\" in column species"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "parkName",
+    "expression": "grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_parkName",
+    "columnInsertIndex": 1,
+    "description": "Create column same_as_wikidata_parkName at index 1 based on column parkName using expression grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "species",
+    "expression": "grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_species",
+    "columnInsertIndex": 3,
+    "description": "Create column same_as_wikidata_species at index 3 based on column species using expression grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id"
+  }
+]

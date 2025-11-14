@@ -1,0 +1,6 @@
+﻿PREFIX schema: <http://schema.org/>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+SELECT (COUNT(?adminWD) AS ?total) WHERE {
+  ?s a schema:Place ; schema:containedInPlace ?adminWD .
+  ?adminLocal owl:sameAs ?adminWD .
+}

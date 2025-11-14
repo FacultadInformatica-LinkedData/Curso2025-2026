@@ -1,0 +1,134 @@
+# Prefijos basados en mapping-with-links.rml
+PREFIX rr: <http://www.w3.org/ns/r2rml#>
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> # Cambiado de geo a wgs según tu mapping
+PREFIX ex: <http://group19.linkeddata.es/resource/> # Prefijo para tus recursos
+PREFIX ont: <http://group19.linkeddata.es/def/transport#> # Prefijo para tu ontología
+PREFIX wd: <http://www.wikidata.org/entity/> # Prefijo común para Wikidata
+
+# --- Consultas Generales de Verificación de Enlaces ---
+
+# 1. ¿Existen enlaces externos usando las propiedades schema mapeadas? Muestra 10 ejemplos.
+# Objetivo: Comprobar rápidamente que se han generado tripletas de enlace.
+SELECT DISTINCT ?sujeto ?predicado ?enlaceExterno WHERE {
+  { ?sujeto schema:addressLocality ?enlaceExterno . BIND(schema:addressLocality AS ?predicado) }
+  UNION
+  { ?sujeto schema:provider ?enlaceExterno . BIND(schema:provider AS ?predicado) }
+  UNION
+  { ?sujeto schema:network ?enlaceExterno . BIND(schema:network AS ?predicado) }
+  UNION
+  { ?sujeto schema:addressCountry ?enlaceExterno . BIND(schema:addressCountry AS ?predicado) }
+  FILTER(isIRI(?enlaceExterno)) # Asegurarse de que el objeto es una URI
+} LIMIT 10
+
+# 2. ¿Cuántas entidades en total tienen algún enlace externo mapeado?
+# Objetivo: Tener una idea general de cuántos recursos se han enlazado.
+SELECT (COUNT(DISTINCT ?sujeto) AS ?totalEntidadesEnlazadas) WHERE {
+  { ?sujeto schema:addressLocality ?enlaceExterno . }
+  UNION
+  { ?sujeto schema:provider ?enlaceExterno . }
+  UNION
+  { ?sujeto schema:network ?enlaceExterno . }
+  UNION
+  { ?sujeto schema:addressCountry ?enlaceExterno . }
+  FILTER(isIRI(?enlaceExterno))
+}
+
+# 3. ¿Cuáles son todos los recursos externos únicos a los que hemos enlazado?
+# Objetivo: Ver el rango de datasets/entidades externas utilizadas.
+SELECT DISTINCT ?enlaceExterno WHERE {
+  { ?sujeto schema:addressLocality ?enlaceExterno . }
+  UNION
+  { ?sujeto schema:provider ?enlaceExterno . }
+  UNION
+  { ?sujeto schema:network ?enlaceExterno . }
+  UNION
+  { ?sujeto schema:addressCountry ?enlaceExterno . }
+  FILTER(isIRI(?enlaceExterno))
+} ORDER BY ?enlaceExterno
+
+# --- Consultas Específicas para Aparcamientos (ont:ParkingFacility) ---
+
+# 4. ¿Cuántos aparcamientos tienen enlace a ciudad (schema:addressLocality)?
+# Objetivo: Verificar la cobertura del enlace de ciudad para Aparcamientos.
+SELECT (COUNT(?aparcamiento) AS ?numeroAparcamientosConCiudad) WHERE {
+  ?aparcamiento a ont:ParkingFacility ;
+                schema:addressLocality ?ciudadUri .
+  FILTER(isIRI(?ciudadUri))
+}
+
+# 5. Muestra 5 aparcamientos, su nombre y sus enlaces a ciudad, proveedor y país.
+# Objetivo: Inspeccionar ejemplos concretos de enlaces para Aparcamientos.
+SELECT ?aparcamiento ?nombre ?ciudad ?proveedor ?pais WHERE {
+  ?aparcamiento a ont:ParkingFacility ;
+                schema:name ?nombre .
+  OPTIONAL { ?aparcamiento schema:addressLocality ?ciudad . FILTER(isIRI(?ciudad)) }
+  OPTIONAL { ?aparcamiento schema:provider ?proveedor . FILTER(isIRI(?proveedor)) }
+  OPTIONAL { ?aparcamiento schema:addressCountry ?pais . FILTER(isIRI(?pais)) }
+} LIMIT 5
+
+# 6. ¿Hay aparcamientos enlazados a la entidad Wikidata para Madrid (wd:Q2807)?
+# Objetivo: Verificar si el enlace con la ciudad de Madrid funcionó como se esperaba para aparcamientos.
+SELECT ?aparcamiento ?nombre WHERE {
+  ?aparcamiento a ont:ParkingFacility ;
+                schema:name ?nombre ;
+                schema:addressLocality wd:Q2807 . # wd:Q2807 es Madrid en Wikidata
+} LIMIT 10
+
+# --- Consultas Específicas para Estaciones BiciMAD (ont:BikeSharingStation) ---
+
+# 7. ¿Cuántas estaciones BiciMAD tienen enlace a ciudad (schema:addressLocality)?
+# Objetivo: Verificar la cobertura del enlace de ciudad para BiciMAD.
+SELECT (COUNT(?estacion) AS ?numeroEstacionesBiciMADConCiudad) WHERE {
+  ?estacion a ont:BikeSharingStation ;
+            schema:addressLocality ?ciudadUri .
+  FILTER(isIRI(?ciudadUri))
+}
+
+# 8. Muestra 5 estaciones BiciMAD, su nombre y sus enlaces a ciudad, proveedor y red.
+# Objetivo: Inspeccionar ejemplos concretos de enlaces para BiciMAD.
+SELECT ?estacion ?nombre ?ciudad ?proveedor ?red WHERE {
+  ?estacion a ont:BikeSharingStation ;
+            schema:name ?nombre .
+  OPTIONAL { ?estacion schema:addressLocality ?ciudad . FILTER(isIRI(?ciudad)) }
+  OPTIONAL { ?estacion schema:provider ?proveedor . FILTER(isIRI(?proveedor)) }
+  OPTIONAL { ?estacion schema:network ?red . FILTER(isIRI(?red)) }
+} LIMIT 5
+
+# 9. ¿Hay estaciones BiciMAD enlazadas al proveedor EMT Madrid (wd:Q1094755)?
+# Objetivo: Verificar el enlace con el proveedor EMT Madrid.
+SELECT ?estacion ?nombre WHERE {
+  ?estacion a ont:BikeSharingStation ;
+            schema:name ?nombre ;
+            schema:provider wd:Q1094755 . # wd:Q1094755 es EMT Madrid en Wikidata
+} LIMIT 10
+
+# --- Consultas Específicas para Intensidad de Movilidad (ont:MobilityIntensity) ---
+
+# 10. ¿Cuántas mediciones de intensidad tienen enlace a país (schema:addressCountry)?
+# Objetivo: Verificar la cobertura del enlace de país para Intensidad de Movilidad.
+SELECT (COUNT(?medicion) AS ?numeroMedicionesConPais) WHERE {
+  ?medicion a ont:MobilityIntensity ;
+            schema:addressCountry ?paisUri .
+  FILTER(isIRI(?paisUri))
+}
+
+# 11. Muestra 5 mediciones de intensidad, su zona y sus enlaces a ciudad y país.
+# Objetivo: Inspeccionar ejemplos concretos de enlaces para Intensidad de Movilidad.
+SELECT ?medicion ?zona ?ciudad ?pais WHERE {
+  ?medicion a ont:MobilityIntensity ;
+            ont:zone ?zona . # Asumiendo que usaste ont:zone como propiedad
+  OPTIONAL { ?medicion schema:addressLocality ?ciudad . FILTER(isIRI(?ciudad)) }
+  OPTIONAL { ?medicion schema:addressCountry ?pais . FILTER(isIRI(?pais)) }
+} LIMIT 5
+
+# 12. ¿Hay mediciones de intensidad enlazadas a la entidad Wikidata para España (wd:Q29)?
+# Objetivo: Verificar si el enlace con el país España funcionó.
+SELECT ?medicion ?zona WHERE {
+  ?medicion a ont:MobilityIntensity ;
+            ont:zone ?zona ; # Asumiendo que usaste ont:zone como propiedad
+            schema:addressCountry wd:Q29 . # wd:Q29 es España en Wikidata
+} LIMIT 10

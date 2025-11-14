@@ -1,0 +1,63 @@
+# Group 08 - Hands-On 4
+# SPARQL queries
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://www.semanticweb.org/group08/ontology#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+# 1. Count total triples
+SELECT (COUNT(*) AS ?totalTriples)
+WHERE { ?s ?p ?o }
+
+# 2. Count instances per class
+SELECT ?class (COUNT(?s) AS ?count)
+WHERE { ?s a ?class }
+GROUP BY ?class
+ORDER BY DESC(?count)
+
+# 3. Earliest and latest traffic observation dates
+SELECT (MIN(?date) AS ?earliest) (MAX(?date) AS ?latest)
+WHERE {
+  ?s a :TrafficSection ;
+     :hasObservationDateTime ?date .
+}
+
+# 4. Number of bike parkings per district
+SELECT ?district (COUNT(?s) AS ?numParkings)
+WHERE {
+  ?s a :BikeParking ;
+     :hasDistrict ?district .
+}
+GROUP BY ?district
+ORDER BY DESC(?numParkings)
+
+# 5. Average pollutant values per station
+SELECT ?station (AVG(?value) AS ?avgValue)
+WHERE {
+  ?obs a :AirQualityObservation ;
+       :hasContaminantValue ?value ;
+       :locatedIn ?station .
+}
+GROUP BY ?station
+ORDER BY DESC(?avgValue)
+LIMIT 10
+
+# 6. Check resources with rdfs:label
+SELECT (COUNT(DISTINCT ?s) AS ?withLabel)
+WHERE { ?s rdfs:label ?label }
+
+# 7. Sample of labels per class
+SELECT ?class ?label
+WHERE {
+  ?s a ?class ;
+     rdfs:label ?label .
+}
+LIMIT 10
+
+# 8. Find labels containing the word "traffic"
+SELECT ?s ?label
+WHERE {
+  ?s rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(STR(?label)), "traffic"))
+}
+LIMIT 5

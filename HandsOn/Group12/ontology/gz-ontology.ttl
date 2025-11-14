@@ -7,7 +7,7 @@
 <http://linkeddata.greenzonesmadrid.org/ontology/gz>
     a owl:Ontology ;
     rdfs:label "Green Zones Ontology for Madrid"@en ;
-    rdfs:comment "Lightweight ontology to represent municipal green zones (parks and gardens) of Madrid."@en .
+    rdfs:comment "Lightweight ontology to represent municipal green zones (parks and gardens) of Madrid, their administrative district and external links."@en .
 
 ########## Classes ##########
 
@@ -15,44 +15,64 @@ gz:GreenZone a owl:Class ;
     rdfs:label "Green Zone"@en ;
     rdfs:comment "Municipal green area such as a park or garden."@en .
 
+gz:District a owl:Class ;
+    rdfs:label "District"@en ;
+    rdfs:comment "Administrative district of Madrid to which a green zone belongs."@en .
+
+########## Object properties ##########
+
+gz:inDistrict a owl:ObjectProperty ;
+    rdfs:label "in district"@en ;
+    rdfs:comment "Links a green zone to the administrative district where it is located."@en ;
+    rdfs:domain gz:GreenZone ;
+    rdfs:range  gz:District .
+
 ########## Datatype properties ##########
 
 gz:district a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "district"@en .
+    rdfs:label  "district (literal name)"@en ;
+    rdfs:comment "Literal district name as provided in the original dataset (e.g., 'CENTRO')."@en .
 
 gz:subepigrafe a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "subepígrafe"@es .
+    rdfs:label  "subepígrafe"@es ;
+    rdfs:comment "Categoría general de la zona verde en el inventario municipal."@es .
 
 gz:apartado a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "apartado"@es .
+    rdfs:label  "apartado"@es ;
+    rdfs:comment "Subcategoría o apartado administrativo (por ejemplo, 'PARQUES Y JARDINES')."@es .
 
 gz:fileNumber a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "número de archivo"@es .
+    rdfs:label  "número de archivo"@es ;
+    rdfs:comment "Identificador interno o código de expediente asociado a la zona verde."@es .
 
 gz:propertyNature a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "naturaleza del inmueble"@es .
+    rdfs:label  "naturaleza del inmueble"@es ;
+    rdfs:comment "Naturaleza jurídica/urbanística del suelo (por ejemplo, URBANA)."@es .
 
 gz:situationTarget a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "situación destino"@es .
+    rdfs:label  "situación destino"@es ;
+    rdfs:comment "Localización descriptiva de la parcela o solar (calles, cruces, números)."@es .
 
 gz:destination a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "destino"@es .
+    rdfs:label  "destino"@es ;
+    rdfs:comment "Destino dotacional / uso previsto (por ejemplo, 'DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO.')."@es .
 
 gz:plot a owl:DatatypeProperty ;
     rdfs:domain gz:GreenZone ;
     rdfs:range  xsd:string ;
-    rdfs:label  "superficie del solar"@es .
+    rdfs:label  "superficie del solar"@es ;
+    rdfs:comment "Superficie declarada de la zona verde (m2). Nota: actualmente cadena con sufijo 'm2'; se puede normalizar a xsd:decimal en el futuro."@es .

@@ -1,0 +1,15 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "EPISODIO OZONO",
+    "expression": "grel:\"https://www.wikidata.org/entity/Q36933\"",
+    "onError": "set-to-blank",
+    "newColumnName": "EPISODIO URI",
+    "columnInsertIndex": 3,
+    "description": "Crear la columna EPISODIO URI en el índice 3 basada en la columna EPISODIO OZONO usando la expresión grel:\"https://www.wikidata.org/entity/Q36933\""
+  }
+]

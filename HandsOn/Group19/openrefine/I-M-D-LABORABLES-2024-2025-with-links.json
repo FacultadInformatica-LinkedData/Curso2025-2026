@@ -1,0 +1,28 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "zone",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q2807\"",
+    "onError": "set-to-blank",
+    "newColumnName": "city_wikidata_uri",
+    "columnInsertIndex": 3,
+    "description": "Crear la columna city_wikidata_uri en el índice 3 basada en la columna zone usando la expresión grel:\"http://www.wikidata.org/entity/Q2807\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "zone",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q29\"",
+    "onError": "set-to-blank",
+    "newColumnName": "country_wikidata_uri",
+    "columnInsertIndex": 3,
+    "description": "Crear la columna country_wikidata_uri en el índice 3 basada en la columna zone usando la expresión grel:\"http://www.wikidata.org/entity/Q29\""
+  }
+]

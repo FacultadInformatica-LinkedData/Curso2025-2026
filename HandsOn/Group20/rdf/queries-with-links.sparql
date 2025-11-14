@@ -1,36 +1,39 @@
-############################################################
-# Query 5: URIs enlazadas de las localizaciones de parkings
-# Devuelve los nombres de los parkings y las URIs (enlazadas a Wikidata)
-# asociadas a sus localizaciones (propiedad ns:hasLocation).
-############################################################
-
-PREFIX ns: <http://www.owl-ontologies.com/ns#>
+################################################################################
+# PREFIXES
+################################################################################
+PREFIX ns:  <https://data.smartcitymadrid.es/ontology/parking#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?name ?uri
+################################################################################
+# QUERY 9 - First ten parkings linked to Wikidata
+## Retrieves the first ten parkings that have been linked to Wikidata entities via owl:sameAs
+## Results are ordered by the parking identifier
+################################################################################
+SELECT ?id ?name ?wikidata
 WHERE {
-  ?p a ns:Parking ;
-     ns:hasName ?name ;
-     ns:hasLocation ?loc .
-  ?loc owl:sameAs ?uri .
-  FILTER(CONTAINS(STR(?uri), "wikidata.org/entity/"))
+  ?parking a ns:Parking ;
+           ns:hasId ?id ;
+           ns:hasName ?name ;
+           owl:sameAs ?wikidata .
+  FILTER(CONTAINS(STR(?wikidata), "wikidata.org/entity/"))
 }
-LIMIT 20
+ORDER BY xsd:integer(?id)
+LIMIT 10
 
-
-############################################################
-# Query 6: URIs enlazadas directamente de los parkings
-# Devuelve los nombres de los parkings y las URIs (enlazadas a Wikidata)
-# asociadas directamente a cada recurso de parking.
-############################################################
-
-PREFIX ns: <http://www.owl-ontologies.com/ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-
-SELECT ?name ?uri
+################################################################################
+# QUERY 10 - First ten parkings with linked municipalities in Wikidata
+## Retrieves the first ten parkings with their linked municipalities in Wikidata
+## Results are ordered by the parking identifier
+################################################################################
+SELECT ?id ?name ?town
 WHERE {
-  ?p a ns:Parking ;
-     ns:hasName ?name ;
-     owl:sameAs ?uri .
+  ?parking a ns:Parking ;
+           ns:hasId ?id ;
+           ns:hasName ?name ;
+           ns:hasTown ?townLink .
+  ?townLink owl:sameAs ?town .
+  FILTER(CONTAINS(STR(?town), "wikidata.org/entity/"))
 }
-LIMIT 20
+ORDER BY xsd:integer(?id)
+LIMIT 10

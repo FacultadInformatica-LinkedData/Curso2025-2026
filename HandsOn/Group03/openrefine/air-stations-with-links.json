@@ -1,0 +1,297 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:Madrid",
+    "onError": "set-to-blank",
+    "newColumnName": "MUNICIPIO",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna MUNICIPIO en el índice 1 basada en la columna CODIGO usando la expresión grel:Madrid"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:Madrid",
+    "onError": "set-to-blank",
+    "newColumnName": "PROVINCIA",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna PROVINCIA en el índice 1 basada en la columna CODIGO usando la expresión grel:Madrid"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:Comunidad de Madrid",
+    "onError": "set-to-blank",
+    "newColumnName": "COMUNIDAD_AUTONOMA",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna COMUNIDAD_AUTONOMA en el índice 1 basada en la columna CODIGO usando la expresión grel:Comunidad de Madrid"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "PROVINCIA",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MUNICIPIO to type Q2074737"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "CODIGO",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        },
+        {
+          "column": "COMUNIDAD_AUTONOMA",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MUNICIPIO to type Q2074737"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "COMUNIDAD_AUTONOMA",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        },
+        {
+          "column": "PROVINCIA",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MUNICIPIO to type Q2074737"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPIO",
+    "expression": "grel:\"Madrid\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna MUNICIPIO usando la expresión grel:\"Madrid\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "grel:\"Madrid\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna PROVINCIA usando la expresión grel:\"Madrid\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COMUNIDAD_AUTONOMA",
+    "expression": "grel:\"Comunidad de Madrid\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna COMUNIDAD_AUTONOMA usando la expresión grel:\"Comunidad de Madrid\""
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "PROVINCIA",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MUNICIPIO to type Q2074737"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q162620",
+        "name": "province of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "COMUNIDAD_AUTONOMA",
+          "propertyName": "located in the administrative territorial entity",
+          "propertyID": "P131"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q162620"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COMUNIDAD_AUTONOMA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10742",
+        "name": "autonomous community of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column COMUNIDAD_AUTONOMA to type Q10742"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MUNICIPIO",
+    "expression": "grel:if(\n  and(\n    isNotNull(cell.recon),\n    isNotNull(cell.recon.match),\n    isNotNull(cell.recon.match.id)\n  ),\n  \"https://www.wikidata.org/entity/\" + cell.recon.match.id,\n  \"\"\n)",
+    "onError": "set-to-blank",
+    "newColumnName": "municipality_wikidata_uri",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna municipality_wikidata_uri en el índice 4 basada en la columna MUNICIPIO usando la expresión grel:if(\n  and(\n    isNotNull(cell.recon),\n    isNotNull(cell.recon.match),\n    isNotNull(cell.recon.match.id)\n  ),\n  \"https://www.wikidata.org/entity/\" + cell.recon.match.id,\n  \"\"\n)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:if(\n  and(\n    isNotNull(cell.recon),\n    isNotNull(cell.recon.match),\n    isNotNull(cell.recon.match.id)\n  ),\n  \"https://www.wikidata.org/entity/\" + cell.recon.match.id,\n  \"\"\n)",
+    "onError": "set-to-blank",
+    "newColumnName": "province_wikidata_uri",
+    "columnInsertIndex": 3,
+    "description": "Crear la columna province_wikidata_uri en el índice 3 basada en la columna PROVINCIA usando la expresión grel:if(\n  and(\n    isNotNull(cell.recon),\n    isNotNull(cell.recon.match),\n    isNotNull(cell.recon.match.id)\n  ),\n  \"https://www.wikidata.org/entity/\" + cell.recon.match.id,\n  \"\"\n)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "COMUNIDAD_AUTONOMA",
+    "expression": "grel:if(\n  and(\n    isNotNull(cell.recon),\n    isNotNull(cell.recon.match),\n    isNotNull(cell.recon.match.id)\n  ),\n  \"https://www.wikidata.org/entity/\" + cell.recon.match.id,\n  \"\"\n)",
+    "onError": "set-to-blank",
+    "newColumnName": "autonomous_community_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna autonomous_community_wikidata_uri en el índice 2 basada en la columna COMUNIDAD_AUTONOMA usando la expresión grel:if(\n  and(\n    isNotNull(cell.recon),\n    isNotNull(cell.recon.match),\n    isNotNull(cell.recon.match.id)\n  ),\n  \"https://www.wikidata.org/entity/\" + cell.recon.match.id,\n  \"\"\n)"
+  }
+]

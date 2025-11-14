@@ -1,0 +1,11 @@
+DATETIME;Hour;PROVINCIA;MUNICIPIO;ESTACION;MAGNITUD;POLLUTANT_NAME;POLLUTANT_WIKIDATA_URI;MUNICIPALITY_NAME;MUNICIPALITY_WIKIDATA_URI;PUNTO_MUESTREO;Value;Validation
+2025-10-26 00:00:00;01;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.2;V
+2025-10-26 01:00:00;02;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.0;N
+2025-10-26 02:00:00;03;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.1;V
+2025-10-26 03:00:00;04;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.1;V
+2025-10-26 04:00:00;05;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.1;V
+2025-10-26 05:00:00;06;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.1;V
+2025-10-26 06:00:00;07;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.1;V
+2025-10-26 07:00:00;08;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.3;V
+2025-10-26 08:00:00;09;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.3;V
+2025-10-26 09:00:00;10;28;79;4;6;Carbon Monoxide;http://www.wikidata.org/entity/Q202759;Madrid;http://www.wikidata.org/entity/Q2807;28079004_6_48;0.3;V

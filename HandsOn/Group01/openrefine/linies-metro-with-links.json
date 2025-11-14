@@ -1,0 +1,210 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q15079663",
+        "name": "rapid transit railway line"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOM_LINIA to type Q15079663"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L4",
+    "judgment": "matched",
+    "match": {
+      "id": "Q961384",
+      "name": "Barcelona Metro line 4",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 4 (Q961384) para las celdas que contienen \"L4\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L9S",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1577033",
+      "name": "Barcelona Metro line 9",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 9 (Q1577033) para las celdas que contienen \"L9S\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L10N",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1785338",
+      "name": "Barcelona Metro line 10",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 10 (Q1785338) para las celdas que contienen \"L10N\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "L10S",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1785338",
+      "name": "Barcelona Metro line 10",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barcelona Metro line 10 (Q1785338) para las celdas que contienen \"L10S\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_LINIA",
+    "similarValue": "FM",
+    "judgment": "matched",
+    "match": {
+      "id": "Q388195",
+      "name": "Funicular de Montjuïc",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Funicular de Montjuïc (Q388195) para las celdas que contienen \"FM\" en la columna NOM_LINIA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOM_LINIA",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_NOM_LINIA",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna same_as_wikidata_NOM_LINIA en el índice 4 basada en la columna NOM_LINIA usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_LINIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q928830",
+        "name": "metro station"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ORIGEN_LINIA to type Q928830"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ORIGEN_LINIA",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_ORIGEN_LINIA",
+    "columnInsertIndex": 8,
+    "description": "Crear la columna same_as_wikidata_ORIGEN_LINIA en el índice 8 basada en la columna ORIGEN_LINIA usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_LINIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q22808403",
+        "name": "underground station"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DESTI_LINIA to type Q22808403"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DESTI_LINIA",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_DESTI_LINIA",
+    "columnInsertIndex": 10,
+    "description": "Crear la columna same_as_wikidata_DESTI_LINIA en el índice 10 basada en la columna DESTI_LINIA usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

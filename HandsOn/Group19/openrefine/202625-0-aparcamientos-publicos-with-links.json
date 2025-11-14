@@ -1,0 +1,54 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna name usando la expresión value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q2807\"",
+    "onError": "set-to-blank",
+    "newColumnName": "city_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna city_wikidata_uri en el índice 2 basada en la columna name usando la expresión grel:\"http://www.wikidata.org/entity/Q2807\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q3773976\"",
+    "onError": "set-to-blank",
+    "newColumnName": "operator_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna operator_wikidata_uri en el índice 2 basada en la columna name usando la expresión grel:\"http://www.wikidata.org/entity/Q3773976\""
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "name",
+    "expression": "grel:\"http://www.wikidata.org/entity/Q29\"",
+    "onError": "set-to-blank",
+    "newColumnName": "country_wikidata_uri",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna country_wikidata_uri en el índice 2 basada en la columna name usando la expresión grel:\"http://www.wikidata.org/entity/Q29\""
+  }
+]
