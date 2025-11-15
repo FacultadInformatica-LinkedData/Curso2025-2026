@@ -1,0 +1,118 @@
+@prefix gz:    <http://linkeddata.greenzonesmadrid.org/ontology/gz#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/1> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300000" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE BAILEN NUM 15" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO." ;
+  gz:plot "5025.42 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/2> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300001" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE BAILEN NUM 6" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES SINGULAR. DENTRO DE SU PERÍMETRO SE ENCUENTRA UBICADAUNA CASETA DE GUARDAS." ;
+  gz:plot "26814.00 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/3> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300002" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DEL MESON DE PAREDES, NUM. 37 C/V C/ DE AMPARO NUM 26" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO." ;
+  gz:plot "2979.20 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/4> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300003" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE MESON DE PAREDES NUM 68" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO." ;
+  gz:plot "1637.34 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/5> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300004" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA NUM 12" ;
+  gz:destination "DOTACIONAL SERVCIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO TOTALMENTE PARA JARDIN PUBLICO. PROYECTODEL BARRIO HISTORICO." ;
+  gz:plot "172.90 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/6> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300005" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA, Nº 21-23 Y C/ DE LA MORERÍA, Nº 28" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO TOTALMENTE POR LOS ACCESOS AL VIADUCTO." ;
+  gz:plot "5462.95 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/7> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300006" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA, Nº27 C/V CUESTA DE LOS CIEGOS" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADA PARA ZONA VERDE. ACCESOS AL VIADUCTO." ;
+  gz:plot "1001.53 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/8> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300007" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA C/V CUESTA DE LA VEGA" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ANTIGUA ALAMEDA DE LA VIRGEN DEL PUERTO YJARDINES DE LA CUESTA DE LA VEGA. DENTRO DE SU PERIMETRO SE ENCUENTRAN UBICADOS UN EVACUATORIO, UNCANTON DE LIMPIEZAS, UNA CASETA DE PERSONAL DE JARDINERÍA Y UNA PISTA POLIVALENTE." ;
+  gz:plot "106811.18 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/9> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300008" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA, Nº 31 Y 37 C/V CUESTA DE JAVALQUINTO" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. ACCESOS AL VIADUCTO." ;
+  gz:plot "1999.63 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+<http://linkeddata.greenzonesmadrid.org/resource/zone/10> a gz:GreenZone ;
+  gz:district "CENTRO" ;
+  gz:subepigrafe "ZONAS VERDES" ;
+  gz:apartado "PARQUES Y JARDINES" ;
+  gz:fileNumber "300009" ;
+  gz:propertyNature "URBANA" ;
+  gz:situationTarget "CALLE DE SEGOVIA NUM 35" ;
+  gz:destination "DOTACIONAL SERVICIOS COLECTIVOS ZONAS VERDES BÁSICO. AFECTADO PARA ZONA VERDE. ACCESOS AL VIADUCTO." ;
+  gz:plot "1374.79 m2" ;
+  gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> .
+
+# Recurso del distrito CENTRO
+<http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> a gz:District ;
+  rdfs:label "CENTRO" ;
+  owl:sameAs <https://www.wikidata.org/entity/Q1763376> .
