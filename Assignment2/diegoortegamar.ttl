@@ -1,0 +1,34 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<https://datos.bne.es/resource/> .
+@prefix ns2:	<https://datos.bne.es/def/> .
+ns1:a3316285	rdf:type	ns2:C1003 .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns1:a3316285	rdfs:label	"Actas de las II Jornadas sobre Ontolog\u00EDas Web y Sem\u00E1ntica" .
+@prefix ns4:	<http://purl.org/dc/terms/> .
+@prefix ns5:	<http://id.loc.gov/vocabulary/languages/> .
+ns1:a3316285	ns4:language	ns5:spa ;
+	ns2:id	"a3316285" ;
+	ns2:OP3001	<https://datos.bne.es/resource/1000003906> ,
+		<https://datos.bne.es/resource/1000003907> ,
+		<https://datos.bne.es/resource/1000003908> ;
+	ns2:OP3004	ns1:XX4435380 ;
+	ns2:OP3006	ns1:XX4430054 ,
+		ns1:XX1464262 ;
+	ns2:OP3008	ns1:XX771271 ,
+		ns1:XX4436602 ;
+	ns2:P3001	"Thomson" ;
+	ns2:P3002	"Actas de las II Jornadas sobre Ontolog\u00EDas Web y Sem\u00E1ntica" ;
+	ns2:P3003	"Madrid" ;
+	ns2:P3004	"IV, 75 p." ;
+	ns2:P3005	"[Texto impreso]" ;
+	ns2:P3006	"[2007]" ;
+	ns2:P3007	"24 cm" ;
+	ns2:P3008	"WebSem\u00E1ntica'2007 ; editores, \u00D3scar Corcho ... [et al.]" ;
+	ns2:P3009	"M 38241-2007" ;
+	ns2:P3012	"il." ;
+	ns2:P3013	"978-84-9732-612-4" ;
+	ns2:P3015	"Incluye referencias bibliogr\u00E1ficas e \u00EDndice" ,
+		"\"Web Sem\u00E1ntica Espa\u00F1a\"" ,
+		"Textos en espa\u00F1ol e ingl\u00E9s" ,
+		"Jornadas desarrolladas en el marco del II Congreso Espa\u00F1ol de Inform\u00E1tica (CEDI 2007) celebrado en Zaragoza del 11 al 14 de septiembre de 2007" ;
+	ns2:P3064	"Libro" .

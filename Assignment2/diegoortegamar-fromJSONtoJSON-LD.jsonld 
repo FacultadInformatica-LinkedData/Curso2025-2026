@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "parents": {
+      "@id": "https://schema.org/parent",
+      "@type": "@id"
+    },
+    "subjects": {
+      "@id": "https://schema.org/hasCourse",
+      "@container": "set"
+    }
+  },
+  "@type": "Person",
+  "@id": "http://example.org/person/diego-ortega",
+  "name": "Diego Alejandro Ortega Martinez",
+  "homeLocation": "Eberbach",
+  "age": 21,
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Hochschule Heilbronn"
+  },
+  "parent": [
+    { "@type": "Person", "name": "Felipe" },
+    { "@type": "Person", "name": "Gabriela" }
+  ],
+  "hasCourse": [
+    {
+      "@type": "Course",
+      "name": "Dirección Estratégica",
+      "provider": {
+        "@type": "Person",
+        "name": "Jorge"
+      },
+      "description": "Course about strategic direction."
+    },
+    {
+      "@type": "Course",
+      "name": "Gestión de Riesgos y Mercados Internacionales",
+      "provider": {
+        "@type": "Person",
+        "name": "Barbara"
+      },
+      "description": "Course on risk management and international markets."
+    }
+  ]
+}

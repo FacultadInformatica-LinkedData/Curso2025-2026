@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "@vocab": "http://example.org/",
+    "includes": { "@id": "http://example.org/includes", "@type": "@id" },
+    "hasMeasurement": { "@id": "http://example.org/hasMeasurement", "@type": "@id" },
+    "hasTemperature": { "@id": "http://example.org/hasTemperature" },
+    "atTime": { "@id": "http://example.org/atTime", "@type": "xsd:dateTime" },
+    "hasOwner": { "@id": "http://example.org/hasOwner", "@type": "@id" },
+    "hasName": { "@id": "http://example.org/hasName" },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+
+  "@graph": [
+    {
+      "@id": "http://example.org/Class01",
+      "includes": [
+        { "@id": "http://example.org/Sensor029" },
+        { "@id": "http://example.org/Computer101" }
+      ]
+    },
+    {
+      "@id": "http://example.org/Sensor029",
+      "hasMeasurement": { "@id": "http://example.org/Measurement8401" }
+    },
+    {
+      "@id": "http://example.org/Measurement8401",
+      "hasTemperature": 29,
+      "atTime": "2010-06-12T12:00:12"
+    },
+    {
+      "@id": "http://example.org/Computer101",
+      "hasOwner": { "@id": "http://example.org/User10A" }
+    },
+    {
+      "@id": "http://example.org/User10A",
+      "hasName": "Pedro"
+    }
+  ]
+}
