@@ -1,0 +1,259 @@
+@prefix ns: <http://example.org/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<#MuseumMapping>
+    rml:logicalSource [
+        rml:source "museosMadrid-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/madridMuseos/{NOMBRE}" ;
+        rr:class schema:Museum
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:name ; 
+        rr:objectMap [ rml:reference "NOMBRE" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate owl:sameAs ; 
+        rr:objectMap [ rml:reference "NOMBRE-URL" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:address ; 
+        rr:objectMap [ rml:reference "ADDRESS" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:url ; 
+        rr:objectMap [ rml:reference "CONTENT-URL" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:description ; 
+        rr:objectMap [ rml:reference "DESCRIPCION" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:additionalType ; 
+        rr:objectMap [ rml:reference "TIPO" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:email ; 
+        rr:objectMap [ rml:reference "EMAIL" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:telephone ; 
+        rr:objectMap [ rml:reference "TELEFONO" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:faxNumber ; 
+        rr:objectMap [ rml:reference "FAX" ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:latitude ; 
+        rr:objectMap [ rml:reference "LATITUD" ; rr:datatype xsd:double ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:longitude ; 
+        rr:objectMap [ rml:reference "LONGITUD" ; rr:datatype xsd:double ] 
+    ] ;
+
+    rr:predicateObjectMap [ 
+        rr:predicate schema:openingHours ; 
+        rr:objectMap [ rml:reference "HORARIO" ] 
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasNeighbourhood ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/neighbourhood/{Neighbourhood}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasDistrict ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/district/{DistrictCode}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasLocation ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/location/{Location}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasProvince ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/province/{Province}" ]
+    ];
+    
+    rr:predicateObjectMap [
+        rr:predicate schema:address ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/address/{id}" ]
+    ] .
+
+<#AddressMapping>
+    rml:logicalSource [
+        rml:source "museosMadrid-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/madridMuseos/address/{id}" ;
+        rr:class schema:PostalAddress
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:postalCode ;
+        rr:objectMap [ rml:reference "CODIGO-POSTAL"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:streetAddress ;
+        rr:objectMap [ rml:reference "ADDRESS"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ns:inNeighbourhood ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/neighbourhood/{Neighbourhood}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:inDistrict ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/district/{DistrictCode}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:inLocation ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/location/{Location}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:inProvince ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/province/{Province}" ]
+    ].
+
+<#NeighbourhoodMapping>
+    rml:logicalSource [
+        rml:source "museosMadrid-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/madridMuseos/neighbourhood/{Neighbourhood}" ;
+        rr:class ns:Neighbourhood
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:name ;
+        rr:objectMap [ rml:reference "BARRIO"]
+    ] ;
+
+    
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs ;
+        rr:objectMap [ rml:reference "BARRIO-URL" ]
+    ] .
+
+    rr:predicateObjectMap [
+        rr:predicate schema:identifier ;
+        rr:objectMap [ rml:reference "COD-BARRIO" ; rr:datatype xsd:string ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasDistrict ;
+        rr:objectMap [
+            rr:template "http://data.example.org/madridMuseos/district/{DistrictCode}"
+        ]
+    ];
+    
+    rr:predicateObjectMap [
+        rr:predicate ns:hasLocation ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/location/{Location}" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasProvince ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/province/{Province}" ]
+    ].
+
+<#DistrictMapping>
+    rml:logicalSource [
+        rml:source "museosMadrid-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/madridMuseos/district/{DistrictCode}" ;
+        rr:class ns:District
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:name ;
+        rr:objectMap [ rml:reference "DISTRITO"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:identifier ;
+        rr:objectMap [ rml:reference "COD-DISTRITO" ; rr:datatype xsd:string ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasLocation ;
+        rr:objectMap [
+            rr:template "http://data.example.org/madridMuseos/location/{Location}"
+        ]
+    ];
+    
+        rr:predicateObjectMap [
+        rr:predicate ns:hasProvince ;
+        rr:objectMap [ rr:template "http://data.example.org/madridMuseos/province/{Province}" ]
+    ].
+
+<#LocationMapping>
+    rml:logicalSource [
+        rml:source "museosMadrid-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/madridMuseos/location/{Location}" ;
+        rr:class schema:City
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:name ;
+        rr:objectMap [ rml:reference "LOCALIDAD"]
+    ] ;   
+
+    rr:predicateObjectMap [
+        rr:predicate ns:hasProvince ;
+        rr:objectMap [
+            rr:template "http://data.example.org/madridMuseos/province/{Province}"
+        ]
+    ] .
+
+<#ProvinceMapping>
+    rml:logicalSource [
+        rml:source "museosMadrid-updated.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/madridMuseos/province/{Province}" ;
+        rr:class ns:Province
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:name ;
+        rr:objectMap [ rml:reference "PROVINCIA"]
+    ].

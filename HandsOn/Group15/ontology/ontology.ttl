@@ -6,58 +6,92 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-<> a owl:Ontology ;
-   dct:title "Group15 Smart City Ontology"@en ;
+<https://example.org/group15/def/> a owl:Ontology ;
+   dct:title "Group15 Smart City Ontology"@en , "Ontología Smart City Grupo15"@es ;
    dct:creator "Group15" ;
+   dct:created "2025-01-15"^^xsd:date ;
    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-   rdfs:comment "Lightweight vocabulary for stations, facilities and environmental measurements in Madrid."@en .
+   rdfs:comment "Lightweight vocabulary for stations, facilities and environmental measurements in Madrid."@en ;
+   rdfs:comment "Vocabulario ligero para estaciones, instalaciones y mediciones ambientales en Madrid."@es .
 
 ### Classes
+
+ex:Facility a owl:Class ;
+  rdfs:label "Facility"@en , "Instalación"@es ;
+  rdfs:comment "Generic urban facility or station providing services or data collection."@en ;
+  rdfs:comment "Instalación urbana genérica que proporciona servicios o recolecta datos."@es .
+
 ex:Station a owl:Class ;
+  rdfs:subClassOf ex:Facility ;
   rdfs:label "Station"@en , "Estación"@es ;
-  rdfs:comment "Generic physical station with geolocation and optional address."@en .
+  rdfs:comment "Generic physical station with geolocation and optional address, typically for data collection."@en ;
+  rdfs:comment "Estación física genérica con geolocalización y dirección opcional, típicamente para recolección de datos."@es .
 
 ex:AirQualityStation a owl:Class ;
   rdfs:subClassOf ex:Station ;
   rdfs:label "Air quality station"@en , "Estación de calidad del aire"@es ;
-  rdfs:comment "Station that collects air-quality pollutant measurements."@en .
+  rdfs:comment "Station that collects air-quality pollutant measurements (NO2, PM10, O3, etc.)."@en ;
+  rdfs:comment "Estación que recolecta mediciones de contaminantes del aire (NO2, PM10, O3, etc.)."@es .
 
 ex:BicycleStation a owl:Class ;
   rdfs:subClassOf ex:Station ;
   rdfs:label "Bicycle station"@en , "Estación de bicicletas"@es ;
-  rdfs:comment "Bike sharing docking station."@en .
+  rdfs:comment "Bike sharing docking station (e.g., BiciMAD in Madrid)."@en ;
+  rdfs:comment "Estación de anclaje de bicicletas compartidas (ej. BiciMAD en Madrid)."@es .
 
 ex:SportsFacility a owl:Class ;
+  rdfs:subClassOf ex:Facility ;
   rdfs:label "Sports facility"@en , "Instalación deportiva"@es ;
-  rdfs:comment "Municipal basic sports facility."@en .
+  rdfs:comment "Municipal basic sports facility (gym, pool, sports center)."@en ;
+  rdfs:comment "Instalación deportiva municipal básica (gimnasio, piscina, polideportivo)."@es .
 
 ex:Measurement a owl:Class ;
   rdfs:label "Measurement"@en , "Medición"@es ;
-  rdfs:comment "A single observed value for a property at a timestamp."@en .
+  rdfs:comment "A single observed value for a property at a specific timestamp."@en ;
+  rdfs:comment "Un valor observado individual para una propiedad en un instante específico."@es .
 
 ### Object properties
+
 ex:hasMeasurement a owl:ObjectProperty ;
-  rdfs:domain ex:Station ; rdfs:range ex:Measurement ;
+  rdfs:domain ex:Station ; 
+  rdfs:range ex:Measurement ;
   rdfs:label "has measurement"@en , "tiene medición"@es ;
-  rdfs:comment "Links a station to a measurement observed at that station."@en .
+  rdfs:comment "Links a station to a measurement observed at that station."@en ;
+  rdfs:comment "Vincula una estación con una medición observada en dicha estación."@es .
 
 ### Datatype properties
+
 ex:stationId  a owl:DatatypeProperty ;
-  rdfs:domain ex:Station ; rdfs:range xsd:string ;
-  rdfs:label "station identifier"@en , "identificador de estación"@es .
+  rdfs:domain ex:Station ; 
+  rdfs:range xsd:string ;
+  rdfs:label "station identifier"@en , "identificador de estación"@es ;
+  rdfs:comment "Unique identifier for a station (typically from source dataset)."@en ;
+  rdfs:comment "Identificador único para una estación (típicamente del dataset fuente)."@es .
 
 ex:observedValue a owl:DatatypeProperty ;
-  rdfs:domain ex:Measurement ; rdfs:range xsd:decimal ;
-  rdfs:label "observed value"@en , "valor observado"@es .
+  rdfs:domain ex:Measurement ; 
+  rdfs:range xsd:decimal ;
+  rdfs:label "observed value"@en , "valor observado"@es ;
+  rdfs:comment "Numeric value of the measurement."@en ;
+  rdfs:comment "Valor numérico de la medición."@es .
 
 ex:unit a owl:DatatypeProperty ;
-  rdfs:domain ex:Measurement ; rdfs:range xsd:string ;
-  rdfs:label "unit"@en , "unidad"@es .
+  rdfs:domain ex:Measurement ; 
+  rdfs:range xsd:string ;
+  rdfs:label "unit"@en , "unidad"@es ;
+  rdfs:comment "Unit of measurement (e.g., µg/m³, km, °C)."@en ;
+  rdfs:comment "Unidad de medida (ej. µg/m³, km, °C)."@es .
 
 ex:observedProperty a owl:DatatypeProperty ;
-  rdfs:domain ex:Measurement ; rdfs:range xsd:string ;
-  rdfs:label "observed property"@en , "propiedad observada"@es .
+  rdfs:domain ex:Measurement ; 
+  rdfs:range xsd:string ;
+  rdfs:label "observed property"@en , "propiedad observada"@es ;
+  rdfs:comment "The property being measured (e.g., NO2, PM10, temperature)."@en ;
+  rdfs:comment "La propiedad que se está midiendo (ej. NO2, PM10, temperatura)."@es .
 
 ex:dateTime a owl:DatatypeProperty ;
-  rdfs:domain ex:Measurement ; rdfs:range xsd:dateTime ;
-  rdfs:label "datetime"@en , "fecha/hora"@es .
+  rdfs:domain ex:Measurement ; 
+  rdfs:range xsd:dateTime ;
+  rdfs:label "datetime"@en , "fecha/hora"@es ;
+  rdfs:comment "Timestamp when the measurement was taken."@en ;
+  rdfs:comment "Momento en que se tomó la medición."@es .

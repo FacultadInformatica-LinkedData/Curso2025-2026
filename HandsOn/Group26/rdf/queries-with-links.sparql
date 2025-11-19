@@ -1,0 +1,29 @@
+PREFIX ont: <http://example.org/madrid-air-quality/ontology/>
+PREFIX data: <http://example.org/madrid-air-quality/data/>
+
+# Check pollutants that have external Wikidata links
+SELECT ?pollutant ?sameAs WHERE {
+  ?pollutant a ont:Pollutant ;
+             ont:pollutantSameAs ?sameAs .
+}
+LIMIT 10
+
+# Count how many pollutants have Wikidata links
+SELECT (COUNT(?pollutant) AS ?linkedPollutants) WHERE {
+  ?pollutant a ont:Pollutant ;
+             ont:pollutantSameAs ?sameAs .
+}
+
+# Find pollutants that are missing external links
+SELECT ?pollutant WHERE {
+  ?pollutant a ont:Pollutant .
+  FILTER NOT EXISTS { ?pollutant ont:pollutantSameAs ?sameAs }
+}
+
+# Cross-check: show pollutant code + sameAs link
+SELECT ?code ?sameAs WHERE {
+  ?p a ont:Pollutant ;
+     ont:pollutantCode ?code ;
+     ont:pollutantSameAs ?sameAs .
+}
+ORDER BY ?code

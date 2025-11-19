@@ -1,0 +1,261 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Nombre_distrito to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q16521",
+        "name": "taxon"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Nombre_Especie to type Q16521"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Prunus cerasifera  subsp. pissardii",
+    "judgment": "matched",
+    "match": {
+      "id": "Q146951",
+      "name": "Prunus cerasifera",
+      "types": [
+        "Q16521"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Prunus cerasifera (Q146951) para las celdas que contienen \"Prunus cerasifera  subsp. pissardii\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Ulmus pumila",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1079824",
+      "name": "Ulmus pumila",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ulmus pumila (Q1079824) para las celdas que contienen \"Ulmus pumila\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Robinia pseudoacacia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q157417",
+      "name": "Robinia pseudoacacia",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Robinia pseudoacacia (Q157417) para las celdas que contienen \"Robinia pseudoacacia\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Gleditsia triacanthos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q157650",
+      "name": "Gleditsia triacanthos",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gleditsia triacanthos (Q157650) para las celdas que contienen \"Gleditsia triacanthos\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Otros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q22651",
+      "name": "Hymenoptera",
+      "types": [
+        "Q16521"
+      ],
+      "score": 59
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Hymenoptera (Q22651) para las celdas que contienen \"Otros\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Morus alba",
+    "judgment": "matched",
+    "match": {
+      "id": "Q157307",
+      "name": "Morus alba",
+      "types": [
+        "Q16521",
+        "Q188840"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Morus alba (Q157307) para las celdas que contienen \"Morus alba\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Fraxinus angustifolia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q518949",
+      "name": "Fraxinus angustifolia",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Fraxinus angustifolia (Q518949) para las celdas que contienen \"Fraxinus angustifolia\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Prunus dulcis",
+    "judgment": "matched",
+    "match": {
+      "id": "Q39918",
+      "name": "Prunus dulcis",
+      "types": [
+        "Q16521"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Prunus dulcis (Q39918) para las celdas que contienen \"Prunus dulcis\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Ulmus sp",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12211649",
+      "name": "Ulmus sparsa",
+      "types": [
+        "Q16521"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ulmus sparsa (Q12211649) para las celdas que contienen \"Ulmus sp\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Ligustrum japonicum 'Variegatum'",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Marcar para crear un único elemento nuevo para todas las celdas que contienen \"Ligustrum japonicum 'Variegatum'\" en la columna Nombre_Especie"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_Especie",
+    "similarValue": "Ligustrum japonicum 'Variegatum'",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1209219",
+      "name": "Ligustrum japonicum",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ligustrum japonicum (Q1209219) para las celdas que contienen \"Ligustrum japonicum 'Variegatum'\" en la columna Nombre_Especie"
+  }
+]

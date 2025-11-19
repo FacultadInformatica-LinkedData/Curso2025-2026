@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/02/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns: <http://bcn-mobility-air.org/ontology/> .
+
+# This document defines the scheme (classes and properties) for the BCN Mobility & Air Explorer application data.
+
+#################################################################
+#    Classes
+#################################################################
+
+ns:RoadSegment a owl:Class ;
+  rdfs:comment "A traffic-monitored segment of road or street."@en .
+
+ns:AirQualityStation a owl:Class ;
+  rdfs:comment "A station used for measuring air pollutants (from air-quality-updated.csv)."@en .
+
+ns:BicycleParking a owl:Class ;
+  rdfs:comment "A location for bicycle parking (from bicis-updated.csv)."@en .
+
+ns:District a owl:Class ;
+  rdfs:comment "An administrative district in Barcelona."@en .
+
+ns:Neighborhood a owl:Class ;
+  rdfs:comment "A neighborhood within a District."@en .
+
+ns:Measurement a owl:Class ;
+  rdfs:comment "A generic class for time-series data like Congestion or Air Quality Readings."@en .
+
+ns:Pollutant a owl:Class ;
+  rdfs:comment "The specific type of air contaminant being measured (e.g., 'nitric oxide')."@en .
+
+
+#################################################################
+#    Object Properties (Relations)
+#################################################################
+
+ns:hasLocation a owl:ObjectProperty ;
+  rdfs:domain ns:RoadSegment, ns:AirQualityStation, ns:BicycleParking ;
+  rdfs:range geo:Point ;
+  rdfs:comment "Links an entity to its geographical coordinates (geo:Point)."@en .
+
+ns:isLocatedInDistrict a owl:ObjectProperty ;
+  rdfs:domain ns:AirQualityStation, ns:BicycleParking ;
+  rdfs:range ns:District ;
+  rdfs:comment "States the administrative District where the entity is located."@en .
+
+ns:isLocatedInNeighborhood a owl:ObjectProperty ;
+  rdfs:domain ns:BicycleParking ;
+  rdfs:range ns:Neighborhood ;
+  rdfs:comment "States the administrative Neighborhood where the entity is located."@en .
+
+ns:hasCongestionMeasurement a owl:ObjectProperty ;
+  rdfs:domain ns:RoadSegment ;
+  rdfs:range ns:Measurement ;
+  rdfs:comment "Links a Road Segment to its congestion measurement record."@en .
+
+ns:hasAirQualityReading a owl:ObjectProperty ;
+  rdfs:domain ns:AirQualityStation ;
+  rdfs:range ns:Measurement ;
+  rdfs:comment "Links an Air Quality Station to a specific pollutant reading."@en .
+  
+ns:measuresPollutant a owl:ObjectProperty ;
+  rdfs:domain ns:Measurement ;
+  rdfs:range ns:Pollutant ;
+  rdfs:comment "Specifies the Pollutant measured in an Air Quality Reading."@en .
+
+
+#################################################################
+#    Datatype Properties (Attributes)
+#################################################################
+
+ns:datetime a owl:DatatypeProperty ;
+  rdfs:domain ns:Measurement ;
+  rdfs:range xsd:dateTime ;
+  rdfs:comment "Timestamp of the measurement (DATETIME/data in CSVs)."@en .
+
+ns:value a owl:DatatypeProperty ;
+  rdfs:domain ns:Measurement ;
+  rdfs:range xsd:float ;
+  rdfs:comment "Numerical value of the measurement (VALUE in CSVs)."@en .
+
+ns:congestionLevel a owl:DatatypeProperty ;
+  rdfs:domain ns:Measurement ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Level of traffic congestion ('Normal', 'Congestion', 'Optimum')."@en .
+
+ns:name a owl:DatatypeProperty ;
+  rdfs:domain ns:AirQualityStation, ns:BicycleParking, ns:District, ns:Neighborhood, ns:Pollutant, ns:RoadSegment ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Name of the entity (e.g., station name, district name)."@en .
+
+ns:startPoint a owl:DatatypeProperty ;
+  rdfs:domain ns:RoadSegment ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Description of the start point of the road segment (e.g., 'Ronda de Dalt').".
+
+ns:endPoint a owl:DatatypeProperty ;
+  rdfs:domain ns:RoadSegment ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Description of the end point of the road segment (e.g., 'Doctor Marañón').".
+
+geo:lat a owl:DatatypeProperty ;
+  rdfs:domain geo:Point ;
+  rdfs:range xsd:decimal ;
+  rdfs:comment "Latitude (WGS84) of the geographical point."@en .
+
+geo:long a owl:DatatypeProperty ;
+  rdfs:domain geo:Point ;
+  rdfs:range xsd:decimal ;
+  rdfs:comment "Longitude (WGS84) of the geographical point."@en .

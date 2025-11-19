@@ -1,13 +1,12 @@
-@prefix : <http://data.barcelona.cat/actividades/> .
+@prefix : <http://data.barcelona.cat/ont/> .
 @prefix att: <http://data.barcelona.cat/att/> .
-@prefix base: <http://data.barcelona.cat/actividades/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rel: <http://data.barcelona.cat/rel/> .
 @prefix schema: <https://schema.org/> .
-@prefix url: <http://data.barcelona.cat/url/> .
+@prefix node: <http://data.barcelona.cat/node/> .
 @prefix wd: <http://www.wikidata.org/wiki/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 
@@ -21,97 +20,112 @@
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 att:precio a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "precio" ;
     rdfs:range xsd:decimal .
 
 att:aforo a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "aforo" ;
     rdfs:range xsd:integer .
 
 att:anuncio a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "anuncio" ;
     rdfs:range xsd:string .
 
 att:descripcion a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "descripcion" ;
     rdfs:range xsd:string .
 
 att:duracionH a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "duracion h" ;
     rdfs:range xsd:decimal .
 
 att:fechaFin a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "fecha fin" ;
     rdfs:range xsd:string .
 
 att:fechaInicio a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "fecha inicio" ;
     rdfs:range xsd:string .
 
 att:inscripcion a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "inscripcion" ;
     rdfs:range xsd:string .
 
 att:numDias a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "num dias" ;
     rdfs:range xsd:integer .
 
 att:titulo a owl:DatatypeProperty ;
-    rdfs:domain base:Actividad ;
+    rdfs:domain node:Actividad ;
     rdfs:label "titulo" ;
     rdfs:range xsd:string .
 
 att:nombreCategoria a owl:DatatypeProperty ;
-    rdfs:domain base:Categoria ;
+    rdfs:domain node:Categoria ;
     rdfs:label "nombre categoria" ;
+    rdfs:range xsd:string .
+    
+att:nombreOrganizador a owl:DatatypeProperty ;
+    rdfs:domain node:Organizador ;
+    rdfs:label "nombre organizador" ;
+    rdfs:range xsd:string .
+
+att:nombreMunicipio a owl:DatatypeProperty ;
+    rdfs:domain node:Municipio ;
+    rdfs:label "nombre municipio" ;
+    rdfs:range xsd:string .
+    
+att:nombreComarca a owl:DatatypeProperty ;
+    rdfs:domain node:Comarca ;
+    rdfs:label "nombre comarca" ;
     rdfs:range xsd:string .
 
 rel:isContained a owl:ObjectProperty ;
-    rdfs:domain url:Municipio ;
-    rdfs:range url:Comarca ;
+    rdfs:domain node:Municipio ;
+    rdfs:range node:Comarca ;
     rdfs:label "is contained" ;
     rdfs:comment "Indica que un municipio está contenido en una comarca u otra entidad territorial." ;
     owl:equivalentProperty wdt:P131 .
 
 rel:isHosted a owl:ObjectProperty ;
-    rdfs:domain base:Actividad ;
-    rdfs:range url:Organizador ;
+    rdfs:domain node:Actividad ;
+    rdfs:range node:Organizador ;
     rdfs:label "is hosted" ;
     rdfs:comment "Indica que una actividad es organizada por una entidad organizadora." ;
     owl:equivalentProperty wdt:P664 .
 
 rel:placed a owl:ObjectProperty ;
-    rdfs:domain base:Actividad ;
-    rdfs:range url:Municipio ;
+    rdfs:domain node:Actividad ;
+    rdfs:range node:Municipio ;
     rdfs:label "placed" ;
     rdfs:comment "Indica que una actividad es realizada en un municipio." ;
     owl:equivalentProperty wdt:P276 .
 
 rel:typeOf a owl:ObjectProperty ;
-    rdfs:domain base:Actividad ;
-    rdfs:range base:Categoria ;
+    rdfs:domain node:Actividad ;
+    rdfs:range node:Categoria ;
     rdfs:label "type of" ;
     rdfs:comment "Indica que una actividad es del tipo Categoria." ;
     owl:equivalentProperty wdt:P31 .
 
-url:Comarca a owl:Class ;
+node:Comarca a owl:Class ;
     rdfs:label "Comarca" ;
     owl:equivalentClass wd:Q937876 .
 
-url:Municipio a owl:Class ;
+node:Municipio a owl:Class ;
     rdfs:label "Municipio" ;
     owl:equivalentClass wd:Q33146843 .
 
-url:Organizador a owl:Class ;
+node:Organizador a owl:Class ;
     rdfs:label "Organizador" ;
     owl:equivalentClass [
         a owl:Class ;
@@ -137,11 +151,11 @@ dc:creator a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
-base:Actividad a owl:Class ;
+node:Actividad a owl:Class ;
     rdfs:label "Actividad" ;
     rdfs:subClassOf wd:Q1656682.
 
-base:Categoria a owl:Class ;
+node:Categoria a owl:Class ;
     rdfs:label "Categoria de actividad" .
 
 owl:versionInfo a owl:AnnotationProperty .

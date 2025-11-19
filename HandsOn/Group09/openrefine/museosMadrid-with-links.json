@@ -1,0 +1,504 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "PK",
+    "description": "Eliminar columna PK"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NUM",
+    "expression": "grel:cells[\"CLASE-VIAL\"].value+ \": \" + cells[\"NOMBRE-VIA\"].value + \". Número: \" + value + if(isBlank(cells[\"PLANTA\"].value), \"\", \". Planta: \" + cells[\"PLANTA\"].value)",
+    "onError": "set-to-blank",
+    "newColumnName": "ADDRESS",
+    "columnInsertIndex": 12,
+    "description": "Crear la columna ADDRESS en el índice 12 basada en la columna NUM usando la expresión grel:cells[\"CLASE-VIAL\"].value+ \": \" + cells[\"NOMBRE-VIA\"].value + \". Número: \" + value + if(isBlank(cells[\"PLANTA\"].value), \"\", \". Planta: \" + cells[\"PLANTA\"].value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO-NUM",
+    "description": "Eliminar columna TIPO-NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NUM",
+    "description": "Eliminar columna NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CLASE-VIAL",
+    "description": "Eliminar columna CLASE-VIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PLANTA",
+    "description": "Eliminar columna PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PUERTA",
+    "description": "Eliminar columna PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESCALERAS",
+    "description": "Eliminar columna ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ORIENTACION",
+    "description": "Eliminar columna ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION",
+    "description": "Eliminar columna DESCRIPCION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPCION-ENTIDAD",
+    "newColumnName": "DESCRIPCION",
+    "description": "Renombra la columna DESCRIPCION-ENTIDAD a DESCRIPCION"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE-WIKIDATA",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna NOMBRE-WIKIDATA en el índice 1 basada en la columna NOMBRE usando la expresión grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE-VIA",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE-VIA-WIKIDATA",
+    "columnInsertIndex": 9,
+    "description": "Crear la columna NOMBRE-VIA-WIKIDATA en el índice 9 basada en la columna NOMBRE-VIA usando la expresión grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LOCALIDAD",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "LOCALIDAD-WIKIDATA",
+    "columnInsertIndex": 12,
+    "description": "Crear la columna LOCALIDAD-WIKIDATA en el índice 12 basada en la columna LOCALIDAD usando la expresión grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "PROVINCIA-WIKIDATA",
+    "columnInsertIndex": 14,
+    "description": "Crear la columna PROVINCIA-WIKIDATA en el índice 14 basada en la columna PROVINCIA usando la expresión grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "BARRIO-WIKIDATA",
+    "columnInsertIndex": 18,
+    "description": "Crear la columna BARRIO-WIKIDATA en el índice 18 basada en la columna BARRIO usando la expresión grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTRITO-WIKIDATA",
+    "columnInsertIndex": 21,
+    "description": "Crear la columna DISTRITO-WIKIDATA en el índice 21 basada en la columna DISTRITO usando la expresión grel:value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-WIKIDATA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q33506",
+        "name": "museum"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE-WIKIDATA to type Q33506"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA-WIKIDATA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE-VIA-WIKIDATA to type Q79007"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCALIDAD-WIKIDATA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column LOCALIDAD-WIKIDATA to type Q2074737"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA-WIKIDATA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10742",
+        "name": "autonomous community of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA-WIKIDATA to type Q10742"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO-WIKIDATA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO-WIKIDATA to type Q10267336"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO-WIKIDATA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO-WIKIDATA to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE-WIKIDATA",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE-URL",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna NOMBRE-URL en el índice 2 basada en la columna NOMBRE-WIKIDATA usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LOCALIDAD-WIKIDATA",
+    "similarValue": "MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2807",
+      "name": "Madrid",
+      "types": [
+        "Q2074737",
+        "Q1200957",
+        "Q200250"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Madrid (Q2807) para las celdas que contienen \"MADRID\" en la columna LOCALIDAD-WIKIDATA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE-VIA-WIKIDATA",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740840",
+      "name": "calle de Fuencarral",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento calle de Fuencarral (Q5740840) para las celdas que contienen \"FUENCARRAL\" en la columna NOMBRE-VIA-WIKIDATA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE-WIKIDATA",
+    "description": "Eliminar columna NOMBRE-WIKIDATA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE-VIA-WIKIDATA",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE-VIA-ULR",
+    "columnInsertIndex": 10,
+    "description": "Crear la columna NOMBRE-VIA-ULR en el índice 10 basada en la columna NOMBRE-VIA-WIKIDATA usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE-VIA-WIKIDATA",
+    "description": "Eliminar columna NOMBRE-VIA-WIKIDATA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LOCALIDAD-WIKIDATA",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "LOCALIDAD-URL",
+    "columnInsertIndex": 13,
+    "description": "Crear la columna LOCALIDAD-URL en el índice 13 basada en la columna LOCALIDAD-WIKIDATA usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LOCALIDAD-WIKIDATA",
+    "description": "Eliminar columna LOCALIDAD-WIKIDATA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA-WIKIDATA",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "PROVINCIA-URL",
+    "columnInsertIndex": 15,
+    "description": "Crear la columna PROVINCIA-URL en el índice 15 basada en la columna PROVINCIA-WIKIDATA usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PROVINCIA-WIKIDATA",
+    "description": "Eliminar columna PROVINCIA-WIKIDATA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO-WIKIDATA",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "BARRIO-URL",
+    "columnInsertIndex": 19,
+    "description": "Crear la columna BARRIO-URL en el índice 19 basada en la columna BARRIO-WIKIDATA usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BARRIO-WIKIDATA",
+    "description": "Eliminar columna BARRIO-WIKIDATA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO-WIKIDATA",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTRITO-URL",
+    "columnInsertIndex": 22,
+    "description": "Crear la columna DISTRITO-URL en el índice 22 basada en la columna DISTRITO-WIKIDATA usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DISTRITO-WIKIDATA",
+    "description": "Eliminar columna DISTRITO-WIKIDATA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE-VIA",
+    "description": "Eliminar columna NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE-VIA-ULR",
+    "description": "Eliminar columna NOMBRE-VIA-ULR"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "grel:value.replace(\".\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LATITUD usando la expresión grel:value.replace(\".\", \"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-Y",
+    "description": "Eliminar columna COORDENADA-Y"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA-X",
+    "description": "Eliminar columna COORDENADA-X"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "grel:value.toString().replace(/^(\\d{2})(\\d+)/, \"$1.$2\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LATITUD usando la expresión grel:value.toString().replace(/^(\\d{2})(\\d+)/, \"$1.$2\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "grel:value.replace(\".\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LONGITUD usando la expresión grel:value.replace(\".\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "grel:value.toString().replace(/^(-\\d{1})(\\d+)/, \"$1.$2\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LONGITUD usando la expresión grel:value.toString().replace(/^(-\\d{1})(\\d+)/, \"$1.$2\")"
+  }
+]

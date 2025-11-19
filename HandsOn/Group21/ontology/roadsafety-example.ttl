@@ -1,0 +1,86 @@
+@prefix ns:      <https://www.roadsafetydata.com/ontology#> .
+@prefix schema:  <https://schema.org/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------- APOYO ----------
+
+<https://www.roadsafetydata.com/resource/Authority/dgp> a schema:Organization ;
+  schema:name "dgp"@es .
+
+<https://www.roadsafetydata.com/resource/Road/m-30> a schema:Road ;
+  rdfs:label "m-30"@es .
+
+# Distrito 05 (Chamartín)
+<https://www.roadsafetydata.com/resource/District/D05> a schema:AdministrativeArea ;
+  rdfs:label "Madrid – Distrito 05 (Chamartín)"@es .
+
+# Municipio / Distrito / Barrio
+<https://www.roadsafetydata.com/resource/Municipality/Madrid> a schema:AdministrativeArea ;
+  rdfs:label "Madrid"@es .
+
+<https://www.roadsafetydata.com/resource/District/D01> a schema:AdministrativeArea ;
+  rdfs:label "Madrid – Distrito 01 (Centro)"@es .
+
+<https://www.roadsafetydata.com/resource/Neighbourhood/N0101> a schema:AdministrativeArea ;
+  rdfs:label "Madrid – Barrio 0101 (Centro)"@es .
+
+# Catalogo sencillo de vehículo
+<https://www.roadsafetydata.com/resource/vehicle-type/Ciclomotor> a schema:Vehicle ;
+  rdfs:label "Ciclomotor"@es .
+
+# ---------- RADAR ----------
+<https://www.roadsafetydata.com/resource/Radar/1> a ns:SpeedCamera ;
+  rdfs:label       "Radar 1 – m-30 (pk 0+500, calzada interior)"@es ;
+  schema:latitude   4.047934148E1 ;
+  schema:longitude -3.67433808E0 ;
+  schema:location  "m-30, entrada de la a-1, sentido puente de Ventas p.k. 0,500"@es ;
+  ns:cameraType    "fijo"@es ;
+  ns:direction     "calzada interior"@es ;
+  ns:lane          "carril 4"@es ;
+  ns:pk            "0+500" ;
+  ns:speedLimit    90 ;
+  ns:utmX          4.42843E5 ;
+  ns:utmY          4.48118E6 ;
+  ns:responsible   <https://www.roadsafetydata.com/resource/Authority/dgp> ;
+  ns:road          <https://www.roadsafetydata.com/resource/Road/m-30> .
+
+# ---------- ACCIDENTE ----------
+# Lugar 
+<https://www.roadsafetydata.com/resource/Accident/2025S000056/place> a schema:Place ;
+  rdfs:label      "Call. Lopez De Hoyos / Call. Ros De Olano"@es ;
+  ns:streetNumber "140" ;
+  ns:utmX         4.42966E5 ;
+  ns:utmY         4.477385E6 .
+
+# Evento (accidente)
+<https://www.roadsafetydata.com/resource/Accident/2025S000056> a schema:Event ;
+  rdfs:label        "Accidente 2025S000056"@es ;
+  schema:startDate  "2025-01-01"^^xsd:date ;
+  schema:startTime  "00:49:00"^^xsd:time ;
+  ns:accidentType   "Colision Fronto-lateral"@es ;
+  ns:weather        "Despejado"@es ;
+  schema:areaServed <https://www.roadsafetydata.com/resource/District/D05> ;
+  schema:location   <https://www.roadsafetydata.com/resource/Accident/2025S000056/place> ;
+  ns:involvesPerson <https://www.roadsafetydata.com/resource/person/2025S000056-P1> .
+
+# Participante
+<https://www.roadsafetydata.com/resource/person/2025S000056-P1> a schema:Person ;
+  rdfs:label         "Participante P1 del accidente 2025S000056 (Conductor, M)"@es ;
+  ns:ageRange        "30-34" ;
+  ns:injuryCode      "7" ;
+  ns:injuryLevel     "Asistencia sanitaria sólo en el lugar del accidente"@es ;
+  ns:positiveAlcohol false ;
+  ns:positiveDrug    true ;
+  ns:usesVehicleType <https://www.roadsafetydata.com/resource/vehicle-type/Ciclomotor> .
+
+# ---------- POBLACIÓN ----------
+<https://www.roadsafetydata.com/resource/Population/2024-01-01-28079-D01-N0101> a ns:PopulationObservation ;
+  rdfs:label        "Población D01–N0101 a 2024-01-01"@es ;
+  schema:startDate  "2024-01-01"^^xsd:date ;
+  ns:peopleTotal    145411 ;
+  ns:peopleMale     73734 ;
+  ns:peopleFemale   71677 ;
+  ns:forDistrict       <https://www.roadsafetydata.com/resource/District/D01> ;
+  ns:forNeighbourhood  <https://www.roadsafetydata.com/resource/Neighbourhood/N0101> ;
+  ns:forMunicipality   <https://www.roadsafetydata.com/resource/Municipality/Madrid> .

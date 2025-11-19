@@ -315,5 +315,44 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Transforma el texto de las celdas en la columna barrio usando la expresión value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas_hombres",
+    "expression": "grel:value.toString().split(\".\").join(\"\").toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas_hombres usando la expresión grel:value.toString().split(\".\").join(\"\").toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas_mujeres",
+    "expression": "grel:value.toString().split(\".\").join(\"\").toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas_mujeres usando la expresión grel:value.toString().split(\".\").join(\"\").toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_personas",
+    "expression": "grel:value.toString().split(\".\").join(\"\").toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna num_personas usando la expresión grel:value.toString().split(\".\").join(\"\").toNumber()"
   }
 ]

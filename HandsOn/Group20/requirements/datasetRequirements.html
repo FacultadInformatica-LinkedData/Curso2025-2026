@@ -1,111 +1,242 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aparcamientos EMT — R1–R6 Check</title>
+  <title>Aparcamientos EMT — Dataset Requirements (R1–R6 Evaluation)</title>
   <style>
-    body{font-family:Inter,system-ui,Segoe UI,Helvetica,Arial;line-height:1.55;margin:24px;color:#0f172a}
-    header{border-bottom:1px solid #e6eef8;padding-bottom:12px;margin-bottom:18px}
-    h1{font-size:22px;margin:0 0 6px}
-    h2{font-size:16px;margin-top:18px}
-    table{border-collapse:collapse;width:100%;margin-top:8px}
-    th,td{border:1px solid #e6eef8;padding:8px;text-align:left;font-size:13px}
-    .ok{color:green;font-weight:600}
-    .maybe{color:orange;font-weight:600}
-    .note{font-size:13px;color:#334155}
-    .meta{background:#f8fafc;border:1px solid #e6eef8;padding:12px;border-radius:8px}
-    .small{font-size:13px;color:#475569}
+    body {
+      font-family: Inter, system-ui, Segoe UI, Helvetica, Arial;
+      line-height: 1.55;
+      margin: 24px;
+      color: #0f172a
+    }
+
+    header {
+      border-bottom: 1px solid #e6eef8;
+      padding-bottom: 12px;
+      margin-bottom: 18px
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 6px
+    }
+
+    h2 {
+      font-size: 16px;
+      margin-top: 18px
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 8px
+    }
+
+    th,
+    td {
+      border: 1px solid #e6eef8;
+      padding: 8px;
+      text-align: left;
+      font-size: 13px
+    }
+
+    .ok {
+      color: green;
+      font-weight: 600
+    }
+
+    .maybe {
+      color: orange;
+      font-weight: 600
+    }
+
+    .note {
+      font-size: 13px;
+      color: #334155
+    }
+
+    .meta {
+      background: #f8fafc;
+      border: 1px solid #e6eef8;
+      padding: 12px;
+      border-radius: 8px
+    }
+
+    .small {
+      font-size: 13px;
+      color: #475569
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Aparcamientos EMT — suitability check against R1–R6</h1>
-    <p class="small">Dataset analysed: <em>parkings.csv</em> (uploaded). This document summarises whether the dataset meets the six requirements R1–R6.</p>
+    <h1>Aparcamientos EMT — Dataset Requirements Evaluation (R1–R6)</h1>
+    <p class="small">Dataset analyzed: <em>parkings.csv</em> (sourced from EMT Madrid Open Data). This document
+      summarizes how the dataset satisfies the six Linked Data requirements (R1–R6).</p>
   </header>
 
   <section class="meta">
-    <strong>Quick dataset summary</strong>
+    <strong>Dataset Summary</strong>
     <ul class="small">
       <li><strong>Rows:</strong> 90</li>
-      <li><strong>Columns:</strong> id, family, name, address, areaCode, zrea, category, catCode, country, email, URLIcono, long, lat, state, town, emtParking, type, + other fields (full list included below)</li>
+      <li><strong>Columns:</strong> id, family, name, address, areaCode, zrea, category, catCode, country, email,
+        URLIcono, long, lat, state, town, emtParking, type</li>
       <li><strong>Geolocation columns:</strong> <code>lat</code> and <code>long</code> present</li>
     </ul>
   </section>
 
-  <h2>Requirement-by-requirement evaluation</h2>
+  <h2>Requirement-by-Requirement Evaluation</h2>
 
   <table>
-    <thead><tr><th>Requirement</th><th>Interpretation</th><th>Assessment</th><th>Evidence / Notes</th></tr></thead>
+    <thead>
+      <tr>
+        <th>Requirement</th>
+        <th>Interpretation</th>
+        <th>Assessment</th>
+        <th>Evidence / Notes</th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
         <td>R1. Smart city domain</td>
-        <td>Dataset should belong to a smart-city-related domain (e.g., mobility, parking, utilities).</td>
+        <td>Dataset should belong to a smart-city-related domain (e.g., mobility, parking, and utilities).</td>
         <td class="ok">Satisfied</td>
-        <td class="note">This dataset is published in the EMT open-data catalogue under the mobility/parking group ("Aparcamientos EMT").</td>
+        <td class="note">This dataset is published in the EMT open-data catalog under the mobility/parking group
+          ("Aparcamientos EMT").</td>
       </tr>
 
       <tr>
         <td>R2. Available as CSV</td>
         <td>Data must be available in CSV format.</td>
         <td class="ok">Satisfied</td>
-        <td class="note">A CSV resource (parkings.csv) exists for this dataset and the uploaded file is a CSV. The file used for this analysis is the CSV copy.</td>
+        <td class="note">A CSV resource (parkings.csv) exists for this dataset and the uploaded file is a CSV. The file
+          used for this analysis is the CSV copy.</td>
       </tr>
 
       <tr>
         <td>R3. Open license</td>
         <td>Data must have an open license permitting publishing/reuse.</td>
         <td class="ok">Satisfied</td>
-        <td class="note">The dataset metadata indicates a Creative Commons Attribution license (CC‑BY), which allows sharing and reuse with attribution.</td>
+        <td class="note">The dataset metadata indicates a Creative Commons Attribution license (CC‑BY), which allows
+          sharing and reuse with attribution.</td>
       </tr>
 
       <tr>
         <td>R4. Linkable to real-world entities</td>
         <td>Data should include fields that allow linking to locations or other generic entities.</td>
         <td class="ok">Satisfied</td>
-        <td class="note">The CSV contains explicit geographic coordinates (<code>lat</code>, <code>long</code>) and address/town fields, so records can be linked to places and other spatial datasets (reverse geocoding, spatial joins, OSM, municipal street registers, etc.).</td>
+        <td class="note">The CSV contains explicit geographic coordinates (<code>lat</code>, <code>long</code>) and
+          address/town fields, so records can be linked to places and other spatial datasets (reverse geocoding, spatial
+          joins, OSM, municipal street registers, etc.).</td>
       </tr>
 
       <tr>
         <td>R5. Documentation exists (optional)</td>
         <td>Metadata, README or PDF describing the dataset is available.</td>
-        <td class="ok">Satisfied (available)</td>
-        <td class="note">The dataset has metadata and a PDF of metadatos; metadata entries include last update timestamps and resource list (CSV, GeoJSON, KML, SHP, etc.).</td>
+        <td class="ok">Satisfied (available metadata)</td>
+        <td class="note">The dataset has metadata and a PDF of metadata; metadata entries include last update
+          timestamps and resource list (CSV, GeoJSON, KML, SHP, etc.).</td>
       </tr>
 
       <tr>
         <td>R6. Data can come from multiple sources (optional)</td>
         <td>Optional: data may be assembled/linked from multiple sources.</td>
-        <td class="maybe">Partially applicable</td>
-        <td class="note">The dataset itself appears to be a single EMT-managed resource (one authoritative source). However, it can readily be combined with other sources (municipal street registers, traffic counts, parking occupancy time-series) to produce multi-source datasets.</td>
+        <td class="maybe">Partially satisfied</td>
+        <td class="note">The dataset itself appears to be a single EMT-managed resource (one authoritative source).
+          However, it can readily be combined with other sources (municipal street registers, traffic counts, parking
+          occupancy time-series) to produce multi-source datasets.</td>
       </tr>
     </tbody>
   </table>
 
-  <h2>Field list (columns)</h2>
-  <p class="small">Below is the full column list extracted from <code>parkings.csv</code> used here.</p>
-  <pre class="small">id, family, name, address, areaCode, zrea, category, catCode, country, email, URLIcono, long, lat, state, town, emtParking, type, URL, capacity, openingHours, ...</pre>
+  <h2>Summary of Dataset Requirements Evaluation</h2>
+  <ul class="small">
+    <li>R1. Smart city domain: <strong>Satisfied</strong></li>
+    <li>R2. Available as CSV: <strong>Satisfied</strong></li>
+    <li>R3. Open license: <strong>Satisfied</strong></li>
+    <li>R4. Linkable to real-world entities: <strong>Satisfied</strong></li>
+    <li>R5. Documentation exists: <strong>Satisfied</strong></li>
+    <li>R6. Data from multiple sources: <strong>Partially satisfied</strong></li>
+  </ul>
 
-  <h2>Sample records (first 3 rows)</h2>
+  <h2>Field List (columns)</h2>
+  <p class="small">Below is the full column list extracted from <code>parkings.csv</code> used here.</p>
+  <pre
+    class="small">id, family, name, address, areaCode, zrea, category, catCode, country, email, URLIcono, long, lat, state, town, emtParking, type</pre>
+
+  <h2>Sample Records (first 3 rows)</h2>
   <table>
-    <thead><tr><th>id</th><th>name</th><th>address</th><th>lat</th><th>long</th><th>type</th></tr></thead>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>address</th>
+        <th>lat</th>
+        <th>long</th>
+        <th>type</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td>1</td><td>Corona Boreal</td><td>Plaza Corona Boreal y C/ Marqués Camarines</td><td>40.4568</td><td>-3.7832</td><td>Aparcamiento</td></tr>
-      <tr><td>2</td><td>Argüelles</td><td>C. Princesa, 10</td><td>40.4293</td><td>-3.7137</td><td>Aparcamiento</td></tr>
-      <tr><td>3</td><td>Plaza de España</td><td>Plaza de España</td><td>40.4236</td><td>-3.7120</td><td>Aparcamiento</td></tr>
+      <tr>
+        <td>1</td>
+        <td>Corona Boreal</td>
+        <td>Plaza Corona Boreal y C. Marqués Camarines</td>
+        <td>40.4568</td>
+        <td>-3.7832</td>
+        <td>Aparcamiento</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Argüelles</td>
+        <td>C. Princesa, 10</td>
+        <td>40.4293</td>
+        <td>-3.7137</td>
+        <td>Aparcamiento</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Plaza de España</td>
+        <td>Plaza de España</td>
+        <td>40.4236</td>
+        <td>-3.7120</td>
+        <td>Aparcamiento</td>
+      </tr>
     </tbody>
   </table>
 
-  <h2>Practical notes for reuse</h2>
+  <h2>Preliminary Resource Naming Strategy</h2>
+  <p>The dataset will adopt a persistent URI pattern following Linked Data best practices.
+    Ontology terms will be identified using the namespace
+    <code>https://data.smartcitymadrid.es/ontology/parking#</code>,
+    while individual resources will be identified under
+    <code>https://data.smartcitymadrid.es/resource/parking/{id}</code>.
+    This approach ensures consistency, persistence, and dereferenceability of resources
+    across the project and full alignment with the final Resource Naming Strategy defined
+    in the analysis document.
+  </p>
+
+  <h2>Practical Notes for Reuse</h2>
   <ul class="small">
-    <li><strong>Attribution:</strong> Because of CC‑BY, reuse must include attribution to EMT / EMT data portal.</li>
-    <li><strong>Spatial joins:</strong> Use <code>lat,long</code> to join to GIS layers (GeoJSON/KML resources are also available in the same dataset for convenience).</li>
-    <li><strong>Time dimension:</strong> This CSV is a static snapshot listing aparcamiento attributes. If you need historical availability or occupancy you should use the time-series parking availability datasets (published separately by EMT).</li>
-    <li><strong>Combining sources (R6):</strong> To create multi-source datasets, combine these records with municipal registries, traffic sensors, or parking transaction logs — ensure license compatibility and preserve attribution.</li>
+    <li><strong>Attribution:</strong> Because of CC‑BY 4.0, reuse must include attribution to EMT / EMT data portal.
+    </li>
+    <li><strong>Spatial joins:</strong> Use <code>lat,long</code> to join to GIS layers (GeoJSON/KML resources are also
+      available in the same dataset for convenience).</li>
+    <li><strong>Time dimension:</strong> This CSV is a static snapshot listing aparcamiento attributes. If you need
+      historical availability or occupancy you should use the time-series parking availability datasets (published
+      separately by EMT).</li>
+    <li><strong>Combining sources (R6):</strong> To create multi-source datasets, combine these records with municipal
+      registries, traffic sensors, or parking transaction logs — ensure license compatibility and preserve attribution.
+    </li>
   </ul>
 
   <footer class="small note" style="margin-top:18px">
-    <strong>Analysis performed:</strong> Automated inspection of the uploaded CSV file and the EMT open-data catalogue metadata.
+    <strong>Evaluation performed:</strong> Based on the metadata from the EMT Open Data catalog
+    and the inspection of the <code>parkings.csv</code> file from the Aparcamientos EMT dataset.
   </footer>
 </body>
+
 </html>

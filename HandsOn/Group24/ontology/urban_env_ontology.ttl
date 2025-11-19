@@ -1,147 +1,121 @@
-@prefix :       <http://group24.linkeddata.es/ontology/> .
-@prefix ex:     <http://group24.linkeddata.es/ontology/> .
-@prefix res:    <http://group24.linkeddata.es/resource/> .
-@prefix dcat:   <http://www.w3.org/ns/dcat#> .
-@prefix dct:    <http://purl.org/dc/terms/> .
-@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
-@prefix geo:    <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+# coding: UTF-8
+@prefix :       <http://group24.linkeddata.es/ontology/urban-env#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sosa:   <http://www.w3.org/ns/sosa/> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:<http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 
 #################################################################
-# Ontology header
+# Ontology Metadata
 #################################################################
 
-<http://group24.linkeddata.es/ontology/>
+<http://group24.linkeddata.es/ontology/urban-env>
     a owl:Ontology ;
-    dct:title "Urban Environmental Ontology (Group24)"@en ;
-    dct:description "Lightweight ontology to describe districts, tree observations, air-quality observations (NO2), and environmental expenditure records."@en ;
-    dct:creator "Group24" ;
-    owl:versionInfo "1.0.1" ;
-    rdfs:seeAlso <http://group24.linkeddata.es/> .
+    dcterms:title "Urban Environmental Ontology (Group 24)"@en ;
+    dcterms:title "Ontología del Entorno Urbano (Grupo 24)"@es ;
+    dcterms:creator "Group 24" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-11-12"^^xsd:date ;
+    owl:versionIRI <http://group24.linkeddata.es/ontology/urban-env/1.0> .
 
 #################################################################
-# Core Classes
+# Classes
 #################################################################
 
-ex:District a owl:Class ;
-    rdfs:label "District"@en ;
-    rdfs:comment "Administrative district in Madrid for tree observations."@en .
+:District a owl:Class ;
+    rdfs:label "Distrito"@es ;
+    rdfs:label "District"@en .
 
-ex:TreeObservation a owl:Class ;
-    rdfs:label "Tree Observation"@en ;
-    rdfs:comment "Observation of a specific tree species count within a district."@en ;
-    rdfs:subClassOf ex:Observation .
+:TreeSpecies a owl:Class ;
+    rdfs:label "Especie arbórea"@es ;
+    rdfs:label "Tree species"@en .
 
-ex:Area a owl:Class ;
-    rdfs:label "Area"@en ;
-    rdfs:comment "Generic geographic area (municipality, district, country)."@en ;
-    rdfs:subClassOf sosa:FeatureOfInterest .
+:TreeStockObservation a owl:Class ;
+    rdfs:label "Observación de arbolado"@es ;
+    rdfs:label "Tree stock observation"@en .
 
-ex:Observation a owl:Class ;
-    rdfs:label "Observation"@en ;
-    rdfs:comment "Generic observation with a value, time, and observed property."@en ;
-    rdfs:subClassOf sosa:Observation .
+:PollutionObservation a owl:Class ;
+    rdfs:label "Observación de contaminación"@es ;
+    rdfs:label "Pollution observation"@en .
 
-ex:NO2Observation a owl:Class ;
-    rdfs:label "NO2 Observation"@en ;
-    rdfs:subClassOf ex:Observation .
-
-ex:ExpenditureRecord a owl:Class ;
-    rdfs:label "Environmental Expenditure Record"@en ;
-    rdfs:comment "Record for environmental protection expenditure (national or regional aggregates)."@en .
-
-ex:ObservedProperty a owl:Class ;
-    rdfs:label "Observed Property"@en ;
-    rdfs:comment "Property being observed (e.g., NO2, TreeCount, Expenditure)."@en ;
-    rdfs:subClassOf sosa:ObservableProperty .
+:ExpenditureObservation a owl:Class ;
+    rdfs:label "Observación de gasto ambiental"@es ;
+    rdfs:label "Environmental expenditure observation"@en .
 
 #################################################################
-# Properties (Object)
+# Object Properties
 #################################################################
 
-ex:featureOfInterest a owl:ObjectProperty ;
-    rdfs:label "feature of interest"@en ;
-    rdfs:comment "The feature that the observation is about (district, area, etc.)."@en ;
-    rdfs:domain ex:Observation ;
-    rdfs:range sosa:FeatureOfInterest ;
-    rdfs:subPropertyOf sosa:hasFeatureOfInterest .
+:inDistrict a owl:ObjectProperty ;
+    rdfs:label "en distrito"@es ;
+    rdfs:label "in district"@en ;
+    rdfs:domain :TreeStockObservation ;
+    rdfs:range  :District .
 
-ex:observedProperty a owl:ObjectProperty ;
-    rdfs:label "observed property"@en ;
-    rdfs:domain ex:Observation ;
-    rdfs:range ex:ObservedProperty ;
-    rdfs:subPropertyOf sosa:observedProperty .
-
-ex:inDataset a owl:ObjectProperty ;
-    rdfs:label "in dataset"@en ;
-    rdfs:domain rdfs:Resource ;
-    rdfs:range dcat:Dataset .
+:aboutSpecies a owl:ObjectProperty ;
+    rdfs:label "sobre especie"@es ;
+    rdfs:label "about species"@en ;
+    rdfs:domain :TreeStockObservation ;
+    rdfs:range  :TreeSpecies .
 
 #################################################################
-# Properties (Datatype)
+# Data Properties
 #################################################################
 
-ex:value a owl:DatatypeProperty ;
-    rdfs:label "value"@en ;
-    rdfs:comment "Numeric value of the observation/record."@en ;
-    rdfs:domain ex:Observation ;
-    rdfs:range xsd:decimal ;
-    rdfs:subPropertyOf sosa:hasSimpleResult .
+:districtCode a owl:DatatypeProperty ;
+    rdfs:label "código de distrito"@es ;
+    rdfs:label "district code"@en ;
+    rdfs:domain :District ;
+    rdfs:range xsd:integer .
 
-ex:unit a owl:DatatypeProperty ;
-    rdfs:label "unit"@en ;
-    rdfs:comment "Unit of measurement for the value (free-text or URI if using QUDT/OM)."@en ;
-    rdfs:domain ex:Observation ;
+:districtName a owl:DatatypeProperty ;
+    rdfs:label "nombre de distrito"@es ;
+    rdfs:label "district name"@en ;
+    rdfs:domain :District ;
     rdfs:range xsd:string .
 
-ex:resultTime a owl:DatatypeProperty ;
-    rdfs:label "result time"@en ;
-    rdfs:comment "Time when the result is available (use date or dateTime as needed)."@en ;
-    rdfs:domain ex:Observation ;
-    rdfs:range xsd:date .
+:speciesName a owl:DatatypeProperty ;
+    rdfs:label "nombre de especie"@es ;
+    rdfs:label "species name"@en ;
+    rdfs:domain :TreeSpecies ;
+    rdfs:range xsd:string .
 
-ex:year a owl:DatatypeProperty ;
+:treeCount a owl:DatatypeProperty ;
+    rdfs:label "número de árboles"@es ;
+    rdfs:label "tree count"@en ;
+    rdfs:domain :TreeStockObservation ;
+    rdfs:range xsd:integer .
+
+:no2Value a owl:DatatypeProperty ;
+    rdfs:label "valor medio de NO₂ (µg/m³)"@es ;
+    rdfs:label "NO₂ average (µg/m³)"@en ;
+    rdfs:domain :PollutionObservation ;
+    rdfs:range xsd:float .
+
+:expenditureAmount a owl:DatatypeProperty ;
+    rdfs:label "gasto en protección ambiental (EUR)"@es ;
+    rdfs:label "environmental protection expenditure (EUR)"@en ;
+    rdfs:domain :ExpenditureObservation ;
+    rdfs:range xsd:decimal .
+
+:year a owl:DatatypeProperty ;
+    rdfs:label "año"@es ;
     rdfs:label "year"@en ;
-    rdfs:comment "Convenience year value for time-series observations."@en ;
-    rdfs:domain rdfs:Resource ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( :TreeStockObservation :PollutionObservation :ExpenditureObservation )
+    ] ;
     rdfs:range xsd:gYear .
 
-ex:treeSpecies a owl:DatatypeProperty ;
-    rdfs:label "tree species"@en ;
-    rdfs:comment "Species name of the observed trees."@en ;
-    rdfs:domain ex:TreeObservation ;
-    rdfs:range xsd:string .
-
-ex:concept a owl:DatatypeProperty ;
-    rdfs:label "concept/indicator label"@en ;
-    rdfs:comment "Label from the statistical series (e.g., indicator name)."@en ;
-    rdfs:domain rdfs:Resource ;
-    rdfs:range xsd:string .
-
-ex:dataStatus a owl:DatatypeProperty ;
-    rdfs:label "data status"@en ;
-    rdfs:comment "Status flag from the statistical file (if provided)."@en ;
-    rdfs:domain rdfs:Resource ;
-    rdfs:range xsd:string .
-
-ex:label a owl:DatatypeProperty ;
-    rdfs:label "label"@en ;
-    rdfs:domain rdfs:Resource ;
-    rdfs:range xsd:string ;
-    rdfs:subPropertyOf rdfs:label .
-
 #################################################################
-# Canonical observed properties (instances)
+# Annotation Properties
 #################################################################
 
-res:prop/NO2 a ex:ObservedProperty ;
-    rdfs:label "Nitrogen Dioxide (NO2)"@en .
-
-res:prop/TreeCount a ex:ObservedProperty ;
-    rdfs:label "Tree Count"@en .
-
-res:prop/Expenditure a ex:ObservedProperty ;
-    rdfs:label "Environmental Protection Expenditure"@en .
+rdfs:label a owl:AnnotationProperty .
+dcterms:title a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .

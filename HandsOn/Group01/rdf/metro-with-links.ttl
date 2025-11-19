@@ -4,946 +4,1105 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://data.example.org/transport/bcn/metro/resource/serviceType/aeroport-t1-zona-universitaria> a ns1:ServiceType ;
+    rdfs:label "Aeroport T1 - Zona Universitaria" ;
+    owl:sameAs <https://wikidata.org/entity/Q2072583>,
+        <https://wikidata.org/entity/Q588940> ;
+    ns1:serviceDestination "Zona Universitària" ;
+    ns1:serviceOrigin "Aeroport T1" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/cornella-centre-vall-d-hebron> a ns1:ServiceType ;
+    rdfs:label "Cornellà Centre - Vall d'Hebron" ;
+    owl:sameAs <https://wikidata.org/entity/Q13635409>,
+        <https://wikidata.org/entity/Q2518479> ;
+    ns1:serviceDestination "Vall d'Hebron" ;
+    ns1:serviceOrigin "Cornellà Centre" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/hospital-de-bellvitge-fondo> a ns1:ServiceType ;
+    rdfs:label "Hospital de Bellvitge - Fondo" ;
+    owl:sameAs <https://wikidata.org/entity/Q2382515>,
+        <https://wikidata.org/entity/Q2547644> ;
+    ns1:serviceDestination "Fondo" ;
+    ns1:serviceOrigin "Hospital de Bellvitge" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/la-pau-trinitat-nova> a ns1:ServiceType ;
+    rdfs:label "La Pau - Trinitat Nova" ;
+    owl:sameAs <https://wikidata.org/entity/Q1427150>,
+        <https://wikidata.org/entity/Q747555> ;
+    ns1:serviceDestination "Trinitat Nova" ;
+    ns1:serviceOrigin "La Pau" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/la-sagrera-can-zam> a ns1:ServiceType ;
+    rdfs:label "La Sagrera - Can Zam" ;
+    owl:sameAs <https://wikidata.org/entity/Q2140013>,
+        <https://wikidata.org/entity/Q3544569> ;
+    ns1:serviceDestination "Can Zam" ;
+    ns1:serviceOrigin "La Sagrera-Meridiana station" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/la-sagrera-gorg> a ns1:ServiceType ;
+    rdfs:label "La Sagrera - Gorg" ;
+    owl:sameAs <https://wikidata.org/entity/Q2140013>,
+        <https://wikidata.org/entity/Q2284424> ;
+    ns1:serviceDestination "Gorg" ;
+    ns1:serviceOrigin "La Sagrera-Meridiana station" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/paral-lel-badalona-pompeu-fabra> a ns1:ServiceType ;
+    rdfs:label "Paral·lel - Badalona Pompeu Fabra" ;
+    owl:sameAs <https://wikidata.org/entity/Q2313145>,
+        <https://wikidata.org/entity/Q2375864> ;
+    ns1:serviceDestination "Badalona Pompeu Fabra" ;
+    ns1:serviceOrigin "Paral·lel" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/paral-lel-parc-de-montjuic> a ns1:ServiceType ;
+    rdfs:label "Paral·lel - Parc de Montjuïc" ;
+    owl:sameAs <https://wikidata.org/entity/Q2313145>,
+        <https://wikidata.org/entity/Q2436833> ;
+    ns1:serviceDestination "Parc de Montjuïc (Barcelona Metro)" ;
+    ns1:serviceOrigin "Paral·lel" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/trinitat-nova-can-cuias> a ns1:ServiceType ;
+    rdfs:label "Trinitat Nova - Can Cuiàs" ;
+    owl:sameAs <https://wikidata.org/entity/Q2607400>,
+        <https://wikidata.org/entity/Q747555> ;
+    ns1:serviceDestination "Can Cuiàs" ;
+    ns1:serviceOrigin "Trinitat Nova" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/zal-riu-vell-collblanc> a ns1:ServiceType ;
+    rdfs:label "ZAL | Riu Vell - Collblanc" ;
+    owl:sameAs <https://wikidata.org/entity/Q2181335>,
+        <https://wikidata.org/entity/Q8842403> ;
+    ns1:serviceDestination "Collblanc" ;
+    ns1:serviceOrigin "ZAL – Riu Vell (Barcelona Metro)" .
+
+<https://data.example.org/transport/bcn/metro/resource/serviceType/zona-universitaria-trinitat-nova> a ns1:ServiceType ;
+    rdfs:label "Zona Universitària - Trinitat Nova" ;
+    owl:sameAs <https://wikidata.org/entity/Q2072583>,
+        <https://wikidata.org/entity/Q747555> ;
+    ns1:serviceDestination "Trinitat Nova" ;
+    ns1:serviceOrigin "Zona Universitària" .
+
 <https://data.example.org/transport/bcn/metro/resource/stationLine/111_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/111> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/112_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/112_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/112> ;
     ns1:stationOrder 2 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/1136_L11> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/1136_L11> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Trinitat%20Nova%20-%20Can%20Cui%C3%A0s> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L11> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/1136> ;
     ns1:stationOrder 1 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/1137_L11> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Trinitat%20Nova%20-%20Can%20Cui%C3%A0s> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L11> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/1137> ;
     ns1:stationOrder 2 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/1138_L11> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/1138_L11> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Trinitat%20Nova%20-%20Can%20Cui%C3%A0s> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L11> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/1138> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/1139_L11> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/1139_L11> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Trinitat%20Nova%20-%20Can%20Cui%C3%A0s> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L11> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/1139> ;
     ns1:stationOrder 4 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/113_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/113_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/113> ;
     ns1:stationOrder 3 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/1140_L11> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Trinitat%20Nova%20-%20Can%20Cui%C3%A0s> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L11> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/1140> ;
     ns1:stationOrder 5 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/114_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/114> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/115_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/115> ;
     ns1:stationOrder 5 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/116_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/116> ;
     ns1:stationOrder 6 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/117_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/117_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/117> ;
     ns1:stationOrder 7 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/118_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/118> ;
     ns1:stationOrder 8 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/119_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/119> ;
     ns1:stationOrder 9 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/120_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/120_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/120> ;
     ns1:stationOrder 10 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/121_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/121> ;
     ns1:stationOrder 11 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/122_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/122_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/122> ;
     ns1:stationOrder 12 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/123_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/123> ;
     ns1:stationOrder 13 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/124_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/124_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/124> ;
     ns1:stationOrder 14 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/125_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/125> ;
     ns1:stationOrder 15 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/126_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/126> ;
     ns1:stationOrder 16 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/127_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/127_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/127> ;
     ns1:stationOrder 17 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/128_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/128> ;
     ns1:stationOrder 18 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/129_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/129_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/129> ;
     ns1:stationOrder 19 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/130_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/130_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/130> ;
     ns1:stationOrder 20 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/131_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/131_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/131> ;
     ns1:stationOrder 21 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/132_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/132_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/132> ;
     ns1:stationOrder 22 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/133_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/133_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/133> ;
     ns1:stationOrder 23 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/134_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/134> ;
     ns1:stationOrder 24 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/135_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/135_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/135> ;
     ns1:stationOrder 25 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/136_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/136> ;
     ns1:stationOrder 26 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/137_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/137_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/137> ;
     ns1:stationOrder 27 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/138_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/138> ;
     ns1:stationOrder 28 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/139_L1> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/139_L1> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/139> ;
     ns1:stationOrder 29 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/140_L1> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Hospital%20de%20Bellvitge%20-%20Fondo> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L1> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/140> ;
     ns1:stationOrder 30 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/210_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/210_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/210> ;
     ns1:stationOrder 1 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/211_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/211> ;
     ns1:stationOrder 2 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/212_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/212> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/213_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/213_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/213> ;
     ns1:stationOrder 4 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/214_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/214_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/214> ;
     ns1:stationOrder 5 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/215_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/215_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/215> ;
     ns1:stationOrder 6 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/216_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/216_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/216> ;
     ns1:stationOrder 7 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/217_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/217_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/217> ;
     ns1:stationOrder 8 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/218_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/218_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/218> ;
     ns1:stationOrder 9 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/219_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/219> ;
     ns1:stationOrder 10 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/220_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/220> ;
     ns1:stationOrder 11 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/221_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/221_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/221> ;
     ns1:stationOrder 12 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/222_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/222> ;
     ns1:stationOrder 13 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/223_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/223_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/223> ;
     ns1:stationOrder 14 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/224_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/224> ;
     ns1:stationOrder 15 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/225_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/225> ;
     ns1:stationOrder 16 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/226_L2> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/226_L2> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/226> ;
     ns1:stationOrder 17 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/227_L2> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Badalona%20Pompeu%20Fabra> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L2> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/227> ;
     ns1:stationOrder 18 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/314_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/314> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/315_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/315_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/315> ;
     ns1:stationOrder 2 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/316_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/316_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/316> ;
     ns1:stationOrder 3 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/317_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/317> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/318_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/318> ;
     ns1:stationOrder 5 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/319_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/319_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/319> ;
     ns1:stationOrder 6 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/320_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/320> ;
     ns1:stationOrder 7 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/321_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/321_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/321> ;
     ns1:stationOrder 8 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/322_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/322_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/322> ;
     ns1:stationOrder 9 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/323_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/323_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/323> ;
     ns1:stationOrder 10 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/324_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/324> ;
     ns1:stationOrder 11 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/325_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/325> ;
     ns1:stationOrder 12 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/326_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/326> ;
     ns1:stationOrder 13 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/327_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/327> ;
     ns1:stationOrder 14 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/328_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/328> ;
     ns1:stationOrder 15 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/329_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/329> ;
     ns1:stationOrder 16 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/330_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/330_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/330> ;
     ns1:stationOrder 17 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/331_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/331_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/331> ;
     ns1:stationOrder 18 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/332_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/332_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/332> ;
     ns1:stationOrder 19 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/333_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/333> ;
     ns1:stationOrder 20 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/334_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/334_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/334> ;
     ns1:stationOrder 21 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/335_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/335_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/335> ;
     ns1:stationOrder 22 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/336_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/336_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/336> ;
     ns1:stationOrder 23 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/337_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/337> ;
     ns1:stationOrder 24 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/338_L3> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/338_L3> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/338> ;
     ns1:stationOrder 25 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/339_L3> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Zona%20Universit%C3%A0ria%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L3> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/339> ;
     ns1:stationOrder 26 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/413_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/413_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/413> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/414_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/414_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/414> ;
     ns1:stationOrder 2 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/415_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/415> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/416_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/416_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/416> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/417_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/417> ;
     ns1:stationOrder 5 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/418_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/418_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/418> ;
     ns1:stationOrder 6 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/419_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/419> ;
     ns1:stationOrder 7 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/420_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/420> ;
     ns1:stationOrder 8 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/421_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/421_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/421> ;
     ns1:stationOrder 9 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/422_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/422_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/422> ;
     ns1:stationOrder 10 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/423_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/423_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/423> ;
     ns1:stationOrder 11 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/424_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/424> ;
     ns1:stationOrder 12 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/425_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/425> ;
     ns1:stationOrder 13 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/426_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/426_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/426> ;
     ns1:stationOrder 14 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/427_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/427> ;
     ns1:stationOrder 15 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/428_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/428_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/428> ;
     ns1:stationOrder 16 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/429_L4> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/429> ;
     ns1:stationOrder 17 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/430_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/430_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/430> ;
     ns1:stationOrder 18 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/431_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/431_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/431> ;
     ns1:stationOrder 19 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/432_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/432_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/432> ;
     ns1:stationOrder 20 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/433_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/433_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/433> ;
     ns1:stationOrder 21 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/434_L4> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/434_L4> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Pau%20-%20Trinitat%20Nova> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L4> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/434> ;
     ns1:stationOrder 22 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/509_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/509_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/509> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/510_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/510_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/510> ;
     ns1:stationOrder 2 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/511_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/511> ;
     ns1:stationOrder 3 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/512_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/512> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/513_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/513> ;
     ns1:stationOrder 5 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/514_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/514> ;
     ns1:stationOrder 6 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/515_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/515> ;
     ns1:stationOrder 8 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/516_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/516> ;
     ns1:stationOrder 9 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/517_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/517> ;
     ns1:stationOrder 10 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/518_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/518_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/518> ;
     ns1:stationOrder 11 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/519_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/519_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/519> ;
     ns1:stationOrder 12 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/520_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/520> ;
     ns1:stationOrder 13 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/521_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/521> ;
     ns1:stationOrder 14 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/522_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/522> ;
     ns1:stationOrder 15 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/523_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/523> ;
     ns1:stationOrder 16 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/524_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/524> ;
     ns1:stationOrder 17 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/525_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/525> ;
     ns1:stationOrder 18 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/526_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/526> ;
     ns1:stationOrder 19 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/527_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/527> ;
     ns1:stationOrder 20 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/528_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/528_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/528> ;
     ns1:stationOrder 21 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/529_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/529> ;
     ns1:stationOrder 22 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/530_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/530_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/530> ;
     ns1:stationOrder 23 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/531_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/531> ;
     ns1:stationOrder 24 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/532_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/532_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/532> ;
     ns1:stationOrder 25 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/533_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/533_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/533> ;
     ns1:stationOrder 26 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/534_L5> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/534> ;
     ns1:stationOrder 27 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/555_L5> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/555_L5> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Cornell%C3%A0%20Centre%20-%20Vall%20d%27Hebron> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L5> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/555> ;
     ns1:stationOrder 7 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/901_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/901_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/901> ;
     ns1:stationOrder 1 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/903_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/903> ;
     ns1:stationOrder 2 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/904_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/904_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/904> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/905_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/905_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/905> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/906_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/906> ;
     ns1:stationOrder 5 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/907_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/907_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/907> ;
     ns1:stationOrder 6 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/909_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/909_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/909> ;
     ns1:stationOrder 7 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/910_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/910_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/910> ;
     ns1:stationOrder 8 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/911_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/911> ;
     ns1:stationOrder 9 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/912_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/912_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/912> ;
     ns1:stationOrder 10 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/913_L91> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/913_L91> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/913> ;
     ns1:stationOrder 11 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/914_L101> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/914> ;
     ns1:stationOrder 9 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/914_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/914> ;
     ns1:stationOrder 12 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/915_L101> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/915> ;
     ns1:stationOrder 10 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/915_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/915> ;
     ns1:stationOrder 13 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/916_L101> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/916> ;
     ns1:stationOrder 11 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/916_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/916> ;
     ns1:stationOrder 14 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/918_L91> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Aeroport%20T1%20-%20Zona%20Universitaria> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/918> ;
     ns1:stationOrder 15 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/930_L104> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/930_L104> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Gorg> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L104> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/930> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/930_L94> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/930_L94> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/930> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/932_L104> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/932_L104> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Gorg> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L104> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/932> ;
     ns1:stationOrder 2 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/932_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/932> ;
     ns1:stationOrder 2 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/933_L104> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Gorg> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L104> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/933> ;
     ns1:stationOrder 3 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/933_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/933> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/934_L104> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/934_L104> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Gorg> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L104> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/934> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/935_L104> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Gorg> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L104> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/935> ;
     ns1:stationOrder 5 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/936_L104> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Gorg> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L104> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/936> ;
     ns1:stationOrder 6 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/940_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/940> ;
     ns1:stationOrder 4 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/941_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/941> ;
     ns1:stationOrder 5 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/942_L94> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/942_L94> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/942> ;
     ns1:stationOrder 6 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/943_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/943> ;
     ns1:stationOrder 7 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/944_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/944> ;
     ns1:stationOrder 8 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/945_L94> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/La%20Sagrera%20-%20Can%20Zam> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/945> ;
     ns1:stationOrder 9 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/951_L101> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/951> ;
     ns1:stationOrder 1 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/952_L101> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/952_L101> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/952> ;
     ns1:stationOrder 2 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/953_L101> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/953_L101> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/953> ;
     ns1:stationOrder 3 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/954_L101> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/954_L101> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/954> ;
     ns1:stationOrder 4 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/956_L101> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/956_L101> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/956> ;
     ns1:stationOrder 5 .
 
-<https://data.example.org/transport/bcn/metro/resource/stationLine/957_L101> ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+<https://data.example.org/transport/bcn/metro/resource/stationLine/957_L101> a ns1:StationLine ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/957> ;
     ns1:stationOrder 6 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/958_L101> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/958> ;
     ns1:stationOrder 7 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/959_L101> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/ZAL%20%7C%20Riu%20Vell%20-%20Collblanc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/959> ;
     ns1:stationOrder 8 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/9901_L99> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Parc%20de%20Montju%C3%AFc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L99> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/9901> ;
     ns1:stationOrder 1 .
 
 <https://data.example.org/transport/bcn/metro/resource/stationLine/9902_L99> a ns1:StationLine ;
-    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/1> ;
+    ns1:hasServiceType <https://data.example.org/transport/bcn/metro/resource/serviceType/Paral%C2%B7lel%20-%20Parc%20de%20Montju%C3%AFc> ;
     ns1:onLine <https://data.example.org/transport/bcn/metro/resource/metroLine/L99> ;
     ns1:relatesTo <https://data.example.org/transport/bcn/metro/resource/station/9902> ;
     ns1:stationOrder 2 .
@@ -969,10 +1128,11 @@
     ns1:lineCode 99 ;
     ns1:lineColor "004C38" ;
     ns1:lineDescription "Paral·lel - Parc de Montjuïc" ;
+    ns1:lineEtiq "FM" ;
     ns1:lineId 1 ;
     ns1:lineName "Funicular de Montjuïc" ;
     ns1:lineOrder 16 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Paral·lel" ;
     ns1:textColor "FFFFFF" .
 
@@ -999,12 +1159,11 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 112 ;
-    ns1:stationId 33 ;
     ns1:stationName "Bellvitge" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/113> a ns1:Station ;
-    rdfs:label "L'Hospitalet - Av. Carrilet" ;
-    owl:sameAs <https://wikidata.org/entity/Q97366890> ;
+    rdfs:label "Avinguda Carrilet" ;
+    owl:sameAs <https://wikidata.org/entity/Q2607435> ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.102631528901838 41.35855331385863)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
@@ -1012,8 +1171,7 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 113 ;
-    ns1:stationId 34 ;
-    ns1:stationName "L'Hospitalet - Av. Carrilet" .
+    ns1:stationName "Avinguda Carrilet" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/1136> a ns1:Station ;
     rdfs:label "Trinitat Nova" ;
@@ -1031,6 +1189,7 @@
 <https://data.example.org/transport/bcn/metro/resource/station/1137> a ns1:Station ;
     rdfs:label "Casa de l'Aigua" ;
     owl:sameAs <https://wikidata.org/entity/Q2547371> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1848396459573656 41.451277844017426)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2003-12-15"^^xsd:date ;
@@ -1050,7 +1209,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L11" ;
     ns1:stationCode 1138 ;
-    ns1:stationId 2 ;
     ns1:stationName "Torre Baró-Vallbona" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/1139> a ns1:Station ;
@@ -1063,31 +1221,30 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L11" ;
     ns1:stationCode 1139 ;
-    ns1:stationId 126 ;
     ns1:stationName "Ciutat Meridiana" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/114> a ns1:Station ;
     rdfs:label "Rambla Just Oliveras" ;
     owl:sameAs <https://wikidata.org/entity/Q9303809> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.0997493392175293 41.3640899130925)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1987-04-24"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 114 ;
-    ns1:stationId 82 ;
     ns1:stationName "Rambla Just Oliveras" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/1140> a ns1:Station ;
     rdfs:label "Can Cuiàs" ;
     owl:sameAs <https://wikidata.org/entity/Q2607400> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.173059363097836 41.46241309910048)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2003-12-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L11" ;
     ns1:stationCode 1140 ;
-    ns1:stationId 1 ;
     ns1:stationName "Can Cuiàs" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/115> a ns1:Station ;
@@ -1113,7 +1270,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 116 ;
-    ns1:stationId 36 ;
     ns1:stationName "Florida" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/117> a ns1:Station ;
@@ -1139,7 +1295,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 118 ;
-    ns1:stationId 37 ;
     ns1:stationName "Santa Eulàlia" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/119> a ns1:Station ;
@@ -1152,7 +1307,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 119 ;
-    ns1:stationId 128 ;
     ns1:stationName "Mercat Nou" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/120> a ns1:Station ;
@@ -1165,7 +1319,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 120 ;
-    ns1:stationId 124 ;
     ns1:stationName "Plaça de Sants" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/121> a ns1:Station ;
@@ -1178,7 +1331,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 121 ;
-    ns1:stationId 10 ;
     ns1:stationName "Hostafrancs" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/122> a ns1:Station ;
@@ -1191,7 +1343,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 122 ;
-    ns1:stationId 39 ;
     ns1:stationName "Espanya" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/123> a ns1:Station ;
@@ -1217,7 +1368,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 124 ;
-    ns1:stationId 38 ;
     ns1:stationName "Urgell" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/125> a ns1:Station ;
@@ -1243,7 +1393,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 126 ;
-    ns1:stationId 84 ;
     ns1:stationName "Plaça de Catalunya station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/127> a ns1:Station ;
@@ -1269,31 +1418,30 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 128 ;
-    ns1:stationId 134 ;
     ns1:stationName "Arc de Triomf" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/129> a ns1:Station ;
     rdfs:label "Marina" ;
     owl:sameAs <https://wikidata.org/entity/Q2251103> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1858010331425235 41.39472528791244)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1933-04-01"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 129 ;
-    ns1:stationId 86 ;
     ns1:stationName "Marina" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/130> a ns1:Station ;
     rdfs:label "Glòries" ;
     owl:sameAs <https://wikidata.org/entity/Q2547599> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.187537470950601 41.4022772166665)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1951-06-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 130 ;
-    ns1:stationId 41 ;
     ns1:stationName "Glòries" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/131> a ns1:Station ;
@@ -1306,24 +1454,24 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 131 ;
-    ns1:stationId 62 ;
     ns1:stationName "Clot" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/132> a ns1:Station ;
     rdfs:label "Navas" ;
     owl:sameAs <https://wikidata.org/entity/Q2547614> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1870567842653172 41.41618670887784)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1953-05-08"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 132 ;
-    ns1:stationId 44 ;
     ns1:stationName "Navas" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/133> a ns1:Station ;
     rdfs:label "La Sagrera-Meridiana station" ;
     owl:sameAs <https://wikidata.org/entity/Q2140013> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1869753319473184 41.42236876778433)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1954-01-27"^^xsd:date ;
@@ -1343,7 +1491,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 134 ;
-    ns1:stationId 42 ;
     ns1:stationName "Fabra i Puig" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/135> a ns1:Station ;
@@ -1356,7 +1503,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 135 ;
-    ns1:stationId 88 ;
     ns1:stationName "Sant Andreu" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/136> a ns1:Station ;
@@ -1369,7 +1515,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 136 ;
-    ns1:stationId 9 ;
     ns1:stationName "Torras i Bages" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/137> a ns1:Station ;
@@ -1382,7 +1527,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 137 ;
-    ns1:stationId 43 ;
     ns1:stationName "Trinitat Vella" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/138> a ns1:Station ;
@@ -1395,7 +1539,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 138 ;
-    ns1:stationId 89 ;
     ns1:stationName "Baró de Viver" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/139> a ns1:Station ;
@@ -1408,12 +1551,12 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L1" ;
     ns1:stationCode 139 ;
-    ns1:stationId 63 ;
     ns1:stationName "Santa Coloma" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/140> a ns1:Station ;
     rdfs:label "Fondo" ;
     owl:sameAs <https://wikidata.org/entity/Q2547644> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2184351315232798 41.45158314986258)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1992-02-18"^^xsd:date ;
@@ -1426,13 +1569,13 @@
 <https://data.example.org/transport/bcn/metro/resource/station/210> a ns1:Station ;
     rdfs:label "Paral·lel" ;
     owl:sameAs <https://wikidata.org/entity/Q2313145> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.169116794897992 41.37500406102914)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1995-12-31"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 210 ;
-    ns1:stationId 110 ;
     ns1:stationName "Paral·lel" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/211> a ns1:Station ;
@@ -1445,7 +1588,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 211 ;
-    ns1:stationId 131 ;
     ns1:stationName "Sant Antoni" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/212> a ns1:Station ;
@@ -1471,7 +1613,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 213 ;
-    ns1:stationId 111 ;
     ns1:stationName "Passeig de Gràcia" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/214> a ns1:Station ;
@@ -1484,19 +1625,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 214 ;
-    ns1:stationId 53 ;
     ns1:stationName "Tetuan" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/215> a ns1:Station ;
     rdfs:label "Monumental" ;
     owl:sameAs <https://wikidata.org/entity/Q1877541> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1794616714099684 41.40052374172786)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1995-09-25"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 215 ;
-    ns1:stationId 54 ;
     ns1:stationName "Monumental" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/216> a ns1:Station ;
@@ -1509,7 +1649,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 216 ;
-    ns1:stationId 64 ;
     ns1:stationName "Sagrada Família" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/217> a ns1:Station ;
@@ -1522,7 +1661,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 217 ;
-    ns1:stationId 112 ;
     ns1:stationName "Encants" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/218> a ns1:Station ;
@@ -1548,24 +1686,24 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 219 ;
-    ns1:stationId 113 ;
     ns1:stationName "Bac de Roda" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/220> a ns1:Station ;
     rdfs:label "Sant Martí" ;
     owl:sameAs <https://wikidata.org/entity/Q2028238> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2007239139818875 41.419063621458996)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1997-09-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 220 ;
-    ns1:stationId 56 ;
     ns1:stationName "Sant Martí" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/221> a ns1:Station ;
     rdfs:label "La Pau" ;
     owl:sameAs <https://wikidata.org/entity/Q1427150> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.205608148173806 41.42403302510149)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1997-09-20"^^xsd:date ;
@@ -1585,7 +1723,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 222 ;
-    ns1:stationId 58 ;
     ns1:stationName "Verneda" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/223> a ns1:Station ;
@@ -1604,13 +1741,13 @@
 <https://data.example.org/transport/bcn/metro/resource/station/224> a ns1:Station ;
     rdfs:label "Sant Roc" ;
     owl:sameAs <https://wikidata.org/entity/Q2019277> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.22860617965681 41.43583082252647)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-04-22"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 224 ;
-    ns1:stationId 114 ;
     ns1:stationName "Sant Roc" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/225> a ns1:Station ;
@@ -1623,12 +1760,12 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 225 ;
-    ns1:stationId 59 ;
     ns1:stationName "Gorg" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/226> a ns1:Station ;
     rdfs:label "Pep Ventura" ;
     owl:sameAs <https://wikidata.org/entity/Q2369006> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.237959375095989 41.4439045741019)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1985-04-22"^^xsd:date ;
@@ -1641,13 +1778,13 @@
 <https://data.example.org/transport/bcn/metro/resource/station/227> a ns1:Station ;
     rdfs:label "Badalona Pompeu Fabra" ;
     owl:sameAs <https://wikidata.org/entity/Q2375864> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.244096816044607 41.44905421071657)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2010-07-11"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L2" ;
     ns1:stationCode 227 ;
-    ns1:stationId 99 ;
     ns1:stationName "Badalona Pompeu Fabra" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/314> a ns1:Station ;
@@ -1660,7 +1797,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 314 ;
-    ns1:stationId 13 ;
     ns1:stationName "Zona Universitària" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/315> a ns1:Station ;
@@ -1673,7 +1809,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 315 ;
-    ns1:stationId 132 ;
     ns1:stationName "Palau Reial" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/316> a ns1:Station ;
@@ -1686,7 +1821,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 316 ;
-    ns1:stationId 5 ;
     ns1:stationName "Maria Cristina" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/317> a ns1:Station ;
@@ -1699,19 +1833,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 317 ;
-    ns1:stationId 7 ;
     ns1:stationName "Les Corts" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/318> a ns1:Station ;
     rdfs:label "Plaça del Centre" ;
     owl:sameAs <https://wikidata.org/entity/Q2127269> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1358837134051947 41.38192170670766)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1975-01-20"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 318 ;
-    ns1:stationId 8 ;
     ns1:stationName "Plaça del Centre" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/319> a ns1:Station ;
@@ -1724,7 +1857,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 319 ;
-    ns1:stationId 14 ;
     ns1:stationName "Sants Estació" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/320> a ns1:Station ;
@@ -1737,7 +1869,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 320 ;
-    ns1:stationId 67 ;
     ns1:stationName "Tarragona" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/321> a ns1:Station ;
@@ -1750,19 +1881,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 321 ;
-    ns1:stationId 15 ;
     ns1:stationName "Espanya" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/322> a ns1:Station ;
     rdfs:label "Poble Sec" ;
     owl:sameAs <https://wikidata.org/entity/Q610740> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1602448223915327 41.374996204246344)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1975-07-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 322 ;
-    ns1:stationId 20 ;
     ns1:stationName "Poble Sec" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/323> a ns1:Station ;
@@ -1775,7 +1905,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 323 ;
-    ns1:stationId 22 ;
     ns1:stationName "Paral·lel" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/324> a ns1:Station ;
@@ -1788,7 +1917,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 324 ;
-    ns1:stationId 68 ;
     ns1:stationName "Drassanes" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/325> a ns1:Station ;
@@ -1801,7 +1929,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 325 ;
-    ns1:stationId 21 ;
     ns1:stationName "Liceu" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/326> a ns1:Station ;
@@ -1814,7 +1941,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 326 ;
-    ns1:stationId 66 ;
     ns1:stationName "Plaça de Catalunya station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/327> a ns1:Station ;
@@ -1840,7 +1966,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 328 ;
-    ns1:stationId 122 ;
     ns1:stationName "Provença-Diagonal station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/329> a ns1:Station ;
@@ -1853,19 +1978,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 329 ;
-    ns1:stationId 69 ;
     ns1:stationName "Fontana" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/330> a ns1:Station ;
     rdfs:label "Lesseps" ;
     owl:sameAs <https://wikidata.org/entity/Q979398> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1504071221317904 41.405738025515355)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1924-12-31"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 330 ;
-    ns1:stationId 119 ;
     ns1:stationName "Lesseps" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/331> a ns1:Station ;
@@ -1878,7 +2002,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 331 ;
-    ns1:stationId 72 ;
     ns1:stationName "Vallcarca" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/332> a ns1:Station ;
@@ -1917,12 +2040,12 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 334 ;
-    ns1:stationId 127 ;
     ns1:stationName "Montbau" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/335> a ns1:Station ;
     rdfs:label "Mundet" ;
     owl:sameAs <https://wikidata.org/entity/Q2226449> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1484718023518736 41.435645266968535)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2001-09-21"^^xsd:date ;
@@ -1968,7 +2091,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 338 ;
-    ns1:stationId 70 ;
     ns1:stationName "Roquetes" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/339> a ns1:Station ;
@@ -1981,7 +2103,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L3" ;
     ns1:stationCode 339 ;
-    ns1:stationId 19 ;
     ns1:stationName "Trinitat Nova" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/413> a ns1:Station ;
@@ -1994,19 +2115,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 413 ;
-    ns1:stationId 108 ;
     ns1:stationName "La Pau" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/414> a ns1:Station ;
     rdfs:label "Besòs" ;
     owl:sameAs <https://wikidata.org/entity/Q830779> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.210231432719594 41.419901283124716)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1982-10-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 414 ;
-    ns1:stationId 90 ;
     ns1:stationName "Besòs" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/415> a ns1:Station ;
@@ -2025,6 +2145,7 @@
 <https://data.example.org/transport/bcn/metro/resource/station/416> a ns1:Station ;
     rdfs:label "El Maresme-Fòrum" ;
     owl:sameAs <https://wikidata.org/entity/Q948393> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.2166919446941318 41.41177980668214)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2003-09-02"^^xsd:date ;
@@ -2044,7 +2165,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 417 ;
-    ns1:stationId 91 ;
     ns1:stationName "Selva de Mar" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/418> a ns1:Station ;
@@ -2057,7 +2177,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 418 ;
-    ns1:stationId 50 ;
     ns1:stationName "Poblenou" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/419> a ns1:Station ;
@@ -2070,7 +2189,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 419 ;
-    ns1:stationId 46 ;
     ns1:stationName "Llacuna" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/420> a ns1:Station ;
@@ -2083,7 +2201,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 420 ;
-    ns1:stationId 92 ;
     ns1:stationName "Bogatell" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/421> a ns1:Station ;
@@ -2096,36 +2213,36 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 421 ;
-    ns1:stationId 141 ;
     ns1:stationName "Ciutadella-Vila Olímpica" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/422> a ns1:Station ;
     rdfs:label "Barceloneta" ;
     owl:sameAs <https://wikidata.org/entity/Q591874> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.184786783641099 41.381810977055316)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1976-03-15"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 422 ;
-    ns1:stationId 47 ;
     ns1:stationName "Barceloneta" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/423> a ns1:Station ;
     rdfs:label "Jaume I" ;
     owl:sameAs <https://wikidata.org/entity/Q2041028> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.178531464537553 41.384126274544364)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1924-12-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 423 ;
-    ns1:stationId 93 ;
     ns1:stationName "Jaume I" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/424> a ns1:Station ;
     rdfs:label "Urquinaona" ;
     owl:sameAs <https://wikidata.org/entity/Q2109006> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> ;
     ns1:hasGeometry "POINT (2.1734447176875715 41.387960590591376)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1924-12-30"^^xsd:date ;
@@ -2145,7 +2262,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 425 ;
-    ns1:stationId 3 ;
     ns1:stationName "Passeig de Gràcia" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/426> a ns1:Station ;
@@ -2171,7 +2287,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 427 ;
-    ns1:stationId 51 ;
     ns1:stationName "Verdaguer" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/428> a ns1:Station ;
@@ -2184,7 +2299,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 428 ;
-    ns1:stationId 49 ;
     ns1:stationName "Joanic" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/429> a ns1:Station ;
@@ -2203,13 +2317,13 @@
 <https://data.example.org/transport/bcn/metro/resource/station/430> a ns1:Station ;
     rdfs:label "Guinardó – Hospital de Sant Pau" ;
     owl:sameAs <https://wikidata.org/entity/Q2719931> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1739890445261802 41.415962196795135)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1974-05-16"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 430 ;
-    ns1:stationId 125 ;
     ns1:stationName "Guinardó – Hospital de Sant Pau" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/431> a ns1:Station ;
@@ -2222,7 +2336,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 431 ;
-    ns1:stationId 4 ;
     ns1:stationName "Maragall" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/432> a ns1:Station ;
@@ -2261,7 +2374,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L4" ;
     ns1:stationCode 434 ;
-    ns1:stationId 109 ;
     ns1:stationName "Trinitat Nova" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/509> a ns1:Station ;
@@ -2274,19 +2386,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 509 ;
-    ns1:stationId 24 ;
     ns1:stationName "Cornellà Centre" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/510> a ns1:Station ;
     rdfs:label "Gavarra" ;
     owl:sameAs <https://wikidata.org/entity/Q2734598> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.0792687248839616 41.35799331639214)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1983-12-23"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 510 ;
-    ns1:stationId 73 ;
     ns1:stationName "Gavarra" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/511> a ns1:Station ;
@@ -2299,7 +2410,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 511 ;
-    ns1:stationId 123 ;
     ns1:stationName "Sant Ildefons" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/512> a ns1:Station ;
@@ -2312,7 +2422,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 512 ;
-    ns1:stationId 74 ;
     ns1:stationName "Can Boixeres" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/513> a ns1:Station ;
@@ -2325,7 +2434,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 513 ;
-    ns1:stationId 25 ;
     ns1:stationName "Can Vidalet" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/514> a ns1:Station ;
@@ -2338,24 +2446,24 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 514 ;
-    ns1:stationId 75 ;
     ns1:stationName "Pubilla Cases" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/515> a ns1:Station ;
     rdfs:label "Collblanc" ;
     owl:sameAs <https://wikidata.org/entity/Q2181335> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1191953172967666 41.375743502145035)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1969-11-30"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 515 ;
-    ns1:stationId 26 ;
     ns1:stationName "Collblanc" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/516> a ns1:Station ;
     rdfs:label "Badal" ;
     owl:sameAs <https://wikidata.org/entity/Q2348839> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.127402112543491 41.37558063118747)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1969-11-30"^^xsd:date ;
@@ -2375,7 +2483,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 517 ;
-    ns1:stationId 6 ;
     ns1:stationName "Plaça de Sants" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/518> a ns1:Station ;
@@ -2401,7 +2508,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 519 ;
-    ns1:stationId 27 ;
     ns1:stationName "Entença" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/520> a ns1:Station ;
@@ -2414,7 +2520,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 520 ;
-    ns1:stationId 118 ;
     ns1:stationName "Hospital Clínic" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/521> a ns1:Station ;
@@ -2453,7 +2558,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 523 ;
-    ns1:stationId 29 ;
     ns1:stationName "Sagrada Família" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/524> a ns1:Station ;
@@ -2466,7 +2570,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 524 ;
-    ns1:stationId 61 ;
     ns1:stationName "Sant Pau – Dos de Maig" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/525> a ns1:Station ;
@@ -2479,19 +2582,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 525 ;
-    ns1:stationId 79 ;
     ns1:stationName "Camp de l'Arpa" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/526> a ns1:Station ;
     rdfs:label "La Sagrera-Meridiana station" ;
     owl:sameAs <https://wikidata.org/entity/Q2140013> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1865821259707423 41.421296371102905)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1959-07-21"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 526 ;
-    ns1:stationId 133 ;
     ns1:stationName "La Sagrera-Meridiana station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/527> a ns1:Station ;
@@ -2504,7 +2606,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 527 ;
-    ns1:stationId 138 ;
     ns1:stationName "Congrés" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/528> a ns1:Station ;
@@ -2517,7 +2618,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 528 ;
-    ns1:stationId 30 ;
     ns1:stationName "Maragall" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/529> a ns1:Station ;
@@ -2530,7 +2630,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 529 ;
-    ns1:stationId 80 ;
     ns1:stationName "Virrei Amat" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/530> a ns1:Station ;
@@ -2543,12 +2642,12 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 530 ;
-    ns1:stationId 31 ;
     ns1:stationName "Vilapicina" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/531> a ns1:Station ;
     rdfs:label "Horta" ;
     owl:sameAs <https://wikidata.org/entity/Q2643379> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.159974396439855 41.429692524411095)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "1967-10-05"^^xsd:date ;
@@ -2561,6 +2660,7 @@
 <https://data.example.org/transport/bcn/metro/resource/station/532> a ns1:Station ;
     rdfs:label "El Carmel" ;
     owl:sameAs <https://wikidata.org/entity/Q1936465> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1550989391746174 41.424449773703074)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2010-07-30"^^xsd:date ;
@@ -2573,6 +2673,7 @@
 <https://data.example.org/transport/bcn/metro/resource/station/533> a ns1:Station ;
     rdfs:label "El Coll | La Teixonera" ;
     owl:sameAs <https://wikidata.org/entity/Q690814> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1483484951724954 41.4219971367312)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2010-07-30"^^xsd:date ;
@@ -2605,7 +2706,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L5" ;
     ns1:stationCode 555 ;
-    ns1:stationId 376 ;
     ns1:stationName "Ernest Lluch" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/901> a ns1:Station ;
@@ -2631,7 +2731,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 903 ;
-    ns1:stationId 315 ;
     ns1:stationName "Aeroport T2" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/904> a ns1:Station ;
@@ -2644,7 +2743,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 904 ;
-    ns1:stationId 316 ;
     ns1:stationName "Mas Blau" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/905> a ns1:Station ;
@@ -2657,7 +2755,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 905 ;
-    ns1:stationId 317 ;
     ns1:stationName "Parc Nou" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/906> a ns1:Station ;
@@ -2670,7 +2767,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 906 ;
-    ns1:stationId 318 ;
     ns1:stationName "Cèntric" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/907> a ns1:Station ;
@@ -2683,7 +2779,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 907 ;
-    ns1:stationId 319 ;
     ns1:stationName "El Prat Estació" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/909> a ns1:Station ;
@@ -2696,7 +2791,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 909 ;
-    ns1:stationId 321 ;
     ns1:stationName "Les Moreres" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/910> a ns1:Station ;
@@ -2709,7 +2803,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 910 ;
-    ns1:stationId 322 ;
     ns1:stationName "Mercabarna" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/911> a ns1:Station ;
@@ -2722,7 +2815,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 911 ;
-    ns1:stationId 323 ;
     ns1:stationName "Parc Logístic (Barcelona Metro)" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/912> a ns1:Station ;
@@ -2735,7 +2827,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 912 ;
-    ns1:stationId 324 ;
     ns1:stationName "Fira" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/913> a ns1:Station ;
@@ -2761,7 +2852,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9S" ;
     ns1:stationCode 918 ;
-    ns1:stationId 330 ;
     ns1:stationName "Zona Universitària" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/934> a ns1:Station ;
@@ -2774,7 +2864,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10N" ;
     ns1:stationCode 934 ;
-    ns1:stationId 105 ;
     ns1:stationName "Llefià" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/935> a ns1:Station ;
@@ -2800,7 +2889,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10N" ;
     ns1:stationCode 936 ;
-    ns1:stationId 130 ;
     ns1:stationName "Gorg" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/940> a ns1:Station ;
@@ -2813,7 +2901,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
     ns1:stationCode 940 ;
-    ns1:stationId 96 ;
     ns1:stationName "Can Peixauet" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/941> a ns1:Station ;
@@ -2832,25 +2919,25 @@
 <https://data.example.org/transport/bcn/metro/resource/station/942> a ns1:Station ;
     rdfs:label "Fondo" ;
     owl:sameAs <https://wikidata.org/entity/Q2547644> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.218485278203989 41.45187612388619)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2009-12-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
     ns1:stationCode 942 ;
-    ns1:stationId 129 ;
     ns1:stationName "Fondo" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/943> a ns1:Station ;
     rdfs:label "Església Major" ;
     owl:sameAs <https://wikidata.org/entity/Q3544564> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.212176867433306 41.454797043178395)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2009-12-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
     ns1:stationCode 943 ;
-    ns1:stationId 140 ;
     ns1:stationName "Església Major" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/944> a ns1:Station ;
@@ -2863,7 +2950,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
     ns1:stationCode 944 ;
-    ns1:stationId 98 ;
     ns1:stationName "Singuerlín" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/945> a ns1:Station ;
@@ -2876,7 +2962,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9N" ;
     ns1:stationCode 945 ;
-    ns1:stationId 97 ;
     ns1:stationName "Can Zam" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/951> a ns1:Station ;
@@ -2889,7 +2974,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 951 ;
-    ns1:stationId 332 ;
     ns1:stationName "ZAL – Riu Vell (Barcelona Metro)" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/952> a ns1:Station ;
@@ -2902,7 +2986,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 952 ;
-    ns1:stationId 333 ;
     ns1:stationName "Ecoparc station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/953> a ns1:Station ;
@@ -2915,7 +2998,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 953 ;
-    ns1:stationId 334 ;
     ns1:stationName "Port Comercial station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/954> a ns1:Station ;
@@ -2928,7 +3010,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 954 ;
-    ns1:stationId 335 ;
     ns1:stationName "Zona Franca station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/956> a ns1:Station ;
@@ -2941,7 +3022,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 956 ;
-    ns1:stationId 337 ;
     ns1:stationName "Foc" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/957> a ns1:Station ;
@@ -2954,12 +3034,11 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 957 ;
-    ns1:stationId 338 ;
     ns1:stationName "Foneria" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/958> a ns1:Station ;
-    rdfs:label "Ildefons Cerdà" ;
-    owl:sameAs <https://wikidata.org/entity/Q2605288> ;
+    rdfs:label "Ciutat de la Justícia" ;
+    owl:sameAs <https://wikidata.org/entity/Q76747272> ;
     ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.1323149668540133 41.36313727354129)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
@@ -2967,8 +3046,7 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L10S" ;
     ns1:stationCode 958 ;
-    ns1:stationId 339 ;
-    ns1:stationName "Ildefons Cerdà" .
+    ns1:stationName "Ciutat de la Justícia" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/959> a ns1:Station ;
     rdfs:label "Provençana" ;
@@ -3006,7 +3084,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "FM" ;
     ns1:stationCode 9902 ;
-    ns1:stationId 12 ;
     ns1:stationName "Parc de Montjuïc (Barcelona Metro)" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/914> a ns1:Station ;
@@ -3019,7 +3096,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9SL10S" ;
     ns1:stationCode 914 ;
-    ns1:stationId 326 ;
     ns1:stationName "Can Tries | Gornal" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/915> a ns1:Station ;
@@ -3032,19 +3108,18 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9SL10S" ;
     ns1:stationCode 915 ;
-    ns1:stationId 328 ;
     ns1:stationName "Torrassa" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/916> a ns1:Station ;
     rdfs:label "Collblanc" ;
     owl:sameAs <https://wikidata.org/entity/Q2181335> ;
+    ns1:hasAccessibility <https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> ;
     ns1:hasGeometry "POINT (2.11839717448588 41.37605647512773)"^^geo:wktLiteral ;
     ns1:hasStatus <https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> ;
     ns1:inauguratedDate "2016-02-13"^^xsd:date ;
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9SL10S" ;
     ns1:stationCode 916 ;
-    ns1:stationId 329 ;
     ns1:stationName "Collblanc" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/930> a ns1:Station ;
@@ -3058,7 +3133,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9NL10N" ;
     ns1:stationCode 930 ;
-    ns1:stationId 117 ;
     ns1:stationName "La Sagrera-Meridiana station" .
 
 <https://data.example.org/transport/bcn/metro/resource/station/932> a ns1:Station ;
@@ -3086,7 +3160,6 @@
     ns1:lastUpdated "2025-10-05"^^xsd:date ;
     ns1:pictogram "L9NL10N" ;
     ns1:stationCode 933 ;
-    ns1:stationId 104 ;
     ns1:stationName "Bon Pastor" .
 
 <https://data.example.org/transport/bcn/metro/resource/metroLine/L11> a ns1:MetroLine ;
@@ -3112,10 +3185,11 @@
     ns1:lineCode 11 ;
     ns1:lineColor "89B94C" ;
     ns1:lineDescription "Trinitat Nova - Can Cuiàs" ;
+    ns1:lineEtiq "L12" ;
     ns1:lineId 7 ;
     ns1:lineName "Barcelona Metro line 11" ;
     ns1:lineOrder 15 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Trinitat Nova" ;
     ns1:textColor "FFFFFF" .
 
@@ -3144,14 +3218,16 @@
     ns1:lineCode 104 ;
     ns1:lineColor "00A6D6" ;
     ns1:lineDescription "La Sagrera - Gorg" ;
+    ns1:lineEtiq "L10N" ;
     ns1:lineId 11 ;
     ns1:lineName "Barcelona Metro line 10" ;
     ns1:lineOrder 13 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "La Sagrera-Meridiana station" ;
     ns1:textColor "FFFFFF" .
 
-<https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> rdfs:label "Planificat" .
+<https://data.example.org/transport/bcn/metro/resource/stationStatus/Planificat> a ns1:StationStatus ;
+    rdfs:label "Planificat" .
 
 <https://data.example.org/transport/bcn/metro/resource/metroLine/L94> a ns1:MetroLine ;
     rdfs:label "Barcelona Metro line 9" ;
@@ -3184,19 +3260,19 @@
     ns1:lineCode 94 ;
     ns1:lineColor "FB712B" ;
     ns1:lineDescription "La Sagrera - Can Zam" ;
+    ns1:lineEtiq "L9N" ;
     ns1:lineId 10 ;
     ns1:lineName "Barcelona Metro line 9" ;
     ns1:lineOrder 10 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "La Sagrera-Meridiana station" ;
     ns1:textColor "FFFFFF" .
-
-<https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> a ns1:AccessibilityType ;
-    rdfs:label "No accessible" .
 
 <https://data.example.org/transport/bcn/metro/resource/transportFamily/Metro> a ns1:TransportFamily ;
     rdfs:label "Metro" ;
     ns1:familyOrder 1 .
+
+<https://data.example.org/transport/bcn/metro/resource/accessibilityType/No%20accessible> a ns1:AccessibilityType .
 
 <https://data.example.org/transport/bcn/metro/resource/metroLine/L101> a ns1:MetroLine ;
     rdfs:label "Barcelona Metro line 10" ;
@@ -3233,15 +3309,16 @@
     ns1:lineCode 101 ;
     ns1:lineColor "00A6D6" ;
     ns1:lineDescription "ZAL | Riu Vell - Collblanc" ;
+    ns1:lineEtiq "L10S" ;
     ns1:lineId 13 ;
     ns1:lineName "Barcelona Metro line 10" ;
     ns1:lineOrder 14 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "ZAL – Riu Vell (Barcelona Metro)" ;
     ns1:textColor "FFFFFF" .
 
-<https://data.example.org/transport/bcn/metro/resource/operator/Metro> a ns1:Operator ;
-    rdfs:label "Metro" .
+<https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> a ns1:Operator ;
+    rdfs:label "Barcelona Metro" .
 
 <https://data.example.org/transport/bcn/metro/resource/metroLine/L91> a ns1:MetroLine ;
     rdfs:label "Barcelona Metro line 9" ;
@@ -3286,10 +3363,11 @@
     ns1:lineCode 91 ;
     ns1:lineColor "FB712B" ;
     ns1:lineDescription "Aeroport T1 - Zona Universitària" ;
+    ns1:lineEtiq "L9S" ;
     ns1:lineId 12 ;
     ns1:lineName "Barcelona Metro line 9" ;
     ns1:lineOrder 11 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Aeroport T1" ;
     ns1:textColor "FFFFFF" .
 
@@ -3342,10 +3420,11 @@
     ns1:lineCode 2 ;
     ns1:lineColor "93248F" ;
     ns1:lineDescription "Paral·lel - Badalona Pompeu Fabra" ;
+    ns1:lineEtiq "L2" ;
     ns1:lineId 6 ;
     ns1:lineName "Barcelona Metro line 2" ;
     ns1:lineOrder 2 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Paral·lel" ;
     ns1:textColor "FFFFFF" .
 
@@ -3406,10 +3485,11 @@
     ns1:lineCode 4 ;
     ns1:lineColor "F7A30E" ;
     ns1:lineDescription "La Pau - Trinitat Nova" ;
+    ns1:lineEtiq "L4" ;
     ns1:lineId 5 ;
     ns1:lineName "Barcelona Metro line 4" ;
     ns1:lineOrder 4 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "La Pau" ;
     ns1:textColor "000000" .
 
@@ -3478,10 +3558,11 @@
     ns1:lineCode 3 ;
     ns1:lineColor "1EB53A" ;
     ns1:lineDescription "Zona Universitària - Trinitat Nova" ;
+    ns1:lineEtiq "L3" ;
     ns1:lineId 2 ;
     ns1:lineName "Barcelona Metro line 3" ;
     ns1:lineOrder 3 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Zona Universitària" ;
     ns1:textColor "FFFFFF" .
 
@@ -3552,10 +3633,11 @@
     ns1:lineCode 5 ;
     ns1:lineColor "005A97" ;
     ns1:lineDescription "Cornellà Centre - Vall d'Hebron" ;
+    ns1:lineEtiq "L5" ;
     ns1:lineId 3 ;
     ns1:lineName "Barcelona Metro line 5" ;
     ns1:lineOrder 5 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Cornellà Centre" ;
     ns1:textColor "FFFFFF" .
 
@@ -3632,64 +3714,16 @@
     ns1:lineCode 1 ;
     ns1:lineColor "CE1126" ;
     ns1:lineDescription "Hospital de Bellvitge - Fondo" ;
+    ns1:lineEtiq "L1" ;
     ns1:lineId 4 ;
     ns1:lineName "Barcelona Metro line 1" ;
     ns1:lineOrder 1 ;
-    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Metro> ;
+    ns1:operatedBy <https://data.example.org/transport/bcn/metro/resource/operator/Barcelona%20Metro> ;
     ns1:originStation "Hospital de Bellvitge" ;
     ns1:textColor "FFFFFF" .
 
-<https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> a ns1:AccessibilityType ;
-    rdfs:label "Accessible" .
+<https://data.example.org/transport/bcn/metro/resource/accessibilityType/Accessible> a ns1:AccessibilityType .
 
-<https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> rdfs:label "Operatiu" .
-
-<https://data.example.org/transport/bcn/metro/resource/serviceType/1> a ns1:ServiceType ;
-    rdfs:label "Aeroport T1 - Zona Universitaria",
-        "Cornellà Centre - Vall d'Hebron",
-        "Hospital de Bellvitge - Fondo",
-        "La Pau - Trinitat Nova",
-        "La Sagrera - Can Zam",
-        "La Sagrera - Gorg",
-        "Paral·lel - Badalona Pompeu Fabra",
-        "Paral·lel - Parc de Montjuïc",
-        "Trinitat Nova - Can Cuiàs",
-        "ZAL | Riu Vell - Collblanc",
-        "Zona Universitària - Trinitat Nova" ;
-    owl:sameAs <https://wikidata.org/entity/Q13635409>,
-        <https://wikidata.org/entity/Q1427150>,
-        <https://wikidata.org/entity/Q2072583>,
-        <https://wikidata.org/entity/Q2140013>,
-        <https://wikidata.org/entity/Q2181335>,
-        <https://wikidata.org/entity/Q2284424>,
-        <https://wikidata.org/entity/Q2313145>,
-        <https://wikidata.org/entity/Q2375864>,
-        <https://wikidata.org/entity/Q2382515>,
-        <https://wikidata.org/entity/Q2436833>,
-        <https://wikidata.org/entity/Q2518479>,
-        <https://wikidata.org/entity/Q2547644>,
-        <https://wikidata.org/entity/Q2607400>,
-        <https://wikidata.org/entity/Q3544569>,
-        <https://wikidata.org/entity/Q588940>,
-        <https://wikidata.org/entity/Q747555>,
-        <https://wikidata.org/entity/Q8842403> ;
-    ns1:serviceDestination "Badalona Pompeu Fabra",
-        "Can Cuiàs",
-        "Can Zam",
-        "Collblanc",
-        "Fondo",
-        "Gorg",
-        "Parc de Montjuïc (Barcelona Metro)",
-        "Trinitat Nova",
-        "Vall d'Hebron",
-        "Zona Universitària" ;
-    ns1:serviceOrigin "Aeroport T1",
-        "Cornellà Centre",
-        "Hospital de Bellvitge",
-        "La Pau",
-        "La Sagrera-Meridiana station",
-        "Paral·lel",
-        "Trinitat Nova",
-        "ZAL – Riu Vell (Barcelona Metro)",
-        "Zona Universitària" .
+<https://data.example.org/transport/bcn/metro/resource/stationStatus/Operatiu> a ns1:StationStatus ;
+    rdfs:label "Operatiu" .
 

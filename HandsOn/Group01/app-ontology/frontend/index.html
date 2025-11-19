@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>🚇 Ontología Metro — Grupo 01</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🚇 Ontología del Metro de Barcelona</h1>
+    <p class="subtitle">Grupo 01 - Consultas SPARQL interactivas (FastAPI)</p>
+    <div class="nav-links">
+      <a href="/map.html" class="btn-map">🗺️ Ver Mapa Interactivo</a>
+      <a href="/docs" class="btn-map" target="_blank">📚 API Docs</a>
+    </div>
+    <div class="nav-links" style="margin-top: 10px;">
+      <a href="/resources/analysis.html" class="btn-map">📊 Análisis de Datos</a>
+      <a href="/resources/datasetRequirements.html" class="btn-map">✅ Requisitos Dataset</a>
+      <a href="/resources/ontology-documentation.html" class="btn-map">📖 Documentación Ontología</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="query-section">
+      <div class="section-header">
+        <label for="query">Consulta SPARQL:</label>
+        <button id="health-check" class="btn-secondary" title="Verificar estado del sistema">🔍 Estado</button>
+      </div>
+      
+      <textarea id="query" rows="10" spellcheck="false" placeholder="Escribe tu consulta SPARQL aquí...">
+# Ejemplo: Todas las líneas de metro
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX metro: <https://data.example.org/transport/bcn/metro/ontology#>
+
+SELECT ?linea ?etiqueta ?nombre ?color WHERE {
+  ?linea rdf:type metro:MetroLine .
+  OPTIONAL { ?linea metro:lineEtiq ?etiqueta }
+  OPTIONAL { ?linea metro:lineCode ?codigo }
+  OPTIONAL { ?linea metro:lineName ?nombre }
+  OPTIONAL { ?linea metro:lineColor ?color }
+}
+ORDER BY ?codigo
+      </textarea>
+
+      <div class="controls">
+        <button id="run" class="btn-primary">▶️ Ejecutar Consulta</button>
+        <select id="examples" title="Selecciona una consulta de ejemplo">
+          <option value="">— Consultas de ejemplo —</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="results" class="results-section"></section>
+  </main>
+
+  <footer>
+    <p>Semantic Web • Universidad Politécnica de Madrid • 2025-2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

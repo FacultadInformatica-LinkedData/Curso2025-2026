@@ -1,0 +1,132 @@
+@prefix :      <http://example.org/madrid-air-quality/ontology/> .
+@prefix ont:   <http://example.org/madrid-air-quality/ontology/> .
+@prefix data:  <http://example.org/madrid-air-quality/data/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#5772cc394a191eab6cd7c7bbdb63993d>
+        a            sh:PropertyShape ;
+        rdfs:label   "has measurement"@en ;
+        sh:class     ont:Measurement ;
+        sh:name      "has measurement"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:hasMeasurement .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#2b747e8fc9a0e63ce814dbbdb357ce07> , <https://astrea.linkeddata.es/shapes#4bd0c85bcd00b58aff996a063b70c3de> , <https://astrea.linkeddata.es/shapes#90b0ef32b96d043257b1505326af92ba> , <https://astrea.linkeddata.es/shapes#a24ab330acdfa5e4225513bca36f527a> , <https://astrea.linkeddata.es/shapes#ca4d757dd1613fc055fe607d0a9de467> , <https://astrea.linkeddata.es/shapes#5a4c022ae20276f209c7be663555844f> , <https://astrea.linkeddata.es/shapes#bd32154143ccb3f44bc05f363a73e613> , <https://astrea.linkeddata.es/shapes#c4e6594e78864c1b537712619ef9f916> , <https://astrea.linkeddata.es/shapes#7a8249bbd274091b292a754c425b7ed9> , <https://astrea.linkeddata.es/shapes#e8c5f517b8dc6f5c89545218240958fb> , <https://astrea.linkeddata.es/shapes#86eabe8362041e8e613e786cfc103acd> , <https://astrea.linkeddata.es/shapes#73baa3b119354925335ccbb7285c118d> , <https://astrea.linkeddata.es/shapes#5772cc394a191eab6cd7c7bbdb63993d> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#ca4d757dd1613fc055fe607d0a9de467>
+        a               sh:NodeShape ;
+        rdfs:label      "Station"@en ;
+        sh:name         "Station"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#86eabe8362041e8e613e786cfc103acd> , <https://astrea.linkeddata.es/shapes#a24ab330acdfa5e4225513bca36f527a> ;
+        sh:targetClass  ont:Station .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#e8c5f517b8dc6f5c89545218240958fb>
+        a            sh:PropertyShape ;
+        rdfs:label   "pollutant same as"@en ;
+        sh:class     owl:Thing ;
+        sh:name      "pollutant same as"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:pollutantSameAs .
+
+<https://astrea.linkeddata.es/shapes#a24ab330acdfa5e4225513bca36f527a>
+        a            sh:PropertyShape ;
+        rdfs:label   "station label"@en ;
+        sh:datatype  xsd:string ;
+        sh:name      "station label"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:stationLabel ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#2b747e8fc9a0e63ce814dbbdb357ce07>
+        a            sh:PropertyShape ;
+        rdfs:label   "measures pollutant"@en ;
+        sh:class     ont:Pollutant ;
+        sh:name      "measures pollutant"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:measuresPollutant .
+
+<https://astrea.linkeddata.es/shapes#73baa3b119354925335ccbb7285c118d>
+        a            sh:PropertyShape ;
+        rdfs:label   "has validation"@en ;
+        sh:datatype  xsd:string ;
+        sh:name      "has validation"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:hasValidation ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#4bd0c85bcd00b58aff996a063b70c3de>
+        a               sh:NodeShape ;
+        rdfs:label      "Pollutant"@en ;
+        sh:name         "Pollutant"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e8c5f517b8dc6f5c89545218240958fb> , <https://astrea.linkeddata.es/shapes#5a4c022ae20276f209c7be663555844f> ;
+        sh:targetClass  ont:Pollutant .
+
+<https://astrea.linkeddata.es/shapes#7a8249bbd274091b292a754c425b7ed9>
+        a            sh:PropertyShape ;
+        rdfs:label   "has value"@en ;
+        sh:datatype  xsd:decimal ;
+        sh:name      "has value"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:hasValue ;
+        sh:pattern   "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)" .
+
+<https://astrea.linkeddata.es/shapes#bd32154143ccb3f44bc05f363a73e613>
+        a            sh:PropertyShape ;
+        rdfs:label   "measurement hour (e.g., H01–H24)"@en ;
+        sh:datatype  xsd:string ;
+        sh:name      "measurement hour (e.g., H01–H24)"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:measurementHour ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#90b0ef32b96d043257b1505326af92ba>
+        a               sh:NodeShape ;
+        rdfs:label      "Sampling Point"@en ;
+        sh:name         "Sampling Point"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2b747e8fc9a0e63ce814dbbdb357ce07> , <https://astrea.linkeddata.es/shapes#5772cc394a191eab6cd7c7bbdb63993d> ;
+        sh:targetClass  ont:SamplingPoint .
+
+<https://astrea.linkeddata.es/shapes#c4e6594e78864c1b537712619ef9f916>
+        a               sh:NodeShape ;
+        rdfs:label      "Measurement"@en ;
+        sh:name         "Measurement"@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#bd32154143ccb3f44bc05f363a73e613> , <https://astrea.linkeddata.es/shapes#7a8249bbd274091b292a754c425b7ed9> , <https://astrea.linkeddata.es/shapes#73baa3b119354925335ccbb7285c118d> ;
+        sh:targetClass  ont:Measurement .
+
+<https://astrea.linkeddata.es/shapes#5a4c022ae20276f209c7be663555844f>
+        a            sh:PropertyShape ;
+        rdfs:label   "pollutant code"@en ;
+        sh:datatype  xsd:string ;
+        sh:name      "pollutant code"@en ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ont:pollutantCode ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#86eabe8362041e8e613e786cfc103acd>
+        a            sh:PropertyShape ;
+        rdfs:label   "has sampling point"@en ;
+        sh:class     ont:SamplingPoint ;
+        sh:name      "has sampling point"@en ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ont:hasSamplingPoint .

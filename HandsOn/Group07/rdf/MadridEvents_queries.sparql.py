@@ -1,9 +1,8 @@
 from rdflib import Graph
 
-# === Cargar el grafo RDF ===
 g = Graph()
 g.parse("MadridEvents.rdf.ttl", format="turtle")
-print(f"✅ RDF cargado con {len(g)} tripletas\n")
+print(f"Loaded RDF with {len(g)} triples\n")
 
 
 query1 = """
@@ -77,7 +76,6 @@ ORDER BY ?starts
 LIMIT 10
 """
 
-# Ejecuta los queries
 queries = [query1, query2, query3, query4]
 names = ["Eventos básicos", "Eventos gratuitos", "Eventos por tipo", "Eventos en Arganzuela"]
 

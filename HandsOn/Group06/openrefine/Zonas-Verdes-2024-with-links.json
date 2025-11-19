@@ -588,10 +588,10 @@
       "mode": "row-based"
     },
     "baseColumnName": "district",
-    "expression": "grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
     "newColumnName": "same_as_wikidata_district",
     "columnInsertIndex": 1,
-    "description": "Create column same_as_wikidata_district at index 1 based on column district using expression grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id"
+    "description": "Create column same_as_wikidata_district at index 1 based on column district using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
   }
 ]

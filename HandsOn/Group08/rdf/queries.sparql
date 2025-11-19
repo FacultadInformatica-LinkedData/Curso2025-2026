@@ -1,63 +1,104 @@
-# Group 08 - Hands-On 4
-# SPARQL queries
+@prefix ns: <http://bcn-mobility-air.org/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://www.semanticweb.org/group08/ontology#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+# --------------------------------------------------------------------------
+# CONSULTAS DE VALIDACIÓN: Enfocadas en el enriquecimiento de ns:RoadSegment
+# --------------------------------------------------------------------------
 
-# 1. Count total triples
-SELECT (COUNT(*) AS ?totalTriples)
-WHERE { ?s ?p ?o }
+# 1. Contar RoadSegments que SI tienen nombre
+SELECT (COUNT(DISTINCT ?s) AS ?count)
+WHERE { 
+    ?s a ns:RoadSegment ;
+       ns:name ?name . 
+}
 
-# 2. Count instances per class
-SELECT ?class (COUNT(?s) AS ?count)
-WHERE { ?s a ?class }
+;
+
+# 2. Contar RoadSegments que NO tienen nombre (Debe ser 0)
+SELECT (COUNT(DISTINCT ?s) AS ?count)
+WHERE {
+    ?s a ns:RoadSegment .
+    FILTER NOT EXISTS { ?s ns:name ?name . }
+}
+
+;
+
+# 3. Muestra de RoadSegments con todos sus atributos (Nombre, Inicio, Fin)
+SELECT ?segment ?name ?start ?end
+WHERE {
+  ?segment a ns:RoadSegment ;
+           ns:name ?name ;
+           ns:startPoint ?start ;
+           ns:endPoint ?end .
+}
+LIMIT 5
+
+;
+
+# 4. Distribución de nombres (Confirmar que ns:RoadSegment aparece)
+SELECT ?class (COUNT(DISTINCT ?s) AS ?count)
+WHERE {
+  ?s a ?class ;
+     ns:name ?name .
+}
 GROUP BY ?class
 ORDER BY DESC(?count)
 
-# 3. Earliest and latest traffic observation dates
-SELECT (MIN(?date) AS ?earliest) (MAX(?date) AS ?latest)
-WHERE {
-  ?s a :TrafficSection ;
-     :hasObservationDateTime ?date .
-}
+;
 
-# 4. Number of bike parkings per district
-SELECT ?district (COUNT(?s) AS ?numParkings)
+# 5. Comprobar legibilidad del nombre (Buscando "Diagonal")
+SELECT ?s ?name ?start
 WHERE {
-  ?s a :BikeParking ;
-     :hasDistrict ?district .
-}
-GROUP BY ?district
-ORDER BY DESC(?numParkings)
-
-# 5. Average pollutant values per station
-SELECT ?station (AVG(?value) AS ?avgValue)
-WHERE {
-  ?obs a :AirQualityObservation ;
-       :hasContaminantValue ?value ;
-       :locatedIn ?station .
-}
-GROUP BY ?station
-ORDER BY DESC(?avgValue)
-LIMIT 10
-
-# 6. Check resources with rdfs:label
-SELECT (COUNT(DISTINCT ?s) AS ?withLabel)
-WHERE { ?s rdfs:label ?label }
-
-# 7. Sample of labels per class
-SELECT ?class ?label
-WHERE {
-  ?s a ?class ;
-     rdfs:label ?label .
-}
-LIMIT 10
-
-# 8. Find labels containing the word "traffic"
-SELECT ?s ?label
-WHERE {
-  ?s rdfs:label ?label .
-  FILTER(CONTAINS(LCASE(STR(?label)), "traffic"))
+  ?s a ns:RoadSegment ;
+     ns:name ?name ;
+     ns:startPoint ?start .
+  FILTER(CONTAINS(LCASE(STR(?name)), "diagonal"))
 }
 LIMIT 5
+
+;
+
+# --------------------------------------------------------------------------
+# CONSULTAS DE APLICACIÓN
+# --------------------------------------------------------------------------
+
+# Q1: ¿Cuáles son los tramos en "Diagonal" con la MEJOR CONGESTION?
+SELECT DISTINCT ?segment ?name ?start ?end ?congestion 
+WHERE { 
+    ?segment a ns:RoadSegment ;
+             ns:name ?name ;
+             ns:startPoint ?start ;
+             ns:endPoint ?end ;
+             ns:hasCongestionMeasurement/ns:congestionLevel ?congestion .
+    
+    FILTER(CONTAINS(LCASE(STR(?name)), "diagonal"))
+    FILTER(?congestion = "Optimum"^^xsd:string)
+    
+}
+LIMIT 10
+
+;
+
+# Q2: ¿Cuál es la MEJOR CALIDAD DE AIRE en un tramo de "Diagonal"?
+SELECT DISTINCT ?streetName ?startPoint ?stationName ?aqValue
+WHERE {
+    ?segment a ns:RoadSegment ;
+             ns:name ?streetName ;
+             ns:startPoint ?startPoint ;
+             ns:hasLocation ?roadLocation .
+    FILTER(CONTAINS(LCASE(STR(?streetName)), "diagonal"))
+
+    ?station a ns:AirQualityStation ;
+             ns:name ?stationName ;
+             ns:hasLocation ?stationLocation .
+    
+    ?station ns:hasAirQualityReading ?reading .
+    
+    ?reading ns:measuresPollutant [ns:name "nitric oxide"] ; # Sin ^^xsd:string
+             ns:value ?aqValue .
+}
+ORDER BY ASC(?aqValue) 
+LIMIT 10

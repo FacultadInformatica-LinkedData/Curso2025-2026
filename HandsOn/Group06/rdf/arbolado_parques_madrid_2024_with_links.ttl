@@ -1,0 +1,1504 @@
+@prefix :      <https://example.org/group06/> .
+@prefix def:   <https://example.org/group06/def/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tree:  <https://example.org/group06/tree/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+tree:35  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q732933>;
+        def:species                   "Ligustrum lucidum";
+        def:treeCount                 "294"^^xsd:int .
+
+tree:105  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "405"^^xsd:int .
+
+tree:56  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:species                    "Otros";
+        def:treeCount                  "1232"^^xsd:int .
+
+tree:126  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157307>;
+        def:species                    "Morus alba";
+        def:treeCount                  "491"^^xsd:int .
+
+tree:77  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q211457>;
+        def:species                    "Pinus halepensis";
+        def:treeCount                  "691"^^xsd:int .
+
+tree:147  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q37083>;
+        def:species                    "Olea europaea";
+        def:treeCount                  "163"^^xsd:int .
+
+tree:98  def:parkName                  "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147064>;
+        def:species                    "Populus nigra";
+        def:treeCount                  "2526"^^xsd:int .
+
+tree:168  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161105>;
+        def:species                   "Plantanus orientalis";
+        def:treeCount                 "634"^^xsd:int .
+
+tree:189  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158301>;
+        def:species                   "Acer saccharinum";
+        def:treeCount                 "67"^^xsd:int .
+
+tree:218  def:parkName  "PARQUE DE LA ATALAYUELA";
+        def:species    "Otros";
+        def:treeCount  "23"^^xsd:int .
+
+tree:239  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158178>;
+        def:species                   "Quercus coccifera";
+        def:treeCount                 "50"^^xsd:int .
+
+tree:260  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161382>;
+        def:species                    "Tilia tomentosa";
+        def:treeCount                  "138"^^xsd:int .
+
+tree:27  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q106094>;
+        def:species                   "Pinus pinea";
+        def:treeCount                 "334"^^xsd:int .
+
+tree:48  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "208"^^xsd:int .
+
+tree:118  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q13188>;
+        def:species                    "pomegranate";
+        def:treeCount                  "47"^^xsd:int .
+
+tree:69  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1209219>;
+        def:species                   "Ligustrum japonicum";
+        def:treeCount                 "38"^^xsd:int .
+
+tree:139  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q469652>;
+        def:species                   "Liquidambar styraciflua";
+        def:treeCount                 "55"^^xsd:int .
+
+tree:90  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q9577378>;
+        def:species                    "Acer × freemanii";
+        def:treeCount                  "596"^^xsd:int .
+
+tree:160  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147064>;
+        def:species                    "Populus nigra";
+        def:treeCount                  "67"^^xsd:int .
+
+tree:181  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q930814>;
+        def:species                   "Betula utilis";
+        def:treeCount                 "2"^^xsd:int .
+
+tree:210  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q255375>;
+        def:species                   "Celtis australis";
+        def:treeCount                 "38"^^xsd:int .
+
+tree:231  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q37083>;
+        def:species                   "Olea europaea";
+        def:treeCount                 "230"^^xsd:int .
+
+tree:252  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "1483"^^xsd:int .
+
+tree:19  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:species                    "Prunus cerasifera  subsp. pissardii";
+        def:treeCount                  "294"^^xsd:int .
+
+tree:273  def:parkName  "PARQUE LINEAL DE MANZANARES SUR";
+        def:species    "Otros";
+        def:treeCount  "721"^^xsd:int .
+
+tree:40  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q757123>;
+        def:species                   "Acacia dealbata";
+        def:treeCount                 "47"^^xsd:int .
+
+tree:110  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q26899>;
+        def:species                    "Aesculus hippocastanum";
+        def:treeCount                  "134"^^xsd:int .
+
+tree:61  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161116>;
+        def:species                    "Magnolia grandiflora";
+        def:treeCount                  "16"^^xsd:int .
+
+tree:131  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q106094>;
+        def:species                   "Pinus pinea";
+        def:treeCount                 "453"^^xsd:int .
+
+tree:82  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q518949>;
+        def:species                    "Fraxinus angustifolia";
+        def:treeCount                  "207"^^xsd:int .
+
+tree:152  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:species                    "Otros";
+        def:treeCount                  "1973"^^xsd:int .
+
+tree:173  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147513>;
+        def:species                   "Cupressus sempervirens";
+        def:treeCount                 "253"^^xsd:int .
+
+tree:2  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q29488>;
+        def:species                    "Cercis siliquastrum";
+        def:treeCount                  "692"^^xsd:int .
+
+tree:194  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161388>;
+        def:species                   "Acer monspessulanum";
+        def:treeCount                 "34"^^xsd:int .
+
+tree:202  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q158785>;
+        def:species                    "Acer campestre";
+        def:treeCount                  "167"^^xsd:int .
+
+tree:223  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "151"^^xsd:int .
+
+tree:244  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q156944>;
+        def:species                    "Acer pseudoplatanus";
+        def:treeCount                  "190"^^xsd:int .
+
+tree:11  def:parkName                  "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:species                    "Otros";
+        def:treeCount                  "5498"^^xsd:int .
+
+tree:265  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q106094>;
+        def:species                   "Pinus pinea";
+        def:treeCount                 "974"^^xsd:int .
+
+tree:32  def:parkName  "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:species    "Ulmus sp";
+        def:treeCount  "221"^^xsd:int .
+
+tree:102  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "659"^^xsd:int .
+
+tree:53  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q158785>;
+        def:species                    "Acer campestre";
+        def:treeCount                  "123"^^xsd:int .
+
+tree:123  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q288558>;
+        def:species                    "Styphnolobium japonicum";
+        def:treeCount                  "615"^^xsd:int .
+
+tree:74  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1137183>;
+        def:species                   "Cupressus macrocarpa";
+        def:treeCount                 "6"^^xsd:int .
+
+tree:144  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q844835>;
+        def:species                    "Koelreuteria paniculata";
+        def:treeCount                  "347"^^xsd:int .
+
+tree:95  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "380"^^xsd:int .
+
+tree:165  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q106094>;
+        def:species                   "Pinus pinea";
+        def:treeCount                 "2854"^^xsd:int .
+
+tree:186  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161374>;
+        def:species                   "Platanus × hispanica";
+        def:treeCount                 "160"^^xsd:int .
+
+tree:215  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q218155>;
+        def:species                   "Quercus ilex";
+        def:treeCount                 "15"^^xsd:int .
+
+tree:236  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1079824>;
+        def:species                   "Ulmus pumila";
+        def:treeCount                 "89"^^xsd:int .
+
+tree:257  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "257"^^xsd:int .
+
+tree:24  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q211457>;
+        def:species                   "Pinus halepensis";
+        def:treeCount                 "1056"^^xsd:int .
+
+tree:45  def:parkName  "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:species    "Otros";
+        def:treeCount  "330"^^xsd:int .
+
+tree:115  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "55"^^xsd:int .
+
+tree:66  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:species                    "Populus alba 'Bolleana'";
+        def:treeCount                  "1"^^xsd:int .
+
+tree:136  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q844835>;
+        def:species                   "Koelreuteria paniculata";
+        def:treeCount                 "77"^^xsd:int .
+
+tree:87  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "2922"^^xsd:int .
+
+tree:157  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q3396010>;
+        def:species                    "Malus 'Evereste'";
+        def:treeCount                  "120"^^xsd:int .
+
+tree:178  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147468>;
+        def:species                   "Thuja occidentalis";
+        def:treeCount                 "7"^^xsd:int .
+
+tree:7  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q288558>;
+        def:species                    "Styphnolobium japonicum";
+        def:treeCount                  "392"^^xsd:int .
+
+tree:199  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q162171>;
+        def:species                    "Melia azedarach";
+        def:treeCount                  "210"^^xsd:int .
+
+tree:207  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:species                    "Otros";
+        def:treeCount                  "1435"^^xsd:int .
+
+tree:228  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q211457>;
+        def:species                    "Pinus halepensis";
+        def:treeCount                  "93"^^xsd:int .
+
+tree:249  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:species                    "Salix sp";
+        def:treeCount                  "70"^^xsd:int .
+
+tree:16  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:species                    "Populus alba 'Bolleana'";
+        def:treeCount                  "390"^^xsd:int .
+
+tree:270  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1079824>;
+        def:species                   "Ulmus pumila";
+        def:treeCount                 "132"^^xsd:int .
+
+tree:37  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q26899>;
+        def:species                   "Aesculus hippocastanum";
+        def:treeCount                 "77"^^xsd:int .
+
+tree:107  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "263"^^xsd:int .
+
+tree:58  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "50"^^xsd:int .
+
+tree:128  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "424"^^xsd:int .
+
+tree:79  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q1079824>;
+        def:species                    "Ulmus pumila";
+        def:treeCount                  "362"^^xsd:int .
+
+tree:149  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q29488>;
+        def:species                    "Cercis siliquastrum";
+        def:treeCount                  "119"^^xsd:int .
+
+tree:170  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1079824>;
+        def:species                   "Ulmus pumila";
+        def:treeCount                 "389"^^xsd:int .
+
+tree:191  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q908842>;
+        def:species                   "obedient plant";
+        def:treeCount                 "42"^^xsd:int .
+
+tree:220  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q39918>;
+        def:species                    "Prunus dulcis";
+        def:treeCount                  "295"^^xsd:int .
+
+tree:241  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "518"^^xsd:int .
+
+tree:262  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:species                    "Otros";
+        def:treeCount                  "1245"^^xsd:int .
+
+tree:29  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q146935>;
+        def:species                   "Cedrus deodara";
+        def:treeCount                 "243"^^xsd:int .
+
+tree:50  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q518949>;
+        def:species                    "Fraxinus angustifolia";
+        def:treeCount                  "179"^^xsd:int .
+
+tree:120  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q37083>;
+        def:species                    "Olea europaea";
+        def:treeCount                  "2430"^^xsd:int .
+
+tree:71  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q179729>;
+        def:species                   "Taxus baccata";
+        def:treeCount                 "28"^^xsd:int .
+
+tree:141  def:parkName  "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:species    "Otros";
+        def:treeCount  "349"^^xsd:int .
+
+tree:92  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147064>;
+        def:species                    "Populus nigra";
+        def:treeCount                  "496"^^xsd:int .
+
+tree:162  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q130599614>;
+        def:species                    "Tilia cordata 'Greenspire'";
+        def:treeCount                  "62"^^xsd:int .
+
+tree:183  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158776>;
+        def:species                   "Carpinus betulus";
+        def:treeCount                 "2"^^xsd:int .
+
+tree:212  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q518949>;
+        def:species                   "Fraxinus angustifolia";
+        def:treeCount                 "31"^^xsd:int .
+
+tree:233  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q2432250>;
+        def:species                   "Quercus faginea";
+        def:treeCount                 "204"^^xsd:int .
+
+tree:254  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q37083>;
+        def:species                    "Olea europaea";
+        def:treeCount                  "506"^^xsd:int .
+
+tree:21  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147064>;
+        def:species                    "Populus nigra";
+        def:treeCount                  "225"^^xsd:int .
+
+tree:42  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158383>;
+        def:species                   "Trachycarpus fortunei";
+        def:treeCount                 "28"^^xsd:int .
+
+tree:112  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157307>;
+        def:species                    "Morus alba";
+        def:treeCount                  "125"^^xsd:int .
+
+tree:63  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147468>;
+        def:species                    "Thuja occidentalis";
+        def:treeCount                  "5"^^xsd:int .
+
+tree:133  def:parkName  "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:species    "Prunus cerasifera  subsp. pissardii";
+        def:treeCount  "156"^^xsd:int .
+
+tree:84  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "183"^^xsd:int .
+
+tree:154  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q39918>;
+        def:species                    "Prunus dulcis";
+        def:treeCount                  "244"^^xsd:int .
+
+tree:175  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q146935>;
+        def:species                   "Cedrus deodara";
+        def:treeCount                 "53"^^xsd:int .
+
+tree:4  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "537"^^xsd:int .
+
+tree:196  def:parkName  "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:species    "Otros";
+        def:treeCount  "385"^^xsd:int .
+
+tree:204  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q43300>;
+        def:species                    "Cydonia oblonga";
+        def:treeCount                  "123"^^xsd:int .
+
+tree:225  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q146935>;
+        def:species                    "Cedrus deodara";
+        def:treeCount                  "130"^^xsd:int .
+
+tree:246  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q211457>;
+        def:species                    "Pinus halepensis";
+        def:treeCount                  "119"^^xsd:int .
+
+tree:13  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q288558>;
+        def:species                    "Styphnolobium japonicum";
+        def:treeCount                  "797"^^xsd:int .
+
+tree:267  def:parkName  "PARQUE LINEAL DE MANZANARES SUR";
+        def:species    "Ulmus sp";
+        def:treeCount  "473"^^xsd:int .
+
+tree:34  def:parkName  "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:species    "Otros";
+        def:treeCount  "1766"^^xsd:int .
+
+tree:104  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:species                    "Ulmus sp";
+        def:treeCount                  "498"^^xsd:int .
+
+tree:55  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q26899>;
+        def:species                    "Aesculus hippocastanum";
+        def:treeCount                  "77"^^xsd:int .
+
+tree:125  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q156907>;
+        def:species                    "Fraxinus excelsior";
+        def:treeCount                  "512"^^xsd:int .
+
+tree:76  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "4769"^^xsd:int .
+
+tree:146  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q39918>;
+        def:species                    "Prunus dulcis";
+        def:treeCount                  "258"^^xsd:int .
+
+tree:97  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:species                    "Otros";
+        def:treeCount                  "4071"^^xsd:int .
+
+tree:167  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q218155>;
+        def:species                   "Quercus ilex";
+        def:treeCount                 "842"^^xsd:int .
+
+tree:188  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q110765987>;
+        def:species                   "Acer platanoides 'Crimson King'";
+        def:treeCount                 "68"^^xsd:int .
+
+tree:217  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q156944>;
+        def:species                   "Acer pseudoplatanus";
+        def:treeCount                 "14"^^xsd:int .
+
+tree:238  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q255375>;
+        def:species                   "Celtis australis";
+        def:treeCount                 "56"^^xsd:int .
+
+tree:259  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147064>;
+        def:species                    "Populus nigra";
+        def:treeCount                  "145"^^xsd:int .
+
+tree:26  def:parkName  "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:species    "Prunus dulcis \"Desmayo Largueta\"";
+        def:treeCount  "389"^^xsd:int .
+
+tree:47  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "349"^^xsd:int .
+
+tree:117  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q1148692>;
+        def:species                    "Lagerstroemia indica";
+        def:treeCount                  "47"^^xsd:int .
+
+tree:68  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161374>;
+        def:species                   "Platanus × hispanica";
+        def:treeCount                 "126"^^xsd:int .
+
+tree:138  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q130355156>;
+        def:species                   "Pyrus calleryana 'Chanticleer'";
+        def:treeCount                 "72"^^xsd:int .
+
+tree:89  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "1508"^^xsd:int .
+
+tree:159  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q11181633>;
+        def:species                    "Ziziphus jujuba";
+        def:treeCount                  "100"^^xsd:int .
+
+tree:180  def:parkName  "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:species    "Populus alba 'Bolleana'";
+        def:treeCount  "5"^^xsd:int .
+
+tree:9  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q1079824>;
+        def:species                    "Ulmus pumila";
+        def:treeCount                  "328"^^xsd:int .
+
+tree:209  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q3079266>;
+        def:species                   "Pyrus calleryana";
+        def:treeCount                 "54"^^xsd:int .
+
+tree:230  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q211457>;
+        def:species                   "Pinus halepensis";
+        def:treeCount                 "356"^^xsd:int .
+
+tree:251  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:species                    "Otros";
+        def:treeCount                  "992"^^xsd:int .
+
+tree:18  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "296"^^xsd:int .
+
+tree:272  def:parkName  "PARQUE LINEAL DE MANZANARES SUR";
+        def:species    "Prunus cerasifera  subsp. pissardii";
+        def:treeCount  "120"^^xsd:int .
+
+tree:39  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q146935>;
+        def:species                   "Cedrus deodara";
+        def:treeCount                 "54"^^xsd:int .
+
+tree:109  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "142"^^xsd:int .
+
+tree:60  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q146935>;
+        def:species                    "Cedrus deodara";
+        def:treeCount                  "21"^^xsd:int .
+
+tree:130  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:species                    "Otros";
+        def:treeCount                  "6105"^^xsd:int .
+
+tree:81  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q159570>;
+        def:species                    "Ailanthus altissima";
+        def:treeCount                  "276"^^xsd:int .
+
+tree:151  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q130355156>;
+        def:species                    "Pyrus calleryana 'Chanticleer'";
+        def:treeCount                  "112"^^xsd:int .
+
+tree:172  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q162171>;
+        def:species                   "Melia azedarach";
+        def:treeCount                 "287"^^xsd:int .
+
+tree:1  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "971"^^xsd:int .
+
+tree:193  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q18470633>;
+        def:species                   "Acer × freemanii ‘Jeffersred’";
+        def:treeCount                 "39"^^xsd:int .
+
+tree:201  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157307>;
+        def:species                    "Morus alba";
+        def:treeCount                  "183"^^xsd:int .
+
+tree:222  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q29488>;
+        def:species                    "Cercis siliquastrum";
+        def:treeCount                  "170"^^xsd:int .
+
+tree:243  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q1079824>;
+        def:species                    "Ulmus pumila";
+        def:treeCount                  "249"^^xsd:int .
+
+tree:10  def:parkName                  "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q158785>;
+        def:species                    "Acer campestre";
+        def:treeCount                  "321"^^xsd:int .
+
+tree:264  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q255375>;
+        def:species                   "Celtis australis";
+        def:treeCount                 "1822"^^xsd:int .
+
+tree:31  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q39918>;
+        def:species                   "Prunus dulcis";
+        def:treeCount                 "226"^^xsd:int .
+
+tree:101  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q518949>;
+        def:species                    "Fraxinus angustifolia";
+        def:treeCount                  "914"^^xsd:int .
+
+tree:52  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q165145>;
+        def:species                    "Quercus robur";
+        def:treeCount                  "135"^^xsd:int .
+
+tree:122  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q163831>;
+        def:species                    "Catalpa bignonioides";
+        def:treeCount                  "882"^^xsd:int .
+
+tree:73  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q146935>;
+        def:species                   "Cedrus deodara";
+        def:treeCount                 "8"^^xsd:int .
+
+tree:143  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:species                    "Morus alba 'Fruitless'";
+        def:treeCount                  "412"^^xsd:int .
+
+tree:94  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q26899>;
+        def:species                    "Aesculus hippocastanum";
+        def:treeCount                  "433"^^xsd:int .
+
+tree:164  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q211457>;
+        def:species                   "Pinus halepensis";
+        def:treeCount                 "2861"^^xsd:int .
+
+tree:185  def:parkName  "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:species    "Otros";
+        def:treeCount  "13"^^xsd:int .
+
+tree:214  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147064>;
+        def:species                   "Populus nigra";
+        def:treeCount                 "27"^^xsd:int .
+
+tree:235  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q218155>;
+        def:species                   "Quercus ilex";
+        def:treeCount                 "92"^^xsd:int .
+
+tree:256  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "405"^^xsd:int .
+
+tree:23  def:parkName  "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:species    "Prunus dulcis Marcona";
+        def:treeCount  "1079"^^xsd:int .
+
+tree:44  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q255375>;
+        def:species                   "Celtis australis";
+        def:treeCount                 "25"^^xsd:int .
+
+tree:114  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q39918>;
+        def:species                    "Prunus dulcis";
+        def:treeCount                  "78"^^xsd:int .
+
+tree:65  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q29488>;
+        def:species                    "Cercis siliquastrum";
+        def:treeCount                  "1"^^xsd:int .
+
+tree:135  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q145954>;
+        def:species                   "Pinus nigra";
+        def:treeCount                 "89"^^xsd:int .
+
+tree:86  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:species                    "Otros";
+        def:treeCount                  "2477"^^xsd:int .
+
+tree:156  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q37083>;
+        def:species                    "Olea europaea";
+        def:treeCount                  "128"^^xsd:int .
+
+tree:177  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158785>;
+        def:species                   "Acer campestre";
+        def:treeCount                 "7"^^xsd:int .
+
+tree:6  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147487>;
+        def:species                    "Ulmus minor";
+        def:treeCount                  "429"^^xsd:int .
+
+tree:198  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q518949>;
+        def:species                    "Fraxinus angustifolia";
+        def:treeCount                  "248"^^xsd:int .
+
+tree:206  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q1079824>;
+        def:species                    "Ulmus pumila";
+        def:treeCount                  "114"^^xsd:int .
+
+tree:227  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q623489>;
+        def:species                    "Cedrus atlantica";
+        def:treeCount                  "95"^^xsd:int .
+
+tree:248  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q218155>;
+        def:species                    "Quercus ilex";
+        def:treeCount                  "83"^^xsd:int .
+
+tree:15  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q1209219>;
+        def:species                    "Ligustrum japonicum";
+        def:treeCount                  "395"^^xsd:int .
+
+tree:269  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q844835>;
+        def:species                   "Koelreuteria paniculata";
+        def:treeCount                 "159"^^xsd:int .
+
+tree:36  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147513>;
+        def:species                   "Cupressus sempervirens";
+        def:treeCount                 "132"^^xsd:int .
+
+tree:106  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q211457>;
+        def:species                    "Pinus halepensis";
+        def:treeCount                  "277"^^xsd:int .
+
+tree:57  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "85"^^xsd:int .
+
+tree:127  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "476"^^xsd:int .
+
+tree:78  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q39918>;
+        def:species                    "Prunus dulcis";
+        def:treeCount                  "930"^^xsd:int .
+
+tree:148  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "126"^^xsd:int .
+
+tree:99  def:parkName                  "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "2457"^^xsd:int .
+
+tree:169  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q146935>;
+        def:species                   "Cedrus deodara";
+        def:treeCount                 "620"^^xsd:int .
+
+tree:190  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q29488>;
+        def:species                   "Cercis siliquastrum";
+        def:treeCount                 "43"^^xsd:int .
+
+tree:219  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147487>;
+        def:species                    "Ulmus minor";
+        def:treeCount                  "1020"^^xsd:int .
+
+tree:240  def:parkName  "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:species    "Otros";
+        def:treeCount  "310"^^xsd:int .
+
+tree:261  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q145954>;
+        def:species                    "Pinus nigra";
+        def:treeCount                  "120"^^xsd:int .
+
+tree:28  def:parkName  "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:species    "Eucalyptus sp";
+        def:treeCount  "302"^^xsd:int .
+
+tree:49  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "189"^^xsd:int .
+
+tree:119  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:species                    "Otros";
+        def:treeCount                  "688"^^xsd:int .
+
+tree:70  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147513>;
+        def:species                   "Cupressus sempervirens";
+        def:treeCount                 "31"^^xsd:int .
+
+tree:140  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q37083>;
+        def:species                   "Olea europaea";
+        def:treeCount                 "49"^^xsd:int .
+
+tree:91  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q162171>;
+        def:species                    "Melia azedarach";
+        def:treeCount                  "511"^^xsd:int .
+
+tree:161  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q844835>;
+        def:species                    "Koelreuteria paniculata";
+        def:treeCount                  "64"^^xsd:int .
+
+tree:182  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q112257937>;
+        def:species                   "Cedrus atlantica ʽGlauca’";
+        def:treeCount                 "2"^^xsd:int .
+
+tree:211  def:parkName  "PARQUE DE LA ATALAYUELA";
+        def:species    "Fraxinus sp";
+        def:treeCount  "33"^^xsd:int .
+
+tree:232  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q39918>;
+        def:species                   "Prunus dulcis";
+        def:treeCount                 "227"^^xsd:int .
+
+tree:253  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "566"^^xsd:int .
+
+tree:20  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q623489>;
+        def:species                    "Cedrus atlantica";
+        def:treeCount                  "240"^^xsd:int .
+
+tree:41  def:parkName  "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:species    "Populus alba 'Bolleana'";
+        def:treeCount  "29"^^xsd:int .
+
+tree:111  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "126"^^xsd:int .
+
+tree:62  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q148920>;
+        def:species                    "Abies nordmanniana";
+        def:treeCount                  "8"^^xsd:int .
+
+tree:132  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q255375>;
+        def:species                   "Celtis australis";
+        def:treeCount                 "337"^^xsd:int .
+
+tree:83  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "139"^^xsd:int .
+
+tree:153  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "327"^^xsd:int .
+
+tree:174  def:parkName  "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:species    "Otros";
+        def:treeCount  "3357"^^xsd:int .
+
+tree:3  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "588"^^xsd:int .
+
+tree:195  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q844835>;
+        def:species                   "Koelreuteria paniculata";
+        def:treeCount                 "33"^^xsd:int .
+
+tree:203  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "125"^^xsd:int .
+
+tree:224  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "149"^^xsd:int .
+
+tree:245  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q162171>;
+        def:species                    "Melia azedarach";
+        def:treeCount                  "135"^^xsd:int .
+
+tree:12  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "938"^^xsd:int .
+
+tree:266  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q518949>;
+        def:species                   "Fraxinus angustifolia";
+        def:treeCount                 "862"^^xsd:int .
+
+tree:33  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q157650>;
+        def:species                   "Gleditsia triacanthos";
+        def:treeCount                 "207"^^xsd:int .
+
+tree:103  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q37083>;
+        def:species                    "Olea europaea";
+        def:treeCount                  "506"^^xsd:int .
+
+tree:54  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157417>;
+        def:species                    "Robinia pseudoacacia";
+        def:treeCount                  "99"^^xsd:int .
+
+tree:124  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "551"^^xsd:int .
+
+tree:75  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q211457>;
+        def:species                   "Pinus halepensis";
+        def:treeCount                 "1"^^xsd:int .
+
+tree:145  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q518949>;
+        def:species                    "Fraxinus angustifolia";
+        def:treeCount                  "287"^^xsd:int .
+
+tree:96  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q43284>;
+        def:species                    "Ginkgo biloba";
+        def:treeCount                  "358"^^xsd:int .
+
+tree:166  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q255375>;
+        def:species                   "Celtis australis";
+        def:treeCount                 "1260"^^xsd:int .
+
+tree:187  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158785>;
+        def:species                   "Acer campestre";
+        def:treeCount                 "80"^^xsd:int .
+
+tree:216  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147525>;
+        def:species                   "Quercus rubra";
+        def:treeCount                 "15"^^xsd:int .
+
+tree:237  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147513>;
+        def:species                   "Cupressus sempervirens";
+        def:treeCount                 "72"^^xsd:int .
+
+tree:258  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q156831>;
+        def:species                    "Tilia platyphyllos";
+        def:treeCount                  "222"^^xsd:int .
+
+tree:25  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147513>;
+        def:species                   "Cupressus sempervirens";
+        def:treeCount                 "606"^^xsd:int .
+
+tree:46  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q29488>;
+        def:species                    "Cercis siliquastrum";
+        def:treeCount                  "760"^^xsd:int .
+
+tree:116  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q469652>;
+        def:species                    "Liquidambar styraciflua";
+        def:treeCount                  "52"^^xsd:int .
+
+tree:67  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147487>;
+        def:species                    "Ulmus minor";
+        def:treeCount                  "1"^^xsd:int .
+
+tree:137  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1290970>;
+        def:species                   "Cupressus × leylandii";
+        def:treeCount                 "72"^^xsd:int .
+
+tree:88  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q211457>;
+        def:species                    "Pinus halepensis";
+        def:treeCount                  "2358"^^xsd:int .
+
+tree:158  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q162171>;
+        def:species                    "Melia azedarach";
+        def:treeCount                  "101"^^xsd:int .
+
+tree:179  def:parkName  "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:species    "Prunus cerasifera  subsp. pissardii";
+        def:treeCount  "6"^^xsd:int .
+
+tree:8  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "346"^^xsd:int .
+
+tree:208  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q106094>;
+        def:species                   "Pinus pinea";
+        def:treeCount                 "574"^^xsd:int .
+
+tree:229  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:species                    "Otros";
+        def:treeCount                  "857"^^xsd:int .
+
+tree:250  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161040>;
+        def:species                    "Morus nigra";
+        def:treeCount                  "60"^^xsd:int .
+
+tree:17  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q146935>;
+        def:species                    "Cedrus deodara";
+        def:treeCount                  "346"^^xsd:int .
+
+tree:271  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q146935>;
+        def:species                   "Cedrus deodara";
+        def:treeCount                 "127"^^xsd:int .
+
+tree:38  def:parkName  "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:species    "Prunus cerasifera  subsp. pissardii";
+        def:treeCount  "62"^^xsd:int .
+
+tree:108  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:species                    "Otros";
+        def:treeCount                  "2805"^^xsd:int .
+
+tree:59  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161166>;
+        def:species                    "Acer negundo";
+        def:treeCount                  "26"^^xsd:int .
+
+tree:129  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q146269>;
+        def:species                    "Populus alba";
+        def:treeCount                  "356"^^xsd:int .
+
+tree:80  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q218155>;
+        def:species                    "Quercus ilex";
+        def:treeCount                  "932"^^xsd:int .
+
+tree:150  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q26899>;
+        def:species                    "Aesculus hippocastanum";
+        def:treeCount                  "112"^^xsd:int .
+
+tree:171  def:parkName                "CUÑA VERDE DE O´DONNELL Y  FUENTE CARRANTONA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q165145>;
+        def:species                   "Quercus robur";
+        def:treeCount                 "306"^^xsd:int .
+
+tree:0  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q26899>;
+        def:species                    "Aesculus hippocastanum";
+        def:treeCount                  "5715"^^xsd:int .
+
+tree:192  def:parkName                "JARDINES DE LA PLAZA DE ESPAÑA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q13188>;
+        def:species                   "pomegranate";
+        def:treeCount                 "41"^^xsd:int .
+
+tree:200  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q218155>;
+        def:species                    "Quercus ilex";
+        def:treeCount                  "199"^^xsd:int .
+
+tree:221  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q159570>;
+        def:species                    "Ailanthus altissima";
+        def:treeCount                  "207"^^xsd:int .
+
+tree:242  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "304"^^xsd:int .
+
+tree:263  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q147064>;
+        def:species                   "Populus nigra";
+        def:treeCount                 "2381"^^xsd:int .
+
+tree:30  def:parkName                 "JARDÍN DE LA QUINTA DE LOS MOLINOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161374>;
+        def:species                   "Platanus × hispanica";
+        def:treeCount                 "239"^^xsd:int .
+
+tree:100  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "2247"^^xsd:int .
+
+tree:51  def:parkName                  "El Capricho Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2054035>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "139"^^xsd:int .
+
+tree:121  def:parkName                 "Juan Carlos I Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1583169>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q106094>;
+        def:species                    "Pinus pinea";
+        def:treeCount                  "1074"^^xsd:int .
+
+tree:72  def:parkName                 "JARDINES PLAZA DE ORIENTE - JARDÍN DEL CABO NOVAL-JARDÍN DE LEPANTO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161116>;
+        def:species                   "Magnolia grandiflora";
+        def:treeCount                 "9"^^xsd:int .
+
+tree:142  def:parkName                 "Felipe VI Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062702>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "882"^^xsd:int .
+
+tree:93  def:parkName                  "Madrid Río";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062341>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q518949>;
+        def:species                    "Fraxinus angustifolia";
+        def:treeCount                  "476"^^xsd:int .
+
+tree:163  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:species                    "Otros";
+        def:treeCount                  "579"^^xsd:int .
+
+tree:184  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q1209219>;
+        def:species                   "Ligustrum japonicum";
+        def:treeCount                 "2"^^xsd:int .
+
+tree:213  def:parkName                "PARQUE DE LA ATALAYUELA";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q158746>;
+        def:species                   "Tilia cordata";
+        def:treeCount                 "30"^^xsd:int .
+
+tree:234  def:parkName                "BOSQUE DE LOS ABRAZOS PERDIDOS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q183497>;
+        def:species                   "Juniperus phoenicea";
+        def:treeCount                 "112"^^xsd:int .
+
+tree:255  def:parkName                 "Manzanares Linear Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q6062319>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "425"^^xsd:int .
+
+tree:22  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:species                    "Otros";
+        def:treeCount                  "2553"^^xsd:int .
+
+tree:43  def:parkName                 "JARDÍN DE LA QUINTA DE LA FUENTE DEL BERRO";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161374>;
+        def:species                   "Platanus × hispanica";
+        def:treeCount                 "26"^^xsd:int .
+
+tree:113  def:parkName                 "Parque Juan Pablo II";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q125465939>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "88"^^xsd:int .
+
+tree:64  def:parkName                  "Sabatini Gardens";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2419365>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q156944>;
+        def:species                    "Acer pseudoplatanus";
+        def:treeCount                  "3"^^xsd:int .
+
+tree:134  def:parkName                "ZONAS VERDES DISTRITO C - LAS TABLAS";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q162171>;
+        def:species                   "Melia azedarach";
+        def:treeCount                 "111"^^xsd:int .
+
+tree:85  def:parkName                  "Dehesa de la Villa Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q4887686>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "131"^^xsd:int .
+
+tree:155  def:parkName                 "Parque Princesa Leonor";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q121427375>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q158785>;
+        def:species                    "Acer campestre";
+        def:treeCount                  "163"^^xsd:int .
+
+tree:176  def:parkName                "ROSALEDA DE MADRID \"RAMON ORTIZ\"";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q161166>;
+        def:species                   "Acer negundo";
+        def:treeCount                 "17"^^xsd:int .
+
+tree:5  def:parkName                   "El Retiro Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q1131807>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157650>;
+        def:species                    "Gleditsia triacanthos";
+        def:treeCount                  "508"^^xsd:int .
+
+tree:197  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q255375>;
+        def:species                    "Celtis australis";
+        def:treeCount                  "256"^^xsd:int .
+
+tree:205  def:parkName                 "La Gavia Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q105617857>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q157969>;
+        def:species                    "Elaeagnus angustifolia";
+        def:treeCount                  "123"^^xsd:int .
+
+tree:226  def:parkName                 "Quinta de Torre Arias Park";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q33141667>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q147513>;
+        def:species                    "Cupressus sempervirens";
+        def:treeCount                  "111"^^xsd:int .
+
+tree:247  def:parkName                 "Parque de las Comunidades, Alcorcón";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q52777091>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q158178>;
+        def:species                    "Quercus coccifera";
+        def:treeCount                  "106"^^xsd:int .
+
+tree:14  def:parkName                  "Parque del Oeste";
+        def:same_as_wikidata_parkName  <https://wikidata.org/entity/Q2369398>;
+        def:same_as_wikidata_species   <https://wikidata.org/entity/Q161374>;
+        def:species                    "Platanus × hispanica";
+        def:treeCount                  "556"^^xsd:int .
+
+tree:268  def:parkName                "PARQUE LINEAL DE MANZANARES SUR";
+        def:same_as_wikidata_species  <https://wikidata.org/entity/Q211457>;
+        def:species                   "Pinus halepensis";
+        def:treeCount                 "274"^^xsd:int .

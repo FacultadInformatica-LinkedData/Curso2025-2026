@@ -1,0 +1,902 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_neighborhood_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q75135432",
+        "name": "administrative quarter in Barcelona"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column addresses_neighborhood_name to type Q75135432"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_district_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q790344",
+        "name": "district of Barcelona"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column addresses_district_name to type Q790344"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_neighborhood_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_neighborhood_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_neighborhood_name",
+    "similarValue": "El Barri Gòtic",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17154",
+      "name": "Gothic Quarter",
+      "types": [
+        "Q75135432",
+        "Q123705",
+        "Q1200957"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gothic Quarter (Q17154) for cells containing \"El Barri Gòtic\" in column addresses_neighborhood_name"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_district_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q790344",
+        "name": "district of Barcelona"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column addresses_district_name to type Q790344"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_town",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q515",
+        "name": "city"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column addresses_town to type Q515"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_town",
+    "similarValue": "Barcelona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1492",
+      "name": "Barcelona",
+      "types": [
+        "Q33146843",
+        "Q515"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barcelona (Q1492) for cells containing \"Barcelona\" in column addresses_town"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column addresses_road_name to type Q79007"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "expression": "grel:value.replace(/^C\\s/,\"Carrer \").replace(/^Av\\s/,\"Avinguda \").replace(/^P\\s/,\"Plaça \").replace(/^G\\.V\\./,\"Gran Via \").replace(/^Psg\\s/,\"Passeig \").trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column addresses_road_name using expression grel:value.replace(/^C\\s/,\"Carrer \").replace(/^Av\\s/,\"Avinguda \").replace(/^P\\s/,\"Plaça \").replace(/^G\\.V\\./,\"Gran Via \").replace(/^Psg\\s/,\"Passeig \").trim()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column addresses_road_name to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Padilla",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114157897",
+      "name": "Carrer de Padilla",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrer de Padilla (Q114157897) for cells containing \"Carrer Padilla\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Avinguda Reina Maria Cristina",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4828901",
+      "name": "Avinguda de la Reina Maria Cristina",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avinguda de la Reina Maria Cristina (Q4828901) for cells containing \"Avinguda Reina Maria Cristina\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Ramon Albó",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740861",
+      "name": "Carrer de Ramon Albó",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrer de Ramon Albó (Q5740861) for cells containing \"Carrer Ramon Albó\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer València",
+    "judgment": "matched",
+    "match": {
+      "id": "Q19950762",
+      "name": "Carrer de València",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrer de València (Q19950762) for cells containing \"Carrer València\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Londres",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18644320",
+      "name": "Carrer de Londres",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrer de Londres (Q18644320) for cells containing \"Carrer Londres\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Aragó",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5046067",
+      "name": "carrer d'Aragó",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item carrer d'Aragó (Q5046067) for cells containing \"Carrer Aragó\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Comte D'urgell",
+    "judgment": "matched",
+    "match": {
+      "id": "Q124274169",
+      "name": "carrer del Comte d'Urgell",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item carrer del Comte d'Urgell (Q124274169) for cells containing \"Carrer Comte D'urgell\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Mallorca",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3449012",
+      "name": "Carrer de Mallorca",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrer de Mallorca (Q3449012) for cells containing \"Carrer Mallorca\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Carrer Àngels",
+    "judgment": "matched",
+    "match": {
+      "id": "Q61744496",
+      "name": "Carrer dels Àngels",
+      "types": [
+        "Q79007"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Carrer dels Àngels (Q61744496) for cells containing \"Carrer Àngels\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Trav Gràcia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2342531",
+      "name": "travessera de Gràcia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item travessera de Gràcia (Q2342531) for cells containing \"Trav Gràcia\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Pg Manuel Girona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134690315",
+      "name": "Passeig de Manuel Girona",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Passeig de Manuel Girona (Q134690315) for cells containing \"Pg Manuel Girona\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Pg Maragall",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9056551",
+      "name": "Passeig de Maragall",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Passeig de Maragall (Q9056551) for cells containing \"Pg Maragall\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Pg Gràcia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1419892",
+      "name": "Passeig de Gràcia",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Passeig de Gràcia (Q1419892) for cells containing \"Pg Gràcia\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Pg Lluís Companys",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7142570",
+      "name": "passeig de Lluís Companys",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item passeig de Lluís Companys (Q7142570) for cells containing \"Pg Lluís Companys\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Pg Colom",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3824017",
+      "name": "Passeig de Colom",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Passeig de Colom (Q3824017) for cells containing \"Pg Colom\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Trav Dalt",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7836178",
+      "name": "Travessera de Dalt",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Travessera de Dalt (Q7836178) for cells containing \"Trav Dalt\" in column addresses_road_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "addresses_road_name: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "addresses_road_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addresses_road_name",
+    "similarValue": "Rbla Poblenou",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18006100",
+      "name": "Rambla del Poblenou",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rambla del Poblenou (Q18006100) for cells containing \"Rbla Poblenou\" in column addresses_road_name"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Neighborhood_name",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_neighborhood",
+    "columnInsertIndex": 3,
+    "description": "Create column wikidata_neighborhood at index 3 based on column Neighborhood_name using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "District_name",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_district",
+    "columnInsertIndex": 6,
+    "description": "Create column wikidata_district at index 6 based on column District_name using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

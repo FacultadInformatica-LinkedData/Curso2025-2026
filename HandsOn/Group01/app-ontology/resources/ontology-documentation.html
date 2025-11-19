@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metro Interactive Map — Ontology Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --header:#667eea;
+  --header-gradient:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --rowalt:#f3f7fb;
+  --cellnote:#eef2f7;
+  --class-bg:#3b82f6;
+  --property-bg:#8b5cf6;
+  --relation-bg:#10b981;
+}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,sans-serif;line-height:1.5;margin:0;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#0f172a;padding:20px}
+header{background:rgba(255,255,255,0.95);color:#333;padding:24px 20px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.2);margin-bottom:20px}
+main{padding:0;max-width:1200px;margin:0 auto}
+section{background:white;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.2);padding:20px;margin:16px 0}
+h1,h2,h3{margin:0 0 10px 0}
+table.ontology{border-collapse:collapse;width:100%;font-size:14px;border-radius:10px;overflow:hidden}
+table.ontology th{background:var(--header-gradient);color:white;text-align:left;padding:10px 12px}
+table.ontology td{border-top:1px solid #e5e7eb;padding:10px 12px;vertical-align:top}
+table.ontology tr:nth-child(even) td{background:var(--rowalt)}
+.badge{display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
+.badge.class{background:var(--class-bg);color:white}
+.badge.property{background:var(--property-bg);color:white}
+.badge.relation{background:var(--relation-bg);color:white}
+code{background:#f1f5f9;border-radius:8px;padding:2px 6px;font-family:ui-monospace,Menlo,monospace}
+.class-box{border:2px solid var(--class-bg);border-radius:10px;padding:16px;margin:12px 0;background:#eff6ff}
+.class-box h3{color:var(--class-bg);margin-top:0}
+.property-list{list-style:none;padding-left:0}
+.property-list li{padding:4px 0;border-bottom:1px solid #e0e7ff}
+.property-list li:last-child{border-bottom:none}
+.datatype{color:#7c3aed;font-weight:500}
+.relationship{background:#d1fae5;border-left:4px solid var(--relation-bg);padding:10px;margin:8px 0;border-radius:6px}
+.relationship strong{color:var(--relation-bg)}
+.diagram-container{text-align:center;margin:20px 0}
+.diagram-container img{max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:10px}
+pre{background:#1e293b;color:#e2e8f0;padding:16px;border-radius:10px;overflow-x:auto;font-size:13px}
+.example-uri{background:#fef3c7;border-left:4px solid #f59e0b;padding:8px 12px;margin:8px 0;border-radius:4px;font-family:ui-monospace,Menlo,monospace;font-size:13px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:768px){.grid-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🚇 Metro Interactive Map - Ontology Documentation</h1>
+  <p style="margin:10px 0 0;font-size:0.95rem;color:#666"><a href="/" style="color:#667eea;text-decoration:none;font-weight:600">← Volver a la aplicación</a></p>
+</header>
+<main>
+
+<section>
+  <h2>1) Ontology Overview</h2>
+  <p>This ontology models the <strong>Barcelona Metro transportation system</strong>, capturing metro lines, stations, their relationships, operational status, and accessibility information. It supports the interactive metro map application by providing a semantic layer for querying and visualizing metro network data.</p>
+  
+  <p><span class="badge">Namespace</span> 
+     <code>https://data.example.org/transport/bcn/metro/ontology#</code></p>
+  
+  <p><span class="badge">Prefix</span> 
+     <code>metro:</code></p>
+
+  <p><span class="badge">Resource Base</span> 
+     <code>https://data.example.org/transport/bcn/metro/resource/</code></p>
+
+  <h3>Design Principles</h3>
+  <ul>
+    <li><strong>Reusability:</strong> Classes and properties follow W3C best practices for linked data</li>
+    <li><strong>Extensibility:</strong> Schema supports future additions (e.g., bus lines, tram networks)</li>
+    <li><strong>Interoperability:</strong> Uses standard vocabularies (GeoSPARQL, Dublin Core) where applicable</li>
+    <li><strong>Clarity:</strong> Property names use camelCase for readability; classes use PascalCase</li>
+  </ul>
+</section>
+
+<section>
+  <h2>2) Core Classes</h2>
+  <p>The ontology defines <strong>8 main classes</strong> representing entities in the metro system:</p>
+
+  <div class="grid-2">
+    <div class="class-box">
+      <h3>MetroLine</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Represents a metro line (e.g., L1, L2) with visual attributes and route information.</p>
+      <ul class="property-list">
+        <li><code>lineID</code> <span class="datatype">xsd:integer</span> - Unique identifier</li>
+        <li><code>lineCode</code> <span class="datatype">xsd:integer</span> - Display code</li>
+        <li><code>lineName</code> <span class="datatype">xsd:string</span> - Line name (e.g., "L1")</li>
+        <li><code>lineDescription</code> <span class="datatype">xsd:string</span> - Route description</li>
+        <li><code>originStation</code> <span class="datatype">xsd:string</span> - Starting station</li>
+        <li><code>destinationStation</code> <span class="datatype">xsd:string</span> - End station</li>
+        <li><code>lineColor</code> <span class="datatype">xsd:string</span> - Primary hex color</li>
+        <li><code>auxiliaryColor</code> <span class="datatype">xsd:string</span> - Secondary hex color</li>
+        <li><code>textColor</code> <span class="datatype">xsd:string</span> - Text hex color</li>
+        <li><code>lineOrder</code> <span class="datatype">xsd:integer</span> - Display order</li>
+      </ul>
+      <div class="example-uri">metroRes:metroLine/L1</div>
+    </div>
+
+    <div class="class-box">
+      <h3>Station</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Represents a metro station with location and operational data.</p>
+      <ul class="property-list">
+        <li><code>stationID</code> <span class="datatype">xsd:integer</span> - Unique identifier</li>
+        <li><code>stationCode</code> <span class="datatype">xsd:integer</span> - Station code</li>
+        <li><code>stationName</code> <span class="datatype">xsd:string</span> - Station name</li>
+        <li><code>inauguratedDate</code> <span class="datatype">xsd:date</span> - Opening date</li>
+        <li><code>latitude</code> <span class="datatype">xsd:decimal</span> - Geographic latitude</li>
+        <li><code>longitude</code> <span class="datatype">xsd:decimal</span> - Geographic longitude</li>
+        <li><code>hasGeometry</code> <span class="datatype">geo:wktLiteral</span> - WKT point</li>
+      </ul>
+      <div class="example-uri">metroRes:station/sagradaFamilia</div>
+    </div>
+
+    <div class="class-box">
+      <h3>StationLine</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Represents the relationship between a station and a line (many-to-many).</p>
+      <ul class="property-list">
+        <li><code>stationOrder</code> <span class="datatype">xsd:integer</span> - Position on line</li>
+        <li><code>pictogram</code> <span class="datatype">xsd:string</span> - Visual identifier</li>
+        <li><code>lineColor</code> <span class="datatype">xsd:string</span> - Associated color</li>
+      </ul>
+      <div class="example-uri">metroRes:stationLine/sagradaFamilia_L2</div>
+    </div>
+
+    <div class="class-box">
+      <h3>TransportOperator</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Organization operating metro lines (e.g., TMB, FGC).</p>
+      <ul class="property-list">
+        <li><code>rdfs:label</code> <span class="datatype">xsd:string</span> - Operator name</li>
+        <li><code>rdfs:comment</code> <span class="datatype">xsd:string</span> - Full name/description</li>
+      </ul>
+      <div class="example-uri">metroRes:operator/tmb</div>
+    </div>
+
+    <div class="class-box">
+      <h3>TransportFamily</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Type of transport service (Metro, Bus, Tram, etc.).</p>
+      <ul class="property-list">
+        <li><code>rdfs:label</code> <span class="datatype">xsd:string</span> - Family name</li>
+        <li><code>familyOrder</code> <span class="datatype">xsd:integer</span> - Display order</li>
+      </ul>
+      <div class="example-uri">metroRes:family/metro</div>
+    </div>
+
+    <div class="class-box">
+      <h3>AccessibilityType</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Accessibility level of a station (Accessible, Not Accessible).</p>
+      <ul class="property-list">
+        <li><code>rdfs:label</code> <span class="datatype">xsd:string</span> - Accessibility status</li>
+      </ul>
+      <div class="example-uri">metroRes:accessibility/accessible</div>
+    </div>
+
+    <div class="class-box">
+      <h3>StationStatus</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Operational status (Operational, Under Construction, Closed).</p>
+      <ul class="property-list">
+        <li><code>rdfs:label</code> <span class="datatype">xsd:string</span> - Status description</li>
+      </ul>
+      <div class="example-uri">metroRes:status/operational</div>
+    </div>
+
+    <div class="class-box">
+      <h3>ServiceType</h3>
+      <p><span class="badge class">Class</span></p>
+      <p><strong>Description:</strong> Type of service provided on a station-line relationship.</p>
+      <ul class="property-list">
+        <li><code>serviceOrigin</code> <span class="datatype">xsd:string</span> - Service origin</li>
+        <li><code>serviceDestination</code> <span class="datatype">xsd:string</span> - Service destination</li>
+      </ul>
+      <div class="example-uri">metroRes:serviceType/regular</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>3) Object Properties (Relationships)</h2>
+  <p>The ontology defines <strong>11 object properties</strong> connecting classes:</p>
+
+  <div class="relationship">
+    <strong>belongsToFamily</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> MetroLine → <strong>Range:</strong> TransportFamily<br>
+    <strong>Description:</strong> Links a metro line to its transport category (e.g., Metro, FGC).<br>
+    <strong>Example:</strong> <code>metroRes:metroLine/L1 metro:belongsToFamily metroRes:family/metro</code>
+  </div>
+
+  <div class="relationship">
+    <strong>connectsTo</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> Station → <strong>Range:</strong> Station<br>
+    <strong>Description:</strong> Indicates direct connection between adjacent stations.<br>
+    <strong>Characteristics:</strong> Symmetric (if A connects to B, then B connects to A)<br>
+    <strong>Example:</strong> <code>metroRes:station/sagradaFamilia metro:connectsTo metroRes:station/verdaguer</code>
+  </div>
+
+  <div class="relationship">
+    <strong>hasAccessibility</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> Station → <strong>Range:</strong> AccessibilityType<br>
+    <strong>Description:</strong> Specifies the accessibility level of a station.<br>
+    <strong>Example:</strong> <code>metroRes:station/sagradaFamilia metro:hasAccessibility metroRes:accessibility/accessible</code>
+  </div>
+
+  <div class="relationship">
+    <strong>hasServiceType</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> StationLine → <strong>Range:</strong> ServiceType<br>
+    <strong>Description:</strong> Defines the type of service at a station-line relationship.<br>
+    <strong>Example:</strong> <code>metroRes:stationLine/sagradaFamilia_L2 metro:hasServiceType metroRes:serviceType/regular</code>
+  </div>
+
+  <div class="relationship">
+    <strong>hasStation</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> MetroLine → <strong>Range:</strong> Station<br>
+    <strong>Description:</strong> Links a metro line to all stations it serves.<br>
+    <strong>Inverse:</strong> servesLine<br>
+    <strong>Example:</strong> <code>metroRes:metroLine/L2 metro:hasStation metroRes:station/sagradaFamilia</code>
+  </div>
+
+  <div class="relationship">
+    <strong>hasStationLineRelation</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> MetroLine → <strong>Range:</strong> StationLine<br>
+    <strong>Description:</strong> Links a line to its station-line relationship instances (for ordering/sequencing).<br>
+    <strong>Example:</strong> <code>metroRes:metroLine/L2 metro:hasStationLineRelation metroRes:stationLine/sagradaFamilia_L2</code>
+  </div>
+
+  <div class="relationship">
+    <strong>hasStatus</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> Station → <strong>Range:</strong> StationStatus<br>
+    <strong>Description:</strong> Indicates the operational status of a station.<br>
+    <strong>Example:</strong> <code>metroRes:station/sagradaFamilia metro:hasStatus metroRes:status/operational</code>
+  </div>
+
+  <div class="relationship">
+    <strong>onLine</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> StationLine → <strong>Range:</strong> MetroLine<br>
+    <strong>Description:</strong> Indicates which metro line a station-line relationship belongs to.<br>
+    <strong>Example:</strong> <code>metroRes:stationLine/sagradaFamilia_L2 metro:onLine metroRes:metroLine/L2</code>
+  </div>
+
+  <div class="relationship">
+    <strong>operatedBy</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> MetroLine → <strong>Range:</strong> TransportOperator<br>
+    <strong>Description:</strong> Specifies the operator managing a metro line.<br>
+    <strong>Example:</strong> <code>metroRes:metroLine/L2 metro:operatedBy metroRes:operator/tmb</code>
+  </div>
+
+  <div class="relationship">
+    <strong>relatesTo</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> StationLine → <strong>Range:</strong> Station<br>
+    <strong>Description:</strong> Links a station-line relationship to the specific station instance.<br>
+    <strong>Example:</strong> <code>metroRes:stationLine/sagradaFamilia_L2 metro:relatesTo metroRes:station/sagradaFamilia</code>
+  </div>
+
+  <div class="relationship">
+    <strong>servesLine</strong> <span class="badge relation">Object Property</span><br>
+    <strong>Domain:</strong> Station → <strong>Range:</strong> MetroLine<br>
+    <strong>Description:</strong> Indicates which metro lines serve a given station.<br>
+    <strong>Inverse:</strong> hasStation<br>
+    <strong>Example:</strong> <code>metroRes:station/sagradaFamilia metro:servesLine metroRes:metroLine/L2</code>
+  </div>
+</section>
+
+<section>
+  <h2>4) Ontology Diagram</h2>
+  <p>Visual representation of classes and their relationships:</p>
+  
+  <div class="diagram-container">
+    <img src="Ontology.svg" alt="Metro Ontology Diagram - Classes and Relationships">
+  </div>
+  
+  <p style="text-align:center;margin-top:12px;color:#64748b;font-size:13px">
+    <em>Interactive diagram showing the 8 core classes and 11 object properties of the Barcelona Metro ontology</em>
+  </p>
+</section>
+</main>
+</body>
+</html>

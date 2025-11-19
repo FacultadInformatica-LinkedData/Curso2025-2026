@@ -1,76 +1,98 @@
-@prefix ex:   <http://group24.linkeddata.es/ontology/> .
-@prefix res:  <http://group24.linkeddata.es/resource/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct:  <http://purl.org/dc/terms/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+# coding: UTF-8
+@prefix :       <http://group24.linkeddata.es/ontology/urban-env#> .
+@prefix ex:     <http://group24.linkeddata.es/resource/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:<http://purl.org/dc/terms/> .
 
 #################################################################
-# Example datasets (metadata shells)
+# DISTRITOS
 #################################################################
 
-<http://group24.linkeddata.es/dataset/trees-madrid-2024> a dcat:Dataset ;
-  dct:title "Urban Tree Inventory — Green Areas, Districts of Madrid (2024)"@en .
+ex:arbolado/district/01 a :District ;
+    :districtCode 1 ;
+    :districtName "Centro"@es ;
+    rdfs:label "Distrito de Madrid: Centro"@es .
 
-<http://group24.linkeddata.es/dataset/no2-es-annual> a dcat:Dataset ;
-  dct:title "Average Atmospheric Pollution — NO2 (Spain, annual aggregates)"@en .
-
-<http://group24.linkeddata.es/dataset/expenditure-es> a dcat:Dataset ;
-  dct:title "Environmental Protection Expenditure — Spain (Total Industry)"@en .
-
-#################################################################
-# Canonical observed properties (reused from ontology)
-#################################################################
-
-# res:prop/NO2, res:prop/TreeCount, res:prop/Expenditure
-# are defined in the ontology. We reuse them here.
+ex:arbolado/district/02 a :District ;
+    :districtCode 2 ;
+    :districtName "Arganzuela"@es ;
+    rdfs:label "Distrito de Madrid: Arganzuela"@es .
 
 #################################################################
-# Example 1: Madrid district + tree observation
+# ESPECIES
 #################################################################
 
-# District example
-res:district/MAD-Centro a ex:District ;
-  ex:label "Centro District, Madrid"@en .
+ex:arbolado/species/Pinus_pinea a :TreeSpecies ;
+    :speciesName "Pinus pinea" ;
+    rdfs:label "Pino piñonero"@es .
 
-# Tree species observation
-res:observation/tree/MAD-Centro-LigustrumJaponicum a ex:TreeObservation ;
-  ex:featureOfInterest res:district/MAD-Centro ;
-  ex:observedProperty <http://group24.linkeddata.es/resource/prop/TreeCount> ;
-  ex:value "2605"^^xsd:decimal ;
-  ex:unit "number of trees" ;
-  ex:resultTime "2024-12-31"^^xsd:date ;
-  ex:year "2024"^^xsd:gYear ;
-  ex:concept "Ligustrum japonicum trees in Centro district" ;
-  ex:inDataset <http://group24.linkeddata.es/dataset/trees-madrid-2024> .
+ex:arbolado/species/Platanus_hispanica a :TreeSpecies ;
+    :speciesName "Platanus × hispanica" ;
+    rdfs:label "Plátano de sombra"@es .
 
 #################################################################
-# Example 2: Spain NO2 annual observation
+# OBSERVACIONES DE ARBOLADO (una por distrito+especie+año)
 #################################################################
 
-res:area/ES a ex:Area ;
-  ex:label "Spain"@en .
+ex:arbolado/observation/2024-01-Pinus_pinea a :TreeStockObservation ;
+    :year "2024"^^xsd:gYear ;
+    :treeCount "208"^^xsd:integer ;
+    :inDistrict ex:arbolado/district/01 ;
+    :aboutSpecies ex:arbolado/species/Pinus_pinea ;
+    rdfs:label "Observación de arbolado — Centro — Pinus pinea (2024)"@es .
 
-res:observation/no2/ES-annual-2024 a ex:NO2Observation ;
-  ex:featureOfInterest res:area/ES ;
-  ex:observedProperty <http://group24.linkeddata.es/resource/prop/NO2> ;
-  ex:value "27.3"^^xsd:decimal ;
-  ex:unit "µg/m³ (annual average)" ;
-  ex:resultTime "2024-12-31"^^xsd:date ;
-  ex:year "2024"^^xsd:gYear ;
-  ex:concept "Average atmospheric pollution — NO2" ;
-  ex:inDataset <http://group24.linkeddata.es/dataset/no2-es-annual> .
+ex:arbolado/observation/2024-01-Platanus_hispanica a :TreeStockObservation ;
+    :year "2024"^^xsd:gYear ;
+    :treeCount "21077"^^xsd:integer ;
+    :inDistrict ex:arbolado/district/01 ;
+    :aboutSpecies ex:arbolado/species/Platanus_hispanica ;
+    rdfs:label "Observación de arbolado — Centro — Plátano de sombra (2024)"@es .
 
 #################################################################
-# Example 3: Environmental protection expenditure (national total)
+# OBSERVACIONES DE NO₂ (una por año)
 #################################################################
 
-res:expenditure/ES-total-2019 a ex:ExpenditureRecord ;
-  ex:featureOfInterest res:area/ES ;
-  ex:observedProperty <http://group24.linkeddata.es/resource/prop/Expenditure> ;
-  ex:value "12485071"^^xsd:decimal ;
-  ex:unit "EUR" ;
-  ex:year "2019"^^xsd:gYear ;
-  ex:concept "Total industry environmental protection expenditure"@en ;
-  ex:dataStatus "OK" ;
-  ex:inDataset <http://group24.linkeddata.es/dataset/expenditure-es> .
+ex:pollution/observation/NO2-1990 a :PollutionObservation ;
+    :year "1990"^^xsd:gYear ;
+    :no2Value "90.0"^^xsd:float ;
+    rdfs:label "Valor medio de NO₂ en España — 1990 (µg/m³)"@es .
+
+ex:pollution/observation/NO2-2024 a :PollutionObservation ;
+    :year "2024"^^xsd:gYear ;
+    :no2Value "27.3"^^xsd:float ;
+    rdfs:label "Valor medio de NO₂ en España — 2024 (µg/m³)"@es .
+
+#################################################################
+# OBSERVACIONES DE GASTO AMBIENTAL (una por año)
+#################################################################
+
+ex:expenditure/observation/2008 a :ExpenditureObservation ;
+    :year "2008"^^xsd:gYear ;
+    :expenditureAmount "12485071.00"^^xsd:decimal ;
+    rdfs:label "Gasto en protección ambiental — Industria total (España) — 2008"@es .
+
+ex:expenditure/observation/2023 a :ExpenditureObservation ;
+    :year "2023"^^xsd:gYear ;
+    :expenditureAmount "166797613.00"^^xsd:decimal ;
+    rdfs:label "Gasto en protección ambiental — Industria total (España) — 2023"@es .
+
+#################################################################
+# METADATOS PROVENIENCIA (opcional pero recomendable)
+#################################################################
+
+ex:dataset/arbolado a rdf:Bag ;
+    dcterms:title "Arbolado en zonas verdes — Distritos de Madrid (2024)"@es ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:label "Dataset: Arbolado Madrid"@es .
+
+ex:dataset/pollution a rdf:Bag ;
+    dcterms:title "Valores medios de contaminación NO₂ (Serie nacional)"@es ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:label "Dataset: Contaminación NO₂"@es .
+
+ex:dataset/expenditure a rdf:Bag ;
+    dcterms:title "Gasto de las empresas en protección ambiental — Industria total"@es ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:label "Dataset: Gasto ambiental industrial"@es .

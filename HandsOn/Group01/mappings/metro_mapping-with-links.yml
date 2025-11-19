@@ -18,12 +18,13 @@ prefixes:
 mappings:
   MetroLineMapping:
     sources:
-      - [csv/linies-metro-updated-with-links.csv~csv]
+      - [csv/linies_metro-updated-with-links.csv~csv]
     s: data:metroLine/L$(CODI_LINIA)
     po:
       - [a, metro:MetroLine]
       - [metro:lineId, $(ID_LINIA), xsd:integer]
       - [metro:lineCode, $(CODI_LINIA), xsd:integer]
+      - [metro:lineEtiq, $(ETI_LINIA), xsd:string]
       - [metro:lineName, $(NOM_LINIA), xsd:string]
       - [owl:sameAs, $(same_as_wikidata_NOM_LINIA)~iri]
       - [metro:lineDescription, $(DESC_LINIA), xsd:string]
@@ -52,7 +53,7 @@ mappings:
       - [metro:stationId, $(ID_ESTACIO), xsd:integer]
       - [metro:stationCode, $(CODI_ESTACIO), xsd:integer]
       - [metro:stationName, $(NOM_ESTACIO), xsd:string]
-      - [owl:sameAs, $(same_as_wikidata_NOM_ESTACIO)~iri]
+      - [owl:sameAs, $(same_as_NOM_ESTACIO)~iri]
       - [metro:inauguratedDate, $(DATA_INAUGURACIO), xsd:date]
       - [metro:lastUpdated, $(DATA), xsd:date]
       - [metro:hasGeometry, $(GEOMETRY), geosparql:wktLiteral]
@@ -75,11 +76,11 @@ mappings:
       - p: metro:onLine
         o: data:metroLine/L$(CODI_LINIA)~iri
       - p: metro:hasServiceType
-        o: data:serviceType/$(ID_TIPUS_SERVEI)~iri
+        o: data:serviceType/$(DESC_SERVEI)~iri
 
   OperatorMapping:
     sources:
-      - [csv/linies-metro-updated-with-links.csv~csv]
+      - [csv/linies_metro-updated-with-links.csv~csv]
     s: data:operator/$(NOM_OPERADOR)
     po:
       - [a, metro:Operator]
@@ -87,7 +88,7 @@ mappings:
 
   TransportFamilyMapping:
     sources:
-      - [csv/linies-metro-updated-with-links.csv~csv]
+      - [csv/linies_metro-updated-with-links.csv~csv]
     s: data:transportFamily/$(NOM_FAMILIA)
     po:
       - [a, metro:TransportFamily]
@@ -97,7 +98,7 @@ mappings:
   ServiceTypeMapping:
     sources:
       - [csv/estacions_linia-updated-with-links.csv~csv]
-    s: data:serviceType/$(ID_TIPUS_SERVEI)
+    s: data:serviceType/$(SLUG_SERVEI)
     po:
       - [a, metro:ServiceType]
       - [rdfs:label, $(DESC_SERVEI), xsd:string]

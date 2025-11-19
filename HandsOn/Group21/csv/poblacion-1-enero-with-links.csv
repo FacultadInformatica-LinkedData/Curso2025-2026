@@ -1,0 +1,1072 @@
+fecha,cod_municipio,municipio,cod_distrito,distrito,same_as_wikidata_distrito,cod_barrio,barrio,num_personas,num_personas_hombres,num_personas_mujeres
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,145411,73734,71677
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,156559,73311,83248
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,119757,54339,65418
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,149778,66374,83404
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,148111,6686,81251
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,166211,76072,90139
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,141984,62918,79066
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,253898,119721,134177
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,125223,58121,67102
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,250396,116437,133959
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,274406,128997,145409
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,149113,70801,78312
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,253048,12053,132518
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,95123,43412,51711
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,230035,105836,124199
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,205182,97439,107743
+2024-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,167952,80563,87389
+2024-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,122337,59153,63184
+2024-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,89772,4349,46282
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,166583,78823,8776
+2024-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,49612,23837,25775
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,24332,12008,12324
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,4859,25475,23115
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,11171,5523,5648
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,18739,9497,9242
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,34073,1685,17223
+2024-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,8506,4381,4125
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22668,10538,1213
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36475,16823,19652
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,20256,9242,11014
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,19858,9712,10146
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,29465,13888,15577
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palos de la frontera,2579,12112,13678
+2024-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,2047,996,1051
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,33743,15154,18589
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,19025,8854,10171
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,22774,10454,1232
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,2201,9723,12287
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,6934,3245,3689
+2024-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,15271,6909,8362
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15845,7136,8709
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,30381,13219,17162
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,21449,9433,12016
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,42905,19531,23374
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,21506,9315,12191
+2024-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,17692,774,9952
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17545,7917,9628
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,36961,1653,20431
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,18928,8402,10526
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,32014,14453,17561
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,25043,11312,13731
+2024-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,1762,8246,9374
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,30531,14018,16513
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,35723,1602,19703
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,21256,9619,11637
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,2409,11272,12818
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,27798,13024,14774
+2024-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,26813,12119,14694
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,23533,10421,13112
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,24931,11111,1382
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,25328,11491,13837
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19992,8841,11151
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,27962,12261,15701
+2024-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,20238,8793,11445
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,346,1729,1731
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,3498,1591,1907
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,44844,20857,23987
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,46543,21173,2537
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,32343,15008,17335
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,6687,3199,3488
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,36744,17679,19065
+2024-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,19596,9694,9902
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,12946,6047,6899
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,24987,11492,13495
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,16876,7835,9041
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,31614,14578,17036
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,7451,3491,396
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,3156,1467,1689
+2024-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,28193,13211,14982
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,18423,8757,9666
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,45513,21325,24188
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,38072,17835,20237
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,68973,31619,37354
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,20657,9511,11146
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,6417,3192,3225
+2024-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,52341,24198,28143
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,23466,10873,12593
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,35513,16394,19119
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,42184,19962,22222
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,50153,23083,2707
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,38781,1836,20421
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,5104,2474,263
+2024-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,33269,15585,17684
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,23482,1101,12472
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,14851,7207,7644
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,2451,11716,12794
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,23927,11389,12538
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,27873,13169,14704
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,15298,7166,8132
+2024-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,19172,9144,10028
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,36851,17711,1914
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,49339,23856,25483
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,41755,19533,22222
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,44396,21125,23271
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,29746,1396,15786
+2024-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,50961,24345,26616
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,9208,424,4968
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6421,3069,3352
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,26378,12105,14273
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,17787,8073,9714
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,180,8189,9811
+2024-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,17329,7736,9593
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,52223,23931,28292
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,65874,30575,35299
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,26762,12145,14617
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,la concepcion,22256,10138,12118
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,19019,867,10349
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,1312,6159,6961
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,681,3063,3747
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,1672,717,955
+2024-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,22299,10438,11861
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,7018,3442,3576
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,15455,7422,8033
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,4044,18793,21647
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,53313,24503,2881
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15842,7541,8301
+2024-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,73114,35738,37376
+2024-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverde alto, c.h. villaverde",50266,24101,26165
+2024-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,1887,9411,9459
+2024-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,22375,1081,11565
+2024-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,39648,19005,20643
+2024-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,36793,17236,19557
+2024-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,41984,20266,21718
+2024-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,24168,1157,12598
+2024-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,56185,27317,28868
+2024-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,37018,1776,19258
+2024-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17693,8425,9268
+2024-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,17868,865,9218
+2024-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,17193,8655,8538
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,30158,14293,15865
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,9965,459,5375
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,9749,4564,5185
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,2628,12416,13864
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,30838,14734,16104
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,18196,8867,9329
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,29943,13922,16021
+2024-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11454,5437,6017
+2024-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,19875,9484,10391
+2024-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,1949,990,959
+2024-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7625,3658,3967
+2024-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,124,5878,6522
+2024-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,7763,3827,3936
+2024-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3460491,1620768,1839723
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,139687,7077,68917
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,153304,71754,8155
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,117918,53458,6446
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,145702,64452,8125
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,144796,65245,79551
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,160002,72938,87064
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,138204,61149,77055
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,248443,116944,131499
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,121757,56357,654
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,241672,112093,129579
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,262339,122632,139707
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,142746,67538,75208
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,241603,114542,127061
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,92814,42212,50602
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,220345,100759,119586
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,198391,941,104291
+2023-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,159038,76131,82907
+2023-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,117501,56726,60775
+2023-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,83804,4058,43224
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,161219,76154,85065
+2023-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,48646,23332,25314
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,23501,11557,11944
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,46204,24094,2211
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,10816,535,5466
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,18219,9261,8958
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,32783,16269,16514
+2023-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,8164,4239,3925
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22385,10421,11964
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36069,16616,19453
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,19761,8992,10769
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,19468,9508,996
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,28575,13463,15112
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palosdemoguer,25097,11797,133
+2023-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,1949,957,992
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,33027,14809,18218
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,18832,8699,10133
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,22649,10393,12256
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,21492,9568,11924
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,6825,3177,3648
+2023-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,15093,6812,8281
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15444,6966,8478
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,29477,12872,16605
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,20929,9129,118
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,41964,19006,22958
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,20969,9056,11913
+2023-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,16919,7423,9496
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17274,781,9464
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,36027,16072,19955
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,18513,8234,10279
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,3147,14159,17311
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,24466,1105,13416
+2023-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,17046,792,9126
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,29355,13428,15927
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,34753,15537,19216
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,2057,9239,11331
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,23057,10688,12369
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,26573,12442,14131
+2023-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,25694,11604,1409
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,22959,10157,12802
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,2419,10831,13359
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,24621,11147,13474
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19418,8567,10851
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,27163,11828,15335
+2023-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,19853,8619,11234
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,3421,1716,1705
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,341,1559,1851
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,44341,20597,23744
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,4561,2072,2489
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,32192,14964,17228
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,64757,30851,33906
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,35676,1716,18516
+2023-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,19036,9377,9659
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,12767,5958,6809
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,24497,11207,1329
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,16364,7603,8761
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,30484,14001,16483
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,7156,3339,3817
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,3044,1413,1631
+2023-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,27445,12836,14609
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,17903,8484,9419
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,43292,20165,23127
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,36749,17156,19593
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,66588,30384,36204
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,1975,9111,10639
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,6122,3068,3054
+2023-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,51268,23725,27543
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,22721,10491,1223
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,33883,15556,18327
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,40368,18969,21399
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,47727,21823,25904
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,36798,17349,19449
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,49151,23733,25418
+2023-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,31691,14711,1698
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,23085,109,12185
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,1439,6987,7403
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,23598,11246,12352
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,22834,10755,12079
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,26579,12531,14048
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,14382,6681,7701
+2023-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,17878,8438,944
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,35399,16976,18423
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,45104,21593,23511
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,40477,18947,2153
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,43162,20491,22671
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,28741,13471,1527
+2023-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,4872,23064,25656
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,8814,4035,4779
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6339,3029,331
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,2612,11962,14158
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,17323,7828,9495
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,17333,7876,9457
+2023-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,16885,7482,9403
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,50218,22868,2735
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,6284,28982,33858
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,25469,11449,1402
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,concepcion,20941,9402,11539
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,18327,8349,9978
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,12445,5813,6632
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,6569,2973,3596
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,1622,691,931
+2023-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,21914,10232,11682
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,6922,3404,3518
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,15041,7211,783
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,39786,18485,21301
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,52031,23825,28206
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15435,7344,8091
+2023-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,69176,33831,35345
+2023-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverdealto,cascohistoricodevillaverde",47817,22826,24991
+2023-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,1727,8586,8684
+2023-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,21316,10306,1101
+2023-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,37808,18121,19687
+2023-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,34827,16292,18535
+2023-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,40417,19413,21004
+2023-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,23876,11381,12495
+2023-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,53208,25932,27276
+2023-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,35519,17009,1851
+2023-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17471,833,9141
+2023-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,1776,8589,9171
+2023-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,13054,6652,6402
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,28765,1356,15205
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,9555,4375,518
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,9126,4258,4868
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,25354,11932,13422
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,30751,14727,16024
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,17399,8495,8904
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,29067,13528,15539
+2023-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11202,5279,5923
+2023-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,19685,9397,10288
+2023-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,1902,965,937
+2023-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7384,3519,3865
+2023-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,12049,5702,6347
+2023-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,7626,3749,3877
+2023-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3339931,1559866,1780065
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,139682,70986,68696
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,152638,71466,81172
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,117672,53445,64227
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,145457,64343,81114
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,144371,6508,79291
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,157433,71636,85797
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,137287,60867,7642
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,246281,115955,130326
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,12036,55501,64859
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,237048,109928,12712
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,255514,119381,136133
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,140808,66532,74276
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,235638,111748,12389
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,9239,42095,50295
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,213905,97357,116548
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,195017,92532,102485
+2022-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,153829,73598,80231
+2022-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,114817,5558,59237
+2022-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,79328,38437,40891
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,158783,75082,83701
+2022-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,48404,23275,25129
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,23417,11568,11849
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,46444,24271,22173
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,10828,5345,5483
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,18015,9221,8794
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,32861,16349,16512
+2022-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,8117,4232,3885
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22456,10436,1202
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36038,16635,19403
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,19734,8994,1074
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,19469,9543,9926
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,28243,13296,14947
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palosdemoguer,25078,11766,13312
+2022-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,162,796,824
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,32745,14613,18132
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,18715,8675,1004
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,2278,10514,12266
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,21377,9541,11836
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,6926,3237,3689
+2022-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,15129,6865,8264
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15647,7044,8603
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,29441,1284,16601
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,20848,9087,11761
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,41721,18925,22796
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,20785,8997,11788
+2022-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,17015,745,9565
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17181,7767,9414
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,35963,1607,19893
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,1841,8181,10229
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,31463,14188,17275
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,24366,11015,13351
+2022-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,16988,7859,9129
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,28995,13231,15764
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,34471,15436,19035
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,20282,9097,11185
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,22594,10391,12203
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,2614,12277,13863
+2022-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,24951,11204,13747
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,22659,10058,12601
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,23972,1077,13202
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,24495,11063,13432
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19358,8557,10801
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,26901,11798,15103
+2022-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,19902,8621,11281
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,3382,1683,1699
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,3346,1513,1833
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,43887,20379,23508
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,45354,20645,24709
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,32346,15059,17287
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,63651,30328,33323
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,3524,1692,1832
+2022-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,19075,9428,9647
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,12804,5929,6875
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,24165,11035,1313
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,1622,7489,8731
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,29802,13602,162
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,7048,3283,3765
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,2998,1384,1614
+2022-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,27323,12779,14544
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,17543,8302,9241
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,41401,19113,22288
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,36062,16887,19175
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,65833,30086,35747
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,19337,897,10367
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,5966,2996,297
+2022-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,50906,23574,27332
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,22214,1023,11984
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,333,15283,18017
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,39391,185,20891
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,46474,21208,25266
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,35395,16647,18748
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,47815,23152,24663
+2022-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,30925,14361,16564
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,22996,10827,12169
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,1425,6915,7335
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,2346,11185,12275
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,22499,10522,11977
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,26139,12293,13846
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,14022,6571,7451
+2022-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,17442,8219,9223
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,3469,16591,18099
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,4291,20534,22376
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,39935,18722,21213
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,4254,20218,22322
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,28249,1331,14939
+2022-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,47314,22373,24941
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,8719,3968,4751
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6354,3057,3297
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,26297,12113,14184
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,17377,7845,9532
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,17044,7746,9298
+2022-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,16599,7366,9233
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,47801,215,26301
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,61935,28582,33353
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,24183,10748,13435
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,concepcion,2044,9122,11318
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,17546,7914,9632
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,12287,5731,6556
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,6338,2865,3473
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,1607,696,911
+2022-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,21768,10199,11569
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,6933,3387,3546
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,14948,716,7788
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,39708,18425,21283
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,51844,23784,2806
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15374,7343,8031
+2022-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,6621,32433,33777
+2022-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverdealto,cascohistoricodevillaverde",46156,22013,24143
+2022-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,1664,8223,8417
+2022-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,20813,10087,10726
+2022-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,37319,17918,19401
+2022-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,32901,15357,17544
+2022-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,39578,18971,20607
+2022-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,2411,11515,12595
+2022-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,51129,25094,26035
+2022-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,35086,16925,18161
+2022-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17431,8321,911
+2022-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,17867,8666,9201
+2022-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,8944,4525,4419
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,28171,1329,14881
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,9274,4271,5003
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,871,4062,4648
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,2496,11724,13236
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,30887,1484,16047
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,16971,827,8701
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,28541,13318,15223
+2022-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11269,5307,5962
+2022-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,19662,9412,1025
+2022-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,1895,967,928
+2022-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7351,3531,382
+2022-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,11895,5622,6273
+2022-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,7601,3743,3858
+2022-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3286662,1534824,1751838
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,141236,71881,69355
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,154243,720,82243
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,118557,538,64757
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,146016,6454,81476
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,1457,65599,80101
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,159849,72752,87097
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,138667,61313,77354
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,247692,11652,131172
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,120834,55588,65246
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,240155,111209,128946
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,258633,1206,138033
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,142454,6723,75224
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,239057,113355,125702
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,9381,42662,51148
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,216818,98514,118304
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,193228,91585,101643
+2021-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,154808,73947,80861
+2021-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,114733,55606,59127
+2021-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,75485,36497,38988
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,160258,75788,8447
+2021-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,50077,24171,25906
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,23584,11632,11952
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,47238,24767,22471
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,10787,5379,5408
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,18208,9291,8917
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,33426,16692,16734
+2021-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,7993,412,3873
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22596,10446,1215
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36395,16741,19654
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,20077,9118,10959
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,19572,9574,9998
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,28374,13352,15022
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palosdemoguer,25785,12059,13726
+2021-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,1444,710,734
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,33067,14808,18259
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,18653,861,10043
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,23051,10636,12415
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,21558,9549,12009
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,6928,3232,3696
+2021-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,153,6965,8335
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15629,7048,8581
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,29479,1282,16659
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,20963,9155,11808
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,41939,18991,22948
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,20864,9029,11835
+2021-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,17142,7497,9645
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17349,7811,9538
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,36303,16219,20084
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,18618,8306,10312
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,31642,14214,17428
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,24697,1115,13547
+2021-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,17091,7899,9192
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,29465,13461,16004
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,34817,15717,191
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,20541,9217,11324
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,22738,1047,12268
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,26625,12414,14211
+2021-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,25663,11473,1419
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,22948,10106,12842
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,2426,10884,13376
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,24628,11029,13599
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19546,8667,10879
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,27216,11977,15239
+2021-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,20069,865,11419
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,3443,1723,172
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,3356,1511,1845
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,44383,20584,23799
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,4597,20963,25007
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,33005,15368,17637
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,64042,30504,33538
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,34565,1652,18045
+2021-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,18928,9347,9581
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,13066,6058,7008
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,24162,10974,13188
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,16175,7417,8758
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,30091,13744,16347
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,6856,3163,3693
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,2916,1336,158
+2021-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,27568,12896,14672
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,17577,8338,9239
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,41982,19344,22638
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,36576,17056,1952
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,66968,30626,36342
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,19579,9029,1055
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,5874,2926,2948
+2021-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,51599,2389,27709
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,22695,10471,12224
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,33656,15385,18271
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,39728,18584,21144
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,47082,2144,25642
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,35947,16868,19079
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,48008,23176,24832
+2021-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,31517,14676,16841
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,23095,1088,12215
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,14141,6842,7299
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,23838,11382,12456
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,22516,10543,11973
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,26623,12435,14188
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,14336,6733,7603
+2021-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,17905,8415,949
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,35239,16925,18314
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,43574,20793,22781
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,40468,18959,21509
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,42924,20429,22495
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,28736,13508,15228
+2021-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,48116,22741,25375
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,8972,4081,4891
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6371,3045,3326
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,26658,12289,14369
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,1766,7992,9668
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,1729,7841,9449
+2021-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,16859,7414,9445
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,48411,21721,2669
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,62731,28931,338
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,24621,10931,1369
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,concepcion,20727,9205,11522
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,17823,8017,9806
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,12484,5828,6656
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,6367,2857,351
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,158,687,893
+2021-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,22074,10337,11737
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,6891,336,3531
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,14835,7049,7786
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,40281,18757,21524
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,52494,24116,28378
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15473,7338,8135
+2021-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,63254,30965,32289
+2021-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverdealto,cascohistoricodevillaverde",46637,2218,24457
+2021-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,16986,8345,8641
+2021-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,20722,10048,10674
+2021-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,3779,18145,19645
+2021-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,32673,15229,17444
+2021-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,40241,19284,20957
+2021-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,24288,11635,12653
+2021-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,50204,24687,25517
+2021-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,35548,17141,18407
+2021-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17546,835,9196
+2021-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,17961,8752,9209
+2021-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,443,2254,2176
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,28451,1346,14991
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,9359,43,5059
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,8885,4091,4794
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,24642,1161,13032
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,31534,15121,16413
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,17098,8284,8814
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,28925,13556,15369
+2021-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11364,5366,5998
+2021-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,19657,943,10227
+2021-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,1918,988,930
+2021-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7504,3593,3911
+2021-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,13334,6379,6955
+2021-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,7664,3781,3883
+2021-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3312310,1545157,1767153
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,140473,71127,69346
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,15566,726,8306
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,120406,54517,65889
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,147854,6522,82634
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,147551,66424,81127
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,161313,73358,87955
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,140866,62136,7873
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,249973,11764,132333
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,121683,55975,65708
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,242139,112282,129857
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,260196,121317,138879
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,142894,67346,75548
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,240867,114235,126632
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,95614,43585,52029
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,219867,99966,119901
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,193264,91659,101605
+2020-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,154318,73639,80679
+2020-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,114512,5551,59002
+2020-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,74048,35795,38253
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,161222,76252,8497
+2020-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,5001,24149,25861
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,23593,11628,11965
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,47048,24497,22551
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,10771,5365,5406
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,18021,9161,886
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,33418,16581,16837
+2020-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,7622,3895,3727
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22908,10593,12315
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36922,17045,19877
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,20287,9199,11088
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,1981,9671,10139
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,28233,13216,15017
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palosdemoguer,26289,12276,14013
+2020-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,1211,600,611
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,33767,15108,18659
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,18785,8655,1013
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,23354,10765,12589
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,21993,9699,12294
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,7046,3293,3753
+2020-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,15461,6997,8464
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15846,7132,8714
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,29945,13012,16933
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,21249,9285,11964
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,42306,19146,2316
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,21211,9111,121
+2020-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,17297,7534,9763
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17433,7843,959
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,3694,16509,20431
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,18893,8415,10478
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,32042,14388,17654
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,25015,11347,13668
+2020-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,17228,7922,9306
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,29895,13646,16249
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,35192,15832,1936
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,20835,9391,11444
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,23003,10551,12452
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,26545,12346,14199
+2020-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,25843,11592,14251
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,23329,10235,13094
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,24704,11025,13679
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,25023,11161,13862
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19838,8795,11043
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,27569,12132,15437
+2020-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,20403,8788,11615
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,3472,1724,1748
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,3308,15,1808
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,44938,20899,24039
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,46855,21379,25476
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,33644,15754,1789
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,64668,30772,33896
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,34046,16222,17824
+2020-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,19042,939,9652
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,13201,6114,7087
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,24423,11074,13349
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,16395,7483,8912
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,30405,13918,16487
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,6957,3197,376
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,2799,129,1509
+2020-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,27503,12899,14604
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,17736,839,9346
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,42362,19529,22833
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,36783,17091,19692
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,67418,30925,36493
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,19848,9216,10632
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,5881,2958,2923
+2020-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,52111,24173,27938
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,23001,10566,12435
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,33681,15389,18292
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,40023,1871,21313
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,47602,21731,25871
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,35932,16822,1911
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,4801,23198,24812
+2020-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,31947,14901,17046
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,23173,10898,12275
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,14154,6846,7308
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,24001,11441,1256
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,22179,10362,11817
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,27128,12673,14455
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,14412,6773,7639
+2020-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,17847,8353,9494
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,35516,17076,1844
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,43899,20957,22942
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,4091,19205,21705
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,43164,2061,22554
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,28968,1356,15408
+2020-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,4841,22827,25583
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,9355,4274,5081
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6435,3074,3361
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,27232,12595,14637
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,17951,8185,9766
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,17519,7935,9584
+2020-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,17122,7522,96
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,48891,21942,26949
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,63521,29399,34122
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,25151,1112,14031
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,concepcion,21153,9374,11779
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,18107,8152,9955
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,12725,5923,6802
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,6519,2938,3581
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,1555,667,888
+2020-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,22245,10451,11794
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,6839,3318,3521
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,14939,7119,782
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,40838,19028,2181
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,53162,24529,28633
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15555,7365,819
+2020-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,61931,303,31631
+2020-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverdealto,cascohistoricodevillaverde",46749,22228,24521
+2020-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,16898,8222,8676
+2020-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,20026,9704,10322
+2020-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,38107,18336,19771
+2020-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,32538,15149,17389
+2020-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,40956,19656,213
+2020-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,24684,11833,12851
+2020-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,48872,24021,24851
+2020-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,35666,1722,18446
+2020-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17834,8478,9356
+2020-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,1815,8867,9283
+2020-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,2398,123,1168
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,28698,13574,15124
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,9342,426,5082
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,8874,4108,4766
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,24692,11612,1308
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,31794,15253,16541
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,17299,8395,8904
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,29047,13607,1544
+2020-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11476,5443,6033
+2020-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,1982,9533,10287
+2020-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,19,975,925
+2020-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7683,3688,3995
+2020-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,12853,6151,6702
+2020-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,7754,3802,3952
+2020-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3334730,1554732,1779998
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,134881,67829,67052
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,15383,71631,82199
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,119379,54098,65281
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,146148,64395,81753
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,145865,65565,803
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,157937,71632,86305
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,139448,61308,7814
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,246021,115797,130224
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,119423,54934,64489
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,238154,110401,127753
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,25304,117802,135238
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,139501,65781,7372
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,23477,111183,123587
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,94609,43209,514
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,21627,9837,1179
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,188267,89307,9896
+2019-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,148883,71017,77866
+2019-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,110436,53675,56761
+2019-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,72126,34848,37278
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,158166,74743,83423
+2019-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,48972,23653,25319
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,22923,11213,1171
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,45259,2339,21869
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,10484,5235,5249
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,17153,8675,8478
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,31725,15567,16158
+2019-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,7337,3749,3588
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22766,10543,12223
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36785,16943,19842
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,19993,9064,10929
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,19652,9629,10023
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,27658,1288,14778
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palosdemoguer,25801,11999,13802
+2019-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,1175,573,602
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,33571,14992,18579
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,18474,8532,9942
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,23306,10798,12508
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,21646,9517,12129
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,7039,3285,3754
+2019-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,15343,6974,8369
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15734,7074,866
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,29649,12836,16813
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,21071,9197,11874
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,41609,18809,228
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,20961,904,11921
+2019-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,17124,7439,9685
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17302,7783,9519
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,36651,16374,20277
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,18642,8233,10409
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,31733,14218,17515
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,24657,11166,13491
+2019-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,1688,7791,9089
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,29146,13292,15854
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,34608,1558,19028
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,20513,9201,11312
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,22642,10314,12328
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,26021,12082,13939
+2019-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,25007,11163,13844
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,22891,10062,12829
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,24455,10888,13567
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,24696,10958,13738
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19807,8726,11081
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,27382,11982,154
+2019-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,20217,8692,11525
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,3454,1704,175
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,3265,1481,1784
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,44508,20743,23765
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,46419,21206,25213
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,33765,158,17965
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,63201,30031,3317
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,32898,15704,17194
+2019-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,18511,9128,9383
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,12991,5963,7028
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,24093,10907,13186
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,1626,7398,8862
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,29722,13637,16085
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,6726,3109,3617
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,2808,1301,1507
+2019-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,26823,12619,14204
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,17397,8183,9214
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,4173,19189,22541
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,3609,16771,19319
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,66351,30451,359
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,19281,8981,103
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,5748,2909,2839
+2019-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,51557,23917,2764
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,22403,1023,12173
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,33051,15125,17926
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,38957,18196,20761
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,45975,20896,25079
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,3486,16318,18542
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,47055,22737,24318
+2019-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,30739,143,16439
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,22837,10765,12072
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,13808,6697,7111
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,23666,1131,12356
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,21439,10043,11396
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,26353,123,14053
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,13968,6509,7459
+2019-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,1743,8157,9273
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,34698,16677,18021
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,41664,19833,21831
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,40166,18886,2128
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,42594,20253,22341
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,2835,13234,15116
+2019-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,47298,223,24998
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,9137,4185,4952
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6334,303,3304
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,2726,12646,14614
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,17871,8166,9705
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,17139,7779,936
+2019-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,16868,7403,9465
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,48099,21619,2648
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,62111,2883,33281
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,24622,10882,1374
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,concepcion,20856,9245,11611
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,1813,8154,9976
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,12487,581,6677
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,6387,2864,3523
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,1568,654,914
+2019-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,2201,10312,11698
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,679,3318,3472
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,14911,7155,7756
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,40578,18919,21659
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,52691,24277,28414
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15418,729,8128
+2019-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,57879,28348,29531
+2019-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverdealto,cascohistoricodevillaverde",45204,21488,23716
+2019-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,16052,7834,8218
+2019-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,1887,911,976
+2019-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,37587,18071,19516
+2019-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,3117,14514,16656
+2019-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,4028,19417,20863
+2019-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,24328,11692,12636
+2019-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,45828,22566,23262
+2019-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,34816,16781,18035
+2019-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17638,8388,925
+2019-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,18142,8894,9248
+2019-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,153,785,745
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,27918,13142,14776
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,9157,4181,4976
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,8575,3968,4607
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,24211,11327,12884
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,31677,15213,16464
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,16693,8142,8551
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,28584,13404,1518
+2019-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11351,5366,5985
+2019-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,19526,9391,10135
+2019-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,1851,952,899
+2019-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7565,3648,3917
+2019-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,12388,5916,6472
+2019-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,7642,3746,3896
+2019-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3266126,1521178,1744948
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,1,centro,132352,6632,66032
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,2,arganzuela,152907,71039,81868
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,3,retiro,119011,53863,65148
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,4,salamanca,145268,6394,81328
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,5,chamartin,144894,65144,7975
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,6,tetuan,155967,70725,85242
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,7,chamberi,138418,60825,77593
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,8,fuencarral-elpardo,242928,114433,128495
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,9,moncloa-aravaca,117835,54243,63592
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,10,latina,235785,109392,126393
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,11,carabanchel,24822,115525,132695
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,12,usera,136978,64582,72396
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,13,puentedevallecas,230488,109044,121444
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,14,moratalaz,94261,43203,51058
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,15,ciudadlineal,214463,97301,117162
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,16,hortaleza,18393,87338,96592
+2018-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,17,villaverde,145523,69552,75971
+2018-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,18,villadevallecas,107649,52352,55297
+2018-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,19,vicalvaro,70962,34461,36501
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,20,sanblas-canillejas,156149,73922,82227
+2018-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,21,barajas,47836,23136,247
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,11,palacio,22515,10978,11537
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,12,embajadores,4463,23031,21599
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,13,cortes,10531,5265,5266
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,14,justicia,16578,8334,8244
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,15,universidad,30897,1504,15857
+2018-01-01T00:00:00Z,28079,madrid,1,Centro,https://www.wikidata.org/entity/Q1763376,16,sol,7201,3672,3529
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,21,imperial,22719,10531,12188
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,22,acacias,36751,16926,19825
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,23,chopera,19799,8919,1088
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,24,legazpi,19252,9446,9806
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,25,delicias,27473,12736,14737
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,26,palosdemoguer,25748,11919,13829
+2018-01-01T00:00:00Z,28079,madrid,2,Arganzuela,https://www.wikidata.org/entity/Q2000929,27,atocha,1165,562,603
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,31,pacifico,33601,150,18601
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,32,adelfas,18345,8427,9918
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,33,estrella,23238,10796,12442
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,34,ibiza,21472,9384,12088
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,35,losjeronimos,7075,3315,376
+2018-01-01T00:00:00Z,28079,madrid,3,Retiro,https://www.wikidata.org/entity/Q2002296,36,ninojesus,1528,6941,8339
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,41,recoletos,15756,7091,8665
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,42,goya,29604,12812,16792
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,43,fuentedelberro,20747,9043,11704
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,44,guindalera,41259,1857,22689
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,45,lista,20956,9023,11933
+2018-01-01T00:00:00Z,28079,madrid,4,Salamanca,https://www.wikidata.org/entity/Q1773521,46,castellana,16946,7401,9545
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,51,elviso,17145,7764,9381
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,52,prosperidad,36522,16302,2022
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,53,ciudadjardin,18487,8146,10341
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,54,hispanoamerica,31373,14006,17367
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,55,nuevaespana,24496,11124,13372
+2018-01-01T00:00:00Z,28079,madrid,5,Chamartín,https://www.wikidata.org/entity/Q1766348,56,castilla,16871,7802,9069
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,61,bellasvistas,2875,13056,15694
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,62,cuatrocaminos,34254,15458,18796
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,63,castillejos,20363,9209,11154
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,64,almenara,22421,10209,12212
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,65,valdeacederas,25571,11835,13736
+2018-01-01T00:00:00Z,28079,madrid,6,Tetuán,https://www.wikidata.org/entity/Q1773540,66,berruguete,24608,10958,1365
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,71,gaztambide,22666,9929,12737
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,72,arapiles,24335,10792,13543
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,73,trafalgar,24523,10922,13601
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,74,almagro,19799,8737,11062
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,75,riosrosas,27049,1182,15229
+2018-01-01T00:00:00Z,28079,madrid,7,Chamberí,https://www.wikidata.org/entity/Q1763370,76,vallehermoso,20046,8625,11421
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,81,elpardo,3456,1689,1767
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,82,fuentelarreina,3234,1437,1797
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,83,penagrande,44412,20719,23693
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,84,pilar,46094,21107,24987
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,85,lapaz,33783,15826,17957
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,86,valverde,61941,29476,32465
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,87,mirasierra,32058,15329,16729
+2018-01-01T00:00:00Z,28079,madrid,8,Fuencarral-el Pardo,https://www.wikidata.org/entity/Q656196,88,elgoloso,1795,885,91
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,91,casadecampo,129,5935,6965
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,92,argüelles,23992,1089,13102
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,93,ciudaduniversitaria,16097,7314,8783
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,94,valdezarza,29418,13458,1596
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,95,valdemarin,656,3018,3542
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,96,elplantio,272,1287,1433
+2018-01-01T00:00:00Z,28079,madrid,9,Moncloa-aravaca,https://www.wikidata.org/entity/Q2017682,97,aravaca,26148,12341,13807
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,101,loscarmenes,17192,8102,909
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,102,puertadelangel,41397,19061,22336
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,103,lucero,35488,16491,18997
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,104,aluche,65961,30254,35707
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,105,campamento,18983,8828,10155
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,106,cuatrovientos,5662,287,2792
+2018-01-01T00:00:00Z,28079,madrid,10,Latina,https://www.wikidata.org/entity/Q794954,107,águilas,51102,23786,27316
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,111,comillas,22248,10164,12084
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,112,opanel,32492,14796,17696
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,113,sanisidro,38554,17967,20587
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,114,vistaalegre,45008,2048,24528
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,115,puertabonita,33933,15942,17991
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,116,buenavista,46216,22332,23884
+2018-01-01T00:00:00Z,28079,madrid,11,Carabanchel,https://www.wikidata.org/entity/Q1001991,117,abrantes,29769,13844,15925
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,121,orcasitas,22555,10634,11921
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,122,orcasur,13572,6576,6996
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,123,sanfermin,23209,11111,12098
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,124,almendrales,20986,9824,11162
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,125,moscardo,25726,11971,13755
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,126,zofio,13697,6371,7326
+2018-01-01T00:00:00Z,28079,madrid,12,Usera,https://www.wikidata.org/entity/Q953368,127,pradolongo,17233,8095,9138
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,131,entrevias,33986,16314,17672
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,132,sandiego,40267,19037,2123
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,133,palomerasbajas,39669,18614,21055
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,134,palomerassureste,4212,20115,22005
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,135,portazgo,27908,13033,14875
+2018-01-01T00:00:00Z,28079,madrid,13,Puente De Vallecas,https://www.wikidata.org/entity/Q2003054,136,numancia,46538,21931,24607
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,141,pavones,9081,4174,4907
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,142,horcajo,6326,3031,3295
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,143,marroquina,27378,12742,14636
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,144,medialegua,17757,809,9667
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,145,fontarron,16902,773,9172
+2018-01-01T00:00:00Z,28079,madrid,14,Moratalaz,https://www.wikidata.org/entity/Q2076109,146,vinateros,16817,7436,9381
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,151,ventas,47744,21405,26339
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,152,pueblonuevo,6116,283,3286
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,153,quintana,24373,10743,1363
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,154,concepcion,20803,9181,11622
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,155,sanpascual,18068,81,9968
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,156,sanjuanbautista,12433,5782,6651
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,157,colina,6288,2835,3453
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,158,atalaya,1575,656,919
+2018-01-01T00:00:00Z,28079,madrid,15,Ciudad Lineal,https://www.wikidata.org/entity/Q1763694,159,costillares,22019,10299,1172
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,161,palomas,6738,3292,3446
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,162,piovera,14723,7042,7681
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,163,canillas,40627,18933,21694
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,164,pinardelrey,52274,24119,28155
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,165,apostolsantiago,15271,725,8021
+2018-01-01T00:00:00Z,28079,madrid,16,Hortaleza,https://www.wikidata.org/entity/Q1928529,166,valdefuentes,54297,26702,27595
+2018-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,171,"villaverdealto,cascohistoricodevillaverde",44299,21139,2316
+2018-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,172,sancristobal,15498,7527,7971
+2018-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,173,butarque,18268,8859,9409
+2018-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,174,losrosales,36975,17874,19101
+2018-01-01T00:00:00Z,28079,madrid,17,Villaverde,https://www.wikidata.org/entity/Q919536,175,ángeles,30483,14153,1633
+2018-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,181,cascohistoricodevallecas,3974,19128,20612
+2018-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,182,santaeugenia,24295,11672,12623
+2018-01-01T00:00:00Z,28079,madrid,18,Villa De Vallecas,https://www.wikidata.org/entity/Q1947988,183,ensanchedevallecas,43614,21552,22062
+2018-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,191,cascohistoricodevicalvaro,342,16585,17615
+2018-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,192,valdebernardo,17637,8434,9203
+2018-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,193,valderrivas,1818,8952,9228
+2018-01-01T00:00:00Z,28079,madrid,19,Vicálvaro,https://www.wikidata.org/entity/Q589403,194,elcanaveral,945,490,455
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,201,simancas,27242,12851,14391
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,202,hellin,8941,4093,4848
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,203,amposta,8346,3851,4495
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,204,arcos,23939,11203,12736
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,205,rosas,3156,15197,16363
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,206,rejas,16315,8008,8307
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,207,canillejas,28519,13371,15148
+2018-01-01T00:00:00Z,28079,madrid,20,San Blas-canillejas,https://www.wikidata.org/entity/Q2001937,208,elsalvador,11287,5348,5939
+2018-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,211,alamedadeosuna,19446,9356,1009
+2018-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,212,aeropuerto,1794,922,872
+2018-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,213,cascohistoricodebarajas,7336,355,3786
+2018-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,214,timon,1175,5651,6099
+2018-01-01T00:00:00Z,28079,madrid,21,Barajas,https://www.wikidata.org/entity/Q807230,215,corralejos,751,3657,3853
+2018-01-01T00:00:00Z,28079,madrid,Todos,Todos,,Todos,todos,3221824,1500340,1721484

@@ -4,41 +4,210 @@
 @prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-# ---- Air quality station + multiple measurements
+# ==============================================================================
+# AIR QUALITY STATIONS + MEASUREMENTS
+# ==============================================================================
+
+# Station 47 - Plaza del Carmen
 ent:station/air/47 a ex:AirQualityStation ;
   ex:stationId "47" ;
   schema:address "Plaza del Carmen, Madrid" ;
-  geo:lat 40.4183 ; geo:long -3.7038 .
+  geo:lat 40.4183 ; 
+  geo:long -3.7038 .
 
-ent:measurement/air/47/2025/09/20/NO2 a ex:Measurement ;
+ent:measurement/air/47-20250920-NO2 a ex:Measurement ;
   ex:observedProperty "NO2" ;
   ex:observedValue 37.2 ;
   ex:unit "µg/m³" ;
   ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
 
-ent:measurement/air/47/2025/09/20/PM10 a ex:Measurement ;
+ent:measurement/air/47-20250920-PM10 a ex:Measurement ;
   ex:observedProperty "PM10" ;
   ex:observedValue 21.0 ;
   ex:unit "µg/m³" ;
   ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
 
-ent:measurement/air/47/2025/09/21/NO2 a ex:Measurement ;
+ent:measurement/air/47-20250921-NO2 a ex:Measurement ;
   ex:observedProperty "NO2" ;
   ex:observedValue 44.5 ;
   ex:unit "µg/m³" ;
   ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
 
-ent:station/air/47 ex:hasMeasurement ent:measurement/air/47/2025/09/20/NO2 ,
-                                      ent:measurement/air/47/2025/09/20/PM10 ,
-                                      ent:measurement/air/47/2025/09/21/NO2 .
+ent:measurement/air/47-20250921-PM10 a ex:Measurement ;
+  ex:observedProperty "PM10" ;
+  ex:observedValue 18.3 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
 
-# ---- Bicycle station
+ent:station/air/47 ex:hasMeasurement ent:measurement/air/47-20250920-NO2 ,
+                                      ent:measurement/air/47-20250920-PM10 ,
+                                      ent:measurement/air/47-20250921-NO2 ,
+                                      ent:measurement/air/47-20250921-PM10 .
+
+# Station 48 - Paseo de Recoletos
+ent:station/air/48 a ex:AirQualityStation ;
+  ex:stationId "48" ;
+  schema:address "Paseo de Recoletos, Madrid" ;
+  geo:lat 40.4238 ; 
+  geo:long -3.6936 .
+
+ent:measurement/air/48-20250920-NO2 a ex:Measurement ;
+  ex:observedProperty "NO2" ;
+  ex:observedValue 32.8 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/48-20250920-O3 a ex:Measurement ;
+  ex:observedProperty "O3" ;
+  ex:observedValue 65.2 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/48-20250921-NO2 a ex:Measurement ;
+  ex:observedProperty "NO2" ;
+  ex:observedValue 38.1 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
+
+ent:station/air/48 ex:hasMeasurement ent:measurement/air/48-20250920-NO2 ,
+                                      ent:measurement/air/48-20250920-O3 ,
+                                      ent:measurement/air/48-20250921-NO2 .
+
+# Station 49 - Barrio de Salamanca
+ent:station/air/49 a ex:AirQualityStation ;
+  ex:stationId "49" ;
+  schema:address "Calle Serrano 45, Madrid" ;
+  geo:lat 40.4300 ; 
+  geo:long -3.6850 .
+
+ent:measurement/air/49-20250920-PM25 a ex:Measurement ;
+  ex:observedProperty "PM2.5" ;
+  ex:observedValue 14.5 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/49-20250921-PM25 a ex:Measurement ;
+  ex:observedProperty "PM2.5" ;
+  ex:observedValue 16.2 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
+
+ent:station/air/49 ex:hasMeasurement ent:measurement/air/49-20250920-PM25 ,
+                                      ent:measurement/air/49-20250921-PM25 .
+
+# Station 50 - Retiro
+ent:station/air/50 a ex:AirQualityStation ;
+  ex:stationId "50" ;
+  schema:address "Parque del Retiro, Madrid" ;
+  geo:lat 40.4150 ; 
+  geo:long -3.6823 .
+
+ent:measurement/air/50-20250920-NO2 a ex:Measurement ;
+  ex:observedProperty "NO2" ;
+  ex:observedValue 28.3 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/50-20250921-NO2 a ex:Measurement ;
+  ex:observedProperty "NO2" ;
+  ex:observedValue 31.7 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
+
+ent:station/air/50 ex:hasMeasurement ent:measurement/air/50-20250920-NO2 ,
+                                      ent:measurement/air/50-20250921-NO2 .
+
+# Station 51 - Casa de Campo
+ent:station/air/51 a ex:AirQualityStation ;
+  ex:stationId "51" ;
+  schema:address "Casa de Campo, Madrid" ;
+  geo:lat 40.4200 ; 
+  geo:long -3.7500 .
+
+ent:measurement/air/51-20250920-O3 a ex:Measurement ;
+  ex:observedProperty "O3" ;
+  ex:observedValue 72.8 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-20T00:00:00Z"^^xsd:dateTime .
+
+ent:measurement/air/51-20250921-O3 a ex:Measurement ;
+  ex:observedProperty "O3" ;
+  ex:observedValue 68.5 ;
+  ex:unit "µg/m³" ;
+  ex:dateTime "2025-09-21T00:00:00Z"^^xsd:dateTime .
+
+ent:station/air/51 ex:hasMeasurement ent:measurement/air/51-20250920-O3 ,
+                                      ent:measurement/air/51-20250921-O3 .
+
+# ==============================================================================
+# BICYCLE STATIONS
+# ==============================================================================
+
+# Bicycle Station 123 - Calle Alcalá
 ent:station/bike/123 a ex:BicycleStation ;
   ex:stationId "123" ;
   schema:address "Calle Alcalá 1, Madrid" ;
-  geo:lat 40.4189 ; geo:long -3.7019 .
+  geo:lat 40.4189 ; 
+  geo:long -3.7019 .
 
-# ---- Sports facility
+# Bicycle Station 124 - Plaza de España
+ent:station/bike/124 a ex:BicycleStation ;
+  ex:stationId "124" ;
+  schema:address "Plaza de España, Madrid" ;
+  geo:lat 40.4238 ; 
+  geo:long -3.7120 .
+
+# Bicycle Station 125 - Gran Vía
+ent:station/bike/125 a ex:BicycleStation ;
+  ex:stationId "125" ;
+  schema:address "Gran Vía 32, Madrid" ;
+  geo:lat 40.4200 ; 
+  geo:long -3.7050 .
+
+# Bicycle Station 126 - Puerta del Sol
+ent:station/bike/126 a ex:BicycleStation ;
+  ex:stationId "126" ;
+  schema:address "Puerta del Sol, Madrid" ;
+  geo:lat 40.4169 ; 
+  geo:long -3.7035 .
+
+# Bicycle Station 127 - Atocha
+ent:station/bike/127 a ex:BicycleStation ;
+  ex:stationId "127" ;
+  schema:address "Estación de Atocha, Madrid" ;
+  geo:lat 40.4066 ; 
+  geo:long -3.6890 .
+
+# ==============================================================================
+# SPORTS FACILITIES
+# ==============================================================================
+
+# Sports Facility 456 - Centro Deportivo Municipal Example
 ent:facility/456 a ex:SportsFacility ;
-  schema:address "Centro Deportivo Municipal Example" ;
-  geo:lat 40.4100 ; geo:long -3.7000 .
+  schema:address "Centro Deportivo Municipal Example, Madrid" ;
+  geo:lat 40.4100 ; 
+  geo:long -3.7000 .
+
+# Sports Facility 457 - Polideportivo de Chamberí
+ent:facility/457 a ex:SportsFacility ;
+  schema:address "Polideportivo de Chamberí, Madrid" ;
+  geo:lat 40.4350 ; 
+  geo:long -3.7050 .
+
+# Sports Facility 458 - Piscina Municipal Aluche
+ent:facility/458 a ex:SportsFacility ;
+  schema:address "Piscina Municipal Aluche, Madrid" ;
+  geo:lat 40.3890 ; 
+  geo:long -3.7520 .
+
+# Sports Facility 459 - Gimnasio Municipal Retiro
+ent:facility/459 a ex:SportsFacility ;
+  schema:address "Gimnasio Municipal Retiro, Madrid" ;
+  geo:lat 40.4130 ; 
+  geo:long -3.6840 .
+
+# Sports Facility 460 - Polideportivo La Elipa
+ent:facility/460 a ex:SportsFacility ;
+  schema:address "Polideportivo La Elipa, Madrid" ;
+  geo:lat 40.4250 ; 
+  geo:long -3.6600 .

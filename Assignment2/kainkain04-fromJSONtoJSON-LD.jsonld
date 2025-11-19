@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "name": "foaf:name",
+    "hometown": "schema:homeLocation",
+    "age": "schema:age",
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "schema:hasCourse",
+    "teacher": "schema:teacher",
+    "description": "schema:description"
+  },
+  "@id": "https://example.org/person/mario-romero",
+  "@type": "schema:Person",
+  "name": "Mario Romero",
+  "hometown": "Madrid",
+  "age": 21,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": [
+    {
+      "@type": "schema:Person",
+      "name": "Carmen Casado"
+    },
+    {
+      "@type": "schema:Person",
+      "name": "Fernando Romero"
+    }
+  ],
+  "subjects": [
+    {
+      "@type": "schema:Course",
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teacher": {
+        "@type": "schema:Person",
+        "name": "Oscar Cocho, Daniel Garijo y Raúl García"
+      },
+      "description": "Cubre la representación del conocimiento y la creación de sistemas que permiten a las máquinas entender la información."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Ingenieria del Software 2",
+      "teacher": {
+        "@type": "schema:Person",
+        "name": "Tomas Feliu"
+      },
+      "description": "Estudio de metodologías de desarrollo de ontologías y sistemas inteligentes."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Gestion de procesos y tecnologias de la informacion",
+      "teacher": {
+        "@type": "schema:Person",
+        "name": "Ricard Colomo y Edmundo Tovar"
+      },
+      "description": "Se enfoca en cómo optimizar la eficiencia de una organización mediante el uso adecuado de los sistemas y la tecnología."
+    },
+    {
+      "@type": "schema:Course",
+      "name": "Programación para dispositivos móviles",
+      "teacher": {
+        "@type": "schema:Person",
+        "name": "Raul Alonso Calvo"
+      },
+      "description": "Enseña a crear aplicaciones para smartphones y tablets, cubriendo el diseño de interfaces y el manejo de datos."
+    }
+  ]
+}

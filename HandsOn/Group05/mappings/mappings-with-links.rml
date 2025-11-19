@@ -1,0 +1,141 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://airecalidadbcn.linkeddata.es/g05/resource/> .
+@prefix ont: <http://www.semanticweb.org/abuce/ontologies/2025/9/untitled-ontology-3/> .
+
+
+<EstacionTriplesMap>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "2018-06-Juny-qualitat-aire-BCN-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+        rr:template "http://airecalidadbcn.linkeddata.es/g05/resource/estacion-{Codi_Estacio}" ;
+        rr:class ont:Estacion
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ont:stationCode ;
+        rr:objectMap [
+            rml:reference "Codi_Estacio" ;
+            rr:datatype xsd:int
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:name ;
+        rr:objectMap [
+            rml:reference "Nom_Estacio"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:latitude ;
+        rr:objectMap [
+            rml:reference "Latitud" ;
+            rr:datatype xsd:float
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:longitude ;
+        rr:objectMap [
+            rml:reference "Longitud" ;
+            rr:datatype xsd:float
+        ]
+    ].
+
+
+
+<LecturaTriplesMap>
+    a rr:TriplesMap ;
+
+    rml:logicalSource [
+        rml:source "2018-06-Juny-qualitat-aire-BCN-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+        rr:template "http://airecalidadbcn.linkeddata.es/g05/resource/lectura-{Data}-{Codi_Estacio}" ;
+        rr:class ont:Lectura
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ont:date ;
+        rr:objectMap [
+            rml:reference "Data" 
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:quality ;
+        rr:objectMap [
+            rml:reference "Qualitat_General"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:no2Value ;
+        rr:objectMap [
+            rml:reference "Valor_NO2" ;
+            rr:datatype xsd:int
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:no2Quality ;
+        rr:objectMap [
+            rml:reference "Qualitat_NO2"
+        ]
+    ];
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:o3Value ;
+        rr:objectMap [
+            rml:reference "Valor_O3" ;
+            rr:datatype xsd:int
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:o3Quality ;
+        rr:objectMap [
+            rml:reference "Qualitat_O3"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:pm10Value ;
+        rr:objectMap [
+            rml:reference "Valor_PM10" ;
+            rr:datatype xsd:int
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ont:pm10Quality ;
+        rr:objectMap [
+            rml:reference "Qualitat_PM10"
+        ]
+    ];
+
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:madeInStation ;
+        rr:objectMap [
+            rr:parentTriplesMap <EstacionTriplesMap> ;
+            
+            rr:joinCondition [
+                rr:child "Codi_Estacio" ;
+                rr:parent "Codi_Estacio" ;
+            ]
+        ]
+    ].

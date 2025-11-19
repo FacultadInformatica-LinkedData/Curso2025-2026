@@ -62,12 +62,12 @@
 
     rr:predicateObjectMap [
         rr:predicate ns:latitude ;
-        rr:objectMap [ rml:reference "LATITUD"]
+        rr:objectMap [ rml:reference "LATITUD" ; rr:datatype xsd:double ]
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate ns:longitude ;
-        rr:objectMap [ rml:reference "LONGITUD"]
+        rr:objectMap [ rml:reference "LONGITUD" ; rr:datatype xsd:double ]
     ] ;
 
     rr:predicateObjectMap [

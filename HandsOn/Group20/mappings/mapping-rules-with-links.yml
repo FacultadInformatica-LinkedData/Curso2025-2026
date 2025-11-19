@@ -1,67 +1,97 @@
 prefixes:
-  rr:  http://www.w3.org/ns/r2rml#
-  foaf: http://xmlns.com/foaf/0.1/
-  xsd: http://www.w3.org/2001/XMLSchema#
-  rdfs: http://www.w3.org/2000/01/rdf-schema#
-  rev: http://purl.org/stuff/rev#
-  schema: http://schema.org/
-  dct: http://purl.org/dc/terms/
-  rml: http://semweb.mmlab.be/ns/rml#
-  ql:  http://semweb.mmlab.be/ns/ql#
-  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-  ns:  https://data.smartcitymadrid.es/ontology/parking#
-  ex:  https://data.smartcitymadrid.es/id/parking/
+  dcterms: "http://purl.org/dc/terms/"
+  geo: "http://www.opengis.net/ont/geosparql#"
+  my: "https://data.smartcitymadrid.es/ontology/parking#"
+  ex: "https://data.smartcitymadrid.es/resource/parking/"
+  owl: "http://www.w3.org/2002/07/owl#"
+  schema: "http://schema.org/"
+  vcard: "http://www.w3.org/2006/vcard/ns#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+sources:
+  - [parkings-updated-with-links.csv~csv]
 
 mappings:
-  triplesmap1:
+  ParkingFacility:
     sources:
       - [parkings-updated-with-links.csv~csv]
-    s: ex:$(id)
+    s: ex:$(identifier)
     po:
-      - [a, ns:Parking]
+      - [a, schema:ParkingFacility]
+      - p: dcterms:identifier
+        o: { value: $(identifier), datatype: xsd:int }
+      - p: my:hasFamily
+        o: { value: $(family), datatype: xsd:int }
+      - [schema:name, $(name)]
+      - [my:hasCategory, $(category)]
+      - p: my:hasCategoryCode
+        o: { value: $(categoryCode), datatype: xsd:int }
+      - p: vcard:email
+        o: { value: $(email), datatype: xsd:string }
+      - p: my:hasURLIcon
+        o: { value: $(URLIcon), datatype: xsd:string }
+      - p: my:isEMTParking
+        o: { value: $(EMTParking), datatype: xsd:boolean }
+      - p: my:hasType
+        o: { value: $(type), datatype: xsd:string }
+      - [schema:address, ex:address/$(identifier)~iri]
+      - [geo:hasGeometry, ex:geom/$(identifier)~iri]
+      - [my:containedInCity, ex:city/$(city)~iri]
 
-      - [ns:hasId, $(id)]
-      - [ns:hasFamily, $(family)]
-      - [ns:hasName, $(name)]
-      - [ns:hasEmail, $(email)]
-      - [ns:hasAddress, $(address)]
-
-      - p: ns:hasAreaCode
-        o: { value: $(areaCode), datatype: xsd:integer }
-
-      - [ns:hasArea, $(zrea)]
-      - [owl:sameAs, $(wiki_data_zrea)~iri]
-      - [ns:hasCategory, $(category)]
-
-      - p: ns:hasCategoryCode
-        o: { value: $(catCode), datatype: xsd:integer }  
-
-      - [ns:hasCountry, $(country)]
-      - [owl:sameAs, $(wiki_data_country)~iri]
-      - [ns:hasURLIcon, $(URLIcono)~iri]
-
-      - p: ns:hasLocation
-        o: ex:$(id)/location~iri
-
-  LocationTM:
+  PostalAddress:
     sources:
       - [parkings-updated-with-links.csv~csv]
-    s: ex:$(id)/location
+    s: ex:address/$(identifier)
     po:
-      - [a, ns:Location]
+      - [a, schema:PostalAddress]
+      - [schema:streetAddress, $(streetAddress)]
+      - p: schema:postalCode
+        o: { value: $(postalCode), datatype: xsd:int }
+      - [schema:addressLocality, $(city)]
+      - [schema:addressRegion, $(autonomousCommunity)]
+      - [schema:addressCountry, $(country)]
 
-      - p: ns:hasLongitude
+  Geometry:
+    sources:
+      - [parkings-updated-with-links.csv~csv]
+    s: ex:geom/$(identifier)
+    po:
+      - [a, geo:Point]
+      - p: geo:long
         o: { value: $(long), datatype: xsd:double }
-
-      - p: ns:hasLatitude
+      - p: geo:lat
         o: { value: $(lat), datatype: xsd:double }
+      - p: geo:asWKT
+        o: "POINT($(long) $(lat))"
+        o_datatype: "http://www.opengis.net/ont/geosparql#wktLiteral"
+      - [owl:sameAs, $(openStreetMapCoordinates)~iri]
 
-      - [ns:hasState, $(state)]
-      - [owl:sameAs, $(wiki_data_state)~iri]
-      - [ns:hasTown, $(town)]
-      - [owl:sameAs, $(wiki_data_town)~iri]
+  City:
+    sources:
+      - [parkings-updated-with-links.csv~csv]
+    s: ex:city/$(city)
+    po:
+      - [a, schema:City]
+      - [schema:name, $(city)]
+      - [my:containedInRegion, ex:region/$(autonomousCommunity)~iri]
+      - [my:containedInNation, ex:country/$(country)~iri]
+      - [owl:sameAs, $(wikidataCity)~iri]
 
-      - p: ns:isEMTParking
-        o: { value: $(emtParking), datatype: xsd:boolean }
+  Region:
+    sources:
+      - [parkings-updated-with-links.csv~csv]
+    s: ex:region/$(autonomousCommunity)
+    po:
+      - [a, my:AutonomousCommunity]
+      - [schema:name, $(autonomousCommunity)]
+      - [my:containedInCountry, ex:country/$(country)~iri]
+      - [owl:sameAs, $(wikidataAutonomousCommunity)~iri]
 
-      - [ns:hasType, $(type)]
+  Country:
+    sources:
+      - [parkings-updated-with-links.csv~csv]
+    s: ex:country/$(country)
+    po:
+      - [a, schema:Country]
+      - [schema:name, $(country)]
+      - [owl:sameAs, $(wikidataCountry)~iri]

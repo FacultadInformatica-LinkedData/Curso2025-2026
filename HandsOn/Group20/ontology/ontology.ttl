@@ -1,9 +1,13 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <https://data.smartcitymadrid.es/ontology/parking#> .
+@prefix my: <https://data.smartcitymadrid.es/ontology/parking#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dcterms:contributor a owl:AnnotationProperty .
@@ -14,7 +18,14 @@ dcterms:creator a owl:AnnotationProperty .
 
 dcterms:description a owl:AnnotationProperty .
 
+dcterms:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range xsd:int .
+
 dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
 
 dcterms:title a owl:AnnotationProperty .
 
@@ -22,117 +33,176 @@ vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
 vann:preferredNamespaceUri a owl:AnnotationProperty .
 
+schema1:address a owl:ObjectProperty ;
+    rdfs:label "address" ;
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range schema1:PostalAddress .
+
+schema1:addressCountry a owl:ObjectProperty ;
+    rdfs:label "address country" ;
+    rdfs:domain schema1:PostalAddress ;
+    rdfs:range schema1:Country .
+
+schema1:addressLocality a owl:ObjectProperty ;
+    rdfs:label "address locality" ;
+    rdfs:domain schema1:PostalAddress ;
+    rdfs:range schema1:City .
+
+schema1:addressRegion a owl:ObjectProperty ;
+    rdfs:label "address region" ;
+    rdfs:domain schema1:PostalAddress ;
+    rdfs:range my:AutonomousCommunity .
+
+schema1:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range xsd:string .
+
+schema1:postalCode a owl:DatatypeProperty ;
+    rdfs:label "postal code" ;
+    rdfs:domain schema1:PostalAddress ;
+    rdfs:range xsd:int .
+
+schema1:streetAddress a owl:DatatypeProperty ;
+    rdfs:label "street address" ;
+    rdfs:domain schema1:PostalAddress ;
+    rdfs:range xsd:string .
+
+geo:asWKT a owl:DatatypeProperty ;
+    rdfs:label "as w k t" ;
+    rdfs:domain geo:Point ;
+    rdfs:range geo:wktLiteral .
+
+geo:hasGeometry a owl:ObjectProperty ;
+    rdfs:label "has geometry" ;
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range geo:Point .
+
+geo:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain geo:Point ;
+    rdfs:range xsd:double .
+
+geo:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
+    rdfs:domain geo:Point ;
+    rdfs:range xsd:double .
+
 owl:versionIRI a owl:AnnotationProperty .
 
 owl:versionInfo a owl:AnnotationProperty .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasAddress> a owl:DatatypeProperty ;
-    rdfs:label "has address" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
+vcard:email a owl:DatatypeProperty ;
+    rdfs:label "email" ;
+    rdfs:domain schema1:ParkingFacility ;
     rdfs:range xsd:string .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasArea> a owl:DatatypeProperty ;
-    rdfs:label "has area" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:string .
+my:containedInCity a owl:ObjectProperty ;
+    rdfs:label "contained in city" ;
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range schema1:City ;
+    rdfs:subPropertyOf schema1:containedInPlace .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasAreaCode> a owl:DatatypeProperty ;
-    rdfs:label "has area code" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:integer .
+my:containedInCountry a owl:ObjectProperty ;
+    rdfs:label "contained in country" ;
+    rdfs:domain my:AutonomousCommunity ;
+    rdfs:range schema1:Country ;
+    rdfs:subPropertyOf schema1:containedInPlace .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasCategory> a owl:DatatypeProperty ;
+my:containedInNation a owl:ObjectProperty ;
+    rdfs:label "contained in nation" ;
+    rdfs:domain schema1:City ;
+    rdfs:range schema1:Country ;
+    rdfs:subPropertyOf schema1:containedInPlace .
+
+my:containedInRegion a owl:ObjectProperty ;
+    rdfs:label "contained in region" ;
+    rdfs:domain schema1:City ;
+    rdfs:range my:AutonomousCommunity ;
+    rdfs:subPropertyOf schema1:containedInPlace .
+
+my:hasCategory a owl:DatatypeProperty ;
     rdfs:label "has category" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
+    rdfs:domain schema1:ParkingFacility ;
     rdfs:range xsd:string .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasCategoryCode> a owl:DatatypeProperty ;
+my:hasCategoryCode a owl:DatatypeProperty ;
     rdfs:label "has category code" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:integer .
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range xsd:int .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasCountry> a owl:DatatypeProperty ;
-    rdfs:label "has country" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:string .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasEmail> a owl:DatatypeProperty ;
-    rdfs:label "has email" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:string .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasFamily> a owl:DatatypeProperty ;
+my:hasFamily a owl:DatatypeProperty ;
     rdfs:label "has family" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:string .
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range xsd:int .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasId> a owl:DatatypeProperty ;
-    rdfs:label "has id" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:string .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasLatitude> a owl:DatatypeProperty ;
-    rdfs:label "has latitude" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Location> ;
-    rdfs:range xsd:double .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasLocation> a owl:ObjectProperty ;
-    rdfs:label "has location" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range <https://data.smartcitymadrid.es/ontology/parking#Location> .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasLongitude> a owl:DatatypeProperty ;
-    rdfs:label "has longitude" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Location> ;
-    rdfs:range xsd:double .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasName> a owl:DatatypeProperty ;
-    rdfs:label "has name" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:string .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasState> a owl:DatatypeProperty ;
-    rdfs:label "has state" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Location> ;
-    rdfs:range xsd:string .
-
-<https://data.smartcitymadrid.es/ontology/parking#hasType> a owl:DatatypeProperty ;
+my:hasType a owl:DatatypeProperty ;
     rdfs:label "has type" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Location> ;
+    rdfs:domain schema1:ParkingFacility ;
     rdfs:range xsd:string .
 
-<https://data.smartcitymadrid.es/ontology/parking#hasURLIcon> a owl:DatatypeProperty ;
+my:hasURLIcon a owl:DatatypeProperty ;
     rdfs:label "has u r l icon" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Parking> ;
-    rdfs:range xsd:anyURI .
+    rdfs:domain schema1:ParkingFacility ;
+    rdfs:range xsd:string .
 
-<https://data.smartcitymadrid.es/ontology/parking#isEMTParking> a owl:DatatypeProperty ;
+my:isEMTParking a owl:DatatypeProperty ;
     rdfs:label "is e m t parking" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Location> ;
+    rdfs:domain schema1:ParkingFacility ;
     rdfs:range xsd:boolean .
 
-ns:hasTown a owl:DatatypeProperty ;
-    rdfs:label "has town" ;
-    rdfs:domain <https://data.smartcitymadrid.es/ontology/parking#Location> ;
-    rdfs:range xsd:string .
+schema1:AdministrativeArea a owl:Class ;
+    rdfs:label "Administrative Area" .
 
-ns: a owl:Ontology ;
-    dcterms:contributor <https://example.org/people#ContributorURI> ;
+schema1:CivicStructure a owl:Class ;
+    rdfs:label "Civic Structure" ;
+    rdfs:subClassOf schema1:Place .
+
+my: a owl:Ontology ;
+    dcterms:contributor "Laura Gilgado Romero"@es,
+        "María Jiménez Álvarez"@es,
+        "Nerea Tanarro Ferrero"@es,
+        "Sergio Caro Rodríguez"@es,
+        "Sergio Zaballos Herrera"@es ;
     dcterms:created "2025-10-07"^^xsd:date ;
-    dcterms:creator <https://example.org/people#AuthorURI> ;
-    dcterms:description "Ontology that describes parkings and their locations."@en ;
+    dcterms:creator "Group 20 in Web Semantics, Linked Data and Knowledge Graphs, UPM."@en ;
+    dcterms:description "Ontology that describes parking facilities managed by EMT Madrid, including their locations and attributes."@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-11-07"^^xsd:date ;
     dcterms:title "Parking ontology"@en ;
-    vann:preferredNamespacePrefix "ns" ;
-    vann:preferredNamespaceUri ns: ;
+    vann:preferredNamespacePrefix "my" ;
+    vann:preferredNamespaceUri my: ;
     owl:versionIRI <https://data.smartcitymadrid.es/ontology/parking/1.0.0> ;
     owl:versionInfo "1.0.0" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-<https://data.smartcitymadrid.es/ontology/parking#Location> a owl:Class ;
-    rdfs:label "Location" .
+schema1:Place a owl:Class ;
+    rdfs:label "Place" .
 
-<https://data.smartcitymadrid.es/ontology/parking#Parking> a owl:Class ;
-    rdfs:label "Parking" .
+schema1:Country a owl:Class ;
+    rdfs:label "Country" .
 
-ns:Parking owl:disjointWith ns:Location .
+schema1:containedInPlace a owl:ObjectProperty ;
+    rdfs:label "contained in place" ;
+    rdfs:domain schema1:Place ;
+    rdfs:range schema1:Place .
+
+geo:Point a owl:Class ;
+    rdfs:label "Point" .
+
+my:AutonomousCommunity a owl:Class ;
+    rdfs:label "Autonomous Community" ;
+    rdfs:subClassOf schema1:AdministrativeArea .
+
+schema1:City a owl:Class ;
+    rdfs:label "City" .
+
+schema1:PostalAddress a owl:Class ;
+    rdfs:label "Postal Address" .
+
+schema1:ParkingFacility a owl:Class ;
+    rdfs:label "Parking Facility" ;
+    rdfs:subClassOf schema1:CivicStructure .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( schema1:City my:AutonomousCommunity schema1:Country ) .

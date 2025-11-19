@@ -21,55 +21,55 @@
 map:map_AccessibilityTypeMapping_000 rml:logicalSource map:source_006 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "AccessibilityTypeMapping" ;
-	rr:predicateObjectMap map:pom_047, map:pom_048 ;
+	rr:predicateObjectMap map:pom_048, map:pom_049 ;
 	rr:subjectMap map:s_006 .
 
 map:map_LineHasStationMapping_000 rml:logicalSource map:source_008 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "LineHasStationMapping" ;
-	rr:predicateObjectMap map:pom_051, map:pom_052 ;
+	rr:predicateObjectMap map:pom_052, map:pom_053 ;
 	rr:subjectMap map:s_008 .
 
 map:map_MetroLineMapping_000 rml:logicalSource map:source_000 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "MetroLineMapping" ;
-	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018, map:pom_019 ;
 	rr:subjectMap map:s_000 .
 
 map:map_OperatorMapping_000 rml:logicalSource map:source_003 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "OperatorMapping" ;
-	rr:predicateObjectMap map:pom_036, map:pom_037 ;
+	rr:predicateObjectMap map:pom_037, map:pom_038 ;
 	rr:subjectMap map:s_003 .
 
 map:map_ServiceTypeMapping_000 rml:logicalSource map:source_005 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "ServiceTypeMapping" ;
-	rr:predicateObjectMap map:pom_041, map:pom_042, map:pom_043, map:pom_044, map:pom_045, map:pom_046 ;
+	rr:predicateObjectMap map:pom_042, map:pom_043, map:pom_044, map:pom_045, map:pom_046, map:pom_047 ;
 	rr:subjectMap map:s_005 .
 
 map:map_StationLineMapping_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "StationLineMapping" ;
-	rr:predicateObjectMap map:pom_031, map:pom_032, map:pom_033, map:pom_034, map:pom_035 ;
+	rr:predicateObjectMap map:pom_032, map:pom_033, map:pom_034, map:pom_035, map:pom_036 ;
 	rr:subjectMap map:s_002 .
 
 map:map_StationMapping_000 rml:logicalSource map:source_001 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "StationMapping" ;
-	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028, map:pom_029, map:pom_030 ;
+	rr:predicateObjectMap map:pom_020, map:pom_021, map:pom_022, map:pom_023, map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028, map:pom_029, map:pom_030, map:pom_031 ;
 	rr:subjectMap map:s_001 .
 
 map:map_StationStatusMapping_000 rml:logicalSource map:source_007 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "StationStatusMapping" ;
-	rr:predicateObjectMap map:pom_049, map:pom_050 ;
+	rr:predicateObjectMap map:pom_050, map:pom_051 ;
 	rr:subjectMap map:s_007 .
 
 map:map_TransportFamilyMapping_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "TransportFamilyMapping" ;
-	rr:predicateObjectMap map:pom_038, map:pom_039, map:pom_040 ;
+	rr:predicateObjectMap map:pom_039, map:pom_040, map:pom_041 ;
 	rr:subjectMap map:s_004 .
 
 map:om_000 rdf:type rr:ObjectMap ;
@@ -86,231 +86,236 @@ map:om_002 rml:reference "CODI_LINIA" ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_003 rml:reference "NOM_LINIA" ;
+map:om_003 rml:reference "ETI_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_004 rml:reference "same_as_wikidata_NOM_LINIA" ;
+map:om_004 rml:reference "NOM_LINIA" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "same_as_wikidata_NOM_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_005 rml:reference "DESC_LINIA" ;
+map:om_006 rml:reference "DESC_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_006 rml:reference "ORIGEN_LINIA" ;
+map:om_007 rml:reference "ORIGEN_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_007 rml:reference "same_as_wikidata_ORIGEN_LINIA" ;
+map:om_008 rml:reference "same_as_wikidata_ORIGEN_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_008 rml:reference "DESTI_LINIA" ;
+map:om_009 rml:reference "DESTI_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_009 rml:reference "same_as_wikidata_DESTI_LINIA" ;
+map:om_010 rml:reference "same_as_wikidata_DESTI_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_010 rml:reference "COLOR_LINIA" ;
+map:om_011 rml:reference "COLOR_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_011 rml:reference "COLOR_AUX_LINIA" ;
+map:om_012 rml:reference "COLOR_AUX_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_012 rml:reference "COLOR_TEXT_LINIA" ;
+map:om_013 rml:reference "COLOR_TEXT_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_013 rml:reference "ORDRE_LINIA" ;
+map:om_014 rml:reference "ORDRE_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_014 rml:reference "DATA" ;
+map:om_015 rml:reference "DATA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:date ;
 	rr:termType rr:Literal .
 
-map:om_015 rml:reference "GEOMETRY" ;
+map:om_016 rml:reference "GEOMETRY" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype geosparql:wktLiteral ;
 	rr:termType rr:Literal .
 
-map:om_016 rml:reference "NOM_LINIA" ;
+map:om_017 rml:reference "NOM_LINIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_017 rdf:type rr:ObjectMap ;
+map:om_018 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/operator/{NOM_OPERADOR}" ;
 	rr:termType rr:IRI .
 
-map:om_018 rdf:type rr:ObjectMap ;
+map:om_019 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/transportFamily/{NOM_FAMILIA}" ;
 	rr:termType rr:IRI .
 
-map:om_019 rdf:type rr:ObjectMap ;
+map:om_020 rdf:type rr:ObjectMap ;
 	rr:constant metro:Station ;
 	rr:termType rr:IRI .
 
-map:om_020 rml:reference "ID_ESTACIO" ;
+map:om_021 rml:reference "ID_ESTACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_021 rml:reference "CODI_ESTACIO" ;
+map:om_022 rml:reference "CODI_ESTACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_022 rml:reference "NOM_ESTACIO" ;
+map:om_023 rml:reference "NOM_ESTACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_023 rml:reference "same_as_wikidata_NOM_ESTACIO" ;
+map:om_024 rml:reference "same_as_NOM_ESTACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_024 rml:reference "DATA_INAUGURACIO" ;
+map:om_025 rml:reference "DATA_INAUGURACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:date ;
 	rr:termType rr:Literal .
 
-map:om_025 rml:reference "DATA" ;
+map:om_026 rml:reference "DATA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:date ;
 	rr:termType rr:Literal .
 
-map:om_026 rml:reference "GEOMETRY" ;
+map:om_027 rml:reference "GEOMETRY" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype geosparql:wktLiteral ;
 	rr:termType rr:Literal .
 
-map:om_027 rml:reference "PICTO" ;
+map:om_028 rml:reference "PICTO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_028 rml:reference "NOM_ESTACIO" ;
+map:om_029 rml:reference "NOM_ESTACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_029 rdf:type rr:ObjectMap ;
+map:om_030 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/accessibilityType/{NOM_TIPUS_ACCESSIBILITAT}" ;
 	rr:termType rr:IRI .
 
-map:om_030 rdf:type rr:ObjectMap ;
+map:om_031 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/stationStatus/{NOM_TIPUS_ESTAT}" ;
 	rr:termType rr:IRI .
 
-map:om_031 rdf:type rr:ObjectMap ;
+map:om_032 rdf:type rr:ObjectMap ;
 	rr:constant metro:StationLine ;
 	rr:termType rr:IRI .
 
-map:om_032 rml:reference "ORDRE_ESTACIO" ;
+map:om_033 rml:reference "ORDRE_ESTACIO" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_033 rdf:type rr:ObjectMap ;
-	rr:template "https://data.example.org/transport/bcn/metro/resource/station/{CODI_ESTACIO}" ;
-	rr:termType rr:IRI .
-
 map:om_034 rdf:type rr:ObjectMap ;
-	rr:template "https://data.example.org/transport/bcn/metro/resource/metroLine/L{CODI_LINIA}" ;
+	rr:template "https://data.example.org/transport/bcn/metro/resource/station/{CODI_ESTACIO}" ;
 	rr:termType rr:IRI .
 
 map:om_035 rdf:type rr:ObjectMap ;
-	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{ID_TIPUS_SERVEI}" ;
+	rr:template "https://data.example.org/transport/bcn/metro/resource/metroLine/L{CODI_LINIA}" ;
 	rr:termType rr:IRI .
 
 map:om_036 rdf:type rr:ObjectMap ;
+	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{DESC_SERVEI}" ;
+	rr:termType rr:IRI .
+
+map:om_037 rdf:type rr:ObjectMap ;
 	rr:constant metro:Operator ;
 	rr:termType rr:IRI .
 
-map:om_037 rml:reference "NOM_OPERADOR" ;
+map:om_038 rml:reference "NOM_OPERADOR" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_038 rdf:type rr:ObjectMap ;
+map:om_039 rdf:type rr:ObjectMap ;
 	rr:constant metro:TransportFamily ;
 	rr:termType rr:IRI .
 
-map:om_039 rml:reference "ORDRE_FAMILIA" ;
+map:om_040 rml:reference "ORDRE_FAMILIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:integer ;
 	rr:termType rr:Literal .
 
-map:om_040 rml:reference "NOM_FAMILIA" ;
+map:om_041 rml:reference "NOM_FAMILIA" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_041 rdf:type rr:ObjectMap ;
+map:om_042 rdf:type rr:ObjectMap ;
 	rr:constant metro:ServiceType ;
 	rr:termType rr:IRI .
 
-map:om_042 rml:reference "DESC_SERVEI" ;
+map:om_043 rml:reference "DESC_SERVEI" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_043 rml:reference "ORIGEN_SERVEI" ;
+map:om_044 rml:reference "ORIGEN_SERVEI" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_044 rml:reference "same_as_wikidata_ORIGEN_SERVEI" ;
+map:om_045 rml:reference "same_as_wikidata_ORIGEN_SERVEI" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_045 rml:reference "DESTI_SERVEI" ;
+map:om_046 rml:reference "DESTI_SERVEI" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_046 rml:reference "same_as_wikidata_DESTI_SERVEI" ;
+map:om_047 rml:reference "same_as_wikidata_DESTI_SERVEI" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_047 rdf:type rr:ObjectMap ;
+map:om_048 rdf:type rr:ObjectMap ;
 	rr:constant metro:AccessibilityType ;
 	rr:termType rr:IRI .
 
-map:om_048 rml:reference "NOM_TIPUS_ACCESSIBILITAT" ;
+map:om_049 rml:reference "NOM_TIPUS_ACCESSIBILITAT" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_049 rdf:type rr:ObjectMap ;
+map:om_050 rdf:type rr:ObjectMap ;
 	rr:constant metro:StationStatus ;
 	rr:termType rr:IRI .
 
-map:om_050 rml:reference "NOM_TIPUS_ESTAT" ;
+map:om_051 rml:reference "NOM_TIPUS_ESTAT" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_051 rdf:type rr:ObjectMap ;
+map:om_052 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/station/{CODI_ESTACIO}" ;
 	rr:termType rr:IRI .
 
-map:om_052 rdf:type rr:ObjectMap ;
+map:om_053 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/stationLine/{CODI_ESTACIO}_L{CODI_LINIA}" ;
 	rr:termType rr:IRI .
 
@@ -324,153 +329,156 @@ map:pm_002 rdf:type rr:PredicateMap ;
 	rr:constant metro:lineCode .
 
 map:pm_003 rdf:type rr:PredicateMap ;
-	rr:constant metro:lineName .
+	rr:constant metro:lineEtiq .
 
 map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant metro:lineName .
 
 map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant metro:lineDescription .
+	rr:constant owl:sameAs .
 
 map:pm_006 rdf:type rr:PredicateMap ;
-	rr:constant metro:originStation .
+	rr:constant metro:lineDescription .
 
 map:pm_007 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant metro:originStation .
 
 map:pm_008 rdf:type rr:PredicateMap ;
-	rr:constant metro:destinationStation .
+	rr:constant owl:sameAs .
 
 map:pm_009 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant metro:destinationStation .
 
 map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant metro:lineColor .
+	rr:constant owl:sameAs .
 
 map:pm_011 rdf:type rr:PredicateMap ;
-	rr:constant metro:auxiliaryColor .
+	rr:constant metro:lineColor .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant metro:textColor .
+	rr:constant metro:auxiliaryColor .
 
 map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant metro:lineOrder .
+	rr:constant metro:textColor .
 
 map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant metro:lastUpdated .
+	rr:constant metro:lineOrder .
 
 map:pm_015 rdf:type rr:PredicateMap ;
-	rr:constant metro:hasGeometry .
-
-map:pm_016 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
-
-map:pm_017 rdf:type rr:PredicateMap ;
-	rr:constant metro:operatedBy .
-
-map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant metro:belongsToFamily .
-
-map:pm_019 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_020 rdf:type rr:PredicateMap ;
-	rr:constant metro:stationId .
-
-map:pm_021 rdf:type rr:PredicateMap ;
-	rr:constant metro:stationCode .
-
-map:pm_022 rdf:type rr:PredicateMap ;
-	rr:constant metro:stationName .
-
-map:pm_023 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
-
-map:pm_024 rdf:type rr:PredicateMap ;
-	rr:constant metro:inauguratedDate .
-
-map:pm_025 rdf:type rr:PredicateMap ;
 	rr:constant metro:lastUpdated .
 
-map:pm_026 rdf:type rr:PredicateMap ;
+map:pm_016 rdf:type rr:PredicateMap ;
 	rr:constant metro:hasGeometry .
 
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant metro:operatedBy .
+
+map:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant metro:belongsToFamily .
+
+map:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant metro:stationId .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant metro:stationCode .
+
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant metro:stationName .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant metro:inauguratedDate .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant metro:lastUpdated .
+
 map:pm_027 rdf:type rr:PredicateMap ;
-	rr:constant metro:pictogram .
+	rr:constant metro:hasGeometry .
 
 map:pm_028 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
+	rr:constant metro:pictogram .
 
 map:pm_029 rdf:type rr:PredicateMap ;
-	rr:constant metro:hasAccessibility .
+	rr:constant rdfs:label .
 
 map:pm_030 rdf:type rr:PredicateMap ;
-	rr:constant metro:hasStatus .
+	rr:constant metro:hasAccessibility .
 
 map:pm_031 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant metro:hasStatus .
 
 map:pm_032 rdf:type rr:PredicateMap ;
-	rr:constant metro:stationOrder .
+	rr:constant rdf:type .
 
 map:pm_033 rdf:type rr:PredicateMap ;
-	rr:constant metro:relatesTo .
+	rr:constant metro:stationOrder .
 
 map:pm_034 rdf:type rr:PredicateMap ;
-	rr:constant metro:onLine .
+	rr:constant metro:relatesTo .
 
 map:pm_035 rdf:type rr:PredicateMap ;
-	rr:constant metro:hasServiceType .
+	rr:constant metro:onLine .
 
 map:pm_036 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant metro:hasServiceType .
 
 map:pm_037 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
+	rr:constant rdf:type .
 
 map:pm_038 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant rdfs:label .
 
 map:pm_039 rdf:type rr:PredicateMap ;
-	rr:constant metro:familyOrder .
+	rr:constant rdf:type .
 
 map:pm_040 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
+	rr:constant metro:familyOrder .
 
 map:pm_041 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant rdfs:label .
 
 map:pm_042 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
+	rr:constant rdf:type .
 
 map:pm_043 rdf:type rr:PredicateMap ;
-	rr:constant metro:serviceOrigin .
+	rr:constant rdfs:label .
 
 map:pm_044 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant metro:serviceOrigin .
 
 map:pm_045 rdf:type rr:PredicateMap ;
-	rr:constant metro:serviceDestination .
-
-map:pm_046 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
 
+map:pm_046 rdf:type rr:PredicateMap ;
+	rr:constant metro:serviceDestination .
+
 map:pm_047 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant owl:sameAs .
 
 map:pm_048 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
-
-map:pm_049 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
-map:pm_050 rdf:type rr:PredicateMap ;
+map:pm_049 rdf:type rr:PredicateMap ;
 	rr:constant rdfs:label .
 
+map:pm_050 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
 map:pm_051 rdf:type rr:PredicateMap ;
-	rr:constant metro:hasStation .
+	rr:constant rdfs:label .
 
 map:pm_052 rdf:type rr:PredicateMap ;
+	rr:constant metro:hasStation .
+
+map:pm_053 rdf:type rr:PredicateMap ;
 	rr:constant metro:hasStationLineRelation .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -685,6 +693,10 @@ map:pom_052 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_052 ;
 	rr:predicateMap map:pm_052 .
 
+map:pom_053 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_053 ;
+	rr:predicateMap map:pm_053 .
+
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_AccessibilityTypeMapping_000, map:map_LineHasStationMapping_000, map:map_MetroLineMapping_000, map:map_OperatorMapping_000, map:map_ServiceTypeMapping_000, map:map_StationLineMapping_000, map:map_StationMapping_000, map:map_StationStatusMapping_000, map:map_TransportFamilyMapping_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
@@ -704,7 +716,7 @@ map:s_004 rdf:type rr:SubjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/transportFamily/{NOM_FAMILIA}" .
 
 map:s_005 rdf:type rr:SubjectMap ;
-	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{ID_TIPUS_SERVEI}" .
+	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{SLUG_SERVEI}" .
 
 map:s_006 rdf:type rr:SubjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/accessibilityType/{NOM_TIPUS_ACCESSIBILITAT}" .
@@ -716,7 +728,7 @@ map:s_008 rdf:type rr:SubjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/metroLine/L{CODI_LINIA}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/linies-metro-updated-with-links.csv" ;
+	rml:source "csv/linies_metro-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
@@ -728,11 +740,11 @@ map:source_002 rml:referenceFormulation ql:CSV ;
 	rdf:type rml:LogicalSource .
 
 map:source_003 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/linies-metro-updated-with-links.csv" ;
+	rml:source "csv/linies_metro-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_004 rml:referenceFormulation ql:CSV ;
-	rml:source "csv/linies-metro-updated-with-links.csv" ;
+	rml:source "csv/linies_metro-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .
 
 map:source_005 rml:referenceFormulation ql:CSV ;
