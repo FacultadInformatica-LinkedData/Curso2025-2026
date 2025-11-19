@@ -1,0 +1,55 @@
+PREFIX gz:    <http://linkeddata.greenzonesmadrid.org/ontology/gz#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+
+################################################################################
+# 1. ¿Cuántas zonas verdes hay en total?
+################################################################################
+SELECT (COUNT(?zone) AS ?numZonas)
+WHERE {
+  ?zone a gz:GreenZone .
+}
+
+################################################################################
+# 2. Traer 5 zonas verdes con su distrito enlazado y etiqueta del distrito
+################################################################################
+SELECT ?zone ?districtRes ?districtName ?fileNumber
+WHERE {
+  ?zone a gz:GreenZone ;
+        gz:fileNumber ?fileNumber ;
+        gz:inDistrict ?districtRes .
+  ?districtRes a gz:District ;
+               rdfs:label ?districtName .
+}
+LIMIT 5
+
+################################################################################
+# 3. Comprobar que el distrito enlaza a una entidad externa (Wikidata)
+################################################################################
+SELECT ?districtRes ?label ?wikidata
+WHERE {
+  ?districtRes a gz:District ;
+               rdfs:label ?label ;
+               owl:sameAs ?wikidata .
+}
+
+################################################################################
+# 4. Contar cuántas zonas verdes hay por distrito (recurso enlazado)
+################################################################################
+SELECT ?districtRes (COUNT(?zone) AS ?numZonas)
+WHERE {
+  ?zone a gz:GreenZone ;
+        gz:inDistrict ?districtRes .
+}
+GROUP BY ?districtRes
+
+################################################################################
+# 5. Filtrar por el distrito CENTRO y listar FileNumber + destino
+################################################################################
+SELECT ?zone ?file ?dest
+WHERE {
+  ?zone a gz:GreenZone ;
+        gz:inDistrict <http://linkeddata.greenzonesmadrid.org/resource/district/CENTRO> ;
+        gz:fileNumber ?file ;
+        gz:destination ?dest .
+}

@@ -1,0 +1,220 @@
+@prefix :       <https://www.roadsafetydata.com/ontology#> .
+@prefix ns:     <https://www.roadsafetydata.com/ontology#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:    <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@base           <https://www.roadsafetydata.com/ontology#> .
+
+<https://www.roadsafetydata.com/ontology#> a owl:Ontology ;
+  rdfs:label   "Road Safety Ontology"@en ;
+  rdfs:comment "Lightweight ontology for accidents, population and speed cameras in Madrid. Reuses schema.org and extends with domain-specific terms."@en .
+
+#################################################################
+#    OBJECT PROPERTIES
+#################################################################
+
+### Event -> Person (participant)
+ns:involvesPerson a owl:ObjectProperty ;
+  rdfs:domain schema:Event ;
+  rdfs:range  schema:Person ;
+  rdfs:comment "States that an accident/event involves a given person (participant)."@en .
+
+### PopulationObservation -> AdministrativeArea (district)
+ns:forDistrict a owl:ObjectProperty ;
+  rdfs:domain ns:PopulationObservation ;
+  rdfs:range  schema:AdministrativeArea ;
+  rdfs:comment "Links a population observation to its district."@en .
+
+### PopulationObservation -> AdministrativeArea (neighbourhood)
+ns:forNeighbourhood a owl:ObjectProperty ;
+  rdfs:domain ns:PopulationObservation ;
+  rdfs:range  schema:AdministrativeArea ;
+  rdfs:comment "Links a population observation to its neighbourhood."@en .
+
+### PopulationObservation -> AdministrativeArea (municipality)
+ns:forMunicipality a owl:ObjectProperty ;
+  rdfs:domain ns:PopulationObservation ;
+  rdfs:range  schema:AdministrativeArea ;
+  rdfs:comment "Links a population observation to its municipality."@en .
+
+### SpeedCamera -> Road
+ns:road a owl:ObjectProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  schema:Road ;
+  rdfs:comment "Associates a speed camera to a road (route/tunnel)."@en .
+
+### SpeedCamera -> Organization
+ns:responsible a owl:ObjectProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  schema:Organization ;
+  rdfs:comment "Responsible authority/organization for the speed camera."@en .
+
+ns:usesVehicleType a owl:ObjectProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range  schema:Vehicle ;
+  rdfs:comment "Vehicle class used by the participant."@en .
+
+
+
+### (Reused) Event -> AdministrativeArea
+schema:areaServed a owl:ObjectProperty .
+
+#################################################################
+#    DATATYPE PROPERTIES
+#################################################################
+
+########## Accident / Event
+ns:weather a owl:DatatypeProperty ;
+  rdfs:domain schema:Event ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "weather"@en ;
+  rdfs:comment "Weather conditions at the time of the accident."@en .
+
+ns:accidentType a owl:DatatypeProperty ;
+  rdfs:domain schema:Event ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "accident type"@en ;
+  rdfs:comment "Collision type or event category (e.g., head-on, side, run-over)."@en .
+
+### (Reused)
+schema:startDate a owl:DatatypeProperty .
+schema:startTime a owl:DatatypeProperty .
+schema:latitude  a owl:DatatypeProperty .
+schema:longitude a owl:DatatypeProperty .
+
+########## Person (participant)
+ns:ageRange a owl:DatatypeProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "age range"@en ;
+  rdfs:comment "Age band of the participant (e.g., 30–34)."@en .
+
+ns:injuryCode a owl:DatatypeProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "injury code"@en ;
+  rdfs:comment "Coded injury severity."@en .
+
+ns:injuryLevel a owl:DatatypeProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "injury level"@en ;
+  rdfs:comment "Textual injury level (e.g., Slight, Serious)."@en .
+
+ns:positiveAlcohol a owl:DatatypeProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range  xsd:boolean ;
+  rdfs:label  "positive alcohol"@en ;
+  rdfs:comment "Alcohol test result (true/false)."@en .
+
+ns:positiveDrug a owl:DatatypeProperty ;
+  rdfs:domain schema:Person ;
+  rdfs:range  xsd:boolean ;
+  rdfs:label  "positive drug"@en ;
+  rdfs:comment "Drug test result (true/false)."@en .
+
+########## Accident place (Place) and SpeedCamera coordinates / attributes
+ns:streetNumber a owl:DatatypeProperty ;
+  rdfs:domain schema:Place ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "street number"@en ;
+  rdfs:comment "Street number or position for the accident place."@en .
+
+# UTM coords
+ns:utmX a owl:DatatypeProperty ;
+  rdfs:range  xsd:double ;
+  rdfs:label  "UTM X"@en ;
+  rdfs:comment "Easting in meters."@en .
+
+ns:utmY a owl:DatatypeProperty ;
+  rdfs:range  xsd:double ;
+  rdfs:label  "UTM Y"@en ;
+  rdfs:comment "Northing in meters."@en .
+
+
+########## Speed camera attributes
+ns:speedLimit a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:integer ;
+  rdfs:label  "speed limit"@en ;
+  rdfs:comment "Posted speed limit at the camera location (km/h)."@en .
+
+ns:pk a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "kilometric point"@en ;
+  rdfs:comment "Kilometric point (e.g., '0+500')."@en .
+
+ns:direction a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "direction"@en ;
+  rdfs:comment "Traffic direction (e.g., inner/outer carriageway)."@en .
+
+ns:cameraType a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "camera type"@en ;
+  rdfs:comment "Speed camera type (Fixed, Section)."@en .
+
+ns:lane a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:string ;
+  rdfs:label  "lane"@en ;
+  rdfs:comment "Affected lane(s) at the camera location."@en .
+
+ns:startLongitude a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:double ;
+  rdfs:label  "start longitude"@en ;
+  rdfs:comment "Section-control start longitude (WGS84 decimal degrees)."@en .
+
+ns:startLatitude a owl:DatatypeProperty ;
+  rdfs:domain ns:SpeedCamera ;
+  rdfs:range  xsd:double ;
+  rdfs:label  "start latitude"@en ;
+  rdfs:comment "Section-control start latitude (WGS84 decimal degrees)."@en .
+
+########## Population observation numbers
+ns:peopleTotal a owl:DatatypeProperty ;
+  rdfs:domain ns:PopulationObservation ;
+  rdfs:range  xsd:integer ;
+  rdfs:label  "people total"@en ;
+  rdfs:comment "Total residents for the administrative unit on the reference date."@en .
+
+ns:peopleMale a owl:DatatypeProperty ;
+  rdfs:domain ns:PopulationObservation ;
+  rdfs:range  xsd:integer ;
+  rdfs:label  "people male"@en ;
+  rdfs:comment "Male residents for the administrative unit on the reference date."@en .
+
+ns:peopleFemale a owl:DatatypeProperty ;
+  rdfs:domain ns:PopulationObservation ;
+  rdfs:range  xsd:integer ;
+  rdfs:label  "people female"@en ;
+  rdfs:comment "Female residents for the administrative unit on the reference date."@en .
+
+#################################################################
+#    CLASSES
+#################################################################
+
+ns:PopulationObservation a owl:Class ;
+  rdfs:comment "Observation of resident population for an administrative unit at a reference date."@en .
+
+ns:SpeedCamera a owl:Class ;
+  rdfs:comment "Speed enforcement device (fixed/section/traffic-light) at a given road location."@en .
+
+
+schema:Event              a owl:Class .
+schema:Person             a owl:Class .
+schema:Place              a owl:Class .
+schema:AdministrativeArea a owl:Class .
+schema:Organization       a owl:Class .
+schema:Road               a owl:Class .
+schema:Vehicle            a owl:Class .
+schema:Enumeration        a owl:Class .
+
+

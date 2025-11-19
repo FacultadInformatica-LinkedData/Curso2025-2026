@@ -1,0 +1,105 @@
+{
+    "@context": {
+        "schema": "https://schema.org/",
+        "name": "schema:name",
+        "age": "schema:age",
+        "homeLocation": "schema:homeLocation",
+        "addressLocality": "schema:addressLocality",
+        "alumniOf": "schema:alumniOf",
+        "parent": "schema:parent",
+        "course": "schema:hasCourse",
+        "Course": "schema:Course",
+        "teacher": "schema:teacher",
+        "description": "schema:description",
+        "Place": "schema:Place",
+        "CollegeOrUniversity": "schema:CollegeOrUniversity",
+        "Person": "schema:Person"
+    },
+    "@type": "Person",
+    "name": "Marta Iglesias Aramburu",
+    "age": 22,
+    "homeLocation": {
+        "@type": "Place",
+        "addressLocality": "Madrid"
+    },
+    "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Politécnica de Madrid"
+    },
+    "parent": [
+        {
+            "@type": "Person",
+            "name": "Enrique Iglesias Barbero"
+        },
+        {
+            "@type": "Person",
+            "name": "Berta Aramburu Lopez-Aranguren"
+        }
+    ],
+    "course": [
+        {
+            "@type": "Course",
+            "name": "Semantic Web. Linked Data and Knowledge Graphs",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Oscar Corcho"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Daniel Garijo"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Raúl García"
+                }
+            ],
+            "description": "Foundations of the Semantic Web, covering RDF/RDFS/OWL, SPARQL, Linked Data publishing/consumption, and building/maintaining knowledge graphs."
+        },
+        {
+            "@type": "Course",
+            "name": "Nanotecnología",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "M. Estíbaliz Martinez Izquierdo"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Laura Ortiz Martín"
+                }
+            ],
+            "description": "Study of materials and devices at the 1–100 nm scale, focusing on unique quantum and surface effects and their applications in medicine, energy, and electronics."
+        },
+        {
+            "@type": "Course",
+            "name": "Administración de Sistemas Informáticos",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Fernando Pérez Costoya"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Francisco Rosales García"
+                }
+            ],
+            "description": "The aim of this course is to present the general foundations of a system administrator’s tasks and responsibilities, using Unix-family systems—especially Linux—as a case study. It also covers configuration automation solutions, with a focus on Ansible."
+        },
+        {
+            "@type": "Course",
+            "name": "Investigación Operativa",
+            "teacher": [
+                {
+                    "@type": "Person",
+                    "name": "Alfonso Mateos Caballero"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Antonio Jiménez Martín"
+                }
+            ],
+            "description": "Operations Research applies mathematical modeling, statistics, and algorithms to enable data-driven decisions."
+        }
+    ]
+}

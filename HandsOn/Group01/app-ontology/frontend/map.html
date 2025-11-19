@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>🗺️ Mapa Interactivo Metro Barcelona - Grupo 01</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      font-size: 14px;
+    }
+
+    .btn-light {
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .btn-light:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    #map-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      text-align: center;
+      z-index: 2000;
+    }
+
+    .loading-spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #667eea;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 15px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .station-popup {
+      min-width: 200px;
+    }
+
+    .station-popup h3 {
+      margin: 0 0 10px;
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    .station-lines {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px 0;
+    }
+
+    .line-badge {
+      padding: 4px 10px;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    .station-info {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .station-info p {
+      margin: 4px 0;
+    }
+
+    .line-popup {
+      min-width: 250px;
+    }
+
+    .line-popup h3 {
+      margin: 0 0 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .line-popup .line-badge {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+
+    .line-stats {
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+    }
+
+    .line-stats p {
+      margin: 4px 0;
+      font-size: 13px;
+    }
+
+    .stations-list {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .stations-list ol {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .stations-list li {
+      padding: 2px 0;
+    }
+
+    .station-marker {
+      background: white;
+      border: 3px solid #667eea;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .station-marker.interchange {
+      width: 16px;
+      height: 16px;
+      border-width: 4px;
+      border-color: #ff5722;
+    }
+
+    .legend {
+      position: absolute;
+      bottom: 30px;
+      right: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      max-width: 250px;
+    }
+
+    .legend h4 {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+      font-size: 12px;
+    }
+
+    .legend-color {
+      width: 30px;
+      height: 4px;
+      border-radius: 2px;
+    }
+
+    .legend-marker {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid #333;
+    }
+
+    .route-finder {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      max-width: 380px;
+      min-width: 320px;
+      max-height: calc(100vh - 30px);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .route-finder h3,
+    .route-finder select,
+    .route-finder > button {
+      flex-shrink: 0;
+    }
+    
+    #route-result {
+      margin-top: 15px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .route-finder h3 {
+      margin: 0 0 15px;
+      font-size: 16px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .route-finder select {
+      width: 100%;
+      padding: 8px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .route-finder select:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    .route-finder button {
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .route-finder button:hover {
+      transform: translateY(-1px);
+    }
+
+    .route-finder button:active {
+      transform: translateY(0);
+    }
+
+    .route-finder button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .route-result {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 2px solid #eee;
+    }
+
+    .route-result h4 {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .route-summary {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e3e9f1 100%);
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      border-left: 4px solid #667eea;
+    }
+
+    .route-summary p {
+      margin: 5px 0;
+    }
+
+    .route-summary p strong {
+      display: inline;
+    }
+
+    .route-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .route-step {
+      padding: 10px;
+      margin: 6px 0;
+      background: #f9f9f9;
+      border-left: 4px solid #667eea;
+      border-radius: 4px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .route-step.transfer {
+      border-left-color: #ff5722;
+      background: #fff3e0;
+    }
+
+    .route-step strong {
+      color: #333;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .route-step small {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .clear-route {
+      margin-top: 10px;
+      padding: 8px;
+      background: #f5f5f5;
+      color: #666;
+      border: 1px solid #ddd;
+    }
+
+    .clear-route:hover {
+      background: #eee;
+    }
+
+    .route-finder::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .route-finder::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .route-finder::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    .route-finder::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+      
+      .legend {
+        bottom: 10px;
+        right: 10px;
+        font-size: 11px;
+        padding: 10px;
+      }
+
+      .route-finder {
+        max-width: calc(100vw - 20px);
+        min-width: auto;
+      }
+    }
+
+    .error-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      z-index: 2000;
+    }
+
+    .error-message h3 {
+      color: #c62828;
+      margin-bottom: 10px;
+    }
+
+    .error-message p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🗺️ Mapa Interactivo Metro Barcelona</h1>
+    <div class="nav-buttons">
+      <a href="/" class="btn btn-light">🔍 Consultas SPARQL</a>
+      <button id="refresh-btn" class="btn btn-light">🔄 Recargar</button>
+    </div>
+  </header>
+
+  <div id="map-container">
+    <div id="map"></div>
+    
+    <div class="route-finder">
+      <h3>🔍 Buscar Ruta</h3>
+      <select id="origin-select">
+        <option value="">Selecciona estación de origen...</option>
+      </select>
+      <select id="destination-select">
+        <option value="">Selecciona estación de destino...</option>
+      </select>
+      <button id="find-route-btn" disabled>Buscar Ruta</button>
+      <div id="route-result"></div>
+    </div>
+    
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
+      <p>Cargando mapa del metro...</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>

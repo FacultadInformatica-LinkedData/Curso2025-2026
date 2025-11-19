@@ -49,6 +49,13 @@ besafe:tieneLugarEn
     rdfs:domain besafe:MedicionHoraria ;
     rdfs:range besafe:Estacion .
 
+# NUEVA RELACIÓN PARA UNIR EPISODIOS CON ESTACIONES
+besafe:afectaAEstacion
+    a owl:ObjectProperty ;
+    rdfs:label "afecta a estación"@es ;
+    rdfs:domain besafe:EpisodioOzono ;
+    rdfs:range besafe:Estacion .
+
 
 
 #atributos

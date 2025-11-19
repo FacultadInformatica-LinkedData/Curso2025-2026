@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Full R1–R6 Compliance — TMB Metro Datasets</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --ok:#1b8f3a;--warn:#b58900;--fail:#c62828;--muted:#666;
+      --bg:linear-gradient(135deg, #667eea 0%, #764ba2 100%);--card:#ffffff;--line:#e0e0e0;--text:#333;
+    }
+    html,body{background:var(--bg);color:var(--text)}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.55;margin:0;padding:20px;max-width:1100px;margin:0 auto}
+    header{background:rgba(255,255,255,0.95);border-radius:12px;padding:24px 20px;box-shadow:0 10px 40px rgba(0,0,0,0.2);margin-bottom:20px}
+    header h1{margin:0 0 .25rem;font-size:1.85rem;color:#333}
+    header p{color:var(--muted);margin:.25rem 0 1.25rem}
+    .legend{display:flex;gap:1rem;margin:.25rem 0 1rem;flex-wrap:wrap}
+    .dot{display:inline-block;width:.75rem;height:.75rem;border-radius:50%;margin-right:.4rem;vertical-align:middle}
+    .ok{color:var(--ok)} .warn{color:var(--warn)} .fail{color:var(--fail)}
+    section,article{border:none;border-radius:12px;padding:1.25rem 1.5rem;margin:1rem 0;background:var(--card);box-shadow:0 10px 40px rgba(0,0,0,0.2)}
+    h2{margin:.25rem 0 .75rem;font-size:1.25rem}
+    h3{margin:1rem 0 .35rem;font-size:1.1rem}
+    .grid{display:grid;grid-template-columns:1fr;gap:.65rem}
+    @media(min-width:840px){.grid{grid-template-columns:1fr 1fr}}
+    .req{display:grid;grid-template-columns:7.5rem 1fr;gap:.35rem 1rem;padding:.75rem;border:1px dashed var(--line);border-radius:12px;margin:.5rem 0;background:#f9f9f9}
+    .req b{white-space:nowrap}
+    .status{font-weight:700}
+    .status.ok{color:var(--ok)}
+    .status.warn{color:var(--warn)}
+    .status.fail{color:var(--fail)}
+    .checks{margin:.35rem 0 .15rem;padding-left:0;list-style:none;display:grid;gap:.4rem}
+    .check{display:flex;gap:.5rem;align-items:flex-start}
+    .badge{display:inline-flex;align-items:center;gap:.4rem;font:600 .9rem/1.2 system-ui;padding:.2rem .5rem;border-radius:999px;border:1px solid var(--line);background:#f0f0f0;color:#333}
+    .badge.ok{border-color:rgba(27,143,58,.35);background:rgba(27,143,58,.12)}
+    .badge.warn{border-color:rgba(181,137,0,.35);background:rgba(181,137,0,.12)}
+    .muted{color:var(--muted)}
+    a{color:inherit;text-decoration:underline dotted}
+    code{background:#f1f5f9;padding:.12rem .35rem;border:1px solid var(--line);border-radius:6px;color:#333}
+    .kvs{display:grid;grid-template-columns:12rem 1fr;gap:.25rem 1rem;margin:.25rem 0 0}
+    footer{margin-top:1.25rem;color:var(--muted);font-size:.95rem}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚇 Full R1–R6 Compliance — TMB Metro Datasets</h1>
+    <p>Analyzed datasets from <b>TMB</b> (Transports Metropolitans de Barcelona): stations per line and metro lines.</p>
+    <p style="margin:10px 0 0;font-size:0.95rem"><a href="/" style="color:#667eea;text-decoration:none;font-weight:600">← Volver a la aplicación</a></p>
+    <div class="legend">
+      <span><span class="dot ok" style="background:var(--ok)"></span>Compliant</span>
+      <span><span class="dot warn" style="background:var(--warn)"></span>Partial / Review</span>
+      <span><span class="dot fail" style="background:var(--fail)"></span>Non‑compliant</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Requirement definitions</h2>
+    <ul>
+      <li><b>R1</b> — Belongs to a Smart City domain (Mobility/Transport).</li>
+      <li><b>R2</b> — Data are available in <b>CSV</b> format.</li>
+      <li><b>R3</b> — Data are published under an open license (e.g., <i>CC BY 4.0</i> or equivalent open terms).</li>
+      <li><b>R4</b> — Data can be linked internally (keys/references) and externally (e.g., geographic coordinates).</li>
+      <li><b>R5</b> — Dataset documentation and field dictionary are publicly available.</li>
+      <li><b>R6</b> — Can be integrated with external sources (multi‑source integration).</li>
+    </ul>
+  </section>
+
+  <section id="datasets">
+    <h2>TMB Datasets</h2>
+    <div class="grid">
+
+      <article>
+        <h3>Stations per Line (estacions_linia)</h3>
+        <div class="kvs">
+          <div>Dataset</div><div><a href="https://developer.tmb.cat/data/estacions#estacions_linia" target="_blank">developer.tmb.cat/data/estacions#estacions_linia</a></div>
+          <div>Key fields</div><div><code>id_estacio</code>, <code>id_linia</code>, order, direction</div>
+        </div>
+        <ul class="checks">
+          <li class="check"><span class="badge ok">R1 ✔</span> Transport domain.</li>
+          <li class="check"><span class="badge ok">R2 ✔</span> Available as CSV.</li>
+          <li class="check"><span class="badge ok">R3 ✔</span> Open license from the portal.</li>
+          <li class="check"><span class="badge ok">R4 ✔</span> Joinable by <code>id_estacio</code> and <code>id_linia</code>.</li>
+          <li class="check"><span class="badge ok">R5 ✔</span> Documentation and description provided.</li>
+          <li class="check"><span class="badge warn">R6 ◑</span> Links with “Stations” and “Lines”; other external integration optional.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Metro Lines (linies_metro)</h3>
+        <div class="kvs">
+          <div>Dataset</div><div><a href="https://developer.tmb.cat/data/linies#linies_metro" target="_blank">developer.tmb.cat/data/linies#linies_metro</a></div>
+          <div>Key fields</div><div><code>id_linia</code>, code, name, corporate color</div>
+        </div>
+        <ul class="checks">
+          <li class="check"><span class="badge ok">R1 ✔</span> Mobility/Transport domain.</li>
+          <li class="check"><span class="badge ok">R2 ✔</span> Available as CSV.</li>
+          <li class="check"><span class="badge ok">R3 ✔</span> Open license (portal).</li>
+          <li class="check"><span class="badge ok">R4 ✔</span> Key <code>id_linia</code> used across related tables.</li>
+          <li class="check"><span class="badge ok">R5 ✔</span> Field dictionary included.</li>
+          <li class="check"><span class="badge warn">R6 ◑</span> Possible cross‑integration with multimodal networks.</li>
+        </ul>
+      </article>
+
+
+    </div>
+  </section>
+
+  <section id="links">
+    <h2>Entities in the selected datasets that can be linked with entities with entities in other datasets</h2>
+    <ul>
+      <li>Entidad</li>
+      <li>Operador</li>
+      <li>Línea</li>
+      <li>Estación/Parada</li>
+      <li>EstaciónEnLínea</li>
+      <li>Familia/Tipo de transporte</li>
+      <li>Correspondencia/Intercambiador</li>
+      <li>Dirección</li>
+    </ul>
+  </section>
+  <section id="summary">
+    <h2>Global compliance summary</h2>
+    <div class="req">
+      <b>R1</b><div class="status ok">Compliant — Mobility/Transport domain.</div>
+      <b>R2</b><div class="status ok">Compliant — All datasets are provided in CSV format.</div>
+      <b>R3</b><div class="status ok">Compliant — Open license declared in each dataset page.</div>
+      <b>R4</b><div class="status ok">Compliant — Inter‑linkable keys and geospatial references.</div>
+      <b>R5</b><div class="status ok">Compliant — Documentation and field dictionaries available.</div>
+      <b>R6</b><div class="status warn">Partial — Single‑source (TMB) but integrable with other data providers.</div>
+    </div>
+  </section>
+</body>
+</html>

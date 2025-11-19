@@ -1,147 +1,89 @@
-@prefix : <http://eventFinder.org/madrid-data/> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/group11/ontology/cultural-events#> .
+@prefix ce-res: <http://example.org/group11/resource/cultural-events/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-# ==============================================================================
-# SAMPLE INSTANTIATION - Event Finder Madrid Data
-# ==============================================================================
+#####################################
+# INSTANCIAS DE CLASES DE APOYO
+#####################################
 
+# Distrito USERA
+ce-res:district/usera
+    a :District ;
+    :districtName "USERA"@es ;
+    rdfs:label "Distrito de Usera"@es .
 
-:event001 a schema:MusicEvent ;
-    schema:name "Concierto de Ópera: La Traviata"@es ;
-    schema:name "Opera Concert: La Traviata"@en ;
-    schema:description "Representación de la ópera de Giuseppe Verdi en el Teatro Real"@es ;
-    schema:startDate "2025-10-15T20:00:00"^^xsd:dateTime ;
-    schema:endDate "2025-10-15T22:30:00"^^xsd:dateTime ;
-    schema:location :venue001 ;
-    schema:organizer :org001 ;
-    schema:url <https://www.teatro-real.com/events/traviata> ;
-    schema:image <https://www.teatro-real.com/images/traviata.jpg> ;
-    schema:offers :ticket001 ;
-    dcterms:created "2025-09-01T10:00:00"^^xsd:dateTime ;
-    dcterms:modified "2025-10-01T15:30:00"^^xsd:dateTime .
+# Barrio ORCASITAS
+ce-res:neighborhood/orcasitas
+    a :Neighborhood ;
+    :neighborhoodName "ORCASITAS"@es ;
+    rdfs:label "Barrio de Orcasitas"@es .
 
+# Categoría de audiencia: Niños
+ce-res:audience/ninos
+    a :AudienceCategory ;
+    :audienceLabel "/usuario/Niños" ;
+    rdfs:label "Niños"@es .
 
-:venue001 a schema:EventVenue ;
-    schema:name "Teatro Real"@es ;
-    schema:address :address001 ;
-    geo:lat "40.418005"^^xsd:decimal ;
-    geo:long "-3.710871"^^xsd:decimal ;
-    schema:telephone "+34915160660" ;
-    schema:url <https://www.teatro-real.com> ;
-    schema:maximumAttendeeCapacity "1746"^^xsd:integer .
+# Tipo de evento: Teatro / Performance
+ce-res:eventType/teatro-performance
+    a :EventType ;
+    :eventTypeLabel "/contenido/actividades/TeatroPerformance" ;
+    rdfs:label "Teatro y performance"@es .
 
-:address001 a schema:PostalAddress ;
-    schema:streetAddress "Plaza de Isabel II, s/n" ;
-    schema:addressLocality "Madrid" ;
-    schema:postalCode "28013" ;
-    schema:addressRegion "Comunidad de Madrid" ;
-    schema:addressCountry "ES" .
+#####################################
+# INSTALACIÓN (VENUE)
+#####################################
 
+ce-res:venue/centro-cultural-meseta-orcasitas-usera
+    a :Venue ;
+    :venueName "Centro Cultural Meseta de Orcasitas (Usera)"@es ;
+    :venuePage <http://www.madrid.es/sites/v/index.jsp?vgnextoid=fbd91e79ee71c010VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD> ;
+    :accessibilityInfo "1" ;
+    :streetType "PLAZA" ;
+    :streetName "ASOCIACION" ;
+    :streetNumber "1" ;
+    :postalCode "28041" ;
+    :coordX "439882"^^xsd:decimal ;
+    :coordY "4469031"^^xsd:decimal ;
+    wgs84:lat "40.36969488211539"^^xsd:decimal ;
+    wgs84:long "-3.7081179166391824"^^xsd:decimal ;
+    :isInDistrict ce-res:district/usera ;
+    :isInNeighborhood ce-res:neighborhood/orcasitas ;
+    rdfs:label "Centro Cultural Meseta de Orcasitas (Usera)"@es .
 
-:org001 a schema:Organization ;
-    schema:name "Fundación Teatro Real" ;
-    schema:url <https://www.teatro-real.com> ;
-    schema:email "info@teatro-real.com" ;
-    foaf:homepage <https://www.teatro-real.com> ;
-    schema:telephone "+34915160660" .
+#####################################
+# ACTIVIDAD
+#####################################
 
+ce-res:activity/actividades-centro-cultural-meseta-orcasitas
+    a :Activity ;
+    :activityTitle "Actividades en el Centro Cultural Meseta de Orcasitas"@es ;
+    :activityPage <http://www.madrid.es/sites/v/index.jsp?vgnextoid=82fe2d24e6f61910VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD> ;
+    rdfs:label "Actividades en el Centro Cultural Meseta de Orcasitas"@es .
 
-:ticket001 a schema:Offer ;
-    schema:price "45.00"^^xsd:decimal ;
-    schema:priceCurrency "EUR" ;
-    schema:availability schema:InStock ;
-    schema:validFrom "2025-09-01T00:00:00"^^xsd:dateTime ;
-    schema:url <https://www.teatro-real.com/tickets/traviata> .
+#####################################
+# EVENTO
+#####################################
 
-:event002 a schema:Festival ;
-    schema:name "Festival de Otoño en el Retiro"@es ;
-    schema:name "Autumn Festival at Retiro Park"@en ;
-    schema:description "Festival cultural con música, teatro y danza al aire libre"@es ;
-    schema:startDate "2025-10-20T11:00:00"^^xsd:dateTime ;
-    schema:endDate "2025-10-22T21:00:00"^^xsd:dateTime ;
-    schema:location :venue002 ;
-    schema:organizer :org002 ;
-    schema:subEvent :event003, :event004 ;
-    schema:eventStatus schema:EventScheduled ;
-    dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
-
-
-:venue002 a schema:Park ;
-    schema:name "Parque del Retiro"@es ;
-    schema:name "Retiro Park"@en ;
-    schema:address :address002 ;
-    geo:lat "40.415363"^^xsd:decimal ;
-    geo:long "-3.684273"^^xsd:decimal ;
-    schema:openingHours "Mo-Su 06:00-22:00" ;
-    schema:isAccessibleForFree true .
-
-:address002 a schema:PostalAddress ;
-    schema:streetAddress "Plaza de la Independencia, 7" ;
-    schema:addressLocality "Madrid" ;
-    schema:postalCode "28001" ;
-    schema:addressRegion "Comunidad de Madrid" ;
-    schema:addressCountry "ES" .
-
-
-:org002 a schema:GovernmentOrganization ;
-    schema:name "Ayuntamiento de Madrid" ;
-    schema:url <https://www.madrid.es> ;
-    schema:email "cultura@madrid.es" .
-
-
-:event003 a schema:TheaterEvent ;
-    schema:name "Representación Teatral: Don Juan Tenorio" ;
-    schema:startDate "2025-10-20T18:00:00"^^xsd:dateTime ;
-    schema:endDate "2025-10-20T20:00:00"^^xsd:dateTime ;
-    schema:location :venue002 ;
-    schema:superEvent :event002 .
-
-:event004 a schema:MusicEvent ;
-    schema:name "Concierto de Jazz al Atardecer" ;
-    schema:startDate "2025-10-21T19:00:00"^^xsd:dateTime ;
-    schema:endDate "2025-10-21T21:00:00"^^xsd:dateTime ;
-    schema:location :venue002 ;
-    schema:superEvent :event002 ;
-    schema:performer :artist001 .
-
-
-:artist001 a schema:MusicGroup ;
-    schema:name "Madrid Jazz Quartet" ;
-    schema:genre "Jazz" ;
-    foaf:homepage <https://www.madridjazzquartet.com> .
-
-
-:sensor001 a sosa:Sensor ;
-    rdfs:label "Temperature Sensor - Retiro Park" ;
-    sosa:observes :temperature-property .
-
-:observation001 a sosa:Observation ;
-    sosa:hasFeatureOfInterest :venue002 ;
-    sosa:observedProperty :temperature-property ;
-    sosa:madeBySensor :sensor001 ;
-    sosa:hasSimpleResult "22.5"^^xsd:decimal ;
-    sosa:resultTime "2025-10-05T14:30:00"^^xsd:dateTime .
-
-:temperature-property a sosa:ObservableProperty ;
-    rdfs:label "Air Temperature" .
-
-
-:festivalDuration a time:ProperInterval ;
-    time:hasBeginning :festivalStart ;
-    time:hasEnd :festivalEnd .
-
-:festivalStart a time:Instant ;
-    time:inXSDDateTimeStamp "2025-10-20T11:00:00Z"^^xsd:dateTimeStamp .
-
-:festivalEnd a time:Instant ;
-    time:inXSDDateTimeStamp "2025-10-22T21:00:00Z"^^xsd:dateTimeStamp .
+ce-res:event/50065251
+    a :Event ;
+    :eventId 50065251 ;
+    :title "4 patas tiene un cuento"@es ;
+    :price "" ;                         # PRECIO vacío en el CSV
+    :isFree true ;                      # GRATUITO = 1
+    :isLongDuration false ;             # LARGA-DURACION = 0
+    :daysOfWeek "" ;                    # DIAS-SEMANA vacío
+    :excludedDays "" ;                  # DIAS-EXCLUIDOS vacío
+    :startDate "2025-10-05T00:00:00"^^xsd:dateTime ;
+    :endDate "2025-10-05T23:59:00"^^xsd:dateTime ;
+    :startTime "12:00:00"^^xsd:time ;
+    :description "Compañía: El perro Verde. Categoría: infantil. (Texto completo de la descripción del CSV)."@es ;
+    :eventPage <http://www.madrid.es/sites/v/index.jsp?vgnextoid=64e4c9cfcf579910VgnVCM200000f921e388RCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD> ;
+    :hasActivity ce-res:activity/actividades-centro-cultural-meseta-orcasitas ;
+    :hasVenue ce-res:venue/centro-cultural-meseta-orcasitas-usera ;
+    :hasAudience ce-res:audience/ninos ;
+    :hasEventType ce-res:eventType/teatro-performance ;
+    rdfs:label "4 patas tiene un cuento"@es .

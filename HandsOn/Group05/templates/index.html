@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Grupo 05 - Calidad del Aire de BCN</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 2em; }
+        textarea { width: 90%; height: 150px; font-family: monospace; }
+        button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+        #results { background: #f4f4f4; border: 1px solid #ccc; padding: 10px; margin-top: 15px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #eee; }
+    </style>
+</head>
+<body>
+    <h2>Demo de SPARQL</h2>
+    
+    <textarea id="sparqlQuery">
+PREFIX ex: <http://example.com/ns/airquality#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+#consulta prueba 
+SELECT ?nombreEstacion ?valorNO2
+WHERE {
+  ?lectura a ex:AirQualityReading ;
+           ex:no2_value ?valorNO2 ;
+           ex:madeByStation ?estacion .
+  ?estacion rdfs:label ?nombreEstacion .
+  
+  FILTER(BOUND(?valorNO2))
+}
+LIMIT 10
+    </textarea>
+    
+    <br>
+    <button id="runQueryBtn">Ejecutar Consulta</button>
+    
+    <h3>Resultados:</h3>
+    <div id="results">
+        <p></p>
+    </div>
+
+    <script>
+        document.getElementById('runQueryBtn').addEventListener('click', function() {
+            const query = document.getElementById('sparqlQuery').value;
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p>Cargando...</p>';
+
+            fetch('/query', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ query: query })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    resultsDiv.innerHTML = <p style="color: red;">Error: ${data.error}</p>;
+                    return;
+                }
+                
+                const results = data.results;
+                if (results.length === 0) {
+                    resultsDiv.innerHTML = '<p>La consulta no devolvió resultados.</p>';
+                    return;
+                }
+
+                let table = '<table><thead><tr>';
+                const headers = Object.keys(results[0]);
+                headers.forEach(header => table += <th>${header}</th>);
+                table += '</tr></thead><tbody>';
+
+                results.forEach(row => {
+                    table += '<tr>';
+                    headers.forEach(header => table += <td>${row[header]}</td>);
+                    table += '</tr>';
+                });
+
+                table += '</tbody></table>';
+                resultsDiv.innerHTML = table;
+            })
+            .catch(error => {
+                resultsDiv.innerHTML = <p style="color: red;">Error de conexión: ${error}</p>;
+            });
+        });
+    </script>
+</body>
+</html>
+

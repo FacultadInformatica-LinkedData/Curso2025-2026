@@ -1,0 +1,45 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:  <https://datos.bne.es/resource/> .
+@prefix ns2:  <https://datos.bne.es/def/> .
+@prefix ns4:  <http://purl.org/dc/terms/> .
+@prefix ns5:  <http://id.loc.gov/vocabulary/languages/> .
+
+ns1:a3316285 
+    rdf:type ns2:C1003 ;
+    rdfs:label "Actas de las II Jornadas sobre Ontologías Web y Semántica" ;
+    ns4:language ns5:spa ;
+    ns2:id "a3316285" ;
+
+    ns2:OP3001 
+        <https://datos.bne.es/resource/1000003906>,
+        <https://datos.bne.es/resource/1000003907>,
+        <https://datos.bne.es/resource/1000003908> ;
+
+    ns2:OP3004 ns1:XX4435380 ;
+
+    ns2:OP3006 
+        ns1:XX4430054,
+        ns1:XX1464262 ;
+
+    ns2:OP3008
+        ns1:XX771271,
+        ns1:XX4436602 ;
+
+    ns2:P3001 "Thomson" ;
+    ns2:P3002 "Actas de las II Jornadas sobre Ontologías Web y Semántica" ;
+    ns2:P3003 "Madrid" ;
+    ns2:P3004 "IV, 75 p." ;
+    ns2:P3005 "[Texto impreso]" ;
+    ns2:P3006 "[2007]" ;
+    ns2:P3007 "24 cm" ;
+    ns2:P3008 "WebSemántica'2007 ; editores, Óscar Corcho ... [et al.]" ;
+    ns2:P3009 "M 38241-2007" ;
+    ns2:P3012 "il." ;
+    ns2:P3013 "978-84-9732-612-4" ;
+    ns2:P3015 
+        "Incluye referencias bibliográficas e índice",
+        "\"Web Semántica España\"",
+        "Textos en español e inglés",
+        "Jornadas desarrolladas en el marco del II Congreso Español de Informática (CEDI 2007) celebrado en Zaragoza del 11 al 14 de septiembre de 2007" ;
+    ns2:P3064 "Libro" .

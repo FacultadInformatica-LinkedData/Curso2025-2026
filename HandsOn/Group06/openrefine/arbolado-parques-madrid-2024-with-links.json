@@ -1034,5 +1034,31 @@
     "newColumnName": "same_as_wikidata_species",
     "columnInsertIndex": 3,
     "description": "Create column same_as_wikidata_species at index 3 based on column species using expression grel:\"https://wikidata.org/entitiy/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_parkName",
+    "expression": "grel:value.replace(\"entitiy/\", \"entity/\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column same_as_wikidata_parkName using expression grel:value.replace(\"entitiy/\", \"entity/\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_species",
+    "expression": "grel:value.replace(\"entitiy/\", \"entity/\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column same_as_wikidata_species using expression grel:value.replace(\"entitiy/\", \"entity/\")"
   }
 ]

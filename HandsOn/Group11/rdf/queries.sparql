@@ -2,8 +2,8 @@
 # Group 11 - Event Finder Madrid Data
 
 # Define prefixes
-PREFIX mdo: <http://eventFinder.org/madrid-data/ontology#>
-PREFIX mdr: <http://eventFinder.org/madrid-data/resource/>
+PREFIX schema: <http://schema.org/>
+PREFIX mde: <http://madrid-events.es/def/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -21,7 +21,7 @@ WHERE {
 # Query 2: Count Event instances (should be 744)
 SELECT (COUNT(?event) as ?totalEvents)
 WHERE {
-  ?event a mdo:Event .
+  ?event a schema:Event .
 }
 
 # ------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ WHERE {
 # Query 3: List all properties used in Events
 SELECT DISTINCT ?property (COUNT(*) as ?usage)
 WHERE {
-  ?event a mdo:Event ;
+  ?event a schema:Event ;
          ?property ?value .
 }
 GROUP BY ?property
@@ -40,56 +40,64 @@ ORDER BY DESC(?usage)
 # Query 4: Check Events with complete main information
 SELECT (COUNT(DISTINCT ?event) as ?completeEvents)
 WHERE {
-  ?event a mdo:Event ;
-         mdo:idEvento ?id ;
-         mdo:titulo ?titulo ;
-         mdo:fecha ?fecha ;
-         mdo:nombreInstalacion ?instalacion .
+  ?event a schema:Event ;
+         schema:name ?titulo ;
+         schema:startDate ?fecha ;
+         schema:location ?instalacion .
 }
 
 # ------------------------------------------------------------------------------
 
-# Query 5: Find duplicate event IDs
-SELECT ?id (COUNT(?event) as ?duplicates)
+# Query 5: Find duplicate event IDs (checking URIs)
+# Note: IDs are in the URI itself (event/{ID-EVENTO})
+SELECT ?event (COUNT(?event) as ?duplicates)
 WHERE {
-  ?event a mdo:Event ;
-         mdo:idEvento ?id .
+  ?event a schema:Event .
 }
-GROUP BY ?id
+GROUP BY ?event
 HAVING (COUNT(?event) > 1)
 
 # ------------------------------------------------------------------------------
 
 # Query 6: Verify free vs paid events consistency
-SELECT (COUNT(?inconsistent) as ?inconsistentPricing)
+# Note: In the mapping, only isAccessibleForFree is mapped, not precio separately
+SELECT (COUNT(?event) as ?freeEvents) (COUNT(?notFree) as ?paidEvents)
 WHERE {
-  ?inconsistent a mdo:Event ;
-                mdo:precio ?precio ;
-                mdo:gratuito ?gratuito .
-  FILTER(
-    (?gratuito = 1 && ?precio != "" && ?precio != "0") ||
-    (?gratuito = 0 && (?precio = "" || ?precio = "0"))
-  )
+  {
+    SELECT ?event WHERE {
+      ?event a schema:Event ;
+             schema:isAccessibleForFree true .
+    }
+  }
+  UNION
+  {
+    SELECT ?notFree WHERE {
+      ?notFree a schema:Event ;
+               schema:isAccessibleForFree false .
+    }
+  }
 }
 
 # ------------------------------------------------------------------------------
 
-# Query 7: Distribution of events by district
-SELECT ?distrito (COUNT(?event) as ?eventCount)
+# Query 7: Distribution of events by district (via Place address)
+SELECT ?distrito (COUNT(DISTINCT ?event) as ?eventCount)
 WHERE {
-  ?event a mdo:Event ;
-         mdo:distritoInstalacion ?distrito .
+  ?event a schema:Event ;
+         schema:location ?place .
+  ?place schema:address ?address .
+  ?address schema:addressLocality ?distrito .
 }
 GROUP BY ?distrito
 ORDER BY DESC(?eventCount)
 
 # ------------------------------------------------------------------------------
 
-# Query 8: Distribution of events by type
+# Query 8: Distribution of events by type (using mde:eventType)
 SELECT ?tipo (COUNT(?event) as ?numberOfEvents)
 WHERE {
-  ?event a mdo:Event ;
-         mdo:tipo ?tipo .
+  ?event a schema:Event ;
+         mde:eventType ?tipo .
 }
 GROUP BY ?tipo
 ORDER BY DESC(?numberOfEvents)
@@ -97,14 +105,17 @@ ORDER BY DESC(?numberOfEvents)
 # ------------------------------------------------------------------------------
 
 # Query 9: Sample events with main properties
-SELECT ?event ?titulo ?fecha ?precio ?distrito ?tipo
+SELECT ?event ?titulo ?fecha ?gratuito ?nombreLugar ?tipo
 WHERE {
-  ?event a mdo:Event ;
-         mdo:titulo ?titulo ;
-         mdo:fecha ?fecha .
-  OPTIONAL { ?event mdo:precio ?precio }
-  OPTIONAL { ?event mdo:distritoInstalacion ?distrito }
-  OPTIONAL { ?event mdo:tipo ?tipo }
+  ?event a schema:Event ;
+         schema:name ?titulo ;
+         schema:startDate ?fecha .
+  OPTIONAL { ?event schema:isAccessibleForFree ?gratuito }
+  OPTIONAL { 
+    ?event schema:location ?place .
+    ?place schema:name ?nombreLugar 
+  }
+  OPTIONAL { ?event mde:eventType ?tipo }
 }
 ORDER BY ?fecha
 LIMIT 10
@@ -115,26 +126,28 @@ LIMIT 10
 SELECT 
   (COUNT(DISTINCT ?event) as ?totalEvents)
   (COUNT(DISTINCT ?gratuito) as ?freeEvents) 
-  (COUNT(DISTINCT ?distrito) as ?districtsWithEvents)
+  (COUNT(DISTINCT ?place) as ?placesWithEvents)
   (COUNT(DISTINCT ?tipo) as ?eventTypes)
 WHERE {
-  ?event a mdo:Event .
+  ?event a schema:Event .
   OPTIONAL { 
-    ?event mdo:gratuito ?g .
-    FILTER(?g = 1)
+    ?event schema:isAccessibleForFree ?g .
+    FILTER(?g = true)
     BIND(?event as ?gratuito)
   }
-  OPTIONAL { ?event mdo:distritoInstalacion ?distrito }
-  OPTIONAL { ?event mdo:tipo ?tipo }
+  OPTIONAL { ?event schema:location ?place }
+  OPTIONAL { ?event mde:eventType ?tipo }
 }
 
 # ------------------------------------------------------------------------------
 
 # Query 11: Validate Madrid postal codes (should start with 28)
-SELECT (COUNT(?event) as ?invalidPostalCodes)
+SELECT (COUNT(?event) as ?eventsWithInvalidPostalCodes)
 WHERE {
-  ?event a mdo:Event ;
-         mdo:codigoPostalInstalacion ?codigoPostal .
+  ?event a schema:Event ;
+         schema:location ?place .
+  ?place schema:address ?address .
+  ?address schema:postalCode ?codigoPostal .
   FILTER(!REGEX(STR(?codigoPostal), "^28"))
 }
 
@@ -143,9 +156,121 @@ WHERE {
 # Query 12: Check data types
 SELECT ?property (DATATYPE(?value) as ?datatype) (COUNT(*) as ?count)
 WHERE {
-  ?event a mdo:Event ;
+  ?event a schema:Event ;
          ?property ?value .
   FILTER(isLiteral(?value))
 }
 GROUP BY ?property ?datatype
 ORDER BY ?property
+
+# ------------------------------------------------------------------------------
+
+# Query 13: List all Schema.org Event subtypes used
+# (Generated dynamically from TIPO field)
+SELECT DISTINCT ?subtype (COUNT(?event) as ?count)
+WHERE {
+  ?event a schema:Event ;
+         a ?subtype .
+  FILTER(?subtype != schema:Event)
+}
+GROUP BY ?subtype
+ORDER BY DESC(?count)
+
+# ------------------------------------------------------------------------------
+
+# Query 14: Events with their locations and addresses
+SELECT ?eventName ?placeName ?streetAddress ?postalCode
+WHERE {
+  ?event a schema:Event ;
+         schema:name ?eventName ;
+         schema:location ?place .
+  ?place schema:name ?placeName ;
+         schema:address ?address .
+  OPTIONAL { ?address schema:streetAddress ?streetAddress }
+  OPTIONAL { ?address schema:postalCode ?postalCode }
+}
+LIMIT 20
+
+# ------------------------------------------------------------------------------
+
+# Query 15: Count events by attendance mode
+SELECT ?attendanceMode (COUNT(?event) as ?count)
+WHERE {
+  ?event a schema:Event ;
+         schema:eventAttendanceMode ?attendanceMode .
+}
+GROUP BY ?attendanceMode
+
+# ------------------------------------------------------------------------------
+
+# Query 16: Find events by date range (example for November 2024)
+SELECT ?event ?name ?startDate ?endDate
+WHERE {
+  ?event a schema:Event ;
+         schema:name ?name ;
+         schema:startDate ?startDate .
+  OPTIONAL { ?event schema:endDate ?endDate }
+  FILTER(?startDate >= "2024-11-01T00:00:00"^^xsd:dateTime && 
+         ?startDate < "2024-12-01T00:00:00"^^xsd:dateTime)
+}
+ORDER BY ?startDate
+LIMIT 20
+
+# ------------------------------------------------------------------------------
+
+# Query 17: Events with accessibility information
+SELECT ?eventName ?placeName ?accessibility
+WHERE {
+  ?event a schema:Event ;
+         schema:name ?eventName ;
+         schema:location ?place .
+  ?place schema:name ?placeName ;
+         mde:accessibility ?accessibility .
+}
+LIMIT 20
+
+# ------------------------------------------------------------------------------
+
+# Query 18: Check for events without required properties
+SELECT ?event 
+       (BOUND(?name) as ?hasName)
+       (BOUND(?startDate) as ?hasStartDate)
+       (BOUND(?location) as ?hasLocation)
+WHERE {
+  ?event a schema:Event .
+  OPTIONAL { ?event schema:name ?name }
+  OPTIONAL { ?event schema:startDate ?startDate }
+  OPTIONAL { ?event schema:location ?location }
+  FILTER(!BOUND(?name) || !BOUND(?startDate) || !BOUND(?location))
+}
+LIMIT 20
+
+# ------------------------------------------------------------------------------
+
+# Query 19: Events grouped by audience
+SELECT ?audience (COUNT(?event) as ?count)
+WHERE {
+  ?event a schema:Event ;
+         schema:audience ?audience .
+}
+GROUP BY ?audience
+ORDER BY DESC(?count)
+
+# ------------------------------------------------------------------------------
+
+# Query 20: Sample query showing full event structure
+SELECT ?event ?name ?description ?startDate ?endDate ?url 
+       ?isAccessibleForFree ?placeName ?placeUrl
+WHERE {
+  ?event a schema:Event ;
+         schema:name ?name ;
+         schema:startDate ?startDate ;
+         schema:location ?place .
+  ?place schema:name ?placeName .
+  OPTIONAL { ?event schema:description ?description }
+  OPTIONAL { ?event schema:endDate ?endDate }
+  OPTIONAL { ?event schema:url ?url }
+  OPTIONAL { ?event schema:isAccessibleForFree ?isAccessibleForFree }
+  OPTIONAL { ?place schema:url ?placeUrl }
+}
+LIMIT 5

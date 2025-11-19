@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns: <http://bcn-mobility-air.org/ontology/> .
+@prefix data: <http://bcn-mobility-air.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+#
+# 1. Administrative Entities
+#
+
+data:District/10 a ns:District ;
+    ns:name "Sant Martí"^^xsd:string .
+    
+data:Neighborhood/69 a ns:Neighborhood ;
+    ns:name "Diagonal Mar i el Front Marítim del Poblenou"^^xsd:string .
+
+#
+# 2. Road Segment (from itineraris-updated.csv)
+#
+
+data:RoadSegment/4 a ns:RoadSegment ;
+    ns:name "Diagonal"^^xsd:string ;
+    ns:startPoint "Pl. Pius XII"^^xsd:string ;
+    ns:endPoint "Doctor Marañón"^^xsd:string ;
+    ns:hasLocation data:Location/RoadSegment/4 ;
+    ns:hasCongestionMeasurement data:CongestionMeasurement/4/20250801T001053Z .
+
+data:Location/RoadSegment/4 a geo:Point ;
+    geo:lat "41.38719094189204"^^xsd:decimal ;
+    geo:long "2.122592049318304"^^xsd:decimal .
+
+data:CongestionMeasurement/4/20250801T001053Z a ns:Measurement ;
+    ns:datetime "2025-08-01T00:10:53Z"^^xsd:dateTime ;
+    ns:congestionLevel "Congestion"^^xsd:string .
+
+#
+# 3. Air Quality Station (from air-quality-updated.csv)
+#
+
+data:AirQualityStation/4 a ns:AirQualityStation ;
+    ns:name "Barcelona - Poblenou"^^xsd:string ;
+    ns:hasLocation data:Location/AirStation/4 ;
+    ns:isLocatedInDistrict data:District/10 ;
+    ns:hasAirQualityReading data:AirReading/4/NitricOxide/20250801T010000Z .
+
+data:Location/AirStation/4 a geo:Point ;
+    geo:lat "41.4039"^^xsd:decimal ;
+    geo:long "2.2045"^^xsd:decimal .
+
+# Reading of Nitric Oxide
+data:AirReading/4/NitricOxide/20250801T010000Z a ns:Measurement ;
+    ns:datetime "2025-08-01T01:00:00Z"^^xsd:dateTime ;
+    ns:value "1"^^xsd:float ;
+    ns:measuresPollutant data:Pollutant/NitricOxide .
+
+data:Pollutant/NitricOxide a ns:Pollutant ;
+    ns:name "nitric oxide"^^xsd:string .
+
+#
+# 4. Bicycle Parking (from bicis-updated.csv)
+#
+
+data:BicycleParking/Biciberg a ns:BicycleParking ;
+    ns:name "Aparcament Biciberg"^^xsd:string ;
+    ns:hasLocation data:Location/BiciParking/Biciberg ;
+    ns:isLocatedInDistrict data:District/10 ; 
+    ns:isLocatedInNeighborhood data:Neighborhood/69 . 
+
+data:Location/BiciParking/Biciberg a geo:Point ;
+    geo:lat "41.403736943589706"^^xsd:decimal ;
+    geo:long "2.214509524834235"^^xsd:decimal .

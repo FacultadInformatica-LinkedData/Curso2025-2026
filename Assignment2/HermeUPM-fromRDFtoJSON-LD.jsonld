@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://example-test.site/Class01",
+      "name": "Class01"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://example-test.site/Sensor029",
+      "name": "Sensor029",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "temperature",
+          "value": 29,
+          "unitText": "C"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "time",
+          "value": "2010-06-12T12:00:12"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "belongsTo",
+          "value": "Class01"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://example-test.site/Computer101",
+      "name": "Computer101",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "owner",
+          "value": "Pedro"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "belongsTo",
+          "value": "Class01"
+        }
+      ]
+    }
+  ]
+}

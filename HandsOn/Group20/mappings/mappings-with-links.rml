@@ -8,198 +8,310 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rev: <http://purl.org/stuff/rev#> .
-@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix schema: <http://schema.org/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix ns: <https://data.smartcitymadrid.es/ontology/parking#> .
-@prefix ex: <https://data.smartcitymadrid.es/id/parking/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix my: <https://data.smartcitymadrid.es/ontology/parking#> .
+@prefix ex: <https://data.smartcitymadrid.es/resource/parking/> .
 
-map:map_LocationTM_000 rml:logicalSource map:source_001 ;
+map:map_City_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "LocationTM" ;
-	rr:predicateObjectMap map:pom_015, map:pom_016, map:pom_017, map:pom_018, map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023 ;
-	rr:subjectMap map:s_001 .
+	rdfs:label "City" ;
+	rr:predicateObjectMap map:pom_024, map:pom_025, map:pom_026, map:pom_027, map:pom_028 ;
+	rr:subjectMap map:s_003 .
 
-map:map_triplesmap1_000 rml:logicalSource map:source_000 ;
+map:map_Country_000 rml:logicalSource map:source_006 ;
 	rdf:type rr:TriplesMap ;
-	rdfs:label "triplesmap1" ;
-	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012, map:pom_013, map:pom_014 ;
+	rdfs:label "Country" ;
+	rr:predicateObjectMap map:pom_033, map:pom_034, map:pom_035 ;
+	rr:subjectMap map:s_005 .
+
+map:map_Geometry_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Geometry" ;
+	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021, map:pom_022, map:pom_023 ;
+	rr:subjectMap map:s_002 .
+
+map:map_ParkingFacility_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "ParkingFacility" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012 ;
 	rr:subjectMap map:s_000 .
 
+map:map_PostalAddress_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "PostalAddress" ;
+	rr:predicateObjectMap map:pom_013, map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:subjectMap map:s_001 .
+
+map:map_Region_000 rml:logicalSource map:source_005 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "Region" ;
+	rr:predicateObjectMap map:pom_029, map:pom_030, map:pom_031, map:pom_032 ;
+	rr:subjectMap map:s_004 .
+
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant ns:Parking ;
+	rr:constant schema:ParkingFacility ;
 	rr:termType rr:IRI .
 
-map:om_001 rml:reference "id" ;
+map:om_001 rml:reference "identifier" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
 	rr:termType rr:Literal .
 
 map:om_002 rml:reference "family" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
 	rr:termType rr:Literal .
 
 map:om_003 rml:reference "name" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_004 rml:reference "email" ;
+map:om_004 rml:reference "category" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
-map:om_005 rml:reference "address" ;
+map:om_005 rml:reference "categoryCode" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
 	rr:termType rr:Literal .
 
-map:om_006 rml:reference "areaCode" ;
+map:om_006 rml:reference "email" ;
 	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
+	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_007 rml:reference "zrea" ;
+map:om_007 rml:reference "URLIcon" ;
 	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_008 rml:reference "wiki_data_zrea" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_009 rml:reference "category" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_010 rml:reference "catCode" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:integer ;
-	rr:termType rr:Literal .
-
-map:om_011 rml:reference "country" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_012 rml:reference "wiki_data_country" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_013 rml:reference "URLIcono" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_014 rdf:type rr:ObjectMap ;
-	rr:template "https://data.smartcitymadrid.es/id/parking/{id}/location" ;
-	rr:termType rr:IRI .
-
-map:om_015 rdf:type rr:ObjectMap ;
-	rr:constant ns:Location ;
-	rr:termType rr:IRI .
-
-map:om_016 rml:reference "long" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:double ;
-	rr:termType rr:Literal .
-
-map:om_017 rml:reference "lat" ;
-	rdf:type rr:ObjectMap ;
-	rr:datatype xsd:double ;
-	rr:termType rr:Literal .
-
-map:om_018 rml:reference "state" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_019 rml:reference "wiki_data_state" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_020 rml:reference "town" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:Literal .
-
-map:om_021 rml:reference "wiki_data_town" ;
-	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
-
-map:om_022 rml:reference "emtParking" ;
+map:om_008 rml:reference "EMTParking" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:boolean ;
 	rr:termType rr:Literal .
 
-map:om_023 rml:reference "type" ;
+map:om_009 rml:reference "type" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_010 rdf:type rr:ObjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/address/{identifier}" ;
+	rr:termType rr:IRI .
+
+map:om_011 rdf:type rr:ObjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/geom/{identifier}" ;
+	rr:termType rr:IRI .
+
+map:om_012 rdf:type rr:ObjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/city/{city}" ;
+	rr:termType rr:IRI .
+
+map:om_013 rdf:type rr:ObjectMap ;
+	rr:constant schema:PostalAddress ;
+	rr:termType rr:IRI .
+
+map:om_014 rml:reference "streetAddress" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
+
+map:om_015 rml:reference "postalCode" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:int ;
+	rr:termType rr:Literal .
+
+map:om_016 rml:reference "city" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_017 rml:reference "autonomousCommunity" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_018 rml:reference "country" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_019 rdf:type rr:ObjectMap ;
+	rr:constant geo:Point ;
+	rr:termType rr:IRI .
+
+map:om_020 rml:reference "long" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:double ;
+	rr:termType rr:Literal .
+
+map:om_021 rml:reference "lat" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:double ;
+	rr:termType rr:Literal .
+
+map:om_022 rdf:type rr:ObjectMap ;
+	rr:template "POINT({long} {lat})" ;
+	rr:termType rr:Literal .
+
+map:om_023 rml:reference "openStreetMapCoordinates" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_024 rdf:type rr:ObjectMap ;
+	rr:constant schema:City ;
+	rr:termType rr:IRI .
+
+map:om_025 rml:reference "city" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_026 rdf:type rr:ObjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/region/{autonomousCommunity}" ;
+	rr:termType rr:IRI .
+
+map:om_027 rdf:type rr:ObjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/country/{country}" ;
+	rr:termType rr:IRI .
+
+map:om_028 rml:reference "wikidataCity" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_029 rdf:type rr:ObjectMap ;
+	rr:constant my:AutonomousCommunity ;
+	rr:termType rr:IRI .
+
+map:om_030 rml:reference "autonomousCommunity" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_031 rdf:type rr:ObjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/country/{country}" ;
+	rr:termType rr:IRI .
+
+map:om_032 rml:reference "wikidataAutonomousCommunity" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_033 rdf:type rr:ObjectMap ;
+	rr:constant schema:Country ;
+	rr:termType rr:IRI .
+
+map:om_034 rml:reference "country" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_035 rml:reference "wikidataCountry" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
 
 map:pm_000 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_001 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasId .
+	rr:constant dcterms:identifier .
 
 map:pm_002 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasFamily .
+	rr:constant my:hasFamily .
 
 map:pm_003 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasName .
+	rr:constant schema:name .
 
 map:pm_004 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasEmail .
+	rr:constant my:hasCategory .
 
 map:pm_005 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasAddress .
+	rr:constant my:hasCategoryCode .
 
 map:pm_006 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasAreaCode .
+	rr:constant vcard:email .
 
 map:pm_007 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasArea .
+	rr:constant my:hasURLIcon .
 
 map:pm_008 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant my:isEMTParking .
 
 map:pm_009 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasCategory .
+	rr:constant my:hasType .
 
 map:pm_010 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasCategoryCode .
+	rr:constant schema:address .
 
 map:pm_011 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasCountry .
+	rr:constant geo:hasGeometry .
 
 map:pm_012 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant my:containedInCity .
 
 map:pm_013 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasURLIcon .
-
-map:pm_014 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasLocation .
-
-map:pm_015 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant schema:streetAddress .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant schema:postalCode .
+
 map:pm_016 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasLongitude .
+	rr:constant schema:addressLocality .
 
 map:pm_017 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasLatitude .
+	rr:constant schema:addressRegion .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasState .
+	rr:constant schema:addressCountry .
 
 map:pm_019 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant rdf:type .
 
 map:pm_020 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasTown .
+	rr:constant geo:long .
 
 map:pm_021 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant geo:lat .
 
 map:pm_022 rdf:type rr:PredicateMap ;
-	rr:constant ns:isEMTParking .
+	rr:constant geo:asWKT .
 
 map:pm_023 rdf:type rr:PredicateMap ;
-	rr:constant ns:hasType .
+	rr:constant owl:sameAs .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant schema:name .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant my:containedInRegion .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant my:containedInNation .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant schema:name .
+
+map:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant my:containedInCountry .
+
+map:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant schema:name .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_000 ;
@@ -297,19 +409,100 @@ map:pom_023 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_023 ;
 	rr:predicateMap map:pm_023 .
 
-map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_LocationTM_000, map:map_triplesmap1_000 ;
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_026 .
+
+map:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_027 ;
+	rr:predicateMap map:pm_027 .
+
+map:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_028 ;
+	rr:predicateMap map:pm_028 .
+
+map:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_029 ;
+	rr:predicateMap map:pm_029 .
+
+map:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_030 ;
+	rr:predicateMap map:pm_030 .
+
+map:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_031 ;
+	rr:predicateMap map:pm_031 .
+
+map:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_032 ;
+	rr:predicateMap map:pm_032 .
+
+map:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_033 ;
+	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_035 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_City_000, map:map_Country_000, map:map_Geometry_000, map:map_ParkingFacility_000, map:map_PostalAddress_000, map:map_Region_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "https://data.smartcitymadrid.es/id/parking/{id}" .
+	rr:template "https://data.smartcitymadrid.es/resource/parking/{identifier}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "https://data.smartcitymadrid.es/id/parking/{id}/location" .
+	rr:template "https://data.smartcitymadrid.es/resource/parking/address/{identifier}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/geom/{identifier}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/city/{city}" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/region/{autonomousCommunity}" .
+
+map:s_005 rdf:type rr:SubjectMap ;
+	rr:template "https://data.smartcitymadrid.es/resource/parking/country/{country}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "parkings-updated-with-links.csv" ;
-	rdf:type rml:LogicalSource .
+	rdf:type rml:LogicalSource ;
+	rdfs:label "0" .
 
 map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "parkings-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "parkings-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "parkings-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_004 rml:referenceFormulation ql:CSV ;
+	rml:source "parkings-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_005 rml:referenceFormulation ql:CSV ;
+	rml:source "parkings-updated-with-links.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_006 rml:referenceFormulation ql:CSV ;
 	rml:source "parkings-updated-with-links.csv" ;
 	rdf:type rml:LogicalSource .

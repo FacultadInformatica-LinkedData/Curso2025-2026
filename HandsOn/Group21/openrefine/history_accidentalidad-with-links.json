@@ -1,0 +1,410 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q334166",
+        "name": "mode of transport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column tipo_vehiculo to type Q334166"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "ciclomotor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q34493",
+      "name": "motorcycle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motorcycle (Q34493) para las celdas que contienen \"ciclomotor\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "turismo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1144312",
+      "name": "passenger car",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento passenger car (Q1144312) para las celdas que contienen \"turismo\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "motocicleta hasta 125cc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q328716",
+      "name": "motorcycle sport",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motorcycle sport (Q328716) para las celdas que contienen \"motocicleta hasta 125cc\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "maquinaria de obras",
+    "judgment": "matched",
+    "match": {
+      "id": "Q874311",
+      "name": "heavy equipment",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento heavy equipment (Q874311) para las celdas que contienen \"maquinaria de obras\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "furgoneta",
+    "judgment": "matched",
+    "match": {
+      "id": "Q357884",
+      "name": "panel van",
+      "types": [
+        ""
+      ],
+      "score": 47.5
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento panel van (Q357884) para las celdas que contienen \"furgoneta\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "motocicleta hasta 125cc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q34493",
+      "name": "motorcycle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motorcycle (Q34493) para las celdas que contienen \"motocicleta hasta 125cc\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "motocicleta > 125cc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q328716",
+      "name": "motorcycle sport",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motorcycle sport (Q328716) para las celdas que contienen \"motocicleta > 125cc\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "autobus",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5638",
+      "name": "bus",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento bus (Q5638) para las celdas que contienen \"autobus\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "cuadriciclo no ligero",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30901990",
+      "name": "Cuadriciclo ligero",
+      "types": [
+        ""
+      ],
+      "score": 46
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Cuadriciclo ligero (Q30901990) para las celdas que contienen \"cuadriciclo no ligero\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "autobus articulado",
+    "judgment": "matched",
+    "match": {
+      "id": "Q654749",
+      "name": "articulated bus",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento articulated bus (Q654749) para las celdas que contienen \"autobus articulado\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "vmu electrico",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1327012",
+      "name": "electric scooter",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento electric scooter (Q1327012) para las celdas que contienen \"vmu electrico\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "camion rigido",
+    "judgment": "matched",
+    "match": {
+      "id": "Q43193",
+      "name": "truck",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento truck (Q43193) para las celdas que contienen \"camion rigido\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column distrito to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q35120",
+        "name": "entity"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column sexo to type Q35120"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "similarValue": "H",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8441",
+      "name": "man",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento man (Q8441) para las celdas que contienen \"H\" en la columna sexo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "similarValue": "Desconocido",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4233718",
+      "name": "anonymous",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento anonymous (Q4233718) para las celdas que contienen \"Desconocido\" en la columna sexo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "similarValue": "M",
+    "judgment": "matched",
+    "match": {
+      "id": "Q467",
+      "name": "woman",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento woman (Q467) para las celdas que contienen \"M\" en la columna sexo"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "sexo",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_sexo",
+    "columnInsertIndex": 13,
+    "description": "Crear la columna same_as_wikidata_sexo en el índice 13 basada en la columna sexo usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tipo_vehiculo",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_tipo_vehiculo",
+    "columnInsertIndex": 10,
+    "description": "Crear la columna same_as_wikidata_tipo_vehiculo en el índice 10 basada en la columna tipo_vehiculo usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "distrito",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_distrito",
+    "columnInsertIndex": 7,
+    "description": "Crear la columna same_as_wikidata_distrito en el índice 7 basada en la columna distrito usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  }
+]

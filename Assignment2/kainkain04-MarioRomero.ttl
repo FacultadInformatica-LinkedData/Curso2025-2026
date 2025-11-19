@@ -1,0 +1,24 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Sensor que incluye una clase y una medición
+ex:Sensor029 a ex:Sensor ;
+    ex:includes ex:Class01 ;
+    ex:hasMeasurement ex:Measurement8401 .
+
+# Clase que incluye un ordenador y tiene un propietario
+ex:Class01 a ex:Class ;
+    ex:includes ex:Computer101 ;
+    ex:hasOwner ex:User10A .
+
+# Usuario con nombre Pedro
+ex:User10A a ex:User ;
+    ex:hasName "Pedro" .
+
+# Medición con valor y tiempo
+ex:Measurement8401 a ex:Measurement ;
+    ex:hasTemperature "29"^^xsd:integer ;
+    ex:atTime "2010-06-12T12:00:12"^^xsd:dateTime .
+
+# Ordenador
+ex:Computer101 a ex:Computer .

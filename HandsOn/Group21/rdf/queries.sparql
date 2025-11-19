@@ -1,57 +1,118 @@
 ############################################################
-# Query 1 – Accidentes por distrito y positivos en alcohol #
+# Roadsafety – Consultas SPARQL de validacion
+# Dataset: roadsafety.ttl
 ############################################################
-PREFIX schema: http://schema.org/
-PREFIX ex: http://example.org/traffic
-PREFIX xsd: http://www.w3.org/2001/XMLSchema
 
-SELECT ?districtName
-       (COUNT(?e) AS ?accidents)
-       (SUM(IF(?alBool, 1, 0)) AS ?positivesAlcohol)
+############################################################
+# Q1 – Numero de instancias por clase
+############################################################
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX ex:     <https://www.roadsafetydata.com/ontology#>
+
+SELECT ?class (COUNT(*) AS ?n)
 WHERE {
-  ?e a schema:Event ;
-     schema:areaServed ?d .
-  OPTIONAL { ?d schema:name ?districtName }
-
-  OPTIONAL { ?e ex:positiveAlcohol ?alcoholRaw }
-
-  # Normalizamos a booleano:
-  BIND(
-    IF(
-      DATATYPE(?alcoholRaw) = xsd:boolean,
-      ?alcoholRaw,
-      IF(
-        isLiteral(?alcoholRaw) && LCASE(STR(?alcoholRaw)) IN ("s","si","sí","true","1"),
-        true,
-        false
-      )
-    ) 
-  AS ?alBoolTmp)
-
-  # Si no hay dato, lo tratamos como false para que SUM(IF(...)) no falle:
-  BIND( COALESCE(?alBoolTmp, false) AS ?alBool )
+  ?s rdf:type ?class .
 }
-GROUP BY ?districtName ?d
-ORDER BY DESC(?accidents)
-LIMIT 15
+GROUP BY ?class
+ORDER BY DESC(?n)
 
 
-#######################################################
-# Query 2 – Radares con límite ≥ 90 y coordenadas     #
-#######################################################
-PREFIX ex: <http://example.org/traffic#>
-PREFIX schema: <http://schema.org/>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+############################################################
+# Q2 – Accidentes y numero de personas implicadas
+############################################################
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX ex:     <https://www.roadsafetydata.com/ontology#>
 
-SELECT ?camera ?name ?road (xsd:integer(?limit) AS ?limitInt) ?lat ?long
+SELECT ?accident (COUNT(DISTINCT ?person) AS ?numPersons)
 WHERE {
-  ?camera a ex:SpeedCamera ;
-          schema:name ?name ;
-          ex:road ?road ;
-          ex:speedLimit ?limit ;
-          schema:latitude ?lat ;
-          schema:longitude ?long .
-  FILTER(xsd:integer(?limit) >= 90)
+  ?accident rdf:type schema:Event ;
+            ex:involvesPerson ?person .
 }
-ORDER BY DESC(?limitInt)
+GROUP BY ?accident
+ORDER BY DESC(?numPersons)
+
+
+############################################################
+# Q3 – Detalle de personas implicadas en accidentes
+############################################################
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX ex:     <https://www.roadsafetydata.com/ontology#>
+
+SELECT ?accident ?person ?ageRange ?injuryLevel ?vehicleType ?posAlcohol ?posDrug
+WHERE {
+  ?accident rdf:type schema:Event ;
+            ex:involvesPerson ?person .
+
+  OPTIONAL { ?person ex:ageRange        ?ageRange . }
+  OPTIONAL { ?person ex:injuryLevel     ?injuryLevel . }
+  OPTIONAL { ?person ex:usesVehicleType ?vehicleType . }
+  OPTIONAL { ?person ex:positiveAlcohol ?posAlcohol . }
+  OPTIONAL { ?person ex:positiveDrug    ?posDrug . }
+}
 LIMIT 20
+
+
+############################################################
+# Q4 – Radares: carretera, PK, velocidad, coords
+############################################################
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX ex:     <https://www.roadsafetydata.com/ontology#>
+
+SELECT ?radar ?road ?pk ?speed ?utmX ?utmY ?lon ?lat
+WHERE {
+  ?radar rdf:type ex:SpeedCamera ;
+         ex:road ?road ;
+         ex:pk ?pk ;
+         ex:speedLimit ?speed .
+
+  OPTIONAL { ?radar ex:utmX ?utmX . }
+  OPTIONAL { ?radar ex:utmY ?utmY . }
+  OPTIONAL { ?radar schema:longitude ?lon . }
+  OPTIONAL { ?radar schema:latitude  ?lat . }
+}
+LIMIT 20
+
+
+############################################################
+# Q5 – Observaciones de poblacion distrito/barrio
+############################################################
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex:     <https://www.roadsafetydata.com/ontology#>
+
+SELECT ?obs ?district ?neighbourhood ?labelDistrict ?labelNeighbourhood
+       ?people ?male ?female
+WHERE {
+  ?obs rdf:type ex:PopulationObservation ;
+       ex:forDistrict      ?district ;
+       ex:forNeighbourhood ?neighbourhood ;
+       ex:peopleTotal      ?people .
+
+  OPTIONAL { ?district      rdfs:label ?labelDistrict . }
+  OPTIONAL { ?neighbourhood rdfs:label ?labelNeighbourhood . }
+  OPTIONAL { ?obs ex:peopleMale   ?male . }
+  OPTIONAL { ?obs ex:peopleFemale ?female . }
+}
+LIMIT 20
+
+
+############################################################
+# Q6 – Nº accidentes por distrito (areaServed)
+############################################################
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?district ?label (COUNT(DISTINCT ?accident) AS ?numAccidents)
+WHERE {
+  ?accident rdf:type schema:Event ;
+            schema:areaServed ?district .
+
+  OPTIONAL { ?district rdfs:label ?label . }
+}
+GROUP BY ?district ?label
+ORDER BY DESC(?numAccidents)

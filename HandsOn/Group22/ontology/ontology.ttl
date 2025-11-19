@@ -1,14 +1,14 @@
-@prefix trafico: <https://datos.madrid.es/ontology#> .
+@prefix trafico: <https://smartaccidents.es/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # Ontology Metadata
-<https://datos.madrid.es/ontology>
+<https://smartaccidents.es/ontology>
     a owl:Ontology ;
     rdfs:label "Ontología de Accidentes de Tráfico de Madrid" ;
     rdfs:comment "Ontología ligera para representar accidentes de tráfico, personas y vehículos involucrados en Madrid." ;
-    owl:versionInfo "1.1" .
+    owl:versionInfo "2.0" .
 
 # Clases
 trafico:Accidente a owl:Class ;
@@ -99,3 +99,49 @@ trafico:positivaDroga a owl:DatatypeProperty ;
     rdfs:range xsd:boolean ;
     rdfs:label "Positivo droga" ;
     rdfs:comment "Indica si la persona dio positivo en drogas (true/false)." .
+
+# Propiedades de la 2.0
+trafico:localizacion a owl:DatatypeProperty ;
+    rdfs:domain trafico:Accidente ;
+    rdfs:range xsd:string ;
+    rdfs:label "Localización textual" ;
+    rdfs:comment "Calle textual del lugar del accidente." .
+
+trafico:coordenadaX a owl:DatatypeProperty ;
+    rdfs:domain trafico:Accidente ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coordenada X" ;
+    rdfs:comment "Coordenada UTM X del accidente." .
+
+trafico:coordenadaY a owl:DatatypeProperty ;
+    rdfs:domain trafico:Accidente ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Coordenada Y" ;
+    rdfs:comment "Coordenada UTM Y del accidente." .
+
+trafico:lesividad a owl:DatatypeProperty ;
+    rdfs:domain trafico:Persona ;
+    rdfs:range xsd:string ;
+    rdfs:label "Lesividad" ;
+    rdfs:comment "Nivel de lesiones de la persona implicada." .
+
+trafico:tipoPersona a owl:DatatypeProperty ;
+    rdfs:domain trafico:Persona ;
+    rdfs:range xsd:string ;
+    rdfs:label "Tipo de persona" ;
+    rdfs:comment "Rol de la persona en el accidente: conductor, pasajero, peatón, etc." .
+
+trafico:codigoDistrito a owl:DatatypeProperty ;
+    rdfs:domain trafico:Distrito ;
+    rdfs:range xsd:string ;
+    rdfs:label "Código del distrito" .
+
+trafico:num_localizacion a owl:DatatypeProperty ;
+    rdfs:domain trafico:Accidente ;
+    rdfs:range xsd:string ;
+    rdfs:label "Número de localización" .
+
+trafico:codigoLesividad a owl:DatatypeProperty ;
+    rdfs:domain trafico:Persona ;
+    rdfs:range xsd:string ;
+    rdfs:label "Código de lesividad" .

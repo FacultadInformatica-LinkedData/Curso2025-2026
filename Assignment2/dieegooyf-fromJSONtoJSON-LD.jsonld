@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "name": "ex:name",
+    "hometown": "ex:hometown",
+    "age": "ex:age",
+    "almaMater": "ex:almaMater",
+    "parents": "ex:parents",
+    "father": "ex:father",
+    "mother": "ex:mother",
+    "subjects": "ex:subjects",
+    "teachers": "ex:teachers",
+    "description": "ex:description"
+  },
+  "@type": "ex:Student",
+  "name": "Diego Jaén",
+  "hometown": "Madrid",
+  "age": 22,
+  "almaMater": "Universidad Politécnica de Madrid",
+  "parents": {
+    "father": "Alfonso Jaén",
+    "mother": "Ana Moruga"
+  },
+  "subjects": [
+    {
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho García"],
+      "description": "Semantic Web, Linked Data and Knowledge Graphs"
+    },
+    {
+      "name": "Trabajo de fin de grado",
+      "teachers": ["Luis Mengual"],
+      "description": "Trabajo de fin de grado"
+    },
+    {
+      "name": "Administración de Sistemas Informáticos",
+      "teachers": ["Francisco Rosales García"],
+      "description": "Administración de Sistemas Informáticos"
+    },
+    {
+      "name": "Investigación Operativa",
+      "teachers": ["D. Alfonso Mateos Caballero"],
+      "description": "Investigación Operativa"
+    },
+    {
+      "name": "Computación Paralela, Multiprocesadores, Hpc Y Gpu",
+      "teachers": ["Antonio García Dopico"],
+      "description": "Computación Paralela, Multiprocesadores, Hpc Y Gpu"
+    }
+  ]
+}

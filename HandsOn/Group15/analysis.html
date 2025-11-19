@@ -25,33 +25,117 @@
 <p>Linkability: all three include location (coordinates/address), enabling links to neighborhoods/districts or external gazetteers. Temporal coverage: air quality provides long-term time series.</p>
 
 <h2>2. Licensing</h2>
+
+<h3>2.1 Source data license</h3>
 <ul>
   <li><b>Portal license</b>: <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">Condiciones de uso – Datos Abiertos Ayuntamiento de Madrid</a> (compatible con CC BY 4.0-style attribution).</li>
   <li>Each dataset page lists this license explicitly (see links above).</li>
   <li>Implications: attribution required; redistribution and derivative works allowed; commercial use allowed.</li>
 </ul>
 
+<h3>2.2 License for our generated RDF dataset</h3>
+<p>Our generated RDF dataset (ontology and data instances) is published under <b>Creative Commons Attribution 4.0 International (CC BY 4.0)</b>.</p>
+<ul>
+  <li><b>License URL</b>: <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></li>
+  <li><b>Rights</b>: You are free to share, adapt, remix, and use commercially our RDF data.</li>
+  <li><b>Conditions</b>: You must give appropriate credit to Group15 and provide a link to the license.</li>
+  <li><b>Attribution</b>: "Smart City Madrid RDF Dataset by Group15, Universidad Politécnica de Madrid, licensed under CC BY 4.0"</li>
+</ul>
+
 <h2>3. Resource Naming Strategy</h2>
 <p>We adopt HTTP <b>slash</b> URIs for scalability, caching and clarity. Base namespace:</p>
 <pre>https://example.org/group15/</pre>
-<p>Collections & resources:</p>
+
+<h3>3.1 URI patterns</h3>
+<p>Collections & resources (identifiers do NOT contain "/" character):</p>
 <ul>
-  <li>Ontology terms: <code>https://example.org/group15/def/</code></li>
-  <li>Air quality stations: <code>https://example.org/group15/station/air/{stationId}</code></li>
-  <li>BiciMAD stations: <code>https://example.org/group15/station/bike/{stationId}</code></li>
-  <li>Sports facilities: <code>https://example.org/group15/facility/{facilityId}</code></li>
-  <li>Measurements (daily): <code>https://example.org/group15/measurement/{stationId}/{yyyy}/{mm}/{dd}/{pollutant}</code></li>
+  <li><b>Ontology terms</b>: <code>https://example.org/group15/def/{term}</code>
+    <br><i>Example</i>: <code>https://example.org/group15/def/AirQualityStation</code></li>
+  
+  <li><b>Air quality stations</b>: <code>https://example.org/group15/station/air/{stationId}</code>
+    <br><i>Example</i>: <code>https://example.org/group15/station/air/47</code></li>
+  
+  <li><b>BiciMAD stations</b>: <code>https://example.org/group15/station/bike/{stationId}</code>
+    <br><i>Example</i>: <code>https://example.org/group15/station/bike/123</code></li>
+  
+  <li><b>Sports facilities</b>: <code>https://example.org/group15/facility/{facilityId}</code>
+    <br><i>Example</i>: <code>https://example.org/group15/facility/456</code></li>
+  
+  <li><b>Measurements (daily)</b>: <code>https://example.org/group15/measurement/air/{stationId}-{yyyymmdd}-{pollutant}</code>
+    <br><i>Example</i>: <code>https://example.org/group15/measurement/air/47-20250920-NO2</code>
+    <br><i>Note</i>: Date format is compact (yyyymmdd) with hyphens separating components, no slashes in identifier fragment.</li>
 </ul>
-<p><b>Persistence policy</b>: URIs are stable; if resources move we will preserve identifiers and use HTTP redirections. Content negotiation will provide HTML (humans) and RDF (machines).</p>
+
+<h3>3.2 Design rationale</h3>
+<ul>
+  <li><b>Slash URIs</b>: Better for HTTP caching, clear hierarchical structure, standard practice.</li>
+  <li><b>No slashes in identifiers</b>: The identifier fragment (after the last collection slash) uses hyphens to separate components, ensuring clean URI structure.</li>
+  <li><b>Opaque vs descriptive</b>: Station IDs are opaque (from source data); measurements use compound descriptive identifiers for human readability.</li>
+  <li><b>Date format</b>: Compact ISO-like format (yyyymmdd) enables lexicographic sorting and avoids excessive URI depth.</li>
+</ul>
+
+<h3>3.3 Persistence policy</h3>
+<p>URIs are designed to be <b>stable and persistent</b>:</p>
+<ul>
+  <li>Identifiers will not change once assigned.</li>
+  <li>If resources must be moved or reorganized, we will implement HTTP 301/302 redirections.</li>
+  <li>Deprecated resources will return HTTP 410 Gone with appropriate metadata.</li>
+  <li>Content negotiation via Accept headers will provide HTML (for humans) and RDF formats (Turtle, RDF/XML, JSON-LD) for machines.</li>
+</ul>
 
 <h2>4. Ontology design</h2>
-<p>We provide a lightweight ontology reusing standard vocabularies:</p>
+<p>We provide a lightweight ontology reusing standard vocabularies where possible:</p>
+
+<h3>4.1 Reused vocabularies</h3>
 <ul>
-  <li>Reuse: <code>schema:address</code>, <code>geo:lat</code>, <code>geo:long</code>.</li>
-  <li>Core classes: <code>ex:Station</code>, <code>ex:AirQualityStation</code>, <code>ex:BicycleStation</code>, <code>ex:SportsFacility</code>, <code>ex:Measurement</code>.</li>
-  <li>Object properties: <code>ex:hasMeasurement</code>.</li>
-  <li>Datatype properties: <code>ex:stationId</code>, <code>ex:observedValue</code>, <code>ex:unit</code>, <code>ex:observedProperty</code>, <code>ex:dateTime</code>.</li>
+  <li><b>Schema.org</b>: <code>schema:address</code>, <code>schema:City</code></li>
+  <li><b>WGS84 Geo</b>: <code>geo:lat</code>, <code>geo:long</code></li>
+  <li><b>OWL</b>: <code>owl:sameAs</code> for identity links</li>
+  <li><b>XSD</b>: datatypes (<code>xsd:dateTime</code>, <code>xsd:decimal</code>, <code>xsd:string</code>)</li>
+</ul>
+
+<h3>4.2 Core classes</h3>
+<ul>
+  <li><code>ex:Facility</code> – Generic urban facility or station (superclass)</li>
+  <li><code>ex:Station</code> – Physical station with geolocation (subclass of Facility)</li>
+  <li><code>ex:AirQualityStation</code> – Station collecting air pollutant data (subclass of Station)</li>
+  <li><code>ex:BicycleStation</code> – Bike-sharing docking station (subclass of Station)</li>
+  <li><code>ex:SportsFacility</code> – Municipal sports facility (subclass of Facility)</li>
+  <li><code>ex:Measurement</code> – Single observed value at a timestamp</li>
+</ul>
+
+<h3>4.3 Properties</h3>
+<p><b>Object properties:</b></p>
+<ul>
+  <li><code>ex:hasMeasurement</code> – Links a station to measurements observed there</li>
+</ul>
+
+<p><b>Datatype properties:</b></p>
+<ul>
+  <li><code>ex:stationId</code> – Station identifier (string)</li>
+  <li><code>ex:observedValue</code> – Numeric measurement value (decimal)</li>
+  <li><code>ex:unit</code> – Measurement unit (string, e.g., "µg/m³")</li>
+  <li><code>ex:observedProperty</code> – Property being measured (string, e.g., "NO2", "PM10")</li>
+  <li><code>ex:dateTime</code> – Timestamp of measurement (xsd:dateTime)</li>
+</ul>
+
+<h2>5. Data quality & completeness</h2>
+<ul>
+  <li><b>Coverage</b>: Example data includes 5 air quality stations, 5 bicycle stations, 5 sports facilities, and 20+ measurements spanning multiple dates.</li>
+  <li><b>Validation</b>: All RDF validates against the ontology schema.</li>
+  <li><b>Geolocation</b>: All facilities/stations include lat/long coordinates for spatial queries.</li>
+  <li><b>Temporal data</b>: Measurements include proper xsd:dateTime timestamps enabling time-series analysis.</li>
+</ul>
+
+<h2>6. Future extensions</h2>
+<ul>
+  <li>Link to external gazetteers (GeoNames, DBpedia) for district/neighborhood information.</li>
+  <li>Add more measurement types (temperature, humidity, noise levels).</li>
+  <li>Include historical trends and aggregations (monthly/yearly averages).</li>
+  <li>Link bicycle stations to real-time availability APIs.</li>
+  <li>Connect sports facilities to event schedules and capacity information.</li>
 </ul>
 
 </body>
 </html>
+

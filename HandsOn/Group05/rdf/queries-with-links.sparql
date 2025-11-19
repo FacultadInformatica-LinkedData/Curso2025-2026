@@ -1,0 +1,112 @@
+PREFIX ont: <http://www.semanticweb.org/abuce/ontologies/2025/9/untitled-ontology-3/>
+PREFIX res: <http://airecalidadbcn.linkeddata.es/g05/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (COUNT(DISTINCT ?estacion) AS ?totalEstaciones)
+WHERE {
+  ?estacion rdf:type ont:Estacion .
+}
+
+SELECT (COUNT(DISTINCT ?lectura) AS ?totalLecturas)
+WHERE {
+  ?lectura rdf:type ont:Lectura .
+}
+
+SELECT ?lectura ?estacion ?nomEstacion
+WHERE {
+  ?lectura rdf:type ont:Lectura ;
+           ont:madeInStation ?estacion .
+  ?estacion ont:name ?nomEstacion .
+}
+LIMIT 20
+
+SELECT ?estacion ?codigo ?nombre ?latitud ?longitud
+WHERE {
+  ?estacion rdf:type ont:Estacion ;
+            ont:stationCode ?codigo ;
+            ont:name ?nombre ;
+            ont:latitude ?latitud ;
+            ont:longitude ?longitud .
+}
+LIMIT 10
+
+SELECT ?lectura ?fecha ?calidad ?no2Value ?o3Value ?pm10Value
+WHERE {
+  ?lectura rdf:type ont:Lectura ;
+           ont:date ?fecha ;
+           ont:quality ?calidad ;
+           ont:no2Value ?no2Value ;
+           ont:o3Value ?o3Value ;
+           ont:pm10Value ?pm10Value .
+}
+LIMIT 20
+
+SELECT ?lectura
+WHERE {
+  ?lectura rdf:type ont:Lectura .
+  FILTER NOT EXISTS { ?lectura ont:madeInStation ?estacion . }
+}
+LIMIT 10
+
+SELECT ?nomEstacion (COUNT(?lectura) AS ?numLecturas)
+WHERE {
+  ?lectura rdf:type ont:Lectura ;
+           ont:madeInStation ?estacion .
+  ?estacion ont:name ?nomEstacion .
+}
+GROUP BY ?nomEstacion
+ORDER BY DESC(?numLecturas)
+
+SELECT ?nomEstacion (AVG(xsd:float(?no2Value)) AS ?promedioNO2)
+WHERE {
+  ?lectura rdf:type ont:Lectura ;
+           ont:no2Value ?no2Value ;
+           ont:madeInStation ?estacion .
+  ?estacion ont:name ?nomEstacion .
+  FILTER (DATATYPE(?no2Value) = xsd:string && REGEX(?no2Value, "^[0-9]"))
+}
+GROUP BY ?nomEstacion
+
+SELECT ?lectura ?fecha ?estacion
+WHERE {
+  ?lectura rdf:type ont:Lectura ;
+           ont:quality "Buena" ;
+           ont:date ?fecha ;
+           ont:madeInStation ?estacion .
+}
+LIMIT 30
+
+SELECT ?estacion ?nombre ?latitud ?longitud
+WHERE {
+  ?estacion rdf:type ont:Estacion ;
+            ont:name ?nombre ;
+            ont:latitude ?latitud ;
+            ont:longitude ?longitud .
+  FILTER (xsd:float(?latitud) > 41.3 && xsd:float(?latitud) < 41.5)
+  FILTER (xsd:float(?longitud) > 2.0 && xsd:float(?longitud) < 2.3)
+}
+
+SELECT (COUNT(?lectura) AS ?lecturasCompletas)
+WHERE {
+  ?lectura rdf:type ont:Lectura ;
+           ont:date ?fecha ;
+           ont:quality ?calidad ;
+           ont:no2Value ?no2 ;
+           ont:no2Quality ?no2q ;
+           ont:o3Value ?o3 ;
+           ont:o3Quality ?o3q ;
+           ont:pm10Value ?pm10 ;
+           ont:pm10Quality ?pm10q ;
+           ont:madeInStation ?estacion .
+}
+
+SELECT ?codigo ?nombre ?latitud ?longitud
+WHERE {
+  ?estacion rdf:type ont:Estacion ;
+            ont:stationCode ?codigo ;
+            ont:name ?nombre ;
+            ont:latitude ?latitud ;
+            ont:longitude ?longitud .
+}
+ORDER BY ?codigo

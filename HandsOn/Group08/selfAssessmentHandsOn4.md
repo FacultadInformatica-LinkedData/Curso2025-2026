@@ -34,3 +34,7 @@
 We had to edit the air quality CSV again because there was a time error: we accidentally used hours from 1–24 instead of 0–23, which caused invalid `xsd:dateTime` values and blocked the materialization.  
 We fixed it by correcting the hour range and regenerating the RDF.  
 We also cleaned the CSV files to remove UTF-8 BOM characters and strange encoded symbols, making the dataset more readable and avoiding incorrect URIs.
+
+Updated CSVs on 28/10. 
+As discussed in class yesterday, we fixed issues with column identification — some columns only had IDs without names. Now the datasets include clear column labels for linking.
+

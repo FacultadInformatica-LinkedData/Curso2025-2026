@@ -1,0 +1,386 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix ns: <http://bcn-mobility-air.org/ontology/> .
+@prefix data: <http://bcn-mobility-air.org/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+
+# -----------------------------------------------------------------
+# 1. Road Segments and Congestion Measurements (itineraris-updated-with-links.csv)
+# -----------------------------------------------------------------
+
+# tram_id - location - congestion
+<#RoadSegmentMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/itineraris-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/RoadSegment/{Tram_id}";
+    rr:class ns:RoadSegment
+  ];
+
+# Mapeo del nombre de la calle (Street_name)
+  rr:predicateObjectMap [
+    rr:predicate ns:name;
+    rr:objectMap [ rml:reference "Street_name"; rr:datatype xsd:string ] 
+  ];
+  
+  # Mapeo de la descripción del punto de inicio (Start_point)
+  rr:predicateObjectMap [
+    rr:predicate ns:startPoint;
+    rr:objectMap [ rml:reference "Start_point"; rr:datatype xsd:string ] 
+  ];
+
+  # Mapeo de la descripción del punto final (End_point)
+  rr:predicateObjectMap [
+    rr:predicate ns:endPoint;
+    rr:objectMap [ rml:reference "End_point"; rr:datatype xsd:string ] 
+  ];
+
+  # Link RoadSegment to its location
+  rr:predicateObjectMap [
+    rr:predicate ns:hasLocation;
+    rr:objectMap [
+      rr:template "http://bcn-mobility-air.org/data/Location/RoadSegment/{Tram_id}" ;
+      rr:termType rr:IRI
+    ]
+  ];
+
+  # Link RoadSegment to its Congestion Measurement
+  rr:predicateObjectMap [
+    rr:predicate ns:hasCongestionMeasurement;
+    rr:objectMap [
+      rr:parentTriplesMap <#CongestionMeasurementMap> ;
+      rr:joinCondition [
+          rr:child "Tram_id"; rr:parent "Tram_id"
+      ]
+    ]
+  ];
+
+# Wikidata links (solo la calle principal es owl:sameAs)
+  rr:predicateObjectMap [ 
+	rr:predicate owl:sameAs; 
+	rr:objectMap [ 
+	   rml:reference "Wikidata_street_name"; rr:termType rr:IRI ] 
+  ].
+#  rr:predicateObjectMap [ 
+#	rr:predicate owl:sameAs; 
+#	rr:objectMap [ 
+#	   rml:reference "Wikidata_start_point"; rr:termType rr:IRI ] 
+#  ];
+#  rr:predicateObjectMap [ 
+#	rr:predicate owl:sameAs; 
+#	rr:objectMap [ 
+#	   rml:reference "Wikidata_end_point"; rr:termType rr:IRI ] 
+#  ].
+
+# tram_id - long - lat
+<#RoadSegmentLocationMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/itineraris-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/Location/RoadSegment/{Tram_id}";
+    rr:class geo:Point
+  ];
+
+  # Latitude and Longitude for the Road Segment Location
+  rr:predicateObjectMap [
+    rr:predicate geo:lat;
+    rr:objectMap [ rml:reference "Latitud"; rr:datatype xsd:decimal ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate geo:long;
+    rr:objectMap [ rml:reference "Longitud"; rr:datatype xsd:decimal ]
+  ].
+
+
+# tra_id - datetime - congestion
+<#CongestionMeasurementMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/itineraris-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/CongestionMeasurement/{Tram_id}/{DATETIME}";
+    rr:class ns:Measurement
+  ];
+
+  # Datetime of the Measurement
+  rr:predicateObjectMap [
+    rr:predicate ns:datetime;
+    rr:objectMap [ rml:reference "DATETIME"; rr:datatype xsd:dateTime ]
+  ];
+
+  # Congestion Level
+  rr:predicateObjectMap [
+    rr:predicate ns:congestionLevel;
+    rr:objectMap [ rml:reference "Congestion"; rr:datatype xsd:string ]
+  ].
+
+
+# -----------------------------------------------------------------
+# 2. Air Quality Stations and Readings (air-quality-updated-with-links.csv)
+# -----------------------------------------------------------------
+
+# station_id - station_name - location
+<#AirQualityStationMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/air-quality-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/AirQualityStation/{Station_id}";
+    rr:class ns:AirQualityStation
+  ];
+
+  # Station Name
+  rr:predicateObjectMap [
+    rr:predicate ns:name;
+    rr:objectMap [ rml:reference "Station_name"; rr:datatype xsd:string ]
+  ];
+
+  # Link AirQualityStation to its location
+  rr:predicateObjectMap [
+    rr:predicate ns:hasLocation;
+    rr:objectMap [
+      rr:template "http://bcn-mobility-air.org/data/Location/AirStation/{Station_id}" ;
+      rr:termType rr:IRI
+    ]
+  ];
+
+  # Link AirQualityStation to its District
+  rr:predicateObjectMap [
+    rr:predicate ns:isLocatedInDistrict;
+    rr:objectMap [
+      rr:parentTriplesMap <#DistrictMap> ;
+      rr:joinCondition [
+          rr:child "District_name"; rr:parent "District_name"
+      ]
+    ]
+  ];
+
+  # Link AirQualityStation to its Air Quality Reading
+  rr:predicateObjectMap [
+    rr:predicate ns:hasAirQualityReading;
+    rr:objectMap [
+      rr:parentTriplesMap <#AirReadingMap> ;
+      rr:joinCondition [
+          rr:child "Station_id"; rr:parent "Station_id"
+      ]
+    ]
+  ].
+
+
+
+
+
+# Station_id - lat - long
+<#AirStationLocationMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/air-quality-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/Location/AirStation/{Station_id}";
+    rr:class geo:Point
+  ];
+
+  # Latitude and Longitude for the Station Location
+  rr:predicateObjectMap [
+    rr:predicate geo:lat;
+    rr:objectMap [ rml:reference "Latitud"; rr:datatype xsd:decimal ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate geo:long;
+    rr:objectMap [ rml:reference "Longitud"; rr:datatype xsd:decimal ]
+  ].
+
+
+# measurement - datetime - value
+<#AirReadingMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/air-quality-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/AirReading/{Station_id}/{Contaminant}/{DATETIME}";
+    rr:class ns:Measurement
+  ];
+
+  # Datetime and Value of the Measurement
+  rr:predicateObjectMap [
+    rr:predicate ns:datetime;
+    rr:objectMap [ rml:reference "DATETIME"; rr:datatype xsd:dateTime ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ns:value;
+    rr:objectMap [ rml:reference "VALUE"; rr:datatype xsd:float ]
+  ];
+
+  # Link Measurement to Pollutant
+  rr:predicateObjectMap [
+    rr:predicate ns:measuresPollutant;
+    rr:objectMap [
+      rr:parentTriplesMap <#PollutantMap> ;
+      rr:joinCondition [
+          rr:child "Contaminant"; rr:parent "Contaminant"
+      ]
+    ]
+  ].
+
+
+# contaminant - name
+<#PollutantMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/air-quality-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/Pollutant/{Contaminant}";
+    rr:class ns:Pollutant
+  ];
+  # Pollutant Name
+  rr:predicateObjectMap [
+    rr:predicate ns:name;
+    rr:objectMap [ rml:reference "Contaminant"; rr:datatype xsd:string ]
+  ];
+  # Wikidata para el Contaminante
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [ 
+      rml:reference "wikidata_contaminant"; 
+      rr:termType rr:IRI 
+    ]
+  ].
+
+# district_name
+# District map for Air Quality file (Shared with Bicis, defined by District name)
+<#DistrictMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/air-quality-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/District/{District_name}";
+    rr:class ns:District
+  ];
+  # District Name
+  rr:predicateObjectMap [
+    rr:predicate ns:name;
+    rr:objectMap [ rml:reference "District_name"; rr:datatype xsd:string ]
+  ];
+  # Wikidata para el Distrito
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [ 
+      rml:reference "wikidata_district"; 
+      rr:termType rr:IRI 
+    ]
+  ].
+
+
+# -----------------------------------------------------------------
+# 3. Bicycle Parking and Administrative Units (bicis-updated-with-links.csv)
+# -----------------------------------------------------------------
+
+# name_park: location - district - neighborhood
+<#BicycleParkingMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/bicis-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/BicycleParking/{Name}";
+    rr:class ns:BicycleParking
+  ];
+
+  # Parking Name
+  rr:predicateObjectMap [
+    rr:predicate ns:name;
+    rr:objectMap [ rml:reference "Name"; rr:datatype xsd:string ]
+  ];
+
+  # Link BicycleParking to its location
+  rr:predicateObjectMap [
+    rr:predicate ns:hasLocation;
+    rr:objectMap [
+      rr:template "http://bcn-mobility-air.org/data/Location/BiciParking/{Name}" ;
+      rr:termType rr:IRI
+    ]
+  ];
+
+  # Link BicycleParking to its District
+  rr:predicateObjectMap [
+    rr:predicate ns:isLocatedInDistrict;
+    rr:objectMap [
+      rr:parentTriplesMap <#DistrictMap> ;
+      rr:joinCondition [
+          rr:child "District_name"; rr:parent "District_name"
+      ]
+    ]
+  ];
+
+  # Link BicycleParking to its Neighborhood
+  rr:predicateObjectMap [
+    rr:predicate ns:isLocatedInNeighborhood;
+    rr:objectMap [
+      rr:parentTriplesMap <#NeighborhoodMap_Bicis> ;
+      rr:joinCondition [
+          rr:child "Neighborhood_name"; rr:parent "Neighborhood_name"
+      ]
+    ]
+  ].
+
+
+
+# name_parking - long - lat
+<#BicycleParkingLocationMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/bicis-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/Location/BiciParking/{Name}";
+    rr:class geo:Point
+  ];
+
+  # Latitude and Longitude for the Parking Location
+  rr:predicateObjectMap [
+    rr:predicate geo:lat;
+    rr:objectMap [ rml:reference "Latitud"; rr:datatype xsd:decimal ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate geo:long;
+    rr:objectMap [ rml:reference "Longitud"; rr:datatype xsd:decimal ]
+  ].
+
+
+# neighborhood
+<#NeighborhoodMap_Bicis> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "../csv/bicis-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://bcn-mobility-air.org/data/Neighborhood/{Neighborhood_name}";
+    rr:class ns:Neighborhood
+  ];
+  # Neighborhood Name
+  rr:predicateObjectMap [
+    rr:predicate ns:name;
+    rr:objectMap [ rml:reference "Neighborhood_name"; rr:datatype xsd:string ]
+  ];
+  # Wikidata para el Barrio
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [ 
+      rml:reference "wikidata_neighborhood"; 
+      rr:termType rr:IRI 
+    ]
+  ].

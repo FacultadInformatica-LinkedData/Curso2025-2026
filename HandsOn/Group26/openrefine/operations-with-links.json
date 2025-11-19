@@ -1,0 +1,273 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MAGNITUD",
+    "expression": "grel:value.replace(/^1$/, \"SO2\")\n .replace(/^6$/, \"CO\")\n .replace(/^7$/, \"NO\")\n .replace(/^8$/, \"NO2\")\n .replace(/^9$/, \"PM2.5\")\n .replace(/^10$/, \"PM10\")\n .replace(/^12$/, \"NOX\")\n .replace(/^14$/, \"O3\")\n .replace(/^20$/, \"TOL\")\n .replace(/^30$/, \"BEN\")\n .replace(/^35$/, \"EBE\")",
+    "onError": "set-to-blank",
+    "newColumnName": "pollutantLabel",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna pollutantLabel en el índice 2 basada en la columna MAGNITUD usando la expresión grel:value.replace(/^1$/, \"SO2\")\n .replace(/^6$/, \"CO\")\n .replace(/^7$/, \"NO\")\n .replace(/^8$/, \"NO2\")\n .replace(/^9$/, \"PM2.5\")\n .replace(/^10$/, \"PM10\")\n .replace(/^12$/, \"NOX\")\n .replace(/^14$/, \"O3\")\n .replace(/^20$/, \"TOL\")\n .replace(/^30$/, \"BEN\")\n .replace(/^35$/, \"EBE\")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q113145171",
+        "name": "type of chemical entity"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column pollutantLabel to type Q113145171"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "NOX",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20962970",
+      "name": "NOx",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento NOx (Q20962970) para las celdas que contienen \"NOX\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "TOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q15779",
+      "name": "toluene",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento toluene (Q15779) para las celdas que contienen \"TOL\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "BEN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2270",
+      "name": "benzene",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento benzene (Q2270) para las celdas que contienen \"BEN\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "EBE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q409184",
+      "name": "ethylbenzene",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento ethylbenzene (Q409184) para las celdas que contienen \"EBE\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "NO2",
+    "judgment": "matched",
+    "match": {
+      "id": "Q207895",
+      "name": "nitrogen dioxide",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento nitrogen dioxide (Q207895) para las celdas que contienen \"NO2\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "O3",
+    "judgment": "matched",
+    "match": {
+      "id": "Q36933",
+      "name": "ozone",
+      "types": [
+        "Q2512777",
+        "Q428653",
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento ozone (Q36933) para las celdas que contienen \"O3\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "SO2",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5282",
+      "name": "sulfur dioxide",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento sulfur dioxide (Q5282) para las celdas que contienen \"SO2\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "PM2.5",
+    "judgment": "matched",
+    "match": {
+      "id": "Q48035814",
+      "name": "PM 2.5",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento PM 2.5 (Q48035814) para las celdas que contienen \"PM2.5\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "PM10",
+    "judgment": "matched",
+    "match": {
+      "id": "Q48035511",
+      "name": "PM10 (including PM 2.5)",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento PM10 (including PM 2.5) (Q48035511) para las celdas que contienen \"PM10\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "NO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q207843",
+      "name": "nitric oxide",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento nitric oxide (Q207843) para las celdas que contienen \"NO\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "pollutantLabel",
+    "similarValue": "CO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2025",
+      "name": "carbon monoxide",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento carbon monoxide (Q2025) para las celdas que contienen \"CO\" en la columna pollutantLabel"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "pollutantLabel",
+    "expression": "grel:if(cells[\"pollutantLabel\"].recon != null, \n   if(cells[\"pollutantLabel\"].recon.match != null,\n      \"https://www.wikidata.org/entity/\" + cells[\"pollutantLabel\"].recon.match.id,\n      null\n   ),\n   null\n)",
+    "onError": "set-to-blank",
+    "newColumnName": "Pollutant_URI",
+    "columnInsertIndex": 3,
+    "description": "Crear la columna Pollutant_URI en el índice 3 basada en la columna pollutantLabel usando la expresión grel:if(cells[\"pollutantLabel\"].recon != null, \n   if(cells[\"pollutantLabel\"].recon.match != null,\n      \"https://www.wikidata.org/entity/\" + cells[\"pollutantLabel\"].recon.match.id,\n      null\n   ),\n   null\n)"
+  }
+]

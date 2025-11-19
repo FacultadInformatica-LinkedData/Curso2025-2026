@@ -37,7 +37,7 @@
         "to": "Madrid"
       }
     ],
-    "description": "Editar celdas en masa en columna zrea"
+    "description": "Edit cells in bulk in 'zrea' column"
   },
   {
     "op": "core/mass-edit",
@@ -77,7 +77,7 @@
         "to": "España"
       }
     ],
-    "description": "Editar celdas en masa en columna country"
+    "description": "Edit cells in bulk in 'country' column"
   },
   {
     "op": "core/mass-edit",
@@ -117,7 +117,7 @@
         "to": "España"
       }
     ],
-    "description": "Editar celdas en masa en columna country"
+    "description": "Edit cells in bulk in 'country' column"
   },
   {
     "op": "core/mass-edit",
@@ -176,7 +176,7 @@
         "to": "Madrid"
       }
     ],
-    "description": "Editar celdas en masa en columna town"
+    "description": "Edit cells in bulk in 'town' column"
   },
   {
     "op": "core/mass-edit",
@@ -216,7 +216,7 @@
         "to": "España"
       }
     ],
-    "description": "Editar celdas en masa en columna state"
+    "description": "Edit cells in bulk in 'state' column"
   },
   {
     "op": "core/mass-edit",
@@ -256,7 +256,7 @@
         "to": "España"
       }
     ],
-    "description": "Editar celdas en masa en columna state"
+    "description": "Edit cells in bulk in 'state' column"
   },
   {
     "op": "core/column-addition-by-fetching-urls",
@@ -301,20 +301,20 @@
         "value": ""
       }
     ],
-    "description": "Crear la columna geoData ..."
+    "description": "Create 'geoData' column"
   },
-  { "op": "core/column-addition", "engineConfig": { "facets": [], "mode": "row-based" }, "baseColumnName": "geoData", "expression": "grel:if(isBlank(value), \"\", parseJson(value).address.postcode)", "onError": "set-to-blank", "newColumnName": "postalCode", "columnInsertIndex": 14, "description": "Crear postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 13, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 12, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 11, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 10, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 9, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 8, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 7, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 6, "description": "Mover postalCode" },
-  { "op": "core/column-move", "columnName": "postalCode", "index": 5, "description": "Mover postalCode" },
-  { "op": "core/column-removal", "columnName": "areaCode", "description": "Eliminar areaCode" },
-  { "op": "core/column-rename", "oldColumnName": "postalCode", "newColumnName": "areaCode", "description": "Renombrar postalCode a areaCode" },
+  { "op": "core/column-addition", "engineConfig": { "facets": [], "mode": "row-based" }, "baseColumnName": "geoData", "expression": "grel:if(isBlank(value), \"\", parseJson(value).address.postcode)", "onError": "set-to-blank", "newColumnName": "postalCode", "columnInsertIndex": 14, "description": "Create 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 13, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 12, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 11, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 10, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 9, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 8, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 7, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 6, "description": "Move 'postalCode' column" },
+  { "op": "core/column-move", "columnName": "postalCode", "index": 5, "description": "Move 'postalCode' column" },
+  { "op": "core/column-removal", "columnName": "areaCode", "description": "Remove 'areaCode' column" },
+  { "op": "core/column-rename", "oldColumnName": "postalCode", "newColumnName": "areaCode", "description": "Rename 'postalCode' to 'areaCode'" },
   {
     "op": "core/mass-edit",
     "engineConfig": {
@@ -341,7 +341,7 @@
     "edits": [
       { "from": ["False"], "fromBlank": false, "fromError": false, "to": "false" }
     ],
-    "description": "Editar celdas en masa en columna emtParking"
+    "description": "Edit cells in bulk in 'emtParking' column"
   },
   {
     "op": "core/mass-edit",
@@ -369,7 +369,7 @@
     "edits": [
       { "from": ["True"], "fromBlank": false, "fromError": false, "to": "true" }
     ],
-    "description": "Editar celdas en masa en columna emtParking"
+    "description": "Edit cells in bulk in 'emtParking' column"
   },
   {
     "op": "core/text-transform",
@@ -379,6 +379,59 @@
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 1,
-    "description": "Fijar areaCode=28003 cuando id==69"
+    "description": "Set 'areaCode' = 28003 when 'id' == 69"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "state",
+    "description": "Remove 'state' column"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "id",
+    "newColumnName": "identifier",
+    "description": "Rename 'id' column to 'identifier'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "address",
+    "newColumnName": "streetAddress",
+    "description": "Rename 'address' column to 'streetAddress'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "areaCode",
+    "newColumnName": "postalCode",
+    "description": "Rename 'areaCode' column to 'postalCode'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "zrea",
+    "newColumnName": "autonomousCommunity",
+    "description": "Rename 'zrea' column to 'autonomousCommunity'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "catCode",
+    "newColumnName": "categoryCode",
+    "description": "Rename 'catCode' column to 'categoryCode'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "URLIcono",
+    "newColumnName": "URLIcon",
+    "description": "Rename 'URLIcono' column to 'URLIcon'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "town",
+    "newColumnName": "city",
+    "description": "Rename 'town' column to 'city'"
+  },
+  {
+    "op": "core/rename-column",
+    "oldColumnName": "emtParking",
+    "newColumnName": "EMTParking",
+    "description": "Rename 'emtParking' column to 'EMTParking'"
   }
 ]

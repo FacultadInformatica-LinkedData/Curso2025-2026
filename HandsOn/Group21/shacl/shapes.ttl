@@ -1,0 +1,367 @@
+@prefix :      <https://www.roadsafetydata.com/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix ns:    <https://www.roadsafetydata.com/ontology#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#e3ae1023c0746db30b8591aeeb54c930>
+        a               sh:PropertyShape ;
+        rdfs:label      "positive alcohol"@en , "Alcohol test result (true/false or Y/N)."@en ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Alcohol test result (true/false or Y/N)."@en ;
+        sh:name         "positive alcohol"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:positiveAlcohol ;
+        sh:pattern      "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#efe8d6382f1ee6c89a0d6f5c3ee679ca>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:AdministrativeArea .
+
+<https://astrea.linkeddata.es/shapes#a74b91fd79d43523a8bb4f8c2fecb5bd>
+        a               sh:PropertyShape ;
+        rdfs:label      "age range"@en , "Age band of the participant (e.g., 30–34)."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Age band of the participant (e.g., 30–34)."@en ;
+        sh:name         "age range"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:ageRange ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#901efff61f7c7c1cf81336ec73416ce3>
+        a               sh:PropertyShape ;
+        rdfs:label      "injury level"@en , "Textual injury level (e.g., Slight, Serious)."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Textual injury level (e.g., Slight, Serious)."@en ;
+        sh:name         "injury level"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:injuryLevel ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#813ef851841f252069bb8369b53b757b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Vehicle .
+
+<https://astrea.linkeddata.es/shapes#45508c85fdcac6297f3ac76819c602ae>
+        a               sh:PropertyShape ;
+        rdfs:label      "start latitude"@en , "Section-control start latitude (WGS84 decimal degrees)."@en ;
+        sh:datatype     xsd:double ;
+        sh:description  "Section-control start latitude (WGS84 decimal degrees)."@en ;
+        sh:name         "start latitude"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:startLatitude ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#169e8c20aa8843b11dea9f7b6089360b>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links a population observation to its neighbourhood."@en ;
+        sh:class        schema:AdministrativeArea ;
+        sh:description  "Links a population observation to its neighbourhood."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:forNeighbourhood .
+
+<https://astrea.linkeddata.es/shapes#7ca174092f8c4eb63d99b2f1a930093e>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links a population observation to its municipality."@en ;
+        sh:class        schema:AdministrativeArea ;
+        sh:description  "Links a population observation to its municipality."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:forMunicipality .
+
+<https://astrea.linkeddata.es/shapes#bbc9832f57332a2ae1b80144519304e0>
+        a               sh:PropertyShape ;
+        rdfs:label      "injury code"@en , "Coded injury severity."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Coded injury severity."@en ;
+        sh:name         "injury code"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:injuryCode ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#303b919b6ef6c5b98c4d8c63d343e20e>
+        a               sh:PropertyShape ;
+        rdfs:label      "people female"@en , "Female residents for the administrative unit on the reference date."@en ;
+        sh:datatype     xsd:integer ;
+        sh:description  "Female residents for the administrative unit on the reference date."@en ;
+        sh:name         "people female"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:peopleFemale ;
+        sh:pattern      "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#138879e1510fe91cc508fcca17b1e192>
+        a               sh:PropertyShape ;
+        rdfs:label      "Vehicle class used by the participant."@en ;
+        sh:class        schema:Vehicle ;
+        sh:description  "Vehicle class used by the participant."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:usesVehicleType .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#54d8ba98fbf02fcb53d7bd43ab214be8>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:startDate .
+
+<https://astrea.linkeddata.es/shapes#fc2628996485ee8bcead446853853a68>
+        a               sh:PropertyShape ;
+        rdfs:label      "speed limit"@en , "Posted speed limit at the camera location (km/h)."@en ;
+        sh:datatype     xsd:integer ;
+        sh:description  "Posted speed limit at the camera location (km/h)."@en ;
+        sh:name         "speed limit"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:speedLimit ;
+        sh:pattern      "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#dbc8a4019df650d090f47c7af53f84fd>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:startTime .
+
+<https://astrea.linkeddata.es/shapes#aea0d086befcf2e1814eadaa9174be69>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:latitude .
+
+<https://astrea.linkeddata.es/shapes#f51601245ae8a875e76285a1b8b11ef2>
+        a               sh:NodeShape ;
+        sh:description  "Speed enforcement device (fixed/section/traffic-light) at a given road location."@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#fc2628996485ee8bcead446853853a68> , <https://astrea.linkeddata.es/shapes#24232c5e2eac91fbf8ce68a1015579f8> , <https://astrea.linkeddata.es/shapes#cba8c6e1c1341b196c1e1ceec93242bf> , <https://astrea.linkeddata.es/shapes#ca9fd2097d1236018226e46654869e6f> , <https://astrea.linkeddata.es/shapes#f2f83b532daa229bfe4945a19294485c> , <https://astrea.linkeddata.es/shapes#71304a8aa1a7fb55d0d332882e6dbcc3> , <https://astrea.linkeddata.es/shapes#45508c85fdcac6297f3ac76819c602ae> , <https://astrea.linkeddata.es/shapes#07813d10396ab08a4a5b5c6dd3503e6b> , <https://astrea.linkeddata.es/shapes#5c4bc3510659685833951dc513efd1b2> , <https://astrea.linkeddata.es/shapes#5847e0e9687166c2a753589d38b401a2> ;
+        sh:targetClass  ns:SpeedCamera .
+
+<https://astrea.linkeddata.es/shapes#2de6aeae5ab850a808f52a83b86d5ce1>
+        a               sh:PropertyShape ;
+        rdfs:label      "States that an accident/event involves a given person (participant)."@en ;
+        sh:class        schema:Person ;
+        sh:description  "States that an accident/event involves a given person (participant)."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:involvesPerson .
+
+<https://astrea.linkeddata.es/shapes#5847e0e9687166c2a753589d38b401a2>
+        a               sh:PropertyShape ;
+        rdfs:label      "Responsible authority/organization for the speed camera."@en ;
+        sh:class        schema:Organization ;
+        sh:description  "Responsible authority/organization for the speed camera."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:responsible .
+
+<https://astrea.linkeddata.es/shapes#0b7da16f4205669517784ee2927c0452>
+        a               sh:PropertyShape ;
+        rdfs:label      "weather"@en , "Weather conditions at the time of the accident."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Weather conditions at the time of the accident."@en ;
+        sh:name         "weather"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:weather ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#cba8c6e1c1341b196c1e1ceec93242bf>
+        a               sh:PropertyShape ;
+        rdfs:label      "start longitude"@en , "Section-control start longitude (WGS84 decimal degrees)."@en ;
+        sh:datatype     xsd:double ;
+        sh:description  "Section-control start longitude (WGS84 decimal degrees)."@en ;
+        sh:name         "start longitude"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:startLongitude ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#2402a66c06fa955b4a257a65731ea33f>
+        a               sh:PropertyShape ;
+        rdfs:label      "UTM X"@en , "Easting (ETRS89 / UTM Zone 30) in meters."@en ;
+        sh:datatype     xsd:double ;
+        sh:description  "Easting (ETRS89 / UTM Zone 30) in meters."@en ;
+        sh:name         "UTM X"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:utmX ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#2ad2aa9f4de519f13796eecd8e84e5e8>
+        a               sh:NodeShape ;
+        sh:description  "Observation of resident population for an administrative unit at a reference date."@en ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#303b919b6ef6c5b98c4d8c63d343e20e> , <https://astrea.linkeddata.es/shapes#d622a906e385415296bd483a94fa0c8d> , <https://astrea.linkeddata.es/shapes#7ca174092f8c4eb63d99b2f1a930093e> , <https://astrea.linkeddata.es/shapes#46b1639fb5decccfbed40ee84fe6cbf4> , <https://astrea.linkeddata.es/shapes#e6e73ce234230e48fdafa6c9aca47865> , <https://astrea.linkeddata.es/shapes#169e8c20aa8843b11dea9f7b6089360b> ;
+        sh:targetClass  ns:PopulationObservation .
+
+<https://astrea.linkeddata.es/shapes#a0de24b9c05e4d5dbee47bb512bc61f3>
+        a               sh:PropertyShape ;
+        rdfs:label      "UTM Y"@en , "Northing (ETRS89 / UTM Zone 30) in meters."@en ;
+        sh:datatype     xsd:double ;
+        sh:description  "Northing (ETRS89 / UTM Zone 30) in meters."@en ;
+        sh:name         "UTM Y"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:utmY ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#f2f83b532daa229bfe4945a19294485c>
+        a               sh:PropertyShape ;
+        rdfs:label      "kilometric point"@en , "Kilometric point (e.g., '0+500')."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Kilometric point (e.g., '0+500')."@en ;
+        sh:name         "kilometric point"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:pk ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#f9546acd69d215613c9954baa52d201e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#07d0caf3d6b70f0680a165fedc77a99b> ;
+        sh:targetClass  schema:Place .
+
+<https://astrea.linkeddata.es/shapes#70e458668781cde278b75b542845293c>
+        a               sh:PropertyShape ;
+        rdfs:label      "positive drug"@en , "Drug test result (true/false or Y/N)."@en ;
+        sh:datatype     xsd:boolean ;
+        sh:description  "Drug test result (true/false or Y/N)."@en ;
+        sh:name         "positive drug"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:positiveDrug ;
+        sh:pattern      "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#46b1639fb5decccfbed40ee84fe6cbf4>
+        a               sh:PropertyShape ;
+        rdfs:label      "people male"@en , "Male residents for the administrative unit on the reference date."@en ;
+        sh:datatype     xsd:integer ;
+        sh:description  "Male residents for the administrative unit on the reference date."@en ;
+        sh:name         "people male"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:peopleMale ;
+        sh:pattern      "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#fe589dda5032f94cfdca781494d2766f>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2de6aeae5ab850a808f52a83b86d5ce1> , <https://astrea.linkeddata.es/shapes#4694c7e76ce3afae4a82d718f563731d> , <https://astrea.linkeddata.es/shapes#0b7da16f4205669517784ee2927c0452> ;
+        sh:targetClass  schema:Event .
+
+<https://astrea.linkeddata.es/shapes#07813d10396ab08a4a5b5c6dd3503e6b>
+        a               sh:PropertyShape ;
+        rdfs:label      "Associates a speed camera to a road (route/tunnel)."@en ;
+        sh:class        schema:Road ;
+        sh:description  "Associates a speed camera to a road (route/tunnel)."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:road .
+
+<https://astrea.linkeddata.es/shapes#ca9fd2097d1236018226e46654869e6f>
+        a               sh:PropertyShape ;
+        rdfs:label      "calle30 code"@en , "Internal code for M-30 (Calle 30) location when applicable."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Internal code for M-30 (Calle 30) location when applicable."@en ;
+        sh:name         "calle30 code"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:calle30Code ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#4a9ef772374131fcf3561884e88910c3>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:longitude .
+
+<https://astrea.linkeddata.es/shapes#5650ce383f004acf872cdc49fd242e68>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      schema:areaServed .
+
+<https://astrea.linkeddata.es/shapes#71304a8aa1a7fb55d0d332882e6dbcc3>
+        a               sh:PropertyShape ;
+        rdfs:label      "direction"@en , "Traffic direction (e.g., inner/outer carriageway)."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Traffic direction (e.g., inner/outer carriageway)."@en ;
+        sh:name         "direction"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:direction ;
+        sh:pattern      ".*" .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#24232c5e2eac91fbf8ce68a1015579f8> , <https://astrea.linkeddata.es/shapes#0b7da16f4205669517784ee2927c0452> , <https://astrea.linkeddata.es/shapes#e3ae1023c0746db30b8591aeeb54c930> , <https://astrea.linkeddata.es/shapes#bbc9832f57332a2ae1b80144519304e0> , <https://astrea.linkeddata.es/shapes#901efff61f7c7c1cf81336ec73416ce3> , <https://astrea.linkeddata.es/shapes#169e8c20aa8843b11dea9f7b6089360b> , <https://astrea.linkeddata.es/shapes#efe8d6382f1ee6c89a0d6f5c3ee679ca> , <https://astrea.linkeddata.es/shapes#5650ce383f004acf872cdc49fd242e68> , <https://astrea.linkeddata.es/shapes#a0de24b9c05e4d5dbee47bb512bc61f3> , <https://astrea.linkeddata.es/shapes#7ca174092f8c4eb63d99b2f1a930093e> , <https://astrea.linkeddata.es/shapes#5847e0e9687166c2a753589d38b401a2> , <https://astrea.linkeddata.es/shapes#f2f83b532daa229bfe4945a19294485c> , <https://astrea.linkeddata.es/shapes#dbc8a4019df650d090f47c7af53f84fd> , <https://astrea.linkeddata.es/shapes#cba8c6e1c1341b196c1e1ceec93242bf> , <https://astrea.linkeddata.es/shapes#2de6aeae5ab850a808f52a83b86d5ce1> , <https://astrea.linkeddata.es/shapes#fe589dda5032f94cfdca781494d2766f> , <https://astrea.linkeddata.es/shapes#2402a66c06fa955b4a257a65731ea33f> , <https://astrea.linkeddata.es/shapes#71304a8aa1a7fb55d0d332882e6dbcc3> , <https://astrea.linkeddata.es/shapes#e6e73ce234230e48fdafa6c9aca47865> , <https://astrea.linkeddata.es/shapes#07d0caf3d6b70f0680a165fedc77a99b> , <https://astrea.linkeddata.es/shapes#4a9ef772374131fcf3561884e88910c3> , <https://astrea.linkeddata.es/shapes#d622a906e385415296bd483a94fa0c8d> , <https://astrea.linkeddata.es/shapes#a74b91fd79d43523a8bb4f8c2fecb5bd> , <https://astrea.linkeddata.es/shapes#07813d10396ab08a4a5b5c6dd3503e6b> , <https://astrea.linkeddata.es/shapes#54d8ba98fbf02fcb53d7bd43ab214be8> , <https://astrea.linkeddata.es/shapes#138879e1510fe91cc508fcca17b1e192> , <https://astrea.linkeddata.es/shapes#45508c85fdcac6297f3ac76819c602ae> , <https://astrea.linkeddata.es/shapes#46b1639fb5decccfbed40ee84fe6cbf4> , <https://astrea.linkeddata.es/shapes#aea0d086befcf2e1814eadaa9174be69> , <https://astrea.linkeddata.es/shapes#813ef851841f252069bb8369b53b757b> , <https://astrea.linkeddata.es/shapes#f9546acd69d215613c9954baa52d201e> , <https://astrea.linkeddata.es/shapes#fc2628996485ee8bcead446853853a68> , <https://astrea.linkeddata.es/shapes#2ad2aa9f4de519f13796eecd8e84e5e8> , <https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395> , <https://astrea.linkeddata.es/shapes#70e458668781cde278b75b542845293c> , <https://astrea.linkeddata.es/shapes#5c4bc3510659685833951dc513efd1b2> , <https://astrea.linkeddata.es/shapes#9e9cb48c1174c31afed273d1a674e5ba> , <https://astrea.linkeddata.es/shapes#ca9fd2097d1236018226e46654869e6f> , <https://astrea.linkeddata.es/shapes#4694c7e76ce3afae4a82d718f563731d> , <https://astrea.linkeddata.es/shapes#f51601245ae8a875e76285a1b8b11ef2> , <https://astrea.linkeddata.es/shapes#4382bff48ee3f4a0f70e1ab0330568a1> , <https://astrea.linkeddata.es/shapes#303b919b6ef6c5b98c4d8c63d343e20e> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#e6e73ce234230e48fdafa6c9aca47865>
+        a               sh:PropertyShape ;
+        rdfs:label      "Links a population observation to its district."@en ;
+        sh:class        schema:AdministrativeArea ;
+        sh:description  "Links a population observation to its district."@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         ns:forDistrict .
+
+<https://astrea.linkeddata.es/shapes#07d0caf3d6b70f0680a165fedc77a99b>
+        a               sh:PropertyShape ;
+        rdfs:label      "street number"@en , "Street number or position for the accident place."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Street number or position for the accident place."@en ;
+        sh:name         "street number"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:streetNumber ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#4694c7e76ce3afae4a82d718f563731d>
+        a               sh:PropertyShape ;
+        rdfs:label      "accident type"@en , "Collision type or event category (e.g., head-on, side, run-over)."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Collision type or event category (e.g., head-on, side, run-over)."@en ;
+        sh:name         "accident type"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:accidentType ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Organization .
+
+<https://astrea.linkeddata.es/shapes#d622a906e385415296bd483a94fa0c8d>
+        a               sh:PropertyShape ;
+        rdfs:label      "people total"@en , "Total residents for the administrative unit on the reference date."@en ;
+        sh:datatype     xsd:integer ;
+        sh:description  "Total residents for the administrative unit on the reference date."@en ;
+        sh:name         "people total"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:peopleTotal ;
+        sh:pattern      "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#24232c5e2eac91fbf8ce68a1015579f8>
+        a               sh:PropertyShape ;
+        rdfs:label      "lane"@en , "Affected lane(s) at the camera location."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Affected lane(s) at the camera location."@en ;
+        sh:name         "lane"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:lane ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#9e9cb48c1174c31afed273d1a674e5ba>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#138879e1510fe91cc508fcca17b1e192> , <https://astrea.linkeddata.es/shapes#70e458668781cde278b75b542845293c> , <https://astrea.linkeddata.es/shapes#901efff61f7c7c1cf81336ec73416ce3> , <https://astrea.linkeddata.es/shapes#a74b91fd79d43523a8bb4f8c2fecb5bd> , <https://astrea.linkeddata.es/shapes#bbc9832f57332a2ae1b80144519304e0> , <https://astrea.linkeddata.es/shapes#e3ae1023c0746db30b8591aeeb54c930> ;
+        sh:targetClass  schema:Person .
+
+<https://astrea.linkeddata.es/shapes#5c4bc3510659685833951dc513efd1b2>
+        a               sh:PropertyShape ;
+        rdfs:label      "camera type"@en , "Speed camera type (Fixed, Section, Traffic-light)."@en ;
+        sh:datatype     xsd:string ;
+        sh:description  "Speed camera type (Fixed, Section, Traffic-light)."@en ;
+        sh:name         "camera type"@en ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         ns:cameraType ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#4382bff48ee3f4a0f70e1ab0330568a1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Road .

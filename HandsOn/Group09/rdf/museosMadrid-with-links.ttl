@@ -1,0 +1,1806 @@
+@prefix ns: <http://example.org/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#Previous definitions
+ns:Neighbourhood a rdfs:Class ;
+    rdfs:subClassOf schema:AdministrativeArea ;
+    rdfs:label "Neighbourhood" .
+
+ns:District a rdfs:Class ;
+    rdfs:subClassOf schema:AdministrativeArea ;
+    rdfs:label "District" .
+
+ns:Province a rdfs:Class ;
+    rdfs:subClassOf schema:AdministrativeArea ;
+    rdfs:label "Province" .
+
+ns:hasNeighbourhood a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "hasNeighbourhood" .
+
+ns:hasDistrict a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "hasDistrict" .
+
+ns:hasLocation a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "hasLocation" .
+
+ns:hasProvince a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "hasProvince" .
+
+ns:inNeighbourhood a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "inNeighbourhood" .
+
+ns:inDistrict a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "inDistrict" .
+
+ns:inLocation a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "inLocation" .
+
+ns:inProvince a rdf:Property ;
+    rdfs:subPropertyOf schema:containedInPlace ;
+    rdfs:label "inProvince" .
+
+
+#Neighbourhoods
+<http://data.example.org/madridMuseos/neighbourhood/ARAVACA> a ns:Neighbourhood ; 
+    schema:name "ARAVACA" ; 
+    owl:sameAs <https://www.wikidata.org/wiki/Q3314682> ; 
+    schema:identifier "7"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/CORTES> a ns:Neighbourhood ;  
+    schema:name "CORTES" ; owl:sameAs <https://www.wikidata.org/wiki/Q2535637> ;  
+    schema:identifier "3"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/SOL> a ns:Neighbourhood ;  
+    schema:name "SOL" ; owl:sameAs <https://www.wikidata.org/wiki/Q2465181> ;  
+    schema:identifier "6"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/ALAMEDA_DE_OSUNA> a ns:Neighbourhood ;  
+    schema:name "ALAMEDA DE OSUNA" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q760737> ;  
+    schema:identifier "1"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/BARAJAS> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> a ns:Neighbourhood ;  
+    schema:name "LOS JERONIMOS" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q10306766> ;  
+    schema:identifier "5"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> a ns:Neighbourhood ;  
+    schema:name "EMBAJADORES" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q2449844> ;  
+    schema:identifier "2"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> a ns:Neighbourhood ;  
+    schema:name "CASA DE CAMPO" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q16302441> ;  
+    schema:identifier "1"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> a ns:Neighbourhood ;  
+    schema:name "UNIVERSIDAD" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q10387767> ;  
+    schema:identifier "5"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> a ns:Neighbourhood ;  
+    schema:name "ALMAGRO" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q10954432> ;  
+    schema:identifier "4"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/LEGAZPI> a ns:Neighbourhood ;  
+    schema:name "LEGAZPI" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q3773990> ;  
+    schema:identifier "4"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/PALACIO> a ns:Neighbourhood ;  
+    schema:name "PALACIO" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q2136510> ;  
+    schema:identifier "1"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/PACIFICO> a ns:Neighbourhood ;  
+    schema:name "PACIFICO" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q3773753> ;  
+    schema:identifier "1"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/neighbourhood/VISTA_ALEGRE> a ns:Neighbourhood ;  
+    schema:name "VISTA ALEGRE" ;  
+    owl:sameAs <https://www.wikidata.org/wiki/Q3813741> ;  
+    schema:identifier "4"^^xsd:string ;  
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CARABANCHEL> ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+#Districts
+<http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> a ns:District ;  
+    schema:name "MONCLOA-ARAVACA" ;  
+    schema:identifier "9"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/district/CENTRO> a ns:District ;  
+    schema:name "CENTRO" ;  
+    schema:identifier "1"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/district/BARAJAS> a ns:District ;  
+    schema:name "BARAJAS" ;  
+    schema:identifier "21"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/district/RETIRO> a ns:District ;  
+    schema:name "RETIRO" ;  
+    schema:identifier "3"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/district/CHAMBERI> a ns:District ;  
+    schema:name "CHAMBERI" ;  
+    schema:identifier "7"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/district/ARGANZUELA> a ns:District ;  
+    schema:name "ARGANZUELA" ;  
+    schema:identifier "2"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/district/CARABANCHEL> a ns:District ;  
+    schema:name "CARABANCHEL" ;  
+    schema:identifier "11"^^xsd:string ;  
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+#Location
+<http://data.example.org/madridMuseos/location/MADRID> a schema:City ;  
+    schema:name "MADRID" ;  
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+#Province
+<http://data.example.org/madridMuseos/province/MADRID> a ns:Province ;  
+    schema:name "MADRID" .
+
+#Museums
+<http://data.example.org/madridMuseos/museum/Casa_Museo_Fuente_del_Rey> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ARAVACA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.045547 ;
+    ns:longitude -3.770572 ;
+    schema:additionalType "/contenido/entidadesYorganismos/FundacionesCulturales" ;
+    schema:description "Fundación AMYC - Fran Daurel  Este museo,  situado en Aravaca y conocido también como Casa - Museo Fuente del Rey. Fundación AMYC, ofrece al visitante una colección de más de 250 obras entre pinturas, dibujos y esculturas (198 pinturas, 37 esculturas y 27 dibujos) realizadas desde mediados del siglo XIX hasta principios del XXI. Se exponen piezas de grandes artistas modernistas e impresionistas como Sorolla, Mariano Fortuny, Nonell, Rusiñol, Ramón Casas, Mir, Rendir, Gargallo, Joseph Llimona, Joan Miró, Salvador Dalí, Tapies, Anglada Camarasa o Torres García, entre otros. La colección está formada por los fondos privados del coleccionista y mecenas Francisco Daurella y se muestra en lo que fue su casa. Los más de 3000 metros cuadrados del edificio así como su jardín, han sido rehabilitados para poder acoger las obras en el que es el primer museo de la capital dedicado en exclusiva al arte catalán." ;
+    schema:email "info@fundaciofrandaurel.com" ;
+    schema:name "Casa Museo Fuente del Rey" ;
+    schema:openingHours "De lunes a viernes de 10:00 a 19:00 horas. Visitas guiadas concertadas Agosto cerrado" ;
+    schema:telephone "913 579 116" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c1260101310f210VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q28808141> .
+
+<http://data.example.org/madridMuseos/museum/Casa_Museo_Lope_de_Vega> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041437 ;
+    ns:longitude -3.697467 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Mi casilla, mi quietud, mi g&amp;uuml;ertecillo y estudio'. Así define su casa Félix Lope de Vega (1562-1635) en una carta dirigida a un amigo. Situada en pleno centro histórico, en el Barrio de las Letras, la Casa Museo Lope de Vega se ubica en el edificio donde el escritor vivió sus últimos 25 años. La recreación de ambientes, cuyo objetivo es que se respire la presencia de Lope, evoca la vida cotidiana del Siglo de Oro y nos acerca a su intimidad. El equipamiento de la casa incorpora obras de arte, mobiliario, enseres y ediciones bibliográficas vinculadas al literato y su tiempo." ;
+    schema:email "casamuseolopedevega@madrid.org" ;
+    schema:name "Casa Museo Lope de Vega" ;
+    schema:openingHours "De martes a domingo, de 10 a 18 horas.  Cerrado los lunes, días 1 y 6 de enero, 1 de mayo, 9 de noviembre y 24, 25 y 31 de diciembre." ;
+    schema:telephone "914 299 216" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4eff8c46145e8110VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q948580> .
+
+<http://data.example.org/madridMuseos/museum/Casita_Museo_de_Ratón_Pérez> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041706 ;
+    ns:longitude -3.70552 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "La Casita-Museo constituye un espacio singular y diferente en el que conviven magia y cultura. Nos habla de un inmenso valor: la fraternidad humana, y posibilita que niños y mayores puedan conocer y acercarse a este madrileño querido por todos, generando la ilusión de cuantos la visitan.   La CMRP da la bienvenida a cuantos visitantes de múltiples procedencias, nacional e internacional, familias y grupos escolares acuden para conocer y encontrarse con este personaje único, madrileño y universal.   El Museo: &amp;ldquo;Pequeño por fuera, grande por dentro, como su dueño&amp;rdquo;.    Duración de la visita: 40 minutos." ;
+    schema:email "info@casamuseoratonperez.es" ;
+    schema:name "Casita Museo de Ratón Pérez" ;
+    schema:openingHours "Visitas: horarios y reservas." ;
+    schema:telephone "915 226 968" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=990950e86d4ca110VgnVCM2000000c205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Castillo_de_la_Alameda> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/BARAJAS> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALAMEDA_DE_OSUNA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.045836 ;
+    ns:longitude -3.593276 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Castillo de la Alameda o de Barajas es uno de los escasos vestigios de la arquitectura militar del pasado siglo XV y uno de los pocos castillos que ha sobrevivido al paso del tiempo. Bajo él y su entorno, existen restos de asentamientos antiguos desde la Edad del Bronce hasta la Época Romana." ;
+    schema:email "castilloalameda@madrid.es" ;
+    schema:name "Castillo de la Alameda" ;
+    schema:openingHours "Abierto solo en fin de semana (sábado y domingo) y festivos (excepto lunes festivos)  Del 1 de abril al 14 de junio de 10 a 21 horas. Del 15 de junio al 15 de septiembre de 10 a 20 horas. Del 16 al 30 de septiembre de 10 a 21 horas. De octubre a marzo de 10 a 18 horas.  Cerrado: 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre." ;
+    schema:telephone "913 667 415" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fe43c4be8e688210VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q8342365> .
+
+<http://data.example.org/madridMuseos/museum/Casón_del_Buen_Retiro> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041528 ;
+    ns:longitude -3.689222 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Centro de Estudios del Prado está ubicado en el Casón del Buen Retiro, que aloja además la Biblioteca, el Archivo, el Centro de Documentación y los Departamentos de Conservación del Museo Nacional del Prado." ;
+    schema:email "centro.estudios@museodelprado.es" ;
+    schema:name "Casón del Buen Retiro" ;
+    schema:telephone "913 302 821" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0443d0b5e71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q3321174> .
+
+<http://data.example.org/madridMuseos/museum/Centro_Cultural_La_Corrala._Museo_de_Artes_y_Tradiciones_Populares> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040883 ;
+    ns:longitude -3.708324 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museoatp@uam.es / lacorrala@uam.es" ;
+    schema:name "Centro Cultural La Corrala. Museo de Artes y Tradiciones Populares" ;
+    schema:openingHours "Lunes a viernes de 10 a 20 horas. Sábados de 10 a 14 horas. Cerrado domingos, festivos y mes de agosto, 24 y 31 diciembre." ;
+    schema:telephone "914 976 500" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c39ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q52247359> .
+
+<http://data.example.org/madridMuseos/museum/Ermita_de_San_Antonio_de_la_Florida_(Museo)> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042526 ;
+    ns:longitude -3.725726 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Ermita dedicada a San Antonio de Padua y pequeño museo. Las pinturas murales que la decoran son de Francisco de Goya. Alberga los restos mortales del artista desde 1919. Para preservar sus pinturas, en 1929 se trasladó el culto a una ermita gemela construida a su lado, dejando el edificio original como museo." ;
+    schema:email "sanantonio@madrid.es" ;
+    schema:name "Ermita de San Antonio de la Florida (Museo)" ;
+    schema:openingHours "General   De martes a domingos de 9:30 a 20 horas.   Verano (del 15 de junio al 15 de septiembre)   De martes a domingo de 9:30 a 19 horas.   Cerrado:  lunes (incluidos festivos), 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre.  Último pase de visita: 20 minutos antes del cierre (el desalojo de las salas comenzará 10 minutos antes) Este horario y la apertura de salas pueden sufrir modificaciones." ;
+    schema:telephone "915 420 722 o 683 429 760" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=75950204770e7310VgnVCM2000000c205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Espacio_Fundación_Telefónica> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042042 ;
+    ns:longitude -3.701595 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "espacio@fundaciontelefonica.com" ;
+    schema:name "Espacio Fundación Telefónica" ;
+    schema:openingHours "Martes, miércoles, jueves y viernes de 11 a 20 horas. Sábados, domingo y festivos, de 11 a 20 horas. Cerrado al público todos los lunes y los días 25 de diciembre y 1 y 6 de enero." ;
+    schema:telephone "914 984 273 (información general) / 679 765 254 (visitas guiadas y talleres educativos)" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=87748ed67151c010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406425> .
+
+<http://data.example.org/madridMuseos/museum/Frontón_Beti_Jai> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043067 ;
+    ns:longitude -3.691157 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Beti Jai es el último de los frontones monumentales de Madrid. Construido en 1894, en pleno auge del juego de pelota vasca, este proyecto del arquitecto Joaquín Rucoba combina diferentes lenguajes arquitectónicos (neoclásico, neomudéjar, etc) que a su vez conviven con elementos característicos de la arquitectura del hierro, vinculada a la Revolución Industrial." ;
+    schema:name "Frontón Beti Jai" ;
+    schema:openingHours "De martes a domingo, de 10 a 14 horas.    Cerrado los días 25 de  diciembre y 1 de enero," ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f4e1273c8ff5e810VgnVCM1000001d4a900aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Galería_de_la_Colecciones_Reales> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042199 ;
+    ns:longitude -3.712674 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Un museo en un magnífico edificio del siglo XXI que pone a disposición de sus visitantes una selección de las colecciones reunidas por los sucesivos reyes de España a lo largo de los últimos cinco siglos, pertenecientes en la actualidad al Estado español y cuyo cuidado, conservación y difusión es responsabilidad de Patrimonio Nacional, institución adscrita como organismo autónomo al Ministerio de Presidencia, Justicia y Relaciones con las Cortes. Con un relato ordenado cronológicamente, desde el fin de la Edad Media hasta nuestros días, la Galería ofrece un interesante diálogo entre piezas: el que conforman las pinturas de grandes maestros como Juan de Flandes, Velázquez, Caravaggio, Bernini o Goya, con los más exquisitos ejemplos de artes decorativas, mobiliario, libros, instrumentos musicales, armaduras o tapices.  La Galería de las Colecciones Reales, inaugurada en el verano de 2023, nace con la vocación de ser el mejor escaparate para los palacios, monasterios, iglesias, montes y patronatos que gestiona Patrimonio Nacional, fascinantes escenarios de poder y centros de actividad política, saber y espiritualidad, ubicados en 6 comunidades autónomas. Conjuntos monumentales como el Palacio Real de Madrid, los palacios de La Granja de San Ildefonso o de Aranjuez; el Real Monasterio de San Lorenzo de El Escorial o el Monasterio de las Descalzas Reales, muchos de ellos dotados de ricas bibliotecas y archivos, convertidos hoy en lugares imprescindibles de consulta y conocimiento, tienen su presencia en la Galería.  De este modo, la Galería se concibe como un complemento a los Reales Sitios, donde las piezas, que en ellos se conservan y exponen en su contexto, puedan ser admiradas de otra forma: ordenadas cronológicamente, en relación con otras objetos de su misma época, y en constante rotación, para que en la exposición permanente puedan integrarse bienes culturales de todo el Patrimonio Nacional." ;
+    schema:name "Galería de la Colecciones Reales" ;
+    schema:openingHours "De lunes a sábado, de 10 a 20 horas  Domingos y festivos, de 10 a 19 horas   Horarios gratuitos: de lunes a jueves, de 18 a 20 horas    Horario reducido: 24 y 31 de diciembre, de 10 a 15 horas   Cerrado: 1 y 6 de enero, 1 de mayo y 25 de diciembre" ;
+    schema:telephone "918 403 883" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a46206f392a7e810VgnVCM2000001f4a900aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Imprenta_Municipal_-_Artes_del_libro> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.04139 ;
+    ns:longitude -3.705469 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "La Imprenta Municipal-Artes del Libro, inaugurada como museo en diciembre de 2011, ofrece a la ciudadanía contenidos culturales ligados a la historia de la imprenta, del libro y de las artes asociadas a ellos. El precedente de esta institución se encuentra en la Imprenta Artesanal.  Su colección posee más de 3000 piezas procedentes de las artes gráficas. Mantiene además los talleres profesionales con impresión tipográfica y encuadernación artística y artesanal. El edificio, construcción de carácter racionalista terminada en 1933 y realizada por Javier Ferrero Lluisá y Luis Bellido, comparte entorno con algunos edificios y espacios relevantes de la ciudad." ;
+    schema:email "imprentamunicipal@madrid.es" ;
+    schema:name "Imprenta Municipal - Artes del libro" ;
+    schema:openingHours "De martes a domingos y festivos: de 10 a 20 horas.  Semana de San Isidro:  de martes a domingo de 10 a 19 horas.   Verano: del 15 de junio al 15 de septiembre, de martes a domingos y festivos de 10 a 19 horas.   Cerrado: todos lunes y los días 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre." ;
+    schema:telephone """Lunes a viernes de 9 a 15 h: 914 294 271\r
+Lunes a viernes de 15 a 20 h: 914 777 549\r
+Fin de semana de 10 a 20 h: 914 777 549""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=26a38ed67151c010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q19453318> .
+
+<http://data.example.org/madridMuseos/museum/La_Casa_Encendida_de_la_Fundación_Montemadrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040823 ;
+    ns:longitude -3.700931 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Edificio de carácter monumental. De estilo neomudéjar, fue diseñado por el arquitecto Fernando Arbós e inaugurado en el año 1913. Cuenta con más de 6000 metros cuadrados de instalaciones divididas en 4 plantas y una azotea. Centro social y cultural." ;
+    schema:name "La Casa Encendida de la Fundación Montemadrid" ;
+    schema:openingHours "De martes a sábado: de 10 a 21 horas. Domingos: de 10 a 16 horas. Cierre de salas de exposición: 15 minutos antes de la hora de cierre del centro." ;
+    schema:telephone "915 062 180" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c27f8899fc81c010VgnVCM1000000b205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Monasterio_de_las_Descalzas_Reales> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041824 ;
+    ns:longitude -3.706204 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Un espacio único para evocar a los Austrias españoles de los siglos XVI y XVII  El Monasterio de las Descalzas Reales, en pleno corazón de Madrid, constituye un espacio de culto y tranquilidad donde el visitante puede observar el contraste con el bullicio de la capital. Fue voluntad de su fundadora, Juana de Austria (1535-1573), hija menor del Emperador Carlos V y princesa de Portugal, convertir el palacio en el que ella misma nació, y que pertenecía al tesorero de su padre, en un monasterio de monjas clarisas. En él instaló sus aposentos tras su regreso de Portugal, y en la capilla que ocupa el mismo espacio en el que vino al mundo descansa su cuerpo." ;
+    schema:name "Monasterio de las Descalzas Reales" ;
+    schema:openingHours "Solo visitas guiadas:    De martes a sábado, de 10 a 14 horas (acceso hasta las 13 horas) y de 16 a 18:30 horas (acceso hasta las 17:30 horas)  Domingos y festivos: Monasterio, de 10 a 15 horas (acceso hasta las 14 horas)  Cierre semanal: lunes durante todo el año  Acceso gratuito: miércoles y jueves,?de 16 a 18:30 horas (último acceso a las 17:30 horas)" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=12e113db5b71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2268271> .
+
+<http://data.example.org/madridMuseos/museum/Museo_ABC> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042741 ;
+    ns:longitude -3.709538 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Centro de arte, dibujo e ilustración. El Museo ABC se integra en las entrañas históricas de la ciudad, en directa relación con el barrio, de forma que desde sus inicios se plantea como un centro vivo, próximo a la sociedad y de divulgación y conservación del tesoro artístico que encierra. Desde enero de 2023, el Museo ABC comparte el espacio del edificio con el Centro Cultural Clara del Rey, perteneciente al Ayuntamiento de Madrid. De esta manera, a partir de ahora el edificio se denomina Centro Cultural Clara del Rey &amp;ndash; Museo ABC." ;
+    schema:email "info_museo@abc.es" ;
+    schema:name "Museo ABC" ;
+    schema:openingHours "Horario sala de exposiciones:  Martes a sábado, de 11 a 14 y de 16 a 20 horas. Lunes y domingo, cerrado." ;
+    schema:telephone "917 588 379" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0103fee6537c210VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q21564330> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Africano_Misioneros_Combonianos> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CIUDAD_LINEAL> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SAN_JUAN_BAUTISTA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044947 ;
+    ns:longitude -3.65149 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:name "Museo Africano Misioneros Combonianos" ;
+    schema:openingHours "Visitas:   Individuales: domingos, visita guiada a las 11:30 horas. (No es necesario cita previa).  Grupos: de lunes a viernes de 9:30 a 13 horas. Es necesario cita previa, en el teléfono 91 415 24 12 o desde el formulario de contacto." ;
+    schema:telephone "914 152 412" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6ab8ef4d7f71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Arqueológico_Nacional> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RECOLETOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042328 ;
+    ns:longitude -3.688412 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Fundado en 1867, el MAN se inauguró en 1895 en su actual sede, el Palacio de Biblioteca y Museos, edificio proyectado por Francisco Jareño y terminado por Antonio Ruiz de Salces." ;
+    schema:name "Museo Arqueológico Nacional" ;
+    schema:openingHours "De martes a sábado de 9:30 a 20 horas. Domingos y festivos de 9:30 a 15 horas.   Cerrado:   Todos los lunes del año. 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre." ;
+    schema:telephone "915 777 912" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8fd8ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1352282> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Banksy_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ACACIAS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040374 ;
+    ns:longitude -3.706194 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Nuevo espacio cultural en Madrid" ;
+    schema:email "info.madrid@museobanksy.es" ;
+    schema:name "Museo Banksy Madrid" ;
+    schema:openingHours "De lunes a domingo de 10 a 20 horas (última entrada 19:15 horas). Jueves horario de cierre a las 21 horas." ;
+    schema:telephone "603 607 564" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4556e2a774089910VgnVCM100000891ecb1aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Casa_de_la_Moneda> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/GOYA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.04226 ;
+    ns:longitude -3.66914 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museocasadelamoneda@fnmt.es" ;
+    schema:name "Museo Casa de la Moneda" ;
+    schema:openingHours "De martes a viernes ininterrumpidamente de 10 a 20 horas. Sábados, domingos y festivos de 10 a 14 horas. Cerrado los lunes (incluidos festivos), y los días 1 y 6 de enero; 24, 25 y 31 de diciembre." ;
+    schema:telephone "915 666 544" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=12f8ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q39072661> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Cerralbo> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ARGUELLES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042378 ;
+    ns:longitude -3.7146 ;
+    schema:additionalType "/contenido/entidadesYorganismos/BibliotecasPatrimoniales" ;
+    schema:description "Un palacio del siglo XIX, un museo del siglo XX y una institución del siglo XXI  El Museo Cerralbo es un museo de titularidad estatal y gestión directa del Ministerio de Cultura.   Un palacio-museo en el que se muestran los espacios y las colecciones del XVII marqués de Cerralbo y su familia, que lo habitaron desde finales del siglo XIX a principios del siglo XX.  Recorriendo sus estancias podemos conocer cómo se vivía en una residencia aristocrática del cambio de siglo. Sus colecciones cuentan con una gran variedad de lámparas, espejos, armas, textiles, cuadros, objetos de porcelana, mobiliario, piezas arqueológicas, etc.  Contiene una Biblioteca con un fondo de unos 24.000 títulos, de los cuales cerca de 9.000 pertenecen al fondo antiguo, que adquirió don Enrique de Aguilera y Gamboa, XVII marqués de Cerralbo, a lo largo de su vida. Biblioteca visitable y consulta de acceso restringido." ;
+    schema:email "museo.cerralbo@cultura.gob.es" ;
+    schema:name "Museo Cerralbo" ;
+    schema:openingHours "El museo abre:    Martes, miércoles, jueves, viernes y sábados: de 9:30 a 15 horas*  Jueves por la tarde (excepto festivos): de 17 a 20 horas.*  Domingos y festivos: de 10 a 15 horas.*   *El acceso al museo finaliza 1 hora antes de su cierre.    El museo cierra:    Todos los lunes.  1 y 6 de enero.  1 de mayo.  24, 25 y 31 de diciembre." ;
+    schema:telephone "Tel.: 915 473 646 / 647. Atención telefónica de lunes a viernes de 9 a 14 horas." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a4efb0c40971c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q976019> .
+
+<http://data.example.org/madridMuseos/museum/Museo_EMT> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMARTIN> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTILLA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.048017 ;
+    ns:longitude -3.68316 ;
+    schema:additionalType "/contenido/entidadesYorganismos/AyuntamientoMadrid/OrganismosEmpresasMunicipales" ;
+    schema:description "El Museo de la EMT se ha convertido en realidad tras una década de duro trabajo de recuperación, restauración y reparación del patrimonio histórico de la Empresa Municipal de Transportes de Madrid, especialmente, material móvil, mobiliario, piezas mecánicas, maquinaria y otros elementos inherentes a la actividad de la EMT en sus 70 años de historia.  Página web:  https://museo.emtmadrid.es/" ;
+    schema:name "Museo EMT" ;
+    schema:openingHours "Visitas (con cita previa)  Apertura estacional durante seis meses al año: todos los sábados de abril, mayo, junio, julio, septiembre y octubre), a las 10, a las 11:30 y a las 13 horas. Por ser un centro de trabajo únicamente pueden realizarse de forma organizada, previamente concertadas y limitadas a un máximo de 40 personas por turno. Duración: 60 minutos aproximadamente. Compra de entradas y reserva de horarios a través de la web: https://entradasmuseo.emtmadrid.es/?lang=es-ES." ;
+    schema:telephone "914 068 810" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d56ad05b2a255510VgnVCM2000001f4a900aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q117459440> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Félix_Cañada> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044259 ;
+    ns:longitude -3.700787 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Una selección de más de quinientas obras de arte de entre las cerca de mil de la donación original, constituyen la Colección Permanente que se puede visitar en las salas del Museo Félix Cañada de la Fundación Gómez Pardo, adscrita a la Escuela Técnica Superior de Ingenieros de Minas y Energía de la Universidad Politécnica de Madrid. Donada por el ingeniero de minas Doctor Félix Cañada Guerrero a la Fundación Gómez Pardo, reúne una amplia representación de trabajos de destacados artistas, pintores, escultores, ilustradores, grabadores, orfebres, ceramistas, etc. abarcando diferentes periodos desde el siglo XI hasta nuestros días." ;
+    schema:email "museo@fgomezpardo.es" ;
+    schema:name "Museo Félix Cañada" ;
+    schema:openingHours "Visitas: lunes, miércoles y viernes, de 10 a 13 horas. ." ;
+    schema:telephone "914 417 921" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cb22820a52799510VgnVCM1000001d4a900aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Geominero> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044205 ;
+    ns:longitude -3.699669 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Los objetivos del Museo Geominero son conservar, investigar y difundir la riqueza y diversidad del patrimonio geológico, paleontológico y mineralógico a través de las importantes colecciones de minerales, rocas y fósiles procedentes de todas las regiones españolas y de antiguos territorios coloniales, así como de yacimientos significados del registro mundial." ;
+    schema:email "m.geominero@igme.es" ;
+    schema:name "Museo Geominero" ;
+    schema:openingHours "De lunes a domingo y festivos, de 9 a 14 horas. Cerrado los días 1 y 6 de enero, 24, 25 y 31 de diciembre." ;
+    schema:telephone "913 495 759" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ff0bef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q13532751> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Histórico_Minero_Don_Felipe_de_Borbón_y_Grecia> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044209 ;
+    ns:longitude -3.700373 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Ubicado en la Escuela Técnica Superior de Ingenieros de Minas de Madrid. Edificio Histórico (M-1). 1&amp;ordf; Planta" ;
+    schema:email "sec.secretario.minasyenergia@upm.es" ;
+    schema:name "Museo Histórico Minero Don Felipe de Borbón y Grecia" ;
+    schema:openingHours "De Lunes a Viernes de 9:30 a 18 horas Primeros domingos de mes de 10 a 14 horas." ;
+    schema:telephone "910 676 304" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=822bef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q53997723> .
+
+<http://data.example.org/madridMuseos/museum/Museo_ICO> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041677 ;
+    ns:longitude -3.697722 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museoico@ico.es" ;
+    schema:name "Museo ICO" ;
+    schema:openingHours "De martes a sábados: de 11 a 20 horas.   Domingos y festivos: de 10 a 14 horas.    Cerrado: Todos los lunes del año.  Horarios especiales: 24 y 31 de diciembre de 10 a 14 horas. 1 de enero, 1 de mayo y 25 de diciembre cerrado." ;
+    schema:telephone "914 201 242" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2886444a2951c010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q60829823> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Los_Caños_del_Peral._Estación_de_Metro_Ópera> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041776 ;
+    ns:longitude -3.709188 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "A diez metros bajo la plaza de Isabel II, la estación de Metro Ópera (L2, L5 y Ramal Norte) alberga la recreación museística de la histórica fuente de los Caños del Peral. La visita nos permite conocer la fuente que recogía el agua de manantial junto al arroyo del Arenal durante la segunda mitad del sigloXVI, y que tenía en origen 34 metros de longitud; la galería de abastecimiento en bóveda de cañón y la alcantarilla de la zona; y el acueducto que, salvando al barranco del arroyo del Arenal, surtió de agua al Palacio Real desde el siglo XVII hasta prácticamente el siglo XX.  Más información." ;
+    schema:email "info@museosmetromadrid.es" ;
+    schema:name "Museo Los Caños del Peral. Estación de Metro Ópera" ;
+    schema:openingHours "Previa reserva en la página museosmetromadrid.es.  Viernes: de 16 a 20 horas. Sábados: de 10 a 14 horas y de 16 a 20 horas. Domingos: de 10 a 14 horas." ;
+    schema:telephone "644 169 531" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=435950262d50f210VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406427> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Lázaro_Galdiano> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043676 ;
+    ns:longitude -3.686182 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Cuenta con la  Biblioteca de la   Fundación Lázaro Galdiano, fundada en 1948, cuando se creó esta institución con el legado procedente de José Lázaro. Tiene cerca de 2.900 ejemplares de fondo antiguo (siglos XVI al XVIII), incluyendo 56 incunables y 877 manuscritos. Biblioteca visitable y consulta de acceso restringido." ;
+    schema:email "info@museolazarogaldiano.es" ;
+    schema:name "Museo Lázaro Galdiano" ;
+    schema:openingHours "Martes a domingo, de 9:30 a 15 horas. Lunes cerrado y los días y los días 6 de enero; 28 y 29 de marzo; 1, 2 y 15 de mayo; 25 de julio; 15 de agosto; 24, 25 y 31 de diciembre de 2024." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7d1aef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q386570> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_Centro_de_Arte_Reina_Sofía_(MNCARS)> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040864 ;
+    ns:longitude -3.69395 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Edificio Sabatini: calle Santa Isabel 52.  Edificio Nouvel (ampliación): ronda de Atocha, esquina a plaza del Emperador Carlos V.  Espacios en el parque del Retiro: Palacio de Velázquez y Palacio de Cristal." ;
+    schema:email "info@museoreinasofia.es" ;
+    schema:name "Museo Nacional Centro de Arte Reina Sofía (MNCARS)" ;
+    schema:openingHours "Lunes y de miércoles a sábado, de 10 a 21 horas. Martes cerrado (incluso festivos). Domingos de 10 a 14:30 horas.  Días de cierre" ;
+    schema:telephone "917 741 000" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=69d8275bad5a1210VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q460889> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_Thyssen-Bornemisza> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041602 ;
+    ns:longitude -3.694738 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El palacio donde se ubica la colección fue el antiguo palacio del duque de Villahermosa. Edificación neoclásica. Posteriormente se adapta como entidad bancaria perdiento sus espacios interiores. Más tarde, pasó a formar parte de los edificios del Museo del Prado. Desde principios de los 90 alberga la Colección Thyssen. El museo ofrece un recorrido por la historia de la pintura europea desde sus inicios en el siglo XIII, hasta finales del siglo XX." ;
+    schema:email "cavthyssen@museothyssen.org" ;
+    schema:name "Museo Nacional Thyssen-Bornemisza" ;
+    schema:openingHours "Colecciones permanentes:  lunes de 12 a 16 horas (acceso gratuito gracias al patrocinio de MasterCard). Martes a domingo de 10 a 19 horas.   Exposiciones temporales: consultar horario específico en la web del museo.  Avisos y horarios especiales:  consultar en la web del museo   El desalojo de las salas tendrá lugar 5 minutos antes del cierre." ;
+    schema:telephone "917 911 370" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b8079262ef5d010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q176251> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_de_Antropología> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040789 ;
+    ns:longitude -3.688858 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "El Museo está instalado en el edificio de estilo clasicista construido por el Marqués de Cubas en 1875 por encargo del Doctor González Velasco, fundador de la institución." ;
+    schema:email "antropologico@cultura.gob.es" ;
+    schema:name "Museo Nacional de Antropología" ;
+    schema:openingHours "De martes a sábado de 9:30 a 20 horas. Domingos: de 10 a 15 horas. Cerrado todos los lunes del año y los días 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre y un festivo local. La taquilla se cerrará 15 minutos antes del cierre." ;
+    schema:telephone "915 306 418 / 915 395 995" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=456079262ef5d010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2917041> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_de_Artes_Decorativas> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.04179 ;
+    ns:longitude -3.689755 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Inaugurado en 1912, su sede es un típico palacete madrileño del último tercio del siglo XIX. El museo posee muebles, cerámicas, vidrios, joyas, tejidos, arte oriental, y hasta 30 000 objetos distintos que a lo largo de la historia han servido para embellecer las casas, palacios y los monumentos de distintas culturas. El museo posee muestras como el Jarrón de Sevres regalo de Napoleón III, la Cocina Valenciana del siglo XVIII compuesta por más de 1500 azulejos de Manises, la Mesa de plata del siglo XVI o la colección de alfombras españolas de los siglos XV al XVII." ;
+    schema:email "mnad@cultura.gob.es" ;
+    schema:name "Museo Nacional de Artes Decorativas" ;
+    schema:openingHours "Martes a sábados de 9:30 a 15 horas. Domingo y festivos: de 10 a 15 horas. Jueves tarde de 17 a 20 horas (excepto  primer jueves no festivo de enero y meses julio y agosto).  Cerrado:  todos los lunes, 1 y 6 de enero, 1 y 15 de mayo, 9 de noviembre, 24, 25 y 31 de diciembre.    La venta de entradas finalizará 30 minutos antes del cierre." ;
+    schema:telephone "915 326 499 / 915 326 845" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=287079262ef5d010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5361303> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_de_Ciencias_Naturales> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMARTIN> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_VISO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044043 ;
+    ns:longitude -3.690212 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:name "Museo Nacional de Ciencias Naturales" ;
+    schema:openingHours "De martes a viernes de 10 a 17 horas. Sábados, domingos y festivos de 10 a 20 horas. Cerrado los lunes (excepto los festivos). Cerrado el 1 y 6 de enero, el 1 de mayo y el 25 de diciembre. Los días 24 y 31 de diciembre el museo permanecerá abierto de 10 a 15 horas. Los perros educados son bienvenidos. Ver condiciones aquí." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8edbef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1966699> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Naval> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041782 ;
+    ns:longitude -3.69271 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museonavalmadrid@fn.mde.es" ;
+    schema:name "Museo Naval" ;
+    schema:openingHours "De martes a domingo de 10 a 19 horas Durante el mes de agosto, horario reducido de 10 a 15 horas Cerrado todos los lunes y los días 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre El desalojo del museo se hará 15 minutos antes del cierre" ;
+    schema:telephone "915 238 516" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a30cef4d7f71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Sorolla> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043526 ;
+    ns:longitude -3.692571 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museo.sorolla@cultura.gob.es" ;
+    schema:name "Museo Sorolla" ;
+    schema:openingHours "De martes a sábado: de 9:30 a 20 horas. Domingos y festivos: de 10 a 15 horas. Cerrado: todos los lunes del año, 1 y 6 de enero, 1 de mayo, 9 noviembre, 24, 25 y 31 de diciembre." ;
+    schema:telephone "913 101 584" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6dd05e93aad9c110VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1592523> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Taurino_de_la_Comunidad_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/GUINDALERA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043158 ;
+    ns:longitude -3.662863 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Situado en el Patio de Caballos, ofrece a sus visitantes un atractivo recorrido por la historia del toreo, demostrando la relevancia de la Tauromaquia en la historia y la cultura de España. En este espacio se pueden contemplar grabados de Goya, vestidos, monteras y capotes de paseo de grandes toreros del siglo XX o un rincón dedicado a la figura de Manolete." ;
+    schema:email "museotaurinolasventas@madrid.org" ;
+    schema:name "Museo Taurino de la Comunidad de Madrid" ;
+    schema:openingHours "Todos los días del año de 10 a 19 horas, excepto el 25 de diciembre y el 1 de enero. Horario de noviembre a marzo de 10 a 18 horas ininterrumpidamente. Los días que se celebren festejos de cualquier tipo en el recinto, las visitas terminarán 2 horas antes del comienzo del espectáculo.??   Visitas en grupo: solicitar cita previa en el correo electrónico museotaurinolasventas@madrid.org" ;
+    schema:telephone "912 761 287" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=958cef4d7f71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Tiflológico> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CUATRO_CAMINOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.045525 ;
+    ns:longitude -3.700169 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Edificio con una superficie de 1.500 m2 dividido en tres zonas con maquetas de monumentos nacionales e internacionales realizadas por invidentes e instrumentos utilizados por los invidentes desde hace 200 años. Es un espacio concebido para que sus visitantes puedan ver y tocar las piezas expuestas." ;
+    schema:email "museo@once.es" ;
+    schema:name "Museo Tiflológico" ;
+    schema:openingHours "Martes a viernes: de 10 a 15 h y de 16 a 19 horas. Sábados: de 10 a 14 horas. Lunes, domingos y festivos: cerrado.   Consultar cierres especiales en https://museo.once.es/" ;
+    schema:telephone "915 894 219" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=baacef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q109568487> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Aeronáutica_y_Astronáutica> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/LATINA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CUATRO_VIENTOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.037362e+06 ;
+    ns:longitude -3.80843e+05 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "El museo tiene por finalidad la adquisición, conservación y exposición de los bienes que constituyen el Patrimonio Histórico de la Aeronáutica Española. Dispone de una exposición exterior y siete hangares que albergan aeronaves, uniformes, condecoraciones, motores, maquetas y otros fondos relacionados con la aviación. Terminada la Guerra Civil y una vez creado el Ejército del Aire, se concibe la idea de crear un museo que reflejara la evolución e historia de nuestra aeronáutica. Desde 1975 el Museo está en Cuatro Vientos y se han sucedido varias ampliaciones que le convierten en un referente europeo de la aeronáutica." ;
+    schema:email "museodelaire@ea.mde.es" ;
+    schema:name "Museo de Aeronáutica y Astronáutica" ;
+    schema:openingHours "De martes a domingo de 10 a 14 horas. Cerrado: 1 y 6 de enero, jueves y viernes Santos, 10 de diciembre (patrona de la aviación), 24, 25 y 31 de diciembre y días establecidos en el calendario anual." ;
+    schema:telephone "915 091 690" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=90aaef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q11057120> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_América> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043794 ;
+    ns:longitude -3.721854 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museo.america@cultura.gob.es" ;
+    schema:name "Museo de América" ;
+    schema:openingHours "De martes a sábado, de 9:30 a 15 horas. Jueves, apertura continuada de 9:30 a 19 horas. Domingos y festivos de 10 a 15 horas.   Cerrado todos los lunes del año, 1 de enero, 1 de mayo, 24, 25 y 31 de diciembre, 6 de enero y un festivo local." ;
+    schema:telephone "915 492 641 / 915 439 437" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c929ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2568412> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Arte_Contemporáneo_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.04274 ;
+    ns:longitude -3.710589 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Al igual que otros museos de arte contemporáneo, nacionales o extranjeros, se ha utilizado un edificio histórico para albergar las colecciones: el Cuartel del Conde Duque. El Museo de Arte Contemporáneo recupera para los madrileños el despacho del escritor vanguardista Ramón Gómez de la Serna, como parte de su colección permanente." ;
+    schema:email "mmacmdifusion@madrid.es" ;
+    schema:name "Museo de Arte Contemporáneo de Madrid" ;
+    schema:openingHours "De martes a viernes: de 10 a 14 horas y de 15 a 21 horas. Sábados: de 10 a 14 horas y de 17:30 a 21 horas. Domingos y festivos: de 10:30 a 14:30 horas.  Horario durante la semana de San Isidro (12 a 16 de mayo, 2025) y de verano (del 15 de junio al 15 de septiembre, ambos inclusive):  De martes a viernes: de 10 a 14 horas y de 15 a 20 horas. Sábados: de 10 a 14 horas y de 17:30 a 20 horas. Domingos y festivos: de 10:30 a 13:30 horas. *15 de mayo, festivo.  Cerrado: todos lunes y los días 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre. Las salas se desalojan 15 minutos antes del cierre." ;
+    schema:telephone "Teléfono de sala: 914 801 766" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=84a55c2cdc41c010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q6940528> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Astronomía_y_Geodesia> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044946 ;
+    ns:longitude -3.725938 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "El museo de Astronomía y Geodesia de la Universidad Complutense de Madrid agrupa una importante colección de instrumentos de Astronomía, Geodesia y Topografía, reunidos con el afán didáctico de dar a conocer la evolución de los métodos utilizados en estas disciplinas durante los últimos 150 años." ;
+    schema:email "fuensant@ucm.es." ;
+    schema:name "Museo de Astronomía y Geodesia" ;
+    schema:openingHours "Visita con cita previa." ;
+    schema:telephone "91 394 4588" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ee49ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406428> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Bomberos_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/PUENTE_DE_VALLECAS> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/NUMANCIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.039453 ;
+    ns:longitude -3.653931 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museobomberosmadrid@madrid.es" ;
+    schema:name "Museo de Bomberos de Madrid" ;
+    schema:openingHours "Horario ordinario: Lunes, miércoles, jueves y viernes laborables a las 12:00 horas" ;
+    schema:telephone "Actualmente no disponible." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9f0966a8bba49210VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q113329713> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Calcografía_Nacional> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041766 ;
+    ns:longitude -3.70065 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "La institución posee la más importante colección de láminas de grabado calcográfico de España. El número de matrices metálicas supera las ocho mil obras, abarcando un amplio periodo cronológico, desde el siglo XVI al XXI." ;
+    schema:name "Museo de Calcografía Nacional" ;
+    schema:openingHours "Consultar en la web." ;
+    schema:telephone "915 240 864" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7169ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q111818807> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Cera> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042449 ;
+    ns:longitude -3.691381 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "info@museoceramadrid.com; reservas@museoceramadrid.com" ;
+    schema:name "Museo de Cera" ;
+    schema:openingHours "Horario de invierno: Lunes a domingo, de 11 a 19 horas. Horario de verano: Lunes a domingo, de 11 a 20 horas." ;
+    schema:telephone "913 199 330" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9689ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q15121263> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Escultura_al_Aire_Libre_de_la_Castellana> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043322 ;
+    ns:longitude -3.687612 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Museo de Escultura al Aire Libre de La Castellana, está situado bajo el paso elevado que une las calles de Juan Bravo y Eduardo Dato, contiene una excelente colección de escultura abstracta española." ;
+    schema:email "mmacmdifusion@madrid.es" ;
+    schema:name "Museo de Escultura al Aire Libre de la Castellana" ;
+    schema:openingHours "Entrada libre. Espacio urbano abierto Abierto 24 horas al día los 365 días del año." ;
+    schema:telephone "915 885 921" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=eca9ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2283575> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Historia_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042577 ;
+    ns:longitude -3.700846 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Fue creado como museo municipal en 1929 y rebautizado como Museo de Historia de Madrid en 2007. En el año 2014 se hace una profunda remodelación y reabre sus puertas con un montaje moderno y una puesta al día de sus colecciones." ;
+    schema:email "smuseosm@madrid.es" ;
+    schema:name "Museo de Historia de Madrid" ;
+    schema:openingHours "De martes a domingos de 10 a 20 horas.  Verano (Del 15 de junio al 15 de septiembre): de martes a domingos de 10 a 19 horas.  Cerrado: lunes y los días 1 y 6 de enero, 1 de mayo,  24, 25 y 31 de diciembre.   El desalojo de las salas se hará diez minutos antes del cierre." ;
+    schema:telephone "917 011 863" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f3079262ef5d010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q876383> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Historia_de_la_Comunidad_Judía_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/TRAFALGAR> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043544 ;
+    ns:longitude -3.70002 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "info@cjmadrid.org" ;
+    schema:name "Museo de Historia de la Comunidad Judía de Madrid" ;
+    schema:telephone "915 913 131" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f2a4a659ee71110VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406429> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Mineralogía> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/FUENCARRAL-EL_PARDO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_GOLOSO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.054538 ;
+    ns:longitude -3.695183 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museo.mineralogia@uam.es" ;
+    schema:name "Museo de Mineralogía" ;
+    schema:openingHours "De lunes a viernes, de 10:30 a 14:30 horas (concertar previamente)." ;
+    schema:telephone "914 975 407 / 914 972 564 / 914 974 800" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=255aef4d7f71c010VgnVCM1000000b205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_San_Isidro._Los_Orígenes_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041208 ;
+    ns:longitude -3.710816 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Este espacio museográfico propone un viaje por la historia de la ciudad de Madrid desde la Prehistoria hasta el establecimiento de la Corte, a través de distintas salas como la de San Isidro, el Patio renacentista, el Jardín arqueobotánico o el Almacén visitable." ;
+    schema:email "museosanisidro@madrid.es" ;
+    schema:name "Museo de San Isidro. Los Orígenes de Madrid" ;
+    schema:openingHours "De martes a domingo y festivos de 10 a 20 horas.  Último pase de visita 15 minutos antes del cierre.    Verano, del 15 de junio al 15 de septiembre: de martes a domingo de 10 a 19 horas.  Cerrado todos los lunes, el 1 y 6 de enero, el 1 de mayo y los días 24, 25 y 31 de diciembre." ;
+    schema:telephone "913 667 415" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7b7aef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5556798> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Sanidad_e_Higiene_Pública> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/FUENCARRAL-EL_PARDO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LA_PAZ> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.047548 ;
+    ns:longitude -3.690042 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "El Museo de Sanidad e Higiene Pública se comenzó a desarrollar en el año 1995 y es un centro único en su especialidad en España. Está ubicado en el Pabellón 14 del campus de Chamartín en el Instituto de Salud Carlos III, que albergaba los laboratorios del Hospital Nacional de Enfermedades Infecciosas, conocido como Hospital del Rey. El objetivo es gestionar para su difusión y conservación las colecciones de objetos, libros y documentos que reflejan los aspectos más significativos de la historia y evolución de la salud pública en nuestro país. De ese modo se busca la promoción de la investigación en este campo facilitando a los investigadores, profesores y técnicos que lo necesiten, apoyo técnico especializado." ;
+    schema:email "museodesanidad@isciii.es" ;
+    schema:name "Museo de Sanidad e Higiene Pública" ;
+    schema:openingHours "Visitas guiadas de grupo de lunes a jueves con cita previa. Consultar en web" ;
+    schema:telephone "918 222 414" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3e755c2cdc41c010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406432> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Catedral_de_la_Almudena> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041555 ;
+    ns:longitude -3.713667 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "reservasmuseo@catedraldelaalmudena.es" ;
+    schema:name "Museo de la Catedral de la Almudena" ;
+    schema:openingHours "De lunes a sábado de 10 a 14:30 horas.   Cerrado los domingos, fiestas de precepto y días de actos de culto especiales en la Catedral. Consultar  Agenda ." ;
+    schema:telephone "915 592 874" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=82cb8d0e78d22110VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q107611898> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Farmacia_Hispana> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044451 ;
+    ns:longitude -3.726202 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "museofar@ucm.es" ;
+    schema:name "Museo de la Farmacia Hispana" ;
+    schema:openingHours "El Museo de la Farmacia Hispana solo puede visitarse realizando una reserva con antelación.La visita es gratuita, guiada y tiene una duración aproximada de 1 hora y media. Se realizan durante el curso lectivo, de lunes a viernes y en horario de mañana.  Este año vamos a empezar con las visitas guiadas en horario de tarde. Serán los martes y miércoles lectivos de octubre a mayo. La visita completa empezará a las 16:00 y durará 1 hora y media. Habrá también opción de visita abreviada de 17:00 a 18:00.   Las visitas de tarde podrán reservarse solo con un mes de antelación." ;
+    schema:telephone "913 941 797" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=58f9ef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q105942790> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Guardia_Civil> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/VALLEHERMOSO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.044439 ;
+    ns:longitude -3.712291 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "El Museo de la Guardia Civil es una institución sin ánimo de lucro, permanente y al servicio de la sociedad, que investiga, colecciona, conserva, interpreta y exhibe el patrimonio material e inmaterial' relacionado con la Guardia Civil.   Está en desarrollo un nuevo proyecto de Museo de la Guardia Civil, con nuevas instalaciones y una museografía más moderna, completa y atractiva. Con ello, el nuevo espacio museístico del Cuerpo se configurará como una poderosa herramienta divulgativa de la historia de la Guardia Civil y sus valores corporativos, ayudando a difundir entre el público una siempre necesaria cultura de la seguridad ciudadana.   Hasta la apertura del nuevo museo, no será posible realizar visitas presenciales, pudiendo realizar una visita virtual a través del espacio digital de Google Arts &amp;amp; Culture" ;
+    schema:email "dg-estuhistoricos-registro@guardiacivil.org" ;
+    schema:name "Museo de la Guardia Civil" ;
+    schema:telephone "915 146 000, extensiones 48495 (Oficina Museo), 48477 (Salas Museo)" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=003aef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q110560070> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Real_Academia_de_Bellas_Artes_de_San_Fernando> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041766 ;
+    ns:longitude -3.70065 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Construido inicialmente para palacio de Don Juan de Goyeneche, el edificio fue adquirido por la Academia de Bellas Artes en 1773 y reformado bajo la dirección de Fernando Chueca Goitia en 1973 y la fachada por Diego de Villanueva en 1774." ;
+    schema:email "registro.museo@rabasf.com" ;
+    schema:name "Museo de la Real Academia de Bellas Artes de San Fernando" ;
+    schema:openingHours "Colección permanente: De martes a domingos, de 10 a 15 horas, incluyendo festivos Exposiciones temporales: consultar el apartado específico de la exposición temporal. Días cerrados: 1 y 6 de enero; 1 y 30 de mayo; 9 de noviembre; 24, 25 y 31 de diciembre. Las oficinas de la Real Academia de Bellas Artes abren de lunes a viernes, de 08.30 a 17.00 horas. Cerrada fines de semana y días festivos." ;
+    schema:telephone "915 240 864" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=924aef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q96658155> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Ferrocarril_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/DELICIAS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040029 ;
+    ns:longitude -3.693805 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Edificio de carácter monumental. Proyectada por el ingeniero francés Émile Cacheliévre e inaugurada el 30 de marzo de 1880, la estación de Delicias fue la primera gran estación con carácter definitivo de Madrid." ;
+    schema:email "taquillamuseo@ffe.es" ;
+    schema:name "Museo del Ferrocarril de Madrid" ;
+    schema:openingHours "De octubre a mayo:   Lunes a viernes, de 9:30 a 15 horas. Sábados y festivos, de 10 a 19 horas. Domingo, de 10 a 15 horas.   De junio a septiembre:   Lunes a domingo, de 10 a 15 horas.   Cerrado: 25 de diciembre, 1 y 6 de enero." ;
+    schema:telephone "915 390 085" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=091c4291ae91f010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q6034436> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Prado> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041854 ;
+    ns:longitude -3.692583 ;
+    schema:additionalType "/contenido/entidadesYorganismos/BibliotecasPatrimoniales" ;
+    schema:description "El Museo Nacional del Prado, desde que fue inaugurado en 1819 y a lo largo de su historia centenaria, ha cumplido con la alta misión de conservar, exponer y enriquecer el conjunto de las colecciones y obras de arte que, estrechamente vinculadas a la historia de España, constituyen una de las más elevadas manifestaciones de expresión artística de reconocido valor universal. La Biblioteca del Museo Nacional del Prado se encuentra situada en el Casón del Buen Retiro, actual sede del Centro de Estudios del Museo del Prado. Está especializada en artes plásticas europeas entre la Edad Media y el siglo XIX. Conserva un destacado patrimonio bibliográfico, de impresos y manuscritos anteriores a 1910, de notable importancia por su cantidad (unos 7.000 volúmenes), por su carácter especializado (tratados de pintura y arquitectura, libros de fiestas, cartillas de dibujo y libros de iconografía, emblemas, anatomía y fisiognomía) y por la rareza de algunos de sus ejemplares." ;
+    schema:email "cav@museodelprado.es" ;
+    schema:name "Museo del Prado" ;
+    schema:openingHours "De lunes a sábado, de 10 a 20 horas. Domingos y festivos, de 10 a 19 horas. Cerrado los días 1 de enero, 1 de mayo y 25 de diciembre. Horario reducido, de 10 a 14 horas (6 de enero y 24 y 31 de diciembre).  Horario de gratuidad:  De lunes a sábado, de 18 a 20 horas. Domingos y festivos, de 17 a 19 horas.  Acceso al Museo hasta 30 minutos antes del cierre." ;
+    schema:telephone "910 683 001" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=060079262ef5d010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q160112> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Reloj_Grassy> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041915 ;
+    ns:longitude -3.698057 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Arquitecto: Eladio Laredo Carranza (1916 - 1917)." ;
+    schema:email "info@grassy.es" ;
+    schema:name "Museo del Reloj Grassy" ;
+    schema:openingHours "Visitas guiadas:   Miércoles 12 horas. Jueves 17:30 horas." ;
+    schema:telephone "915 321 007" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=daeaef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406434> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Romanticismo> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042586 ;
+    ns:longitude -3.698768 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:email "informacion.romanticismo@cultura.gob.es" ;
+    schema:name "Museo del Romanticismo" ;
+    schema:openingHours "Horario de invierno (de noviembre a abril): De martes a sábado: de 9:30 a 18:30. Domingos y festivos: de 10 a 15 horas.  Horario de verano (de mayo a octubre): De martes a sábado: de 9:30 a 20:30. Domingos y festivos: de 10 a 15 horas.  Cerrado: Todos los lunes, 1 y 6 enero, 1 mayo, 9 noviembre, 24, 25 y 31 diciembre." ;
+    schema:telephone "914 481 045 / 914 480 163" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=706cef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q6974501> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Seguro._Fundación_Mapfre> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042327 ;
+    ns:longitude -3.692277 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:name "Museo del Seguro. Fundación Mapfre" ;
+    schema:openingHours "De lunes a viernes de 9 a 17 horas. Cerrado festivos y mes de agosto.  Visitas en grupo previa reserva en su página web ." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=479b95f8c72d5310VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406435> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Traje._Centro_de_Investigación_del_Patrimonio_Etnológico_(CIPE)> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.043966 ;
+    ns:longitude -3.727822 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Edificio de carácter monumental, construido por Jaime López de Asiaín en 1969." ;
+    schema:name "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)" ;
+    schema:openingHours "Exposición permanente y temporal   Martes a sábado, de 9:30 a 19:00 horas. Domingos y festivos, de 10 a 15:00 horas.  La taquilla finaliza su actividad de venta de entradas 15 minutos antes de la hora del cierre de la exposición.  Noches de verano - Verano en el Museo   Los jueves de julio y agosto, apertura extraordinaria: 19:00 - 22:30 horas.  Cerrado: Todos los lunes, 1 y 6 enero, 1 mayo, 9 noviembre, 24, 25 y 31 diciembre." ;
+    schema:telephone "915 504 700" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=053c4291ae91f010VgnVCM2000000c205a0aRCRD> .
+
+<http://data.example.org/madridMuseos/museum/Palacio_Real_de_El_Pardo> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/FUENCARRAL-EL_PARDO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_PARDO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.052054 ;
+    ns:longitude -3.776226 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Palacio Real de El Pardo es la Residencia Oficial de Jefes de Estado Extranjeros desde 1983 y sus orígenes como cazadero real están vinculados al Monte de El Pardo. Es un edificio vinculado estrechamente a la historia de España. Mandado construir por el Emperador Carlos V en el siglo XVI y que en el siglo XVIII fue ampliado por mandato de Carlos III. Hay que destacar su entorno, ya que está rodeado por el Monte de El Pardo, espacio natural de extraordinario valor, considerado como el bosque mediterráneo más importante de la Comunidad de Madrid." ;
+    schema:email "info@patrimonionacional.es" ;
+    schema:name "Palacio Real de El Pardo" ;
+    schema:openingHours "Martes a domingo, de 10 a 18 horas Acceso gratuito: miércoles y domingo, de 15 a 18 horas (último acceso a las 17 horas)" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9f9def4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1368571> .
+
+<http://data.example.org/madridMuseos/museum/Palacio_Real_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041764 ;
+    ns:longitude -3.711629 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Palacio Real de Madrid es uno de los más hermosos y mejor conservados de Europa. Sus más de 135.000 metros cuadrados han sido testigos de siglos de la historia de España.   Es una de las pocas residencias oficiales de Jefes de Estado que está abierta al público. Cerca de 1,5 millones de visitantes vienen cada año a descubrir sus rincones, sus obras de arte y sus tesoros únicos en el mundo.   Espacios.   Relevos de la Guardia Real." ;
+    schema:name "Palacio Real de Madrid" ;
+    schema:openingHours "De lunes a sábado, de 10 a 18 horas (acceso hasta las 17 horas) Domingos, de 10 a 16 horas (acceso hasta las 15 horas) Acceso gratuito al palacio: de lunes a jueves, de 16 a 18 horas (último acceso a las 17 horas)  Jardines del Campo del Moro: todos los días, de 10 a 18 horas" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=47ddef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q171517> .
+
+<http://data.example.org/madridMuseos/museum/Panteón_de_España> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PACIFICO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040623 ;
+    ns:longitude -3.683398 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Panteón de España (antes llamado Panteón de hombres ilustres) tiene como objetivo mantener el recuerdo y proyección de los representantes de la historia de la democracia española y de aquellas personas que hayan destacado por su labor en defensa de la convivencia democrática, la paz y los derechos humanos, así como el progreso de la ciencia o la cultura.  Se pueden visitar los mausoleos de políticos y militares como Sagasta, Cánovas del Castillo, Dato, Ríos Rosas, Canalejas o Gutiérrez de la Concha." ;
+    schema:name "Panteón de España" ;
+    schema:openingHours "De martes a sábado, de 10 a 14 y de 16 a 18:30 horas. Acceso por la mañana hasta las 13:30 horas y por la tarde hasta las 18:00 horas  Domingos y festivos, de 10 a 15 horas, acceso hasta las 14:30 horas  Cierre semanal: lunes durante todo el año" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=361cef4d7f71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q7131757> .
+
+<http://data.example.org/madridMuseos/museum/Parroquia_Santa_Cruz> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041461 ;
+    ns:longitude -3.705254 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:email "santacruz@archimadrid.es" ;
+    schema:name "Parroquia Santa Cruz" ;
+    schema:telephone "913 691 239" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=40e0b069a541f010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406436> .
+
+<http://data.example.org/madridMuseos/museum/Planetario_de_Madrid> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LEGAZPI> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.039228 ;
+    ns:longitude -3.684957 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Planetarios" ;
+    schema:description "Inaugurado el 29 de septiembre de 1986, es un centro dependiente del Área de Cultura, Turismo y Deporte del Ayuntamiento de Madrid. Durante los años 2016/2017 fue sometido a una profunda renovación tanto tecnológica como de las instalaciones y edificio, posible en virtud de un acuerdo de colaboración entre el Ayuntamiento de Madrid y la Obra Social &amp;ldquo;la Caixa&amp;rdquo; &amp;ndash; que incluye dotación de contenidos, renovación de exposiciones y la realización de actividades varias en el campo de la divulgación científica. Siempre con el fin de contribuir a la difusión de la astronomía y de la ciencia en general, tanto entre escolares como entre el público de cualquier edad y condición, posee una variada oferta de  proyecciones  audiovisuales,  exposiciones  y  actividades  ( talleres, cursos, conferencias, observaciones públicas...). Las proyecciones que se ofrecen en el Planetario de Madrid se renuevan periódicamente y tienen una duración aproximada de 30 minutos. Existen dos programaciones básicas diferentes: una activa durante el verano y época de vacaciones escolares, y otra durante el curso escolar. Durante el curso escolar, las proyecciones de las mañanas de los días lectivos se reservan a escolares .    Video de presentación del centro.   Planetario en  Google Maps.   Redes Sociales:  canal de WhatsApp, Facebook, X- antiguo twitter, YouTube, Instagram." ;
+    schema:email "buzon@planetmad.es" ;
+    schema:name "Planetario de Madrid" ;
+    schema:openingHours "Horario del centro: De martes a domingo, de 10:00 a 13:45 h y de 17 a 19:45 h. Las mañanas de los días lectivos están dedicadas a las visitas escolares.*Horario de verano (ver arriba).     Cerrado: Todos los lunes del año. Días 1 y 6 de enero; 1 de mayo; 24, 25 y 31 de diciembre.   Horario de proyecciones ." ;
+    schema:telephone """914 673 461 (reserva grupos)                                                                                                                                                                                                                                                                                                                                                                                                                                               \r
+914 673 898 (contestador automático de información)""" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9c5b069a541f010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q9060456> .
+
+<http://data.example.org/madridMuseos/museum/Real_Basílica_San_Francisco_el_Grande> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041085 ;
+    ns:longitude -3.714493 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Conjunto conventual que sustituyó al monasterio franciscano medieval, construido por Francisco de las Cabezas entre 1761 y 1768, que fue relevado por Antonio Polo y que concluye Francisco Sabatini en 1784 donde se exponen colecciones de pinturas de los siglos XVII al XIX." ;
+    schema:email "madridfcogrande@ofminmaculada.org" ;
+    schema:name "Real Basílica San Francisco el Grande" ;
+    schema:openingHours "Visita Guiada Museo y tarifas" ;
+    schema:telephone "91 575 99 66" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef8d0713fb71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2473884> .
+
+<http://data.example.org/madridMuseos/museum/Real_Fábrica_de_Tapices> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PACIFICO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040609 ;
+    ns:longitude -3.682509 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:email "informacion@realfabricadetapices.com" ;
+    schema:name "Real Fábrica de Tapices" ;
+    schema:openingHours "Lunes a viernes: de 10 a 14 horas." ;
+    schema:telephone "914 340 550" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=53cbff632081c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q570665> .
+
+<http://data.example.org/madridMuseos/museum/Real_Monasterio_de_Santa_Isabel> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.040947 ;
+    ns:longitude -3.696232 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Una de las obras más destacadas en Madrid del arquitecto real Juan Gómez de Mora.  El Real Monasterio de Santa Isabel, que da nombre a la antigua Fábrica de Tapices del mismo nombre, representada por Velázquez en Las hilanderas, fue fundado por Felipe II en el lugar donde su secretario, Antonio Pérez, tuvo su suntuosa casa de campo. El patronato le otorgó a la iglesia una doble función: un convento de Agustinas y un colegio, inicialmente destinado a las hijas de los servidores de la Casa Real." ;
+    schema:name "Real Monasterio de Santa Isabel" ;
+    schema:openingHours "El acceso al templo sólo es posible en horario de culto." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=545b544a249c6110VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q9067089> .
+
+<http://data.example.org/madridMuseos/museum/Real_Monasterio_de_la_Encarnación> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.041968 ;
+    ns:longitude -3.711561 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "El Monasterio de La Encarnación de Madrid fue fundado en 1611 por los Reyes Felipe III y Margarita de Austria-Estiria, fruto del deseo personal de la Reina, que al ver la obra realizada por la Princesa Juana de Portugal en las Descalzas Reales decidió levantar un convento de similares características en las proximidades del Alcázar, quedando unido a este por un pasadizo.  Su arquitectura es el mejor ejemplo del estilo de los Austrias posterior a la construcción del Real Monasterio de San Lorenzo de El Escorial." ;
+    schema:name "Real Monasterio de la Encarnación" ;
+    schema:openingHours "De martes a sábado, de 10 a 14 horas (acceso hasta las 13 horas) y de 16 a 18:30 horas (acceso hasta las 17:30 horas)  Domingos y festivos: Monasterio, de 10 a 15 horas (acceso hasta las 14 horas)  Cierre semanal: lunes durante todo el año  Acceso gratuito: miércoles y jueves,?de 16 a 18:30 horas (último acceso a las 17:30 horas)" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=72ad0713fb71c010VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q205524> .
+
+<http://data.example.org/madridMuseos/museum/Templo_de_Debod> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.042425 ;
+    ns:longitude -3.716532 ;
+    schema:additionalType "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    schema:description "Templo egipcio dedicado a Amón de Debod y a Isis, construido entre 185 AC y el siglo I de la Era. Fue donado por Egipto a España en 1968, en agradecimiento por la ayuda en el salvamento de los templos de Abu Simbel.  Egyptian temple dedicated to Amun of Debod and Isis. It was built between 185 BC and the 1st century. It was donated by Egypt to Spain in 1968 for its help in the rescue of the temples of Abu Simbel." ;
+    schema:email "templodebod@madrid.es" ;
+    schema:name "Templo de Debod" ;
+    schema:openingHours "Martes a domingo y festivos, de 10 a 20  horas.   Horario verano (del 15 de junio al 15 de septiembre): Martes a domingo y festivos, de 10 a 19 horas.  Cerrado todos los lunes (incluidos lunes festivos) y los días 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre. Último acceso al templo a las 19:30 horas. El horario y la apertura de salas pueden sufrir modificaciones. Por favor, confírmelo en el teléfono de información del museo." ;
+    schema:telephone "913 667 415 (Museo de San Isidro / Templo de Debod)" ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=13b432df1d51c010VgnVCM2000000c205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1140249> .
+
+<http://data.example.org/madridMuseos/museum/Yacimiento_paleontológico._Estación_de_Metro_Carpetana> a schema:Museum ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/CARABANCHEL> ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/VISTA_ALEGRE> ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID> ;
+    ns:latitude 4.039254 ;
+    ns:longitude -3.741303 ;
+    schema:additionalType "/contenido/entidadesYorganismos/Museos" ;
+    schema:description "Durante las obras de remodelación de la estación de Carpetana se descubrieron restos paleontológicos con valiosos hallazgos del Mioceno, lo que ha hecho posible una reconstrucción de los paleoambientes en dos yacimientos verticales.  Más información." ;
+    schema:name "Yacimiento paleontológico. Estación de Metro Carpetana" ;
+    schema:openingHours "Todos los días durante la apertura de la estación, de 6 a 1:30 horas." ;
+    schema:url <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=05fbb57fd3c70410VgnVCM1000000b205a0aRCRD> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q134406438> .
+
+<http://data.example.org/madridMuseos/address/Casa_Museo_Fuente_del_Rey> a schema:PostalAddress ;
+    schema:postalCode "28023" ;
+    schema:streetAddress "CALLE: FUENTE DEL REY. Número: 11" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ARAVACA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Casa_Museo_Lope_de_Vega> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: CERVANTES. Número: 11" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Casita_Museo_de_Raton_Perez> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "CALLE: ARENAL. Número: 8. Planta: 1ª" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Castillo_de_la_Alameda> a schema:PostalAddress ;
+    schema:postalCode "28042" ;
+    schema:streetAddress "CALLE: ANTONIO SANCHA. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALAMEDA_DE_OSUNA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/BARAJAS> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Cason_del_Buen_Retiro> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: ALFONSO XII. Número: 28" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Centro_Cultural_La_Corrala_Museo_de_Artes_y_Tradiciones_Populares> a schema:PostalAddress ;
+    schema:postalCode "28005" ;
+    schema:streetAddress "CALLE: CARLOS ARNICHES. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Ermita_de_San_Antonio_de_la_Florida_Museo> a schema:PostalAddress ;
+    schema:postalCode "28008" ;
+    schema:streetAddress "GLORIETA: SAN ANTONIO DE LA FLORIDA. Número: 5" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Espacio_Fundacion_Telefonica> a schema:PostalAddress ;
+    schema:postalCode "28004" ;
+    schema:streetAddress "CALLE: FUENCARRAL. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Fronton_Beti_Jai> a schema:PostalAddress ;
+    schema:postalCode "28010" ;
+    schema:streetAddress "CALLE: MARQUES DEL RISCAL. Número: 7" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Galeria_de_la_Colecciones_Reales> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "CALLE: BAILEN. Número: 0" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Imprenta_Municipal___Artes_del_libro> a schema:PostalAddress ;
+    schema:postalCode "28012" ;
+    schema:streetAddress "CALLE: CONCEPCION JERONIMA. Número: 15" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/La_Casa_Encendida_de_la_Fundacion_Montemadrid> a schema:PostalAddress ;
+    schema:postalCode "28012" ;
+    schema:streetAddress "CALLE: VALENCIA. Número: 2" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+    
+<http://data.example.org/madridMuseos/address/Monasterio_de_las_Descalzas_Reales> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "PLAZA: DESCALZAS. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_ABC> a schema:PostalAddress ;
+    schema:postalCode "28015" ;
+    schema:streetAddress "CALLE: AMANIEL. Número: 29" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Africano_Misioneros_Combonianos> a schema:PostalAddress ;
+    schema:postalCode "28043" ;
+    schema:streetAddress "CALLE: ARTURO SORIA. Número: 101" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SAN_JUAN_BAUTISTA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CIUDAD_LINEAL> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Arqueologico_Nacional> a schema:PostalAddress ;
+    schema:postalCode "28001" ;
+    schema:streetAddress "CALLE: SERRANO. Número: 13" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RECOLETOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Banksy_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28005" ;
+    schema:streetAddress "PASEO: ESPERANZA. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ACACIAS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Casa_de_la_Moneda> a schema:PostalAddress ;
+    schema:postalCode "28028" ;
+    schema:streetAddress "CALLE: DOCTOR ESQUERDO. Número: 36" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/GOYA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Cerralbo> a schema:PostalAddress ;
+    schema:postalCode "28008" ;
+    schema:streetAddress "CALLE: VENTURA RODRIGUEZ. Número: 17" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ARGUELLES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_EMT> a schema:PostalAddress ;
+    schema:postalCode "28046" ;
+    schema:streetAddress "CALLE: MAURICIO LEGENDRE. Número: 40" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTILLA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMARTIN> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Felix_Canada> a schema:PostalAddress ;
+    schema:postalCode "28003" ;
+    schema:streetAddress "CALLE: ALENZA. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Geominero> a schema:PostalAddress ;
+    schema:postalCode "28003" ;
+    schema:streetAddress "CALLE: RIOS ROSAS. Número: 23" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Historico_Minero_Don_Felipe_de_Borbon_y_Grecia> a schema:PostalAddress ;
+    schema:postalCode "28003" ;
+    schema:streetAddress "CALLE: RIOS ROSAS. Número: 21" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_ICO> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: ZORRILLA. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Los_Canos_del_Peral_Estacion_de_Metro_Opera> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "PLAZA: ISABEL II. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Lazaro_Galdiano> a schema:PostalAddress ;
+    schema:postalCode "28006" ;
+    schema:streetAddress "CALLE: SERRANO. Número: 122" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Nacional_Centro_de_Arte_Reina_Sofia_MNCARS> a schema:PostalAddress ;
+    schema:postalCode "28012" ;
+    schema:streetAddress "CALLE: SANTA ISABEL. Número: 52" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Nacional_Thyssen_Bornemisza> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "PASEO: PRADO. Número: 8" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Nacional_de_Antropologia> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: ALFONSO XII. Número: 68" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Nacional_de_Artes_Decorativas> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: MONTALBAN. Número: 12" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Nacional_de_Ciencias_Naturales> a schema:PostalAddress ;
+    schema:postalCode "28006" ;
+    schema:streetAddress "CALLE: JOSE GUTIERREZ ABASCAL. Número: 2" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_VISO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMARTIN> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Naval> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "PASEO: PRADO. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Sorolla> a schema:PostalAddress ;
+    schema:postalCode "28010" ;
+    schema:streetAddress "PASEO: GENERAL MARTINEZ CAMPOS. Número: 37" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Taurino_de_la_Comunidad_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28028" ;
+    schema:streetAddress "CALLE: ALCALA. Número: 237" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/GUINDALERA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_Tiflologico> a schema:PostalAddress ;
+    schema:postalCode "28020" ;
+    schema:streetAddress "CALLE: LA CORU&NTILDE;A. Número: 18" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CUATRO_CAMINOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/TETUAN> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Aeronautica_y_Astronautica> a schema:PostalAddress ;
+    schema:postalCode "28024" ;
+    schema:streetAddress "AUTOVIA: A-5. Número: 10.700" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CUATRO_VIENTOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/LATINA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_America> a schema:PostalAddress ;
+    schema:postalCode "28040" ;
+    schema:streetAddress "AVENIDA: REYES CATOLICOS. Número: 6" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Arte_Contemporaneo_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28015" ;
+    schema:streetAddress "CALLE: CONDE DUQUE. Número: 9" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Astronomia_y_Geodesia> a schema:PostalAddress ;
+    schema:postalCode "28040" ;
+    schema:streetAddress "PLAZA: CIENCIAS. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Bomberos_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28038" ;
+    schema:streetAddress "CALLE: BOADA. Número: 4" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/NUMANCIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/PUENTE_DE_VALLECAS> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Calcografia_Nacional> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: ALCALA. Número: 13" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Cera> a schema:PostalAddress ;
+    schema:postalCode "28004" ;
+    schema:streetAddress "PASEO: RECOLETOS. Número: 41" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Escultura_al_Aire_Libre_de_la_Castellana> a schema:PostalAddress ;
+    schema:postalCode "28046" ;
+    schema:streetAddress "PASEO: CASTELLANA. Número: 40" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/SALAMANCA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Historia_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28004" ;
+    schema:streetAddress "CALLE: FUENCARRAL. Número: 78" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Historia_de_la_Comunidad_Judia_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28010" ;
+    schema:streetAddress "CALLE: BALMES. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/TRAFALGAR> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Mineralogia> a schema:PostalAddress ;
+    schema:postalCode "28049" ;
+    schema:streetAddress "CALLE: FRANCISCO TOMAS Y VALIENTE. Número: 7" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_GOLOSO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/FUENCARRAL_EL_PARDO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_San_Isidro_Los_Origenes_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28005" ;
+    schema:streetAddress "PLAZA: SAN ANDRES. Número: 2" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_Sanidad_e_Higiene_Publica> a schema:PostalAddress ;
+    schema:postalCode "28029" ;
+    schema:streetAddress "AVENIDA: MONFORTE DE LEMOS. Número: 5" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LA_PAZ> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/FUENCARRAL_EL_PARDO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_la_Catedral_de_la_Almudena> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "CALLE: BAILEN. Número: 10" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_la_Farmacia_Hispana> a schema:PostalAddress ;
+    schema:postalCode "28040" ;
+    schema:streetAddress "PLAZA: RAMON Y CAJAL. Número: 0" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_la_Guardia_Civil> a schema:PostalAddress ;
+    schema:postalCode "28003" ;
+    schema:streetAddress "CALLE: GUZMAN EL BUENO. Número: 110" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/VALLEHERMOSO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CHAMBERI> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_de_la_Real_Academia_de_Bellas_Artes_de_San_Fernando> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: ALCALA. Número: 13" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_del_Ferrocarril_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28045" ;
+    schema:streetAddress "PASEO: DELICIAS. Número: 61" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/DELICIAS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_del_Prado> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "PASEO: PRADO. Número: 0" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_del_Reloj_Grassy> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "CALLE: GRAN VIA. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_del_Romanticismo> a schema:PostalAddress ;
+    schema:postalCode "28004" ;
+    schema:streetAddress "CALLE: SAN MATEO. Número: 13" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_del_Seguro_Fundacion_Mapfre> a schema:PostalAddress ;
+    schema:postalCode "28004" ;
+    schema:streetAddress "CALLE: BARBARA DE BRAGANZA. Número: 14" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Museo_del_Traje_Centro_de_Investigacion_del_Patrimonio_Etnologico_CIPE> a schema:PostalAddress ;
+    schema:postalCode "28040" ;
+    schema:streetAddress "AVENIDA: JUAN DE HERRERA. Número: 2" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Palacio_Real_de_El_Pardo> a schema:PostalAddress ;
+    schema:postalCode "28048" ;
+    schema:streetAddress "CALLE: MANUEL ALONSO. Número: 8" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_PARDO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/FUENCARRAL_EL_PARDO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Palacio_Real_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "PLAZA: ORIENTE. Número: 0" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+    
+<http://data.example.org/madridMuseos/address/Panteon_de_Espana> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: JULIAN GAYARRE. Número: 3" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PACIFICO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Parroquia_Santa_Cruz> a schema:PostalAddress ;
+    schema:postalCode "28012" ;
+    schema:streetAddress "CALLE: ATOCHA. Número: 6" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Planetario_de_Madrid> a schema:PostalAddress ;
+    schema:postalCode "28045" ;
+    schema:streetAddress "AVENIDA: PLANETARIO. Número: 16" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LEGAZPI> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/ARGANZUELA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Real_Basilica_San_Francisco_el_Grande> a schema:PostalAddress ;
+    schema:postalCode "28005" ;
+    schema:streetAddress "CALLE: SAN BUENAVENTURA. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Real_Fabrica_de_Tapices> a schema:PostalAddress ;
+    schema:postalCode "28014" ;
+    schema:streetAddress "CALLE: FUENTERRABIA. Número: 2" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PACIFICO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/RETIRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Real_Monasterio_de_Santa_Isabel> a schema:PostalAddress ;
+    schema:postalCode "28012" ;
+    schema:streetAddress "CALLE: SANTA ISABEL. Número: 48" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Real_Monasterio_de_la_Encarnacion> a schema:PostalAddress ;
+    schema:postalCode "28013" ;
+    schema:streetAddress "PLAZA: ENCARNACION. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CENTRO> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Templo_de_Debod> a schema:PostalAddress ;
+    schema:postalCode "28008" ;
+    schema:streetAddress "CALLE: FERRAZ. Número: 1" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/MONCLOA_ARAVACA> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+
+<http://data.example.org/madridMuseos/address/Yacimiento_paleontologico_Estacion_de_Metro_Carpetana> a schema:PostalAddress ;
+    schema:postalCode "28047" ;
+    schema:streetAddress "CALLE: VIA CARPETANA. Número: 141" ;
+    ns:inNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/VISTA_ALEGRE> ;
+    ns:inDistrict <http://data.example.org/madridMuseos/district/CARABANCHEL> ;
+    ns:inLocation <http://data.example.org/madridMuseos/location/MADRID> ;
+    ns:inProvince <http://data.example.org/madridMuseos/province/MADRID> .
+

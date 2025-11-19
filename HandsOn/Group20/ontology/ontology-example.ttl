@@ -1,149 +1,248 @@
-@prefix : <https://data.smartcitymadrid.es/ontology/parking#> .
-@prefix ns: <https://data.smartcitymadrid.es/ontology/parking#> .
+@prefix my: <https://data.smartcitymadrid.es/ontology/parking#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://data.smartcitymadrid.es/ontology/parking#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
+@base <http://www.w3.org/2002/07/owl#> .
 
-<https://data.smartcitymadrid.es/ontology/parking#> rdf:type owl:Ontology ;
-                                                     owl:versionIRI <https://data.smartcitymadrid.es/ontology/parking/2025-10-19> .
+[ rdf:type owl:Ontology ;
+   owl:imports <http://www.opengis.net/ont/geosparql>
+ ] .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  https://data.smartcitymadrid.es/ontology/parking#hasAddress
-ns:hasAddress rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/format
+dcterms:format rdf:type owl:AnnotationProperty .
 
 
-###  https://data.smartcitymadrid.es/ontology/parking#hasArea
-ns:hasArea rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/address
+schema1:address rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressCountry
+schema1:addressCountry rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressLocality
+schema1:addressLocality rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressRegion
+schema1:addressRegion rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/name
+schema1:name rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/postalCode
+schema1:postalCode rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/streetAddress
+schema1:streetAddress rdf:type owl:AnnotationProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#lat
+geo:lat rdf:type owl:AnnotationProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#long
+geo:long rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#inDataset
+dcat:inDataset rdf:type owl:AnnotationProperty .
+
+
+###  https://data.smartcitymadrid.es/ontology/parking#containedInCity
+my:containedInCity rdf:type owl:AnnotationProperty .
 
 
 ###  https://data.smartcitymadrid.es/ontology/parking#hasCategory
-ns:hasCategory rdf:type owl:AnnotationProperty .
+my:hasCategory rdf:type owl:AnnotationProperty .
 
 
 ###  https://data.smartcitymadrid.es/ontology/parking#hasCategoryCode
-ns:hasCategoryCode rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasCountry
-ns:hasCountry rdf:type owl:AnnotationProperty .
+my:hasCategoryCode rdf:type owl:AnnotationProperty .
 
 
 ###  https://data.smartcitymadrid.es/ontology/parking#hasFamily
-ns:hasFamily rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasId
-ns:hasId rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasLatitude
-ns:hasLatitude rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasLocation
-ns:hasLocation rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasLongitude
-ns:hasLongitude rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasName
-ns:hasName rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasState
-ns:hasState rdf:type owl:AnnotationProperty .
-
-
-###  https://data.smartcitymadrid.es/ontology/parking#hasTown
-ns:hasTown rdf:type owl:AnnotationProperty .
+my:hasFamily rdf:type owl:AnnotationProperty .
 
 
 ###  https://data.smartcitymadrid.es/ontology/parking#hasType
-ns:hasType rdf:type owl:AnnotationProperty .
+my:hasType rdf:type owl:AnnotationProperty .
 
 
 ###  https://data.smartcitymadrid.es/ontology/parking#hasURLIcon
-ns:hasURLIcon rdf:type owl:AnnotationProperty .
+my:hasURLIcon rdf:type owl:AnnotationProperty .
 
 
 ###  https://data.smartcitymadrid.es/ontology/parking#isEMTParking
-ns:isEMTParking rdf:type owl:AnnotationProperty .
+my:isEMTParking rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+geo:wktLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+geo:hasGeometry rdf:type owl:ObjectProperty ;
+                rdfs:domain schema1:ParkingFacility ;
+                rdfs:range geo:Geometry .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+geo:asWKT rdf:type owl:DatatypeProperty ;
+          rdfs:domain geo:Geometry ;
+          rdfs:range geo:wktLiteral .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://data.smartcitymadrid.es/ontology/parking#Location
-ns:Location rdf:type owl:Class .
+###  http://schema.org/AdministrativeArea
+schema1:AdministrativeArea rdf:type owl:Class .
 
 
-###  https://data.smartcitymadrid.es/ontology/parking#Parking
-ns:Parking rdf:type owl:Class .
+###  http://schema.org/City
+schema1:City rdf:type owl:Class .
+
+
+###  http://schema.org/Country
+schema1:Country rdf:type owl:Class .
+
+
+###  http://schema.org/ParkingFacility
+schema1:ParkingFacility rdf:type owl:Class .
+
+
+###  http://schema.org/PostalAddress
+schema1:PostalAddress rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+geo:Geometry rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparql#Point
+geo:Point rdf:type owl:Class ;
+          rdfs:subClassOf geo:Geometry .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+dcat:Dataset rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+dcat:Distribution rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://data.smartcitymadrid.es/id/location/2
-<https://data.smartcitymadrid.es/id/location/2> rdf:type owl:NamedIndividual ,
-                                                         ns:Location ;
-                                                ns:hasLatitude "40.4247093"^^xsd:double ;
-                                                ns:hasLongitude "-3.6899392"^^xsd:double ;
-                                                ns:hasState "Spain" ;
-                                                ns:hasTown "Madrid" ;
-                                                ns:hasType "Aparcamiento" ;
-                                                ns:isEMTParking "false"^^xsd:boolean .
+###  https://data.smartcitymadrid.es/dataset/parking-emt
+<https://data.smartcitymadrid.es/dataset/parking-emt> rdf:type owl:NamedIndividual ,
+                                                               dcat:Dataset .
 
 
-###  https://data.smartcitymadrid.es/id/location/3
-<https://data.smartcitymadrid.es/id/location/3> rdf:type owl:NamedIndividual ,
-                                                         ns:Location ;
-                                                ns:hasLatitude "40.4385248"^^xsd:double ;
-                                                ns:hasLongitude "-3.6455254"^^xsd:double ;
-                                                ns:hasState "Spain" ;
-                                                ns:hasTown "Madrid" ;
-                                                ns:hasType "Aparcamiento" ;
-                                                ns:isEMTParking "false"^^xsd:boolean .
+###  https://data.smartcitymadrid.es/dataset/parking-emt/2025-11-03
+<https://data.smartcitymadrid.es/dataset/parking-emt/2025-11-03> rdf:type owl:NamedIndividual ,
+                                                                          dcat:Distribution ;
+                                                                 dcterms:format "text/turtle" ;
+                                                                 dcterms:issued "2025-11-03"^^xsd:date ;
+                                                                 dcat:accessURL <https://data.smartcitymadrid.es/dataset/parking-emt/2025-11-03> .
+
+
+###  https://data.smartcitymadrid.es/id/address/colon
+<https://data.smartcitymadrid.es/id/address/colon> rdf:type owl:NamedIndividual ,
+                                                            schema1:PostalAddress ;
+                                                   schema1:addressCountry <https://data.smartcitymadrid.es/id/country/spain> ;
+                                                   schema1:addressLocality <https://data.smartcitymadrid.es/id/city/madrid> ;
+                                                   schema1:addressRegion <https://data.smartcitymadrid.es/id/region/comunidad-madrid> ;
+                                                   schema1:postalCode 28004 ;
+                                                   schema1:streetAddress "Plaza de Colón s/n" .
+
+
+###  https://data.smartcitymadrid.es/id/city/madrid
+<https://data.smartcitymadrid.es/id/city/madrid> rdf:type owl:NamedIndividual ,
+                                                          schema1:City ;
+                                                 schema1:name "Madrid"@es .
+
+
+###  https://data.smartcitymadrid.es/id/country/spain
+<https://data.smartcitymadrid.es/id/country/spain> rdf:type owl:NamedIndividual ,
+                                                            schema1:Country ;
+                                                   schema1:name "España"@es .
+
+
+###  https://data.smartcitymadrid.es/id/geometry/parking/2
+<https://data.smartcitymadrid.es/id/geometry/parking/2> rdf:type owl:NamedIndividual ,
+                                                                 geo:Point ;
+                                                        geo:asWKT "POINT(-3.6899 40.4247)"^^geo:wktLiteral ;
+                                                        geo:lat 40.4247 ;
+                                                        geo:long -3.6899 .
 
 
 ###  https://data.smartcitymadrid.es/id/parking/2
 <https://data.smartcitymadrid.es/id/parking/2> rdf:type owl:NamedIndividual ,
-                                                        ns:Parking ;
-                                               ns:hasAddress "Plaza de Colón s/n" ;
-                                               ns:hasArea "Madrid" ;
-                                               ns:hasCategory "General" ;
-                                               ns:hasCategoryCode 1 ;
-                                               ns:hasCountry "Spain" ;
-                                               ns:hasFamily "1" ;
-                                               ns:hasId "2" ;
-                                               ns:hasLocation <https://data.smartcitymadrid.es/id/location/2> ;
-                                               ns:hasName "Colón" ;
-                                               ns:hasURLIcon "https://servicios.emtmadrid.es:8443/InfoParking/iconos/IconosCuadradosPico/aparcamiento_p.png"^^xsd:anyURI .
+                                                        schema1:ParkingFacility ;
+                                               geo:hasGeometry <https://data.smartcitymadrid.es/id/geometry/parking/2> ;
+                                               dcterms:identifier 2 ;
+                                               schema1:address <https://data.smartcitymadrid.es/id/address/colon> ;
+                                               schema1:name "Colón"@es ;
+                                               dcat:inDataset <https://data.smartcitymadrid.es/dataset/parking-emt> ;
+                                               my:containedInCity <https://data.smartcitymadrid.es/id/city/madrid> ;
+                                               my:hasCategory "Rotational" ;
+                                               my:hasCategoryCode 1 ;
+                                               my:hasFamily 1 ;
+                                               my:hasType "Public" ;
+                                               my:hasURLIcon "https://emtmadrid.es/icons/parking.png" ;
+                                               my:isEMTParking "true"^^xsd:boolean .
 
 
-###  https://data.smartcitymadrid.es/id/parking/3
-<https://data.smartcitymadrid.es/id/parking/3> rdf:type owl:NamedIndividual ,
-                                                        ns:Parking ;
-                                               ns:hasAddress "C/ Corazón de María (final calle)" ;
-                                               ns:hasArea "Madrid" ;
-                                               ns:hasCategory "General" ;
-                                               ns:hasCategoryCode 1 ;
-                                               ns:hasCountry "Spain" ;
-                                               ns:hasFamily "1" ;
-                                               ns:hasId "3" ;
-                                               ns:hasLocation <https://data.smartcitymadrid.es/id/location/3> ;
-                                               ns:hasName "Corazón de María II" ;
-                                               ns:hasURLIcon "https://servicios.emtmadrid.es:8443/InfoParking/iconos/IconosCuadradosPico/aparcamiento_p.png"^^xsd:anyURI .
+###  https://data.smartcitymadrid.es/id/region/comunidad-madrid
+<https://data.smartcitymadrid.es/id/region/comunidad-madrid> rdf:type owl:NamedIndividual ,
+                                                                      schema1:AdministrativeArea ;
+                                                             schema1:name "Comunidad de Madrid"@es .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

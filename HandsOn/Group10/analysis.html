@@ -191,6 +191,8 @@
     <h2>2. Análisis de la Licencia</h2>
     <p><strong>Publicador:</strong> El dataset es publicado por la Dirección General de Sostenibilidad y Control Ambiental del Ayuntamiento de Madrid.</p>
     <p><strong>Licencia:</strong> Los datasets están disponibles bajo la <a href="http://datos.madrid.es/egob/catalogo/aviso-legal">Licencia de reutilización del Ayuntamiento de Madrid</a>, lo que permite su uso, distribución y modificación en proyectos educativos y no comerciales.</p>
+    <p><strong>Licencia del dataset generado por el grupo:</strong>El conjunto de datos RDF publicado en este proyecto se distribuye bajo la licencia  
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 International</a>, que permite su uso, distribución y adaptación siempre que se cite la autoría del Grupo 10.</p>
   </section>
 
 <!-- Sección 3: Estrategia de Nombres de Recursos (actualizada según los .ttl) -->
@@ -227,24 +229,27 @@
         <th>Patrón</th>
         <th>Ejemplo</th>
       </tr>
+
       <tr>
         <td>Estación</td>
         <td><code>http://besafe.org/data/station/{codigo_estacion}</code></td>
         <td><code>http://besafe.org/data/station/11</code></td>
       </tr>
+
       <tr>
         <td>Medición horaria</td>
         <td>
-          <code>http://besafe.org/data/measurement/{station}/{YYYY}/{MM}/{DD}/{HH}</code>
+          <code>http://besafe.org/data/measurement/{codigo_estacion}_{YYYYMMDD}T{HH}</code>
         </td>
-        <td><code>http://besafe.org/data/measurement/11/2025/01/01/01</code></td>
+        <td><code>http://besafe.org/data/measurement/11_20250101T01</code></td>
       </tr>
+
       <tr>
         <td>Episodio de ozono</td>
         <td>
-          <code>http://besafe.org/data/episode/{tipo}/{YYYYMMDD}</code>
+          <code>http://besafe.org/data/episode/o3_{YYYYMMDD}</code>
         </td>
-        <td><code>http://besafe.org/data/episode/o3/20130703</code></td>
+        <td><code>http://besafe.org/data/episode/o3_20130703</code></td>
       </tr>
     </table>
   </div>

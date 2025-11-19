@@ -1,0 +1,1464 @@
+@prefix ns: <http://data.example.org/madridMuseos#> .
+@prefix xsd: <http://www.w3org/2001/XMLSchema#> .
+
+<http://data.example.org/madridMuseos/museum/Casa_Museo_Fuente_del_Rey> a ns:Museum ;
+    ns:label "Casa Museo Fuente del Rey" ;
+    ns:street "FUENTE DEL REY" ;
+    ns:address "Calle: FUENTE DEL REY. Número: 11" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c1260101310f210VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Fundación AMYC - Fran Daurel  Este museo,  situado en Aravaca y conocido también como Casa - Museo Fuente del Rey. Fundación AMYC, ofrece al visitante una colección de más de 250 obras entre pinturas, dibujos y esculturas (198 pinturas, 37 esculturas y 27 dibujos) realizadas desde mediados del siglo XIX hasta principios del XXI. Se exponen piezas de grandes artistas modernistas e impresionistas como Sorolla, Mariano Fortuny, Nonell, Rusiñol, Ramón Casas, Mir, Rendir, Gargallo, Joseph Llimona, Joan Miró, Salvador Dalí, Tapies, Anglada Camarasa o Torres García, entre otros. La colección está formada por los fondos privados del coleccionista y mecenas Francisco Daurella y se muestra en lo que fue su casa. Los más de 3000 metros cuadrados del edificio así como su jardín, han sido rehabilitados para poder acoger las obras en el que es el primer museo de la capital dedicado en exclusiva al arte catalán." ;
+    ns:type "/contenido/entidadesYorganismos/FundacionesCulturales" ;
+    ns:email "info@fundaciofrandaurel.com" ;
+    ns:phone "913 579 116" ;
+    ns:latitude "40.45546866305680"^^xsd:double ;
+    ns:longitude "-3.7705716814130900"^^xsd:double ;
+    ns:xCoordinate "434663"^^xsd:integer ;
+    ns:yCoordinate "4478596"^^xsd:integer ;
+    ns:accessibility "3" ;
+    ns:schedule "De lunes a viernes de 10:00 a 19:00 horas. Visitas guiadas concertadas Agosto cerrado" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ARAVACA> .
+
+<http://data.example.org/madridMuseos/museum/Casa_Museo_Lope_de_Vega> a ns:Museum ;
+    ns:label "Casa Museo Lope de Vega" ;
+    ns:street "CERVANTES" ;
+    ns:address "Calle: CERVANTES. Número: 11" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4eff8c46145e8110VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Mi casilla, mi quietud, mi g&amp;uuml;ertecillo y estudio'. Así define su casa Félix Lope de Vega (1562-1635) en una carta dirigida a un amigo. Situada en pleno centro histórico, en el Barrio de las Letras, la Casa Museo Lope de Vega se ubica en el edificio donde el escritor vivió sus últimos 25 años. La recreación de ambientes, cuyo objetivo es que se respire la presencia de Lope, evoca la vida cotidiana del Siglo de Oro y nos acerca a su intimidad. El equipamiento de la casa incorpora obras de arte, mobiliario, enseres y ediciones bibliográficas vinculadas al literato y su tiempo." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "casamuseolopedevega@madrid.org" ;
+    ns:phone "914 299 216" ;
+    ns:latitude "40.41436862259970"^^xsd:double ;
+    ns:longitude "-3.6974667215860600"^^xsd:double ;
+    ns:xCoordinate "440825"^^xsd:integer ;
+    ns:yCoordinate "4473983"^^xsd:integer ;
+    ns:transport "Metro: Antón Martín (línea 1), Sevilla (línea 2), Sol (líneas 1, 2 y 3)." ;
+    ns:accessibility "0,4" ;
+    ns:schedule "De martes a domingo, de 10 a 18 horas.  Cerrado los lunes, días 1 y 6 de enero, 1 de mayo, 9 de noviembre y 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> .
+
+<http://data.example.org/madridMuseos/museum/Casita_Museo_de_Ratón_Pérez> a ns:Museum ;
+    ns:label "Casita Museo de Ratón Pérez" ;
+    ns:street "ARENAL" ;
+    ns:address "Calle: ARENAL. Número: 8 Planta: 1 " ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=990950e86d4ca110VgnVCM2000000c205a0aRCRD" ;
+    ns:description "La Casita-Museo constituye un espacio singular y diferente en el que conviven magia y cultura. Nos habla de un inmenso valor: la fraternidad humana, y posibilita que niños y mayores puedan conocer y acercarse a este madrileño querido por todos, generando la ilusión de cuantos la visitan.   La CMRP da la bienvenida a cuantos visitantes de múltiples procedencias, nacional e internacional, familias y grupos escolares acuden para conocer y encontrarse con este personaje único, madrileño y universal.   El Museo: &amp;ldquo;Pequeño por fuera, grande por dentro, como su dueño&amp;rdquo;.    Duración de la visita: 40 minutos." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info@casamuseoratonperez.es" ;
+    ns:phone "915 226 968" ;
+    ns:latitude "40.4170597715272"^^xsd:double ;
+    ns:longitude "-3.7055199334442400"^^xsd:double ;
+    ns:xCoordinate "440144"^^xsd:integer ;
+    ns:yCoordinate "4474287"^^xsd:integer ;
+    ns:transport "Metro: Sol (líneas: 1, 2 y 3), Ópera (líneas 2, 5 y Ramal Ópera Príncipe Pío), Callao (líneas 3, 5).  Cercanías Renfe: Sol (líneas C3, C4, C4a, C4b y Regional)." ;
+    ns:accessibility "0" ;
+    ns:schedule "Visitas: horarios y reservas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> .
+
+<http://data.example.org/madridMuseos/museum/Castillo_de_la_Alameda> a ns:Museum ;
+    ns:label "Castillo de la Alameda" ;
+    ns:street "ANTONIO SANCHA" ;
+    ns:address "Calle: ANTONIO SANCHA. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fe43c4be8e688210VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Castillo de la Alameda o de Barajas es uno de los escasos vestigios de la arquitectura militar del pasado siglo XV y uno de los pocos castillos que ha sobrevivido al paso del tiempo. Bajo él y su entorno, existen restos de asentamientos antiguos desde la Edad del Bronce hasta la Época Romana." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "castilloalameda@madrid.es" ;
+    ns:phone "913 667 415" ;
+    ns:latitude "40.45836469361310"^^xsd:double ;
+    ns:longitude "-3.5932763223327100"^^xsd:double ;
+    ns:xCoordinate "449698"^^xsd:integer ;
+    ns:yCoordinate "4478802"^^xsd:integer ;
+    ns:transport "Metro: Alameda de Osuna y El Capricho (línea 5)." ;
+    ns:accessibility "1,6" ;
+    ns:equipment "Zona wifi." ;
+    ns:schedule "Abierto solo en fin de semana (sábado y domingo) y festivos (excepto lunes festivos)  Del 1 de abril al 14 de junio de 10 a 21 horas. Del 15 de junio al 15 de septiembre de 10 a 20 horas. Del 16 al 30 de septiembre de 10 a 21 horas. De octubre a marzo de 10 a 18 horas.  Cerrado: 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALAMEDA_DE_OSUNA> .
+
+<http://data.example.org/madridMuseos/museum/Casón_del_Buen_Retiro> a ns:Museum ;
+    ns:label "Casón del Buen Retiro" ;
+    ns:street "ALFONSO XII" ;
+    ns:address "Calle: ALFONSO XII. Número: 28" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0443d0b5e71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Centro de Estudios del Prado está ubicado en el Casón del Buen Retiro, que aloja además la Biblioteca, el Archivo, el Centro de Documentación y los Departamentos de Conservación del Museo Nacional del Prado." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "centro.estudios@museodelprado.es" ;
+    ns:phone "913 302 821" ;
+    ns:latitude "40.41527545361460"^^xsd:double ;
+    ns:longitude "-3.689222446432270"^^xsd:double ;
+    ns:xCoordinate "441525"^^xsd:integer ;
+    ns:yCoordinate "4474078"^^xsd:integer ;
+    ns:transport "Metro: Estación del Arte (línea 1), Banco de España (línea 2).  Cercanías Renfe:  Atocha (líneas C1, C2, C3, C4, C4a, C4b, C5, C7 y C10)." ;
+    ns:accessibility "1" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> .
+
+<http://data.example.org/madridMuseos/museum/Centro_Cultural_La_Corrala._Museo_de_Artes_y_Tradiciones_Populares> a ns:Museum ;
+    ns:label "Centro Cultural La Corrala. Museo de Artes y Tradiciones Populares" ;
+    ns:street "CARLOS ARNICHES" ;
+    ns:address "Calle: CARLOS ARNICHES. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c39ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museoatp@uam.es / lacorrala@uam.es" ;
+    ns:phone "914 976 500" ;
+    ns:latitude "40.408827275648400"^^xsd:double ;
+    ns:longitude "-3.7083241323093600"^^xsd:double ;
+    ns:xCoordinate "439899"^^xsd:integer ;
+    ns:yCoordinate "4473375"^^xsd:integer ;
+    ns:transport "Metro: La Latina (línea 5)" ;
+    ns:accessibility "3" ;
+    ns:equipment "Las visitas individuales (grupos inferiores a 7 personas) no necesitan reserva previa. Reservas (Grupos de 8 a 20 personas máximo) a través de visitas.atp@uam.es o en el telefóno 914 976 500" ;
+    ns:schedule "Lunes a viernes de 10 a 20 horas. Sábados de 10 a 14 horas. Cerrado domingos, festivos y mes de agosto, 24 y 31 diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> .
+
+<http://data.example.org/madridMuseos/museum/Ermita_de_San_Antonio_de_la_Florida_(Museo)> a ns:Museum ;
+    ns:label "Ermita de San Antonio de la Florida (Museo)" ;
+    ns:street "SAN ANTONIO DE LA FLORIDA" ;
+    ns:address "Calle: SAN ANTONIO DE LA FLORIDA. Número: 5" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=75950204770e7310VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Ermita dedicada a San Antonio de Padua y pequeño museo. Las pinturas murales que la decoran son de Francisco de Goya. Alberga los restos mortales del artista desde 1919 Para preservar sus pinturas, en 1929 se trasladó el culto a una ermita gemela construida a su lado, dejando el edificio original como museo." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "sanantonio@madrid.es" ;
+    ns:phone "915 420 722 o 683 429 760" ;
+    ns:latitude "40.425256682855800"^^xsd:double ;
+    ns:longitude "-3.725725718176110"^^xsd:double ;
+    ns:xCoordinate "438439"^^xsd:integer ;
+    ns:yCoordinate "4475212"^^xsd:integer ;
+    ns:transport "Metro: Príncipe Pío (líneas 5, 10 y ramal Ópera - Príncipe Pío)  Bus: 41, 46 y 75 (Intercambiador Príncipe Pío)  Renfe: Príncipe Pío  BICIMAD: Estación 161 (Paseo de la Florida 8)" ;
+    ns:accessibility "2,6" ;
+    ns:equipment "Tienda, en la que se pueden adquirir las guías y publicaciones sobre la ermita editadas por el Museo y otros organismos públicos, así como catálogos y publicaciones de instituciones culturales del Ayuntamiento de Madrid." ;
+    ns:schedule "General   De martes a domingos de 9:30 a 20 horas.   Verano (del 15 de junio al 15 de septiembre)   De martes a domingo de 9:30 a 19 horas.   Cerrado:  lunes (incluidos festivos), 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre.  Último pase de visita: 20 minutos antes del cierre (el desalojo de las salas comenzará 10 minutos antes) Este horario y la apertura de salas pueden sufrir modificaciones." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> .
+
+<http://data.example.org/madridMuseos/museum/Espacio_Fundación_Telefónica> a ns:Museum ;
+    ns:label "Espacio Fundación Telefónica" ;
+    ns:street "FUENCARRAL" ;
+    ns:address "Calle: FUENCARRAL. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=87748ed67151c010VgnVCM2000000c205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "espacio@fundaciontelefonica.com" ;
+    ns:phone "914 984 273 (información general) / 679 765 254 (visitas guiadas y talleres educativos)" ;
+    ns:latitude "40.42042493125640"^^xsd:double ;
+    ns:longitude "-3.701594573150360"^^xsd:double ;
+    ns:xCoordinate "440480"^^xsd:integer ;
+    ns:yCoordinate "4474658"^^xsd:integer ;
+    ns:transport "Metro: Gran Vía (líneas 1 y 5).  Aparcamientos: Barco 1 (88), Calle Barco; Pedro Zerolo (71), plaza Pedro Zerolo sin número; plaza del Carmen (8)." ;
+    ns:accessibility "1,6" ;
+    ns:schedule "Martes, miércoles, jueves y viernes de 11 a 20 horas. Sábados, domingo y festivos, de 11 a 20 horas. Cerrado al público todos los lunes y los días 25 de diciembre y 1 y 6 de enero." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> .
+
+<http://data.example.org/madridMuseos/museum/Frontón_Beti_Jai> a ns:Museum ;
+    ns:label "Frontón Beti Jai" ;
+    ns:street "MARQUES DEL RISCAL" ;
+    ns:address "Calle: MARQUES DEL RISCAL. Número: 7" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f4e1273c8ff5e810VgnVCM1000001d4a900aRCRD" ;
+    ns:description "Beti Jai es el último de los frontones monumentales de Madrid. Construido en 1894, en pleno auge del juego de pelota vasca, este proyecto del arquitecto Joaquín Rucoba combina diferentes lenguajes arquitectónicos (neoclásico, neomudéjar, etc) que a su vez conviven con elementos característicos de la arquitectura del hierro, vinculada a la Revolución Industrial." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:latitude "40.4306688171435"^^xsd:double ;
+    ns:longitude "-3.6911570649287700"^^xsd:double ;
+    ns:xCoordinate "441375"^^xsd:integer ;
+    ns:yCoordinate "4475788"^^xsd:integer ;
+    ns:transport "Metro: Rubén Darío (línea 5) / Alonso Martínez (líneas 4, 5 y 10)" ;
+    ns:accessibility "1" ;
+    ns:schedule "De martes a domingo, de 10 a 14 horas.    Cerrado los días 25 de  diciembre y 1 de enero," ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> .
+
+<http://data.example.org/madridMuseos/museum/Galería_de_la_Colecciones_Reales> a ns:Museum ;
+    ns:label "Galería de la Colecciones Reales" ;
+    ns:street "BAILEN" ;
+    ns:address "Calle: BAILEN. Número: 0" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a46206f392a7e810VgnVCM2000001f4a900aRCRD" ;
+    ns:description "Un museo en un magnífico edificio del siglo XXI que pone a disposición de sus visitantes una selección de las colecciones reunidas por los sucesivos reyes de España a lo largo de los últimos cinco siglos, pertenecientes en la actualidad al Estado español y cuyo cuidado, conservación y difusión es responsabilidad de Patrimonio Nacional, institución adscrita como organismo autónomo al Ministerio de Presidencia, Justicia y Relaciones con las Cortes. Con un relato ordenado cronológicamente, desde el fin de la Edad Media hasta nuestros días, la Galería ofrece un interesante diálogo entre piezas: el que conforman las pinturas de grandes maestros como Juan de Flandes, Velázquez, Caravaggio, Bernini o Goya, con los más exquisitos ejemplos de artes decorativas, mobiliario, libros, instrumentos musicales, armaduras o tapices.  La Galería de las Colecciones Reales, inaugurada en el verano de 2023, nace con la vocación de ser el mejor escaparate para los palacios, monasterios, iglesias, montes y patronatos que gestiona Patrimonio Nacional, fascinantes escenarios de poder y centros de actividad política, saber y espiritualidad, ubicados en 6 comunidades autónomas. Conjuntos monumentales como el Palacio Real de Madrid, los palacios de La Granja de San Ildefonso o de Aranjuez; el Real Monasterio de San Lorenzo de El Escorial o el Monasterio de las Descalzas Reales, muchos de ellos dotados de ricas bibliotecas y archivos, convertidos hoy en lugares imprescindibles de consulta y conocimiento, tienen su presencia en la Galería.  De este modo, la Galería se concibe como un complemento a los Reales Sitios, donde las piezas, que en ellos se conservan y exponen en su contexto, puedan ser admiradas de otra forma: ordenadas cronológicamente, en relación con otras objetos de su misma época, y en constante rotación, para que en la exposición permanente puedan integrarse bienes culturales de todo el Patrimonio Nacional." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:phone "918 403 883" ;
+    ns:latitude "40.42199428916450"^^xsd:double ;
+    ns:longitude "-3.7126736761494600"^^xsd:double ;
+    ns:xCoordinate "439542"^^xsd:integer ;
+    ns:yCoordinate "4474839"^^xsd:integer ;
+    ns:transport "Metro: Ópera (líneas 2 y 5), Plaza de España (líneas 2, 3 y 10) y Príncipe Pío (líneas 6 y 10)  Cercanías Renfe:?Príncipe Pío (líneas C7 y C10)" ;
+    ns:accessibility "1,4,5,6" ;
+    ns:schedule "De lunes a sábado, de 10 a 20 horas  Domingos y festivos, de 10 a 19 horas   Horarios gratuitos: de lunes a jueves, de 18 a 20 horas    Horario reducido: 24 y 31 de diciembre, de 10 a 15 horas   Cerrado: 1 y 6 de enero, 1 de mayo y 25 de diciembre" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Imprenta_Municipal_-_Artes_del_libro> a ns:Museum ;
+    ns:label "Imprenta Municipal - Artes del libro" ;
+    ns:street "CONCEPCION JERONIMA" ;
+    ns:address "Calle: CONCEPCION JERONIMA. Número: 15" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=26a38ed67151c010VgnVCM2000000c205a0aRCRD" ;
+    ns:description "La Imprenta Municipal-Artes del Libro, inaugurada como museo en diciembre de 2011, ofrece a la ciudadanía contenidos culturales ligados a la historia de la imprenta, del libro y de las artes asociadas a ellos. El precedente de esta institución se encuentra en la Imprenta Artesanal.  Su colección posee más de 3000 piezas procedentes de las artes gráficas. Mantiene además los talleres profesionales con impresión tipográfica y encuadernación artística y artesanal. El edificio, construcción de carácter racionalista terminada en 1933 y realizada por Javier Ferrero Lluisá y Luis Bellido, comparte entorno con algunos edificios y espacios relevantes de la ciudad." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "imprentamunicipal@madrid.es" ;
+    ns:phone "Lunes a viernes de 9 a 15 h: 914 294 271. Lunes a viernes de 15 a 20 h: 914 777 549. Fin de semana de 10 a 20 h: 914 777 549" ;
+    ns:latitude "40.413896825498900"^^xsd:double ;
+    ns:longitude "-3.7054692169323300"^^xsd:double ;
+    ns:xCoordinate "440146"^^xsd:integer ;
+    ns:yCoordinate "4473936"^^xsd:integer ;
+    ns:transport "Metro: Sol, Tirso de Molina, Latina Bus: 3, 6, 17, 18, 23, 26, 31, 32, 35, 50, 51, 60, 65, M-1 Cercanías Renfe: Sol BICIMAD: Estación 40 (Plaza de Romanones 9)" ;
+    ns:accessibility "1,6" ;
+    ns:equipment "Salón de actos. Biblioteca especializada y Centro de Documentación (consulta de fondos por investigadores previa cita). Préstamo para exposiciones. Venta de publicaciones. Zona wifi." ;
+    ns:schedule "De martes a domingos y festivos: de 10 a 20 horas.  Semana de San Isidro:  de martes a domingo de 10 a 19 horas.   Verano: del 15 de junio al 15 de septiembre, de martes a domingos y festivos de 10 a 19 horas.   Cerrado: todos lunes y los días 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> .
+
+<http://data.example.org/madridMuseos/museum/La_Casa_Encendida_de_la_Fundación_Montemadrid> a ns:Museum ;
+    ns:label "La Casa Encendida de la Fundación Montemadrid" ;
+    ns:street "VALENCIA" ;
+    ns:address "Calle: VALENCIA. Número: 2" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c27f8899fc81c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Edificio de carácter monumental. De estilo neomudéjar, fue diseñado por el arquitecto Fernando Arbós e inaugurado en el año 1913 Cuenta con más de 6000 metros cuadrados de instalaciones divididas en 4 plantas y una azotea. Centro social y cultural." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:phone "915 062 180" ;
+    ns:latitude "40.408231879769800"^^xsd:double ;
+    ns:longitude "-3.7009306399513000"^^xsd:double ;
+    ns:xCoordinate "440526"^^xsd:integer ;
+    ns:yCoordinate "4473304"^^xsd:integer ;
+    ns:transport "Metro: Embajadores (línea 3), Lavapies (línea 3) y Atocha (línea 1)  Cercanías Renfe: Embajadores (línea C5)" ;
+    ns:accessibility "1,4,2006" ;
+    ns:equipment "Biblioteca, mediateca, hemeroteca, espacio para el voluntariado Cafetería Terraza &amp;ndash; café bar Visitas guiadas" ;
+    ns:schedule "De martes a sábado: de 10 a 21 horas. Domingos: de 10 a 16 horas. Cierre de salas de exposición: 15 minutos antes de la hora de cierre del centro." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> .
+
+<http://data.example.org/madridMuseos/museum/Monasterio_de_las_Descalzas_Reales> a ns:Museum ;
+    ns:label "Monasterio de las Descalzas Reales" ;
+    ns:street "DESCALZAS" ;
+    ns:address "Calle: DESCALZAS. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=12e113db5b71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Un espacio único para evocar a los Austrias españoles de los siglos XVI y XVII  El Monasterio de las Descalzas Reales, en pleno corazón de Madrid, constituye un espacio de culto y tranquilidad donde el visitante puede observar el contraste con el bullicio de la capital. Fue voluntad de su fundadora, Juana de Austria (1535-1573), hija menor del Emperador Carlos V y princesa de Portugal, convertir el palacio en el que ella misma nació, y que pertenecía al tesorero de su padre, en un monasterio de monjas clarisas. En él instaló sus aposentos tras su regreso de Portugal, y en la capilla que ocupa el mismo espacio en el que vino al mundo descansa su cuerpo." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:latitude "40.4182401043926"^^xsd:double ;
+    ns:longitude "-3.7062038988539300"^^xsd:double ;
+    ns:xCoordinate "440087"^^xsd:integer ;
+    ns:yCoordinate "4474418"^^xsd:integer ;
+    ns:transport "Metro: Sol (líneas 1, 2 y 3), Callao (líneas 3 y 5) y Ópera (líneas 2, 5 y Ramal Ópera-Príncipe Pío)  Cercanías Renfe: Sol (C3 y C4)" ;
+    ns:accessibility "3" ;
+    ns:schedule "Solo visitas guiadas:    De martes a sábado, de 10 a 14 horas (acceso hasta las 13 horas) y de 16 a 18:30 horas (acceso hasta las 17:30 horas)  Domingos y festivos: Monasterio, de 10 a 15 horas (acceso hasta las 14 horas)  Cierre semanal: lunes durante todo el año  Acceso gratuito: miércoles y jueves,?de 16 a 18:30 horas (último acceso a las 17:30 horas)" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> .
+
+<http://data.example.org/madridMuseos/museum/Museo_ABC> a ns:Museum ;
+    ns:label "Museo ABC" ;
+    ns:street "AMANIEL" ;
+    ns:address "Calle: AMANIEL. Número: 29" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0103fee6537c210VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Centro de arte, dibujo e ilustración. El Museo ABC se integra en las entrañas históricas de la ciudad, en directa relación con el barrio, de forma que desde sus inicios se plantea como un centro vivo, próximo a la sociedad y de divulgación y conservación del tesoro artístico que encierra. Desde enero de 2023, el Museo ABC comparte el espacio del edificio con el Centro Cultural Clara del Rey, perteneciente al Ayuntamiento de Madrid. De esta manera, a partir de ahora el edificio se denomina Centro Cultural Clara del Rey &amp;ndash; Museo ABC." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info_museo@abc.es" ;
+    ns:phone "917 588 379" ;
+    ns:latitude "40.42741340671150"^^xsd:double ;
+    ns:longitude "-3.7095381101739400"^^xsd:double ;
+    ns:xCoordinate "439813"^^xsd:integer ;
+    ns:yCoordinate "4475439"^^xsd:integer ;
+    ns:transport "Metro: San Bernardo (líneas 2, 4), Noviciado (línea 2), Ventura Rodríguez (línea 3), Plaza de España (líneas 3, 10)" ;
+    ns:accessibility "1" ;
+    ns:schedule "Horario sala de exposiciones:  Martes a sábado, de 11 a 14 y de 16 a 20 horas. Lunes y domingo, cerrado." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Africano_Misioneros_Combonianos> a ns:Museum ;
+    ns:label "Museo Africano Misioneros Combonianos" ;
+    ns:street "ARTURO SORIA" ;
+    ns:address "Calle: ARTURO SORIA. Número: 101" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6ab8ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:phone "914 152 412" ;
+    ns:latitude "40.44946738556640"^^xsd:double ;
+    ns:longitude "-3.651489872602180"^^xsd:double ;
+    ns:xCoordinate "444755"^^xsd:integer ;
+    ns:yCoordinate "4477849"^^xsd:integer ;
+    ns:transport "Metro: Arturo Soria (L4)" ;
+    ns:accessibility "3" ;
+    ns:schedule "Visitas:   Individuales: domingos, visita guiada a las 11:30 horas. (No es necesario cita previa).  Grupos: de lunes a viernes de 9:30 a 13 horas. Es necesario cita previa, en el teléfono 91 415 24 12 o desde el formulario de contacto." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SAN_JUAN_BAUTISTA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Arqueológico_Nacional> a ns:Museum ;
+    ns:label "Museo Arqueológico Nacional" ;
+    ns:street "SERRANO" ;
+    ns:address "Calle: SERRANO. Número: 13" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8fd8ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Fundado en 1867, el MAN se inauguró en 1895 en su actual sede, el Palacio de Biblioteca y Museos, edificio proyectado por Francisco Jareño y terminado por Antonio Ruiz de Salces." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:phone "915 777 912" ;
+    ns:latitude "40.4232789604228"^^xsd:double ;
+    ns:longitude "-3.6884121235090500" ;
+    ns:xCoordinate "441601"^^xsd:integer ;
+    ns:yCoordinate "4474966"^^xsd:integer ;
+    ns:transport "Metro: Serrano (línea 4), Retiro (línea 2)  Cercanías Renfe: Recoletos (líneas C1, C2, C7, C8 y C10)" ;
+    ns:accessibility "1,6" ;
+    ns:equipment "El Museo ofrece a los visitantes las siguientes facilidades para hacer la visita:   Punto de información  Punto de encuentro  Guardarropa y Consigna  Cambiadores de bebé  Sala de lactancia  Sillas de bebé  Fuente de agua  Tablillas para escribir  Guía multimedia  Información" ;
+    ns:schedule "De martes a sábado de 9:30 a 20 horas. Domingos y festivos de 9:30 a 15 horas.   Cerrado:   Todos los lunes del año. 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RECOLETOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Banksy_Madrid> a ns:Museum ;
+    ns:label "Museo Banksy Madrid" ;
+    ns:street "ESPERANZA" ;
+    ns:address "Calle: ESPERANZA. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4556e2a774089910VgnVCM100000891ecb1aRCRD" ;
+    ns:description "Nuevo espacio cultural en Madrid" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info.madrid@museobanksy.es" ;
+    ns:phone "603 607 564" ;
+    ns:latitude "40.40373631152960"^^xsd:double ;
+    ns:longitude "-3.7061944207022300"^^xsd:double ;
+    ns:xCoordinate "440075"^^xsd:integer ;
+    ns:yCoordinate "4472808"^^xsd:integer ;
+    ns:transport "Metro: Acacias (línea 5) / Embajadores (líneas 3 y 5)" ;
+    ns:accessibility "1" ;
+    ns:equipment "Más datos en https://museobanksy.es/museo-banksy-madrid/informacion-practica-madrid/" ;
+    ns:schedule "De lunes a domingo de 10 a 20 horas (última entrada 19:15 horas). Jueves horario de cierre a las 21 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ACACIAS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Casa_de_la_Moneda> a ns:Museum ;
+    ns:label "Museo Casa de la Moneda" ;
+    ns:street "DOCTOR ESQUERDO" ;
+    ns:address "Calle: DOCTOR ESQUERDO. Número: 36" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=12f8ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museocasadelamoneda@fnmt.es" ;
+    ns:phone "915 666 544" ;
+    ns:fax "915 666 809" ;
+    ns:latitude "40.42260021542570"^^xsd:double ;
+    ns:longitude "-3.669139860245990"^^xsd:double ;
+    ns:xCoordinate "443235"^^xsd:integer ;
+    ns:yCoordinate "4474878"^^xsd:integer ;
+    ns:transport "Metro: O&amp;acute;Donnell (línea 6), Goya (líneas 2 y 4)." ;
+    ns:accessibility "1,4" ;
+    ns:schedule "De martes a viernes ininterrumpidamente de 10 a 20 horas. Sábados, domingos y festivos de 10 a 14 horas. Cerrado los lunes (incluidos festivos), y los días 1 y 6 de enero; 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/GOYA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Cerralbo> a ns:Museum ;
+    ns:label "Museo Cerralbo" ;
+    ns:street "VENTURA RODRIGUEZ" ;
+    ns:address "Calle: VENTURA RODRIGUEZ. Número: 17" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a4efb0c40971c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Un palacio del siglo XIX, un museo del siglo XX y una institución del siglo XXI  El Museo Cerralbo es un museo de titularidad estatal y gestión directa del Ministerio de Cultura.   Un palacio-museo en el que se muestran los espacios y las colecciones del XVII marqués de Cerralbo y su familia, que lo habitaron desde finales del siglo XIX a principios del siglo XX.  Recorriendo sus estancias podemos conocer cómo se vivía en una residencia aristocrática del cambio de siglo. Sus colecciones cuentan con una gran variedad de lámparas, espejos, armas, textiles, cuadros, objetos de porcelana, mobiliario, piezas arqueológicas, etc.  Contiene una Biblioteca con un fondo de unos 24000 títulos, de los cuales cerca de 9000 pertenecen al fondo antiguo, que adquirió don Enrique de Aguilera y Gamboa, XVII marqués de Cerralbo, a lo largo de su vida. Biblioteca visitable y consulta de acceso restringido." ;
+    ns:type "/contenido/entidadesYorganismos/BibliotecasPatrimoniales" ;
+    ns:email "museo.cerralbo@cultura.gob.es" ;
+    ns:phone "Tel.: 915 473 646 / 647 Atención telefónica de lunes a viernes de 9 a 14 horas." ;
+    ns:latitude "40.423779252051400"^^xsd:double ;
+    ns:longitude "-3.7145996063573700"^^xsd:double ;
+    ns:xCoordinate "439380"^^xsd:integer ;
+    ns:yCoordinate "4475039"^^xsd:integer ;
+    ns:transport "Metro: Ventura Rodríguez (línea 3); Plaza de España (líneas 3 y 10), Noviciado (línea 2) y Príncipe Pío (líneas 6 y 10);   Cercanías Renfe: Príncipe Pío (líneas C1, C7 y C10)" ;
+    ns:accessibility "2,6" ;
+    ns:schedule "El museo abre:    Martes, miércoles, jueves, viernes y sábados: de 9:30 a 15 horas*  Jueves por la tarde (excepto festivos): de 17 a 20 horas.*  Domingos y festivos: de 10 a 15 horas.*   *El acceso al museo finaliza 1 hora antes de su cierre.    El museo cierra:    Todos los lunes.  1 y 6 de enero.  1 de mayo.  24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ARGUELLES> .
+
+<http://data.example.org/madridMuseos/museum/Museo_EMT> a ns:Museum ;
+    ns:label "Museo EMT" ;
+    ns:street "MAURICIO LEGENDRE" ;
+    ns:address "Calle: MAURICIO LEGENDRE. Número: 40" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d56ad05b2a255510VgnVCM2000001f4a900aRCRD" ;
+    ns:description "El Museo de la EMT se ha convertido en realidad tras una década de duro trabajo de recuperación, restauración y reparación del patrimonio histórico de la Empresa Municipal de Transportes de Madrid, especialmente, material móvil, mobiliario, piezas mecánicas, maquinaria y otros elementos inherentes a la actividad de la EMT en sus 70 años de historia.  Página web:  https://museo.emtmadrid.es/" ;
+    ns:type "/contenido/entidadesYorganismos/AyuntamientoMadrid/OrganismosEmpresasMunicipales" ;
+    ns:phone "914 068 810" ;
+    ns:latitude "40.480173612860300"^^xsd:double ;
+    ns:longitude "-3.6831595451893200"^^xsd:double ;
+    ns:xCoordinate "442096"^^xsd:integer ;
+    ns:yCoordinate "4481278"^^xsd:integer ;
+    ns:transport "Metro: Begoña (línea 10). Bus: 66, 173, 174, 176, 191, 193, 194, 195, 196, 197, 712, 713, 714, 716, L171" ;
+    ns:accessibility "0" ;
+    ns:equipment "Si tiene una discapacidad física o sensorial, contacta con el Museo antes de reservar la visita y le informarán de la accesibilidad a la instalación." ;
+    ns:schedule "Visitas (con cita previa)  Apertura estacional durante seis meses al año: todos los sábados de abril, mayo, junio, julio, septiembre y octubre), a las 10, a las 11:30 y a las 13 horas. Por ser un centro de trabajo únicamente pueden realizarse de forma organizada, previamente concertadas y limitadas a un máximo de 40 personas por turno. Duración: 60 minutos aproximadamente. Compra de entradas y reserva de horarios a través de la web: https://entradasmuseo.emtmadrid.es/?lang=es-ES." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTILLA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Félix_Cañada> a ns:Museum ;
+    ns:label "Museo Félix Cañada" ;
+    ns:street "ALENZA" ;
+    ns:address "Calle: ALENZA. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cb22820a52799510VgnVCM1000001d4a900aRCRD" ;
+    ns:description "Una selección de más de quinientas obras de arte de entre las cerca de mil de la donación original, constituyen la Colección Permanente que se puede visitar en las salas del Museo Félix Cañada de la Fundación Gómez Pardo, adscrita a la Escuela Técnica Superior de Ingenieros de Minas y Energía de la Universidad Politécnica de Madrid. Donada por el ingeniero de minas Doctor Félix Cañada Guerrero a la Fundación Gómez Pardo, reúne una amplia representación de trabajos de destacados artistas, pintores, escultores, ilustradores, grabadores, orfebres, ceramistas, etc. abarcando diferentes periodos desde el siglo XI hasta nuestros días." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museo@fgomezpardo.es" ;
+    ns:phone "914 417 921" ;
+    ns:fax "914 729 529" ;
+    ns:latitude "40.44258652423880"^^xsd:double ;
+    ns:longitude "-3.7007870509139200"^^xsd:double ;
+    ns:xCoordinate "440568"^^xsd:integer ;
+    ns:yCoordinate "4477117"^^xsd:integer ;
+    ns:transport "Metro: Rios Rosas (línea 1)." ;
+    ns:accessibility "3" ;
+    ns:schedule "Visitas: lunes, miércoles y viernes, de 10 a 13 horas. ." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Geominero> a ns:Museum ;
+    ns:label "Museo Geominero" ;
+    ns:street "RIOS ROSAS" ;
+    ns:address "Calle: RIOS ROSAS. Número: 23" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ff0bef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Los objetivos del Museo Geominero son conservar, investigar y difundir la riqueza y diversidad del patrimonio geológico, paleontológico y mineralógico a través de las importantes colecciones de minerales, rocas y fósiles procedentes de todas las regiones españolas y de antiguos territorios coloniales, así como de yacimientos significados del registro mundial." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "m.geominero@igme.es" ;
+    ns:phone "913 495 759" ;
+    ns:latitude "40.442053385603600"^^xsd:double ;
+    ns:longitude "-3.699669233707370"^^xsd:double ;
+    ns:xCoordinate "440663"^^xsd:integer ;
+    ns:yCoordinate "4477057"^^xsd:integer ;
+    ns:transport "Metro: Ríos Rosas (línea 1), Alonso Cano (línea 7), Cuatro Caminos (líneas 1, 2 y 6)" ;
+    ns:accessibility "3" ;
+    ns:schedule "De lunes a domingo y festivos, de 9 a 14 horas. Cerrado los días 1 y 6 de enero, 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Histórico_Minero_Don_Felipe_de_Borbón_y_Grecia> a ns:Museum ;
+    ns:label "Museo Histórico Minero Don Felipe de Borbón y Grecia" ;
+    ns:street "RIOS ROSAS" ;
+    ns:address "Calle: RIOS ROSAS. Número: 21" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=822bef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Ubicado en la Escuela Técnica Superior de Ingenieros de Minas de Madrid. Edificio Histórico (M-1). 1&amp;ordf; Planta" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "sec.secretario.minasyenergia@upm.es" ;
+    ns:phone "910 676 304" ;
+    ns:latitude "40.44209227424250"^^xsd:double ;
+    ns:longitude "-3.7003734646151500"^^xsd:double ;
+    ns:xCoordinate "440603"^^xsd:integer ;
+    ns:yCoordinate "4477062"^^xsd:integer ;
+    ns:transport "Metro: Ríos Rosas (línea 1)" ;
+    ns:accessibility "3" ;
+    ns:schedule "De Lunes a Viernes de 9:30 a 18 horas Primeros domingos de mes de 10 a 14 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_ICO> a ns:Museum ;
+    ns:label "Museo ICO" ;
+    ns:street "ZORRILLA" ;
+    ns:address "Calle: ZORRILLA. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2886444a2951c010VgnVCM2000000c205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museoico@ico.es" ;
+    ns:phone "914 201 242" ;
+    ns:latitude "40.41676546905430"^^xsd:double ;
+    ns:longitude "-3.6977222605477600"^^xsd:double ;
+    ns:xCoordinate "440806"^^xsd:integer ;
+    ns:yCoordinate "4474249"^^xsd:integer ;
+    ns:transport "Metro: Sevilla (línea 2)" ;
+    ns:accessibility "3" ;
+    ns:schedule "De martes a sábados: de 11 a 20 horas.   Domingos y festivos: de 10 a 14 horas.    Cerrado: Todos los lunes del año.  Horarios especiales: 24 y 31 de diciembre de 10 a 14 horas. 1 de enero, 1 de mayo y 25 de diciembre cerrado." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Los_Caños_del_Peral._Estación_de_Metro_Ópera> a ns:Museum ;
+    ns:label "Museo Los Caños del Peral. Estación de Metro Ópera" ;
+    ns:street "ISABEL II" ;
+    ns:address "Calle: ISABEL II. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=435950262d50f210VgnVCM2000000c205a0aRCRD" ;
+    ns:description "A diez metros bajo la plaza de Isabel II, la estación de Metro Ópera (L2, L5 y Ramal Norte) alberga la recreación museística de la histórica fuente de los Caños del Peral. La visita nos permite conocer la fuente que recogía el agua de manantial junto al arroyo del Arenal durante la segunda mitad del sigloXVI, y que tenía en origen 34 metros de longitud; la galería de abastecimiento en bóveda de cañón y la alcantarilla de la zona; y el acueducto que, salvando al barranco del arroyo del Arenal, surtió de agua al Palacio Real desde el siglo XVII hasta prácticamente el siglo XX.  Más información." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info@museosmetromadrid.es" ;
+    ns:phone "644 169 531" ;
+    ns:latitude "40.41776291784370"^^xsd:double ;
+    ns:longitude "-3.70918800795985"^^xsd:double ;
+    ns:xCoordinate "439834"^^xsd:integer ;
+    ns:yCoordinate "4474367"^^xsd:integer ;
+    ns:transport "Metro: Ópera (líneas 2, 5 y Ramal)." ;
+    ns:accessibility "1" ;
+    ns:schedule "Previa reserva en la página museosmetromadrid.es.  Viernes: de 16 a 20 horas. Sábados: de 10 a 14 horas y de 16 a 20 horas. Domingos: de 10 a 14 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Lázaro_Galdiano> a ns:Museum ;
+    ns:label "Museo Lázaro Galdiano" ;
+    ns:street "SERRANO" ;
+    ns:address "Calle: SERRANO. Número: 122" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7d1aef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Cuenta con la  Biblioteca de la   Fundación Lázaro Galdiano, fundada en 1948, cuando se creó esta institución con el legado procedente de José Lázaro. Tiene cerca de 2900 ejemplares de fondo antiguo (siglos XVI al XVIII), incluyendo 56 incunables y 877 manuscritos. Biblioteca visitable y consulta de acceso restringido." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "info@museolazarogaldiano.es" ;
+    ns:latitude "40.43675593917320"^^xsd:double ;
+    ns:longitude "-3.6861820403705800"^^xsd:double ;
+    ns:xCoordinate "441802"^^xsd:integer ;
+    ns:yCoordinate "4476460"^^xsd:integer ;
+    ns:transport "Metro: Gregorio Marañón (líneas 7 y 10), Ruben Darío (línea 5), Nuñez de Balboa (líneas 5 y 9)  Bus: 16, 19, 51, 9, 12, 61  Bicimad: Estaciones 140 (calle Velázquez, 130), 141 (paseo de la Castellana, 43)  Aparcamiento: Serrano I (62) calle Serrano entre Hermanos Becquer y Marqués de Villamejor" ;
+    ns:accessibility "1" ;
+    ns:schedule "Martes a domingo, de 9:30 a 15 horas. Lunes cerrado y los días y los días 6 de enero; 28 y 29 de marzo; 1, 2 y 15 de mayo; 25 de julio; 15 de agosto; 24, 25 y 31 de diciembre de 2024" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_Centro_de_Arte_Reina_Sofía_(MNCARS)> a ns:Museum ;
+    ns:label "Museo Nacional Centro de Arte Reina Sofía (MNCARS)" ;
+    ns:street "SANTA ISABEL" ;
+    ns:address "Calle: SANTA ISABEL. Número: 52" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=69d8275bad5a1210VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Edificio Sabatini: calle Santa Isabel 52  Edificio Nouvel (ampliación): ronda de Atocha, esquina a plaza del Emperador Carlos V.  Espacios en el parque del Retiro: Palacio de Velázquez y Palacio de Cristal." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info@museoreinasofia.es" ;
+    ns:phone "917 741 000" ;
+    ns:latitude "40.40864029339670"^^xsd:double ;
+    ns:longitude "-3.6939504103293200"^^xsd:double ;
+    ns:xCoordinate "441118"^^xsd:integer ;
+    ns:yCoordinate "4473345"^^xsd:integer ;
+    ns:transport "Metro: Estación del Arte (línea 1)  Cercanías Renfe: Atocha (todas las líneas)" ;
+    ns:accessibility "1" ;
+    ns:schedule "Lunes y de miércoles a sábado, de 10 a 21 horas. Martes cerrado (incluso festivos). Domingos de 10 a 14:30 horas.  Días de cierre" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_Thyssen-Bornemisza> a ns:Museum ;
+    ns:label "Museo Nacional Thyssen-Bornemisza" ;
+    ns:street "PRADO" ;
+    ns:address "Calle: PRADO. Número: 8" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b8079262ef5d010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El palacio donde se ubica la colección fue el antiguo palacio del duque de Villahermosa. Edificación neoclásica. Posteriormente se adapta como entidad bancaria perdiento sus espacios interiores. Más tarde, pasó a formar parte de los edificios del Museo del Prado. Desde principios de los 90 alberga la Colección Thyssen. El museo ofrece un recorrido por la historia de la pintura europea desde sus inicios en el siglo XIII, hasta finales del siglo XX." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "cavthyssen@museothyssen.org" ;
+    ns:phone "917 911 370" ;
+    ns:latitude "40.41601631762220"^^xsd:double ;
+    ns:longitude "-3.694738346891250"^^xsd:double ;
+    ns:xCoordinate "441058"^^xsd:integer ;
+    ns:yCoordinate "4474164"^^xsd:integer ;
+    ns:transport "Metro: Banco de España (línea 2)." ;
+    ns:accessibility "1" ;
+    ns:schedule "Colecciones permanentes:  lunes de 12 a 16 horas (acceso gratuito gracias al patrocinio de MasterCard). Martes a domingo de 10 a 19 horas.   Exposiciones temporales: consultar horario específico en la web del museo.  Avisos y horarios especiales:  consultar en la web del museo   El desalojo de las salas tendrá lugar 5 minutos antes del cierre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_de_Antropología> a ns:Museum ;
+    ns:label "Museo Nacional de Antropología" ;
+    ns:street "ALFONSO XII" ;
+    ns:address "Calle: ALFONSO XII. Número: 68" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=456079262ef5d010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Museo está instalado en el edificio de estilo clasicista construido por el Marqués de Cubas en 1875 por encargo del Doctor González Velasco, fundador de la institución." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "antropologico@cultura.gob.es" ;
+    ns:phone "915 306 418 / 915 395 995" ;
+    ns:fax "914 677 098" ;
+    ns:latitude "40.40789416485110"^^xsd:double ;
+    ns:longitude "-3.688857928950190"^^xsd:double ;
+    ns:xCoordinate "441550"^^xsd:integer ;
+    ns:yCoordinate "4473258"^^xsd:integer ;
+    ns:transport "Metro: Estación del Arte (línea 1).  Cercanías Renfe:  Atocha (líneas C1, C2, C3, C4, C4a, C4b, C5, C7, C8, C10 y Regional)" ;
+    ns:accessibility "1,6" ;
+    ns:schedule "De martes a sábado de 9:30 a 20 horas. Domingos: de 10 a 15 horas. Cerrado todos los lunes del año y los días 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre y un festivo local. La taquilla se cerrará 15 minutos antes del cierre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_de_Artes_Decorativas> a ns:Museum ;
+    ns:label "Museo Nacional de Artes Decorativas" ;
+    ns:street "MONTALBAN" ;
+    ns:address "Calle: MONTALBAN. Número: 12" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=287079262ef5d010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Inaugurado en 1912, su sede es un típico palacete madrileño del último tercio del siglo XIX. El museo posee muebles, cerámicas, vidrios, joyas, tejidos, arte oriental, y hasta 30 000 objetos distintos que a lo largo de la historia han servido para embellecer las casas, palacios y los monumentos de distintas culturas. El museo posee muestras como el Jarrón de Sevres regalo de Napoleón III, la Cocina Valenciana del siglo XVIII compuesta por más de 1500 azulejos de Manises, la Mesa de plata del siglo XVI o la colección de alfombras españolas de los siglos XV al XVII." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "mnad@cultura.gob.es" ;
+    ns:phone "915 326 499 / 915 326 845" ;
+    ns:fax "915 232 086" ;
+    ns:latitude "40.417896616053800"^^xsd:double ;
+    ns:longitude "-3.689754509701670"^^xsd:double ;
+    ns:xCoordinate "441483"^^xsd:integer ;
+    ns:yCoordinate "4474369"^^xsd:integer ;
+    ns:transport "Metro: Banco de España (Línea 2)" ;
+    ns:accessibility "2,6" ;
+    ns:schedule "Martes a sábados de 9:30 a 15 horas. Domingo y festivos: de 10 a 15 horas. Jueves tarde de 17 a 20 horas (excepto  primer jueves no festivo de enero y meses julio y agosto).  Cerrado:  todos los lunes, 1 y 6 de enero, 1 y 15 de mayo, 9 de noviembre, 24, 25 y 31 de diciembre.    La venta de entradas finalizará 30 minutos antes del cierre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Nacional_de_Ciencias_Naturales> a ns:Museum ;
+    ns:label "Museo Nacional de Ciencias Naturales" ;
+    ns:street "JOSE GUTIERREZ ABASCAL" ;
+    ns:address "Calle: JOSE GUTIERREZ ABASCAL. Número: 2" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8edbef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:latitude "40.44042600324050"^^xsd:double ;
+    ns:longitude "-3.690212174964130"^^xsd:double ;
+    ns:xCoordinate "441463"^^xsd:integer ;
+    ns:yCoordinate "4476870"^^xsd:integer ;
+    ns:transport "Metro: Gregorio Marañón (líneas 7, 10)" ;
+    ns:accessibility "1,6" ;
+    ns:schedule "De martes a viernes de 10 a 17 horas. Sábados, domingos y festivos de 10 a 20 horas. Cerrado los lunes (excepto los festivos). Cerrado el 1 y 6 de enero, el 1 de mayo y el 25 de diciembre. Los días 24 y 31 de diciembre el museo permanecerá abierto de 10 a 15 horas. Los perros educados son bienvenidos. Ver condiciones aquí." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_VISO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Naval> a ns:Museum ;
+    ns:label "Museo Naval" ;
+    ns:street "PRADO" ;
+    ns:address "Calle: PRADO. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a30cef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museonavalmadrid@fn.mde.es" ;
+    ns:phone "915 238 516" ;
+    ns:latitude "40.417817776538400"^^xsd:double ;
+    ns:longitude "-3.6927096854547700"^^xsd:double ;
+    ns:xCoordinate "441232"^^xsd:integer ;
+    ns:yCoordinate "4474362"^^xsd:integer ;
+    ns:transport "Metro: Banco de España (línea 2)  Cercanías Renfe: Recoletos (líneas C-1, C-2, C-7, C-8 y C-10)" ;
+    ns:accessibility "1" ;
+    ns:schedule "De martes a domingo de 10 a 19 horas Durante el mes de agosto, horario reducido de 10 a 15 horas Cerrado todos los lunes y los días 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre El desalojo del museo se hará 15 minutos antes del cierre" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Sorolla> a ns:Museum ;
+    ns:label "Museo Sorolla" ;
+    ns:street "GENERAL MARTINEZ CAMPOS" ;
+    ns:address "Calle: GENERAL MARTINEZ CAMPOS. Número: 37" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6dd05e93aad9c110VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museo.sorolla@cultura.gob.es" ;
+    ns:phone "913 101 584" ;
+    ns:latitude "40.43525811195210"^^xsd:double ;
+    ns:longitude "-3.69257053914393"^^xsd:double ;
+    ns:xCoordinate "441259"^^xsd:integer ;
+    ns:yCoordinate "4476298"^^xsd:integer ;
+    ns:transport "Metro: Rubén Darío (línea 5), Gregorio Marañón (líneas 7 y 10), Iglesia (línea 1)" ;
+    ns:accessibility "2" ;
+    ns:schedule "De martes a sábado: de 9:30 a 20 horas. Domingos y festivos: de 10 a 15 horas. Cerrado: todos los lunes del año, 1 y 6 de enero, 1 de mayo, 9 noviembre, 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Taurino_de_la_Comunidad_de_Madrid> a ns:Museum ;
+    ns:label "Museo Taurino de la Comunidad de Madrid" ;
+    ns:street "ALCALA" ;
+    ns:address "Calle: ALCALA. Número: 237" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=958cef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Situado en el Patio de Caballos, ofrece a sus visitantes un atractivo recorrido por la historia del toreo, demostrando la relevancia de la Tauromaquia en la historia y la cultura de España. En este espacio se pueden contemplar grabados de Goya, vestidos, monteras y capotes de paseo de grandes toreros del siglo XX o un rincón dedicado a la figura de Manolete." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museotaurinolasventas@madrid.org" ;
+    ns:phone "912 761 287" ;
+    ns:latitude "40.431581087036600"^^xsd:double ;
+    ns:longitude "-3.6628632167710200"^^xsd:double ;
+    ns:xCoordinate "443775"^^xsd:integer ;
+    ns:yCoordinate "4475871"^^xsd:integer ;
+    ns:transport "Metro: Ventas (líneas 2 y 5)" ;
+    ns:accessibility "3" ;
+    ns:schedule "Todos los días del año de 10 a 19 horas, excepto el 25 de diciembre y el 1 de enero. Horario de noviembre a marzo de 10 a 18 horas ininterrumpidamente. Los días que se celebren festejos de cualquier tipo en el recinto, las visitas terminarán 2 horas antes del comienzo del espectáculo.??   Visitas en grupo: solicitar cita previa en el correo electrónico museotaurinolasventas@madrid.org" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/GUINDALERA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_Tiflológico> a ns:Museum ;
+    ns:label "Museo Tiflológico" ;
+    ns:street "LA CORU&amp;Ntilde;A" ;
+    ns:address "Calle: LA CORU&amp;Ntilde;A. Número: 18" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=baacef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Edificio con una superficie de 1500 m2 dividido en tres zonas con maquetas de monumentos nacionales e internacionales realizadas por invidentes e instrumentos utilizados por los invidentes desde hace 200 años. Es un espacio concebido para que sus visitantes puedan ver y tocar las piezas expuestas." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museo@once.es" ;
+    ns:phone "915 894 219" ;
+    ns:latitude "40.45525267846030"^^xsd:double ;
+    ns:longitude "-3.700169379369270"^^xsd:double ;
+    ns:xCoordinate "440632"^^xsd:integer ;
+    ns:yCoordinate "4478523"^^xsd:integer ;
+    ns:transport "Metro: Estrecho (línea 1)" ;
+    ns:accessibility "1,5" ;
+    ns:schedule "Martes a viernes: de 10 a 15 h y de 16 a 19 horas. Sábados: de 10 a 14 horas. Lunes, domingos y festivos: cerrado.   Consultar cierres especiales en https://museo.once.es/" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CUATRO_CAMINOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Aeronáutica_y_Astronáutica> a ns:Museum ;
+    ns:label "Museo de Aeronáutica y Astronáutica" ;
+    ns:street "A-5" ;
+    ns:address "Calle: A-5 Número: 10700" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=90aaef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El museo tiene por finalidad la adquisición, conservación y exposición de los bienes que constituyen el Patrimonio Histórico de la Aeronáutica Española. Dispone de una exposición exterior y siete hangares que albergan aeronaves, uniformes, condecoraciones, motores, maquetas y otros fondos relacionados con la aviación. Terminada la Guerra Civil y una vez creado el Ejército del Aire, se concibe la idea de crear un museo que reflejara la evolución e historia de nuestra aeronáutica. Desde 1975 el Museo está en Cuatro Vientos y se han sucedido varias ampliaciones que le convierten en un referente europeo de la aeronáutica." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museodelaire@ea.mde.es" ;
+    ns:phone "915 091 690" ;
+    ns:latitude "40.37362"^^xsd:double ;
+    ns:longitude "-3.80843"^^xsd:double ;
+    ns:xCoordinate "432238"^^xsd:integer ;
+    ns:yCoordinate "4469498"^^xsd:integer ;
+    ns:transport "Metro : cuatro vientos (L 10)   Renfe: cuatro vientos (C 5)" ;
+    ns:accessibility "3" ;
+    ns:equipment "Aparcamiento: gratuito, de 10 a 14 horas. Cafetería: de 10 a 13:30 horas. Punto de venta: de 10 a 13:30 horas.  Visitas guiadas para grupos: de martes a domingo de 10 a 14 horas. Previa petición de autorización por carta o correo electrónico ( museodelaire@ea.mde.es  ). Se recomienda anticipar las peticiones por teléfono de lunes a viernes." ;
+    ns:schedule "De martes a domingo de 10 a 14 horas. Cerrado: 1 y 6 de enero, jueves y viernes Santos, 10 de diciembre (patrona de la aviación), 24, 25 y 31 de diciembre y días establecidos en el calendario anual." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CUATRO_VIENTOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_América> a ns:Museum ;
+    ns:label "Museo de América" ;
+    ns:street "REYES CATOLICOS" ;
+    ns:address "Calle: REYES CATOLICOS. Número: 6" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c929ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museo.america@cultura.gob.es" ;
+    ns:phone "915 492 641 / 915 439 437" ;
+    ns:latitude "40.43793725485890"^^xsd:double ;
+    ns:longitude "-3.7218544182655700"^^xsd:double ;
+    ns:xCoordinate "438777"^^xsd:integer ;
+    ns:yCoordinate "4476615"^^xsd:integer ;
+    ns:transport "Metro: Moncloa (líneas 3 y 6), Islas Filipinas (línea 7).  Autobús: 1, 62, 44, 82, 132, 138" ;
+    ns:accessibility "1,6" ;
+    ns:schedule "De martes a sábado, de 9:30 a 15 horas. Jueves, apertura continuada de 9:30 a 19 horas. Domingos y festivos de 10 a 15 horas.   Cerrado todos los lunes del año, 1 de enero, 1 de mayo, 24, 25 y 31 de diciembre, 6 de enero y un festivo local." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Arte_Contemporáneo_de_Madrid> a ns:Museum ;
+    ns:label "Museo de Arte Contemporáneo de Madrid" ;
+    ns:street "CONDE DUQUE" ;
+    ns:address "Calle: CONDE DUQUE. Número: 9" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=84a55c2cdc41c010VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Al igual que otros museos de arte contemporáneo, nacionales o extranjeros, se ha utilizado un edificio histórico para albergar las colecciones: el Cuartel del Conde Duque. El Museo de Arte Contemporáneo recupera para los madrileños el despacho del escritor vanguardista Ramón Gómez de la Serna, como parte de su colección permanente." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "mmacmdifusion@madrid.es" ;
+    ns:phone "Teléfono de sala: 914 801 766" ;
+    ns:latitude "40.42739911262290"^^xsd:double ;
+    ns:longitude "-3.710589286287490"^^xsd:double ;
+    ns:xCoordinate "439723"^^xsd:integer ;
+    ns:yCoordinate "4475438"^^xsd:integer ;
+    ns:transport "Metro: Ventura Rodríguez, Plaza de España, San Bernardo, Noviciado." ;
+    ns:accessibility "1,6" ;
+    ns:equipment "Zona wifi." ;
+    ns:schedule "De martes a viernes: de 10 a 14 horas y de 15 a 21 horas. Sábados: de 10 a 14 horas y de 17:30 a 21 horas. Domingos y festivos: de 10:30 a 14:30 horas.  Horario durante la semana de San Isidro (12 a 16 de mayo, 2025) y de verano (del 15 de junio al 15 de septiembre, ambos inclusive):  De martes a viernes: de 10 a 14 horas y de 15 a 20 horas. Sábados: de 10 a 14 horas y de 17:30 a 20 horas. Domingos y festivos: de 10:30 a 13:30 horas. *15 de mayo, festivo.  Cerrado: todos lunes y los días 1 y 6 de enero, 1 de mayo y 24, 25 y 31 de diciembre. Las salas se desalojan 15 minutos antes del cierre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Astronomía_y_Geodesia> a ns:Museum ;
+    ns:label "Museo de Astronomía y Geodesia" ;
+    ns:street "CIENCIAS" ;
+    ns:address "Calle: CIENCIAS. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ee49ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El museo de Astronomía y Geodesia de la Universidad Complutense de Madrid agrupa una importante colección de instrumentos de Astronomía, Geodesia y Topografía, reunidos con el afán didáctico de dar a conocer la evolución de los métodos utilizados en estas disciplinas durante los últimos 150 años." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "fuensant@ucm.es." ;
+    ns:phone "91 394 4588" ;
+    ns:latitude "40.44945850908750"^^xsd:double ;
+    ns:longitude "-3.7259383636708400"^^xsd:double ;
+    ns:xCoordinate "438442"^^xsd:integer ;
+    ns:yCoordinate "4477897"^^xsd:integer ;
+    ns:transport "Metro: Ciudad Universitaria (línea 6)." ;
+    ns:accessibility "3" ;
+    ns:schedule "Visita con cita previa." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Bomberos_de_Madrid> a ns:Museum ;
+    ns:label "Museo de Bomberos de Madrid" ;
+    ns:street "BOADA" ;
+    ns:address "Calle: BOADA. Número: 4" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9f0966a8bba49210VgnVCM2000000c205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museobomberosmadrid@madrid.es" ;
+    ns:phone "Actualmente no disponible." ;
+    ns:latitude "40.39453171263190"^^xsd:double ;
+    ns:longitude "-3.6539313207612200"^^xsd:double ;
+    ns:xCoordinate "444504"^^xsd:integer ;
+    ns:yCoordinate "4471753"^^xsd:integer ;
+    ns:transport "Metro: L1- Buenos Aires  Bus: 141 y 143" ;
+    ns:accessibility "1" ;
+    ns:equipment "El acceso se realizará mediante RESERVA en el que aparecerán las sesiones y plazas disponibles.    Unicamente se permiten las visitas guiadas    El personal del museo mostrará al visitante la exposición permanente, que cuenta con una interesante colección de vehículos y otros materiales que han formado parte de la Historia del Cuerpo de Bomberos de Madrid.      Actividades del Grupo Pedagógico con visitas de colegios    Se realizan visitas guiadas a colegios, demostraciones prácticas?y charlas de prevención    Sala polivalente     Puede ser utilizada para la organización de charlas, encuentros y otras actividades culturales." ;
+    ns:schedule "Horario ordinario: Lunes, miércoles, jueves y viernes laborables a las 12:00 horas" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/NUMANCIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Calcografía_Nacional> a ns:Museum ;
+    ns:label "Museo de Calcografía Nacional" ;
+    ns:street "ALCALA" ;
+    ns:address "Calle: ALCALA. Número: 13" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7169ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "La institución posee la más importante colección de láminas de grabado calcográfico de España. El número de matrices metálicas supera las ocho mil obras, abarcando un amplio periodo cronológico, desde el siglo XVI al XXI." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:phone "915 240 864" ;
+    ns:fax "915 241 034" ;
+    ns:latitude "40.4176555144213"^^xsd:double ;
+    ns:longitude "-3.7006500629589300"^^xsd:double ;
+    ns:xCoordinate "440558"^^xsd:integer ;
+    ns:yCoordinate "4474350"^^xsd:integer ;
+    ns:transport "Metro: Sol (líneas 1, 2, 3), Sevilla (línea 2), Gran Vía (líneas 1 y 5)." ;
+    ns:accessibility "3" ;
+    ns:schedule "Consultar en la web." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Cera> a ns:Museum ;
+    ns:label "Museo de Cera" ;
+    ns:street "RECOLETOS" ;
+    ns:address "Calle: RECOLETOS. Número: 41" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9689ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info@museoceramadrid.com; reservas@museoceramadrid.com" ;
+    ns:phone "913 199 330" ;
+    ns:latitude "40.42448764583990"^^xsd:double ;
+    ns:longitude "-3.6913807191328300"^^xsd:double ;
+    ns:xCoordinate "441350"^^xsd:integer ;
+    ns:yCoordinate "4475102"^^xsd:integer ;
+    ns:transport "Metro: Colón (línea 4)" ;
+    ns:accessibility "2" ;
+    ns:schedule "Horario de invierno: Lunes a domingo, de 11 a 19 horas. Horario de verano: Lunes a domingo, de 11 a 20 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Escultura_al_Aire_Libre_de_la_Castellana> a ns:Museum ;
+    ns:label "Museo de Escultura al Aire Libre de la Castellana" ;
+    ns:street "CASTELLANA" ;
+    ns:address "Calle: CASTELLANA. Número: 40" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=eca9ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Museo de Escultura al Aire Libre de La Castellana, está situado bajo el paso elevado que une las calles de Juan Bravo y Eduardo Dato, contiene una excelente colección de escultura abstracta española." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "mmacmdifusion@madrid.es" ;
+    ns:phone "915 885 921" ;
+    ns:latitude "40.433219398671100"^^xsd:double ;
+    ns:longitude "-3.6876122680805900"^^xsd:double ;
+    ns:xCoordinate "441678"^^xsd:integer ;
+    ns:yCoordinate "4476070"^^xsd:integer ;
+    ns:transport "Transporte público más próximo   Metro: Rubén Darío (línea 5)  Bus: 5, 14, 27, 45, 150  BICIMAD: Estación 142 (Paseo de la Castellana n&amp;ordm;42)" ;
+    ns:accessibility "1" ;
+    ns:schedule "Entrada libre. Espacio urbano abierto Abierto 24 horas al día los 365 días del año." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Historia_de_Madrid> a ns:Museum ;
+    ns:label "Museo de Historia de Madrid" ;
+    ns:street "FUENCARRAL" ;
+    ns:address "Calle: FUENCARRAL. Número: 78" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f3079262ef5d010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Fue creado como museo municipal en 1929 y rebautizado como Museo de Historia de Madrid en 2007 En el año 2014 se hace una profunda remodelación y reabre sus puertas con un montaje moderno y una puesta al día de sus colecciones." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "smuseosm@madrid.es" ;
+    ns:phone "917 011 863" ;
+    ns:latitude "40.42577054821340"^^xsd:double ;
+    ns:longitude "-3.700845660719600"^^xsd:double ;
+    ns:xCoordinate "440550"^^xsd:integer ;
+    ns:yCoordinate "4475251"^^xsd:integer ;
+    ns:transport "Metro: Tribunal, Bilbao y Alonso Martínez.  Aparcamiento público: Barceló." ;
+    ns:accessibility "1,6" ;
+    ns:equipment "Biblioteca de investigación Servicio de documentación Guardarropa Zona wifi  Tienda del museo. Contacto: tienda.museohistoria@palaciosymuseos.com Las reservas se realizarán a través de esta  plataforma" ;
+    ns:schedule "De martes a domingos de 10 a 20 horas.  Verano (Del 15 de junio al 15 de septiembre): de martes a domingos de 10 a 19 horas.  Cerrado: lunes y los días 1 y 6 de enero, 1 de mayo,  24, 25 y 31 de diciembre.   El desalojo de las salas se hará diez minutos antes del cierre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Historia_de_la_Comunidad_Judía_de_Madrid> a ns:Museum ;
+    ns:label "Museo de Historia de la Comunidad Judía de Madrid" ;
+    ns:street "BALMES" ;
+    ns:address "Calle: BALMES. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f2a4a659ee71110VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info@cjmadrid.org" ;
+    ns:phone "915 913 131" ;
+    ns:latitude "40.43543567370730"^^xsd:double ;
+    ns:longitude "-3.7000203622984"^^xsd:double ;
+    ns:xCoordinate "440627"^^xsd:integer ;
+    ns:yCoordinate "4476323"^^xsd:integer ;
+    ns:transport "Metro: Iglesia (línea 1)" ;
+    ns:accessibility "1" ;
+    ns:equipment "Visitas: info@cjmadrid.org" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/TRAFALGAR> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Mineralogía> a ns:Museum ;
+    ns:label "Museo de Mineralogía" ;
+    ns:street "FRANCISCO TOMAS Y VALIENTE" ;
+    ns:address "Calle: FRANCISCO TOMAS Y VALIENTE. Número: 7" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=255aef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museo.mineralogia@uam.es" ;
+    ns:phone "914 975 407 / 914 972 564 / 914 974 800" ;
+    ns:fax "914 974 900" ;
+    ns:latitude "40.54537941407220"^^xsd:double ;
+    ns:longitude "-3.6951833197962500"^^xsd:double ;
+    ns:xCoordinate "441133"^^xsd:integer ;
+    ns:yCoordinate "4488524"^^xsd:integer ;
+    ns:transport "Cercanías Renfe: Cantoblanco (líneas C4, C4a y C4b)" ;
+    ns:accessibility "1" ;
+    ns:schedule "De lunes a viernes, de 10:30 a 14:30 horas (concertar previamente)." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_GOLOSO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_San_Isidro._Los_Orígenes_de_Madrid> a ns:Museum ;
+    ns:label "Museo de San Isidro. Los Orígenes de Madrid" ;
+    ns:street "SAN ANDRES" ;
+    ns:address "Calle: SAN ANDRES. Número: 2" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7b7aef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Este espacio museográfico propone un viaje por la historia de la ciudad de Madrid desde la Prehistoria hasta el establecimiento de la Corte, a través de distintas salas como la de San Isidro, el Patio renacentista, el Jardín arqueobotánico o el Almacén visitable." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museosanisidro@madrid.es" ;
+    ns:phone "913 667 415" ;
+    ns:latitude "40.41207900253880"^^xsd:double ;
+    ns:longitude "-3.7108161027466300"^^xsd:double ;
+    ns:xCoordinate "439691"^^xsd:integer ;
+    ns:yCoordinate "4473738"^^xsd:integer ;
+    ns:transport "Metro:  La Latina (línea 5) , Tirso de Molina (línea 1)" ;
+    ns:accessibility "2,6" ;
+    ns:equipment "Sala de investigadores Biblioteca especializada en arqueología e historia madrileña Archivo documental Almacén visitable con más de 600 piezas arqueológicas (por cuestiones técnicas el almacén visitable puede estar cerrado durante su visita, en tal caso pregunte en el mostrador de entrada para que le faciliten el acceso) Jardín arqueobotánico, con información documentada sobre las especies de la ciudad Investigadores: los fondos del Museo están a disposición de la comunidad científica y los investigadores podrán acceder tramitando su correspondiente solicitud Visitas guiadas por voluntarios culturales de CEATE Talleres didácticos para grupos escolares Zona wifi" ;
+    ns:schedule "De martes a domingo y festivos de 10 a 20 horas.  Último pase de visita 15 minutos antes del cierre.    Verano, del 15 de junio al 15 de septiembre: de martes a domingo de 10 a 19 horas.  Cerrado todos los lunes, el 1 y 6 de enero, el 1 de mayo y los días 24, 25 y 31 de diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_Sanidad_e_Higiene_Pública> a ns:Museum ;
+    ns:label "Museo de Sanidad e Higiene Pública" ;
+    ns:street "MONFORTE DE LEMOS" ;
+    ns:address "Calle: MONFORTE DE LEMOS. Número: 5" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3e755c2cdc41c010VgnVCM2000000c205a0aRCRD" ;
+    ns:description "El Museo de Sanidad e Higiene Pública se comenzó a desarrollar en el año 1995 y es un centro único en su especialidad en España. Está ubicado en el Pabellón 14 del campus de Chamartín en el Instituto de Salud Carlos III, que albergaba los laboratorios del Hospital Nacional de Enfermedades Infecciosas, conocido como Hospital del Rey. El objetivo es gestionar para su difusión y conservación las colecciones de objetos, libros y documentos que reflejan los aspectos más significativos de la historia y evolución de la salud pública en nuestro país. De ese modo se busca la promoción de la investigación en este campo facilitando a los investigadores, profesores y técnicos que lo necesiten, apoyo técnico especializado." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museodesanidad@isciii.es" ;
+    ns:phone "918 222 414" ;
+    ns:latitude "40.475476558696300"^^xsd:double ;
+    ns:longitude "-3.6900419862500200"^^xsd:double ;
+    ns:xCoordinate "441508"^^xsd:integer ;
+    ns:yCoordinate "4480761"^^xsd:integer ;
+    ns:transport "Metro: Chamartín (líneas 1, 10)  Cercanías Renfe: Chamartín (líneas C1, C2, C3, C3a, C4, C4a, C4b, C7, C8 y C10)" ;
+    ns:accessibility "3" ;
+    ns:schedule "Visitas guiadas de grupo de lunes a jueves con cita previa. Consultar en web" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LA_PAZ> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Catedral_de_la_Almudena> a ns:Museum ;
+    ns:label "Museo de la Catedral de la Almudena" ;
+    ns:street "BAILEN" ;
+    ns:address "Calle: BAILEN. Número: 10" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=82cb8d0e78d22110VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "reservasmuseo@catedraldelaalmudena.es" ;
+    ns:phone "915 592 874" ;
+    ns:latitude "40.4155496711662"^^xsd:double ;
+    ns:longitude "-3.7136674233151300"^^xsd:double ;
+    ns:xCoordinate "439452"^^xsd:integer ;
+    ns:yCoordinate "4474125"^^xsd:integer ;
+    ns:transport "Metro: Ópera (Líneas 2, 5 y Ramal Ópera Príncipe Pío)." ;
+    ns:accessibility "1" ;
+    ns:schedule "De lunes a sábado de 10 a 14:30 horas.   Cerrado los domingos, fiestas de precepto y días de actos de culto especiales en la Catedral. Consultar  Agenda ." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Farmacia_Hispana> a ns:Museum ;
+    ns:label "Museo de la Farmacia Hispana" ;
+    ns:street "RAMON Y CAJAL" ;
+    ns:address "Calle: RAMON Y CAJAL. Número: 0" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=58f9ef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "museofar@ucm.es" ;
+    ns:phone "913 941 797" ;
+    ns:latitude "40.44451127873060"^^xsd:double  ;
+    ns:longitude "-3.7262019812409100"^^xsd:double  ;
+    ns:xCoordinate "438415"^^xsd:integer ;
+    ns:yCoordinate "4477348"^^xsd:integer ;
+    ns:accessibility "2" ;
+    ns:schedule "El Museo de la Farmacia Hispana solo puede visitarse realizando una reserva con antelación.La visita es gratuita, guiada y tiene una duración aproximada de 1 hora y media. Se realizan durante el curso lectivo, de lunes a viernes y en horario de mañana.  Este año vamos a empezar con las visitas guiadas en horario de tarde. Serán los martes y miércoles lectivos de octubre a mayo. La visita completa empezará a las 16:00 y durará 1 hora y media. Habrá también opción de visita abreviada de 17:00 a 18:00   Las visitas de tarde podrán reservarse solo con un mes de antelación." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Guardia_Civil> a ns:Museum ;
+    ns:label "Museo de la Guardia Civil" ;
+    ns:street "GUZMAN EL BUENO" ;
+    ns:address "Calle: GUZMAN EL BUENO. Número: 110" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=003aef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Museo de la Guardia Civil es una institución sin ánimo de lucro, permanente y al servicio de la sociedad, que investiga, colecciona, conserva, interpreta y exhibe el patrimonio material e inmaterial' relacionado con la Guardia Civil.   Está en desarrollo un nuevo proyecto de Museo de la Guardia Civil, con nuevas instalaciones y una museografía más moderna, completa y atractiva. Con ello, el nuevo espacio museístico del Cuerpo se configurará como una poderosa herramienta divulgativa de la historia de la Guardia Civil y sus valores corporativos, ayudando a difundir entre el público una siempre necesaria cultura de la seguridad ciudadana.   Hasta la apertura del nuevo museo, no será posible realizar visitas presenciales, pudiendo realizar una visita virtual a través del espacio digital de Google Arts &amp;amp; Culture" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "dg-estuhistoricos-registro@guardiacivil.org" ;
+    ns:phone "915 146 000, extensiones 48495 (Oficina Museo), 48477 (Salas Museo)" ;
+    ns:latitude "40.44438828230000"^^xsd:double ;
+    ns:longitude "-3.7122910771593100"^^xsd:double  ;
+    ns:xCoordinate "439594"^^xsd:integer ;
+    ns:yCoordinate "4477325"^^xsd:integer ;
+    ns:transport "Metro: Guzmán el Bueno (líneas 6 y 7)." ;
+    ns:accessibility "3" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/VALLEHERMOSO> .
+
+<http://data.example.org/madridMuseos/museum/Museo_de_la_Real_Academia_de_Bellas_Artes_de_San_Fernando> a ns:Museum ;
+    ns:label "Museo de la Real Academia de Bellas Artes de San Fernando" ;
+    ns:street "ALCALA" ;
+    ns:address "Calle: ALCALA. Número: 13" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=924aef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Construido inicialmente para palacio de Don Juan de Goyeneche, el edificio fue adquirido por la Academia de Bellas Artes en 1773 y reformado bajo la dirección de Fernando Chueca Goitia en 1973 y la fachada por Diego de Villanueva en 1774" ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "registro.museo@rabasf.com" ;
+    ns:phone "915 240 864" ;
+    ns:fax "915 241 034" ;
+    ns:latitude "40.4176555144213"^^xsd:double  ;
+    ns:longitude "-3.7006500629589300"^^xsd:double  ;
+    ns:xCoordinate "440558"^^xsd:integer ;
+    ns:yCoordinate "4474350"^^xsd:integer ;
+    ns:transport "Metro: Sol (líneas 1, 2, 3), Sevilla (línea 2), Gran Vía (líneas 1 y 5)." ;
+    ns:accessibility "1" ;
+    ns:schedule "Colección permanente: De martes a domingos, de 10 a 15 horas, incluyendo festivos Exposiciones temporales: consultar el apartado específico de la exposición temporal. Días cerrados: 1 y 6 de enero; 1 y 30 de mayo; 9 de noviembre; 24, 25 y 31 de diciembre. Las oficinas de la Real Academia de Bellas Artes abren de lunes a viernes, de 0830 a 1700 horas. Cerrada fines de semana y días festivos." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Ferrocarril_de_Madrid> a ns:Museum ;
+    ns:label "Museo del Ferrocarril de Madrid" ;
+    ns:street "DELICIAS" ;
+    ns:address "Calle: DELICIAS. Número: 61" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=091c4291ae91f010VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Edificio de carácter monumental. Proyectada por el ingeniero francés Émile Cacheliévre e inaugurada el 30 de marzo de 1880, la estación de Delicias fue la primera gran estación con carácter definitivo de Madrid." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "taquillamuseo@ffe.es" ;
+    ns:phone "915 390 085" ;
+    ns:latitude "40.40029003332900"^^xsd:double  ;
+    ns:longitude "-3.6938050319544600"^^xsd:double  ;
+    ns:xCoordinate "441124"^^xsd:integer ;
+    ns:yCoordinate "4472418"^^xsd:integer ;
+    ns:transport "Metro: Delicias (línea 3)  Cercanías Renfe: Delicias (líneas C1, C7, C10 y Regional)" ;
+    ns:accessibility "1" ;
+    ns:equipment "Mercado de Motores : segundo fin de semana del mes (excepto julio y agosto), de 11 a 21 horas. El Museo cierra en su actividad ordinaria y el acceso es gratuito (www.mercadodemotores.es)." ;
+    ns:schedule "De octubre a mayo:   Lunes a viernes, de 9:30 a 15 horas. Sábados y festivos, de 10 a 19 horas. Domingo, de 10 a 15 horas.   De junio a septiembre:   Lunes a domingo, de 10 a 15 horas.   Cerrado: 25 de diciembre, 1 y 6 de enero." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/DELICIAS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Prado> a ns:Museum ;
+    ns:label "Museo del Prado" ;
+    ns:street "PRADO" ;
+    ns:address "Calle: PRADO. Número: 0" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=060079262ef5d010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Museo Nacional del Prado, desde que fue inaugurado en 1819 y a lo largo de su historia centenaria, ha cumplido con la alta misión de conservar, exponer y enriquecer el conjunto de las colecciones y obras de arte que, estrechamente vinculadas a la historia de España, constituyen una de las más elevadas manifestaciones de expresión artística de reconocido valor universal. La Biblioteca del Museo Nacional del Prado se encuentra situada en el Casón del Buen Retiro, actual sede del Centro de Estudios del Museo del Prado. Está especializada en artes plásticas europeas entre la Edad Media y el siglo XIX. Conserva un destacado patrimonio bibliográfico, de impresos y manuscritos anteriores a 1910, de notable importancia por su cantidad (unos 7000 volúmenes), por su carácter especializado (tratados de pintura y arquitectura, libros de fiestas, cartillas de dibujo y libros de iconografía, emblemas, anatomía y fisiognomía) y por la rareza de algunos de sus ejemplares." ;
+    ns:type "/contenido/entidadesYorganismos/BibliotecasPatrimoniales" ;
+    ns:email "cav@museodelprado.es" ;
+    ns:phone "910 683 001" ;
+    ns:latitude "40.41854475379760"^^xsd:double ;
+    ns:longitude "-3.6925831204366800"^^xsd:double ;
+    ns:xCoordinate "441243"^^xsd:integer ;
+    ns:yCoordinate "4474443"^^xsd:integer ;
+    ns:transport "Metro: Estación del Arte (línea 1), Banco de España (línea 2).  Cercanías Renfe:  Atocha (líneas C1, C2, C3, C4, C5, C7 y C10)." ;
+    ns:accessibility "1,4,2006" ;
+    ns:schedule "De lunes a sábado, de 10 a 20 horas. Domingos y festivos, de 10 a 19 horas. Cerrado los días 1 de enero, 1 de mayo y 25 de diciembre. Horario reducido, de 10 a 14 horas (6 de enero y 24 y 31 de diciembre).  Horario de gratuidad:  De lunes a sábado, de 18 a 20 horas. Domingos y festivos, de 17 a 19 horas.  Acceso al Museo hasta 30 minutos antes del cierre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Reloj_Grassy> a ns:Museum ;
+    ns:label "Museo del Reloj Grassy" ;
+    ns:street "GRAN VIA" ;
+    ns:address "Calle: GRAN VIA. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=daeaef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Arquitecto: Eladio Laredo Carranza (1916 - 1917)." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "info@grassy.es" ;
+    ns:phone "915 321 007" ;
+    ns:latitude "40.41914742345850"^^xsd:double ;
+    ns:longitude "-3.698056640392260"^^xsd:double ;
+    ns:xCoordinate "440779"^^xsd:integer ;
+    ns:yCoordinate "4474514"^^xsd:integer ;
+    ns:transport "Metro: Banco de España (línea 2), Sevilla (línea 2), Gran Vía (Líneas 1 y 5)." ;
+    ns:accessibility "3" ;
+    ns:schedule "Visitas guiadas:   Miércoles 12 horas. Jueves 17:30 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CORTES> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Romanticismo> a ns:Museum ;
+    ns:label "Museo del Romanticismo" ;
+    ns:street "SAN MATEO" ;
+    ns:address "Calle: SAN MATEO. Número: 13" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=706cef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:email "informacion.romanticismo@cultura.gob.es" ;
+    ns:phone "914 481 045 / 914 480 163" ;
+    ns:fax "914 456 940" ;
+    ns:latitude "40.42586197424500"^^xsd:double ;
+    ns:longitude "-3.6987680583559500"^^xsd:double ;
+    ns:xCoordinate "440725"^^xsd:integer ;
+    ns:yCoordinate "4475259"^^xsd:integer ;
+    ns:transport "Metro: Tribunal (líneas 1 y 10), Alonso Martínez (líneas 4, 5 y 10)." ;
+    ns:accessibility "1,6" ;
+    ns:schedule "Horario de invierno (de noviembre a abril): De martes a sábado: de 9:30 a 18:30 Domingos y festivos: de 10 a 15 horas.  Horario de verano (de mayo a octubre): De martes a sábado: de 9:30 a 20:30 Domingos y festivos: de 10 a 15 horas.  Cerrado: Todos los lunes, 1 y 6 enero, 1 mayo, 9 noviembre, 24, 25 y 31 diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Seguro._Fundación_Mapfre> a ns:Museum ;
+    ns:label "Museo del Seguro. Fundación Mapfre" ;
+    ns:street "BARBARA DE BRAGANZA" ;
+    ns:address "Calle: BARBARA DE BRAGANZA. Número: 14" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=479b95f8c72d5310VgnVCM2000000c205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:latitude "40.423266511964800"^^xsd:double ;
+    ns:longitude "-3.692277196470880"^^xsd:double ;
+    ns:xCoordinate "441273"^^xsd:integer ;
+    ns:yCoordinate "4474967"^^xsd:integer ;
+    ns:transport "Metro: Colón (línea 4) y Banco de España (línea 2)  Cercanías Renfe: Recoletos (Líneas C1, C2, C7, C10 y Regional)." ;
+    ns:accessibility "3" ;
+    ns:schedule "De lunes a viernes de 9 a 17 horas. Cerrado festivos y mes de agosto.  Visitas en grupo previa reserva en su página web ." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> .
+
+<http://data.example.org/madridMuseos/museum/Museo_del_Traje._Centro_de_Investigación_del_Patrimonio_Etnológico_(CIPE)> a ns:Museum ;
+    ns:label "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)" ;
+    ns:street "JUAN DE HERRERA" ;
+    ns:address "Calle: JUAN DE HERRERA. Número: 2" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=053c4291ae91f010VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Edificio de carácter monumental, construido por Jaime López de Asiaín en 1969" ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:phone "915 504 700" ;
+    ns:latitude "40.439664788611600"^^xsd:double ;
+    ns:longitude "-3.727822373257620"^^xsd:double ;
+    ns:xCoordinate "438273"^^xsd:integer ;
+    ns:yCoordinate "4476811"^^xsd:integer ;
+    ns:transport "Metro: Ciudad Universitaria (línea 6)" ;
+    ns:accessibility "1,4,2006" ;
+    ns:schedule "Exposición permanente y temporal   Martes a sábado, de 9:30 a 19:00 horas. Domingos y festivos, de 10 a 15:00 horas.  La taquilla finaliza su actividad de venta de entradas 15 minutos antes de la hora del cierre de la exposición.  Noches de verano - Verano en el Museo   Los jueves de julio y agosto, apertura extraordinaria: 19:00 - 22:30 horas.  Cerrado: Todos los lunes, 1 y 6 enero, 1 mayo, 9 noviembre, 24, 25 y 31 diciembre." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> .
+
+<http://data.example.org/madridMuseos/museum/Palacio_Real_de_El_Pardo> a ns:Museum ;
+    ns:label "Palacio Real de El Pardo" ;
+    ns:street "MANUEL ALONSO" ;
+    ns:address "Calle: MANUEL ALONSO. Número: 8" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9f9def4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Palacio Real de El Pardo es la Residencia Oficial de Jefes de Estado Extranjeros desde 1983 y sus orígenes como cazadero real están vinculados al Monte de El Pardo. Es un edificio vinculado estrechamente a la historia de España. Mandado construir por el Emperador Carlos V en el siglo XVI y que en el siglo XVIII fue ampliado por mandato de Carlos III. Hay que destacar su entorno, ya que está rodeado por el Monte de El Pardo, espacio natural de extraordinario valor, considerado como el bosque mediterráneo más importante de la Comunidad de Madrid." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "info@patrimonionacional.es" ;
+    ns:latitude "40.520535786694500"^^xsd:double ;
+    ns:longitude "-3.7762260009975000"^^xsd:double ;
+    ns:xCoordinate "434247"^^xsd:integer ;
+    ns:yCoordinate "4485823"^^xsd:integer ;
+    ns:transport "Consulta los siguientes enlaces." ;
+    ns:accessibility "1" ;
+    ns:schedule "Martes a domingo, de 10 a 18 horas Acceso gratuito: miércoles y domingo, de 15 a 18 horas (último acceso a las 17 horas)" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EL_PARDO> .
+
+<http://data.example.org/madridMuseos/museum/Palacio_Real_de_Madrid> a ns:Museum ;
+    ns:label "Palacio Real de Madrid" ;
+    ns:street "ORIENTE" ;
+    ns:address "Calle: ORIENTE. Número: 0" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=47ddef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Palacio Real de Madrid es uno de los más hermosos y mejor conservados de Europa. Sus más de 135000 metros cuadrados han sido testigos de siglos de la historia de España.   Es una de las pocas residencias oficiales de Jefes de Estado que está abierta al público. Cerca de 1,5 millones de visitantes vienen cada año a descubrir sus rincones, sus obras de arte y sus tesoros únicos en el mundo.   Espacios.   Relevos de la Guardia Real." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:latitude "40.4176388210189"^^xsd:double ;
+    ns:longitude "-3.7116287580867000"^^xsd:double ;
+    ns:xCoordinate "439627"^^xsd:integer ;
+    ns:yCoordinate "4474355"^^xsd:integer ;
+    ns:transport "Metro: Ópera (líneas 2 y 5)  Cercanías Renfe: Príncipe Pío (líneas C7 y C10)" ;
+    ns:accessibility "1" ;
+    ns:schedule "De lunes a sábado, de 10 a 18 horas (acceso hasta las 17 horas) Domingos, de 10 a 16 horas (acceso hasta las 15 horas) Acceso gratuito al palacio: de lunes a jueves, de 16 a 18 horas (último acceso a las 17 horas)  Jardines del Campo del Moro: todos los días, de 10 a 18 horas" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Panteón_de_España> a ns:Museum ;
+    ns:label "Panteón de España" ;
+    ns:street "JULIAN GAYARRE" ;
+    ns:address "Calle: JULIAN GAYARRE. Número: 3" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=361cef4d7f71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Panteón de España (antes llamado Panteón de hombres ilustres) tiene como objetivo mantener el recuerdo y proyección de los representantes de la historia de la democracia española y de aquellas personas que hayan destacado por su labor en defensa de la convivencia democrática, la paz y los derechos humanos, así como el progreso de la ciencia o la cultura.  Se pueden visitar los mausoleos de políticos y militares como Sagasta, Cánovas del Castillo, Dato, Ríos Rosas, Canalejas o Gutiérrez de la Concha." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:latitude "40.40623069629330"^^xsd:double ;
+    ns:longitude "-3.683398479420630"^^xsd:double ;
+    ns:xCoordinate "442012"^^xsd:integer ;
+    ns:yCoordinate "4473070"^^xsd:integer ;
+    ns:transport "Metro: Estación del Arte (Atocha) (línea 1)  Cercanías Renfe: Puerta de Atocha-Almudena Grandes (todas)" ;
+    ns:accessibility "1" ;
+    ns:schedule "De martes a sábado, de 10 a 14 y de 16 a 18:30 horas. Acceso por la mañana hasta las 13:30 horas y por la tarde hasta las 18:00 horas  Domingos y festivos, de 10 a 15 horas, acceso hasta las 14:30 horas  Cierre semanal: lunes durante todo el año" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PACIFICO> .
+
+<http://data.example.org/madridMuseos/museum/Parroquia_Santa_Cruz> a ns:Museum ;
+    ns:label "Parroquia Santa Cruz" ;
+    ns:street "ATOCHA" ;
+    ns:address "Calle: ATOCHA. Número: 6" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=40e0b069a541f010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "santacruz@archimadrid.es" ;
+    ns:phone "913 691 239" ;
+    ns:latitude "40.414614986413600"^^xsd:double ;
+    ns:longitude "-3.7052543046190200"^^xsd:double ;
+    ns:xCoordinate "440165"^^xsd:integer ;
+    ns:yCoordinate "4474015"^^xsd:integer ;
+    ns:transport "Metro: Sol (líneas 1, 2 y 3), Tirso de Molina (línea 1).  Cercanías Renfe: Sol (líneas C3, C4, C4a y C4b)." ;
+    ns:accessibility "3" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/SOL> .
+
+<http://data.example.org/madridMuseos/museum/Planetario_de_Madrid> a ns:Museum ;
+    ns:label "Planetario de Madrid" ;
+    ns:street "PLANETARIO" ;
+    ns:address "Calle: PLANETARIO. Número: 16" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9c5b069a541f010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Inaugurado el 29 de septiembre de 1986, es un centro dependiente del Área de Cultura, Turismo y Deporte del Ayuntamiento de Madrid. Durante los años 2016/2017 fue sometido a una profunda renovación tanto tecnológica como de las instalaciones y edificio, posible en virtud de un acuerdo de colaboración entre el Ayuntamiento de Madrid y la Obra Social &amp;ldquo;la Caixa&amp;rdquo; &amp;ndash; que incluye dotación de contenidos, renovación de exposiciones y la realización de actividades varias en el campo de la divulgación científica. Siempre con el fin de contribuir a la difusión de la astronomía y de la ciencia en general, tanto entre escolares como entre el público de cualquier edad y condición, posee una variada oferta de  proyecciones  audiovisuales,  exposiciones  y  actividades  ( talleres, cursos, conferencias, observaciones públicas...). Las proyecciones que se ofrecen en el Planetario de Madrid se renuevan periódicamente y tienen una duración aproximada de 30 minutos. Existen dos programaciones básicas diferentes: una activa durante el verano y época de vacaciones escolares, y otra durante el curso escolar. Durante el curso escolar, las proyecciones de las mañanas de los días lectivos se reservan a escolares .    Video de presentación del centro.   Planetario en  Google Maps.   Redes Sociales:  canal de WhatsApp, Facebook, X- antiguo twitter, YouTube, Instagram." ;
+    ns:type "/contenido/entidadesYorganismos/Planetarios" ;
+    ns:email "buzon@planetmad.es" ;
+    ns:phone "914 673 461 (reserva grupos) 914 673 898 (contestador automático de información)" ;
+    ns:latitude "40.392279999540000"^^xsd:double ;
+    ns:longitude "-3.684956957448290"^^xsd:double ;
+    ns:xCoordinate "441868"^^xsd:integer ;
+    ns:yCoordinate "4471523"^^xsd:integer ;
+    ns:transport "Metro: Méndez Álvaro (línea 6). Cierre de la línea 6 de metro (año 2025). Más información.  Cercanías Renfe: Méndez Álvaro (C5 y C10)  Planetario en  Google Maps." ;
+    ns:accessibility "1,6" ;
+    ns:equipment "Sala de Proyección. Planta calle. Para acceder a ella es necesario adquirir una entrada. Cuatro áreas expositivas de acceso gratuito, distribuidas en dos plantas:     Sala de Astrónomos. Planta baja. Vestíbulo de la planta baja. Vestíbulo de la planta calle. Zona Audiovisual con pantalla de retroproyección. Planta calle.     Tienda: Planta calle. Sala de Video. Planta baja, en donde se desarrollan los talleres ofertados.  Zona wifi.  Accesibilidad en el Planetario de Madrid. Redes sociales:  canal de WhatsApp, Facebook, X- antiguo twitter, YouTube, Instagram." ;
+    ns:schedule "Horario del centro: De martes a domingo, de 10:00 a 13:45 h y de 17 a 19:45 h. Las mañanas de los días lectivos están dedicadas a las visitas escolares.*Horario de verano (ver arriba).     Cerrado: Todos los lunes del año. Días 1 y 6 de enero; 1 de mayo; 24, 25 y 31 de diciembre.   Horario de proyecciones ." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/LEGAZPI> .
+
+<http://data.example.org/madridMuseos/museum/Real_Basílica_San_Francisco_el_Grande> a ns:Museum ;
+    ns:label "Real Basílica San Francisco el Grande" ;
+    ns:street "SAN BUENAVENTURA" ;
+    ns:address "Calle: SAN BUENAVENTURA. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef8d0713fb71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Conjunto conventual que sustituyó al monasterio franciscano medieval, construido por Francisco de las Cabezas entre 1761 y 1768, que fue relevado por Antonio Polo y que concluye Francisco Sabatini en 1784 donde se exponen colecciones de pinturas de los siglos XVII al XIX." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "madridfcogrande@ofminmaculada.org" ;
+    ns:phone "91 575 99 66" ;
+    ns:latitude "40.41084698628930"^^xsd:double ;
+    ns:longitude "-3.714492963837600"^^xsd:double ;
+    ns:xCoordinate "439377"^^xsd:integer ;
+    ns:yCoordinate "4473603"^^xsd:integer ;
+    ns:transport "Metro: La Latina (línea 5), Puerta de Toledo (línea 5)." ;
+    ns:accessibility "1" ;
+    ns:schedule "Visita Guiada Museo y tarifas" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Real_Fábrica_de_Tapices> a ns:Museum ;
+    ns:label "Real Fábrica de Tapices" ;
+    ns:street "FUENTERRABIA" ;
+    ns:address "Calle: FUENTERRABIA. Número: 2" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=53cbff632081c010VgnVCM1000000b205a0aRCRD" ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "informacion@realfabricadetapices.com" ;
+    ns:phone "914 340 550" ;
+    ns:latitude "40.406094596697000"^^xsd:double ;
+    ns:longitude "-3.6825092130232400"^^xsd:double ;
+    ns:xCoordinate "442087"^^xsd:integer ;
+    ns:yCoordinate "4473054"^^xsd:integer ;
+    ns:transport "Metro: Menéndez Pelayo (línea 1).  Bus: 10, 14, 24, 26, 32, 37, 54, 57, 141, 152, C1, C2" ;
+    ns:accessibility "3" ;
+    ns:schedule "Lunes a viernes: de 10 a 14 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PACIFICO> .
+
+<http://data.example.org/madridMuseos/museum/Real_Monasterio_de_Santa_Isabel> a ns:Museum ;
+    ns:label "Real Monasterio de Santa Isabel" ;
+    ns:street "SANTA ISABEL" ;
+    ns:address "Calle: SANTA ISABEL. Número: 48" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=545b544a249c6110VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Una de las obras más destacadas en Madrid del arquitecto real Juan Gómez de Mora.  El Real Monasterio de Santa Isabel, que da nombre a la antigua Fábrica de Tapices del mismo nombre, representada por Velázquez en Las hilanderas, fue fundado por Felipe II en el lugar donde su secretario, Antonio Pérez, tuvo su suntuosa casa de campo. El patronato le otorgó a la iglesia una doble función: un convento de Agustinas y un colegio, inicialmente destinado a las hijas de los servidores de la Casa Real." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:latitude "40.409468201532600"^^xsd:double ;
+    ns:longitude "-3.696232255860970"^^xsd:double ;
+    ns:xCoordinate "440926"^^xsd:integer ;
+    ns:yCoordinate "4473438"^^xsd:integer ;
+    ns:transport "Metro: Estación del Arte (Atocha) (línea 1)  Cercanías Renfe: Atocha (todas)" ;
+    ns:accessibility "3" ;
+    ns:schedule "El acceso al templo sólo es posible en horario de culto." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> .
+
+<http://data.example.org/madridMuseos/museum/Real_Monasterio_de_la_Encarnación> a ns:Museum ;
+    ns:label "Real Monasterio de la Encarnación" ;
+    ns:street "ENCARNACION" ;
+    ns:address "Calle: ENCARNACION. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=72ad0713fb71c010VgnVCM1000000b205a0aRCRD" ;
+    ns:description "El Monasterio de La Encarnación de Madrid fue fundado en 1611 por los Reyes Felipe III y Margarita de Austria-Estiria, fruto del deseo personal de la Reina, que al ver la obra realizada por la Princesa Juana de Portugal en las Descalzas Reales decidió levantar un convento de similares características en las proximidades del Alcázar, quedando unido a este por un pasadizo.  Su arquitectura es el mejor ejemplo del estilo de los Austrias posterior a la construcción del Real Monasterio de San Lorenzo de El Escorial." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:latitude "40.4196839293774"^^xsd:double ;
+    ns:longitude "-3.7115609584031200"^^xsd:double ;
+    ns:xCoordinate "439634"^^xsd:integer ;
+    ns:yCoordinate "4474582"^^xsd:integer ;
+    ns:transport "Metro: Ópera (líneas 2, 5 y Ramal Ópera Príncipe Pío), Plaza de España (líneas 3, 10)" ;
+    ns:accessibility "3" ;
+    ns:schedule "De martes a sábado, de 10 a 14 horas (acceso hasta las 13 horas) y de 16 a 18:30 horas (acceso hasta las 17:30 horas)  Domingos y festivos: Monasterio, de 10 a 15 horas (acceso hasta las 14 horas)  Cierre semanal: lunes durante todo el año  Acceso gratuito: miércoles y jueves,?de 16 a 18:30 horas (último acceso a las 17:30 horas)" ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/PALACIO> .
+
+<http://data.example.org/madridMuseos/museum/Templo_de_Debod> a ns:Museum ;
+    ns:label "Templo de Debod" ;
+    ns:street "FERRAZ" ;
+    ns:address "Calle: FERRAZ. Número: 1" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=13b432df1d51c010VgnVCM2000000c205a0aRCRD" ;
+    ns:description "Templo egipcio dedicado a Amón de Debod y a Isis, construido entre 185 AC y el siglo I de la Era. Fue donado por Egipto a España en 1968, en agradecimiento por la ayuda en el salvamento de los templos de Abu Simbel.  Egyptian temple dedicated to Amun of Debod and Isis. It was built between 185 BC and the 1st century. It was donated by Egypt to Spain in 1968 for its help in the rescue of the temples of Abu Simbel." ;
+    ns:type "/contenido/entidadesYorganismos/MonumentosEdificiosArtisticos" ;
+    ns:email "templodebod@madrid.es" ;
+    ns:phone "913 667 415 (Museo de San Isidro / Templo de Debod)" ;
+    ns:latitude "40.42425096551590"^^xsd:double ;
+    ns:longitude "-3.716531855540270"^^xsd:double ;
+    ns:xCoordinate "439218"^^xsd:integer ;
+    ns:yCoordinate "4475093"^^xsd:integer ;
+    ns:transport "Metro: Plaza de España (líneas 3 y 10) y Ventura Rodríguez (línea 3) Bus: 1, 2, 3, 25, 39, 44, 46, 74, 75, 133, 138, 148, C1 y C2 Renfe: Príncipe Pío  Bus turístico: Ruta 1 PARADA 10 - Templo de Debod Otras formas de acceso:   Aparcamiento de coches: dentro del Área de Estacionamiento Regulado de la ciudad de Madrid.  BICIMAD (Servicio público de bicicletas de la ciudad de Madrid): Estación 115 (calle Evaristo San Miguel s/n.,entre Paseo Pintor Rosales y calle Ferraz)" ;
+    ns:accessibility "0,6" ;
+    ns:equipment "Obtención de información sobre sus fondos y colecciones con fines de investigación, enseñanza o difusión.   Se pueden realizar fotografías o grabaciones de vídeo libremente en el exterior o en el interior del templo, siempre y cuando no se utilicen flash o trípode y su fin no sea comercial. Para la obtención de reproducciones de fotografías del archivo del templo de Debod con fines editoriales, de investigación, difusión o comerciales el interesado deberá cumplimentar la solicitud de Reproducciones Fotográficas. La realización de reportajes fotográficos y grabaciones profesionales en el recinto del templo de Debod (estanque delantero, plataformas y edificio) sólo será autorizada cuando los fines para los que se solicita sean la divulgación y difusión cultural del monumento o de las actividades museísticas que en él se desarrollen. Cualquier otra finalidad, gratuita o comercial, será desestimada. El horario de información telefónica y telemática del Templo de Debod es de lunes a viernes de 8 a 15 horas. Fuera de este horario puede utilizar el teléfono gratuito de Línea Madridl 010 (914 800 010, si llama desde fuera de la ciudad de Madrid, con el prefijo 34 si llama desde fuera de España). Zona wifi." ;
+    ns:schedule "Martes a domingo y festivos, de 10 a 20  horas.   Horario verano (del 15 de junio al 15 de septiembre): Martes a domingo y festivos, de 10 a 19 horas.  Cerrado todos los lunes (incluidos lunes festivos) y los días 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre. Último acceso al templo a las 19:30 horas. El horario y la apertura de salas pueden sufrir modificaciones. Por favor, confírmelo en el teléfono de información del museo." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> .
+
+<http://data.example.org/madridMuseos/museum/Yacimiento_paleontológico._Estación_de_Metro_Carpetana> a ns:Museum ;
+    ns:label "Yacimiento paleontológico. Estación de Metro Carpetana" ;
+    ns:street "VIA CARPETANA" ;
+    ns:address "Calle: VIA CARPETANA. Número: 141" ;
+    ns:url "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=05fbb57fd3c70410VgnVCM1000000b205a0aRCRD" ;
+    ns:description "Durante las obras de remodelación de la estación de Carpetana se descubrieron restos paleontológicos con valiosos hallazgos del Mioceno, lo que ha hecho posible una reconstrucción de los paleoambientes en dos yacimientos verticales.  Más información." ;
+    ns:type "/contenido/entidadesYorganismos/Museos" ;
+    ns:latitude "40.39254099575150"^^xsd:double  ;
+    ns:longitude "-3.7413026173286000"^^xsd:double  ;
+    ns:xCoordinate "437086"^^xsd:integer ;
+    ns:yCoordinate "4471590"^^xsd:integer ;
+    ns:transport "Metro: Carpetana (línea 6)." ;
+    ns:accessibility "1" ;
+    ns:schedule "Todos los días durante la apertura de la estación, de 6 a 1:30 horas." ;
+    ns:hasNeighbourhood <http://data.example.org/madridMuseos/neighbourhood/VISTA_ALEGRE> .
+
+<http://data.example.org/madridMuseos/province/MADRID> a ns:Province ;
+    ns:label "MADRID" .
+
+<http://data.example.org/madridMuseos/location/MADRID> a ns:Location ;
+    ns:label "MADRID" ;
+    ns:hasProvince <http://data.example.org/madridMuseos/province/MADRID>.
+
+<http://data.example.org/madridMuseos/district/ARGANZUELA> a ns:District ;
+    ns:label "ARGANZUELA" ;
+    ns:districtCode 2 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/BARAJAS> a ns:District ;
+    ns:label "BARAJAS" ;
+    ns:districtCode 21 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/CARABANCHEL> a ns:District ;
+    ns:label "CARABANCHEL" ;
+    ns:districtCode 11 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/CENTRO> a ns:District ;
+    ns:label "CENTRO" ;
+    ns:districtCode 1 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/CHAMARTIN> a ns:District ;
+    ns:label "CHAMARTIN" ;
+    ns:districtCode 5 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/CHAMBERI> a ns:District ;
+    ns:label "CHAMBERI" ;
+    ns:districtCode 7 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/CIUDAD_LINEAL> a ns:District ;
+    ns:label "CIUDAD LINEAL" ;
+    ns:districtCode 15 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/FUENCARRAL-EL_PARDO> a ns:District ;
+    ns:label "FUENCARRAL-EL PARDO" ;
+    ns:districtCode 8 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/LATINA> a ns:District ;
+    ns:label "LATINA" ;
+    ns:districtCode 10 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/MONCLOA-ARAVACA> a ns:District ;
+    ns:label "MONCLOA-ARAVACA" ;
+    ns:districtCode 9 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/PUENTE_DE_VALLECAS> a ns:District ;
+    ns:label "PUENTE DE VALLECAS" ;
+    ns:districtCode 13 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/RETIRO> a ns:District ;
+    ns:label "RETIRO" ;
+    ns:districtCode 3 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/SALAMANCA> a ns:District ;
+    ns:label "SALAMANCA" ;
+    ns:districtCode 4 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/district/TETUAN> a ns:District ;
+    ns:label "TETUAN" ;
+    ns:districtCode 6 ;
+    ns:hasLocation <http://data.example.org/madridMuseos/location/MADRID>.
+
+<http://data.example.org/madridMuseos/neighbourhood/ACACIAS> a ns:Neighbourhood ;
+    ns:label "ACACIAS" ;
+    ns:codeNeighbourhood 2 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/ALAMEDA_DE_OSUNA> a ns:Neighbourhood ;
+    ns:label "ALAMEDA DE OSUNA" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/ALMAGRO> a ns:Neighbourhood ;
+    ns:label "ALMAGRO" ;
+    ns:codeNeighbourhood 4 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/ARAVACA> a ns:Neighbourhood ;
+    ns:label "ARAVACA" ;
+    ns:codeNeighbourhood 7 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/ARGUELLES> a ns:Neighbourhood ;
+    ns:label "ARGUELLES" ;
+    ns:codeNeighbourhood 2 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CASA_DE_CAMPO> a ns:Neighbourhood ;
+    ns:label "CASA DE CAMPO" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CASTELLANA> a ns:Neighbourhood ;
+    ns:label "CASTELLANA" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CASTILLA> a ns:Neighbourhood ;
+    ns:label "CASTILLA" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CIUDAD_UNIVERSITARIA> a ns:Neighbourhood ;
+    ns:label "CIUDAD UNIVERSITARIA" ;
+    ns:codeNeighbourhood 3 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CORTES> a ns:Neighbourhood ;
+    ns:label "CORTES" ;
+    ns:codeNeighbourhood 3 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CUATRO_CAMINOS> a ns:Neighbourhood ;
+    ns:label "CUATRO CAMINOS" ;
+    ns:codeNeighbourhood 2 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/CUATRO_VIENTOS> a ns:Neighbourhood ;
+    ns:label "CUATRO VIENTOS" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/DELICIAS> a ns:Neighbourhood ;
+    ns:label "DELICIAS" ;
+    ns:codeNeighbourhood 5 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/EL_GOLOSO> a ns:Neighbourhood ;
+    ns:label "EL GOLOSO" ;
+    ns:codeNeighbourhood 8 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/EL_PARDO> a ns:Neighbourhood ;
+    ns:label "EL PARDO" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/EL_VISO> a ns:Neighbourhood ;
+    ns:label "EL VISO" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/EMBAJADORES> a ns:Neighbourhood ;
+    ns:label "EMBAJADORES" ;
+    ns:codeNeighbourhood 2 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/GOYA> a ns:Neighbourhood ;
+    ns:label "GOYA" ;
+    ns:codeNeighbourhood 2 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/GUINDALERA> a ns:Neighbourhood ;
+    ns:label "GUINDALERA" ;
+    ns:codeNeighbourhood 4 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/JUSTICIA> a ns:Neighbourhood ;
+    ns:label "JUSTICIA" ;
+    ns:codeNeighbourhood 4 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/LA_PAZ> a ns:Neighbourhood ;
+    ns:label "LA PAZ" ;
+    ns:codeNeighbourhood 5 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/LEGAZPI> a ns:Neighbourhood ;
+    ns:label "LEGAZPI" ;
+    ns:codeNeighbourhood 4 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/LOS_JERONIMOS> a ns:Neighbourhood ;
+    ns:label "LOS JERONIMOS" ;
+    ns:codeNeighbourhood 5 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/NUMANCIA> a ns:Neighbourhood ;
+    ns:label "NUMANCIA" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/PACIFICO> a ns:Neighbourhood ;
+    ns:label "PACIFICO" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/PALACIO> a ns:Neighbourhood ;
+    ns:label "PALACIO" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/RECOLETOS> a ns:Neighbourhood ;
+    ns:label "RECOLETOS" ;
+    ns:codeNeighbourhood 1 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/RIOS_ROSAS> a ns:Neighbourhood ;
+    ns:label "RIOS ROSAS" ;
+    ns:codeNeighbourhood 5 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/SAN_JUAN_BAUTISTA> a ns:Neighbourhood ;
+    ns:label "SAN JUAN BAUTISTA" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/SOL> a ns:Neighbourhood ;
+    ns:label "SOL" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/TRAFALGAR> a ns:Neighbourhood ;
+    ns:label "TRAFALGAR" ;
+    ns:codeNeighbourhood 3 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/UNIVERSIDAD> a ns:Neighbourhood ;
+    ns:label "UNIVERSIDAD" ;
+    ns:codeNeighbourhood 5 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/VALLEHERMOSO> a ns:Neighbourhood ;
+    ns:label "VALLEHERMOSO" ;
+    ns:codeNeighbourhood 6 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
+
+<http://data.example.org/madridMuseos/neighbourhood/VISTA_ALEGRE> a ns:Neighbourhood ;
+    ns:label "VISTA ALEGRE" ;
+    ns:codeNeighbourhood 4 ;
+    ns:hasDistrict <http://data.example.org/madridMuseos/district/TETUAN>.
