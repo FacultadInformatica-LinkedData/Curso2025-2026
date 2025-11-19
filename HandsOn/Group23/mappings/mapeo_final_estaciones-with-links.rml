@@ -1,0 +1,87 @@
+# mappings
+@base <http://datos.ejemplo.com/mapeo/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://datos.ejemplo.com/recurso/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# --- MAPEO DE LOS METADATOS DE LA ESTACIÓN ---
+<#StationMetadataMap>
+    rml:logicalSource [
+        rml:source "csv/calidad-aire-bueno.csv";
+        rml:referenceFormulation ql:CSV;
+    ];
+
+    # --- SUJETO (Nuestra Estación Local) ---
+    # Creamos nuestra URI local usando el CODIGO_CORTO
+    rr:subjectMap [
+        rr:template "http://datos.ejemplo.com/recurso/estacion/{CODIGO_CORTO}";
+        rr:class schema:Place; # Una estación es un "Lugar"
+    ];
+
+    # --- PROPIEDADES (Metadatos) ---
+
+    # El Nombre de la Estación
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ rml:reference "ESTACION" ]
+    ];
+
+    # La Dirección Postal
+    rr:predicateObjectMap [
+        rr:predicate schema:address;
+        rr:objectMap [ rml:reference "DIRECCION" ]
+    ];
+
+    # El tipo de Estación (Urbana fondo, Tráfico)
+    rr:predicateObjectMap [
+        rr:predicate dct:description;
+        rr:objectMap [ rml:reference "NOM_TIPO" ]
+    ];
+
+    # --- COORDENADAS (GeoSPARQL) ---
+    # Usamos el vocabulario estándar 'geo'
+    
+    # Latitud
+    rr:predicateObjectMap [
+        rr:predicate geo:lat;
+        rr:objectMap [ 
+            rml:reference "LATITUD";
+            rr:datatype xsd:float; # La columna ya es de tipo float
+        ]
+    ];
+    
+    # Longitud
+    rr:predicateObjectMap [
+        rr:predicate geo:long;
+        rr:objectMap [ 
+            rml:reference "LONGITUD";
+            rr:datatype xsd:float; # La columna ya es de tipo float
+        ]
+    ];
+
+    # Altitud
+    rr:predicateObjectMap [
+        rr:predicate geo:alt;
+        rr:objectMap [ 
+            rml:reference "ALTITUD";
+            rr:datatype xsd:integer; # La columna es de tipo int
+        ]
+    ];
+
+    # --- EL LINK (Práctica 5) ---
+    # Creamos la tripleta: <nuestra_uri> owl:sameAs <uri_de_wikidata>
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [
+            rml:reference "ESTACION_URL";
+            rr:termType rr:IRI; # Le decimos que es una URI (no un texto)
+        ]
+    ] .

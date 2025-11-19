@@ -1,38 +1,87 @@
-@prefix mod: <https://w3id.org/mod#> .
-@prefix ns: <http://www.owl-ontologies.com/ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/calidadAire/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns: a owl:Ontology ;
-    mod:createdWith <https://chowlk.linkeddata.es/> .
+### CLASES ##############################
 
-ns:Municipalityxsd a ns:Station,
-        owl:NamedIndividual .
+:Provincia a rdfs:Class ;
+    rdfs:label "Provincia" .
 
-ns:Pollutant a owl:Class ;
-    rdfs:label "Pollutant" .
+:Municipio a rdfs:Class ;
+    rdfs:label "Municipio" .
 
-ns:Provincexsd a ns:Station,
-        owl:NamedIndividual .
+:Estacion a rdfs:Class ;
+    rdfs:label "Estación de medición" .
 
-ns:hasDateTimexsd a ns:Measurement,
-        owl:NamedIndividual .
+:Magnitud a rdfs:Class ;
+    rdfs:label "Magnitud contaminante" .
 
-ns:hasPollutant a owl:ObjectProperty ;
-    rdfs:label "has pollutant" .
+:Medicion a rdfs:Class ;
+    rdfs:label "Medición diaria de calidad del aire" .
 
-ns:hasStation a owl:ObjectProperty ;
-    rdfs:label "has station" .
+### PROPIEDADES DE OBJETO ################
 
-ns:hasValuexsd a ns:Measurement,
-        owl:NamedIndividual .
+:tieneMunicipio a rdf:Property ;
+    rdfs:domain :Provincia ;
+    rdfs:range :Municipio ;
+    rdfs:label "tiene municipio" .
 
-ns:isValidatedxsd a ns:Measurement,
-        owl:NamedIndividual .
+:tieneEstacion a rdf:Property ;
+    rdfs:domain :Municipio ;
+    rdfs:range :Estacion ;
+    rdfs:label "tiene estación" .
 
-ns:Station a owl:Class ;
-    rdfs:label "Station" .
+:mideMagnitud a rdf:Property ;
+    rdfs:domain :Estacion ;
+    rdfs:range :Magnitud ;
+    rdfs:label "mide magnitud" .
 
-ns:Measurement a owl:Class ;
-    rdfs:label "Measurement" .
+:tieneMedicion a rdf:Property ;
+    rdfs:domain :Estacion ;
+    rdfs:range :Medicion ;
+    rdfs:label "tiene medición" .
 
+### PROPIEDADES DE DATOS #################
+
+:codigoProvincia a rdf:Property ;
+    rdfs:domain :Provincia ;
+    rdfs:range xsd:string .
+
+:codigoMunicipio a rdf:Property ;
+    rdfs:domain :Municipio ;
+    rdfs:range xsd:string .
+
+:codigoEstacion a rdf:Property ;
+    rdfs:domain :Estacion ;
+    rdfs:range xsd:string .
+
+:codigoMagnitud a rdf:Property ;
+    rdfs:domain :Magnitud ;
+    rdfs:range xsd:string .
+
+:puntoMuestreo a rdf:Property ;
+    rdfs:domain :Medicion ;
+    rdfs:range xsd:string .
+
+:anio a rdf:Property ;
+    rdfs:domain :Medicion ;
+    rdfs:range xsd:gYear .
+
+:mes a rdf:Property ;
+    rdfs:domain :Medicion ;
+    rdfs:range xsd:gMonth .
+
+:dia a rdf:Property ;
+    rdfs:domain :Medicion ;
+    rdfs:range xsd:gDay .
+
+:valorHora a rdf:Property ;
+    rdfs:domain :Medicion ;
+    rdfs:range xsd:float ;
+    rdfs:label "valor horario" .
+
+:estadoHora a rdf:Property ;
+    rdfs:domain :Medicion ;
+    rdfs:range xsd:string ;
+    rdfs:label "estado de validez del dato" .

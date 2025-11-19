@@ -18,9 +18,70 @@ LIMIT 10
 
 # 3) Buscar mediciones inválidas (ej.: result no decimal)
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?me ?result
 WHERE {
   ?me a sosa:Observation ;
       sosa:hasSimpleResult ?result .
   FILTER(datatype(?result) != xsd:decimal)
 }
+#-----------------------------------------------------------
+
+#CONSULTAS QUE FUNCIONAN
+#Muéstrame 10 estaciones que hayas cargado, junto con su nombre y su latitud
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+SELECT ?estacion ?nombre ?latitud
+WHERE {
+  
+  ?estacion a schema:Place ;
+  
+             rdfs:label ?nombre ;
+  
+             geo:lat ?latitud .
+}
+LIMIT 10
+
+
+# Prefijos (atajos)
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?estacion ?nombre
+WHERE {
+  
+  ?estacion a schema:Place ;
+  
+             rdfs:label ?nombre .
+}
+LIMIT 10
+
+# Prefijos
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?estacion ?direccion
+WHERE {
+  
+  ?estacion rdfs:label "Plaza de España" ;
+  
+             schema:address ?direccion .
+}
+
+#EL LINKING DE OPENREFINE FUNCIONE CORRECTAMENTE
+# Prefijos
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?nombre ?link_a_wikidata
+WHERE {
+  
+  ?estacion rdfs:label ?nombre ;
+  
+             owl:sameAs ?link_a_wikidata .
+             
+  FILTER(STRSTARTS(STR(?link_a_wikidata), "http://www.wikidata.org/"))
+}
+LIMIT 10

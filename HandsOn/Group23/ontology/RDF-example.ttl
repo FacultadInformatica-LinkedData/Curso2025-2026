@@ -96,3 +96,115 @@ res:measurement/M008 a :Measurement ;
     :measurementValue 0.3 ;
     :measurementDateTime "2025-10-02T19:00:00"^^xsd:dateTime ;
     :validationStatus "N" .
+
+    ----------------------------SEGUN CHATGPT-------------------------------------------
+
+    @prefix : <https://w3id.org/madrid-aq/ontology#> .
+@prefix res: <https://w3id.org/madrid-aq/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### POLLUTANTS
+
+res:pollutantSO2 a :Pollutant ;
+    :pollutantName "Sulfur Dioxide" .
+
+res:pollutantNO2 a :Pollutant ;
+    :pollutantName "Nitrogen Dioxide" .
+
+res:pollutantO3 a :Pollutant ;
+    :pollutantName "Ozone" .
+
+res:pollutantPM10 a :Pollutant ;
+    :pollutantName "PM10 Particles" .
+
+res:pollutantCO a :Pollutant ;
+    :pollutantName "Carbon Monoxide" .
+
+res:pollutantNOx a :Pollutant ;
+    :pollutantName "Nitrogen Oxides" .
+
+
+### STATIONS
+
+res:station28079011 a :Station ;
+    :stationId "28079011"^^xsd:string ;
+    :provinceCode "28"^^xsd:string ;
+    :municipalityCode "079"^^xsd:string .
+
+res:station28079016 a :Station ;
+    :stationId "28079016"^^xsd:string ;
+    :provinceCode "28"^^xsd:string ;
+    :municipalityCode "079"^^xsd:string .
+
+res:station28079017 a :Station ;
+    :stationId "28079017"^^xsd:string ;
+    :provinceCode "28"^^xsd:string ;
+    :municipalityCode "079"^^xsd:string .
+
+
+### MEASUREMENTS — STATION 28079011
+
+res:measurementM001 a :Measurement ;
+    :hasStation res:station28079011 ;
+    :hasPollutant res:pollutantNOx ;
+    :measurementValue "11"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T01:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+res:measurementM002 a :Measurement ;
+    :hasStation res:station28079011 ;
+    :hasPollutant res:pollutantNOx ;
+    :measurementValue "32"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T02:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+res:measurementM003 a :Measurement ;
+    :hasStation res:station28079011 ;
+    :hasPollutant res:pollutantNO2 ;
+    :measurementValue "10"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T01:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+
+### MEASUREMENTS — STATION 28079016
+
+res:measurementM004 a :Measurement ;
+    :hasStation res:station28079016 ;
+    :hasPollutant res:pollutantNOx ;
+    :measurementValue "36"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T01:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+res:measurementM005 a :Measurement ;
+    :hasStation res:station28079016 ;
+    :hasPollutant res:pollutantO3 ;
+    :measurementValue "48"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T01:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+
+### MEASUREMENTS — STATION 28079017
+
+res:measurementM006 a :Measurement ;
+    :hasStation res:station28079017 ;
+    :hasPollutant res:pollutantNOx ;
+    :measurementValue "134"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T01:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+res:measurementM007 a :Measurement ;
+    :hasStation res:station28079017 ;
+    :hasPollutant res:pollutantPM10 ;
+    :measurementValue "42"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T01:00:00"^^xsd:dateTime ;
+    :validationStatus "V"^^xsd:string .
+
+
+### INVALID MEASUREMENT EXAMPLE
+
+res:measurementM008 a :Measurement ;
+    :hasStation res:station28079011 ;
+    :hasPollutant res:pollutantCO ;
+    :measurementValue "0.3"^^xsd:decimal ;
+    :measurementDateTime "2025-10-02T19:00:00"^^xsd:dateTime ;
+    :validationStatus "N"^^xsd:string .

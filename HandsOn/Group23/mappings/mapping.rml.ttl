@@ -6,14 +6,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://example.org/group23/> .
 
-# Logical source common: CSV file in data/ (use the preprocessed comma CSV)
-# TriplesMap for Station
 <#StationTriplesMap>
   a               rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "data/calair_tiemporeal_comma.csv" ;
+    rml:source "/csv/calair_tiemporeal_comma.csv" ;
     rml:referenceFormulation ql:CSV ;
-    # rml:iterator "" .   # normalmente vacío para CSV; muchos procesadores aceptan no ponerlo
   ] ;
   rr:subjectMap [
     rr:template "http://example.org/group23/station/{PUNTO_MUESTREO}" ;
@@ -36,11 +33,10 @@
     rr:objectMap [ rml:reference "ESTACION" ; rr:datatype xsd:string ]
   ] .
 
-# TriplesMap for Measurements (example for hour 01 — réplica para otras horas si quieres)
 <#Measurement_H01_TriplesMap>
   a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "data/calair_tiemporeal_comma.csv" ;
+    rml:source "/csv/calair_tiemporeal_comma.csv" ;
     rml:referenceFormulation ql:CSV ;
   ] ;
   rr:subjectMap [

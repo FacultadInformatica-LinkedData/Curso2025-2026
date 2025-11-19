@@ -1,0 +1,192 @@
+<http://datos.ejemplo.com/recurso/estacion/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/4> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza de España".
+<http://datos.ejemplo.com/recurso/estacion/4> <http://schema.org/address> "Plaza de España".
+<http://datos.ejemplo.com/recurso/estacion/4> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/4> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4238823"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/4> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7122567"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/4> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "637"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/4> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1326261>.
+<http://datos.ejemplo.com/recurso/estacion/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/8> <http://www.w3.org/2000/01/rdf-schema#label> "Escuelas Aguirre".
+<http://datos.ejemplo.com/recurso/estacion/8> <http://schema.org/address> "Entre C/ Alcala y C/ O Donell".
+<http://datos.ejemplo.com/recurso/estacion/8> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/8> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4215533"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/8> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6823158"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/8> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "672"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/8> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q5397501>.
+<http://datos.ejemplo.com/recurso/estacion/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/11> <http://www.w3.org/2000/01/rdf-schema#label> "Ramon y Cajal".
+<http://datos.ejemplo.com/recurso/estacion/11> <http://schema.org/address> "Avda. Ramon y Cajal  esq. C/ Principe de Vergara".
+<http://datos.ejemplo.com/recurso/estacion/11> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/11> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4514734"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/11> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6773491"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/11> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "709"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/11> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q5847026>.
+<http://datos.ejemplo.com/recurso/estacion/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/16> <http://www.w3.org/2000/01/rdf-schema#label> "Arturo Soria".
+<http://datos.ejemplo.com/recurso/estacion/16> <http://schema.org/address> "C/ Arturo Soria  esq. C/  Vizconde de los Asilos".
+<http://datos.ejemplo.com/recurso/estacion/16> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/16> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4400457"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/16> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6392422"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/16> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "695"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/16> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2481371>.
+<http://datos.ejemplo.com/recurso/estacion/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/17> <http://www.w3.org/2000/01/rdf-schema#label> "Villaverde".
+<http://datos.ejemplo.com/recurso/estacion/17> <http://schema.org/address> "C/ Juan Pe�alver".
+<http://datos.ejemplo.com/recurso/estacion/17> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/17> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.347147"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/17> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7133167"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/17> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "601"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/17> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q919536>.
+<http://datos.ejemplo.com/recurso/estacion/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/18> <http://www.w3.org/2000/01/rdf-schema#label> "Farolillo".
+<http://datos.ejemplo.com/recurso/estacion/18> <http://schema.org/address> "C/ Farolillo - C/ Ervigio".
+<http://datos.ejemplo.com/recurso/estacion/18> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/18> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.3947825"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/18> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7318356"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/18> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "625"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/18> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q8960929>.
+<http://datos.ejemplo.com/recurso/estacion/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/24> <http://www.w3.org/2000/01/rdf-schema#label> "Casa de Campo".
+<http://datos.ejemplo.com/recurso/estacion/24> <http://schema.org/address> "Casa de Campo  (Terminal del Teleferico)".
+<http://datos.ejemplo.com/recurso/estacion/24> <http://purl.org/dc/terms/description> "Suburbana".
+<http://datos.ejemplo.com/recurso/estacion/24> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4193577"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/24> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7473445"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/24> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "645"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/24> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q568579>.
+<http://datos.ejemplo.com/recurso/estacion/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/27> <http://www.w3.org/2000/01/rdf-schema#label> "Barajas Pueblo".
+<http://datos.ejemplo.com/recurso/estacion/27> <http://schema.org/address> "C/ Jupiter, 21".
+<http://datos.ejemplo.com/recurso/estacion/27> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/27> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4769179"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/27> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.5800258"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/27> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "619"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/27> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2474414>.
+<http://datos.ejemplo.com/recurso/estacion/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/35> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza del Carmen".
+<http://datos.ejemplo.com/recurso/estacion/35> <http://schema.org/address> "Plaza del Carmen esq. Tres Cruces".
+<http://datos.ejemplo.com/recurso/estacion/35> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/35> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4192091"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/35> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7031662"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/35> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "660"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/35> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q6080406>.
+<http://datos.ejemplo.com/recurso/estacion/36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/36> <http://www.w3.org/2000/01/rdf-schema#label> "Moratalaz".
+<http://datos.ejemplo.com/recurso/estacion/36> <http://schema.org/address> "Avda. Moratalaz  esq. Camino de los Vinateros".
+<http://datos.ejemplo.com/recurso/estacion/36> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/36> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4079517"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/36> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6453104"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/36> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "671"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/36> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2076109>.
+<http://datos.ejemplo.com/recurso/estacion/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/38> <http://www.w3.org/2000/01/rdf-schema#label> "Cuatro Caminos".
+<http://datos.ejemplo.com/recurso/estacion/38> <http://schema.org/address> "Avda. Pablo Iglesias esq. C/ Marques de Lema".
+<http://datos.ejemplo.com/recurso/estacion/38> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/38> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4455439"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/38> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7071303"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/38> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "699"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/38> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2420839>.
+<http://datos.ejemplo.com/recurso/estacion/39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/39> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio del Pilar".
+<http://datos.ejemplo.com/recurso/estacion/39> <http://schema.org/address> "Avda. Betanzos esq. C/  Monforte de Lemos".
+<http://datos.ejemplo.com/recurso/estacion/39> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/39> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4782322"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/39> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7115364"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/39> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "675"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/39> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2463533>.
+<http://datos.ejemplo.com/recurso/estacion/40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/40> <http://www.w3.org/2000/01/rdf-schema#label> "Vallecas".
+<http://datos.ejemplo.com/recurso/estacion/40> <http://schema.org/address> "C/ Arroyo del Olivar  esq. C/  Rio Grande.".
+<http://datos.ejemplo.com/recurso/estacion/40> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/40> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.3881478"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/40> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6515286"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/40> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "678"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/40> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1947988>.
+<http://datos.ejemplo.com/recurso/estacion/47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/47> <http://www.w3.org/2000/01/rdf-schema#label> "Mendez Alvaro".
+<http://datos.ejemplo.com/recurso/estacion/47> <http://schema.org/address> "C/ Juan de Mariana / Plaza Amanecer Mendez Alvaro".
+<http://datos.ejemplo.com/recurso/estacion/47> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/47> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.3980991"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/47> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6868138"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/47> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "600"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/47> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q2479775>.
+<http://datos.ejemplo.com/recurso/estacion/48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/48> <http://www.w3.org/2000/01/rdf-schema#label> "Castellana".
+<http://datos.ejemplo.com/recurso/estacion/48> <http://schema.org/address> "C/ Jose Gutierrez Abascal".
+<http://datos.ejemplo.com/recurso/estacion/48> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/48> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4398904"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/48> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6903729"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/48> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "678"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/48> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4781>.
+<http://datos.ejemplo.com/recurso/estacion/49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/49> <http://www.w3.org/2000/01/rdf-schema#label> "Parque del Retiro".
+<http://datos.ejemplo.com/recurso/estacion/49> <http://schema.org/address> "Paseo Venezuela- Palacio de Velezquez".
+<http://datos.ejemplo.com/recurso/estacion/49> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/49> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4144444"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/49> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6824999"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/49> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "658"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/49> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1131807>.
+<http://datos.ejemplo.com/recurso/estacion/50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/50> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza Castilla".
+<http://datos.ejemplo.com/recurso/estacion/50> <http://schema.org/address> "Plaza Castilla (Canal)".
+<http://datos.ejemplo.com/recurso/estacion/50> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/50> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4655841"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/50> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6887449"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/50> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "730"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/50> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q786291>.
+<http://datos.ejemplo.com/recurso/estacion/54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/54> <http://www.w3.org/2000/01/rdf-schema#label> "Ensanche de Vallecas".
+<http://datos.ejemplo.com/recurso/estacion/54> <http://schema.org/address> "Avda. La Gavia / Avda. Las Suertes".
+<http://datos.ejemplo.com/recurso/estacion/54> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/54> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.3730118"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/54> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6121394"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/54> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "628"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/54> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q3847485>.
+<http://datos.ejemplo.com/recurso/estacion/55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/55> <http://www.w3.org/2000/01/rdf-schema#label> "Urb. Embajada".
+<http://datos.ejemplo.com/recurso/estacion/55> <http://schema.org/address> "C/ Riaño (Barajas)".
+<http://datos.ejemplo.com/recurso/estacion/55> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/55> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4623628"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/55> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.5805649"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/55> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "614"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/55> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q136805083>.
+<http://datos.ejemplo.com/recurso/estacion/56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/56> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza El�ptica".
+<http://datos.ejemplo.com/recurso/estacion/56> <http://schema.org/address> "Plaza Eliptica - Avda. Oporto".
+<http://datos.ejemplo.com/recurso/estacion/56> <http://purl.org/dc/terms/description> "Urbana trafico".
+<http://datos.ejemplo.com/recurso/estacion/56> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.3850336"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/56> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7187679"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/56> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "605"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/56> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q782113>.
+<http://datos.ejemplo.com/recurso/estacion/57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/57> <http://www.w3.org/2000/01/rdf-schema#label> "Sanchinarro".
+<http://datos.ejemplo.com/recurso/estacion/57> <http://schema.org/address> "C/ Princesa de Eboli esq. C/ Maria Tudor".
+<http://datos.ejemplo.com/recurso/estacion/57> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/57> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.4942012"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/57> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6605173"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/57> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "700"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/57> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q3076623>.
+<http://datos.ejemplo.com/recurso/estacion/58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/58> <http://www.w3.org/2000/01/rdf-schema#label> "El Pardo".
+<http://datos.ejemplo.com/recurso/estacion/58> <http://schema.org/address> "Avda. La Guardia".
+<http://datos.ejemplo.com/recurso/estacion/58> <http://purl.org/dc/terms/description> "Suburbana".
+<http://datos.ejemplo.com/recurso/estacion/58> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.5180701"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/58> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.7746101"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/58> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "611"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/58> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q3314337>.
+<http://datos.ejemplo.com/recurso/estacion/59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/59> <http://www.w3.org/2000/01/rdf-schema#label> "Juan Carlos I".
+<http://datos.ejemplo.com/recurso/estacion/59> <http://schema.org/address> "Parque Juan Carlos I (frente oficinas mantenimiento)".
+<http://datos.ejemplo.com/recurso/estacion/59> <http://purl.org/dc/terms/description> "Suburbana".
+<http://datos.ejemplo.com/recurso/estacion/59> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.465144"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/59> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.609031"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/59> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "660"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/59> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q110747855>.
+<http://datos.ejemplo.com/recurso/estacion/60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place>.
+<http://datos.ejemplo.com/recurso/estacion/60> <http://www.w3.org/2000/01/rdf-schema#label> "Tres Olivos".
+<http://datos.ejemplo.com/recurso/estacion/60> <http://schema.org/address> "Plaza Tres Olivos".
+<http://datos.ejemplo.com/recurso/estacion/60> <http://purl.org/dc/terms/description> "Urbana fondo".
+<http://datos.ejemplo.com/recurso/estacion/60> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "40.5005477"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/60> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-3.6897308"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://datos.ejemplo.com/recurso/estacion/60> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> "709"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://datos.ejemplo.com/recurso/estacion/60> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q608766>.

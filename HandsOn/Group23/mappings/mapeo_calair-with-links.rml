@@ -1,0 +1,95 @@
+# mappings/mapeo_calair-with-links.rml
+@base <http://datos.ejemplo.com/mapeo/> .
+
+# --- PREFIJOS (Asegúrate de que estén todos) ---
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/>.
+@prefix ex: <http://datos.ejemplo.com/recurso/>.
+@prefix prop: <http://datos.ejemplo.com/propiedad/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# --- 1. Mapeo de la Estación (MODIFICADO) ---
+<#EstacionMap>
+    rml:logicalSource [
+        rml:source "csv/calair_tiemporeal_long_with_links.csv"; 
+        rml:referenceFormulation ql:CSV;
+    ];
+
+    rr:subjectMap [
+        rr:template "http://datos.ejemplo.com/recurso/PuntoMuestreo/{PUNTO_MUESTREO}";
+        rr:class sosa:Platform; # Así se define una clase, sin comillas
+    ];
+    
+    # ... (Puedes añadir mapeos para PROVINCIA, MUNICIPIO, etc. si quieres) ...
+
+    # --- ¡EL LINK! (Forma simple) ---
+    # Como cada fila ya tiene la info de "Madrid" (y sabemos que es Q2807),
+    # podemos añadir el link a Wikidata directamente.
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs; # "es lo mismo que"
+        # ¡Ponemos la URI de Wikidata directamente como una constante!
+        rr:objectMap [ rr:constant <http://www.wikidata.org/entity/Q2807> ]
+    ].
+
+# --- 2. Mapeo de la Propiedad Observada (Magnitud) ---
+# (Este bloque lee del NUEVO archivo largo, pero es idéntico al de HO4)
+<#MagnitudMap>
+    rml:logicalSource [
+        rml:source "csv/calair_tiemporeal_long_with_links.csv";
+        rml:referenceFormulation ql:CSV;
+    ];
+    rr:subjectMap [
+        rr:template "http://datos.ejemplo.com/recurso/Magnitud/{MAGNITUD}";
+        rr:class sosa:ObservableProperty;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate prop:codigoMagnitud;
+        rr:objectMap [ rml:reference "MAGNITUD" ];
+    ].
+
+# --- 3. Mapeo de la Observación ---
+# (Este bloque también lee del NUEVO archivo largo, pero es idéntico al de HO4)
+<#ObservacionMap>
+    rml:logicalSource [
+        rml:source "csv/calair_tiemporeal_long_with_links.csv";
+        rml:referenceFormulation ql:CSV;
+    ];
+    rr:subjectMap [
+        rr:template "http://datos.ejemplo.com/recurso/Observacion/{PUNTO_MUESTREO}-{ANO}-{MES}-{DIA}-{HORA}";
+        rr:class sosa:Observation;
+    ];
+    # --- Conectar la Observación con la Estación ---
+    rr:predicateObjectMap [
+        rr:predicate sosa:madeBySensor;
+        rr:objectMap [ rr:parentTriplesMap <#EstacionMap>; ];
+    ];
+    # --- Conectar la Observación con la Magnitud ---
+    rr:predicateObjectMap [
+        rr:predicate sosa:observedProperty;
+        rr:objectMap [ rr:parentTriplesMap <#MagnitudMap>; ];
+    ];
+    # --- Añadir el Tiempo de la Observación ---
+    rr:predicateObjectMap [
+        rr:predicate sosa:resultTime;
+        rr:objectMap [
+            rr:template "{ANO}-{MES}-{DIA}T{HORA_STR}:00:00Z";
+            rr:datatype xsd:dateTime;
+        ];
+    ];
+    # --- Añadir el Resultado (Valor y Validación) ---
+    rr:predicateObjectMap [
+        rr:predicate sosa:hasResult;
+        rr:objectMap [ rr:termType rr:BlankNode; ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate rdf:value; # rdf:value es el estándar
+        rr:objectMap [ rml:reference "VALOR"; rr:datatype xsd:float; ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate prop:validacion;
+        rr:objectMap [ rml:reference "VALIDACION"; ];
+    ].

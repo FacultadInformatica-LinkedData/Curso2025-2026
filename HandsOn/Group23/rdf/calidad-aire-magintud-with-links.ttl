@@ -1,0 +1,378 @@
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q15779>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2000/01/rdf-schema#label> "toluene".
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2270>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2000/01/rdf-schema#label> "benzene".
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q409184>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2000/01/rdf-schema#label> "ethylbenzene".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q15779>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2000/01/rdf-schema#label> "toluene".
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2270>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2000/01/rdf-schema#label> "benzene".
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q409184>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2000/01/rdf-schema#label> "ethylbenzene".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q5282>.
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/2000/01/rdf-schema#label> "sulfur dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2025>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2000/01/rdf-schema#label> "carbon monoxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q5282>.
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/2000/01/rdf-schema#label> "sulfur dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q15779>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2000/01/rdf-schema#label> "toluene".
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2270>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2000/01/rdf-schema#label> "benzene".
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q409184>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2000/01/rdf-schema#label> "ethylbenzene".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2025>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2000/01/rdf-schema#label> "carbon monoxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2025>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2000/01/rdf-schema#label> "carbon monoxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q5282>.
+<http://datos.ejemplo.com/recurso/magnitud/1> <http://www.w3.org/2000/01/rdf-schema#label> "sulfur dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035980>.
+<http://datos.ejemplo.com/recurso/magnitud/10> <http://www.w3.org/2000/01/rdf-schema#label> "PM 10 (excluding PM 2.5)".
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q424418>.
+<http://datos.ejemplo.com/recurso/magnitud/12> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen oxide".
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q36933>.
+<http://datos.ejemplo.com/recurso/magnitud/14> <http://www.w3.org/2000/01/rdf-schema#label> "ozone".
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q15779>.
+<http://datos.ejemplo.com/recurso/magnitud/20> <http://www.w3.org/2000/01/rdf-schema#label> "toluene".
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2270>.
+<http://datos.ejemplo.com/recurso/magnitud/30> <http://www.w3.org/2000/01/rdf-schema#label> "benzene".
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q409184>.
+<http://datos.ejemplo.com/recurso/magnitud/35> <http://www.w3.org/2000/01/rdf-schema#label> "ethylbenzene".
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q2025>.
+<http://datos.ejemplo.com/recurso/magnitud/6> <http://www.w3.org/2000/01/rdf-schema#label> "carbon monoxide".
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207843>.
+<http://datos.ejemplo.com/recurso/magnitud/7> <http://www.w3.org/2000/01/rdf-schema#label> "nitric oxide".
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q207895>.
+<http://datos.ejemplo.com/recurso/magnitud/8> <http://www.w3.org/2000/01/rdf-schema#label> "nitrogen dioxide".
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2002/07/owl#sameAs> <https://wikidata.org/entity/Q48035814>.
+<http://datos.ejemplo.com/recurso/magnitud/9> <http://www.w3.org/2000/01/rdf-schema#label> "PM 2.5".
