@@ -144,19 +144,24 @@ query = """
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
         SELECT DISTINCT ?name WHERE {
-          { ?s p:hasColleague/p:ownsPet ?p .
-            ?p rdf:type p:Animal . }
+      {
+        ?s p:hasColleague/p:ownsPet ?p .
+        ?p rdf:type p:Animal .
+      }
+      UNION
+      {
+        ?s p:hasColleague/p:hasColleague/p:ownsPet ?p2 .
+        ?p2 rdf:type p:Animal .
+      }
 
-          UNION
-        
-          { ?s p:hasColleague/p:hasColleague/p:ownsPet ?p2 .
-            ?p2 rdf:type p:Animal . }
-        
-          OPTIONAL { ?s p:hasName ?n1 }
-          OPTIONAL { ?s rdfs:label        ?n2 }
-          BIND(COALESCE(?n1, ?n2) AS ?name)
-        }
-        ORDER BY ?name
+      {
+        ?s p:hasName ?name
+      }
+      UNION
+      {
+        ?s rdfs:label ?name
+      }
+}
 """
 
 for r in g.query(query):
