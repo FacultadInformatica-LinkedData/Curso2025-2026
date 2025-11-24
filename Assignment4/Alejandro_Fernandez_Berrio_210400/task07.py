@@ -9,7 +9,7 @@ Original file is located at
 **Task 07: Querying RDF(s)**
 """
 
-#pip install rdflib
+#!pip install rdflib
 import urllib.request
 url = 'https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2025-2026/refs/heads/master/Assignment4/course_materials/python/validation.py'
 urllib.request.urlretrieve(url, 'validation.py')
@@ -31,31 +31,36 @@ report = Report()
 **Do the exercise in RDFLib returning a list of Tuples: (class, superclass) called "result". If a class does not have a super class, then return None as the superclass**
 """
 
-result = [
-    (str(cls), str(parent) if parent else None)
-    for cls in g.subjects(RDF.type, RDFS.Class)
-    for parent in list(g.objects(cls, RDFS.subClassOf)) or [None]
-]
-        
-# Visualize the results
-result = [] #list of tuples
-for r in result:
-  print(r)
+# Construcción alternativa del listado de clases y sus superclases
+result = []
+
+# Recorremos cada clase detectada en el grafo
+for clase in g.subjects(RDF.type, RDFS.Class):
+
+    supers = list(g.objects(clase, RDFS.subClassOf))
+
+    # Si existen superclases, generamos las tuplas correspondientes
+    pares = [(str(clase), str(s)) for s in supers] if supers else [(str(clase), None)]
+
+    result.extend(pares)
+
+# Impresión final
+for item in result:
+    print(item)
 
 ## Validation: Do not remove
 report.validate_07_1a(result)
 
 """**TASK 7.1b: Repeat the same exercise in SPARQL, returning the variables ?c (class) and ?sc (superclass)**"""
 
-query = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?c ?sc
-WHERE {
-  ?c rdf:type rdfs:Class .
-  OPTIONAL { ?c rdfs:subClassOf ?sc . }
-}
-"""
+partes = [
+    "SELECT ?c ?sc",
+    "WHERE {",
+    "  ?c rdf:type rdfs:Class .",
+    "  OPTIONAL { ?c rdfs:subClassOf ?sc . }",
+    "}"
+]
+query = "\n".join(partes)
 
 for r in g.query(query):
   print(r.c, r.sc)
