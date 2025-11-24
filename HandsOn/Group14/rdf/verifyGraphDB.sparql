@@ -1,0 +1,119 @@
+#1. Ver todas las estaciones generadas
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?estacion ?codigo ?nombre
+WHERE {
+  ?estacion a cal:Estacion ;
+            cal:ESTACION ?codigo .
+  OPTIONAL { ?estacion cal:NOMBRE_ESTACION ?nombre }
+}
+ORDER BY xsd:integer(?codigo)
+
+
+#2. Verificar que cada estación tiene sus coordenadas
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?estacion ?lat ?lon
+WHERE {
+  ?estacion a cal:Estacion ;
+            cal:ESTACION_LATITUD ?lat ;
+            cal:ESTACION_LONGITUD ?lon .
+}
+
+#3. Verificar que el enlace DIR_ESTACION_LINK está presente (como IRI)
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?estacion ?link
+WHERE {
+  ?estacion a cal:Estacion ;
+            cal:DIR_ESTACION_LINK ?link .
+}
+
+#4. Ver estaciones que tienen datos de gases (NO2, PM10, O3, etc.)
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?estacion ?NO2 ?SO2 ?CO ?PM10 ?PM25 ?O3 ?BTX
+WHERE {
+  ?estacion a cal:Estacion .
+  OPTIONAL { ?estacion cal:NO2 ?NO2 }
+  OPTIONAL { ?estacion cal:SO2 ?SO2 }
+  OPTIONAL { ?estacion cal:CO  ?CO  }
+  OPTIONAL { ?estacion cal:PM10 ?PM10 }
+  OPTIONAL { ?estacion cal:PM2_5 ?PM25 }
+  OPTIONAL { ?estacion cal:O3 ?O3 }
+  OPTIONAL { ?estacion cal:BTX ?BTX }
+}
+
+#5. Verificar mediciones generadas por estación
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?medicion ?estacion ?punto ?ano ?mes ?dia ?magnitud
+WHERE {
+  ?medicion a cal:Medicion ;
+            cal:estaEnEstacion ?estacion ;
+            cal:PUNTO_MUESTREO ?punto ;
+            cal:ANO ?ano ;
+            cal:MES ?mes ;
+            cal:DIA ?dia ;
+            cal:MAGNITUD ?magnitud .
+}
+ORDER BY ?estacion ?punto ?ano ?mes ?dia
+
+#6. Lista de puntos de muestreo por estación (usado en la aplicacion)
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT DISTINCT ?punto
+WHERE {
+  ?medicion a cal:Medicion ;
+            cal:estaEnEstacion <ESTACION_URI_AQUI> ;
+            cal:PUNTO_MUESTREO ?punto .
+}
+ORDER BY ?punto
+
+
+#7. Filas (mediciones) para una estación y punto de muestreo (usado en la aplicacion)
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT DISTINCT ?medicion ?ano ?mes ?dia ?magnitud
+WHERE {
+  ?medicion a cal:Medicion ;
+            cal:estaEnEstacion <ESTACION_URI_AQUI> ;
+            cal:PUNTO_MUESTREO "PUNTO_AQUI" ;
+            cal:ANO ?ano ;
+            cal:MES ?mes ;
+            cal:DIA ?dia ;
+            cal:MAGNITUD ?magnitud .
+}
+ORDER BY ?ano ?mes ?dia ?magnitud
+
+#8. Ver todas las propiedades de una medición (usado en la aplicacion)
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT *
+WHERE {
+  <MEDICION_URI_AQUI> ?prop ?val .
+}
+ORDER BY ?prop
+
+
+#9. Contar cuántas mediciones tiene cada estación
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?estacion (COUNT(?m) AS ?nMediciones)
+WHERE {
+  ?m a cal:Medicion ;
+     cal:estaEnEstacion ?estacion .
+}
+GROUP BY ?estacion
+ORDER BY DESC(?nMediciones)
+
+#10. Comprobar enlaces Medición → Estación
+PREFIX cal: <http://datos.madrid.es/Calidad_Aire#>
+
+SELECT ?m ?estacion ?codigo
+WHERE {
+  ?m a cal:Medicion ;
+     cal:estaEnEstacion ?estacion .
+  ?estacion cal:ESTACION ?codigo .
+}
+ORDER BY ?codigo

@@ -1,0 +1,10 @@
+@prefix ont: <http://example.org/ontology#/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:ClassRoom03 ont:contains ont:Sensor347 .
+ont:ClassRoom03 ont:contains ont:Table322 .
+ont:Sensor347 ont:hasMeasurement ont:Measurement8432 .
+ont:Measurement8432 ont:hasTemperature "29"^^xsd:integer ;
+ont:Measurement8432 ont:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+ont:Table322 ont:hasOwner ont:ETSIInformaticos .
+ont:ETSIInformaticos ont:hasName "ETSI Informáticos" .

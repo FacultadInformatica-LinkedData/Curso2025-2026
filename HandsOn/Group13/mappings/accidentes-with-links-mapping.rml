@@ -1,0 +1,545 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns: <http://example.org/def/base#> .
+@prefix tr: <http://example.org/def/trafico/#> .
+
+map:fn_000 rr:predicateObjectMap map:pom_034, map:pomexec_000 .
+
+map:fn_001 rr:predicateObjectMap map:pom_035, map:pomexec_001 .
+
+map:fn_002 rr:predicateObjectMap map:pom_036, map:pomexec_002 .
+
+map:jc_000 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_000 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:jc_001 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_001 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:jc_002 <http://semweb.mmlab.be/ns/fnml#functionValue> map:fn_002 ;
+	rdf:type <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+
+map:map_accident_000 rml:logicalSource map:source_000 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "accident" ;
+	rr:predicateObjectMap map:pom_000, map:pom_001, map:pom_002, map:pom_003, map:pom_004, map:pom_005, map:pom_006, map:pom_007, map:pom_008, map:pom_009, map:pom_010, map:pom_011, map:pom_012 ;
+	rr:subjectMap map:s_000 .
+
+map:map_district_000 rml:logicalSource map:source_005 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "district" ;
+	rr:predicateObjectMap map:pom_030, map:pom_031, map:pom_032, map:pom_033 ;
+	rr:subjectMap map:s_005 .
+
+map:map_intersection_000 rml:logicalSource map:source_004 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "intersection" ;
+	rr:predicateObjectMap map:pom_026, map:pom_027, map:pom_028, map:pom_029 ;
+	rr:subjectMap map:s_004 .
+
+map:map_person_000 rml:logicalSource map:source_001 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "person" ;
+	rr:predicateObjectMap map:pom_013, map:pom_014, map:pom_015, map:pom_016, map:pom_017, map:pom_018 ;
+	rr:subjectMap map:s_001 .
+
+map:map_street_000 rml:logicalSource map:source_003 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "street" ;
+	rr:predicateObjectMap map:pom_023, map:pom_024, map:pom_025 ;
+	rr:subjectMap map:s_003 .
+
+map:map_vehicle_000 rml:logicalSource map:source_002 ;
+	rdf:type rr:TriplesMap ;
+	rdfs:label "vehicle" ;
+	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021, map:pom_022 ;
+	rr:subjectMap map:s_002 .
+
+map:om_000 rdf:type rr:ObjectMap ;
+	rr:constant ns:Accident ;
+	rr:termType rr:IRI .
+
+map:om_001 rml:reference "expID" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_002 rml:reference "date" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:dateTime ;
+	rr:termType rr:Literal .
+
+map:om_003 rml:reference "accidentType" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_004 rml:reference "weather" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_005 rml:reference "utmXcoord" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_006 rml:reference "utmYcoord" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_007 rml:reference "lat" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_008 rml:reference "long" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:float ;
+	rr:termType rr:Literal .
+
+map:om_009 rml:reference "weatherWD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_010 rdf:type rr:ObjectMap ;
+	rr:constant ns:Person ;
+	rr:termType rr:IRI .
+
+map:om_011 rml:reference "personType" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_012 rml:reference "sex" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_013 rml:reference "ageRange" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_014 rml:reference "alcoholPositive" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:boolean ;
+	rr:termType rr:Literal .
+
+map:om_015 rdf:type rr:ObjectMap ;
+	rr:constant ns:Vehicle ;
+	rr:termType rr:IRI .
+
+map:om_016 rml:reference "vehicleType" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_017 rml:reference "vehicleTypeWD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_018 rdf:type rr:ObjectMap ;
+	rr:constant ns:Street ;
+	rr:termType rr:IRI .
+
+map:om_019 rml:reference "loc1" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_020 rml:reference "numLoc" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_021 rdf:type rr:ObjectMap ;
+	rr:constant ns:Intersection ;
+	rr:termType rr:IRI .
+
+map:om_022 rml:reference "loc1" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_023 rml:reference "loc2" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_024 rml:reference "numLoc" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_025 rdf:type rr:ObjectMap ;
+	rr:constant ns:District ;
+	rr:termType rr:IRI .
+
+map:om_026 rml:reference "district" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_027 rml:reference "distCode" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_028 rml:reference "districtWD" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:IRI .
+
+map:om_029 rml:joinCondition map:jc_000 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_intersection_000 .
+
+map:om_030 rml:reference "loc2" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_031 rml:joinCondition map:jc_001 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_street_000 .
+
+map:om_032 rml:reference "loc2" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_033 rml:joinCondition map:jc_002 ;
+	rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_district_000 .
+
+map:om_034 rml:reference "district" ;
+	rdf:type rr:ObjectMap ;
+	rr:termType rr:Literal .
+
+map:om_035 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_accident_000 .
+
+map:om_036 rdf:type rr:ObjectMap ;
+	rr:parentTriplesMap map:map_accident_000 .
+
+map:omexec_000 rr:constant "isNotNull" ;
+	rr:termType rr:IRI .
+
+map:omexec_001 rr:constant "isNull" ;
+	rr:termType rr:IRI .
+
+map:omexec_002 rr:constant "isNotNull" ;
+	rr:termType rr:IRI .
+
+map:pm_000 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_001 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasExNum .
+
+map:pm_002 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasDatetime .
+
+map:pm_003 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasAccidentType .
+
+map:pm_004 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasWeather .
+
+map:pm_005 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasXCoordUTM .
+
+map:pm_006 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasYCoordUTM .
+
+map:pm_007 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasLat .
+
+map:pm_008 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasLong .
+
+map:pm_009 rdf:type rr:PredicateMap ;
+	rr:constant ns:takesPlace .
+
+map:pm_010 rdf:type rr:PredicateMap ;
+	rr:constant ns:takesPlace .
+
+map:pm_011 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasDistrictName .
+
+map:pm_012 rdf:type rr:PredicateMap ;
+	rr:constant tr:weathercondition .
+
+map:pm_013 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_014 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasPersonType .
+
+map:pm_015 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasSex .
+
+map:pm_016 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasAge .
+
+map:pm_017 rdf:type rr:PredicateMap ;
+	rr:constant ns:Alcohol .
+
+map:pm_018 rdf:type rr:PredicateMap ;
+	rr:constant ns:participates .
+
+map:pm_019 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_020 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasVehicleType .
+
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant tr:vehicleType .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant ns:participates .
+
+map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasStreetName .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasStreetNum .
+
+map:pm_026 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_027 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasStreetName1 .
+
+map:pm_028 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasStreetName2 .
+
+map:pm_029 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasStreetNum .
+
+map:pm_030 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_031 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasDistrictName .
+
+map:pm_032 rdf:type rr:PredicateMap ;
+	rr:constant ns:hasDistrictCode .
+
+map:pm_033 rdf:type rr:PredicateMap ;
+	rr:constant schema:sameAs .
+
+map:pm_034 rdf:type rr:PredicateMap ;
+	rr:constant <str1> .
+
+map:pm_035 rdf:type rr:PredicateMap ;
+	rr:constant <str1> .
+
+map:pm_036 rdf:type rr:PredicateMap ;
+	rr:constant <str1> .
+
+map:pmexec_000 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pmexec_001 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pmexec_002 rr:constant <https://w3id.org/function/ontology#executes> .
+
+map:pom_000 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_000 ;
+	rr:predicateMap map:pm_000 .
+
+map:pom_001 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_001 ;
+	rr:predicateMap map:pm_001 .
+
+map:pom_002 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_002 ;
+	rr:predicateMap map:pm_002 .
+
+map:pom_003 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_003 ;
+	rr:predicateMap map:pm_003 .
+
+map:pom_004 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_004 ;
+	rr:predicateMap map:pm_004 .
+
+map:pom_005 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_005 ;
+	rr:predicateMap map:pm_005 .
+
+map:pom_006 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_006 ;
+	rr:predicateMap map:pm_006 .
+
+map:pom_007 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_007 ;
+	rr:predicateMap map:pm_007 .
+
+map:pom_008 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_008 ;
+	rr:predicateMap map:pm_008 .
+
+map:pom_009 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_029 ;
+	rr:predicateMap map:pm_009 .
+
+map:pom_010 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_031 ;
+	rr:predicateMap map:pm_010 .
+
+map:pom_011 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_033 ;
+	rr:predicateMap map:pm_011 .
+
+map:pom_012 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_009 ;
+	rr:predicateMap map:pm_012 .
+
+map:pom_013 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_010 ;
+	rr:predicateMap map:pm_013 .
+
+map:pom_014 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_011 ;
+	rr:predicateMap map:pm_014 .
+
+map:pom_015 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_012 ;
+	rr:predicateMap map:pm_015 .
+
+map:pom_016 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_013 ;
+	rr:predicateMap map:pm_016 .
+
+map:pom_017 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_014 ;
+	rr:predicateMap map:pm_017 .
+
+map:pom_018 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_035 ;
+	rr:predicateMap map:pm_018 .
+
+map:pom_019 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_015 ;
+	rr:predicateMap map:pm_019 .
+
+map:pom_020 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_016 ;
+	rr:predicateMap map:pm_020 .
+
+map:pom_021 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_017 ;
+	rr:predicateMap map:pm_021 .
+
+map:pom_022 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_036 ;
+	rr:predicateMap map:pm_022 .
+
+map:pom_023 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_018 ;
+	rr:predicateMap map:pm_023 .
+
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_019 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_020 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_021 ;
+	rr:predicateMap map:pm_026 .
+
+map:pom_027 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_022 ;
+	rr:predicateMap map:pm_027 .
+
+map:pom_028 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_023 ;
+	rr:predicateMap map:pm_028 .
+
+map:pom_029 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_029 .
+
+map:pom_030 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_030 .
+
+map:pom_031 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_031 .
+
+map:pom_032 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_027 ;
+	rr:predicateMap map:pm_032 .
+
+map:pom_033 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_028 ;
+	rr:predicateMap map:pm_033 .
+
+map:pom_034 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_030 ;
+	rr:predicateMap map:pm_034 .
+
+map:pom_035 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_032 ;
+	rr:predicateMap map:pm_035 .
+
+map:pom_036 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_034 ;
+	rr:predicateMap map:pm_036 .
+
+map:pomexec_000 rr:objectMap map:omexec_000 ;
+	rr:predicateMap map:pmexec_000 .
+
+map:pomexec_001 rr:objectMap map:omexec_001 ;
+	rr:predicateMap map:pmexec_001 .
+
+map:pomexec_002 rr:objectMap map:omexec_002 ;
+	rr:predicateMap map:pmexec_002 .
+
+map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_accident_000, map:map_district_000, map:map_intersection_000, map:map_person_000, map:map_street_000, map:map_vehicle_000 ;
+	rdf:type <http://rdfs.org/ns/void#Dataset> .
+
+map:s_000 rdf:type rr:SubjectMap ;
+	rr:template "http://datos.madrid.es/accidentes/{expID}" .
+
+map:s_001 rdf:type rr:SubjectMap ;
+	rr:template "http://example.org/persona/{expID}-{personType}-{person_id}" .
+
+map:s_002 rdf:type rr:SubjectMap ;
+	rr:template "http://example.org/vehiculo/{expID}-{person_id}" .
+
+map:s_003 rdf:type rr:SubjectMap ;
+	rr:template "http://example.org/calle/{loc1}-{numLoc}" .
+
+map:s_004 rdf:type rr:SubjectMap ;
+	rr:template "http://example.org/cruce/{loc1}-{loc2}-{numLoc}" .
+
+map:s_005 rdf:type rr:SubjectMap ;
+	rr:template "http://example.org/distrito/{district}" .
+
+map:source_000 rml:referenceFormulation ql:CSV ;
+	rml:source "accidentes-updated-with-links-pids-with-latlong.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_001 rml:referenceFormulation ql:CSV ;
+	rml:source "accidentes-updated-with-links-pids-with-latlong.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_002 rml:referenceFormulation ql:CSV ;
+	rml:source "accidentes-updated-with-links-pids-with-latlong.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_003 rml:referenceFormulation ql:CSV ;
+	rml:source "accidentes-updated-with-links-pids-with-latlong.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_004 rml:referenceFormulation ql:CSV ;
+	rml:source "accidentes-updated-with-links-pids-with-latlong.csv" ;
+	rdf:type rml:LogicalSource .
+
+map:source_005 rml:referenceFormulation ql:CSV ;
+	rml:source "accidentes-updated-with-links-pids-with-latlong.csv" ;
+	rdf:type rml:LogicalSource .
+

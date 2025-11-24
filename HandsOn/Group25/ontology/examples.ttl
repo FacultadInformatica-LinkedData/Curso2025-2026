@@ -1,0 +1,134 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix acc: <http://group25.linkeddata.es/ontology/accidents#> .
+@prefix res: <http://group25.linkeddata.es/resource/> .
+
+#################################################################
+# Ejemplos de instancias basadas en el CSV 2024
+#################################################################
+
+### Accidente 2024S000001 (HORTALEZA)
+res:accident/2024S000001 a acc:Accidente ;
+  acc:fecha "2024-01-01"^^xsd:date ;
+  acc:hora "14:20:00" ;
+  acc:localizacion "AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11,13,6" ;
+  acc:estadoMeteorologico "Lluvia débil" ;
+  acc:tieneDistrito res:district/16 ;
+  acc:tieneTipoAccidente res:accidentType/colision-fronto-lateral ;
+  acc:tienePersona res:person/2024S000001-01 ;
+  acc:tieneVehiculo res:vehicle/2024S000001-veh01 ;
+  acc:coordenadaX "444913"^^xsd:float ;
+  acc:coordenadaY "4481427"^^xsd:float .
+
+res:district/16 a acc:Distrito ;
+  acc:distritoNombre "HORTALEZA" .
+
+res:accidentType/colision-fronto-lateral a acc:TipoAccidente ;
+  rdfs:label "Colisión fronto-lateral"@es .
+
+res:person/2024S000001-01 a acc:Persona ;
+  acc:tipoPersona "Conductor" ;
+  acc:rangoEdad "De 35 a 39 años" ;
+  acc:sexo "Hombre" ;
+  acc:lesividad "Ingreso inferior o igual a 24 horas" ;
+  acc:codigoLesividad 2 ;
+  acc:positivoAlcohol false ;
+  acc:positivoDroga false .
+
+res:vehicle/2024S000001-veh01 a acc:Vehiculo ;
+  acc:tipoVehiculo "Motocicleta > 125cc" .
+
+#################################################################
+
+### Accidente 2024S000003 (CENTRO)
+res:accident/2024S000003 a acc:Accidente ;
+  acc:fecha "2024-01-02"^^xsd:date ;
+  acc:hora "14:00:00" ;
+  acc:localizacion "CALL. TESORO / CALL. MINAS,13" ;
+  acc:estadoMeteorologico "Lluvia débil" ;
+  acc:tieneDistrito res:district/01 ;
+  acc:tieneTipoAccidente res:accidentType/colision-fronto-lateral ;
+  acc:tienePersona res:person/2024S000003-01 ;
+  acc:tieneVehiculo res:vehicle/2024S000003-veh01 ;
+  acc:coordenadaX "440423"^^xsd:float ;
+  acc:coordenadaY "4475176"^^xsd:float .
+
+res:district/01 a acc:Distrito ;
+  acc:distritoNombre "CENTRO" .
+
+res:person/2024S000003-01 a acc:Persona ;
+  acc:tipoPersona "Ciclista" ;
+  acc:rangoEdad "De 25 a 29 años" ;
+  acc:sexo "Mujer" ;
+  acc:lesividad "Sin asistencia sanitaria" ;
+  acc:codigoLesividad 1 .
+
+res:vehicle/2024S000003-veh01 a acc:Vehiculo ;
+  acc:tipoVehiculo "Bicicleta" .
+
+#################################################################
+
+### Accidente 2024S000012 (MONCLOA-ARAVACA)
+res:accident/2024S000012 a acc:Accidente ;
+  acc:fecha "2024-01-02"^^xsd:date ;
+  acc:hora "14:25:00" ;
+  acc:localizacion "CTRA. CIUDAD UNIVERSITARIA, 0,89" ;
+  acc:estadoMeteorologico "Despejado" ;
+  acc:tieneDistrito res:district/09 ;
+  acc:tieneTipoAccidente res:accidentType/choque-contrato-obstaculo-fijo ;
+  acc:tienePersona res:person/2024S000012-01 ;
+  acc:tieneVehiculo res:vehicle/2024S000012-veh01 ;
+  acc:coordenadaX "438649"^^xsd:float ;
+  acc:coordenadaY "4478279"^^xsd:float .
+
+res:district/09 a acc:Distrito ;
+  acc:distritoNombre "MONCLOA-ARAVACA" .
+
+res:accidentType/choque-contrato-obstaculo-fijo a acc:TipoAccidente ;
+  rdfs:label "Choque contra obstáculo fijo"@es .
+
+res:person/2024S000012-01 a acc:Persona ;
+  acc:tipoPersona "Conductor" ;
+  acc:rangoEdad "De 21 a 24 años" ;
+  acc:sexo "Hombre" ;
+  acc:lesividad "Atención en urgencia sin posterior ingreso" ;
+  acc:codigoLesividad 3 ;
+  acc:positivoAlcohol false ;
+  acc:positivoDroga false .
+
+res:vehicle/2024S000012-veh01 a acc:Vehiculo ;
+  acc:tipoVehiculo "Turismo" .
+
+#################################################################
+
+### Accidente 2024S000025 (CARABANCHEL)
+res:accident/2024S000025 a acc:Accidente ;
+  acc:fecha "2024-01-02"^^xsd:date ;
+  acc:hora "14:45:00" ;
+  acc:localizacion "AVDA. POBLADOS, 88,10" ;
+  acc:estadoMeteorologico "Despejado" ;
+  acc:tieneDistrito res:district/11 ;
+  acc:tieneTipoAccidente res:accidentType/colision-frontal ;
+  acc:tienePersona res:person/2024S000025-01 ;
+  acc:tieneVehiculo res:vehicle/2024S000025-veh01 ;
+  acc:coordenadaX "437829"^^xsd:float ;
+  acc:coordenadaY "4470823"^^xsd:float .
+
+res:district/11 a acc:Distrito ;
+  acc:distritoNombre "CARABANCHEL" .
+
+res:accidentType/colision-frontal a acc:TipoAccidente ;
+  rdfs:label "Colisión frontal"@es .
+
+res:person/2024S000025-01 a acc:Persona ;
+  acc:tipoPersona "Conductor" ;
+  acc:rangoEdad "De 50 a 54 años" ;
+  acc:sexo "Hombre" ;
+  acc:lesividad "Atención sanitaria sólo en el lugar del accidente" ;
+  acc:codigoLesividad 2 .
+
+res:vehicle/2024S000025-veh01 a acc:Vehiculo ;
+  acc:tipoVehiculo "Turismo" .

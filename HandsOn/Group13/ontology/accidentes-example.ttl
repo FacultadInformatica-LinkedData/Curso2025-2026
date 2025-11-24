@@ -20,39 +20,35 @@ mod:createdWith rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Datatypes
-#################################################################
-
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#time
-xsd:time rdf:type rdfs:Datatype .
-
-
-#################################################################
 #    Object Properties
 #################################################################
+
+###  http://www.owl-ontologies.com/ns#belongsTo
+ns:belongsTo rdf:type owl:ObjectProperty ;
+             rdfs:domain ns:Street ;
+             rdfs:range ns:District ;
+             rdfs:label "belongs to" .
+
 
 ###  http://www.owl-ontologies.com/ns#involves
 ns:involves rdf:type owl:ObjectProperty ;
             rdfs:domain ns:Accident ;
-            rdfs:range ns:TipoPersona ;
+            rdfs:range ns:Person ;
             rdfs:label "involves" .
 
 
 ###  http://www.owl-ontologies.com/ns#participates
 ns:participates rdf:type owl:ObjectProperty ;
                 rdfs:domain ns:Accident ;
-                rdfs:range ns:TipoVehículo ;
+                rdfs:range ns:Vehicle ;
                 rdfs:label "participates" .
 
 
 ###  http://www.owl-ontologies.com/ns#takesPlace
 ns:takesPlace rdf:type owl:ObjectProperty ;
               rdfs:domain ns:Accident ;
-              rdfs:range ns:District ;
+              rdfs:range ns:Intersection ,
+                         ns:Street ;
               rdfs:label "takes place" .
 
 
@@ -62,31 +58,44 @@ ns:takesPlace rdf:type owl:ObjectProperty ;
 
 ###  http://www.owl-ontologies.com/ns#Alcohol
 ns:Alcohol rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:TipoPersona ;
+           rdfs:domain ns:Person ;
            rdfs:range xsd:boolean ;
            rdfs:label "alcohol" .
 
 
+###  http://www.owl-ontologies.com/ns#hasAccidentType
+ns:hasAccidentType rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ns:Accident ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has accident type" .
+
+
 ###  http://www.owl-ontologies.com/ns#hasAge
 ns:hasAge rdf:type owl:DatatypeProperty ;
-          rdfs:domain ns:TipoPersona ;
+          rdfs:domain ns:Person ;
           rdfs:range xsd:string ;
           rdfs:label "has age" .
 
 
-###  http://www.owl-ontologies.com/ns#hasCode
-ns:hasCode rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:District ,
-                       ns:Street ;
-           rdfs:range xsd:integer ;
-           rdfs:label "has code" .
+###  http://www.owl-ontologies.com/ns#hasDatetime
+ns:hasDatetime rdf:type owl:DatatypeProperty ;
+               rdfs:domain ns:Accident ;
+               rdfs:range xsd:dateTime ;
+               rdfs:label "has datetime" .
 
 
-###  http://www.owl-ontologies.com/ns#hasDate
-ns:hasDate rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:Accident ;
-           rdfs:range xsd:date ;
-           rdfs:label "has date" .
+###  http://www.owl-ontologies.com/ns#hasDistrictCode
+ns:hasDistrictCode rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ns:District ;
+                   rdfs:range xsd:integer ;
+                   rdfs:label "has district code" .
+
+
+###  http://www.owl-ontologies.com/ns#hasDistrictName
+ns:hasDistrictName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ns:District ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has district name" .
 
 
 ###  http://www.owl-ontologies.com/ns#hasExNum
@@ -96,60 +105,110 @@ ns:hasExNum rdf:type owl:DatatypeProperty ;
             rdfs:label "has ex num" .
 
 
-###  http://www.owl-ontologies.com/ns#hasLocation
-ns:hasLocation rdf:type owl:DatatypeProperty ;
-               rdfs:domain ns:Accident ;
-               rdfs:range xsd:string ;
-               rdfs:label "has location" .
+###  http://www.owl-ontologies.com/ns#hasInterNum
+ns:hasInterNum rdf:type owl:DatatypeProperty ;
+               rdfs:domain ns:Intersection ;
+               rdfs:range xsd:integer ;
+               rdfs:label "has inter num" .
 
 
-###  http://www.owl-ontologies.com/ns#hasName
-ns:hasName rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:District ,
-                       ns:Street ;
-           rdfs:range xsd:string ;
-           rdfs:label "has name" .
+###  http://www.owl-ontologies.com/ns#hasLat
+ns:hasLat rdf:type owl:DatatypeProperty ;
+          rdfs:domain ns:Accident ;
+          rdfs:range xsd:double ;
+          rdfs:label "has lat" .
+
+
+###  http://www.owl-ontologies.com/ns#hasLong
+ns:hasLong rdf:type owl:DatatypeProperty ;
+           rdfs:domain ns:Accident ;
+           rdfs:range xsd:double ;
+           rdfs:label "has long" .
+
+
+###  http://www.owl-ontologies.com/ns#hasPersonType
+ns:hasPersonType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ns:Person ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has person type" .
 
 
 ###  http://www.owl-ontologies.com/ns#hasSex
 ns:hasSex rdf:type owl:DatatypeProperty ;
-          rdfs:domain ns:TipoPersona ;
+          rdfs:domain ns:Person ;
           rdfs:range xsd:string ;
           rdfs:label "has sex" .
 
 
-###  http://www.owl-ontologies.com/ns#hasTime
-ns:hasTime rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:Accident ;
-           rdfs:range xsd:time ;
-           rdfs:label "has time" .
+###  http://www.owl-ontologies.com/ns#hasStreetName
+ns:hasStreetName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ns:Street ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has street name" .
 
 
-###  http://www.owl-ontologies.com/ns#hasType
-ns:hasType rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns:TipoPersona ,
-                       ns:TipoVehículo ;
-           rdfs:range xsd:string ;
-           rdfs:label "has type" .
+###  http://www.owl-ontologies.com/ns#hasStreetName1
+ns:hasStreetName1 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ns:Intersection ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has street name1" .
 
 
-###  http://www.owl-ontologies.com/ns#hasXCoord
-ns:hasXCoord rdf:type owl:DatatypeProperty ;
-             rdfs:domain ns:Accident ;
-             rdfs:range xsd:double ;
-             rdfs:label "has x coord" .
+###  http://www.owl-ontologies.com/ns#hasStreetName2
+ns:hasStreetName2 rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ns:Intersection ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has street name2" .
 
 
-###  http://www.owl-ontologies.com/ns#hasYCoord
-ns:hasYCoord rdf:type owl:DatatypeProperty ;
-             rdfs:domain ns:Accident ;
-             rdfs:range xsd:double ;
-             rdfs:label "has y coord" .
+###  http://www.owl-ontologies.com/ns#hasStreetNum
+ns:hasStreetNum rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Street ;
+                rdfs:range xsd:integer ;
+                rdfs:label "has street num" .
+
+
+###  http://www.owl-ontologies.com/ns#hasVehicleType
+ns:hasVehicleType rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ns:Vehicle ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has vehicle type" .
+
+
+###  http://www.owl-ontologies.com/ns#hasWeather
+ns:hasWeather rdf:type owl:DatatypeProperty ;
+              rdfs:domain ns:Accident ;
+              rdfs:range xsd:string ;
+              rdfs:label "has weather" .
+
+
+###  http://www.owl-ontologies.com/ns#hasXCoordUTM
+ns:hasXCoordUTM rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Accident ;
+                rdfs:range xsd:double ;
+                rdfs:label "has x coord u t m" .
+
+
+###  http://www.owl-ontologies.com/ns#hasYCoordUTM
+ns:hasYCoordUTM rdf:type owl:DatatypeProperty ;
+                rdfs:domain ns:Accident ;
+                rdfs:range xsd:double ;
+                rdfs:label "has y coord u t m" .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://example.org/def/base#accidentes/2025S000001
+<http://example.org/def/base#accidentes/2025S000001> rdf:type owl:Class ;
+                                                     rdfs:subClassOf ns:Accident .
+
+
+###  http://example.org/def/base#distrito/Ciudad_Lineal
+<http://example.org/def/base#distrito/Ciudad_Lineal> rdf:type owl:Class ;
+                                                     rdfs:subClassOf ns:District .
+
 
 ###  http://www.owl-ontologies.com/ns#Accident
 ns:Accident rdf:type owl:Class ;
@@ -161,64 +220,66 @@ ns:District rdf:type owl:Class ;
             rdfs:label "District" .
 
 
+###  http://www.owl-ontologies.com/ns#Intersection
+ns:Intersection rdf:type owl:Class ;
+                rdfs:label "Intersection" .
+
+
+###  http://www.owl-ontologies.com/ns#Person
+ns:Person rdf:type owl:Class ;
+          rdfs:label "Person" .
+
+
 ###  http://www.owl-ontologies.com/ns#Street
 ns:Street rdf:type owl:Class ;
-          rdfs:subClassOf ns:District ;
           rdfs:label "Street" .
 
 
-###  http://www.owl-ontologies.com/ns#TipoPersona
-ns:TipoPersona rdf:type owl:Class ;
-               rdfs:label "Tipo Persona" .
-
-
-###  http://www.owl-ontologies.com/ns#TipoVehículo
-ns:TipoVehículo rdf:type owl:Class ;
-                rdfs:label "Tipo Vehículo" .
+###  http://www.owl-ontologies.com/ns#Vehicle
+ns:Vehicle rdf:type owl:Class ;
+           rdfs:label "Vehicle" .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://example.org/def/base#Accidente1
-:Accidente1 rdf:type owl:NamedIndividual ,
-                     ns:Accident ;
-            ns:hasDate "01/01/2025"^^xsd:date ;
-            ns:hasExNum "2025S000056" ;
-            ns:hasLocation "CALL. LOPEZ DE HOYOS / CALL. ROS DE OLANO" ;
-            ns:hasTime "0:49:00"^^xsd:time ;
-            ns:hasXCoord "442966.0"^^xsd:double ;
-            ns:hasYCoord "4477385.0"^^xsd:double .
+###  http://example.org/def/base#accidentes/2025S000001
+<http://example.org/def/base#accidentes/2025S000001> rdf:type owl:NamedIndividual ;
+                                                     ns:hasAccidentType "Collision with pedestrian" ;
+                                                     ns:hasDatetime "2025-01-27T20:50:00Z"^^xsd:dateTime ;
+                                                     ns:hasExNum "2025S000001" ;
+                                                     ns:hasLat "40.43265168459141"^^xsd:double ;
+                                                     ns:hasLong "3.6452577173678824"^^xsd:double ;
+                                                     ns:hasWeather "rain" ;
+                                                     ns:hasXCoordUTM "445270.0"^^xsd:double ;
+                                                     ns:hasYCoordUTM "4475979.0"^^xsd:double .
 
 
-###  http://example.org/def/base#Calle1
-:Calle1 rdf:type owl:NamedIndividual ,
-                 ns:Street ;
-        ns:hasCode 140 ;
-        ns:hasLocation "CALL. LOPEZ DE HOYOS / CALL. ROS DE OLANO" .
+###  http://example.org/def/base#cruce/CALLE_LOS_URQUIZA-CALLE_GOMEZ_DE_AVELLANEDA
+<http://example.org/def/base#cruce/CALLE_LOS_URQUIZA-CALLE_GOMEZ_DE_AVELLANEDA> rdf:type owl:NamedIndividual ;
+                                                                                ns:hasInterNum 24 ;
+                                                                                ns:hasStreetName1 "CALLE LOS URQUIZA" ;
+                                                                                ns:hasStreetName2 "CALLE GOMEZ DE AVELLANEDA" .
 
 
-###  http://example.org/def/base#Distrito1
-:Distrito1 rdf:type owl:NamedIndividual ,
-                    ns:District ;
-           ns:hasCode 5 ;
-           ns:hasName "CHAMARTÍN" .
+###  http://example.org/def/base#distrito/Ciudad_Lineal
+<http://example.org/def/base#distrito/Ciudad_Lineal> rdf:type owl:NamedIndividual ;
+                                                     ns:hasDistrictCode "15"^^xsd:int ;
+                                                     ns:hasDistrictName "Ciudad Lineal" .
 
 
-###  http://example.org/def/base#Persona1
-:Persona1 rdf:type owl:NamedIndividual ,
-                   ns:TipoPersona ;
-          ns:Alcohol "false"^^xsd:boolean ;
-          ns:hasAge "30-34 años" ;
-          ns:hasSex "Hombre" ;
-          ns:hasType "Conductor" .
+###  http://example.org/def/base#persona/2025S000001-Driver-1
+<http://example.org/def/base#persona/2025S000001-Driver-1> rdf:type owl:NamedIndividual ;
+                                                           ns:Alcohol "false"^^xsd:boolean ;
+                                                           ns:hasAge "30 to 34 years" ;
+                                                           ns:hasPersonType "Driver" ;
+                                                           ns:hasSex "Male" .
 
 
-###  http://example.org/def/base#Vehiculo1
-:Vehiculo1 rdf:type owl:NamedIndividual ,
-                    ns:TipoVehículo ;
-           ns:hasType "Ciclomotor" .
+###  http://example.org/def/base#vehiculo/2025S000001-1
+<http://example.org/def/base#vehiculo/2025S000001-1> rdf:type owl:NamedIndividual ;
+                                                     ns:hasVehicleType "passenger car" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

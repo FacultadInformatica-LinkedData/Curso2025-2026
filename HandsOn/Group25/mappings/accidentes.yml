@@ -1,0 +1,65 @@
+prefixes:
+  xsd:  "http://www.w3.org/2001/XMLSchema#"
+  rdf:  "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  dct:  "http://purl.org/dc/terms/"
+  schema: "http://schema.org/"
+  geosparql: "http://www.opengis.net/ont/geosparql#"
+  geo_core: "http://www.opengis.net/def/observationType/OGC-OM/2.0/"
+  ex:   "https://example.org/ontology/"
+  res:  "https://example.org/"
+
+mappings:
+
+  # ===  ACCIDENTE ===
+  accidente:
+    sources:
+      - [/data/2024-Accidentalidad-updated.csv~csv]
+    s: res:accidente/$(num_expediente)
+    po:
+      - [a, schema:Event]
+      - [dct:identifier, $(num_expediente)]
+      - [schema:startDate, $(fecha), xsd:date]
+      - [schema:startTime, $(hora), xsd:time]
+      - [schema:location, $(localizacion)]
+      - [schema:addressLocality, $(distrito)]
+      - [ex:districtCode, $(cod_distrito)]
+      - [ex:weather, $(estado_meteorológico)]
+      - [ex:accidentType, $(tipo_accidente)]
+      - [geosparql:hasGeometry, res:accidente/$(num_expediente)/geom~iri]
+
+  # ===  GEOMETRÍA (coordenadas UTM) ===
+  accidente_geom:
+    sources:
+      - [/data/2024-Accidentalidad-updated.~csv]
+    s: res:accidente/$(num_expediente)/geom
+    po:
+      - [a, geosparql:Geometry]
+      - [geo_core:xETRS89, $(coordenada_x_utm), xsd:double]
+      - [geo_core:yETRS89, $(coordenada_y_utm), xsd:double]
+
+  # ===  PERSONA INVOLUCRADA ===
+  persona:
+    sources:
+      - [/data/2024-Accidentalidad-updated.csv~csv]
+    s: res:accidente/$(num_expediente)/persona/$(num_expediente)-$(tipo_persona)-$(sexo)
+    po:
+      - [a, schema:Person]
+      - [schema:gender, $(sexo)]
+      - [schema:age, $(rango_edad)]
+      - [ex:role, $(tipo_persona)]
+      - [ex:injuryCode, $(cod_lesividad)]
+      - [ex:injury, $(lesividad)]
+      - [ex:alcoholPositive, $(positiva_alcohol), xsd:boolean]
+      - p: schema:participantIn
+        o:
+          - mapping: accidente
+      - [ex:drives, res:accidente/$(num_expediente)/vehiculo/$(num_expediente)-$(tipo_vehiculo)~iri]
+  # ===  VEHÍCULO ===
+  vehiculo:
+    sources:
+      - [/data/2024-Accidentalidad-updated.csv~csv]
+    s: res:accidente/$(num_expediente)/vehiculo/$(num_expediente)-$(tipo_vehiculo)
+    po:
+      - [a, schema:Vehicle]
+      - [schema:vehicleModel, $(tipo_vehiculo)]

@@ -1,0 +1,3784 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ambulancia SAMUR",
+                "l": "Ambulancia SAMUR"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ambulancia SAMUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ambulance"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Autobus EMT",
+                "l": "Autobus EMT"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autobus EMT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bus"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Autobús",
+                "l": "Autobús"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autobús"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bus"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Autobús articulado",
+                "l": "Autobús articulado"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autobús articulado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "articulated bus"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Autocaravana",
+                "l": "Autocaravana"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Autocaravana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "recreational vehicle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Bicicleta",
+                "l": "Bicicleta"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bicycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Bicicleta EPAC (pedaleo asistido)",
+                "l": "Bicicleta EPAC (pedaleo asistido)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bicicleta EPAC (pedaleo asistido)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "electric bicycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Camión rígido",
+                "l": "Camión rígido"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Camión rígido"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "truck"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Caravana",
+                "l": "Caravana"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Caravana"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "travel trailer"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ciclomotor",
+                "l": "Ciclomotor"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclomotor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "moped"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ciclomotor de dos ruedas L1e-B",
+                "l": "Ciclomotor de dos ruedas L1e-B"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclomotor de dos ruedas L1e-B"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "moped"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Furgoneta",
+                "l": "Furgoneta"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Furgoneta"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "van"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Turismo",
+                "l": "Turismo"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Turismo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "passenger car"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ciclo de motor L1e-A",
+                "l": "Ciclo de motor L1e-A"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciclo de motor L1e-A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "electric bicycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Cuadriciclo ligero",
+                "l": "Cuadriciclo ligero"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuadriciclo ligero"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quadricycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Cuadriciclo no ligero",
+                "l": "Cuadriciclo no ligero"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cuadriciclo no ligero"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quadricycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Microbús <= 17 plazas",
+                "l": "Microbús <= 17 plazas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Microbús <= 17 plazas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "microbus"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Tren/metro",
+                "l": "Tren/metro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Conductor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tram"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_persona"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Moto de tres ruedas > 125cc",
+                "l": "Moto de tres ruedas > 125cc"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moto de tres ruedas > 125cc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "three-wheeler"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Motocicleta ",
+                "l": "Motocicleta "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Motocicleta "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "motorcycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Motocicleta > 125cc",
+                "l": "Motocicleta > 125cc"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Motocicleta > 125cc"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sport motorcycle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Vehículo articulado",
+                "l": "Vehículo articulado"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vehículo articulado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "articulated vehicle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Patinete no eléctrico",
+                "l": "Patinete no eléctrico"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Patinete no eléctrico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kick scooter"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Semiremolque",
+                "l": "Semiremolque"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Semiremolque"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "semi-trailer"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sin especificar",
+                "l": "Sin especificar"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sin especificar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VMU eléctrico",
+                "l": "VMU eléctrico"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VMU eléctrico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "electric scooter"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Todo terreno",
+                "l": "Todo terreno"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Todo terreno"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "off-road vehicle"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Tractocamión",
+                "l": "Tractocamión"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tractocamión"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tractor unit"
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-discard-judgments",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "clearData": true,
+    "description": "Descartar juicios de cotejo y borrar datos de reconocimiento para celdas en la columna distrito"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "grel:value.substring(0, 1) + value.substring(1).toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna distrito usando la expresión grel:value.substring(0, 1) + value.substring(1).toLowercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "distrito",
+          "expression": "value",
+          "columnName": "distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ciudad lineal",
+                "l": "Ciudad lineal"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ciudad lineal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ciudad Lineal"
+      }
+    ],
+    "description": "Editar celdas en masa en columna distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "distrito",
+          "expression": "value",
+          "columnName": "distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Fuencarral-el pardo",
+                "l": "Fuencarral-el pardo"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fuencarral-el pardo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Editar celdas en masa en columna distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "distrito",
+          "expression": "value",
+          "columnName": "distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Moncloa-aravaca",
+                "l": "Moncloa-aravaca"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Moncloa-aravaca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Editar celdas en masa en columna distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "distrito",
+          "expression": "value",
+          "columnName": "distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Puente de vallecas",
+                "l": "Puente de vallecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Puente de vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puente de Vallecas"
+      }
+    ],
+    "description": "Editar celdas en masa en columna distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "distrito",
+          "expression": "value",
+          "columnName": "distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "San blas-canillejas",
+                "l": "San blas-canillejas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San blas-canillejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas-Canillejas"
+      }
+    ],
+    "description": "Editar celdas en masa en columna distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "distrito",
+          "expression": "value",
+          "columnName": "distrito",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Villa de vallecas",
+                "l": "Villa de vallecas"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villa de vallecas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Villa de Vallecas"
+      }
+    ],
+    "description": "Editar celdas en masa en columna distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Nevando/Granizando",
+                "l": "Nevando/Granizando"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nevando/Granizando"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hail"
+      }
+    ],
+    "description": "Editar celdas en masa en columna estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Nublado",
+                "l": "Nublado"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nublado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "overcast"
+      }
+    ],
+    "description": "Editar celdas en masa en columna estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Lluvia",
+                "l": "Lluvia"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lluvia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rain"
+      }
+    ],
+    "description": "Editar celdas en masa en columna estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Despejado",
+                "l": "Despejado"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Despejado"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SKC"
+      }
+    ],
+    "description": "Editar celdas en masa en columna estado_meteorológico"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "grel:value.split(\"/\")[2]+\"-\"+value.split(\"/\")[1]+\"-\"+value.split(\"/\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna fecha usando la expresión grel:value.split(\"/\")[2]+\"-\"+value.split(\"/\")[1]+\"-\"+value.split(\"/\")[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "fecha",
+    "expression": "join ([coalesce(cells['fecha'].value,''),coalesce(cells['hora'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "Date",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna Date en el índice 2 basada en la columna fecha usando la expresión join ([coalesce(cells['fecha'].value,''),coalesce(cells['hora'].value,'')],' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Date usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "fecha",
+    "description": "Eliminar columna fecha"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora",
+    "description": "Eliminar columna hora"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_distrito",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna cod_distrito usando la expresión grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "numero",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna numero usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Desconocido"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Editar celdas en masa en columna rango_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Desconocido"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Editar celdas en masa en columna sexo"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column distrito to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q334166",
+        "name": "mode of transport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column tipo_vehiculo to type Q334166"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "moped",
+    "judgment": "matched",
+    "match": {
+      "id": "Q201783",
+      "name": "moped",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento moped (Q201783) para las celdas que contienen \"moped\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "passenger car",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1144312",
+      "name": "passenger car",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento passenger car (Q1144312) para las celdas que contienen \"passenger car\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "Maquinaria de obras",
+    "judgment": "matched",
+    "match": {
+      "id": "Q102310586",
+      "name": "construction machine",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento construction machine (Q102310586) para las celdas que contienen \"Maquinaria de obras\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "motorcycle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q34493",
+      "name": "motorcycle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motorcycle (Q34493) para las celdas que contienen \"motorcycle\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "van",
+    "judgment": "matched",
+    "match": {
+      "id": "Q193468",
+      "name": "van",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento van (Q193468) para las celdas que contienen \"van\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ambulance",
+                "l": "ambulance"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "ambulance",
+    "judgment": "matched",
+    "match": {
+      "id": "Q180481",
+      "name": "ambulance",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento ambulance (Q180481) para las celdas que contienen \"ambulance\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "articulated bus",
+                "l": "articulated bus"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "articulated bus",
+    "judgment": "matched",
+    "match": {
+      "id": "Q654749",
+      "name": "articulated bus",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento articulated bus (Q654749) para las celdas que contienen \"articulated bus\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "articulated vehicle",
+                "l": "articulated vehicle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "articulated vehicle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1411533",
+      "name": "articulated vehicle",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento articulated vehicle (Q1411533) para las celdas que contienen \"articulated vehicle\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "bus",
+                "l": "bus"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "bus",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5638",
+      "name": "bus",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento bus (Q5638) para las celdas que contienen \"bus\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "electric bicycle",
+                "l": "electric bicycle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "electric bicycle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q924724",
+      "name": "electric bicycle",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento electric bicycle (Q924724) para las celdas que contienen \"electric bicycle\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "electric scooter",
+                "l": "electric scooter"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "electric scooter",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1327012",
+      "name": "electric scooter",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento electric scooter (Q1327012) para las celdas que contienen \"electric scooter\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kick scooter",
+                "l": "kick scooter"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "kick scooter",
+    "judgment": "matched",
+    "match": {
+      "id": "Q502057",
+      "name": "kick scooter",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento kick scooter (Q502057) para las celdas que contienen \"kick scooter\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "microbus",
+                "l": "microbus"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "microbus",
+    "judgment": "matched",
+    "match": {
+      "id": "Q13222551",
+      "name": "microbus",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento microbus (Q13222551) para las celdas que contienen \"microbus\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Quadricycle",
+                "l": "Quadricycle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "Quadricycle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3412591",
+      "name": "Quadricycle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Quadricycle (Q3412591) para las celdas que contienen \"Quadricycle\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "recreational vehicle",
+                "l": "recreational vehicle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "recreational vehicle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q746448",
+      "name": "recreational vehicle",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento recreational vehicle (Q746448) para las celdas que contienen \"recreational vehicle\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "semi-trailer",
+                "l": "semi-trailer"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "semi-trailer",
+    "judgment": "matched",
+    "match": {
+      "id": "Q944315",
+      "name": "semi-trailer",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento semi-trailer (Q944315) para las celdas que contienen \"semi-trailer\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "sport motorcycle",
+                "l": "sport motorcycle"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "sport motorcycle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1339146",
+      "name": "sport motorcycle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento sport motorcycle (Q1339146) para las celdas que contienen \"sport motorcycle\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "tractor unit",
+                "l": "tractor unit"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "tractor unit",
+    "judgment": "matched",
+    "match": {
+      "id": "Q59569",
+      "name": "tractor unit",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento tractor unit (Q59569) para las celdas que contienen \"tractor unit\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "tram",
+                "l": "tram"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "tram",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3407658",
+      "name": "tram",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento tram (Q3407658) para las celdas que contienen \"tram\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "travel trailer",
+                "l": "travel trailer"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "travel trailer",
+    "judgment": "matched",
+    "match": {
+      "id": "Q216040",
+      "name": "travel trailer",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento travel trailer (Q216040) para las celdas que contienen \"travel trailer\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "truck",
+                "l": "truck"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "truck",
+    "judgment": "matched",
+    "match": {
+      "id": "Q43193",
+      "name": "truck",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento truck (Q43193) para las celdas que contienen \"truck\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sin especificar",
+                "l": "Sin especificar"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sin especificar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Editar celdas en masa en columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Otros vehículos con motor",
+                "l": "Otros vehículos con motor"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "Otros vehículos con motor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q752870",
+      "name": "motor vehicle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motor vehicle (Q752870) para las celdas que contienen \"Otros vehículos con motor\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Otros vehículos sin motor",
+                "l": "Otros vehículos sin motor"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "Otros vehículos sin motor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q41321608",
+      "name": "vehicle without engine",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento vehicle without engine (Q41321608) para las celdas que contienen \"Otros vehículos sin motor\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "three-wheeler",
+                "l": "three-wheeler"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "three-wheeler",
+    "judgment": "matched",
+    "match": {
+      "id": "Q739288",
+      "name": "three-wheeler",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento three-wheeler (Q739288) para las celdas que contienen \"three-wheeler\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "tipo_vehiculo",
+          "expression": "value",
+          "columnName": "tipo_vehiculo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Otros vehículos con motor",
+                "l": "Otros vehículos con motor"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "similarValue": "Otros vehículos con motor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q752870",
+      "name": "motor vehicle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento motor vehicle (Q752870) para las celdas que contienen \"Otros vehículos con motor\" en la columna tipo_vehiculo"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q118733587",
+        "name": "type of meteorological phenomenon"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column estado_meteorológico to type Q118733587"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "similarValue": "SKC",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2206340",
+      "name": "SKC",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento SKC (Q2206340) para las celdas que contienen \"SKC\" en la columna estado_meteorológico"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "overcast",
+                "l": "overcast"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "similarValue": "overcast",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1055865",
+      "name": "overcast",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento overcast (Q1055865) para las celdas que contienen \"overcast\" en la columna estado_meteorológico"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Se desconoce",
+                "l": "Se desconoce"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Se desconoce"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Editar celdas en masa en columna estado_meteorológico"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "estado_meteorológico",
+          "expression": "value",
+          "columnName": "estado_meteorológico",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "hail",
+                "l": "hail"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "similarValue": "hail",
+    "judgment": "matched",
+    "match": {
+      "id": "Q37602",
+      "name": "hail",
+      "types": [
+        "Q118733587"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento hail (Q37602) para las celdas que contienen \"hail\" en la columna estado_meteorológico"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna coordenada_x_utm usando la expresión grel:value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna coordenada_y_utm usando la expresión grel:value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "num_expediente",
+    "newColumnName": "cod_expediente",
+    "description": "Renombra la columna num_expediente a cod_expediente"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Date",
+    "newColumnName": "date",
+    "description": "Renombra la columna Date a date"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "grel:value.contains(\"S\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna positiva_alcohol usando la expresión grel:value.contains(\"S\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "distrito",
+    "newColumnName": "district",
+    "description": "Renombra la columna distrito a district"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_accidente",
+    "newColumnName": "accidentType",
+    "description": "Renombra la columna tipo_accidente a accidentType"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "localizacion 1",
+    "newColumnName": "loc1",
+    "description": "Renombra la columna localizacion 1 a loc1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "localizacion 2",
+    "newColumnName": "loc2",
+    "description": "Renombra la columna localizacion 2 a loc2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "cod_expediente",
+    "newColumnName": "expID",
+    "description": "Renombra la columna cod_expediente a expID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "numero",
+    "newColumnName": "numLoc",
+    "description": "Renombra la columna numero a numLoc"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "estado_meteorológico",
+    "newColumnName": "weather",
+    "description": "Renombra la columna estado_meteorológico a weather"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_vehiculo",
+    "newColumnName": "vehicleType",
+    "description": "Renombra la columna tipo_vehiculo a vehicleType"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "rango_edad",
+    "newColumnName": "ageRange",
+    "description": "Renombra la columna rango_edad a ageRange"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "sexo",
+    "newColumnName": "gender",
+    "description": "Renombra la columna sexo a gender"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "coordenada_x_utm",
+    "newColumnName": "utmXcoord",
+    "description": "Renombra la columna coordenada_x_utm a utmXcoord"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "coordenada_y_utm",
+    "newColumnName": "utmYcoord",
+    "description": "Renombra la columna coordenada_y_utm a utmYcoord"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "positiva_alcohol",
+    "newColumnName": "alcoholPositive",
+    "description": "Renombra la columna positiva_alcohol a alcoholPositive"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "cod_distrito",
+    "index": 6,
+    "description": "Mueve la columna cod_distrito a la posición 6"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "cod_distrito",
+    "newColumnName": "distCode",
+    "description": "Renombra la columna cod_distrito a distCode"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "gender",
+    "newColumnName": "sex",
+    "description": "Renombra la columna gender a sex"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "grel:if(value==\"Hombre\",\"Male\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna sex usando la expresión grel:if(value==\"Hombre\",\"Male\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "grel:if(value==\"Mujer\",\"Female\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna sex usando la expresión grel:if(value==\"Mujer\",\"Female\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ageRange",
+    "expression": "grel:value.replace(\"De\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna ageRange usando la expresión grel:value.replace(\"De\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ageRange",
+    "expression": "grel:value.replace(\"a\",\"to\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna ageRange usando la expresión grel:value.replace(\"a\",\"to\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ageRange",
+    "expression": "grel:value.replace(\"toños\",\"years\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna ageRange usando la expresión grel:value.replace(\"toños\",\"years\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "grel:if(value==\"Conductor\",\"Driver\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_persona usando la expresión grel:if(value==\"Conductor\",\"Driver\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "grel:if(value==\"Pasajero\",\"Passenger\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_persona usando la expresión grel:if(value==\"Pasajero\",\"Passenger\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "grel:if(value==\"Peatón\",\"Pedestrian\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna tipo_persona usando la expresión grel:if(value==\"Peatón\",\"Pedestrian\",value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_persona",
+    "newColumnName": "personType",
+    "description": "Renombra la columna tipo_persona a personType"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "district",
+    "expression": "grel:\"http://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "districtWD",
+    "columnInsertIndex": 6,
+    "description": "Crear la columna districtWD en el índice 6 basada en la columna district usando la expresión grel:\"http://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "weather",
+    "expression": "grel:\"http://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "weatherWD",
+    "columnInsertIndex": 10,
+    "description": "Crear la columna weatherWD en el índice 10 basada en la columna weather usando la expresión grel:\"http://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "vehicleType",
+    "expression": "grel:\"http://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "vehicleTypeWD",
+    "columnInsertIndex": 12,
+    "description": "Crear la columna vehicleTypeWD en el índice 12 basada en la columna vehicleType usando la expresión grel:\"http://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "loc2",
+          "expression": "value",
+          "columnName": "loc2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CALLE MARIO MORENO \"CANTINFLAS\"",
+                "l": "CALLE MARIO MORENO \"CANTINFLAS\""
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "loc2",
+    "expression": "grel:value.replace('\"', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna loc2 usando la expresión grel:value.replace('\"', '')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "loc1",
+    "expression": "grel:value.replace('\"', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna loc1 usando la expresión grel:value.replace('\"', '')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "loc2",
+    "expression": "grel:value.replace('\"', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna loc2 usando la expresión grel:value.replace('\"', '')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Alcance",
+                "l": "Alcance"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Alcance"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rear-end collision"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Atropello a animal",
+                "l": "Atropello a animal"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Atropello a animal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Collision with animal"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Atropello a persona",
+                "l": "Atropello a persona"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Atropello a persona"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Collision with pedestrian"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Caída",
+                "l": "Caída"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Caída"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fall"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Choque contra obstáculo fijo",
+                "l": "Choque contra obstáculo fijo"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Choque contra obstáculo fijo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Collision with fixed object"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Colisión frontal",
+                "l": "Colisión frontal"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Colisión frontal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Head-on collision"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Colisión fronto-lateral",
+                "l": "Colisión fronto-lateral"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Colisión fronto-lateral"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Front-to-side collision"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Colisión lateral",
+                "l": "Colisión lateral"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Colisión lateral"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Side collision"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Colisión múltiple",
+                "l": "Colisión múltiple"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Colisión múltiple"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Multi-vehicle collision"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Despeñamiento",
+                "l": "Despeñamiento"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Despeñamiento"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plunging"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Otro",
+                "l": "Otro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Otro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Other"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Solo salida de la vía",
+                "l": "Solo salida de la vía"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Solo salida de la vía"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Run-off-road"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "accidentType",
+          "expression": "value",
+          "columnName": "accidentType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Vuelco",
+                "l": "Vuelco"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "accidentType",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vuelco"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rollover"
+      }
+    ],
+    "description": "Editar celdas en masa en columna accidentType"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "vehicleType",
+    "similarValue": "Motocicleta hasta 125cc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1339146",
+      "name": "sport motorcycle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento sport motorcycle (Q1339146) para las celdas que contienen \"Motocicleta hasta 125cc\" en la columna vehicleType"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "vehicleType",
+          "expression": "value",
+          "columnName": "vehicleType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Tren/metro",
+                "l": "Tren/metro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "vehicleType",
+    "similarValue": "Tren/metro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4102249",
+      "name": "subway car",
+      "types": [
+        ""
+      ],
+      "score": 37
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento subway car (Q4102249) para las celdas que contienen \"Tren/metro\" en la columna vehicleType"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "vehicleType",
+          "expression": "value",
+          "columnName": "vehicleType",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Tren/metro",
+                "l": "Tren/metro"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "vehicleType",
+    "similarValue": "Tren/metro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3407658",
+      "name": "tram",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento tram (Q3407658) para las celdas que contienen \"Tren/metro\" en la columna vehicleType"
+  }
+]

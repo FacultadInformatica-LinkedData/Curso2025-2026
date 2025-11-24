@@ -24,7 +24,7 @@
 <h2>1. Dataset analysis</h2>
 <p><b>Dataset:</b> Accidentalidad 2025 (Traffic accidents, City of Madrid) — Madrid Open Data portal.</p>
 <p><b>Schema: </b></p>
-<pre>num_expediente, fecha, hora, localizacion, numero, cod_distrito, distrito, tipo_accidente, estado_meteorológico, tipo_vehiculo, tipo_persona, rango_edad, sexo, cod_lesividad, lesividad, coordenada_x_utm, coordenada_y_utm, positiva_alcohol, positiva_droga</pre>
+<pre>expID,date,loc1,loc2,numLoc,district,distCode,accidentType,weather,vehicleType,personType,ageRange,sex,utmXcoord,utmYcoord,alcoholPositive,person_id</pre>
 <p><b>Notes:</b></p>
 <ul>
     <li>
@@ -42,53 +42,67 @@
 <ul>
 <li><b>Portal license</b>: <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">Condiciones de uso – Datos Abiertos Ayuntamiento de Madrid</a> (open-data terms that require attribution; compatible with CC-BY-style attribution).</li>
 <li><b>Implications</b>: attribution required; redistribution and derivative works allowed; commercial use allowed under the portal conditions. Always include a reference to the original dataset and the portal when publishing derived data or visualizations.</li>
+<li><b>Proposed license</b>: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> (allows reuse, redistribution, and modification with attribution to both the original dataset and the knowledge graph authors).</li>
 </ul>
 
-<h2>3. Resource Naming Strategy</h2>
-  <p>Definition of the strategy for naming resources in the ontology and the data generated from the accident CSV.</p>
-    <ul>
+<h3>3. Resource Naming Strategy</h3>
+<p>Definition of the strategy for naming resources in the ontology and the data generated from the accident CSV.</p>
+
+<ul>
   <li><b>URI Format</b></li>
-  <p>Use dereferenceable URIs that allow access to information about the resource:</p>
-  <code>https://datos.madrid.es/ontology/Accident/{id}</code>
+  <p>Use dereferenceable URIs that allow access to information about the resource. The URIs follow a consistent and human-readable structure:</p>
+  <code>http://example.org/{resource_type}/{identifier}</code>
 
   <li><b>URI Domain</b></li>
-  <p>Use institutional or trusted domains such as <code>datos.madrid.es</code> or <code>gob.es</code> to ensure reliability and persistence.</p>
-  
+  <p>Use institutional or trusted domains such as <code>datos.madrid.es</code> for official accident data, and <code>example.org</code> for additional entities (districts, streets, intersections, vehicles, persons).</p>
+
   <li><b>Path Structure</b></li>
-  <p>Organize resources hierarchically by type and year if applicable:</p>
-  <code>https://datos.madrid.es/ontology/Accident/2025/ID12345</code>
-  
-  <li><b>URI patterns</b></li>
+  <p>Organize resources by type and include meaningful identifiers to ensure clarity and persistence:</p>
+  <code>http://example.org/vehiculo/{expID}-{numero}</code>
+
+  <li><b>URI Patterns</b></li>
   <table>
     <thead>
       <tr>
         <th>Resource Type</th>
         <th>URI Pattern</th>
+        <th>Example</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Accident</td>
-        <td>/Accident/{year}/{id}</td>
-      </tr>
-      <tr>
-        <td>Vehicle</td>
-        <td>/Vehicle/{id}</td>
-      </tr>
-      <tr>
-        <td>Person</td>
-        <td>/Person/{id}</td>
+        <td>http://datos.madrid.es/accidentes/{expID}</td>
+        <td><code>http://datos.madrid.es/accidentes/2025001234</code></td>
       </tr>
       <tr>
         <td>District</td>
-        <td>/District/{id}</td>
+        <td>http://example.org/distrito/{district}</td>
+        <td><code>http://example.org/distrito/centro</code></td>
       </tr>
-      
-      
+      <tr>
+        <td>Street</td>
+        <td>http://example.org/calle/{loc1}</td>
+        <td><code>http://example.org/calle/alcala</code></td>
+      </tr>
+      <tr>
+        <td>Intersection</td>
+        <td>http://example.org/cruce/{loc1}-{loc2}</td>
+        <td><code>http://example.org/cruce/alcala-granvia</code></td>
+      </tr>
+      <tr>
+        <td>Vehicle</td>
+        <td>http://example.org/vehiculo/{expID}-{person_id}</td>
+        <td><code>http://example.org/vehiculo/2025001234-1</code></td>
+      </tr>
+      <tr>
+        <td>Person</td>
+        <td>http://example.org/persona/{expID}-{personType}-{person_id}</td>
+        <td><code>http://example.org/persona/2025001234-conductor-1</code></td>
+      </tr>
     </tbody>
   </table>
 </ul>
-
 
 </body>
 </html>

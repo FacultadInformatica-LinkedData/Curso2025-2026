@@ -1,0 +1,262 @@
+#######################################################
+# 0. Check for URIs with spaces (potentially malformed)
+#######################################################
+SELECT ?s ?p ?o
+WHERE {
+  ?s ?p ?o .
+  FILTER (isIRI(?s) && regex(str(?s), " "))
+}
+LIMIT 50
+
+#######################################################
+# 0.1 Ensure objects are valid IRIs
+#######################################################
+SELECT ?s ?p ?o
+WHERE {
+  ?s ?p ?o .
+  FILTER (isIRI(?o))
+}
+LIMIT 50
+
+#######################################################
+# 0.2 Extract all unique URIs for external validation
+#######################################################
+SELECT DISTINCT ?uri
+WHERE {
+  { ?s ?p ?uri . FILTER(isIRI(?uri)) }
+  UNION
+  { ?uri ?p ?o . FILTER(isIRI(?uri)) }
+}
+LIMIT 100
+
+#######################################################
+# 0.3 Check that URIs start with http or https
+#######################################################
+SELECT ?uri
+WHERE {
+  ?s ?p ?uri .
+  FILTER (regex(str(?uri), "^https?://"))
+}
+LIMIT 100
+
+#######################################################
+# 0.4 Detect local-style URIs (e.g., urn:, _: or #)
+#######################################################
+SELECT ?uri
+WHERE {
+  ?s ?p ?uri .
+  FILTER (regex(str(?uri), "^urn:|^_:|^#"))
+}
+LIMIT 100
+
+#######################################################
+# 1. Verify that accidents have been generated
+#######################################################
+SELECT ?accident
+WHERE {
+  ?accident a <http://example.org/def/transporte/trafico#accident> .
+}
+LIMIT 10
+
+#######################################################
+# 2. Verify that each accident has a date and identifier
+#######################################################
+SELECT ?accident ?date ?identifier
+WHERE {
+  ?accident a <http://example.org/def/transporte/trafico#accident> ;
+             <http://purl.org/dc/terms/date> ?date ;
+             <http://purl.org/dc/terms/identifier> ?identifier .
+}
+LIMIT 10
+
+#######################################################
+# 3. Verify that accidents are linked to districts
+#######################################################
+SELECT ?accident ?district
+WHERE {
+  ?accident <http://example.org/def/transporte/trafico#hasDistrict> ?district .
+}
+LIMIT 10
+
+#######################################################
+# 4. Verify that accidents have street addresses
+#######################################################
+SELECT ?accident ?street
+WHERE {
+  ?accident <http://schema.org/streetAddress> ?street .
+}
+LIMIT 10
+
+#######################################################
+# 5. Verify that accidents have cross streets
+#######################################################
+SELECT ?accident ?crossStreet
+WHERE {
+  ?accident <http://schema.org/crossStreet> ?crossStreet .
+}
+LIMIT 10
+
+#######################################################
+# 6. Verify that accidents have street numbers
+#######################################################
+SELECT ?accident ?streetNumber
+WHERE {
+  ?accident <http://schema.org/streetNumber> ?streetNumber .
+}
+LIMIT 10
+
+#######################################################
+# 7. Verify that vehicle types are linked to accidents
+#######################################################
+SELECT ?accident ?vehicleType
+WHERE {
+  ?accident <http://example.org/def/transporte/trafico#vehicleType> ?vehicleType .
+}
+LIMIT 10
+
+#######################################################
+# 8. Verify that persons have been generated and linked to accidents
+#######################################################
+SELECT ?person ?accident
+WHERE {
+  ?person a <http://example.org/def/transporte/trafico#involvedPerson> ;
+           <http://example.org/def/transporte/trafico#participatesIn> ?accident .
+}
+LIMIT 10
+
+#######################################################
+# 9. Verify weather conditions for accidents
+#######################################################
+SELECT ?accident ?weatherCondition
+WHERE {
+  ?accident <http://example.org/def/transporte/trafico#weathercondition> ?weatherCondition .
+}
+LIMIT 10
+
+#######################################################
+# 10. List all accidents (URIs of type trans:accident)
+#######################################################
+SELECT ?accident
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> .
+}
+LIMIT 20
+
+#######################################################
+# 11. Show each accident with its type, date, and district
+#######################################################
+SELECT ?accident ?accidentType ?date ?district
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://example.org/def/transporte/trafico#accidentType> ?accidentType ;
+             <http://purl.org/dc/terms/date> ?date ;
+             <http://example.org/def/transporte/trafico#hasDistrict> ?district .
+}
+LIMIT 50
+
+#######################################################
+# 12. Count accidents by district
+#######################################################
+SELECT ?district (COUNT(?accident) AS ?numAccidents)
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://example.org/def/transporte/trafico#hasDistrict> ?district .
+}
+GROUP BY ?district
+ORDER BY DESC(?numAccidents)
+
+#######################################################
+# 13. Count accidents by weather condition
+#######################################################
+SELECT ?weatherCondition (COUNT(?accident) AS ?numAccidents)
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://example.org/def/transporte/trafico#weathercondition> ?weatherCondition .
+}
+GROUP BY ?weatherCondition
+
+#######################################################
+# 14. Find all accident coordinates (UTM X and Y)
+#######################################################
+SELECT ?accident ?utmX ?utmY
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://schema.org/utmXCoord> ?utmX ;
+             <http://schema.org/utmYCoord> ?utmY .
+}
+LIMIT 50
+
+#######################################################
+# 15. Show person details with their roles and accident participation
+#######################################################
+SELECT ?person ?role ?sex ?ageRange ?alcoholPositive ?accident
+WHERE {
+  ?person a <http://example.org/def/transporte/trafico#involvedPerson> ;
+           <http://example.org/def/transporte/trafico#personRole> ?role ;
+           <http://schema.org/sex> ?sex ;
+           <http://example.org/def/transporte/trafico#ageRange> ?ageRange ;
+           <http://example.org/def/transporte/trafico#alcoholPositive> ?alcoholPositive ;
+           <http://example.org/def/transporte/trafico#participatesIn> ?accident .
+}
+LIMIT 20
+
+#######################################################
+# 16. Count accidents by vehicle type
+#######################################################
+SELECT ?vehicleType (COUNT(?accident) AS ?numAccidents)
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://example.org/def/transporte/trafico#vehicleType> ?vehicleType .
+}
+GROUP BY ?vehicleType
+
+#######################################################
+# 17. Find accidents with complete location information
+#######################################################
+SELECT ?accident ?streetAddress ?crossStreet ?streetNumber ?utmX ?utmY
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://schema.org/streetAddress> ?streetAddress ;
+             <http://schema.org/crossStreet> ?crossStreet ;
+             <http://schema.org/streetNumber> ?streetNumber ;
+             <http://schema.org/utmXCoord> ?utmX ;
+             <http://schema.org/utmYCoord> ?utmY .
+}
+LIMIT 10
+
+#######################################################
+# 18. Count persons by role type
+#######################################################
+SELECT ?role (COUNT(?person) AS ?numPersons)
+WHERE {
+  ?person a <http://example.org/def/transporte/trafico#involvedPerson> ;
+           <http://example.org/def/transporte/trafico#personRole> ?role .
+}
+GROUP BY ?role
+
+#######################################################
+# 19. Find accidents with alcohol-positive persons
+#######################################################
+SELECT ?accident ?person ?role
+WHERE {
+  ?person a <http://example.org/def/transporte/trafico#involvedPerson> ;
+           <http://example.org/def/transporte/trafico#alcoholPositive> true ;
+           <http://example.org/def/transporte/trafico#personRole> ?role ;
+           <http://example.org/def/transporte/trafico#participatesIn> ?accident .
+}
+LIMIT 20
+
+#######################################################
+# 20. Complete accident information summary
+#######################################################
+SELECT ?accident ?identifier ?date ?accidentType ?streetAddress ?district ?weatherCondition
+WHERE {
+  ?accident rdf:type <http://example.org/def/transporte/trafico#accident> ;
+             <http://purl.org/dc/terms/identifier> ?identifier ;
+             <http://purl.org/dc/terms/date> ?date ;
+             <http://example.org/def/transporte/trafico#accidentType> ?accidentType ;
+             <http://schema.org/streetAddress> ?streetAddress ;
+             <http://example.org/def/transporte/trafico#hasDistrict> ?district ;
+             <http://example.org/def/transporte/trafico#weathercondition> ?weatherCondition .
+}
+LIMIT 25

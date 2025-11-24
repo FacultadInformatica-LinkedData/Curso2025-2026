@@ -1,0 +1,112 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  dct: "http://purl.org/dc/terms/"
+  ns: "http://example.org/def/base#"
+  schema: "http://schema.org/"
+
+mappings:
+  accident:
+    sources:
+      - [/content/accidentes-updated-with-links-pids-with-latlong~csv]
+    s: "http://datos.madrid.es/accidentes/$(expID)"
+    po:
+      - [a, ns:Accident]
+      - [ns:hasExNum, $(expID)]
+      - [ns:hasDatetime, $(date), xsd:dateTime]
+      - [ns:hasAccidentType, $(accidentType)]
+      - [ns:hasWeather, $(weather)]
+      - [ns:hasXCoordUTM, $(utmXcoord), xsd:double]
+      - [ns:hasYCoordUTM, $(utmYcoord), xsd:double]
+      - [ns:hasLat, $(lat), xsd:double]
+      - [ns:hasLong, $(long), xsd:double]
+      - p: ns:takesPlace
+        o:
+          - mapping: intersection
+            condition:
+              function: notEqual
+              parameters:
+                - [str1, $(loc2)]
+                - [str2, ""]
+      - p: ns:takesPlace
+        o:
+          - mapping: street
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(loc2)]
+                - [str2, ""]
+      - p: ns:hasDistrictName
+        o:
+          - mapping: district
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(district)]
+                - [str2, $(district)]
+
+  person:
+    sources:
+      - [/content/accidentes-updated-with-links-pids-with-latlong~csv]
+    s: "http://example.org/persona/$(expID)-$(personType)-$(person_id)"
+    po:
+      - [a, ns:Person]
+      - [ns:hasPersonType, $(personType)]
+      - [ns:hasSex, $(sex)]
+      - [ns:hasAge, $(ageRange)]
+      - [ns:Alcohol, $(alcoholPositive), xsd:boolean]
+      - p: ns:participates
+        o:
+          - mapping: accident
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(expID)]
+                - [str2, $(expID)]
+
+  vehicle:
+    sources:
+      - [/content/accidentes-updated-with-links-pids-with-latlong~csv]
+    s: "http://example.org/vehiculo/$(expID)-$(person_id)"
+    po:
+      - [a, ns:Vehicle]
+      - [ns:hasVehicleType, $(vehicleType)]
+      - p: ns:participates
+        o:
+          - mapping: accident
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(expID)]
+                - [str2, $(expID)]
+
+  street:
+    sources:
+      - [/content/accidentes-updated-with-links-pids-with-latlong~csv]
+    s: "http://example.org/calle/$(loc1)-$(numLoc)"
+    po:
+      - [a, ns:Street]
+      - [ns:hasStreetName, $(loc1)]
+      - [ns:hasStreetNum, $(numLoc)]
+
+  intersection:
+    sources:
+      - [/content/accidentes-updated-with-links-pids-with-latlong~csv]
+    s: "http://example.org/cruce/$(loc1)-$(loc2)-$(numLoc)"
+    po:
+      - [a, ns:Intersection]
+      - [ns:hasStreetName1, $(loc1)]
+      - [ns:hasStreetName2, $(loc2)]
+      - [ns:hasStreetNum, $(numLoc)]
+
+  district:
+    sources:
+      - [/content/accidentes-updated-with-links-pids-with-latlong~csv]
+    s: "http://example.org/distrito/$(district)"
+    po:
+      - [a, ns:District]
+      - [ns:hasDistrictName, $(district)]
+      - [ns:hasDistrictCode, $(distCode)]
