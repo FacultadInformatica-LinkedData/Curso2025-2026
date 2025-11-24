@@ -1,0 +1,423 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPI",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q33146843",
+        "name": "municipality of Catalonia"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MUNICIPI to type Q33146843"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q515",
+        "name": "city"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q515"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "Barcelona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1492",
+      "name": "Barcelona",
+      "types": [
+        "Q33146843",
+        "Q515"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Barcelona (Q1492) for cells containing \"Barcelona\" in column PROVINCIA"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nom_districte_estacio",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q790344",
+        "name": "district of Barcelona"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Nom_districte_estacio to type Q790344"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q113145171",
+        "name": "type of chemical entity"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Desc_Contaminant to type Q113145171"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "NO2",
+    "judgment": "matched",
+    "match": {
+      "id": "Q207895",
+      "name": "nitrogen dioxide",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item nitrogen dioxide (Q207895) for cells containing \"NO2\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "PM10",
+    "judgment": "matched",
+    "match": {
+      "id": "Q498957",
+      "name": "particulates",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item particulates (Q498957) for cells containing \"PM10\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "NOx",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20962970",
+      "name": "NOx",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item NOx (Q20962970) for cells containing \"NOx\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "SO2",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5282",
+      "name": "sulfur dioxide",
+      "types": [
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item sulfur dioxide (Q5282) for cells containing \"SO2\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "PM2.5",
+    "judgment": "matched",
+    "match": {
+      "id": "Q48035814",
+      "name": "PM 2.5",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item PM 2.5 (Q48035814) for cells containing \"PM2.5\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "O3",
+    "judgment": "matched",
+    "match": {
+      "id": "Q36933",
+      "name": "ozone",
+      "types": [
+        "Q2512777",
+        "Q428653",
+        "Q113145171"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item ozone (Q36933) for cells containing \"O3\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Desc_Contaminant",
+    "similarValue": "Black Carbon",
+    "judgment": "matched",
+    "match": {
+      "id": "Q764245",
+      "name": "carbon black",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item carbon black (Q764245) for cells containing \"Black Carbon\" in column Desc_Contaminant"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "District_name",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_district",
+    "columnInsertIndex": 3,
+    "description": "Create column wikidata_district at index 3 based on column District_name using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Contaminant",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_contaminant",
+    "columnInsertIndex": 7,
+    "description": "Create column wikidata_contaminant at index 7 based on column Contaminant using expression grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

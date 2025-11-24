@@ -1,0 +1,18 @@
+@prefix example: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+example:ClassRoom03
+	example:contains example:Sensor347 , example:Table322 .
+
+example:Sensor347
+   	example:hasMeasurement example:Measurement8432 .
+
+example:Measurement8432
+	example:hasTemperature "29"^^xsd:integer ;
+	example:atTime "2022-09-12T12:01:12"^^xsd:dateTime .
+
+example:Table322
+	ex:hasOwner ex:ETSIInformaticos .
+
+example:ETSIInformaticos
+	ex:hasName "ETSI Informáticos" .

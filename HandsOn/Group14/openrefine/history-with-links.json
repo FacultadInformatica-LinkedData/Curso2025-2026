@@ -1,0 +1,568 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACION",
+    "expression": "grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"CODIGO_CORTO\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "CODIGO_LINK",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna CODIGO_LINK en el índice 4 basada en la columna ESTACION usando la expresión grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"CODIGO_CORTO\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACION",
+    "expression": "grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"ESTACION\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "NOMBRE_ESTACION",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna NOMBRE_ESTACION en el índice 4 basada en la columna ESTACION usando la expresión grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"ESTACION\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACION",
+    "expression": "grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"DIRECCION\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "DIRECCION_ESTACION",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna DIRECCION_ESTACION en el índice 4 basada en la columna ESTACION usando la expresión grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"DIRECCION\"].value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGO_LINK",
+    "description": "Eliminar columna CODIGO_LINK"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACION",
+    "expression": "grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"LONGITUD_ETRS89\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "ESTACION_LONGITUD",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna ESTACION_LONGITUD en el índice 4 basada en la columna ESTACION usando la expresión grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"LONGITUD_ETRS89\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACION",
+    "expression": "grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"LATITUD_ETRS89\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "ESTACION_LATITUD",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna ESTACION_LATITUD en el índice 4 basada en la columna ESTACION usando la expresión grel:cell.cross(\"informacion estaciones red calidad aire updated csv\", \"CODIGO_CORTO\")[0].cells[\"LATITUD_ETRS89\"].value"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2221906",
+        "name": "geographic location"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DIRECCION_ESTACION to type Q2221906"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Avda. Ramón y Cajal  esq. C/ Príncipe de Vergara",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30467128",
+      "name": "Avenida de Ramón y Cajal, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avenida de Ramón y Cajal, Madrid (Q30467128) para las celdas que contienen \"Avda. Ramón y Cajal  esq. C/ Príncipe de Vergara\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Arturo Soria  esq. C/  Vizconde de los Asilos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8255504",
+      "name": "calle de Arturo Soria",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento calle de Arturo Soria (Q8255504) para las celdas que contienen \"C/ Arturo Soria  esq. C/  Vizconde de los Asilos\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Juan Peñalver",
+    "judgment": "matched",
+    "match": {
+      "id": "Q919536",
+      "name": "Villaverde",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Villaverde (Q919536) para las celdas que contienen \"C/ Juan Peñalver\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Casa de Campo  (Terminal del Teleférico)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1046524",
+      "name": "Casa de Campo Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Casa de Campo Park (Q1046524) para las celdas que contienen \"Casa de Campo  (Terminal del Teleférico)\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Plaza del Carmen esq. Tres Cruces",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6080406",
+      "name": "Plaza del Carmen",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Plaza del Carmen (Q6080406) para las celdas que contienen \"Plaza del Carmen esq. Tres Cruces\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Avda. Moratalaz  esq. Camino de los Vinateros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q104778384",
+      "name": "Avenida de Moratalaz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avenida de Moratalaz (Q104778384) para las celdas que contienen \"Avda. Moratalaz  esq. Camino de los Vinateros\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Plaza de España",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1326261",
+      "name": "plaza de España",
+      "types": [
+        "Q174782"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento plaza de España (Q1326261) para las celdas que contienen \"Plaza de España\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Avda. Betanzos esq. C/  Monforte de Lemos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773964",
+      "name": "El Pilar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento El Pilar (Q3773964) para las celdas que contienen \"Avda. Betanzos esq. C/  Monforte de Lemos\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Júpiter, 21",
+    "judgment": "matched",
+    "match": {
+      "id": "Q807230",
+      "name": "Barajas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barajas (Q807230) para las celdas que contienen \"C/ Júpiter, 21\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Avda. Pablo Iglesias esq. C/ Marqués de Lema",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5824684",
+      "name": "Cuatro Caminos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Cuatro Caminos (Q5824684) para las celdas que contienen \"Avda. Pablo Iglesias esq. C/ Marqués de Lema\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Arroyo del Olivar  esq. C/  Río Grande.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29561517",
+      "name": "Calle del Arroyo del Olivar, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Calle del Arroyo del Olivar, Madrid (Q29561517) para las celdas que contienen \"C/ Arroyo del Olivar  esq. C/  Río Grande.\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Juan de Mariana / Plaza Amanecer Méndez Álvaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5553104",
+      "name": "Calle de Méndez Álvaro, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Calle de Méndez Álvaro, Madrid (Q5553104) para las celdas que contienen \"C/ Juan de Mariana / Plaza Amanecer Méndez Álvaro\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ José Gutiérrez Abascal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4781",
+      "name": "Castellana",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Castellana (Q4781) para las celdas que contienen \"C/ José Gutiérrez Abascal\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Paseo Venezuela- Palacio de Velázquez",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3891623",
+      "name": "Palacio de Velázquez",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Palacio de Velázquez (Q3891623) para las celdas que contienen \"Paseo Venezuela- Palacio de Velázquez\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Plaza Castilla (Canal)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q786291",
+      "name": "plaza de Castilla",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento plaza de Castilla (Q786291) para las celdas que contienen \"Plaza Castilla (Canal)\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Avda. La Gavia / Avda. Las Suertes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3847485",
+      "name": "Ensanche de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ensanche de Vallecas (Q3847485) para las celdas que contienen \"Avda. La Gavia / Avda. Las Suertes\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Plaza Elíptica - Avda. Oporto",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16619985",
+      "name": "Plaza Elíptica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Plaza Elíptica (Q16619985) para las celdas que contienen \"Plaza Elíptica - Avda. Oporto\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Princesa de Éboli esq. C/ María Tudor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3076623",
+      "name": "Sanchinarro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Sanchinarro (Q3076623) para las celdas que contienen \"C/ Princesa de Éboli esq. C/ María Tudor\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Avda. La Guardia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q116652098",
+      "name": "El Pardo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento El Pardo (Q116652098) para las celdas que contienen \"Avda. La Guardia\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "C/ Farolillo - C/ Ervigio",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1001991",
+      "name": "Carabanchel",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carabanchel (Q1001991) para las celdas que contienen \"C/ Farolillo - C/ Ervigio\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Parque Juan Carlos I (frente oficinas mantenimiento)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1583169",
+      "name": "Juan Carlos I Park",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Juan Carlos I Park (Q1583169) para las celdas que contienen \"Parque Juan Carlos I (frente oficinas mantenimiento)\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Plaza Tres Olivos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5795544",
+      "name": "Tres Olivos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Tres Olivos (Q5795544) para las celdas que contienen \"Plaza Tres Olivos\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_ESTACION",
+    "similarValue": "Entre C/ Alcalá y C/ O’ Donell",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2424746",
+      "name": "Alcalá Street",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Alcalá Street (Q2424746) para las celdas que contienen \"Entre C/ Alcalá y C/ O’ Donell\" en la columna DIRECCION_ESTACION"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DIRECCION_ESTACION",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "DIR_ESTACION_LINK",
+    "columnInsertIndex": 7,
+    "description": "Crear la columna DIR_ESTACION_LINK en el índice 7 basada en la columna DIRECCION_ESTACION usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  }
+]

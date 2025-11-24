@@ -1,0 +1,1516 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Tram_id",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Tram_id usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Street_name to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Diagonal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q189791",
+      "name": "diagonal",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento diagonal (Q189791) para las celdas que contienen \"Diagonal\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Diagonal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q791045",
+      "name": "Avinguda Diagonal",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda Diagonal (Q791045) para las celdas que contienen \"Diagonal\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Av. Esplugues",
+    "judgment": "matched",
+    "match": {
+      "id": "Q61743219",
+      "name": "Avinguda d'Esplugues",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda d'Esplugues (Q61743219) para las celdas que contienen \"Av. Esplugues\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Carles III",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114163821",
+      "name": "Gran Via de Carles III",
+      "types": [
+        "Q79007"
+      ],
+      "score": 62
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gran Via de Carles III (Q114163821) para las celdas que contienen \"Carles III\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Balmes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3129147",
+      "name": "Carrer de Balmes",
+      "types": [
+        "Q79007"
+      ],
+      "score": 63
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer de Balmes (Q3129147) para las celdas que contienen \"Balmes\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Aristides Maillol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q80190241",
+      "name": "Carrer Aristides Maillol",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer Aristides Maillol (Q80190241) para las celdas que contienen \"Aristides Maillol\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Muntaner",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740852",
+      "name": "Muntaner street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 70
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Muntaner street (Q5740852) para las celdas que contienen \"Muntaner\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Av. Foix",
+    "judgment": "matched",
+    "match": {
+      "id": "Q106017904",
+      "name": "Foix",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Foix (Q106017904) para las celdas que contienen \"Av. Foix\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Av. Tibidabo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21559180",
+      "name": "Avinguda del Tibidabo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda del Tibidabo (Q21559180) para las celdas que contienen \"Av. Tibidabo\" en la columna Street_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "expression": "grel:value.replace(/^Av\\.\\s*/,\"Avinguda \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Street_name usando la expresión grel:value.replace(/^Av\\.\\s*/,\"Avinguda \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "expression": "grel:value.replace(/^Pg\\.\\s*/,\"Passeig \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Street_name usando la expresión grel:value.replace(/^Pg\\.\\s*/,\"Passeig \")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Street_name to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Diagonal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q791045",
+      "name": "Avinguda Diagonal",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda Diagonal (Q791045) para las celdas que contienen \"Diagonal\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Esplugues",
+    "judgment": "matched",
+    "match": {
+      "id": "Q61743219",
+      "name": "Avinguda d'Esplugues",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda d'Esplugues (Q61743219) para las celdas que contienen \"Avinguda Esplugues\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Pedralbes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134692483",
+      "name": "avinguda de Pedralbes",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento avinguda de Pedralbes (Q134692483) para las celdas que contienen \"Avinguda Pedralbes\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Foix",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134547317",
+      "name": "Avinguda de Josep Vicenç Foix",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 87
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda de Josep Vicenç Foix (Q134547317) para las celdas que contienen \"Avinguda Foix\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Joan XXIII",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17587393",
+      "name": "avinguda de Joan XXIII",
+      "types": [
+        "Q207934"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento avinguda de Joan XXIII (Q17587393) para las celdas que contienen \"Avinguda Joan XXIII\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Aristides Maillol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q80190241",
+      "name": "Carrer Aristides Maillol",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer Aristides Maillol (Q80190241) para las celdas que contienen \"Aristides Maillol\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30454326",
+      "name": "Avinguda de Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda de Madrid (Q30454326) para las celdas que contienen \"Avinguda Madrid\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Carles III",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114163821",
+      "name": "Gran Via de Carles III",
+      "types": [
+        "Q79007"
+      ],
+      "score": 62
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gran Via de Carles III (Q114163821) para las celdas que contienen \"Carles III\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Muntaner",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740852",
+      "name": "Muntaner street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 70
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Muntaner street (Q5740852) para las celdas que contienen \"Muntaner\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Start_point to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Gran Via Carles III",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114163821",
+      "name": "Gran Via de Carles III",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gran Via de Carles III (Q114163821) para las celdas que contienen \"Gran Via Carles III\" en la columna Start_point"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "expression": "grel:value.replace(/^Pl\\.\\s*/,\"Plaça \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Street_name usando la expresión grel:value.replace(/^Pl\\.\\s*/,\"Plaça \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "expression": "grel:value.replace(/^Pl\\.\\s*/,\"Plaça \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Start_point usando la expresión grel:value.replace(/^Pl\\.\\s*/,\"Plaça \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "expression": "grel:value.replace(/^Pl\\.\\s*/,\"Plaça \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna End_point usando la expresión grel:value.replace(/^Pl\\.\\s*/,\"Plaça \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "expression": "grel:value.replace(/^Av\\.\\s*/,\"Avinguda \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Start_point usando la expresión grel:value.replace(/^Av\\.\\s*/,\"Avinguda \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "expression": "grel:value.replace(/^Av\\.\\s*/,\"Avinguda \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna End_point usando la expresión grel:value.replace(/^Av\\.\\s*/,\"Avinguda \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "expression": "grel:value.replace(/^Pg\\.\\s*/,\"Passeig \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Start_point usando la expresión grel:value.replace(/^Pg\\.\\s*/,\"Passeig \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "expression": "grel:value.replace(/^Pg\\.\\s*/,\"Passeig \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna End_point usando la expresión grel:value.replace(/^Pg\\.\\s*/,\"Passeig \")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Start_point to type Q79007"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column End_point to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Passeig Manuel Girona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134690315",
+      "name": "Passeig de Manuel Girona",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Passeig de Manuel Girona (Q134690315) para las celdas que contienen \"Passeig Manuel Girona\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Entença",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5046071",
+      "name": "carrer d'Entença",
+      "types": [
+        "Q79007"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento carrer d'Entença (Q5046071) para las celdas que contienen \"Entença\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Francesc Macià",
+    "judgment": "matched",
+    "match": {
+      "id": "Q131566404",
+      "name": "Avinguda de Francesc Macià",
+      "types": [
+        "Q79007",
+        "Q1497375"
+      ],
+      "score": 70
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda de Francesc Macià (Q131566404) para las celdas que contienen \"Francesc Macià\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Avinguda Pedralbes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134692483",
+      "name": "avinguda de Pedralbes",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento avinguda de Pedralbes (Q134692483) para las celdas que contienen \"Avinguda Pedralbes\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Avinguda Pedralbes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134692483",
+      "name": "avinguda de Pedralbes",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento avinguda de Pedralbes (Q134692483) para las celdas que contienen \"Avinguda Pedralbes\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Passeig Manuel Girona",
+    "judgment": "matched",
+    "match": {
+      "id": "Q134690315",
+      "name": "Passeig de Manuel Girona",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Passeig de Manuel Girona (Q134690315) para las celdas que contienen \"Passeig Manuel Girona\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Avinguda Esplugues",
+    "judgment": "matched",
+    "match": {
+      "id": "Q61743219",
+      "name": "Avinguda d'Esplugues",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda d'Esplugues (Q61743219) para las celdas que contienen \"Avinguda Esplugues\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Aristides Maillol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q80190241",
+      "name": "Carrer Aristides Maillol",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer Aristides Maillol (Q80190241) para las celdas que contienen \"Aristides Maillol\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Aristides Maillol",
+    "judgment": "matched",
+    "match": {
+      "id": "Q80190241",
+      "name": "Carrer Aristides Maillol",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer Aristides Maillol (Q80190241) para las celdas que contienen \"Aristides Maillol\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Gran Via Carles III",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114163821",
+      "name": "Gran Via de Carles III",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gran Via de Carles III (Q114163821) para las celdas que contienen \"Gran Via Carles III\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Numància",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Marcar para crear un único elemento nuevo para todas las celdas que contienen \"Numància\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Riera Blanca",
+    "judgment": "matched",
+    "match": {
+      "id": "Q123481448",
+      "name": "Carrer de la Riera Blanca",
+      "types": [
+        "Q79007"
+      ],
+      "score": 65
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer de la Riera Blanca (Q123481448) para las celdas que contienen \"Riera Blanca\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Gran Via Carles III",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114163821",
+      "name": "Gran Via de Carles III",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gran Via de Carles III (Q114163821) para las celdas que contienen \"Gran Via Carles III\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Riera Blanca",
+    "judgment": "matched",
+    "match": {
+      "id": "Q123481448",
+      "name": "Carrer de la Riera Blanca",
+      "types": [
+        "Q79007"
+      ],
+      "score": 65
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer de la Riera Blanca (Q123481448) para las celdas que contienen \"Riera Blanca\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Passeig Bonanova",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9056555",
+      "name": "Passeig de la Bonanova",
+      "types": [
+        "Q79007"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Passeig de la Bonanova (Q9056555) para las celdas que contienen \"Passeig Bonanova\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Diagonal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q791045",
+      "name": "Avinguda Diagonal",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda Diagonal (Q791045) para las celdas que contienen \"Diagonal\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Sarrià",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21559180",
+      "name": "Avinguda del Tibidabo",
+      "types": [
+        "Q7543083",
+        "Q66626342"
+      ],
+      "score": 61
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda del Tibidabo (Q21559180) para las celdas que contienen \"Avinguda Sarrià\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Balmes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3129147",
+      "name": "Carrer de Balmes",
+      "types": [
+        "Q79007"
+      ],
+      "score": 63
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer de Balmes (Q3129147) para las celdas que contienen \"Balmes\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Street_name",
+    "similarValue": "Avinguda Tibidabo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21559180",
+      "name": "Avinguda del Tibidabo",
+      "types": [
+        "Q7543083",
+        "Q66626342"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda del Tibidabo (Q21559180) para las celdas que contienen \"Avinguda Tibidabo\" en la columna Street_name"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Balmes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3129147",
+      "name": "Carrer de Balmes",
+      "types": [
+        "Q79007"
+      ],
+      "score": 63
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Carrer de Balmes (Q3129147) para las celdas que contienen \"Balmes\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Avinguda Tibidabo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21559180",
+      "name": "Avinguda del Tibidabo",
+      "types": [
+        "Q7543083",
+        "Q66626342"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda del Tibidabo (Q21559180) para las celdas que contienen \"Avinguda Tibidabo\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Plaça Molina",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3067731",
+      "name": "Plaça de Molina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Plaça de Molina (Q3067731) para las celdas que contienen \"Plaça Molina\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Príncep d'Astúries",
+    "judgment": "matched",
+    "match": {
+      "id": "Q47003813",
+      "name": "Avinguda de la Riera de Cassoles",
+      "types": [
+        "Q79007"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda de la Riera de Cassoles (Q47003813) para las celdas que contienen \"Príncep d'Astúries\" en la columna End_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Príncep d'Astúries",
+    "judgment": "matched",
+    "match": {
+      "id": "Q47003813",
+      "name": "Avinguda de la Riera de Cassoles",
+      "types": [
+        "Q79007"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avinguda de la Riera de Cassoles (Q47003813) para las celdas que contienen \"Príncep d'Astúries\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Passeig Bonanova",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9056555",
+      "name": "Passeig de la Bonanova",
+      "types": [
+        "Q79007"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Passeig de la Bonanova (Q9056555) para las celdas que contienen \"Passeig Bonanova\" en la columna Start_point"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "End_point",
+    "similarValue": "Plaça Prat de la Riba",
+    "judgment": "matched",
+    "match": {
+      "id": "Q131154700",
+      "name": "Placa Prat de la Riba",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Placa Prat de la Riba (Q131154700) para las celdas que contienen \"Plaça Prat de la Riba\" en la columna End_point"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Street_name",
+    "expression": "grel:\"https://wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Wikidata_street_name",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna Wikidata_street_name en el índice 2 basada en la columna Street_name usando la expresión grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Start_point",
+    "expression": "grel:\"https://wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Wikidata_start_point",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna Wikidata_start_point en el índice 4 basada en la columna Start_point usando la expresión grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "End_point",
+    "expression": "grel:\"https://wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Wikidata_end_point",
+    "columnInsertIndex": 6,
+    "description": "Crear la columna Wikidata_end_point en el índice 6 basada en la columna End_point usando la expresión grel:\"https://wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Start_point",
+    "similarValue": "Carretera Esplugues",
+    "judgment": "matched",
+    "match": {
+      "id": "Q15621",
+      "name": "Esplugues de Llobregat",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Esplugues de Llobregat (Q15621) para las celdas que contienen \"Carretera Esplugues\" en la columna Start_point"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "Ronda de Dalt",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q924181\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q924181\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "End_point",
+          "columnName": "End_point",
+          "query": "Ronda de Dalt",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_end_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q924181\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_end_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q924181\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Wikidata_street_name",
+          "expression": "isBlank(value)",
+          "columnName": "Wikidata_street_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "Street_name",
+          "columnName": "Street_name",
+          "query": "Creu Coberta - Sants",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_street_name",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q67280762\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_street_name usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q67280762\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "Rda. General Mitre",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q21074947\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q21074947\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "mitre",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q21074947\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q21074947\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Wikidata_start_point",
+          "expression": "isBlank(value)",
+          "columnName": "Wikidata_start_point",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "molina",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q3067731\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q3067731\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "End_point",
+          "columnName": "End_point",
+          "query": "mitre",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_end_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q21074947\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_end_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q21074947\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "Esplugues de Llobregat",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q15621\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q15621\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "Plaça Cerdà",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q2797903\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q2797903\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "End_point",
+          "columnName": "End_point",
+          "query": "Plaça Cerdà",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_end_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q2797903\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_end_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q2797903\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Start_point",
+          "columnName": "Start_point",
+          "query": "Plaça Bonanova",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_start_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q120964215\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_start_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q120964215\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "End_point",
+          "columnName": "End_point",
+          "query": "Carrer de Sans",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Wikidata_end_point",
+    "expression": "grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q4886808\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Wikidata_end_point usando la expresión grel:if(isBlank(value), \"https://www.wikidata.org/entity/Q4886808\", value)"
+  }
+]

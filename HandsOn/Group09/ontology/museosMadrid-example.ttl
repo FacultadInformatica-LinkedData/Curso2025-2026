@@ -9,23 +9,22 @@ ns:CasaMuseoFuenteDelRey a ns:Museum ;
     ns:description "" ;
     ns:accessibility "" ;
     ns:address "Calle Fuente del Rey 11, 28023 Madrid" ;
-    ns:latitude 40.45546866305681^^xsd:double ;
-    ns:longitude -3.7705716814130965^^xsd:double ;
+    ns:latitude 40.45546866305681 ;
+    ns:longitude -3.7705716814130965 ;
     ns:phone "913 579 116" ;
-    ns:fax "" ;
     ns:email "info@fundaciofrandaurel.com" ;
     ns:type "/contenido/entidadesYorganismos/FundacionesCulturales" ;
-    ns:xCoordinate 434663^^xsd:integer ;
-    ns:yCoordinate 4478596^^xsd:integer ;
+    ns:xCoordinate 434663 ;
+    ns:yCoordinate 4478596 ;
     ns:hasNeighbourhood ns:Aravaca .
 
 ns:Aravaca a ns:Neighbourhood ;
-    ns:codeNeighbourhood 7^^xsd:integer ;
+    ns:codeNeighbourhood 7 ;
     ns:hasDistrict ns:MoncloaAravaca .
 
 ns:MoncloaAravaca a ns:District ;
-    ns:districtCode 9^^xsd:integer ;
-    ns:postalCode 28023^^xsd:integer ;
+    ns:districtCode 9 ;
+    ns:postalCode 28023 ;
     ns:hasLocation ns:MadridLocation .
 
 ns:MadridLocation a ns:Location ;

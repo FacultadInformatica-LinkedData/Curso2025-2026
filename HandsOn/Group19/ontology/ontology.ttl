@@ -1,4 +1,4 @@
-@prefix : <http://madridfluye.oeg-upm.net/ontology/> .
+@prefix : <http://group19.linkeddata.es/def/transport#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,8 +7,8 @@
 @prefix schema: <http://schema.org/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
-<http://madridfluye.oeg-upm.net/ontology/> rdf:type owl:Ontology ;
-    owl:versionIRI <http://madridfluye.oeg-upm.net/ontology/1.0.0> ;
+<http://group19.linkeddata.es/def/transport#> rdf:type owl:Ontology ;
+    owl:versionIRI <http://group19.linkeddata.es/def/transport/1.0.0> ;
     rdfs:comment "Ontología para el proyecto Madrid Fluye, que modela aparcamientos, estaciones de BiciMAD y mediciones de tráfico en Madrid."@es ;
     rdfs:label "Ontología Madrid Fluye"@en .
 
@@ -16,72 +16,134 @@
 #    Classes
 #################################################################
 
-###  http://madridfluye.oeg-upm.net/ontology/Parking
-:Parking rdf:type owl:Class ;
+### http://group19.linkeddata.es/def/transport#TransportFacility
+:TransportFacility rdf:type owl:Class ;
     rdfs:subClassOf schema:Place ;
+    rdfs:label "Instalación de Transporte"@es,
+               "Transport Facility"@en ;
+    rdfs:comment "Una instalación para el transporte, como un aparcamiento o una estación de bicicletas."@es .
+
+###  http://group19.linkeddata.es/def/transport#Parking
+:Parking rdf:type owl:Class ;
+    rdfs:subClassOf :TransportFacility ;
     rdfs:label "Aparcamiento"@es ,
                "Parking"@en ;
     rdfs:comment "Representa un aparcamiento público municipal en Madrid."@es .
 
-###  http://madridfluye.oeg-upm.net/ontology/BikeStation
+### http://group19.linkeddata.es/def/transport#ParkingFacility
+:ParkingFacility rdf:type owl:Class ;
+    rdfs:subClassOf :Parking ;
+    rdfs:label "ParkingFacility"@en ,
+               "Instalación de aparcamiento"@es ;
+    rdfs:comment "Clase alternativa usada en los datos: ParkingFacility (compatibilidad retroactiva)."@es .
+
+###  http://group19.linkeddata.es/def/transport#BikeStation
 :BikeStation rdf:type owl:Class ;
-    rdfs:subClassOf schema:Place ;
+    rdfs:subClassOf :TransportFacility ;
     rdfs:label "Estación de BiciMAD"@es ,
                "BiciMAD Station"@en ;
     rdfs:comment "Representa una estación del sistema de bicicletas públicas BiciMAD."@es .
 
-###  http://madridfluye.oeg-upm.net/ontology/TrafficMeasurement
+###  http://group19.linkeddata.es/def/transport#TrafficMeasurement
 :TrafficMeasurement rdf:type owl:Class ;
     rdfs:label "Medición de Tráfico"@es ,
                "Traffic Measurement"@en ;
     rdfs:comment "Representa una medición de la intensidad media diaria de tráfico para una zona y periodo concretos."@es .
+
+### http://group19.linkeddata.es/def/transport#MobilityIntensity
+:MobilityIntensity rdf:type owl:Class ;
+    rdfs:subClassOf :TrafficMeasurement ;
+    rdfs:label "MobilityIntensity"@en ,
+               "Intensidad de movilidad"@es ;
+    rdfs:comment "Clase alternativa usada en los datos: MobilityIntensity (compatibilidad)."@es .
 
 
 #################################################################
 #    Datatype Properties
 #################################################################
 
-### http://madridfluye.oeg-upm.net/ontology/totalDocks
+### http://group19.linkeddata.es/def/transport#totalDocks
 :totalDocks rdf:type owl:DatatypeProperty ;
     rdfs:domain :BikeStation ;
     rdfs:range xsd:integer ;
     rdfs:label "Anclajes totales"@es ,
                "Total docks"@en .
                
-### http://madridfluye.oeg-upm.net/ontology/availableDocks
+### http://group19.linkeddata.es/def/transport#availableDocks
 :availableDocks rdf:type owl:DatatypeProperty ;
     rdfs:domain :BikeStation ;
     rdfs:range xsd:integer ;
     rdfs:label "Anclajes disponibles"@es ,
                "Available docks"@en .
 
-### http://madridfluye.oeg-upm.net/ontology/trafficIntensity
+### http://group19.linkeddata.es/def/transport#trafficIntensity
 :trafficIntensity rdf:type owl:DatatypeProperty ;
     rdfs:domain :TrafficMeasurement ;
     rdfs:range xsd:integer ;
     rdfs:label "Intensidad de tráfico"@es ,
                "Traffic intensity"@en .
 
-### http://madridfluye.oeg-upm.net/ontology/forZone
+### http://group19.linkeddata.es/def/transport#forZone
 :forZone rdf:type owl:DatatypeProperty ;
     rdfs:domain :TrafficMeasurement ;
     rdfs:range xsd:string ;
     rdfs:label "Para la zona"@es ,
                "For zone"@en .
                
-### http://madridfluye.oeg-upm.net/ontology/forYear
+### http://group19.linkeddata.es/def/transport#forYear
 :forYear rdf:type owl:DatatypeProperty ;
     rdfs:domain :TrafficMeasurement ;
     rdfs:range xsd:gYear ;
     rdfs:label "Para el año"@es ,
                "For year"@en .
                
-### http://madridfluye.oeg-upm.net/ontology/forMonth
+### http://group19.linkeddata.es/def/transport#forMonth
 :forMonth rdf:type owl:DatatypeProperty ;
     rdfs:domain :TrafficMeasurement ;
     rdfs:range xsd:string ;
     rdfs:label "Para el mes"@es ,
                "For month"@en .
+
+### Compatibility properties used in the data
+### http://group19.linkeddata.es/def/transport#zone
+:zone rdf:type owl:DatatypeProperty ;
+    rdfs:domain :TrafficMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "zone"@en ,
+               "Zona"@es ;
+    rdfs:comment "Propiedad usada en los datos: zone (alias de forZone)."@es .
+
+### http://group19.linkeddata.es/def/transport#month
+:month rdf:type owl:DatatypeProperty ;
+    rdfs:domain :TrafficMeasurement ;
+    rdfs:range xsd:string ;
+    rdfs:label "month"@en ,
+               "Mes"@es ;
+    rdfs:comment "Propiedad usada en los datos: month (alias de forMonth)."@es .
+
+### http://group19.linkeddata.es/def/transport#year
+:year rdf:type owl:DatatypeProperty ;
+    rdfs:domain :TrafficMeasurement ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "year"@en ,
+               "Año"@es ;
+    rdfs:comment "Propiedad usada en los datos: year (alias de forYear)."@es .
+
+### http://group19.linkeddata.es/def/transport#intensity
+:intensity rdf:type owl:DatatypeProperty ;
+    rdfs:domain :TrafficMeasurement ;
+    rdfs:range xsd:integer ;
+    rdfs:label "intensity"@en ,
+               "Intensidad"@es ;
+    rdfs:comment "Propiedad usada en los datos: intensity (alias de trafficIntensity)."@es .
+
+### http://group19.linkeddata.es/def/transport#nearbyParking
+:nearbyParking rdf:type owl:ObjectProperty ;
+    rdfs:domain :Parking ;
+    rdfs:range :Parking ;
+    rdfs:label "nearbyParking"@en ,
+               "Aparcamiento cercano"@es ;
+    rdfs:comment "Propiedad usada en los datos para enlazar parkings cercanos."@es .
 
 #################################################################
 #    Reusing External Properties

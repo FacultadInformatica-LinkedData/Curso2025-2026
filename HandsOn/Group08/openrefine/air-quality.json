@@ -1,0 +1,2650 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PROVINCIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MUNICIPI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PROVINCIA using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPI",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MUNICIPI using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_PROVINCIA",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CODI_PROVINCIA using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CODI_MUNICIPI using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTACIO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTACIO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_CONTAMINANT",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CODI_CONTAMINANT using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANY",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ANY using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MES",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MES using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIA",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DIA using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H01",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column H01 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H01",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H01 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H02",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H02 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H03",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H03 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H04",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H04 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H05",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H05 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H06",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H06 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H07",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H07 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H08",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H08 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H09",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H09 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H10",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H10 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H11",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H11 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H12",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H12 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H13",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H13 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H14",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H14 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H15",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H15 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H16",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H16 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H17",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H17 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H18",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H18 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H19",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H19 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H20",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H20 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H21",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H21 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H22",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H22 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H23",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H23 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H24",
+    "expression": "if(isBlank(value), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H24 using expression if(isBlank(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V01",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V01 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V02",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V02 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V03",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V03 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V04",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V04 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V05",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V05 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V06",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V06 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V07",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V07 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V08",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V08 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V09",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V09 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V10",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V10 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V11",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V11 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V12",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V12 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V13",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V13 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V14",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V14 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V15",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V15 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V16",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V16 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V17",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V17 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V18",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V18 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V19",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V19 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V20",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V20 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V21",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V21 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V22",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V22 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V23",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V23 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "V24",
+    "expression": "value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column V24 using expression value.trim().toUppercase().replace('V','Valid').replace('N','Null').replace('R','Revised')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PROVINCIA using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H01",
+    "expression": "grel:if(value == \"NA\", null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column H01 using expression grel:if(value == \"NA\", null, toNumber(value))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DIA",
+    "expression": "grel:cells[\"ANY\"].value + \"-\" + \nif(length(cells[\"MES\"].value.toString()) == 1, \"0\" + cells[\"MES\"].value, cells[\"MES\"].value) + \"-\" + \nif(length(cells[\"DIA\"].value.toString()) == 1, \"0\" + cells[\"DIA\"].value, cells[\"DIA\"].value)",
+    "onError": "set-to-blank",
+    "newColumnName": "DATE",
+    "columnInsertIndex": 9,
+    "description": "Create column DATE at index 9 based on column DIA using expression grel:cells[\"ANY\"].value + \"-\" + \nif(length(cells[\"MES\"].value.toString()) == 1, \"0\" + cells[\"MES\"].value, cells[\"MES\"].value) + \"-\" + \nif(length(cells[\"DIA\"].value.toString()) == 1, \"0\" + cells[\"DIA\"].value, cells[\"DIA\"].value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATE",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DATE using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H01",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H01 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H02",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H02 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H03",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H03 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H04",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H04 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H05",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H05 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H06",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H06 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H07",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H07 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H08",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H08 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H09",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H09 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H10",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H10 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H11",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H11 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H12",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H12 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H13",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H13 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H14",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H14 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H15",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H15 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H16",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H16 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H17",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H17 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H18",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H18 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H19",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H19 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H20",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H20 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H21",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H21 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H22",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H22 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H23",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H23 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "H24",
+    "expression": "if(or(value == 'NA', value == 'N/A'), null, toNumber(value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column H24 using expression if(or(value == 'NA', value == 'N/A'), null, toNumber(value))"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "CODI_CONTAMINANT",
+      "ANY",
+      "MES",
+      "DIA",
+      "DATE",
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06",
+      "H07",
+      "H08",
+      "H09",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "H23",
+      "H24",
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08",
+      "V09",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16",
+      "V17",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22",
+      "V23",
+      "V24"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/transpose-columns-into-rows",
+    "startColumnName": "H01",
+    "columnCount": 24,
+    "ignoreBlankCells": true,
+    "fillDown": false,
+    "separator": null,
+    "keyColumnName": "HOUR_LABEL",
+    "valueColumnName": "VALUE",
+    "description": "Transpose cells in 24 column(s) starting with H01 into rows in two new columns named HOUR_LABEL and VALUE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HOUR_LABEL",
+    "expression": "value.replace(\"H\",\"\" ).toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 1,
+    "description": "Text transform on cells in column HOUR_LABEL using expression value.replace(\"H\",\"\" ).toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "HOUR_LABEL",
+    "newColumnName": "HOUR",
+    "description": "Rename column HOUR_LABEL to HOUR"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "HOUR",
+    "expression": "if(value < 10, \"0\" + toString(value), toString(value))",
+    "onError": "set-to-blank",
+    "newColumnName": "HOUR2D",
+    "columnInsertIndex": 3,
+    "description": "Create column HOUR2D at index 3 based on column HOUR using expression if(value < 10, \"0\" + toString(value), toString(value))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "HOUR2D",
+    "expression": "cells[\"V\" + value].value",
+    "onError": "set-to-blank",
+    "newColumnName": "VALIDATION",
+    "columnInsertIndex": 4,
+    "description": "Create column VALIDATION at index 4 based on column HOUR2D using expression cells[\"V\" + value].value"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "CODI_CONTAMINANT",
+      "ANY",
+      "MES",
+      "DIA",
+      "DATE",
+      "HOUR",
+      "VALUE",
+      "HOUR2D",
+      "VALIDATION",
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08",
+      "V09",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16",
+      "V17",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22",
+      "V23",
+      "V24"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CODI_PROVINCIA",
+    "description": "Fill down cells in column CODI_PROVINCIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "description": "Fill down cells in column PROVINCIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "description": "Fill down cells in column PROVINCIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "description": "Fill down cells in column CODI_MUNICIPI"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MES",
+    "description": "Fill down cells in column MES"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DIA",
+    "description": "Fill down cells in column DIA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DATE",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DATE using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DATE",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DATE using expression value.toDate()"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DATE",
+    "description": "Fill down cells in column DATE"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CODI_CONTAMINANT",
+    "description": "Fill down cells in column CODI_CONTAMINANT"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "CODI_CONTAMINANT",
+      "ANY",
+      "MES",
+      "DIA",
+      "DATE",
+      "HOUR",
+      "VALUE",
+      "HOUR2D",
+      "VALIDATION"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "DIA",
+    "expression": "grel:cells[\"ANY\"].value + \"-\" + \nif(length(cells[\"MES\"].value.toString()) == 1, \"0\" + cells[\"MES\"].value, cells[\"MES\"].value) + \"-\" + \nif(length(cells[\"DIA\"].value.toString()) == 1, \"0\" + cells[\"DIA\"].value, cells[\"DIA\"].value)",
+    "onError": "set-to-blank",
+    "newColumnName": "DATE2D",
+    "columnInsertIndex": 9,
+    "description": "Create column DATE2D at index 9 based on column DIA using expression grel:cells[\"ANY\"].value + \"-\" + \nif(length(cells[\"MES\"].value.toString()) == 1, \"0\" + cells[\"MES\"].value, cells[\"MES\"].value) + \"-\" + \nif(length(cells[\"DIA\"].value.toString()) == 1, \"0\" + cells[\"DIA\"].value, cells[\"DIA\"].value)"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DATE2D",
+    "description": "Fill down cells in column DATE2D"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "description": "Fill down cells in column PROVINCIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "description": "Fill down cells in column CODI_MUNICIPI"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MUNICIPI",
+    "description": "Fill down cells in column MUNICIPI"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ESTACIO",
+    "description": "Fill down cells in column ESTACIO"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CODI_CONTAMINANT",
+    "description": "Fill down cells in column CODI_CONTAMINANT"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "ANY",
+    "description": "Fill down cells in column ANY"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MES",
+    "description": "Fill down cells in column MES"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "VALIDATION",
+    "description": "Fill down cells in column VALIDATION"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "description": "Fill down cells in column CODI_MUNICIPI"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "description": "Fill down cells in column PROVINCIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "description": "Fill down cells in column PROVINCIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "description": "Fill down cells in column CODI_MUNICIPI"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPI",
+    "description": "Fill down cells in column MUNICIPI"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTACIO",
+    "description": "Fill down cells in column ESTACIO"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_CONTAMINANT",
+    "description": "Fill down cells in column CODI_CONTAMINANT"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANY",
+    "description": "Fill down cells in column ANY"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MES",
+    "description": "Fill down cells in column MES"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIA",
+    "description": "Fill down cells in column DIA"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATE2D",
+    "description": "Fill down cells in column DATE2D"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "CODI_CONTAMINANT",
+      "ANY",
+      "MES",
+      "DIA",
+      "DATE2D",
+      "HOUR",
+      "VALUE",
+      "HOUR2D",
+      "VALIDATION"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DATE2D",
+    "newColumnName": "DATE",
+    "description": "Rename column DATE2D to DATE"
+  },
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VALIDATION",
+    "description": "Fill down cells in column VALIDATION"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "HOUR",
+    "expression": "grel:cells[\"DATE\"].value.replace(\"T00:00:00Z\",\"\") + \"T\" + if(value<10,\"0\"+value,toString(value)) + \":00:00Z\"",
+    "onError": "set-to-blank",
+    "newColumnName": "DATETIME",
+    "columnInsertIndex": 11,
+    "description": "Create column DATETIME at index 11 based on column HOUR using expression grel:cells[\"DATE\"].value.replace(\"T00:00:00Z\",\"\") + \"T\" + if(value<10,\"0\"+value,toString(value)) + \":00:00Z\""
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "CODI_CONTAMINANT",
+      "ANY",
+      "MES",
+      "DIA",
+      "DATE",
+      "DATETIME",
+      "HOUR",
+      "VALUE",
+      "HOUR2D",
+      "VALIDATION"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_PROVINCIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CODI_PROVINCIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column PROVINCIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CODI_MUNICIPI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column MUNICIPI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTACIO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column ESTACIO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_CONTAMINANT",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CODI_CONTAMINANT using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANY",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column ANY using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MES",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column MES using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column DIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column DATE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATETIME",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column DATETIME using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HOUR",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column HOUR using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VALUE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column VALUE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HOUR2D",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column HOUR2D using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VALIDATION",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column VALIDATION using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_PROVINCIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CODI_PROVINCIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_PROVINCIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CODI_PROVINCIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column PROVINCIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_MUNICIPI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CODI_MUNICIPI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MUNICIPI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column MUNICIPI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTACIO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column ESTACIO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CODI_CONTAMINANT",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CODI_CONTAMINANT using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ANY",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column ANY using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MES",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column MES using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column DIA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column DATE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATETIME",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column DATETIME using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HOUR",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column HOUR using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VALUE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column VALUE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "HOUR2D",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column HOUR2D using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VALIDATION",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column VALIDATION using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DATETIME",
+    "expression": "grel:if(value.contains(\"T24:\"), \n   (toDate(value.replace(\"T24:\",\"T00:\")).toString(\"yyyy-MM-dd'T'HH:mm:ss'Z'\")),\n   value)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DATETIME using expression grel:if(value.contains(\"T24:\"), \n   (toDate(value.replace(\"T24:\",\"T00:\")).toString(\"yyyy-MM-dd'T'HH:mm:ss'Z'\")),\n   value)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DATETIME",
+          "expression": "value",
+          "columnName": "DATETIME",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025-08-18T:00:00Z",
+                "l": "2025-08-18T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-15T:00:00Z",
+                "l": "2025-08-15T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-12T:00:00Z",
+                "l": "2025-08-12T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-29T:00:00Z",
+                "l": "2025-08-29T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-10T:00:00Z",
+                "l": "2025-08-10T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-23T:00:00Z",
+                "l": "2025-08-23T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-04T:00:00Z",
+                "l": "2025-08-04T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-16T:00:00Z",
+                "l": "2025-08-16T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-31T:00:00Z",
+                "l": "2025-08-31T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-08T:00:00Z",
+                "l": "2025-08-08T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-27T:00:00Z",
+                "l": "2025-08-27T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-06T:00:00Z",
+                "l": "2025-08-06T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-14T:00:00Z",
+                "l": "2025-08-14T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-01T:00:00Z",
+                "l": "2025-08-01T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-19T:00:00Z",
+                "l": "2025-08-19T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-20T:00:00Z",
+                "l": "2025-08-20T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-25T:00:00Z",
+                "l": "2025-08-25T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-11T:00:00Z",
+                "l": "2025-08-11T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-22T:00:00Z",
+                "l": "2025-08-22T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-03T:00:00Z",
+                "l": "2025-08-03T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-30T:00:00Z",
+                "l": "2025-08-30T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-17T:00:00Z",
+                "l": "2025-08-17T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-09T:00:00Z",
+                "l": "2025-08-09T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-28T:00:00Z",
+                "l": "2025-08-28T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-13T:00:00Z",
+                "l": "2025-08-13T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-02T:00:00Z",
+                "l": "2025-08-02T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-05T:00:00Z",
+                "l": "2025-08-05T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-24T:00:00Z",
+                "l": "2025-08-24T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-21T:00:00Z",
+                "l": "2025-08-21T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-26T:00:00Z",
+                "l": "2025-08-26T:00:00Z"
+              }
+            },
+            {
+              "v": {
+                "v": "2025-08-07T:00:00Z",
+                "l": "2025-08-07T:00:00Z"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACIO",
+    "expression": "grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"nom_cabina\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "nom_estacio",
+    "columnInsertIndex": 5,
+    "description": "Create column nom_estacio at index 5 based on column ESTACIO using expression grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"nom_cabina\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACIO",
+    "expression": "grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"Latitud\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Latitud",
+    "columnInsertIndex": 5,
+    "description": "Create column Latitud at index 5 based on column ESTACIO using expression grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"Latitud\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACIO",
+    "expression": "grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"Longitud\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Longitud",
+    "columnInsertIndex": 5,
+    "description": "Create column Longitud at index 5 based on column ESTACIO using expression grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"Longitud\"].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESTACIO",
+    "expression": "grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"Nom_districte\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Nom_districte_estacio",
+    "columnInsertIndex": 5,
+    "description": "Create column Nom_districte_estacio at index 5 based on column ESTACIO using expression grel:cell.cross(\"2025 qualitat aire estacions csv\", \"Estacio\")[0].cells[\"Nom_districte\"].value"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "nom_estacio",
+      "Nom_districte_estacio",
+      "Latitud",
+      "Longitud",
+      "CODI_CONTAMINANT",
+      "ANY",
+      "MES",
+      "DIA",
+      "DATE",
+      "DATETIME",
+      "HOUR",
+      "VALUE",
+      "HOUR2D",
+      "VALIDATION"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "CODI_PROVINCIA",
+      "PROVINCIA",
+      "CODI_MUNICIPI",
+      "MUNICIPI",
+      "ESTACIO",
+      "nom_estacio",
+      "Nom_districte_estacio",
+      "Latitud",
+      "Longitud",
+      "CODI_CONTAMINANT",
+      "DATETIME",
+      "VALUE"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODI_CONTAMINANT",
+    "expression": "grel:cell.cross(\"qualitat aire contaminants csv\", \"Codi_Contaminant\")[0].cells[\"Desc_Contaminant\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Desc_Contaminant",
+    "columnInsertIndex": 10,
+    "description": "Create column Desc_Contaminant at index 10 based on column CODI_CONTAMINANT using expression grel:cell.cross(\"qualitat aire contaminants csv\", \"Codi_Contaminant\")[0].cells[\"Desc_Contaminant\"].value"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant",
+          "expression": "value",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Desc_Contaminant",
+          "expression": "value",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Flow 2 (Mesura interna equip)",
+                "l": "Flow 2 (Mesura interna equip)"
+              }
+            },
+            {
+              "v": {
+                "v": "Flow 1 (Mesura interna equip)",
+                "l": "Flow 1 (Mesura interna equip)"
+              }
+            },
+            {
+              "v": {
+                "v": "Flow C (Mesura interna equip) ",
+                "l": "Flow C (Mesura interna equip) "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Desc_Contaminant: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Desc_Contaminant",
+          "expression": "value",
+          "columnName": "Desc_Contaminant",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PM10*",
+                "l": "PM10*"
+              }
+            },
+            {
+              "v": {
+                "v": "PM2.5*",
+                "l": "PM2.5*"
+              }
+            },
+            {
+              "v": {
+                "v": "Nox*",
+                "l": "Nox*"
+              }
+            },
+            {
+              "v": {
+                "v": "NO*",
+                "l": "NO*"
+              }
+            },
+            {
+              "v": {
+                "v": "Biomassa Black Carbon",
+                "l": "Biomassa Black Carbon"
+              }
+            },
+            {
+              "v": {
+                "v": "NO2*",
+                "l": "NO2*"
+              }
+            },
+            {
+              "v": {
+                "v": "CO*",
+                "l": "CO*"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "ESTACIO",
+      "nom_estacio",
+      "Nom_districte_estacio",
+      "Latitud",
+      "Longitud",
+      "CODI_CONTAMINANT",
+      "Desc_Contaminant",
+      "DATETIME",
+      "VALUE"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "ESTACIO",
+      "nom_estacio",
+      "Nom_districte_estacio",
+      "Latitud",
+      "Longitud",
+      "Desc_Contaminant",
+      "DATETIME",
+      "VALUE"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Desc_Contaminant",
+    "newColumnName": "Contaminant",
+    "description": "Rename column Desc_Contaminant to Contaminant"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nom_districte_estacio",
+    "newColumnName": "District_name",
+    "description": "Rename column Nom_districte_estacio to District_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "nom_estacio",
+    "newColumnName": "Estation_name",
+    "description": "Rename column nom_estacio to Estation_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTACIO",
+    "newColumnName": "Estation_id",
+    "description": "Rename column ESTACIO to Estation_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Estation_id",
+    "newColumnName": "Station_id",
+    "description": "Rename column Estation_id to Station_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Estation_name",
+    "newColumnName": "Station_name",
+    "description": "Rename column Estation_name to Station_name"
+  }
+]

@@ -1,0 +1,564 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"莽\", \"ç\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"莽\", \"ç\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "value.replace(\"莽\",\"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression value.replace(\"莽\",\"à\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"脿\", \"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"脿\", \"à\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"贸\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"贸\", \"ò\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"铆\", \"í\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"铆\", \"í\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"貌\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"貌\", \"ò\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"煤\", \"ú\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"煤\", \"ú\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"茂\", \"ï\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"茂\", \"ï\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"路\", \"·\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"路\", \"·\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"茅\", \"é\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"茅\", \"é\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOM_ESTACIO",
+          "expression": "value",
+          "columnName": "NOM_ESTACIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "C猫ntric",
+                "l": "C猫ntric"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOM_ESTACIO",
+    "expression": "grel:replace(value, \"猫\", \"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOM_ESTACIO using expression grel:replace(value, \"猫\", \"è\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"莽\", \"ç\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"莽\", \"ç\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "value.replace(\"莽\",\"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression value.replace(\"莽\",\"à\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"脿\", \"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"脿\", \"à\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"贸\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"贸\", \"ò\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"铆\", \"í\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"铆\", \"í\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"貌\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"貌\", \"ò\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"煤\", \"ú\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"煤\", \"ú\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"茂\", \"ï\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"茂\", \"ï\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"路\", \"·\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"路\", \"·\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"茅\", \"é\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"茅\", \"é\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ORIGEN_SERVEI",
+          "expression": "value",
+          "columnName": "ORIGEN_SERVEI",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "C猫ntric",
+                "l": "C猫ntric"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ORIGEN_SERVEI",
+    "expression": "grel:replace(value, \"猫\", \"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ORIGEN_SERVEI using expression grel:replace(value, \"猫\", \"è\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"莽\", \"ç\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"莽\", \"ç\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "value.replace(\"莽\",\"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression value.replace(\"莽\",\"à\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"脿\", \"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"脿\", \"à\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"贸\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"贸\", \"ò\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"铆\", \"í\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"铆\", \"í\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"貌\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"貌\", \"ò\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"煤\", \"ú\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"煤\", \"ú\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"茂\", \"ï\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"茂\", \"ï\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"路\", \"·\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"路\", \"·\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"茅\", \"é\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"茅\", \"é\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESC_SERVEI",
+          "expression": "value",
+          "columnName": "DESC_SERVEI",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "C猫ntric",
+                "l": "C猫ntric"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESC_SERVEI",
+    "expression": "grel:replace(value, \"猫\", \"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESC_SERVEI using expression grel:replace(value, \"猫\", \"è\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Can Cui脀s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Can Cuiàs"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Zona Universit脿ria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Zona Universitaria"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESTI_SERVEI",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Parc de Montju茂c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parc de Montjuïc"
+      }
+    ],
+    "description": "Editar celdas en masa en columna DESTI_SERVEI"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DESC_SERVEI",
+    "expression": "grel:value.toLowercase()\n.replace('à','a').replace('è','e').replace('é','e').replace('í','i').replace('ï','i').replace('ò','o').replace('ó','o').replace('ú','u').replace('ü','u').replace('ç','c')\n.replace('À','A').replace('È','E').replace('É','E').replace('Í','I').replace('Ï','I').replace('Ò','O').replace('Ó','O').replace('Ú','U').replace('Ü','U').replace('Ç','C')\n.replace(' ','-')\n.replace('|','-')\n.replace('·','-')\n.replace('/','-')\n.replace(\"'\",'-')\n.replace(/\\-+/,'-')",
+    "onError": "set-to-blank",
+    "newColumnName": "SLUG_SERVEI",
+    "columnInsertIndex": 17,
+    "description": "Crear la columna SLUG_SERVEI en el índice 17 basada en la columna DESC_SERVEI usando la expresión grel:value.toLowercase()\n.replace('à','a').replace('è','e').replace('é','e').replace('í','i').replace('ï','i').replace('ò','o').replace('ó','o').replace('ú','u').replace('ü','u').replace('ç','c')\n.replace('À','A').replace('È','E').replace('É','E').replace('Í','I').replace('Ï','I').replace('Ò','O').replace('Ó','O').replace('Ú','U').replace('Ü','U').replace('Ç','C')\n.replace(' ','-')\n.replace('|','-')\n.replace('·','-')\n.replace('/','-')\n.replace(/\\-+/,'-')"
+  }
+]

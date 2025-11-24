@@ -1,0 +1,35 @@
+PREFIX ex: <http://datos.madrid.es/Calidad_Aire/Medicion/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+# 1: Listar URIs de estaciones
+SELECT ?estacion
+WHERE {
+  ?estacion a <http://datos.madrid.es/Calidad_Aire#DIRECCION_ESTACION> .
+}
+LIMIT 10
+
+# 2: Estaciones con enlaces externos
+SELECT ?estacion ?wikidata
+WHERE {
+  ?estacion a ex:DIRECCION_ESTACION ;
+             owl:sameAs ?wikidata .
+}
+LIMIT 20
+
+# 3: Contar el número total de estaciones únicas
+SELECT (COUNT(DISTINCT ?estacion) AS ?totalEstaciones)
+WHERE {
+  ?estacion a <http://datos.madrid.es/Calidad_Aire#DIRECCION_ESTACION> .
+}
+
+# 4: Mostrar estaciones con enlace externo y coordenadas
+SELECT ?estacion ?wikidata ?lat ?lon
+WHERE {
+  ?estacion a ex:DIRECCION_ESTACION ;
+             owl:sameAs ?wikidata ;
+             ex:latitud ?lat ;
+             ex:longitud ?lon .
+}
+LIMIT 10
+
+

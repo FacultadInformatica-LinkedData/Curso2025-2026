@@ -1,16 +1,17 @@
 PREFIX att: <http://data.barcelona.cat/att/>
 PREFIX rel: <http://data.barcelona.cat/rel/>
-PREFIX base: <http://data.barcelona.cat/actividades/>
+PREFIX node: <http://data.barcelona.cat/node/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 # Todas las actividades con su titulo, tipo, precio, fechaInicio y fechaFin con su respectivo organizador.
 SELECT ?actividad ?titulo ?tipo ?precio ?fechaInicio ?fechaFin ?organizador
 WHERE {
-  ?actividad a base:Actividad ;
+  ?actividad a node:Actividad ;
             att:titulo ?titulo ;
             att:precio ?precio ;
             att:fechaInicio ?fechaInicio ;
             att:fechaFin ?fechaFin ;
+            att:tipo ?tipo ;
   			rel:isHosted ?organizador .
 }
 ORDER BY ?fechaInicio
@@ -21,7 +22,7 @@ ORDER BY ?fechaInicio
 
 SELECT ?tipo (COUNT(*) as ?cantidad)
 WHERE {
-  ?actividad a base:Actividad ;
+  ?actividad a node:Actividad ;
             att:tipo ?tipo .
 }
 GROUP BY ?tipo
@@ -39,13 +40,13 @@ GROUP BY ?predicado
 ORDER BY DESC(?uso)
 
 
-#"Mapa de calor" de la oferta de actividades segun localización (tendria que funcionar cuando la relacion ns2:isContained funcione)
+#"Mapa de calor" de la oferta de actividades segun localización (tendria que funcionar cuando la relacion rel:isContained funcione)
 SELECT ?municipio ?organizador ?categoria
        (COUNT(?actividad) as ?numActividades)
        (SUM(xsd:integer(?aforo)) as ?aforoAcumulado)
        (GROUP_CONCAT(DISTINCT ?titulo; SEPARATOR="; ") as ?ejemplosActividades)
 WHERE {
-  ?actividad a base:Actividad ;
+  ?actividad a node:Actividad ;
              att:titulo ?titulo ;
              att:aforo ?aforo ;
              rel:isHosted ?organizador ;
@@ -61,7 +62,7 @@ ORDER BY ?comarca ?municipio ?organizador DESC(?numActividades)
 # Dada un conjunto de Actividades, encontrar sus correspondientes organizadores
 SELECT ?actividad ?organizador
 WHERE {
-  ?actividad a base:Actividad ;
+  ?actividad a node:Actividad ;
              rel:isHosted ?organizador .
 }
 LIMIT 20
@@ -83,7 +84,7 @@ LIMIT 20
 # Dado un conjunto de Municipio, encontrar las Actividad correspondientes (placed)
 SELECT ?municipio ?actividad
 WHERE {
-  ?actividad a base:Actividad ;
+  ?actividad a node:Actividad ;
              rel:placed ?municipio ;
 }
 ORDER BY ?municipio

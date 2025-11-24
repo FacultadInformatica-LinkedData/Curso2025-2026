@@ -1,0 +1,49 @@
+prefixes:
+  ont: "http://www.semanticweb.org/abuce/ontologies/2025/9/untitled-ontology-3/"
+  "": "http://airecalidadbcn.linkeddata.es/g05/resource/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  fnml: "http://semweb.mmlab.be/ns/fnml#"
+  fno: "https://w3id.org/function/ontology#"
+  grel: "http://users.ugent.be/~bjdmeyer/function/grel.ttl#"
+
+sources:
+  aire_csv:
+    access: "C:/Users/moham/Documents/UPM-UNI/micro/repo/Curso2025-2026/HandsOn/Group05/csv/2018-06-Juny-qualitat-aire-BCN-updated-with-links.csv"
+    referenceFormulation: csv
+
+mappings:
+  estaciones:
+    sources:
+      - aire_csv
+    
+    s: :estacion-$(codi_eoi)
+    
+    po:
+      - [ a, ont:Estacion ]
+      - [ ont:stationCode, $(codi_eoi), xsd:string ]
+      - [ ont:name, $(nom_cabina), xsd:string ]
+      - [ ont:latitude, "$(latitud)", xsd:float ]
+      - [ ont:longitude, "$(longitud)", xsd:float ]
+
+  lecturas:
+    sources:
+      - aire_csv
+    
+    s: :lectura-$(dateTime)-$(codi_eoi)
+    
+    po:
+      - [ a, ont:Lectura ]
+      - [ ont:date, $(dateTime), xsd:string ]
+      - [ ont:quality, $(calidad_aire), xsd:string ]
+      - [ ont:no2Value, "$(valor_no2)", xsd:float ]
+      - [ ont:no2Quality, $(calidad_no2), xsd:string ]
+      - [ ont:o3Value, "$(valor_o3)", xsd:float ]
+      - [ ont:o3Quality, $(calidad_o3), xsd:string ]
+      - [ ont:pm10Value, "$(valor_pm10)", xsd:float ]
+      - [ ont:pm10Quality, $(calidad_pm10), xsd:string ]
+      - p: ont:madeInStation
+        o:
+          mapping: estaciones
+          join:
+            child: "codi_eoi"
+            parent: "codi_eoi"

@@ -1,116 +1,122 @@
 ################################################################################
 # PREFIXES
 ################################################################################
-PREFIX ns:  <https://data.smartcitymadrid.es/ontology/parking#>
-PREFIX ex:  <https://data.smartcitymadrid.es/id/parking/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX my: <https://data.smartcitymadrid.es/ontology/parking#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 
 ################################################################################
 # QUERY 1 - First ten parkings (id, name and address) ordered by ascending id
-## Retrieves the first ten parking resources, returning their identifier (ns:hasId), name (ns:hasName) and address (ns:hasAddress), ordered by the parking identifier in ascending order
+## Retrieves the first ten parking resources, returning their identifier (dcterms:identifier), name (schema:name) and address (schema:address / schema:streetAddress), ordered by the parking identifier in ascending order
 ################################################################################
-SELECT ?id ?name ?address 
+SELECT ?id ?name ?street 
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasId ?id ;
-     ns:hasName ?name ;
-     ns:hasAddress ?address .
+  ?p a schema:ParkingFacility ;
+     dcterms:identifier ?id ;
+     schema:name ?name ;
+     schema:address ?pAddr .
+  ?pAddr schema:streetAddress ?street .
 }
-ORDER BY xsd:integer(?id)
+ORDER BY ASC(xsd:integer(?id))
 LIMIT 10
 
 ################################################################################
 # QUERY 2 - EMT parkings (true) with postal code
-## Returns the first ten parking resources that are managed by EMT (ns:isEMTParking = true), including their postal code (ns:hasAreaCode) and identifier
+## Returns the first ten parking resources that are managed by EMT (my:isEMTParking = true), including their postal code (schema:postalCode) and identifier (dcterms:identifier), ordered by the parking identifier in ascending order
 ################################################################################
-SELECT ?id ?name ?pc ?emtParking 
+SELECT ?id ?name ?postalCode ?emtParking 
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasId ?id ;
-     ns:hasName ?name ;
-     ns:hasAreaCode ?pc ;
-     ns:hasLocation ?loc .
-  ?loc ns:isEMTParking ?emtParking .
-  FILTER(?emtParking = true)
+  ?p a schema:ParkingFacility ;
+     dcterms:identifier ?id ;
+     schema:name ?name ;
+     schema:address ?pAddr .
+  ?pAddr schema:postalCode ?postalCode .
+  ?p my:isEMTParking ?emtParking .
+  FILTER(xsd:boolean(?emtParking) = true)
 }
-ORDER BY xsd:integer(?id)
+ORDER BY ASC(xsd:integer(?id))
 LIMIT 10
 
 ################################################################################
 # QUERY 3 - Total number of parkings
-## Counts the total number of parking resources (ns:Parking) in the dataset
+## Counts the total number of parking resources (schema:ParkingFacility) in the dataset
 ################################################################################
-SELECT (COUNT(?s) AS ?nParkings) 
+SELECT (COUNT(?p) AS ?nParkings) 
 WHERE {
-  ?s a ns:Parking .
+  ?p a schema:ParkingFacility .
 }
 
 ################################################################################
 # QUERY 4 - Number of parkings whose address contains “plaza” (case-insensitive)
-## Counts how many parking resources have an address (ns:hasAddress) containing the word “plaza”, ignoring case sensitivity
+## Counts how many parking resources have an address (schema:address / schema:streetAddress) containing the word “plaza”, ignoring case sensitivity
 ################################################################################
-SELECT (COUNT(?s) AS ?nParkings) 
+SELECT (COUNT(?p) AS ?nParkings) 
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasAddress ?address .
+  ?p a schema:ParkingFacility ;
+     schema:address ?pAddr .
+  ?pAddr schema:streetAddress ?address .
   FILTER(CONTAINS(LCASE(STR(?address)), "plaza"))
 }
 
 ################################################################################
 # QUERY 5 - Average latitude and longitude of all parkings
-## Calculates the average latitude and longitude of all parking resources
+## Calculates the average latitude (geo:lat) and longitude (geo:long) of all parking resources
 ################################################################################
 SELECT (AVG(xsd:double(?lat)) AS ?avgLat)
        (AVG(xsd:double(?long)) AS ?avgLong)
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasLocation ?loc .
-  ?loc ns:hasLatitude ?lat ;
-       ns:hasLongitude ?long .
+  ?p a schema:ParkingFacility ;
+     geo:hasGeometry ?geom .
+  ?geom geo:long ?long ;
+        geo:lat ?lat .
 }
 
 ################################################################################
 # QUERY 6 - Parkings sharing the same postal code (potential duplicates)
-## Identifies postal codes (ns:hasAreaCode) that are shared by more than one parking resource, and shows how many parkings correspond to each code
+## Identifies postal codes (schema:postalCode) that are shared by more than one parking resource, and shows how many parkings correspond to each code
 ################################################################################
-SELECT ?pc (COUNT(?s) AS ?nParkings)
+SELECT ?postalCode (COUNT(?p) AS ?nParkings)
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasAreaCode ?pc .
+  ?p a schema:ParkingFacility ;
+     schema:address ?pAddr .
+  ?pAddr schema:postalCode ?postalCode .
 }
-GROUP BY ?pc
-HAVING (COUNT(?s) > 1)
+GROUP BY ?postalCode
+HAVING (COUNT(?p) > 1)
 ORDER BY DESC(?nParkings)
 
 ################################################################################
 # QUERY 7 - Top ten parkings ordered by latitude (north to south)
-## Retrieves the ten northernmost parking resources, showing their identifier (ns:hasId), name (ns:hasName), town (ns:hasTown), and latitude (ns:hasLatitude)
+## Retrieves the ten northernmost parking resources, showing their identifier (dcterms:identifier), name (schema:name), city (schema:addressLocality), and latitude (geo:lat)
 ################################################################################
-SELECT ?id ?name ?town ?lat
+SELECT ?id ?name ?city ?lat
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasId ?id ;
-     ns:hasName ?name ;
-     ns:hasLocation ?loc .
-  ?loc ns:hasTown ?town ;
-       ns:hasLatitude ?lat .
+  ?p a schema:ParkingFacility ;
+     dcterms:identifier ?id ;
+     schema:name ?name ;
+     schema:address ?pAddr ;
+     geo:hasGeometry ?geom .
+  ?pAddr schema:addressLocality ?city .
+  ?geom geo:lat ?lat .
 }
 ORDER BY DESC(xsd:double(?lat))
 LIMIT 10
 
 ################################################################################
 # QUERY 8 - Top ten westernmost parkings (lowest longitude values)
-## Retrieves the ten parking resources with the smallest longitude values (the westernmost ones), showing their identifier (ns:hasId), name (ns:hasName), town (ns:hasTown), and longitude (ns:hasLongitude)
+## Retrieves the ten parking resources with the smallest longitude values (the westernmost ones), showing their identifier (dcterms:identifier), name (schema:name), city (schema:addressLocality), and longitude (geo:long)
 ################################################################################
-SELECT ?id ?name ?town ?long
+SELECT ?id ?name ?city ?long
 WHERE {
-  ?s a ns:Parking ;
-     ns:hasId ?id ;
-     ns:hasName ?name ;
-     ns:hasLocation ?loc .
-  ?loc ns:hasTown ?town ;
-       ns:hasLongitude ?long .
+  ?p a schema:ParkingFacility ;
+     dcterms:identifier ?id ;
+     schema:name ?name ;
+     schema:address ?pAddr ;
+     geo:hasGeometry ?geom .
+  ?pAddr schema:addressLocality ?city .
+  ?geom geo:long ?long .
 }
 ORDER BY ASC(xsd:double(?long))
 LIMIT 10

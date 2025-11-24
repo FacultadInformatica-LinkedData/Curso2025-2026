@@ -1,0 +1,133 @@
+###############################################################
+# SPARQL Queries for Linked Datasets (Group24)
+# -------------------------------------------------------------
+# These queries are meant to validate the RDF generated 
+# from the Arbolado, NO2, and Expenditure datasets.
+# 
+# Save this file as: queries-with-links.sparql
+###############################################################
+
+PREFIX ex: <http://group24.linkeddata.es/ontology/>
+PREFIX res: <http://group24.linkeddata.es/resource/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+###############################################################
+# 1. General sanity check: list all classes and instance counts
+###############################################################
+
+SELECT ?class (COUNT(?instance) AS ?count)
+WHERE {
+  ?instance a ?class .
+}
+GROUP BY ?class
+ORDER BY DESC(?count)
+
+###############################################################
+# 2. Arbolado dataset: list tree observations with linked districts
+###############################################################
+
+SELECT ?tree ?species ?district ?districtURI
+WHERE {
+  ?tree a ex:Tree ;
+        ex:species ?species ;
+        ex:district ?district .
+  OPTIONAL { ?tree ex:linkedDistrict ?districtURI . }
+}
+LIMIT 20
+
+###############################################################
+# 3. Arbolado dataset: count number of trees per district
+###############################################################
+
+SELECT ?district (COUNT(?tree) AS ?numTrees)
+WHERE {
+  ?tree a ex:Tree ;
+        ex:district ?district .
+}
+GROUP BY ?district
+ORDER BY DESC(?numTrees)
+
+###############################################################
+# 4. NO2 dataset: list NO2 values per year and location
+###############################################################
+
+SELECT ?observation ?location ?year ?value
+WHERE {
+  ?observation a ex:NO2Observation ;
+               ex:featureOfInterest ?location ;
+               ex:year ?year ;
+               ex:value ?value .
+}
+ORDER BY ?year
+LIMIT 20
+
+###############################################################
+# 5. NO2 dataset: average NO2 value by year
+###############################################################
+
+SELECT ?year (AVG(?value) AS ?avgNO2)
+WHERE {
+  ?obs a ex:NO2Observation ;
+       ex:year ?year ;
+       ex:value ?value .
+}
+GROUP BY ?year
+ORDER BY ?year
+
+###############################################################
+# 6. Environmental Expenditure dataset: list expenditure per year
+###############################################################
+
+SELECT ?record ?year ?value
+WHERE {
+  ?record a ex:ExpenditureRecord ;
+          ex:year ?year ;
+          ex:value ?value .
+}
+ORDER BY ?year
+
+###############################################################
+# 7. Environmental Expenditure dataset: compute total expenditure
+###############################################################
+
+SELECT (SUM(?value) AS ?totalExpenditure)
+WHERE {
+  ?record a ex:ExpenditureRecord ;
+          ex:value ?value .
+}
+
+###############################################################
+# 8. Check linking consistency: resources connected to external URIs
+###############################################################
+
+SELECT ?subject ?property ?external
+WHERE {
+  ?subject ?property ?external .
+  FILTER(isIRI(?external) && STRSTARTS(STR(?external), "https://www.wikidata.org"))
+}
+LIMIT 30
+
+###############################################################
+# 9. Dataset metadata overview (from DCAT)
+###############################################################
+
+SELECT ?dataset ?title
+WHERE {
+  ?dataset a dcat:Dataset ;
+            dct:title ?title .
+}
+ORDER BY ?title
+
+###############################################################
+# 10. Verify linked years (reconciled entities)
+###############################################################
+
+SELECT ?record ?linkedYear
+WHERE {
+  ?record ex:year ?linkedYear .
+  FILTER(isIRI(?linkedYear))
+}
+LIMIT 20

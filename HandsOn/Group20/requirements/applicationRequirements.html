@@ -1,106 +1,198 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Parking Finder Application — Requirements & UI Mockups</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.55; color:#0f172a; }
-    h1 { font-size: 24px; }
-    h2 { font-size: 18px; margin-top: 24px; }
-    ul { margin-left: 18px; }
-    .mockup { border:1px solid #cbd5e1; border-radius:8px; padding:12px; margin:12px 0; background:#f8fafc; }
-    pre { font-size: 13px; line-height: 1.4; background:#e2e8f0; padding:8px; border-radius:4px; overflow:auto; }
-    .note { font-size: 13px; color:#334155; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      line-height: 1.55;
+      color: #0f172a;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 24px;
+    }
+
+    ul {
+      margin-left: 18px;
+    }
+
+    .mockup {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 12px;
+      margin: 12px 0;
+      background: #f8fafc;
+    }
+
+    pre {
+      font-size: 13px;
+      line-height: 1.4;
+      background: #e2e8f0;
+      padding: 8px;
+      border-radius: 4px;
+      overflow: auto;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #334155;
+    }
   </style>
 </head>
+
 <body>
   <h1>Parking Finder Application — Requirements and UI Mockups</h1>
 
   <h2>1. Application Overview</h2>
-  <p>The application will leverage the <em>Aparcamientos EMT</em> dataset to allow users to search for and locate parking lots in Madrid. Users will be able to filter by type of parking lot (e.g., rotation, residents, park-and-ride), view results on a map or list, and explore parking details.</p>
+  <p>The application is developed using the <em>Aparcamientos EMT</em> dataset (EMT Madrid Open Data), analyzed in the
+    <em>Data Source Analysis</em> and <em>Dataset Requirements</em> documents. It enables users to explore parking
+    facilities across Madrid, offering search and filtering options and displaying results on an interactive map with
+    detailed information for each facility.</p>
 
   <h2>2. Functional Requirements</h2>
   <ul>
-    <li><strong>Search by type:</strong> Users can select parking lot categories (rotation, residents, park-and-ride, etc.).</li>
-    <li><strong>Search by location:</strong> Users can enter an address or use geolocation to find nearby parking lots.</li>
-    <li><strong>Filter options:</strong> Filters for availability of residents-only, rotation, 24h, electric charging stations, etc.</li>
-    <li><strong>Map view:</strong> Display parking lots on a map with markers based on coordinates (<code>lat,long</code>).</li>
-    <li><strong>List view:</strong> Display parking lots in a scrollable list with name, address, type, and distance.</li>
-    <li><strong>Detail view:</strong> Each parking lot shows address, type, capacity, opening hours, and a link to EMT page.</li>
-    <li><strong>Favorites:</strong> Users can save favorite parking lots for quick access.</li>
-    <li><strong>Attribution:</strong> The app must show attribution to EMT open data (CC‑BY license).</li>
+    <li><strong>Search by name:</strong> Users can enter text to find parking lots by matching it against the facility
+      name.</li>
+    <li><strong>Search by location:</strong> Users can enter a street address to locate nearby parking facilities, or
+      click on the map to retrieve the closest ones to that point.</li>
+    <li><strong>Filter options:</strong> Users can filter parking lots based on whether they are managed by EMT.</li>
+    <li><strong>Map view:</strong> Display parking facilities on an interactive map with markers positioned according to
+      their coordinates (<code>lat, long</code>).</li>
+    <li><strong>List view:</strong> Display parking lots in a scrollable list showing their name and distance.</li>
+    <li><strong>Detail view:</strong> Each parking facility displays its main attributes, including its identifier,
+      family, name, email, street address, postal code, autonomous community, category, category code, URL icon,
+      coordinates, city, EMT status, type, and Wikidata links.</li>
+    <li><strong>Favorites:</strong> Users can save parking lots as favorites for quick access and remove them at any
+      time.</li>
+    <li><strong>Attribution:</strong> The app must show: “Data sourced from EMT Madrid Open Data (Aparcamientos EMT
+      dataset), licensed under CC-BY 4.0”.</li>
   </ul>
 
   <h2>3. Non-Functional Requirements</h2>
   <ul>
-    <li><strong>Performance:</strong> Fast search and filtering (under 2s for results).</li>
-    <li><strong>Usability:</strong> Clear interface, mobile-friendly layout, accessible color contrast.</li>
-    <li><strong>Scalability:</strong> Ability to add additional datasets (traffic, occupancy sensors) in the future.</li>
-    <li><strong>Internationalization:</strong> Support for Spanish (default) and English.</li>
+    <li><strong>Performance:</strong> Fast search and filtering, with results generally displayed in under two seconds.
+    </li>
+    <li><strong>Usability:</strong> Clear and intuitive interface in which both the side panel and the map provide
+      interactive search and result exploration features.</li>
+    <li><strong>Scalability:</strong> Ability to accommodate additional layers in the future (such as traffic data or
+      occupancy sensors).
+    </li>
+    <li><strong>Internationalization:</strong> Current support for Spanish, with the possibility of extending to
+      additional languages.</li>
   </ul>
 
   <h2>4. User Interface Description</h2>
-  <p>The user interface will have three main sections:</p>
+  <p>The user interface is structured into three sections:</p>
   <ol>
-    <li><strong>Home/Search Screen:</strong> Search bar, type filter dropdown, location input, and quick access buttons.</li>
-    <li><strong>Results Screen:</strong> Map view with pins for parking lots and a toggle for list view.</li>
-    <li><strong>Detail Screen:</strong> Displays details of the selected parking lot with options to save as favorite.</li>
+    <li><strong>Side panel:</strong> Search bar, EMT filter, nearby-results list, and access to favorites.
+    </li>
+    <li><strong>Map area:</strong> Interactive map that displays parking facilities with markers and allows users to
+      initiate searches by clicking on it.</li>
+    <li><strong>Detail view:</strong> Presents detailed information about the selected parking lot.
+    </li>
   </ol>
 
-  <h2>5. UI Mockups (ASCII wireframes)</h2>
+  <h2>5. UI Mockups (ASCII Wireframes)</h2>
 
   <div class="mockup">
-    <h3>Home/Search Screen</h3>
+    <h3>Side Panel</h3>
     <pre>
-  +-------------------------------------------------+
-  |  Parking Finder                                 |
-  +-------------------------------------------------+
-  | Search: [ Address or place  ____________ ] [🔍] |
-  | Type:   [ Rotation ▼ ] [ Residents ▼ ] [✔️]    |
-  | [ Use my location ]                            |
-  +-------------------------------------------------+
-  | [ Find Parking ]                                |
-  +-------------------------------------------------+
+  +------------------------------------------------------------------------------------+
+  | Búsqueda de parkings                                                               |
+  | Nombre o calle: [___________________________]                                      |
+  | Filtro EMT: [ -- cualquiera -- ▼ ]                                                 |
+  | [ Buscar ]    [ Reiniciar búsqueda ]                                               |
+  |                                                                                    |
+  | Click en el mapa para buscar parkings cercanos                                     |
+  |                                                                                    |
+  | Parkings cercanos                                                                  |
+  | - Mostenses ......................... 349 m                                        |
+  | - Luna-Tudescos ..................... 389 m                                        |
+  | - Arquitecto Ribera ................. 440 m                                        |
+  | ...                                                                                |
+  +------------------------------------------------------------------------------------+
+  | Datos obtenidos de EMT Madrid Open Data (dataset de Aparcamientos EMT) — CC-BY 4.0 |
+  +------------------------------------------------------------------------------------+
     </pre>
   </div>
 
   <div class="mockup">
-    <h3>Results Screen</h3>
+    <h3>Map Area</h3>
     <pre>
-  +-------------------------------------------------+
-  | Map View (with pins at lat/long)                |
-  |                                                 |
-  |   📍 Argüelles Parking                          |
-  |   📍 Plaza de España                            |
-  |                                                 |
-  +-------------------------------------------------+
-  | Toggle: [Map View] [List View]                  |
-  +-------------------------------------------------+
-  | List View Example:                              |
-  | - Argüelles | C. Princesa, 10 | Rotation        |
-  | - Pza. España | Pza. España | Residents         |
-  +-------------------------------------------------+
+  +----------------------------------------------------------------+
+  |                    [Interactive OSM Map]                       |
+  |                                                                |
+  |   • Orange markers = parking facilities                        |
+  |   • Green marker = clicked point                               |
+  |                                                                |
+  +----------------------------------------------------------------+
+  |  [✔] Auto-buscar al clicar                                     |
+  +----------------------------------------------------------------+
     </pre>
   </div>
 
   <div class="mockup">
-    <h3>Detail Screen</h3>
+    <h3>Detail View</h3>
     <pre>
-  +-------------------------------------------------+
-  | Parking Lot: Argüelles                          |
-  | Address: C. Princesa, 10                        |
-  | Type: Rotation                                  |
-  | Capacity: 500                                   |
-  | Opening Hours: 24h                              |
-  | [ Save as Favorite ]  [ Open in Maps ]          |
-  +-------------------------------------------------+
-  | Attribution: Data © EMT Open Data (CC-BY)       |
-  +-------------------------------------------------+
+  +-------------------------------------------------------------------------------------------------------------------------------+
+  | {                                                                                                                             |
+  | "identifier": 2,                                                                                                              |
+  | "family": 001,                                                                                                                |
+  | "name": "Colón",                                                                                                              |
+  | "email": "",                                                                                                                  |
+  | "streetAddress": "Plaza de Colón S/n",                                                                                        |
+  | "postalCode": "28001",                                                                                                        |
+  | "autonomousCommunity": "Community of Madrid",                                                                                 |
+  | "wikidataAutonomousCommunity": "https://wikidata.org/entity/Q5756",                                                           |
+  | "category": "General",                                                                                                        |
+  | "categoryCode": 001,                                                                                                          |
+  | "country": "Spain",                                                                                                           |
+  | "wikidataCountry": "https://www.wikidata.org/entity/Q29",                                                                     |
+  | "URLIcon": "https://servicios.emtmadrid.es:8443/InfoParking/iconos/IconosCuadradosPico/aparcamiento_p.png",                   |
+  | "long": -3.6899392,                                                                                                           |
+  | "lat": 40.4247093,                                                                                                            |
+  | "openStreetMapCoordinates": "https://www.openstreetmap.org/?mlat=40.4247093&mlon=-3.6899392#map=18/40.4247093/-3.6899392",    |
+  | "city": "Madrid",                                                                                                             |
+  | "wikidataCity": "https://wikidata.org/entity/Q2807",                                                                          |
+  | "EMTParking": false,                                                                                                          |
+  | "type": "Aparcamiento"                                                                                                        |
+  | }                                                                                                                             |
+  +-------------------------------------------------------------------------------------------------------------------------------+
     </pre>
   </div>
 
   <footer class="note">
-    <p><strong>Note:</strong> These are conceptual mock-ups to illustrate the UI flow. Final designs will use modern UI components and responsive layouts.</p>
+    <p><strong>Note</strong>: The mockups include Spanish labels to match the actual implementation of the application.
+      These are conceptual mockups intended to illustrate the UI flow; final designs will use modern UI components and
+      responsive layouts.</p>
   </footer>
+
+  <h2>6. Interaction Flow</h2>
+  <ol>
+    <li>The user enters a name or a street address and presses "<strong>Buscar</strong>".</li>
+    <li>The map displays the matching results and the side panel updates accordingly.</li>
+    <li>The user clicks a marker or list item to view its details.</li>
+    <li>The user may add/remove the parking facility from favorites.</li>
+    <li>If the user clicks on the map, the closest parking lots are retrieved and listed.</li>
+  </ol>
+
+  <h2>7. Consistency with Dataset and Ontology</h2>
+  <p>This application has been designed in full alignment with the dataset (<code>parkings.csv</code>),
+    the ontology defined at <code>https://data.smartcitymadrid.es/ontology/parking#</code>,
+    and the resource naming strategy described in the Data Source Analysis document.
+    All entities displayed in the interface correspond to Linked Data resources under
+    <code>https://data.smartcitymadrid.es/resource/parking/{id}</code>.
+  </p>
 </body>
+
 </html>

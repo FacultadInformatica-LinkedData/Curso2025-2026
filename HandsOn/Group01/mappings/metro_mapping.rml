@@ -20,13 +20,13 @@
 map:map_AccessibilityTypeMapping_000 rml:logicalSource map:source_006 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "AccessibilityTypeMapping" ;
-	rr:predicateObjectMap map:pom_039, map:pom_040 ;
+	rr:predicateObjectMap map:pom_041, map:pom_042 ;
 	rr:subjectMap map:s_006 .
 
 map:map_LineHasStationMapping_000 rml:logicalSource map:source_008 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "LineHasStationMapping" ;
-	rr:predicateObjectMap map:pom_043, map:pom_044 ;
+	rr:predicateObjectMap map:pom_045, map:pom_046 ;
 	rr:subjectMap map:s_008 .
 
 map:map_MetroLineMapping_000 rml:logicalSource map:source_000 ;
@@ -44,7 +44,7 @@ map:map_OperatorMapping_000 rml:logicalSource map:source_003 ;
 map:map_ServiceTypeMapping_000 rml:logicalSource map:source_005 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "ServiceTypeMapping" ;
-	rr:predicateObjectMap map:pom_037, map:pom_038 ;
+	rr:predicateObjectMap map:pom_037, map:pom_038, map:pom_039, map:pom_040 ;
 	rr:subjectMap map:s_005 .
 
 map:map_StationLineMapping_000 rml:logicalSource map:source_002 ;
@@ -62,7 +62,7 @@ map:map_StationMapping_000 rml:logicalSource map:source_001 ;
 map:map_StationStatusMapping_000 rml:logicalSource map:source_007 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "StationStatusMapping" ;
-	rr:predicateObjectMap map:pom_041, map:pom_042 ;
+	rr:predicateObjectMap map:pom_043, map:pom_044 ;
 	rr:subjectMap map:s_007 .
 
 map:map_TransportFamilyMapping_000 rml:logicalSource map:source_004 ;
@@ -218,7 +218,7 @@ map:om_030 rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_031 rdf:type rr:ObjectMap ;
-	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{ID_TIPUS_SERVEI}" ;
+	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{SLUG_SERVEI}" ;
 	rr:termType rr:IRI .
 
 map:om_032 rdf:type rr:ObjectMap ;
@@ -253,29 +253,39 @@ map:om_038 rml:reference "DESC_SERVEI" ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
-map:om_039 rdf:type rr:ObjectMap ;
-	rr:constant metro:AccessibilityType ;
-	rr:termType rr:IRI .
+map:om_039 rml:reference "ORIGEN_SERVEI" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
 
-map:om_040 rml:reference "NOM_TIPUS_ACCESSIBILITAT" ;
+map:om_040 rml:reference "DESTI_SERVEI" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
 map:om_041 rdf:type rr:ObjectMap ;
-	rr:constant metro:StationStatus ;
+	rr:constant metro:AccessibilityType ;
 	rr:termType rr:IRI .
 
-map:om_042 rml:reference "NOM_TIPUS_ESTAT" ;
+map:om_042 rml:reference "NOM_TIPUS_ACCESSIBILITAT" ;
 	rdf:type rr:ObjectMap ;
 	rr:datatype xsd:string ;
 	rr:termType rr:Literal .
 
 map:om_043 rdf:type rr:ObjectMap ;
+	rr:constant metro:StationStatus ;
+	rr:termType rr:IRI .
+
+map:om_044 rml:reference "NOM_TIPUS_ESTAT" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_045 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/station/{CODI_ESTACIO}" ;
 	rr:termType rr:IRI .
 
-map:om_044 rdf:type rr:ObjectMap ;
+map:om_046 rdf:type rr:ObjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/stationLine/{CODI_ESTACIO}_L{CODI_LINIA}" ;
 	rr:termType rr:IRI .
 
@@ -397,10 +407,10 @@ map:pm_038 rdf:type rr:PredicateMap ;
 	rr:constant rdfs:label .
 
 map:pm_039 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
+	rr:constant metro:serviceOrigin .
 
 map:pm_040 rdf:type rr:PredicateMap ;
-	rr:constant rdfs:label .
+	rr:constant metro:serviceDestination .
 
 map:pm_041 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
@@ -409,9 +419,15 @@ map:pm_042 rdf:type rr:PredicateMap ;
 	rr:constant rdfs:label .
 
 map:pm_043 rdf:type rr:PredicateMap ;
-	rr:constant metro:hasStation .
+	rr:constant rdf:type .
 
 map:pm_044 rdf:type rr:PredicateMap ;
+	rr:constant rdfs:label .
+
+map:pm_045 rdf:type rr:PredicateMap ;
+	rr:constant metro:hasStation .
+
+map:pm_046 rdf:type rr:PredicateMap ;
 	rr:constant metro:hasStationLineRelation .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -594,6 +610,14 @@ map:pom_044 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_044 ;
 	rr:predicateMap map:pm_044 .
 
+map:pom_045 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_045 ;
+	rr:predicateMap map:pm_045 .
+
+map:pom_046 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_046 ;
+	rr:predicateMap map:pm_046 .
+
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_AccessibilityTypeMapping_000, map:map_LineHasStationMapping_000, map:map_MetroLineMapping_000, map:map_OperatorMapping_000, map:map_ServiceTypeMapping_000, map:map_StationLineMapping_000, map:map_StationMapping_000, map:map_StationStatusMapping_000, map:map_TransportFamilyMapping_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
@@ -613,7 +637,7 @@ map:s_004 rdf:type rr:SubjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/transportFamily/{NOM_FAMILIA}" .
 
 map:s_005 rdf:type rr:SubjectMap ;
-	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{ID_TIPUS_SERVEI}" .
+	rr:template "https://data.example.org/transport/bcn/metro/resource/serviceType/{SLUG_SERVEI}" .
 
 map:s_006 rdf:type rr:SubjectMap ;
 	rr:template "https://data.example.org/transport/bcn/metro/resource/accessibilityType/{NOM_TIPUS_ACCESSIBILITAT}" .

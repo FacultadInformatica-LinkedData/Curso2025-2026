@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "contains": "ex:contains",
+    "hasMeasurement": "ex:hasMeasurement",
+    "hasTemperature": "ex:hasTemperature",
+    "atTime": {
+      "@id": "ex:atTime",
+      "@type": "xsd:dateTime"
+    },
+    "hasOwner": "ex:hasOwner",
+    "hasName": "ex:hasName",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+
+  "@id": "ex:ClassRoom03",
+  "contains": [
+    { "@id": "ex:Sensor347" },
+    { "@id": "ex:Table322" }
+  ],
+
+  "ex:Sensor347": {
+    "@id": "ex:Sensor347",
+    "hasMeasurement": { "@id": "ex:Measurement8432" }
+  },
+
+  "ex:Measurement8432": {
+    "@id": "ex:Measurement8432",
+    "hasTemperature": 29,
+    "atTime": "2022-09-12T12:01:12"
+  },
+
+  "ex:Table322": {
+    "@id": "ex:Table322",
+    "hasOwner": { "@id": "ex:ETSIInformatics" }
+  },
+
+  "ex:ETSIInformatics": {
+    "@id": "ex:ETSIInformatics",
+    "hasName": "ETSI Informáticos"
+  }
+}

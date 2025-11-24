@@ -1,0 +1,20 @@
+{
+  "@type": "ClassRoom",
+  "includes": [
+    {
+      "@type": "Sensor",
+      "hasMeasurement": {
+        "@type": "Measurement",
+        "hasTemperature": 29,
+        "atTime": "2010-06-12T12:00:12"
+      }
+    },
+    {
+      "@type": "Computer",
+      "hasOwner": {
+        "@type": "User",
+        "hasName": "Pedro"
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix : <http://group25.linkeddata.es/ontology/accidents#> .
+
+#################################################################
+# Ontology header
+#################################################################
+
+<http://group25.linkeddata.es/ontology/accidents>
+  a owl:Ontology ;
+  dcterms:title "Ontology for Madrid Traffic Accidents 2024"@en ;
+  dcterms:creator "Group25 - Linked Data Hands-On" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:source "Dataset: Accidentes de tráfico en la Ciudad de Madrid (2024)"@es ;
+  owl:versionInfo "1.0" .
+
+#################################################################
+# Classes
+#################################################################
+
+:Accidente a owl:Class ;
+  rdfs:label "Accidente de tráfico"@es ;
+  rdfs:comment "Evento de accidente de tráfico ocurrido en la ciudad de Madrid."@es .
+
+:Distrito a owl:Class ;
+  rdfs:label "Distrito"@es ;
+  rdfs:comment "Unidad administrativa de la ciudad de Madrid donde ocurre el accidente."@es ;
+  rdfs:subClassOf schema:Place .
+
+:TipoAccidente a owl:Class ;
+  rdfs:label "Tipo de accidente"@es ;
+  rdfs:comment "Categoría del tipo de accidente (colisión, atropello, vuelco, etc.)."@es .
+
+:Persona a owl:Class ;
+  rdfs:label "Persona implicada"@es ;
+  rdfs:comment "Persona implicada en el accidente (conductor, pasajero o peatón)."@es ;
+  rdfs:subClassOf schema:Person .
+
+:Vehiculo a owl:Class ;
+  rdfs:label "Vehículo implicado"@es ;
+  rdfs:comment "Vehículo involucrado en el accidente."@es ;
+  rdfs:subClassOf schema:Vehicle .
+
+#################################################################
+# Object Properties
+#################################################################
+
+:tieneDistrito a owl:ObjectProperty ;
+  rdfs:label "tiene distrito"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range :Distrito ;
+  rdfs:comment "Relaciona un accidente con el distrito donde ocurre."@es .
+
+:tieneTipoAccidente a owl:ObjectProperty ;
+  rdfs:label "tiene tipo de accidente"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range :TipoAccidente ;
+  rdfs:comment "Asocia un accidente con su categoría de tipo de accidente."@es .
+
+:tienePersona a owl:ObjectProperty ;
+  rdfs:label "tiene persona implicada"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range :Persona ;
+  rdfs:comment "Relaciona un accidente con las personas implicadas."@es .
+
+:tieneVehiculo a owl:ObjectProperty ;
+  rdfs:label "tiene vehículo implicado"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range :Vehiculo ;
+  rdfs:comment "Relaciona un accidente con los vehículos implicados."@es .
+
+#################################################################
+# Datatype Properties
+#################################################################
+
+:fecha a owl:DatatypeProperty ;
+  rdfs:label "fecha"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range xsd:date .
+
+:hora a owl:DatatypeProperty ;
+  rdfs:label "hora"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range xsd:string .
+
+:localizacion a owl:DatatypeProperty ;
+  rdfs:label "localización"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range xsd:string .
+
+:estadoMeteorologico a owl:DatatypeProperty ;
+  rdfs:label "estado meteorológico"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range xsd:string .
+
+:coordenadaX a owl:DatatypeProperty ;
+  rdfs:label "coordenada X (UTM)"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range xsd:float .
+
+:coordenadaY a owl:DatatypeProperty ;
+  rdfs:label "coordenada Y (UTM)"@es ;
+  rdfs:domain :Accidente ;
+  rdfs:range xsd:float .
+
+:rangoEdad a owl:DatatypeProperty ;
+  rdfs:label "rango de edad"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:string .
+
+:sexo a owl:DatatypeProperty ;
+  rdfs:label "sexo"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:string .
+
+:tipoPersona a owl:DatatypeProperty ;
+  rdfs:label "tipo de persona"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:string .
+
+:lesividad a owl:DatatypeProperty ;
+  rdfs:label "lesividad"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:string .
+
+:codigoLesividad a owl:DatatypeProperty ;
+  rdfs:label "código de lesividad"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:integer .
+
+:positivoAlcohol a owl:DatatypeProperty ;
+  rdfs:label "positivo alcohol"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:boolean .
+
+:positivoDroga a owl:DatatypeProperty ;
+  rdfs:label "positivo droga"@es ;
+  rdfs:domain :Persona ;
+  rdfs:range xsd:boolean .
+
+:tipoVehiculo a owl:DatatypeProperty ;
+  rdfs:label "tipo de vehículo"@es ;
+  rdfs:domain :Vehiculo ;
+  rdfs:range xsd:string .
+
+:distritoNombre a owl:DatatypeProperty ;
+  rdfs:label "nombre del distrito"@es ;
+  rdfs:domain :Distrito ;
+  rdfs:range xsd:string .
+
+#################################################################
+# Alignment with external vocabularies
+#################################################################
+
+:fecha rdfs:subPropertyOf schema:startDate .
+:hora rdfs:subPropertyOf schema:startTime .
+:localizacion rdfs:subPropertyOf schema:address .
+:estadoMeteorologico rdfs:subPropertyOf schema:weather .
+:sexo rdfs:subPropertyOf schema:gender .
+:rangoEdad rdfs:subPropertyOf schema:ageGroup .
+:tipoVehiculo rdfs:subPropertyOf schema:vehicleType .
+:distritoNombre rdfs:subPropertyOf schema:name .

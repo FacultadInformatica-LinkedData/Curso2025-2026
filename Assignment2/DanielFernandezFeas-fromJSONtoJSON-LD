@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "res": "https://www.example.org/resources#",
+    "prop": "https://www.example.org/properties#",
+    "name": "prop:name",
+    "secondName": "prop:secondName",
+    "homeLocation": "prop:homeLocation",
+    "age": "prop:age",
+    "almaMater": "prop:almaMater",
+    "parents": { "@id": "prop:parents", "@type": "@id" },
+    "subject": "prop:subject",
+    "teachers": { "@id": "prop:teachers", "@type": "@id" },
+    "description": "prop:description"
+  },
+
+  "@id": "res:a2025002",
+  "@type": "prop:Person",
+
+  "name": "Adrian",
+  "secondName": "Fernandez de la Rosa",
+  "homeLocation": "Boadilla del Monte",
+  "age": 21,
+  "almaMater": "ETSIINF UPM",
+
+  "parents": {
+    "father": "Oscar",
+    "mother": "Monica"
+  },
+
+  "subjects": [
+
+    {
+      "@id": "res:s01",
+      "@type": "prop:Subject",
+      "subject": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": [
+        { "@id": "res:p01", "name": "Oscar Corcho Garcia" }
+      ],
+      "description": "Study publication of vocabularies and data on the Web of Linked Data."
+    },
+
+    {
+      "@id": "res:s02",
+      "@type": "prop:Subject",
+      "subject": "El arte de programar",
+      "teachers": [
+        { "@id": "res:p02", "name": "Julio Mariño" }
+      ],
+      "description": "Algorithmic techniques to efficiently solve complex programming tasks."
+    }
+  ]
+}

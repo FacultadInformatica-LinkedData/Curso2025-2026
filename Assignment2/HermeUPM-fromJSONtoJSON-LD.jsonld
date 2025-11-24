@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alejandro de Hermenegildo",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Madrid"
+  },
+  "birthDate": "2002-07-25", 
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "UPM"
+  },
+  "parent": [
+    {
+      "@type": "Person",
+      "name": "Manuel",
+      "description": "Father"
+    },
+    {
+      "@type": "Person",
+      "name": "Beatriz",
+      "description": "Mother"
+    }
+  ],
+  "subjectOf": [
+    {
+      "@type": "Course",
+      "name": "Operating Systems",
+      "description": "Study of process management, scheduling, memory, and file systems with practical lab exercises.",
+      "provider": [
+        {
+          "@type": "Person",
+          "name": "Prof. Francisco Rosales"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "Web Semantica",
+      "description": "Introduction to RDF and linked data.",
+      "provider": {
+        "@type": "Person",
+        "name": "Prof. Raul Garcia Castro"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Databases",
+      "description": "Covers relational models, SQL, normalization, and transaction management.",
+      "provider": [
+        {
+          "@type": "Person",
+          "name": "Prof. Pedro Martín"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "name": "Software Engineering II",
+      "description": "Focuses on software development methodologies, project management, and design patterns.",
+      "provider": {
+        "@type": "Person",
+        "name": "Prof. Carlos Díaz"
+      }
+    }
+  ]
+}

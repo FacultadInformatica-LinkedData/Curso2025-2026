@@ -57,82 +57,92 @@
 <body>
     <div class="container">
         <h1>Dataset Analysis for Museums of Madrid Explorer</h1>
-
         <div class="section">
             <h2>1. Dataset Analysis</h2>
-            <p>This section analyzes the dataset used for the Museums of Madrid Explorer application, focusing on its schema, quantities, and value ranges. The dataset is sourced from the Madrid City Council's open data portal and contains information about museums in Madrid.</p>
-
+            <p>This section analyzes the dataset used for the Museums of Madrid Explorer application, focusing on its schema, quantities, and value ranges. The dataset is sourced from the Madrid City Council's open data portal and contains information about museums in Madrid. It is provided in CSV format with semicolon-separated values, as shown in the provided document "Museos Madrid.csv".</p>
             <h3>Schema Analysis</h3>
-            <p>The dataset is structured as RDF data in Turtle syntax, as shown in museums-madrid-example.ttl. It follows an ontology defined in museums-madrid.ttl. The main components of the schema are:</p>
-
-            <h4>Classes:</h4>
+            <p>The dataset is structured as a CSV file with 29 columns (fields) per row, representing detailed information about each museum. The header row defines the schema as follows:</p>
+            <h4>Fields (Columns):</h4>
             <ul>
-                <li>ns:Museum: Represents a museum entity.</li>
-                <li>ns:Neighbourhood: Represents the neighbourhood (barrio) where the museum is located.</li>
-                <li>ns:District: Represents the district of Madrid containing the museum.</li>
-                <li>ns:Location: Represents the geographical location of a museum (latitude, longitude, coordinates).</li>
-                <li>ns:Province: Represents the province associated with the museum’s location (e.g., Madrid).</li>
+                <li>PK: Unique identifier (integer, e.g., 6017808).</li>
+                <li>NOMBRE: Name of the museum (string, e.g., "Casa Museo Fuente del Rey").</li>
+                <li>DESCRIPCION-ENTIDAD: Detailed description of the museum entity (string, often long text).</li>
+                <li>HORARIO: Schedule or opening hours (string, e.g., "De lunes a viernes de 10:00 a 19:00 horas.").</li>
+                <li>EQUIPAMIENTO: Equipment or facilities available (string, often empty or descriptive).</li>
+                <li>TRANSPORTE: Transportation options (string, e.g., "Metro: Antón Martín (línea 1)").</li>
+                <li>DESCRIPCION: Additional description (string, sometimes empty).</li>
+                <li>ACCESIBILIDAD: Accessibility level (string, e.g., "3" or "1,6" indicating codes for accessibility features).</li>
+                <li>CONTENT-URL: URL to more information (string, e.g., "http://www.madrid.es/...").</li>
+                <li>NOMBRE-VIA: Street name (string, e.g., "FUENTE DEL REY").</li>
+                <li>CLASE-VIAL: Street type (string, e.g., "CALLE").</li>
+                <li>TIPO-NUM: Number type (string, e.g., "V").</li>
+                <li>NUM: Street number (string, e.g., "11").</li>
+                <li>PLANTA: Floor (string, often empty).</li>
+                <li>PUERTA: Door (string, often empty).</li>
+                <li>ESCALERAS: Stairs (string, often empty).</li>
+                <li>ORIENTACION: Orientation (string, often empty).</li>
+                <li>LOCALIDAD: Locality (string, e.g., "MADRID").</li>
+                <li>PROVINCIA: Province (string, e.g., "MADRID").</li>
+                <li>CODIGO-POSTAL: Postal code (string, e.g., "28023").</li>
+                <li>COD-BARRIO: Neighborhood code (string, e.g., "7").</li>
+                <li>BARRIO: Neighborhood name (string, e.g., "ARAVACA").</li>
+                <li>COD-DISTRITO: District code (string, e.g., "9").</li>
+                <li>DISTRITO: District name (string, e.g., "MONCLOA-ARAVACA").</li>
+                <li>COORDENADA-X: X coordinate (integer, e.g., "434663").</li>
+                <li>COORDENADA-Y: Y coordinate (integer, e.g., "4478596").</li>
+                <li>LATITUD: Latitude (double, e.g., "40.45546866305681").</li>
+                <li>LONGITUD: Longitude (double, e.g., "-3.7705716814130965").</li>
+                <li>TELEFONO: Phone number (string, e.g., "913 579 116").</li>
+                <li>FAX: Fax number (string, often empty).</li>
+                <li>EMAIL: Email address (string, e.g., "info@fundaciofrandaurel.com").</li>
+                <li>TIPO: Type or category (string, e.g., "/contenido/entidadesYorganismos/FundacionesCulturales").</li>
             </ul>
-
-            <h4>Object Properties:</h4>
-            <ul>
-                <li>ns:hasLocation: Links a museum to its location details.</li>
-                <li>ns:hasNeighbourhood: Connects a museum to its neighbourhood.</li>
-                <li>ns:hasDistrict: Connects a museum to its district.</li>
-                <li>ns:hasProvince: Links a museum to its province.</li>
-            </ul>
-
-            <h4>Datatype Properties:</h4>
-            <ul>
-                <li>ns:name, ns:descriptionEntity, ns:description, ns:schedule, ns:equipment, ns:transport, ns:accessibility, ns:phone, ns:fax, ns:email, ns:type, ns:xCoordinate, ns:yCoordinate, ns:latitude, ns:longitude, ns:postalCode, ns:districtCode, ns:codeNeighbourhood, ns:address.</li>
-            </ul>
+            <p>This schema provides comprehensive details on museum metadata, location, accessibility, and contact information, making it suitable for conversion to Linked Data formats like RDF.</p>
         </div>
-
         <div class="section">
             <h3>Quantities and Value Ranges</h3>
-            <p>The dataset contains entries for multiple museums, with two examples provided (Casa Museo Fuente del Rey and Casa Museo Lope de Vega). Key observations:</p>
-
+            <p>The dataset contains entries for 41 museums (based on the provided document, which is truncated but lists distinct entries up to "Yacimiento paleontológico. Estación de Metro Carpetana"). Key observations:</p>
             <ul>
-                <li><strong>Number of Entries:</strong> The dataset contains multiple museums (sample data includes around 29 resources in total, including museums and their related entities).</li>
+                <li><strong>Number of Entries:</strong> 41 museums, with additional related data (e.g., neighborhoods, districts) implied through codes.</li>
                 <li><strong>Value Ranges:</strong>
                     <ul>
-                        <li>ns:name: String — e.g., "Museo del Prado", "Museo Thyssen-Bornemisza".</li>
-                        <li>ns:descriptionEntity: String — descriptive text about the museum’s history or collection (approx. 100–400 words).</li>
-                        <li>ns:schedule: String — opening hours, e.g., "Tuesday to Sunday, 10:00–19:00".</li>
-                        <li>ns:latitude, ns:longitude: Double — geographic coordinates (40.3–40.5, -3.7 to -3.9 for Madrid area).</li>
-                        <li>ns:xCoordinate, ns:yCoordinate: Integer — UTM coordinates for geolocation.</li>
-                        <li>ns:postalCode: String — five-digit postal codes, e.g., "28014".</li>
-                        <li>ns:accessibility: Numeric or categorical — e.g., "0", "3" (levels of accessibility).</li>
-                        <li>ns:email, ns:phone, ns:fax: Contact information (often optional or incomplete).</li>
+                        <li>PK: Integer — Unique IDs ranging from 2064 to 12329440.</li>
+                        <li>NOMBRE: String — Museum names, e.g., "Museo del Prado", "Templo de Debod" (typically 10–50 characters).</li>
+                        <li>DESCRIPCION-ENTIDAD: String — Descriptive text (100–1000+ characters, often historical overviews).</li>
+                        <li>HORARIO: String — Opening hours, e.g., "De martes a domingo, de 10 a 18 horas." (variable length, includes closures).</li>
+                        <li>ACCESIBILIDAD: String — Codes like "0", "1,4,6" (comma-separated integers from 0–6 indicating accessibility levels).</li>
+                        <li>LATITUD: Double — Latitudes ranging from approx. 40.39 to 40.54 (Madrid area).</li>
+                        <li>LONGITUD: Double — Longitudes ranging from approx. -3.78 to -3.59 (Madrid area).</li>
+                        <li>COORDENADA-X: Integer — X coordinates from approx. 434000 to 449000.</li>
+                        <li>COORDENADA-Y: Integer — Y coordinates from approx. 4471000 to 4488500.</li>
+                        <li>CODIGO-POSTAL: String — Five-digit codes, e.g., "28001" to "28049".</li>
+                        <li>TELEFONO: String — Phone numbers, e.g., "913 579 116" (often with multiple or extensions).</li>
+                        <li>EMAIL: String — Email addresses (optional, e.g., "info@fundaciofrandaurel.com").</li>
                     </ul>
                 </li>
-                <li><strong>Data Completeness:</strong> Some fields such as ns:equipment, ns:fax, or ns:address are frequently empty, suggesting partial data coverage.</li>
+                <li><strong>Data Completeness:</strong> Fields like EQUIPAMIENTO, FAX, PUERTA, and ESCALERAS are frequently empty. All entries have core fields like NOMBRE, LATITUD, and LONGITUD populated.</li>
             </ul>
         </div>
-
         <div class="section">
             <h2>2. Licensing Analysis</h2>
-            <p>The dataset is sourced from the Madrid City Council’s open data portal, as referenced in datasetRequirements.html. The analysis of the licensing is as follows:</p>
-
+            <p>The dataset is sourced from the Madrid City Council’s open data portal ("Datos Abiertos del Ayuntamiento de Madrid"), as indicated by the URLs in the CONTENT-URL field (e.g., "http://www.madrid.es/..."). The analysis of the licensing is as follows:</p>
             <ul>
-                <li><strong>Publisher and Rightsholder:</strong> The Madrid City Council is the publisher and rightsholder of the dataset, as it is hosted on their official open data portal.</li>
-                <li><strong>License:</strong> According to datasetRequirements.html, the dataset is released under an open license (e.g., CC-BY or public domain), which permits redistribution and publication for the Museums of Madrid Explorer application.</li>
-                <li><strong>Proposed License for Generated Dataset:</strong> The generated Linked Data dataset will adopt the Creative Commons Attribution 4.0 International (CC-BY 4.0) license to ensure compatibility with the original dataset’s open license and to allow reuse while requiring attribution to the Madrid City Council.</li>
+                <li><strong>Publisher and Rightsholder:</strong> The Madrid City Council (Ayuntamiento de Madrid) is the publisher and rightsholder of the dataset, as it is hosted on their official open data portal.</li>
+                <li><strong>License:</strong> The dataset is released under the "Licencia de Uso de Datos Abiertos del Ayuntamiento de Madrid", which is equivalent to the Creative Commons Attribution 4.0 International (CC-BY 4.0) license. This permits free use, redistribution, and adaptation, provided that attribution is given to the source (Madrid City Council). No restrictions on commercial use, but modifications must be shared under the same license terms.</li>
+                <li><strong>Proposed License for Generated Dataset:</strong> The generated Linked Data dataset will adopt the Creative Commons Attribution 4.0 International (CC-BY 4.0) license to ensure compatibility with the original dataset’s license and to allow reuse while requiring attribution to the Madrid City Council.</li>
             </ul>
         </div>
-
         <div class="section">
             <h2>3. Resource Naming Strategy</h2>
             <p>The resource naming strategy for the ontology and generated Linked Data is defined to ensure consistency, scalability, and compatibility with Linked Data principles. The strategy is as follows:</p>
-
             <ul>
-                <li><strong>URI Domain:</strong> http://data.example.org/madrid/ will be used as the base domain for the ontology and data, following the example in museums-madrid-example.ttl.</li>
-                <li><strong>Ontology URI:</strong> The ontology is defined at http://data.example.org/madrid/museos#, as seen in the provided museums-madrid.ttl.</li>
+                <li><strong>URI Domain:</strong> http://data.example.org/madrid/ will be used as the base domain for the ontology and data, following best practices for Linked Data.</li>
+                <li><strong>Ontology URI:</strong> The ontology will be defined at http://data.example.org/madrid/museos#.</li>
                 <li><strong>Resource URI Pattern:</strong>
                     <ul>
-                        <li><strong>Museums:</strong> http://data.example.org/madrid/museos/resource/{museumID}, where {museumID} is a unique identifier (e.g., ns:6017808 for Casa Museo Fuente del Rey).</li>
-                        <li><strong>Classes:</strong> http://data.example.org/madrid/museos#{className}, e.g., ns:Museum, ns:Address.</li>
-                        <li><strong>Properties:</strong> http://data.example.org/madrid/museos#{propertyName}, e.g., ns:name, ns:hasAddress.</li>
+                        <li><strong>Museums:</strong> http://data.example.org/madrid/museos/resource/{MuseumName}, where {MuseumName} is the name of the museum, we suppose the name is unique (e.g., http://data.example.org/madrid/museos/resource/Casa_Museo_Fuente_del_Rey for Casa Museo Fuente del Rey).</li>
+                        <li><strong>Classes:</strong> http://data.example.org/madrid/museos#{className}, e.g., ns:Museum, ns:Location.</li>
+                        <li><strong>Properties:</strong> http://data.example.org/madrid/museos#{propertyName}, e.g., ns:name, ns:hasLocation.</li>
                     </ul>
                 </li>
                 <li><strong>Content Negotiation:</strong> The URIs will support content negotiation to deliver data in multiple formats:
@@ -146,17 +156,16 @@
                 <li><strong>Path Structure:</strong>
                     <ul>
                         <li><strong>Ontology:</strong> /madrid/museos#</li>
-                        <li><strong>Data instances:</strong> /madrid/museos/resource/{museumID}</li>
+                        <li><strong>Data instances:</strong> /madrid/museos/resource/{PK}</li>
                     </ul>
                 </li>
-                <li><strong>Identifier Pattern:</strong> Museum identifiers will use the existing IDs from the dataset (e.g., 6017808, 4847190) to maintain consistency with the source data.</li>
-                <li><strong>Reusability:</strong> The URIs are designed to be dereferenceable, allowing external systems to access and link to the museum data. The use of geo: properties (e.g., ns:latitude, ns:longitude) ensures compatibility with standard geospatial vocabularies.</li>
+                <li><strong>Identifier Pattern:</strong> Museum identifiers will use the PK field from the CSV to maintain consistency with the source data.</li>
+                <li><strong>Reusability:</strong> The URIs are designed to be dereferenceable, allowing external systems to access and link to the museum data. Geospatial properties (e.g., LATITUD, LONGITUD) will map to standard vocabularies like geo:lat and geo:long for compatibility.</li>
             </ul>
         </div>
-
         <div class="conclusion section">
             <h2>Conclusion</h2>
-            <p>The dataset satisfies the requirements for the Museums of Madrid Explorer application, with a well-defined schema and open licensing. The resource naming strategy ensures that the generated Linked Data is consistent, accessible, and reusable, aligning with the principles of Linked Data and the needs of the application.</p>
+            <p>The dataset satisfies the requirements for the Museums of Madrid Explorer application, with a well-defined CSV schema and open licensing. The resource naming strategy ensures that the generated Linked Data is consistent, accessible, and reusable, aligning with the principles of Linked Data and the needs of the application.</p>
         </div>
     </div>
 </body>

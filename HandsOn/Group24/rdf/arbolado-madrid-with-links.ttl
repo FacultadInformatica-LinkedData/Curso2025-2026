@@ -1,0 +1,1040 @@
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Pyrus%20calleryana%20%27Chanticleer%27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Pyrus%20calleryana%20%27Chanticleer%27> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Pyrus%20calleryana%20%27Chanticleer%27> <http://group24.linkeddata.es/ontology/species> "Pyrus calleryana 'Chanticleer'".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Pyrus%20calleryana%20%27Chanticleer%27> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Cercis%20siliquastrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Cercis%20siliquastrum> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Cercis%20siliquastrum> <http://group24.linkeddata.es/ontology/species> "Cercis siliquastrum".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Cercis%20siliquastrum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Centro/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Centro".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Centro/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Gleditsia%20triacanthos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/species> "Gleditsia triacanthos".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Arganzuela".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Arganzuela/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20%C3%97%20leylandii> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20%C3%97%20leylandii> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20%C3%97%20leylandii> <http://group24.linkeddata.es/ontology/species> "Cupressus × leylandii".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20%C3%97%20leylandii> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Liquidambar%20styraciflua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Liquidambar%20styraciflua> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Liquidambar%20styraciflua> <http://group24.linkeddata.es/ontology/species> "Liquidambar styraciflua".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Liquidambar%20styraciflua> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20arizonica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20arizonica> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20arizonica> <http://group24.linkeddata.es/ontology/species> "Cupressus arizonica".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Cupressus%20arizonica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Retiro".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Retiro/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Salamanca".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Salamanca/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Populus%20alba%20%27Bolleana%27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Populus%20alba%20%27Bolleana%27> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Populus%20alba%20%27Bolleana%27> <http://group24.linkeddata.es/ontology/species> "Populus alba 'Bolleana'".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Populus%20alba%20%27Bolleana%27> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Chamartín".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Chamart%C3%ADn/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Tetuán".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Tetu%C3%A1n/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Koelreuteria%20paniculata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Koelreuteria%20paniculata> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Koelreuteria%20paniculata> <http://group24.linkeddata.es/ontology/species> "Koelreuteria paniculata".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Koelreuteria%20paniculata> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Cercis%20siliquastrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Cercis%20siliquastrum> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Cercis%20siliquastrum> <http://group24.linkeddata.es/ontology/species> "Cercis siliquastrum".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Cercis%20siliquastrum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Fraxinus%20angustifolia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Fraxinus%20angustifolia> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Fraxinus%20angustifolia> <http://group24.linkeddata.es/ontology/species> "Fraxinus angustifolia".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Fraxinus%20angustifolia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Chamberí".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Chamber%C3%AD/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Morus%20alba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Morus%20alba> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Morus%20alba> <http://group24.linkeddata.es/ontology/species> "Morus alba".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Morus%20alba> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Populus%20%C3%97%20canadensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Populus%20%C3%97%20canadensis> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Populus%20%C3%97%20canadensis> <http://group24.linkeddata.es/ontology/species> "Populus × canadensis".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Populus%20%C3%97%20canadensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Fuencarral-El Pardo".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Fuencarral-El%20Pardo/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Catalpa%20bignonioides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/species> "Catalpa bignonioides".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20arizonica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20arizonica> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20arizonica> <http://group24.linkeddata.es/ontology/species> "Cupressus arizonica".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Cupressus%20arizonica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Moncloa-Aravaca".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Moncloa-Aravaca/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Latina/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Latina".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Latina/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Gleditsia%20triacanthos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/species> "Gleditsia triacanthos".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Carabanchel".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Carabanchel/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Cedrus%20deodara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Cedrus%20deodara> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Cedrus%20deodara> <http://group24.linkeddata.es/ontology/species> "Cedrus deodara".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Cedrus%20deodara> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Plantanus%20orientalis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/species> "Plantanus orientalis".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Gleditsia%20triacanthos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/species> "Gleditsia triacanthos".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Gleditsia%20triacanthos> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Usera/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Usera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Usera/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Plantanus%20orientalis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/species> "Plantanus orientalis".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20halepensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/species> "Pinus halepensis".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Catalpa%20bignonioides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/species> "Catalpa bignonioides".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Puente de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Puente%20de%20Vallecas/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Plantanus%20orientalis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/species> "Plantanus orientalis".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Catalpa%20bignonioides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/species> "Catalpa bignonioides".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20pseudoplatanus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20pseudoplatanus> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20pseudoplatanus> <http://group24.linkeddata.es/ontology/species> "Acer pseudoplatanus".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Acer%20pseudoplatanus> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Moratalaz".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Moratalaz/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20dulcis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20dulcis> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20dulcis> <http://group24.linkeddata.es/ontology/species> "Prunus dulcis".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Prunus%20dulcis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20halepensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/species> "Pinus halepensis".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Ciudad Lineal".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Ciudad%20Lineal/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Populus%20alba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Populus%20alba> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Populus%20alba> <http://group24.linkeddata.es/ontology/species> "Populus alba".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Populus%20alba> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Catalpa%20bignonioides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/species> "Catalpa bignonioides".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Hortaleza".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Hortaleza/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20halepensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/species> "Pinus halepensis".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Catalpa%20bignonioides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/species> "Catalpa bignonioides".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Villaverde".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Villaverde/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Pinus%20halepensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/species> "Pinus halepensis".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Prunus%20cerasifera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/species> "Prunus cerasifera".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Prunus%20cerasifera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Villa de Vallecas".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Villa%20de%20Vallecas/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pyrus%20calleryana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pyrus%20calleryana> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pyrus%20calleryana> <http://group24.linkeddata.es/ontology/species> "Pyrus calleryana".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pyrus%20calleryana> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Plantanus%20orientalis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/species> "Plantanus orientalis".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Plantanus%20orientalis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Vicálvaro".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Vic%C3%A1lvaro/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20halepensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/species> "Pinus halepensis".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Acer%20negundo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Acer%20negundo> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Acer%20negundo> <http://group24.linkeddata.es/ontology/species> "Acer negundo".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Acer%20negundo> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Aesculus%20hippocastanum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/species> "Aesculus hippocastanum".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Aesculus%20hippocastanum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20sparsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20sparsa> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20sparsa> <http://group24.linkeddata.es/ontology/species> "Ulmus sparsa".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Ulmus%20sparsa> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "San Blas-Canillejas".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/San%20Blas-Canillejas/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Platanus%20%C3%97%20hispanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/species> "Platanus × hispanica".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Platanus%20%C3%97%20hispanica> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Celtis%20australis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Celtis%20australis> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Celtis%20australis> <http://group24.linkeddata.es/ontology/species> "Celtis australis".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Celtis%20australis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20pinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/species> "Pinus pinea".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20pinea> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Catalpa%20bignonioides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/species> "Catalpa bignonioides".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Catalpa%20bignonioides> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Melia%20azedarach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/species> "Melia azedarach".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Melia%20azedarach> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ulmus%20pumila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/species> "Ulmus pumila".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ulmus%20pumila> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Styphnolobium%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/species> "Styphnolobium japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Styphnolobium%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20halepensis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/species> "Pinus halepensis".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pinus%20halepensis> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Robinia%20pseudoacacia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/species> "Robinia pseudoacacia".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Robinia%20pseudoacacia> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Cupressus%20sempervirens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/species> "Cupressus sempervirens".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Cupressus%20sempervirens> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pyrus%20calleryana%20%27Chanticleer%27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pyrus%20calleryana%20%27Chanticleer%27> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pyrus%20calleryana%20%27Chanticleer%27> <http://group24.linkeddata.es/ontology/species> "Pyrus calleryana 'Chanticleer'".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Pyrus%20calleryana%20%27Chanticleer%27> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ligustrum%20japonicum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/species> "Ligustrum japonicum".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Ligustrum%20japonicum> <http://group24.linkeddata.es/ontology/year> "2024".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Hymenoptera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group24.linkeddata.es/ontology/TreeObservation>.
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Hymenoptera> <http://group24.linkeddata.es/ontology/district> "Barajas".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Hymenoptera> <http://group24.linkeddata.es/ontology/species> "Hymenoptera".
+<http://group24.linkeddata.es/resource/arbolado/Barajas/Hymenoptera> <http://group24.linkeddata.es/ontology/year> "2024".

@@ -1,0 +1,803 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix mm: <http://movemadrid.org/ontology/movilidad#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix schema: <http://schema.org/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix v: <http://rdf.data-vocabulary.org/#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vocab: <http://example.org#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://movemadrid.org/resource/car_parking/10489514> a mm:CarParking;
+  mm:carParkingDescription "Plazas:  para automóviles: 3011 para motocicletas: 61";
+  mm:carParkingLatitude "40.434154"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=975b89a80c49e510VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.598831"^^xsd:float;
+  mm:carParkingName "Aparcamiento disuasorio Estadio Metropolitano Sur ES-02b";
+  mm:carParkingPostalCode "28022";
+  mm:facilityDistrict "San Blas-Canillejas";
+  mm:facilityNeighborhood "Rosas";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2001937>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q18880469> .
+
+<http://movemadrid.org/resource/car_parking/10737574> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 36  Titularidad : Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.38728599111143"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ce8907e1fd534610VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.7063081042559407"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Usera";
+  mm:carParkingPostalCode "28026";
+  mm:facilityDistrict "Usera";
+  mm:facilityNeighborhood "Moscardó";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q953368>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q11937679> .
+
+<http://movemadrid.org/resource/car_parking/11413444> a mm:CarParking;
+  mm:carParkingDescription "Plazas:  para automóviles: 368 (de las cuales, 10 para coche eléctrico y 12 para coches adaptados PMR) para motocicletas: 35   Código del aparcamiento: 1626";
+  mm:carParkingLatitude "40.4844428688153"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cbb3ed735e9f9710VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.66450251273440"^^xsd:float;
+  mm:carParkingName "Aparcamiento disuasorio Fuente de la Mora";
+  mm:carParkingPostalCode "28050";
+  mm:facilityDistrict "Hortaleza";
+  mm:facilityNeighborhood "Valdefuentes";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1928529>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10388714> .
+
+<http://movemadrid.org/resource/car_parking/11413620> a mm:CarParking;
+  mm:carParkingDescription "Plazas:  para automóviles: 402 (de las cuales, 10 para coche eléctrico y 12 para coches adaptados PMR) para motocicletas: 34   Código del aparcamiento: 828";
+  mm:carParkingLatitude "40.4941929509737"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1642e9887f9f9710VgnVCM2000001f4a900aRCRD>;
+  mm:carParkingLongitude "-3.72723600089653"^^xsd:float;
+  mm:carParkingName "Aparcamiento disuasorio Pitis";
+  mm:carParkingPostalCode "28049";
+  mm:facilityDistrict "Fuencarral-El Pardo";
+  mm:facilityNeighborhood "Fuentelarreina";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q656196>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10286156> .
+
+<http://movemadrid.org/resource/car_parking/11483771> a mm:CarParking;
+  mm:carParkingDescription "Plazas:  para automóviles: 344 (de las cuales, 10 para coche eléctrico) para motocicletas: 25 para bicicletas: 10   Código del aparcamiento: 1024";
+  mm:carParkingLatitude "40.38323792632855"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1ec084bc6763c710VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.783621006318095"^^xsd:float;
+  mm:carParkingName "Aparcamiento disuasorio Aviación Española";
+  mm:carParkingPostalCode "28024";
+  mm:facilityDistrict "Latina";
+  mm:facilityNeighborhood "Las Águilas";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q794954>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q5971372> .
+
+<http://movemadrid.org/resource/car_parking/11544439> a mm:CarParking;
+  mm:carParkingDescription "Plazas Totales: 320 plazas,  Plazas motos: 16.";
+  mm:carParkingLatitude "40.42013315230386"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=58ec252aa267d710VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.7082597874437004"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Plaza de Santo Domingo";
+  mm:carParkingPostalCode "28013";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Palacio";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2136510> .
+
+<http://movemadrid.org/resource/car_parking/11544464> a mm:CarParking;
+  mm:carParkingDescription "Número de plazas: 224 plazas  Código del aparcamiento: 1114";
+  mm:carParkingLatitude "40.36521668890186"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=83bf252aa267d710VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.737923481612698"^^xsd:float;
+  mm:carParkingName "Aparcamiento disuasorio Islazul";
+  mm:carParkingPostalCode "28054";
+  mm:facilityDistrict "Carabanchel";
+  mm:facilityNeighborhood "Buenavista";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1001991>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q953929> .
+
+<http://movemadrid.org/resource/car_parking/11544480> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 121 públicas y 254 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.428193768950756"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=79df252aa267d710VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.673778093084516"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Alcántara";
+  mm:carParkingPostalCode "28006";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Goya";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814578> .
+
+<http://movemadrid.org/resource/car_parking/11750494> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 501  Actualmente Cerrado     Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4005782139287"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=dac3493077fc2810VgnVCM1000001d4a900aRCRD>;
+  mm:carParkingLongitude "-3.71933799002069"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. San Epifanio";
+  mm:carParkingPhone "915 214 312";
+  mm:carParkingPostalCode "28005";
+  mm:facilityDistrict "Arganzuela";
+  mm:facilityNeighborhood "Imperial";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2000929>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3773740> .
+
+<http://movemadrid.org/resource/car_parking/13449> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 481 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4216849699782"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=54467339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70568981924281"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Luna - Tudescos (cerrado)";
+  mm:carParkingPostalCode "28004";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Universidad";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10387767> .
+
+<http://movemadrid.org/resource/car_parking/13450> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 397   Información sobre accesibilidad:   Disponde de escaleras adaptadas 1 ascensor en la salida a la Plaza de Olavide 1 aseo accesible en la 1&amp;ordf;  planta Plaza para minusválidos residentes: 8  Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.432878498188"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=453881eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70103933152522"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Olavide";
+  mm:carParkingPostalCode "28010";
+  mm:facilityDistrict "Chamberí";
+  mm:facilityNeighborhood "Trafalgar";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763370>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10384027> .
+
+<http://movemadrid.org/resource/car_parking/13451> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 361  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en 2&amp;ordf;  planta Plaza para minusválidos residentes: 16   Abierto 24 horas   Admite Tarjeta BonoRed    Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4227275539507"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fe0881eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70883461506948"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Mostenses";
+  mm:carParkingPhone "902 283 080";
+  mm:carParkingPostalCode "28015";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Universidad";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10387767> .
+
+<http://movemadrid.org/resource/car_parking/13452> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 463  Informacion sobre accesibilidad:   1 escalera adaptada No tiene ascensor de salida a calle 1 aseo accesible Plazas para minusválidos residentes: 17  Abierto 24 horas  Titularidad : Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingLatitude "40.4298019274054"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0e167339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69323812827144"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Almagro";
+  mm:carParkingPostalCode "28010";
+  mm:facilityDistrict "Chamberí";
+  mm:facilityNeighborhood "Almagro";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763370>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10954432> .
+
+<http://movemadrid.org/resource/car_parking/13453> a mm:CarParking;
+  mm:carParkingDescription "Plazas rotación: 169  Plazas motos: 2   Información sobre accesibilidad:   No tiene escaleras adaptadas No disponde de ascensor 1 aseo accesible Plaza para minusválidos residentes: 13   Abierto 24 horas       Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingLatitude "40.4251485828521"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=38a881eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69239569495104"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Villa de París";
+  mm:carParkingPostalCode "28004";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Justicia";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q1992319> .
+
+<http://movemadrid.org/resource/car_parking/13454> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 611 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4254346221439"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a5777339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6884680270103"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Plaza de Colón";
+  mm:carParkingPhone "915 761 837";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/13456> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 325  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en 1&amp;ordf; planta Plaza para minusválidos residentes: 6   Abierto 24 horas   Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4145312089554"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9b5881eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70056009896723"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Santa Ana (cerrado)";
+  mm:carParkingPhone "915 214 312";
+  mm:carParkingPostalCode "28012";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Cortes";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2535637> .
+
+<http://movemadrid.org/resource/car_parking/13457> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 548 públicas y 395 para residentes Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4242991698907"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d11f15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.68435762446743"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Velázquez - Jorge Juan";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/13458> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 443 públicas y 230 para residentes Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4272702030791"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8bee15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.68408892366904"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Velázquez - Ayala";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/13459> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 285 públicas y 110 para residentes.  Plazas motos: 7.  Información sobre accesibilidad:   No tiene escaleras adaptadas Ascensor con salida a la calle Jacinto benavente, s/n 1 aseo accesible Plaza para minusválidos residentes: 16  Abierto 24 horas  Titularidad:  Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.4144481124785"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c48f15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70332121750772"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Jacinto Benavente";
+  mm:carParkingPhone "917 877 292 (grúa municipal)";
+  mm:carParkingPostalCode "28012";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Cortes";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2535637> .
+
+<http://movemadrid.org/resource/car_parking/13460> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 649 públicas rotacionales y 74 para residentes Abierto 24 horas Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.41777541448619"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9dd67339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.7002800119895505"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Sevilla";
+  mm:carParkingPostalCode "28014";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Sol";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2465181> .
+
+<http://movemadrid.org/resource/car_parking/13462> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 410 públicas y 111 para residentes  Información sobre accesibilidad:   No tiene escalera adaptada 1 ascensor con salida a la calle Fuencarral, 117 1 aseo accesible en la 1&amp;ordf; planta Plazas para minusválidos residentes: 7   Abierto 24 horas   Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.4296270729669"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=987e15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70279096159205"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Fuencarral";
+  mm:carParkingPhone """Centralita EMT 914 068 810 ----                                                      
+Aparcamiento      915 911 200""";
+  mm:carParkingPostalCode "28010";
+  mm:facilityDistrict "Chamberí";
+  mm:facilityNeighborhood "Trafalgar";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763370>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10384027> .
+
+<http://movemadrid.org/resource/car_parking/13463> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 800 (hasta 535 abonados) Abierto 24 horas    Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingLatitude "40.4237811996075"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fb977339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.71152321262521"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Plaza de España";
+  mm:carParkingPostalCode "28008";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Palacio";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2136510> .
+
+<http://movemadrid.org/resource/car_parking/13464> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 1175 públicas rotacionales y 615 para residentes  Información sobre accesibilidad:   No tiene escaleras adaptadas Ascensor de salida a la plaza de Felipe II Aseo accesible (1&amp;ordf; planta) Plazas para minusválidos residentes:23   Abierto 24 horas   Admite tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4242207643363"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=425e15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.67342185936768"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Felipe II";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/13465> a mm:CarParking;
+  mm:carParkingDescription "Plazas:   146 Residenciales 130 Rotacionales    Abierto 24 horas    Titularidad:  Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingLatitude "40.4181859174944"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0967339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69095813503217"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Montalbán";
+  mm:carParkingPostalCode "28014";
+  mm:facilityDistrict "Retiro";
+  mm:facilityNeighborhood "Jerónimos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2002296>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10306766> .
+
+<http://movemadrid.org/resource/car_parking/13466> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 694  279 Residenciales 415 Rotacionales  Abierto 24 horas  Titularidad : Ayuntamiento de Madrid    Gálibo: 1'85 m";
+  mm:carParkingLatitude "40.4158677606471"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2b1981eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70689561392158"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Plaza Mayor";
+  mm:carParkingPostalCode "28012";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Sol";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2465181> .
+
+<http://movemadrid.org/resource/car_parking/13467> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 480 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.41567209145918"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=42c77339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.695312097854121"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Las Cortes";
+  mm:carParkingPostalCode "28014";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Cortes";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2535637> .
+
+<http://movemadrid.org/resource/car_parking/13468> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 371 Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4317523227148"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e3077339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.68345337033197"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Velázquez - Juan Bravo";
+  mm:carParkingPostalCode "28006";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Castellana";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q4781> .
+
+<http://movemadrid.org/resource/car_parking/13469> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 482 Abierto 24 horas Admite Tarjeta BonoRed";
+  mm:carParkingLatitude "40.4299040013269"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=aa667339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.71881499696004"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Marqués de Urquijo";
+  mm:carParkingPostalCode "28008";
+  mm:facilityDistrict "Moncloa-Aravaca";
+  mm:facilityNeighborhood "Argüelles";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2017682>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q64874> .
+
+<http://movemadrid.org/resource/car_parking/13470> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 318 públicas y 298 para residentes Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.426273740022"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a50e15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70037418702346"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Arquitecto Ribera";
+  mm:carParkingPostalCode "28004";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Justicia";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q1992319> .
+
+<http://movemadrid.org/resource/car_parking/13472> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 450  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor 1 aseo accesible en  1&amp;ordf;  planta Plaza para minusválidos residentes: 7   Abierto 24 horas   Admite Tarjeta BonoRed   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.418722788943874"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8ec881eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.7030734062842345"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Plaza del Carmen (cerrado)";
+  mm:carParkingPhone "915 214 312";
+  mm:carParkingPostalCode "28013";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Sol";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2465181> .
+
+<http://movemadrid.org/resource/car_parking/13473> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 400  Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.41845756968"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=98e77339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.70704603703524"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Descalzas";
+  mm:carParkingPhone "91 532 57 57";
+  mm:carParkingPostalCode "28013";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Sol";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2465181> .
+
+<http://movemadrid.org/resource/car_parking/13474> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 170  Información sobre accesibilidad:   Si tiene escaleras adaptadas 1 ascensor 3 aseos accesibles (uno por planta): 8 Plaza para minusválidos residentes: 16  Abierto 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4202104053746"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d4f881eb5f51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69580666702734"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Plaza del Rey";
+  mm:carParkingPhone "915 225 219";
+  mm:carParkingPostalCode "28004";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Justicia";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q1992319> .
+
+<http://movemadrid.org/resource/car_parking/13475> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 226 públicas y 402 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4560925110791"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fb2e15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69349688854822"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Brasil";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Cuatro Caminos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q5824684> .
+
+<http://movemadrid.org/resource/car_parking/13476> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 102 públicas y 289 para residentes  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor en la salida al Paseo de Recoletos 1 aseo accesible Plaza para minusválidos residentes: 10   Abierto 24 horas   Titularidad : Ayuntamiento de Madrid   Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.421397488495096"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=283f15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.691841269615146"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Recoletos";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/13477> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 146 públicas y 79 para residentes  El horario de apertura para la parte del aparcamiento rotacional es de lunes a viernes de 9:00h a 20:40h. Sábados de 9:00 a 14:30h.  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.44905426535144"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7e5f15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.7020861495783635"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Condesa de Gavia";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Cuatro Caminos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q5824684> .
+
+<http://movemadrid.org/resource/car_parking/13478> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 240 Abierto 24 horas  Titularidad: Subdirección General de Patrimonio - Comunidad de Madrid  Teléfonos: Servicio de información de la Comunidad de Madrid:                    012                    91 580 42 60  (desde fuera de la Comunidad de Madrid)";
+  mm:carParkingLatitude "40.407386591674"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5f477339ae51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.71001515747525"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Glorieta Puerta de Toledo";
+  mm:carParkingPostalCode "28005";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Embajadores";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2449844> .
+
+<http://movemadrid.org/resource/car_parking/13479> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 226 públicas y 43 para residentes  Información sobre accesibilidad:  No tiene escaleras adaptadas No disponde ascensor No disponde de aseos accesible Plazas para minusválidos residentes: 5    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingEmail "aeuropeos@gmail.com";
+  mm:carParkingLatitude "40.4645483266289"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=35ce15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69157198480319"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. José Castán Tobeñas";
+  mm:carParkingPhone "915 707 612";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Castillejos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q11913212> .
+
+<http://movemadrid.org/resource/car_parking/13515> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 419 públicas y 713 residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4564090502234"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ee9e15cbed51c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69333344796644"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. San Germán II (antes General Yagüe)";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Castillejos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q11913212> .
+
+<http://movemadrid.org/resource/car_parking/167692> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 222 públicas y 261 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4344244682971"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a284ff632081c010VgnVCM1000000b205a0aRCRD>;
+  mm:carParkingLongitude "-3.67012877493573"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. San Cayetano";
+  mm:carParkingPostalCode "28028";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "La Guindalera";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814559> .
+
+<http://movemadrid.org/resource/car_parking/182188> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 168  públicas y 68 para residentes Abierto: 24 horas Admite Tarjeta BonoRed  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.43429571608524"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1c15bdc85c01c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.622514147448957"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Miguel Yuste";
+  mm:carParkingPostalCode "28037";
+  mm:facilityDistrict "San Blas-Canillejas";
+  mm:facilityNeighborhood "Simancas";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2001937>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10371626> .
+
+<http://movemadrid.org/resource/car_parking/183607> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 83 públicas y 91 para residentes  Información sobre accesibilidad:  No tiene escaleras adaptadas 1 ascensor en la salida a la Calle Verdaguer y garcía 1 aseo accesible en la planta -1 Plaza para minusválidos residentes: 4    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4397163141475"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6245bdc85c01c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6566922711780356"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Verdaguer y García";
+  mm:carParkingPhone "913 531 050";
+  mm:carParkingPostalCode "28027";
+  mm:facilityDistrict "Ciudad Lineal";
+  mm:facilityNeighborhood "San Pascual";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763694>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q165612> .
+
+<http://movemadrid.org/resource/car_parking/183747> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 135 públicas y 449 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.40709468568204"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c5f4bdc85c01c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.7038875277131464"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Casino de la Reina";
+  mm:carParkingPostalCode "28005";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Embajadores";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2449844> .
+
+<http://movemadrid.org/resource/car_parking/183748> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 235 públicas y 253 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.40255344121901"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0f85bdc85c01c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.67763144165245"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Daoíz y Velarde";
+  mm:carParkingPhone "S/T";
+  mm:carParkingPostalCode "28007";
+  mm:facilityDistrict "Retiro";
+  mm:facilityNeighborhood "Pacífico";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2002296>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3773753> .
+
+<http://movemadrid.org/resource/car_parking/19053> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 131 públicas y 408 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.40885884341386"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=27912c798651c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.693821482712085"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Sánchez Bustillo";
+  mm:carParkingPostalCode "28012";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Embajadores";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2449844> .
+
+<http://movemadrid.org/resource/car_parking/24193> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 209 públicas y 892 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4588693818589"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=aabe6545f951c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.67651579058803"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. República Dominicana";
+  mm:carParkingPostalCode "28016";
+  mm:facilityDistrict "Chamartín";
+  mm:facilityNeighborhood "Nueva España";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1766348>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q10338128> .
+
+<http://movemadrid.org/resource/car_parking/24809> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 245 públicas y 350 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.40489977502076"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0e6e6545f951c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.668850975462272"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Fernández Shaw";
+  mm:carParkingPostalCode "28007";
+  mm:facilityDistrict "Retiro";
+  mm:facilityNeighborhood "Adelfas";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2002296>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3774001> .
+
+<http://movemadrid.org/resource/car_parking/33440> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 242 públicas rotacionales (30 plazas para autobuses) y 511 para residentes Abierto 24 horas Admite Tarjeta BonoRed Este PAR está adherido a la zona de APR  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.41840695632423"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7db12c798651c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.7119903936183274"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Plaza de Oriente";
+  mm:carParkingPostalCode "28013";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Palacio";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q2136510> .
+
+<http://movemadrid.org/resource/car_parking/36269> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 104 públicas y 550 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4058768185719"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c3e12c798651c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "--3.65138632197171"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Encuentro";
+  mm:carParkingPhone "91 328 36 80";
+  mm:carParkingPostalCode "28030";
+  mm:facilityDistrict "Moratalaz";
+  mm:facilityNeighborhood "Media Legua";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2076109>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q9031035> .
+
+<http://movemadrid.org/resource/car_parking/36270> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 115 públicas y 380 residentes  Información sobre accesibilidad:  No tiene escaleras adptadas Ascensor de salida a la calle Hernai, 68 1 aseo accesible en 1&amp;ordf; planta Plazas para minusválidos residentes. 3    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.44817621258857"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d0712c798651c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6976113125092684"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Hernani";
+  mm:carParkingPhone "915 545 326";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Cuatro Caminos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q5824684> .
+
+<http://movemadrid.org/resource/car_parking/36271> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 127 públicas y 379 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid  Teléfono: 91 556 62 26";
+  mm:carParkingLatitude "40.45251614668263"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8a412c798651c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6956837947248724"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Presidente Carmona";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Cuatro Caminos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q5824684> .
+
+<http://movemadrid.org/resource/car_parking/44724> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 203 públicas y 421 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.434510199279615"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9e69946be351c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6754840133107027"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Díaz Porlier";
+  mm:carParkingPhone "91 401 73 74";
+  mm:carParkingPostalCode "28006";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Lista";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q4779> .
+
+<http://movemadrid.org/resource/car_parking/52114> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 107 públicas y 261 para residentes.  Plazas motos: 6.  Información sobre accesibilidad:  No tiene escaleras adaptadas 1 ascensor con salida a la Plaza de Vazquez de Mella 1 aseo accesible Plaza para minusválidos residentes: 7    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)  Teléfonos: Residentes - 91 522 50 29          Rotacional -  91 532 19 10";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.4208058791525"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e499946be351c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.69930167470253"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Pedro Zerolo 'antes denominado Vázquez de Mella'";
+  mm:carParkingPostalCode "28004";
+  mm:facilityDistrict "Centro";
+  mm:facilityNeighborhood "Justicia";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1763376>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q1992319> .
+
+<http://movemadrid.org/resource/car_parking/5517342> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 129 públicas y 663 para residentes  Información sobre accesibilidad:  1 escalera adaptada No dispone de ascensor 1 aseo accesible Plaza para minusválidos residentes: 5    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.4530722916738"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=eee35ed15bb95210VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6941384720253"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Orense";
+  mm:carParkingPostalCode "28020";
+  mm:facilityDistrict "Tetuán";
+  mm:facilityNeighborhood "Cuatro Caminos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773540>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q5824684> .
+
+<http://movemadrid.org/resource/car_parking/5898885> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 428 públicas y 445 para residentes  Informacion sobre accesibilidad:  No tiene escalera adaptada Tiene ascensor de salida a Avenida de Portugal, s/n 1 aseo accesible (nivel-3) Plazas para minusválidos residentes: 20   Abierto 24 horas  Titularidad: Ayuntamiento de Madrid  Gestión: Empresa Municipal de Transportes (EMT) (más información)";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.4112391063366"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c313e26f2b3fc210VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.73808787568741"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Avenida de Portugal";
+  mm:carParkingPhone "917 877 292 (grúa municipal)";
+  mm:carParkingPostalCode "28011";
+  mm:facilityDistrict "Latina";
+  mm:facilityNeighborhood "Puerta del Ángel";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q794954>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q31142> .
+
+<http://movemadrid.org/resource/car_parking/59060> a mm:CarParking;
+  mm:carParkingDescription "Información sobre accesibilidad:  Tiene escaleras adaptadas Ascensor de salida a la calle Avenida de América, 9 Tiene aseos accesibles Plazas para minusválidos    Plazas: 261 públicas y 395 para residentes  Abierto 24 horas   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingEmail "intercambiador@intercambiador.net";
+  mm:carParkingLatitude "40.4381779662151"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3f3bc2c6e051c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.67683406459837"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Avenida de América (intercambiador)";
+  mm:carParkingPhone "917 376 257";
+  mm:carParkingPostalCode "28002";
+  mm:facilityDistrict "Chamartín";
+  mm:facilityNeighborhood "Prosperidad";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1766348>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q4776> .
+
+<http://movemadrid.org/resource/car_parking/6143690> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 356 públicas y 70 para residentes  Información sobre accesibilidad:   No tiene escaleras adaptadas 1 ascensor en la salida a la plaza del Marqués de Salamanca 1 aseo accesible en 2&amp;ordf;  planta Plaza para minusválidos residentes: 14   Abierto 24 horas   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingEmail "aparcamientos@emtmadrid.es";
+  mm:carParkingLatitude "40.4304997416021"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cb5b1b2bb5b61310VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.67929374257782"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Marqués de Salamanca";
+  mm:carParkingPhone "917 877 292 (grúa municipal)";
+  mm:carParkingPostalCode "28006";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Castellana";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q4781> .
+
+<http://movemadrid.org/resource/car_parking/7393089> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 376 Abierto 24 horas Admite la Tarjeta Bono Red  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.44429510303696"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ed88f25e040c4410VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6776974842015506"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Auditorio Nacional de Música (Príncipe de Vergara)";
+  mm:carParkingPostalCode "28002";
+  mm:facilityDistrict "Chamartín";
+  mm:facilityNeighborhood "Ciudad Jardín";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1766348>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3773744> .
+
+<http://movemadrid.org/resource/car_parking/7416748> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 307 públicas y 833 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4329452991722"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bd61f94ae1d15410VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.68611338542774"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Serrano I";
+  mm:carParkingPostalCode "28006";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Castellana";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q4781> .
+
+<http://movemadrid.org/resource/car_parking/7417028> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 379 públicas y 804 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4303442290635"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bc096f1c35d15410VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.68850808858792"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Serrano II";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/7417052> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 261 públicas y 725 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4244268291578"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9a1c6f1c35d15410VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.68965177313431"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Serrano III";
+  mm:carParkingPostalCode "28001";
+  mm:facilityDistrict "Salamanca";
+  mm:facilityNeighborhood "Recoletos";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1773521>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3814551> .
+
+<http://movemadrid.org/resource/car_parking/81736> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 125 públicas y 125 para residentes  Información sobre accesibilidad:  No tiene escaleras adaptadas Ascensor de salida a la calle Pérez de Victoria 2 aseos accesibles (1&amp;ordf; planta) Plazas para minusválidos residentes: 3    Abierto 24 horas   Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingEmail "parkingcoronaboreal@hotmail.com";
+  mm:carParkingLatitude "40.4588137783281"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=db8bc2c6e051c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.78414489510692"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Corona Boreal";
+  mm:carParkingPhone "913 573 714";
+  mm:carParkingPostalCode "28023";
+  mm:facilityDistrict "Moncloa-Aravaca";
+  mm:facilityNeighborhood "Aravaca";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2017682>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3314682> .
+
+<http://movemadrid.org/resource/car_parking/81828> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 335 públicas o de rotación y 359 para residentes Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.408797321706984"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0dfec2c6e051c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.6763215894089827"^^xsd:float;
+  mm:carParkingName "Aparcamiento mixto. Reyes Magos";
+  mm:carParkingPostalCode "28007";
+  mm:facilityDistrict "Retiro";
+  mm:facilityNeighborhood "Niño Jesús";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q2002296>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3773746> .
+
+<http://movemadrid.org/resource/car_parking/88141> a mm:CarParking;
+  mm:carParkingDescription "Plazas: 147 Abierto 24 horas  Titularidad: Ayuntamiento de Madrid";
+  mm:carParkingLatitude "40.4442297702559"^^xsd:float;
+  mm:carParkingLink <http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bdc7bdc85c01c010VgnVCM2000000c205a0aRCRD>;
+  mm:carParkingLongitude "-3.67765536310739"^^xsd:float;
+  mm:carParkingName "Aparcamiento público. Museo de la Ciudad";
+  mm:carParkingPostalCode "28002";
+  mm:facilityDistrict "Chamartín";
+  mm:facilityNeighborhood "Ciudad Jardín";
+  owl:sameAsDistrict <https://wikidata.org/entity/Q1766348>;
+  owl:sameAsNeighborhood <https://wikidata.org/entity/Q3773744> .

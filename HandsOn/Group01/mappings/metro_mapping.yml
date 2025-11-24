@@ -70,7 +70,7 @@ mappings:
       - p: metro:onLine
         o: data:metroLine/L$(CODI_LINIA)~iri
       - p: metro:hasServiceType
-        o: data:serviceType/$(ID_TIPUS_SERVEI)~iri
+        o: data:serviceType/$(SLUG_SERVEI)~iri
 
   OperatorMapping:
     sources:
@@ -92,10 +92,12 @@ mappings:
   ServiceTypeMapping:
     sources:
       - [csv/estacions_linia-updated.csv~csv]
-    s: data:serviceType/$(ID_TIPUS_SERVEI)
+    s: data:serviceType/$(SLUG_SERVEI)
     po:
       - [a, metro:ServiceType]
       - [rdfs:label, $(DESC_SERVEI), xsd:string]
+      - [metro:serviceOrigin, $(ORIGEN_SERVEI), xsd:string]
+      - [metro:serviceDestination, $(DESTI_SERVEI), xsd:string]
 
   AccessibilityTypeMapping:
     sources:

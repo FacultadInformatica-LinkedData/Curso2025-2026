@@ -1,0 +1,227 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera o vial",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q34442",
+        "name": "road"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column carretera o vial to type Q34442"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera o vial",
+    "similarValue": "m-30",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2352840",
+      "name": "M-30",
+      "types": [
+        "Q34442"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento M-30 (Q2352840) para las celdas que contienen \"m-30\" en la columna carretera o vial"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera o vial",
+    "similarValue": "paso inferior (tunel)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q130341005",
+      "name": "Calle Costa Rica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Calle Costa Rica (Q130341005) para las celdas que contienen \"paso inferior (tunel)\" en la columna carretera o vial"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera o vial",
+    "similarValue": "a5",
+    "judgment": "matched",
+    "match": {
+      "id": "Q429719",
+      "name": "A5",
+      "types": [
+        "Q34442"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento A5 (Q429719) para las celdas que contienen \"a5\" en la columna carretera o vial"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera o vial",
+    "similarValue": "calle sinesio delgado",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52245452",
+      "name": "Sinesio Delgado Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Sinesio Delgado Street (Q52245452) para las celdas que contienen \"calle sinesio delgado\" en la columna carretera o vial"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "carretera o vial",
+    "similarValue": "avenida de cordoba",
+    "judgment": "matched",
+    "match": {
+      "id": "Q63247230",
+      "name": "Avenida de Córdoba",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Avenida de Córdoba (Q63247230) para las celdas que contienen \"avenida de cordoba\" en la columna carretera o vial"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "carretera o vial",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_carretera",
+    "columnInsertIndex": 3,
+    "description": "Crear la columna same_as_wikidata_carretera en el índice 3 basada en la columna carretera o vial usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Responsable",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q36835995",
+        "name": "Directorate-General"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Responsable to type Q36835995"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Responsable",
+    "similarValue": "dggvc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q40310377",
+      "name": "Dirección General de Gestión Migratoria",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Dirección General de Gestión Migratoria (Q40310377) para las celdas que contienen \"dggvc\" en la columna Responsable"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Responsable",
+    "similarValue": "dggvc",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Marcar para crear un único elemento nuevo para todas las celdas que contienen \"dggvc\" en la columna Responsable"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Responsable",
+    "similarValue": "dggvc",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3773976",
+      "name": "Madrid City Council",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Madrid City Council (Q3773976) para las celdas que contienen \"dggvc\" en la columna Responsable"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Responsable",
+    "expression": "grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_responsable",
+    "columnInsertIndex": 17,
+    "description": "Crear la columna same_as_wikidata_responsable en el índice 17 basada en la columna Responsable usando la expresión grel:\"https://www.wikidata.org/entity/\" + cell.recon.match.id"
+  }
+]

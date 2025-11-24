@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metro Interactive Map — Data Analysis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --header:#667eea;
+  --header-gradient:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --rowalt:#f3f7fb;
+  --cellnote:#eef2f7;
+}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,sans-serif;line-height:1.5;margin:0;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#0f172a;padding:20px}
+header{background:rgba(255,255,255,0.95);color:#333;padding:24px 20px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.2);margin-bottom:20px}
+main{padding:0;max-width:1100px;margin:0 auto}
+section{background:white;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.2);padding:20px;margin:16px 0}
+h1,h2,h3{margin:0 0 10px 0}
+table.matrix{border-collapse:collapse;width:100%;font-size:14px;border-radius:10px;overflow:hidden}
+table.matrix th{background:var(--header-gradient);color:white;text-align:left;padding:10px 12px}
+table.matrix td{border-top:1px solid #e5e7eb;padding:10px 12px;vertical-align:top}
+table.matrix tr:nth-child(even) td{background:var(--rowalt)}
+table.matrix td:nth-child(3){background:var(--cellnote)}
+.badge{display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
+code{background:#f1f5f9;border-radius:8px;padding:2px 6px}
+small.mono{font-family:ui-monospace,Menlo,monospace;color:#475569}
+details summary{cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+  <h1>🚇 Metro Interactive Map - Data source analysis</h1>
+  <p style="margin:10px 0 0;font-size:0.95rem;color:#666"><a href="/" style="color:#667eea;text-decoration:none;font-weight:600">← Volver a la aplicación</a></p>
+</header>
+<main>
+<section>
+  <h2>1) Sources & format - Metro Datasets</h2>
+  <p>Analysis of the two essential datasets for the interactive metro map application:</p>
+</section>
+
+<section>
+<h3>• estacions_linia</h3>
+<p><strong>Purpose:</strong> Links stations to metro lines, essential for displaying which lines pass through each station.</p>
+<p><span class="badge">Encoding: utf-8</span>
+   <span class="badge">Delimiter: ,</span></p>
+<table class="matrix">
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments / Range (rounded)</th>
+      <th>Problems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>ID_ESTACIO_LINIA</td><td>int</td><td>Unique identifier, not null. 0-540</td><td></td></tr>
+    <tr><td>CODI_LINIA</td><td>int</td><td>Not unique. 0-110</td><td></td></tr>
+    <tr><td>CODI_ESTACIO</td><td>int</td><td>Not unique. 100-10,000</td><td>Should be unique</td></tr>
+    <tr><td>ID_LINIA</td><td>int</td><td>Not unique. 1-34</td><td>Missing numbers 8-10</td></tr>
+    <tr><td>ID_ESTACIO</td><td>int</td><td>Not Unique. 0-380</td><td></td></tr>
+    <tr><td>GEOMETRY</td><td>POINT</td><td>Unique. Not Null.</td><td></td></tr>
+  </tbody>
+</table>
+</section>
+
+<section>
+<h3>• linies_metro</h3>
+<p><strong>Purpose:</strong> Contains metro line information including names, colors, and geometry for map display.</p>
+<p><span class="badge">Encoding: utf-8</span>
+   <span class="badge">Delimiter: ,</span></p>
+<table class="matrix">
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments / Range (rounded)</th>
+      <th>Problems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>ID_LINIA</td><td>int</td><td>Unique. Not null. 1-14</td><td>Missing numbers 8-10</td></tr>
+    <tr><td>CODI_LINIA</td><td>int</td><td>Unique. Not null. 0-110</td><td></td></tr>
+    <tr><td>NOM_LINIA</td><td>string</td><td>Unique. Not null.</td><td></td></tr>
+    <tr><td>COLOR_LINIA</td><td>string</td><td>Not unique. Not null.</td><td></td></tr>
+    <tr><td>ID_OPERADOR</td><td>int</td><td>Not unique. Not null. 1-2</td><td></td></tr>
+    <tr><td>NOM_OPERADOR</td><td>string</td><td>Not unique. Not null.</td><td></td></tr>
+    <tr><td>CODI_FAMILIA</td><td>int</td><td>Not unique. Not null. 1-2</td><td></td></tr>
+    <tr><td>NOM_FAMILIA</td><td>string</td><td>Not unique. Not null.</td><td></td></tr>
+    <tr><td>GEOMETRY</td><td>MULTILINESTRING</td><td>Unique. Not null.</td><td></td></tr>
+  </tbody>
+</table>
+</section>
+
+<section>
+  <h2>2)  Licensing of the data source and potential license</h2>
+  <p>The datasets provided by 
+     <a target="_blank" href="https://developer.tmb.cat/">Transports Metropolitans de Barcelona (TMB)</a> 
+     are published under the 
+     <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.</p>
+  <p>This license allows copying, redistribution, and adaptation of the data, including for commercial use, as long as proper 
+     <em>attribution</em> is given to the original source.
+  <p>Derived works can also be released under <strong>CC BY 4.0</strong> to maintain legal compatibility and encourage data reuse.</p>
+</section>
+
+
+<section>
+  <h2>3) Resource naming strategy for Metro Interactive Map</h2>
+  
+  <p>The URI design for the metro map application follows this pattern:</p>
+
+  <p><strong>Domain:</strong><br>
+  <code>https://data.example.org/transport/bcn/</code><br>
+  <em>(Main namespace for Barcelona transport datasets)</em></p>
+
+  <p><strong>Path:</strong><br>
+  <code>metro/</code> - metro map project identifier.</p>
+
+  <p><strong>Ontology terms path:</strong><br>
+  <code>https://data.example.org/transport/bcn/metro/ontology/</code><br>
+  <em>(Used for defining classes and properties.<br>
+  Properties follow camelCase starting with lowercase, e.g., #hasStation, #connectsTo.)</em></p>
+
+  <p><strong>Individuals path:</strong><br>
+  <code>https://data.example.org/transport/bcn/metro/resource/</code><br>
+  <em>(Used for instances of stations, lines, and their relations.)</em></p>
+
+  <h3>Naming conventions</h3>
+  <ul>
+    <li>Classes use PascalCase (e.g., MetroLine, StationLine).</li>
+    <li>Properties use camelCase starting with a lowercase letter (e.g., #hasStation, #isConnectedTo).</li>
+    <li>Instances and data entities use short, readable identifiers in camelCase or lowercase, depending on local conventions.<br>
+        Examples:<br>
+        <code>https://data.example.org/transport/bcn/metro/resource/metroLine/L1</code><br>
+        <code>https://data.example.org/transport/bcn/metro/resource/station/sagradaFamilia_L2</code>
+    </li>
+    <li>All URIs are persistent and dereferenceable, ensuring long-term accessibility.</li>
+  </ul>
+
+  <h3>Metro-specific examples</h3>
+  <ul>
+    <li><strong>Metro Line ontology:</strong><br>
+      <code>https://data.example.org/transport/bcn/metro/ontology/MetroLine#hasStation</code></li>
+    <li><strong>Metro Line instance:</strong><br>
+      <code>https://data.example.org/transport/bcn/metro/resource/metroLine/L1</code></li>
+    <li><strong>Station in Line relation:</strong><br>
+      <code>https://data.example.org/transport/bcn/metro/resource/station/sagradaFamilia_L2</code></li>
+  </ul>
+
+  <p>This naming strategy supports the interactive map features by clearly identifying metro lines, stations, and their relationships, ensuring consistent integration across linked datasets and visualization layers.</p>
+</section>
+</main>
+</body>
+</html>

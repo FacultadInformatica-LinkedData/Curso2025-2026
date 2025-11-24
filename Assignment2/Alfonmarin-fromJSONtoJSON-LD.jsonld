@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "fullName": "ex:fullName",
+    "hometown": "ex:hometown",
+    "age": {
+      "@id": "ex:age",
+      "@type": "xsd:integer"
+    },
+    "almaMater": "ex:almaMater",
+    "parents": "ex:parents",
+    "father": "ex:father",
+    "mother": "ex:mother",
+    "subjects": "ex:subjects",
+    "name": "ex:name",
+    "teachers": "ex:teachers",
+    "description": "ex:description",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+
+  "@id": "ex:Alfonmarin",
+  
+  "fullName": "Alfonso Marín Mite",
+  "hometown": "Madrid",
+  "age": 22,
+  "almaMater": "Universidad Politécnica de Madrid",
+
+  "parents": {
+    "father": "Alfonso",
+    "mother": "Elsa"
+  },
+
+  "subjects": [
+    {
+      "name": "Sistemas Operativos",
+      "teachers": ["Francisco Rosales","Antonio Latorre","Pablo Toharia","María Pérez","Fernándo Pérez"],
+      "description": "Introducción a procesos, memoria and gestión de archivos."
+    },
+    {
+      "name": "Semantic Web, Linked Data and Knowledge Graphs",
+      "teachers": ["Oscar Corcho","Daniel Garijo","Raúl García"],
+      "description": "Linked Data, RDF, OWL and knowledge graphs."
+    },
+    {
+      "name": "Algoritmos de Procesado y Análisis de Imagen. Aplicación a Teledetección",
+      "teachers": ["Angel Mario García Pedrero", "Consuelo Gonzalo Martín", "M. Estibaliz Martínez Izquierdo"],
+      "description": "Procesamiento digital de imágenes, extracción de características y aplicaciones en teledetección."
+    },
+    {
+      "name": "Arquitectura de Computadores",
+      "teachers": ["Mª Isabel García Clemente"],
+      "description": "Diseño de procesadores, jerarquías de memoria y ejecución de instrucciones a bajo nivel."
+    },
+    {
+      "name": "English for Professional and Academic Communication",
+      "teachers": ["Hanane Benali", "Elena Montiel", "Jelena Bobkina", "Patricia Martin"],
+      "description": "Competencias orales y escritas en inglés en contextos profesionales y académicos."
+    },
+    {
+      "name": "Introduction to Biocomputing",
+      "teachers": ["Alfonso Rodríguez-Patón"],
+      "description": "Modelado biológico, computación inspirada en sistemas naturales y simulación de procesos biológicos."
+    },
+    {
+      "name": "Nanotecnología",
+      "teachers": ["M. Estibaliz Martínez Izquierdo", "Laura Ortiz Martín"],
+      "description": "Introducción a materiales nanoestructurados, propiedades mecánicas y aplicaciones tecnológicas."
+    }
+  ]
+}

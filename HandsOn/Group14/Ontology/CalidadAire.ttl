@@ -1,120 +1,140 @@
-@prefix :       <https://data.group14.org/ontology/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
-@prefix schema:  <http://schema.org/> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cal:  <http://datos.madrid.es/Calidad_Aire#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
 
 
-: a rdfs:Resource ;
-  dcterms:title "Air Quality - Lightweight Ontology" ;
-  dcterms:issued "2025-10-04"^^xsd:date ;
-  dcterms:creator "Group14" .
-
-# Classes
+# Metadata
+cal: a owl:Ontology ;
+    rdfs:label "Calidad del Aire – Ontología generada para RML" ;
+    rdfs:comment "Ontología alineada al RDF producido mediante el RML del dataset de calidad del aire." .
 
 
-:Station a rdfs:Class ;
-  rdfs:label "Station" ;
-  rdfs:comment "Monitoring station that collects air quality measurements." .
+# Clases
+cal:Estacion a owl:Class ;
+    rdfs:label "Estación" ;
+    rdfs:comment "Estación de monitorización de calidad del aire." .
 
-:Measurement a rdfs:Class ;
-  rdfs:label "Measurement" ;
-  rdfs:comment "An observation or measurement made at a Station for a specific pollutant/parameter." .
-
-:Dataset a rdfs:Class ;
-  rdfs:label "Dataset" ;
-  rdfs:comment "A published dataset (collection of measurements / station info)." .
-
-:Location a rdfs:Class ;
-  rdfs:label "Location" ;
-  rdfs:comment "Geographical location (lat/lon) associated with a Station." .
+cal:Medicion a owl:Class ;
+    rdfs:label "Medición" ;
+    rdfs:comment "Una medición realizada por una estación en un día concreto." .
 
 
-# Properties (object & data properties) with domains and ranges#
+# Propiedades de Estación
+cal:ESTACION a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "ID de estación" .
 
-# Station identifiers and metadata
-:stationId a rdf:Property ;
-  rdfs:label "stationId" ;
-  rdfs:comment "Identifier for the monitoring station (use source id)." ;
-  rdfs:domain :Station ;
-  rdfs:range xsd:string .
+cal:CODIGO a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Código INE" .
 
-:stationName a rdf:Property ;
-  rdfs:label "stationName" ;
-  rdfs:domain :Station ;
-  rdfs:range xsd:string .
+cal:PROVINCIA a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string .
 
-:locatedAt a rdf:Property ;
-  rdfs:label "locatedAt" ;
-  rdfs:domain :Station ;
-  rdfs:range :Location .
+cal:MUNICIPIO a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string .
 
-:hasLatitude a rdf:Property ;
-  rdfs:label "latitude" ;
-  rdfs:domain :Location ;
-  rdfs:range xsd:decimal .
+cal:NOMBRE_ESTACION a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string .
 
-:hasLongitude a rdf:Property ;
-  rdfs:label "longitude" ;
-  rdfs:domain :Location ;
-  rdfs:range xsd:decimal .
+cal:DIRECCION_ESTACION a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string .
 
-:administrativeArea a rdf:Property ;
-  rdfs:label "administrative area" ;
-  rdfs:domain :Station ;
-  rdfs:range xsd:string ;
-  rdfs:comment "Municipality, province or similar administrative unit." .
+cal:DIR_ESTACION_LINK a owl:ObjectProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range rdfs:Resource ;
+    rdfs:label "Enlace asociado a la estación" .
 
-# Measurement-level properties
-:measurementId a rdf:Property ;
-  rdfs:label "measurementId" ;
-  rdfs:domain :Measurement ;
-  rdfs:range xsd:string .
+cal:ESTACION_LATITUD a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string .
 
-:observedAt a rdf:Property ;
-  rdfs:label "observedAt" ;
-  rdfs:domain :Measurement ;
-  rdfs:range xsd:dateTime .
+cal:ESTACION_LONGITUD a owl:DatatypeProperty ;
+    rdfs:domain cal:Estacion ;
+    rdfs:range xsd:string .
 
-:observedParameter a rdf:Property ;
-  rdfs:label "observedParameter" ;
-  rdfs:comment "Name or code of the pollutant/parameter, e.g., PM10, NO2." ;
-  rdfs:domain :Measurement ;
-  rdfs:range xsd:string .
-
-:observedValue a rdf:Property ;
-  rdfs:label "observedValue" ;
-  rdfs:domain :Measurement ;
-  rdfs:range xsd:decimal .
-
-:observedUnit a rdf:Property ;
-  rdfs:label "observedUnit" ;
-  rdfs:domain :Measurement ;
-  rdfs:range xsd:string .
-
-:measuredAtStation a rdf:Property ;
-  rdfs:label "measuredAtStation" ;
-  rdfs:domain :Measurement ;
-  rdfs:range :Station .
-
-# Provenance and dataset metadata
-:isPartOfDataset a rdf:Property ;
-  rdfs:label "isPartOfDataset" ;
-  rdfs:domain :Measurement ;
-  rdfs:range :Dataset .
-
-dcterms:publisher a rdf:Property ;
-  rdfs:label "publisher" .
-
-dcterms:license a rdf:Property ;
-  rdfs:label "license" .
+cal:NO2    a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
+cal:SO2    a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
+cal:CO     a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
+cal:PM10   a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
+cal:PM2_5  a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
+cal:O3     a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
+cal:BTX    a owl:DatatypeProperty ; rdfs:domain cal:Estacion ; rdfs:range xsd:string .
 
 
+# Propiedades de Medición
+cal:estaEnEstacion a owl:ObjectProperty ;
+    rdfs:domain cal:Medicion ;
+    rdfs:range cal:Estacion ;
+    rdfs:label "realizada en estación" .
 
+cal:PUNTO_MUESTREO a owl:DatatypeProperty ;
+    rdfs:domain cal:Medicion ;
+    rdfs:range xsd:string .
 
-:stationName rdfs:subPropertyOf foaf:name .
-:locatedAt rdfs:subPropertyOf schema:location .
-:hasLatitude rdfs:subPropertyOf schema:latitude .
-:hasLongitude rdfs:subPropertyOf schema:longitude .
+cal:ANO  a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:gYear .
+cal:MES  a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:gMonth .
+cal:DIA  a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:gDay .
+
+cal:MAGNITUD a owl:DatatypeProperty ;
+    rdfs:domain cal:Medicion ;
+    rdfs:range xsd:string ;
+    rdfs:label "Magnitud medida" .
+
+cal:H01 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H02 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H03 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H04 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H05 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H06 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H07 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H08 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H09 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H10 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H11 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H12 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H13 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H14 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H15 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H16 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H17 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H18 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H19 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H20 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H21 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H22 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H23 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:H24 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+
+cal:V01 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V02 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V03 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V04 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V05 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V06 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V07 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V08 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V09 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V10 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V11 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V12 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V13 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V14 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V15 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V16 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V17 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V18 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V19 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V20 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V21 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V22 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V23 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .
+cal:V24 a owl:DatatypeProperty ; rdfs:domain cal:Medicion ; rdfs:range xsd:string .

@@ -1,0 +1,38 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://example.org#
+  mm: http://movemadrid.org/ontology/movilidad#
+  owl: http://www.w3.org/2002/07/owl#
+  vann: http://purl.org/vocab/vann/
+  wd: http://www.wikidata.org/entity/
+
+mappings:
+
+  triplesmap_car_Parking:
+    sources:
+      - [/Users/andrep/OpenData/Public-Parking-Facilities.csv~csv]
+    s: http://movemadrid.org/resource/car_parking/$(PK)
+    po:
+      - [a, mm:CarParking]
+      - [mm:carParkingName, $(NOMBRE)]
+      - [mm:carParkingDescription, $(DESCRIPCION)]
+      - [mm:carParkingLatitude, $(LATITUD), xsd:float]
+      - [mm:carParkingLongitude, $(LONGITUD), xsd:float]
+      - [mm:carParkingPhone, $(TELEFONO)]
+      - [mm:carParkingEmail, $(EMAIL)]
+      - [mm:carParkingPostalCode, $(CODIGO-POSTAL)]
+      - [mm:carParkingLink, $(CONTENT-URL)~iri]
+      - [mm:facilityNeighborhood, $(BARRIO)]
+      - [mm:facilityDistrict, $(DISTRITO)]
+      - [owl:sameAsNeighborhood, $(same_as_wikidata_barrio)~iri]
+      - [owl:sameAsDistrict, $(same_as_wikidata_district)~iri]
+

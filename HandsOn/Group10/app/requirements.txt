@@ -1,0 +1,6 @@
+rdflib
+SPARQLWrapper
+streamlit
+pandas
+requests
+pydeck

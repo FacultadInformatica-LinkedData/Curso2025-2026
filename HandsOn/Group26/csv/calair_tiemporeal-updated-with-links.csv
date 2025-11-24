@@ -1,0 +1,127 @@
+ESTACION,MAGNITUD,pollutantLabel,Pollutant_URI,PUNTO_MUESTREO,H01,V01,H02,V02,H03,V03,H04,V04,H05,V05,H06,V06,H07,V07,H08,V08,H09,V09,H10,V10,H11,V11,H12,V12,H13,V13,H14,V14,H15,V15,H16,V16,H17,V17,H18,V18,H19,V19,H20,V20,H21,V21,H22,V22,H23,V23,H24,V24
+11,12,NOx,https://www.wikidata.org/entity/Q20962970,28079011_12_8,12,V,14,V,2,V,1,V,3,V,3,V,6,V,12,V,20,V,19,V,18,V,13,V,14,V,11,V,10,V,12,V,14,V,12,V,12,V,15,V,16,V,9,V,3,V,0,N
+11,20,toluene,https://www.wikidata.org/entity/Q15779,28079011_20_59,1.3,V,0.9,V,0.7,V,0.9,V,0.9,V,0.6,V,0.6,V,0.6,V,0.8,V,1.2,V,1.2,V,1.1,V,1,V,1.3,V,1.3,V,1,V,1.2,V,1.3,V,1,V,0.9,V,1.3,V,1.5,V,0.9,V,0,N
+11,30,benzene,https://www.wikidata.org/entity/Q2270,28079011_30_59,0,V,0,V,0,V,0.1,V,0,V,0,V,0,V,0,V,0.1,V,0.1,V,0.1,V,0,V,0,V,0,V,0,V,0,V,0.1,V,0,V,0.1,V,0.1,V,0.1,V,0.1,V,0,V,0,N
+11,35,ethylbenzene,https://www.wikidata.org/entity/Q409184,28079011_35_59,0.3,V,0.1,V,0.2,V,0.2,V,0.1,V,0.1,V,0.2,V,0.1,V,0.1,V,0.2,V,0.1,V,0.3,V,0.2,V,0.2,V,0.2,V,0.1,V,0.1,V,0.1,V,0,V,0,V,0.1,V,0.1,V,0,V,0,N
+11,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079011_7_8,1,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,1,V,2,V,2,V,2,V,3,V,2,V,2,V,2,V,3,V,2,V,1,V,1,V,1,V,1,V,0,V,0,N
+11,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079011_8_8,11,V,14,V,2,V,1,V,2,V,3,V,6,V,11,V,19,V,16,V,14,V,10,V,10,V,8,V,8,V,9,V,8,V,8,V,10,V,14,V,16,V,8,V,3,V,0,N
+16,12,NOx,https://www.wikidata.org/entity/Q20962970,28079016_12_8,10,V,26,V,12,V,10,V,7,V,9,V,26,V,29,V,36,V,36,V,17,V,12,V,11,V,10,V,9,V,10,V,6,V,12,V,11,V,25,V,23,V,15,V,10,V,0,N
+16,14,ozone,https://www.wikidata.org/entity/Q36933,28079016_14_6,77,V,55,V,64,V,70,V,66,V,60,V,49,V,45,V,43,V,45,V,64,V,73,V,80,V,85,V,86,V,83,V,84,V,78,V,75,V,62,V,60,V,64,V,65,V,0,N
+16,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079016_7_8,0,V,0,V,0,V,0,V,0,V,0,V,1,V,1,V,1,V,3,V,1,V,1,V,1,V,1,V,1,V,2,V,0,V,1,V,0,V,1,V,0,V,0,V,0,V,0,N
+16,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079016_8_8,10,V,26,V,12,V,10,V,7,V,9,V,24,V,28,V,34,V,32,V,15,V,10,V,9,V,9,V,8,V,7,V,6,V,11,V,10,V,24,V,22,V,15,V,10,V,0,N
+17,12,NOx,https://www.wikidata.org/entity/Q20962970,28079017_12_8,10,V,10,V,12,V,13,V,7,V,10,V,18,V,32,V,34,V,32,V,28,V,14,V,17,V,20,V,12,V,10,V,13,V,9,V,11,V,16,V,18,V,13,V,9,V,0,N
+17,14,ozone,https://www.wikidata.org/entity/Q36933,28079017_14_6,80,V,74,V,72,V,68,V,73,V,65,V,55,V,40,V,42,V,48,V,62,V,76,V,77,V,85,V,94,V,94,V,90,V,87,V,82,V,72,V,67,V,68,V,70,V,0,N
+17,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079017_7_8,1,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,2,V,3,V,8,V,2,V,3,V,6,V,3,V,2,V,2,V,1,V,1,V,1,V,1,V,1,V,1,V,0,N
+17,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079017_8_8,9,V,9,V,11,V,11,V,6,V,9,V,16,V,31,V,32,V,28,V,15,V,10,V,12,V,11,V,8,V,8,V,9,V,7,V,9,V,15,V,17,V,12,V,8,V,0,N
+18,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079018_10_47,20,V,18,V,11,V,12,V,14,V,15,V,12,V,23,V,23,V,30,V,28,V,22,V,23,V,22,V,15,V,26,V,23,V,17,V,21,V,20,V,24,V,20,V,21,V,0,N
+18,12,NOx,https://www.wikidata.org/entity/Q20962970,28079018_12_8,13,V,16,V,18,V,8,V,7,V,7,V,11,V,21,V,26,V,25,V,21,V,14,V,12,V,14,V,13,V,11,V,11,V,14,V,18,V,21,V,26,V,19,V,10,V,0,N
+18,14,ozone,https://www.wikidata.org/entity/Q36933,28079018_14_6,82,V,74,V,71,V,77,V,76,V,71,V,67,V,56,V,54,V,58,V,66,V,77,V,85,V,88,V,95,V,94,V,89,V,84,V,78,V,71,V,64,V,68,V,72,V,0,N
+18,20,toluene,https://www.wikidata.org/entity/Q15779,28079018_20_59,0.8,V,0.9,V,0.9,V,2.6,V,2.4,V,1,V,0.8,V,1.1,V,1.2,V,1.7,V,1.9,V,1.6,V,1.2,V,0.9,V,1.1,V,1,V,0.7,V,0.8,V,1.4,V,1.2,V,1.6,V,1.2,V,0.8,V,0,N
+18,30,benzene,https://www.wikidata.org/entity/Q2270,28079018_30_59,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0.2,V,0.3,V,0.2,V,0.2,V,0.1,V,0.1,V,0,V,0.1,V,0.1,V,0,V,0.1,V,0.1,V,0.2,V,0.3,V,0.2,V,0.1,V,0,N
+18,35,ethylbenzene,https://www.wikidata.org/entity/Q409184,28079018_35_59,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0.1,V,0,V,0,V,0,V,0,V,0,V,0.2,V,0,V,0,V,0,V,0.1,V,0,V,0,V,0,N
+18,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079018_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,2,V,1,V,1,V,1,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,N
+18,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079018_8_8,13,V,16,V,18,V,8,V,7,V,7,V,11,V,21,V,26,V,24,V,19,V,13,V,11,V,13,V,12,V,10,V,11,V,14,V,17,V,21,V,25,V,19,V,10,V,0,N
+24,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079024_10_47,11,V,9,V,8,V,11,V,12,V,10,V,10,V,11,V,14,V,0,N,0,N,17,V,16,V,18,V,17,V,16,V,13,V,13,V,12,V,12,V,10,V,12,V,15,V,0,N
+24,12,NOx,https://www.wikidata.org/entity/Q20962970,28079024_12_8,11,V,16,V,7,V,6,V,6,V,6,V,6,V,10,V,16,V,0,N,0,N,0,N,0,N,11,V,9,V,8,V,6,V,8,V,9,V,12,V,15,V,13,V,6,V,0,N
+24,14,ozone,https://www.wikidata.org/entity/Q36933,28079024_14_6,83,V,75,V,80,V,78,V,77,V,73,V,71,V,70,V,66,V,0,N,0,N,0,N,87,V,91,V,96,V,94,V,93,V,90,V,86,V,79,V,72,V,71,V,75,V,0,N
+24,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079024_7_8,1,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,0,N,0,N,0,N,0,N,2,V,2,V,1,V,1,V,1,V,1,V,0,V,1,V,1,V,1,V,0,N
+24,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079024_8_8,10,V,14,V,6,V,4,V,5,V,5,V,5,V,8,V,15,V,0,N,0,N,0,N,0,N,8,V,7,V,6,V,5,V,6,V,8,V,11,V,14,V,12,V,5,V,0,N
+24,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079024_9_47,5,V,4,V,4,V,6,V,7,V,5,V,5,V,6,V,8,V,0,N,0,N,9,V,5,V,6,V,6,V,8,V,7,V,7,V,5,V,5,V,4,V,5,V,6,V,0,N
+27,12,NOx,https://www.wikidata.org/entity/Q20962970,28079027_12_8,24,V,20,V,15,V,12,V,15,V,16,V,39,V,70,V,59,V,44,V,20,V,10,V,6,V,11,V,11,V,7,V,11,V,12,V,11,V,19,V,11,V,11,V,15,V,0,N
+27,14,ozone,https://www.wikidata.org/entity/Q36933,28079027_14_6,68,V,64,V,63,V,67,V,56,V,48,V,37,V,23,V,31,V,45,V,69,V,79,V,85,V,86,V,86,V,86,V,84,V,83,V,81,V,75,V,75,V,73,V,66,V,0,N
+27,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079027_7_8,2,V,1,V,1,V,1,V,1,V,1,V,3,V,9,V,7,V,6,V,3,V,2,V,1,V,2,V,2,V,1,V,2,V,2,V,1,V,1,V,1,V,1,V,1,V,0,N
+27,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079027_8_8,21,V,19,V,14,V,11,V,14,V,14,V,34,V,56,V,49,V,35,V,16,V,7,V,4,V,8,V,8,V,5,V,8,V,9,V,9,V,17,V,10,V,10,V,14,V,0,N
+35,1,sulfur dioxide,https://www.wikidata.org/entity/Q5282,28079035_1_38,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,5,V,4,V,5,V,5,V,4,V,4,V,0,N
+35,12,NOx,https://www.wikidata.org/entity/Q20962970,28079035_12_8,15,V,26,V,11,V,13,V,10,V,11,V,15,V,22,V,29,V,28,V,30,V,18,V,23,V,21,V,21,V,21,V,18,V,26,V,26,V,26,V,34,V,22,V,14,V,0,N
+35,14,ozone,https://www.wikidata.org/entity/Q36933,28079035_14_6,82,V,66,V,77,V,79,V,75,V,69,V,66,V,61,V,58,V,60,V,65,V,78,V,81,V,87,V,90,V,88,V,85,V,80,V,78,V,72,V,60,V,66,V,71,V,0,N
+35,6,carbon monoxide,https://www.wikidata.org/entity/Q2025,28079035_6_48,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.3,V,0.3,V,0.3,V,0.2,V,0.2,V,0.2,V,0.3,V,0.3,V,0.2,V,0.2,V,0.3,V,0.3,V,0.3,V,0.3,V,0.2,V,0,N
+35,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079035_7_8,1,V,1,V,1,V,2,V,1,V,1,V,2,V,3,V,4,V,4,V,6,V,3,V,5,V,4,V,4,V,4,V,3,V,5,V,5,V,2,V,2,V,1,V,2,V,0,N
+35,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079035_8_8,14,V,25,V,10,V,10,V,8,V,9,V,12,V,18,V,24,V,23,V,21,V,13,V,15,V,15,V,14,V,15,V,13,V,19,V,18,V,22,V,30,V,20,V,11,V,0,N
+36,1,sulfur dioxide,https://www.wikidata.org/entity/Q5282,28079036_1_38,3,V,4,V,4,V,4,V,3,V,3,V,3,V,3,V,4,V,4,V,3,V,3,V,4,V,3,V,3,V,3,V,3,V,3,V,3,V,3,V,3,V,3,V,3,V,0,N
+36,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079036_10_47,11,V,9,V,9,V,11,V,11,V,12,V,12,V,13,V,18,V,23,V,22,V,28,V,41,V,21,V,17,V,15,V,16,V,14,V,18,V,17,V,18,V,15,V,16,V,0,N
+36,12,NOx,https://www.wikidata.org/entity/Q20962970,28079036_12_8,5,V,7,V,8,V,5,V,4,V,9,V,13,V,20,V,36,V,32,V,15,V,11,V,12,V,12,V,8,V,9,V,6,V,9,V,12,V,18,V,15,V,8,V,6,V,0,N
+36,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079036_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,3,V,4,V,2,V,1,V,2,V,2,V,1,V,2,V,1,V,1,V,1,V,2,V,1,V,0,V,0,V,0,N
+36,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079036_8_8,5,V,7,V,8,V,5,V,4,V,9,V,13,V,20,V,31,V,26,V,13,V,9,V,9,V,9,V,6,V,7,V,5,V,7,V,10,V,15,V,14,V,8,V,6,V,0,N
+38,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079038_10_47,12,V,10,V,10,V,10,V,12,V,11,V,13,V,15,V,29,V,23,V,31,V,19,V,14,V,14,V,8,V,14,V,14,V,13,V,10,V,9,V,14,V,12,V,18,V,0,N
+38,12,NOx,https://www.wikidata.org/entity/Q20962970,28079038_12_8,14,V,14,V,5,V,4,V,6,V,8,V,15,V,24,V,50,V,47,V,35,V,26,V,25,V,22,V,23,V,19,V,29,V,32,V,31,V,44,V,38,V,21,V,10,V,0,N
+38,20,toluene,https://www.wikidata.org/entity/Q15779,28079038_20_59,1.2,V,1,V,0.9,V,1.1,V,1,V,0.8,V,0.8,V,1.1,V,1.9,V,2.9,V,2.2,V,2,V,1.9,V,2.8,V,2.4,V,1.8,V,2.1,V,2.4,V,2.1,V,5.3,V,4.4,V,2.6,V,1.2,V,0,N
+38,30,benzene,https://www.wikidata.org/entity/Q2270,28079038_30_59,0.1,V,0.1,V,0.1,V,0.1,V,0.1,V,0.1,V,0.1,V,0.2,V,0.3,V,0.4,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.3,V,0.4,V,0.5,V,0.4,V,0.2,V,0,N
+38,35,ethylbenzene,https://www.wikidata.org/entity/Q409184,28079038_35_59,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.1,V,0.1,V,0.2,V,0.3,V,0.4,V,0.3,V,0.3,V,0.3,V,0.3,V,0.3,V,0.3,V,0.3,V,0.2,V,0.3,V,0.4,V,0.4,V,0.4,V,0.2,V,0,N
+38,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079038_7_8,1,V,1,V,1,V,0,V,0,V,1,V,3,V,4,V,13,V,13,V,10,V,7,V,7,V,6,V,6,V,5,V,8,V,9,V,7,V,10,V,7,V,4,V,2,V,0,N
+38,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079038_8_8,13,V,14,V,4,V,4,V,5,V,7,V,11,V,18,V,29,V,27,V,21,V,16,V,15,V,13,V,14,V,11,V,16,V,19,V,21,V,29,V,27,V,15,V,7,V,0,N
+38,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079038_9_47,5,V,5,V,5,V,5,V,7,V,5,V,6,V,5,V,8,V,8,V,15,V,8,V,2,V,5,V,1,V,5,V,7,V,5,V,5,V,4,V,5,V,5,V,11,V,0,N
+39,12,NOx,https://www.wikidata.org/entity/Q20962970,28079039_12_8,8,V,8,V,5,V,3,V,4,V,6,V,13,V,19,V,24,V,18,V,16,V,16,V,13,V,13,V,11,V,11,V,9,V,15,V,22,V,33,V,26,V,21,V,11,V,0,N
+39,14,ozone,https://www.wikidata.org/entity/Q36933,28079039_14_6,80,V,75,V,76,V,81,V,74,V,69,V,63,V,60,V,58,V,64,V,66,V,73,V,79,V,83,V,86,V,85,V,87,V,81,V,72,V,58,V,59,V,61,V,69,V,0,N
+39,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079039_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,1,V,2,V,2,V,2,V,2,V,1,V,1,V,1,V,2,V,1,V,1,V,1,V,0,V,0,N
+39,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079039_8_8,7,V,7,V,5,V,3,V,4,V,6,V,12,V,19,V,24,V,17,V,14,V,12,V,10,V,10,V,8,V,9,V,8,V,13,V,19,V,31,V,25,V,20,V,10,V,0,N
+4,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079004_10_A,11,V,9,V,9,V,9,V,11,V,11,V,11,V,12,V,16,V,22,V,20,V,22,V,44,V,30,V,17,V,15,V,16,V,14,V,12,V,13,V,14,V,15,V,18,V,0,N
+4,12,NOx,https://www.wikidata.org/entity/Q20962970,28079004_12_8,15,V,21,V,11,V,8,V,7,V,9,V,10,V,14,V,20,V,21,V,22,V,18,V,19,V,20,V,16,V,17,V,16,V,14,V,15,V,23,V,24,V,21,V,11,V,0,N
+4,6,carbon monoxide,https://www.wikidata.org/entity/Q2025,28079004_6_48,0.2,V,0.1,V,0.1,V,0.1,V,0.1,V,0.1,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.3,V,0.2,V,0.2,V,0.2,V,0.2,V,0.1,V,0.2,V,0.2,V,0.2,V,0.2,V,0.1,V,0,N
+4,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079004_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,1,V,2,V,1,V,1,V,1,V,0,V,0,V,0,V,1,V,0,V,0,V,0,V,0,N
+4,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079004_8_8,15,V,21,V,11,V,8,V,7,V,9,V,10,V,14,V,20,V,21,V,21,V,17,V,16,V,18,V,15,V,16,V,15,V,13,V,14,V,22,V,23,V,21,V,11,V,0,N
+4,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079004_9_A,5,V,4,V,4,V,4,V,5,V,5,V,6,V,6,V,7,V,8,V,7,V,7,V,9,V,8,V,6,V,5,V,5,V,4,V,5,V,5,V,5,V,6,V,6,V,0,N
+40,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079040_10_47,20,V,15,V,18,V,17,V,11,V,19,V,19,V,20,V,25,V,21,V,28,V,36,V,28,V,41,V,17,V,9,V,15,V,17,V,8,V,14,V,11,V,15,V,15,V,0,N
+40,12,NOx,https://www.wikidata.org/entity/Q20962970,28079040_12_8,8,V,10,V,9,V,9,V,7,V,14,V,22,V,35,V,37,V,36,V,21,V,17,V,19,V,14,V,17,V,15,V,15,V,15,V,18,V,28,V,23,V,16,V,11,V,0,N
+40,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079040_7_8,1,V,1,V,1,V,1,V,1,V,1,V,2,V,3,V,4,V,6,V,4,V,3,V,4,V,3,V,5,V,2,V,3,V,3,V,3,V,3,V,2,V,2,V,1,V,0,N
+40,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079040_8_8,7,V,8,V,8,V,8,V,6,V,13,V,19,V,31,V,31,V,28,V,16,V,11,V,13,V,9,V,10,V,11,V,9,V,11,V,13,V,23,V,20,V,14,V,9,V,0,N
+47,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079047_10_47,16,V,11,V,12,V,13,V,9,V,12,V,14,V,16,V,20,V,26,V,25,V,26,V,33,V,35,V,24,V,23,V,21,V,18,V,17,V,16,V,13,V,14,V,14,V,0,N
+47,12,NOx,https://www.wikidata.org/entity/Q20962970,28079047_12_8,8,V,11,V,12,V,7,V,7,V,7,V,12,V,26,V,39,V,36,V,24,V,15,V,13,V,14,V,10,V,11,V,12,V,15,V,12,V,20,V,25,V,18,V,11,V,0,N
+47,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079047_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,2,V,3,V,3,V,2,V,2,V,2,V,1,V,1,V,1,V,1,V,0,V,0,V,1,V,0,V,0,V,0,N
+47,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079047_8_8,8,V,11,V,12,V,7,V,7,V,6,V,12,V,26,V,36,V,31,V,20,V,12,V,10,V,11,V,8,V,9,V,9,V,13,V,11,V,19,V,24,V,17,V,10,V,0,N
+47,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079047_9_47,5,V,5,V,5,V,8,V,6,V,6,V,7,V,8,V,8,V,9,V,11,V,9,V,11,V,7,V,7,V,3,V,4,V,7,V,6,V,5,V,4,V,5,V,5,V,0,N
+48,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079048_10_47,21,V,15,V,16,V,14,V,19,V,21,V,17,V,21,V,24,V,28,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N
+48,12,NOx,https://www.wikidata.org/entity/Q20962970,28079048_12_8,11,V,15,V,5,V,3,V,4,V,5,V,6,V,11,V,17,V,16,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N
+48,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079048_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N
+48,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079048_8_8,11,V,15,V,5,V,3,V,4,V,5,V,6,V,11,V,17,V,16,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N
+48,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079048_9_47,7,V,9,V,7,V,5,V,9,V,11,V,7,V,11,V,11,V,12,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,N
+49,12,NOx,https://www.wikidata.org/entity/Q20962970,28079049_12_8,8,V,17,V,12,V,5,V,5,V,6,V,12,V,17,V,22,V,27,V,21,V,13,V,9,V,9,V,7,V,5,V,6,V,8,V,8,V,13,V,21,V,15,V,9,V,0,N
+49,14,ozone,https://www.wikidata.org/entity/Q36933,28079049_14_6,77,V,63,V,66,V,75,V,70,V,64,V,59,V,56,V,54,V,51,V,59,V,71,V,79,V,84,V,88,V,87,V,85,V,80,V,77,V,65,V,58,V,64,V,66,V,0,N
+49,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079049_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,2,V,1,V,1,V,1,V,1,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,N
+49,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079049_8_8,8,V,17,V,12,V,5,V,5,V,6,V,11,V,17,V,21,V,25,V,19,V,11,V,8,V,8,V,6,V,5,V,5,V,8,V,7,V,12,V,21,V,15,V,9,V,0,N
+50,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079050_10_47,14,V,11,V,10,V,11,V,9,V,11,V,11,V,12,V,13,V,16,V,20,V,16,V,18,V,17,V,14,V,3,V,10,V,13,V,15,V,9,V,11,V,16,V,11,V,0,N
+50,12,NOx,https://www.wikidata.org/entity/Q20962970,28079050_12_8,10,V,11,V,5,V,5,V,6,V,6,V,10,V,14,V,20,V,18,V,14,V,12,V,11,V,11,V,7,V,8,V,8,V,13,V,14,V,15,V,16,V,10,V,6,V,0,N
+50,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079050_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,2,V,2,V,1,V,1,V,2,V,1,V,1,V,1,V,1,V,0,V,0,V,0,V,0,V,0,V,0,N
+50,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079050_8_8,10,V,11,V,5,V,5,V,6,V,6,V,10,V,13,V,19,V,16,V,11,V,9,V,9,V,9,V,6,V,7,V,7,V,11,V,14,V,15,V,16,V,10,V,6,V,0,N
+50,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079050_9_47,7,V,6,V,5,V,5,V,3,V,5,V,5,V,5,V,4,V,5,V,8,V,6,V,6,V,6,V,4,V,0,V,3,V,5,V,6,V,1,V,4,V,8,V,3,V,0,N
+54,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079054_10_A,26,V,16,V,21,V,25,V,26,V,25,V,12,V,20,V,25,V,25,V,27,V,26,V,27,V,23,V,24,V,20,V,18,V,22,V,23,V,19,V,22,V,30,V,25,V,0,N
+54,12,NOx,https://www.wikidata.org/entity/Q20962970,28079054_12_8,8,V,11,V,10,V,13,V,13,V,14,V,24,V,38,V,51,V,40,V,26,V,25,V,21,V,12,V,12,V,15,V,17,V,21,V,34,V,37,V,30,V,17,V,12,V,0,N
+54,14,ozone,https://www.wikidata.org/entity/Q36933,28079054_14_6,77,V,69,V,65,V,57,V,58,V,54,V,48,V,40,V,36,V,45,V,58,V,65,V,75,V,84,V,90,V,88,V,88,V,80,V,67,V,59,V,59,V,66,V,64,V,0,N
+54,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079054_7_8,0,V,0,V,0,V,0,V,0,V,0,V,1,V,4,V,8,V,6,V,4,V,5,V,4,V,2,V,2,V,2,V,3,V,4,V,5,V,4,V,3,V,1,V,0,V,0,N
+54,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079054_8_8,8,V,11,V,10,V,13,V,13,V,14,V,22,V,33,V,40,V,30,V,19,V,18,V,15,V,9,V,9,V,12,V,13,V,15,V,26,V,31,V,25,V,15,V,11,V,0,N
+54,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079054_9_A,6,V,5,V,8,V,8,V,10,V,8,V,5,V,10,V,12,V,12,V,9,V,7,V,8,V,9,V,11,V,8,V,8,V,9,V,7,V,8,V,10,V,9,V,6,V,0,N
+56,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079056_10_47,20,V,18,V,20,V,17,V,14,V,19,V,22,V,25,V,29,V,32,V,31,V,32,V,24,V,32,V,16,V,17,V,18,V,15,V,22,V,23,V,18,V,16,V,23,V,0,N
+56,12,NOx,https://www.wikidata.org/entity/Q20962970,28079056_12_8,21,V,24,V,20,V,20,V,19,V,20,V,49,V,86,V,86,V,74,V,53,V,37,V,36,V,39,V,39,V,38,V,46,V,61,V,77,V,80,V,78,V,52,V,34,V,0,N
+56,6,carbon monoxide,https://www.wikidata.org/entity/Q2025,28079056_6_48,0.2,V,0.1,V,0.1,V,0.1,V,0.1,V,0.1,V,0.2,V,0.3,V,0.3,V,0.3,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.3,V,0.3,V,0.3,V,0.2,V,0.2,V,0,N
+56,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079056_7_8,4,V,5,V,4,V,5,V,5,V,5,V,12,V,22,V,20,V,19,V,14,V,11,V,10,V,11,V,11,V,10,V,11,V,14,V,19,V,18,V,16,V,11,V,8,V,0,N
+56,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079056_8_8,15,V,17,V,14,V,13,V,12,V,13,V,30,V,53,V,55,V,45,V,32,V,21,V,20,V,22,V,22,V,22,V,28,V,39,V,49,V,52,V,53,V,36,V,22,V,0,N
+56,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079056_9_47,10,V,10,V,15,V,12,V,9,V,13,V,15,V,15,V,15,V,13,V,16,V,20,V,9,V,9,V,4,V,6,V,6,V,5,V,11,V,13,V,9,V,7,V,12,V,0,N
+57,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079057_10_47,10,V,10,V,16,V,19,V,15,V,17,V,21,V,17,V,19,V,26,V,24,V,20,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,V,4,V,12,V,15,V,0,N
+57,12,NOx,https://www.wikidata.org/entity/Q20962970,28079057_12_8,7,V,3,V,3,V,3,V,3,V,4,V,6,V,10,V,16,V,19,V,11,V,9,V,11,V,10,V,10,V,8,V,9,V,11,V,15,V,12,V,15,V,10,V,5,V,0,N
+57,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079057_7_8,2,V,0,V,0,V,0,V,0,V,0,V,1,V,1,V,2,V,3,V,2,V,2,V,3,V,3,V,3,V,2,V,3,V,3,V,3,V,2,V,3,V,2,V,1,V,0,N
+57,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079057_8_8,5,V,3,V,3,V,2,V,3,V,4,V,5,V,9,V,13,V,14,V,7,V,5,V,6,V,5,V,6,V,5,V,5,V,7,V,10,V,10,V,10,V,7,V,4,V,0,N
+57,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079057_9_A,5,V,7,V,11,V,14,V,10,V,11,V,14,V,10,V,11,V,14,V,15,V,10,V,0,N,0,N,0,N,0,N,0,N,0,N,0,N,0,V,2,V,5,V,9,V,0,N
+58,12,NOx,https://www.wikidata.org/entity/Q20962970,28079058_12_8,3,V,2,V,2,V,2,V,2,V,5,V,20,V,46,V,33,V,28,V,6,V,4,V,4,V,0,N,0,N,3,V,3,V,5,V,5,V,5,V,11,V,5,V,2,V,0,N
+58,14,ozone,https://www.wikidata.org/entity/Q36933,28079058_14_6,96,V,87,V,82,V,80,V,71,V,61,V,39,V,18,V,21,V,40,V,74,V,80,V,85,V,0,N,0,N,90,V,89,V,87,V,83,V,80,V,63,V,72,V,75,V,0,N
+58,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079058_7_8,0,V,0,V,0,V,0,V,0,V,0,V,1,V,7,V,3,V,6,V,1,V,0,V,0,V,0,N,0,N,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,0,N
+58,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079058_8_8,3,V,2,V,2,V,2,V,2,V,5,V,18,V,35,V,28,V,19,V,5,V,4,V,3,V,0,N,0,N,3,V,3,V,5,V,5,V,5,V,11,V,5,V,2,V,0,N
+59,12,NOx,https://www.wikidata.org/entity/Q20962970,28079059_12_8,27,V,20,V,10,V,9,V,8,V,10,V,23,V,30,V,38,V,29,V,19,V,7,V,4,V,6,V,5,V,3,V,3,V,7,V,6,V,15,V,11,V,8,V,7,V,0,N
+59,14,ozone,https://www.wikidata.org/entity/Q36933,28079059_14_6,63,V,62,V,69,V,74,V,65,V,57,V,46,V,47,V,46,V,54,V,67,V,81,V,87,V,90,V,90,V,91,V,89,V,86,V,85,V,75,V,75,V,73,V,71,V,0,N
+59,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079059_7_8,1,V,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,3,V,3,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,0,V,0,V,0,V,0,V,0,N
+59,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079059_8_8,26,V,20,V,10,V,8,V,7,V,10,V,22,V,30,V,36,V,25,V,15,V,5,V,3,V,5,V,4,V,2,V,2,V,5,V,5,V,14,V,11,V,7,V,6,V,0,N
+60,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079060_10_47,9,V,10,V,12,V,11,V,11,V,11,V,12,V,13,V,13,V,14,V,14,V,16,V,14,V,13,V,12,V,11,V,9,V,10,V,10,V,11,V,13,V,14,V,14,V,0,N
+60,12,NOx,https://www.wikidata.org/entity/Q20962970,28079060_12_8,9,V,5,V,5,V,3,V,5,V,6,V,10,V,26,V,27,V,24,V,14,V,9,V,9,V,7,V,7,V,7,V,7,V,10,V,9,V,15,V,17,V,16,V,6,V,0,N
+60,14,ozone,https://www.wikidata.org/entity/Q36933,28079060_14_6,83,V,80,V,80,V,82,V,75,V,71,V,68,V,56,V,60,V,64,V,70,V,80,V,85,V,88,V,89,V,90,V,90,V,87,V,85,V,76,V,69,V,69,V,75,V,0,N
+60,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079060_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,2,V,2,V,2,V,1,V,2,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,1,V,0,V,0,N
+60,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079060_8_8,9,V,5,V,5,V,3,V,5,V,6,V,9,V,24,V,24,V,20,V,12,V,7,V,7,V,5,V,5,V,5,V,5,V,8,V,8,V,13,V,17,V,15,V,5,V,0,N
+60,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079060_9_A,4,V,4,V,4,V,5,V,5,V,6,V,6,V,6,V,6,V,6,V,6,V,6,V,5,V,4,V,4,V,4,V,4,V,4,V,4,V,3,V,4,V,4,V,5,V,0,N
+8,1,sulfur dioxide,https://www.wikidata.org/entity/Q5282,28079008_1_38,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,2,V,3,V,2,V,2,V,0,N
+8,10,PM10 (including PM 2.5),https://www.wikidata.org/entity/Q48035511,28079008_10_47,20,V,11,V,11,V,9,V,10,V,13,V,12,V,12,V,16,V,20,V,22,V,24,V,24,V,21,V,16,V,24,V,19,V,19,V,19,V,12,V,0,V,4,V,20,V,0,N
+8,12,NOx,https://www.wikidata.org/entity/Q20962970,28079008_12_8,12,V,25,V,14,V,7,V,7,V,8,V,13,V,25,V,30,V,35,V,28,V,23,V,19,V,19,V,17,V,16,V,14,V,20,V,21,V,31,V,35,V,23,V,12,V,0,N
+8,14,ozone,https://www.wikidata.org/entity/Q36933,28079008_14_6,76,V,58,V,67,V,78,V,73,V,66,V,60,V,50,V,48,V,48,V,58,V,67,V,76,V,81,V,85,V,83,V,81,V,75,V,71,V,56,V,49,V,58,V,65,V,0,N
+8,20,toluene,https://www.wikidata.org/entity/Q15779,28079008_20_59,2,V,2.2,V,1.6,V,1.5,V,1.4,V,1.5,V,1.3,V,1.4,V,2,V,2.7,V,2.7,V,4.1,V,4.3,V,6,V,3.1,V,2.5,V,4,V,3.4,V,3.6,V,3.3,V,4,V,2.9,V,2,V,0,N
+8,30,benzene,https://www.wikidata.org/entity/Q2270,28079008_30_59,0.2,V,0.2,V,0.2,V,0.1,V,0.1,V,0.1,V,0.1,V,0.2,V,0.3,V,0.4,V,0.3,V,0.3,V,0.2,V,0.2,V,0.2,V,0.3,V,0.3,V,0.4,V,0.4,V,0.5,V,0.7,V,0.7,V,0.3,V,0,N
+8,35,ethylbenzene,https://www.wikidata.org/entity/Q409184,28079008_35_59,0.4,V,0.4,V,0.3,V,0.3,V,0.3,V,0.3,V,0.3,V,0.3,V,0.4,V,0.6,V,0.6,V,0.5,V,0.5,V,0.5,V,0.4,V,0.4,V,0.5,V,0.5,V,0.6,V,0.6,V,0.8,V,0.6,V,0.4,V,0,N
+8,6,carbon monoxide,https://www.wikidata.org/entity/Q2025,28079008_6_48,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.3,V,0.3,V,0.3,V,0.3,V,0.2,V,0.2,V,0.2,V,0.2,V,0.2,V,0.3,V,0.3,V,0.3,V,0.4,V,0.3,V,0.2,V,0,N
+8,7,nitric oxide,https://www.wikidata.org/entity/Q207843,28079008_7_8,0,V,0,V,0,V,0,V,0,V,0,V,0,V,1,V,2,V,4,V,4,V,3,V,3,V,3,V,3,V,2,V,2,V,2,V,1,V,1,V,1,V,0,V,0,V,0,N
+8,8,nitrogen dioxide,https://www.wikidata.org/entity/Q207895,28079008_8_8,12,V,25,V,14,V,7,V,7,V,8,V,13,V,24,V,28,V,30,V,22,V,18,V,15,V,15,V,13,V,12,V,12,V,17,V,19,V,30,V,34,V,22,V,12,V,0,N
+8,9,PM 2.5,https://www.wikidata.org/entity/Q48035814,28079008_9_47,8,V,4,V,6,V,4,V,5,V,6,V,5,V,5,V,7,V,8,V,9,V,7,V,5,V,4,V,5,V,14,V,10,V,10,V,10,V,6,V,0,V,2,V,11,V,0,N

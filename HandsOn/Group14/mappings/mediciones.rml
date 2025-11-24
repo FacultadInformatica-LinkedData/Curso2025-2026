@@ -2,7 +2,9 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix ex: <http://datos.madrid.es/Calidad_Aire/Medicion/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <http://datos.madrid.es/Calidad_Aire/> .
+
 
 <#MedicionMapping>
   rml:logicalSource [
@@ -20,8 +22,10 @@
     rr:objectMap [ rr:template "http://datos.madrid.es/Calidad_Aire/Estacion/{CODIGO}" ]
   ] ;
   rr:predicateObjectMap [
-    rr:predicate ex:fecha ;
-    rr:objectMap [ rr:template "{ANO}-{MES}-{DIA}" ]
+  rr:predicate ex:fecha ;
+  rr:objectMap [
+    rr:template "{ANO}-{MES}-{DIA}" ;
+    rr:datatype xsd:date]
   ] ;
   rr:predicateObjectMap [
     rr:predicate ex:magnitud ;

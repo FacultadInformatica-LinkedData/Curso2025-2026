@@ -2,10 +2,9 @@
 # Based on the provided ontology and CSV structure
 
 prefixes:
-  base: "http://data.barcelona.cat/actividades/"
   att: "http://data.barcelona.cat/att/"
   rel: "http://data.barcelona.cat/rel/"
-  url: "http://data.barcelona.cat/url/"
+  node: "http://data.barcelona.cat/node/"
   wd: "http://www.wikidata.org/wiki/"
   wdt: "http://www.wikidata.org/prop/direct/"
   xsd: "http://www.w3.org/2001/XMLSchema#"
@@ -16,9 +15,9 @@ mappings:
 
     sources: 
       - ['rawdataset_actividades_barcelona-updated.csv~csv']
-    s: http://data.barcelona.cat/actividades/Actividad/$(ID)
+    s: http://data.barcelona.cat/actividades/$(ID)
     po:
-      - [a, base:Actividad]
+      - [a, node:Actividad]
       - [att:titulo, $(Titulo), xsd:string]
       - [att:descripcion, $(Descripción), xsd:string]
       - [att:fechaInicio, $(Fecha de Inicio), xsd:string]
@@ -32,32 +31,33 @@ mappings:
       - [att:tipo, $(Tipo), xsd:string]
       - p: rel:typeOf
         o:
-          - value: http://data.barcelona.cat/actividades/Categoria/$(Etiquetas)
+          - value: http://data.barcelona.cat/categorias/$(Etiquetas)
             type: iri
       - p: rel:isHosted
         o:
-          - value: http://data.barcelona.cat/url/Organizador/$(Organizadores_normalizado)
+          - value: http://data.barcelona.cat/organizadores/$(Organizadores_normalizado)
             type: iri
       - p: rel:placed
         o:
-          - value: http://data.barcelona.cat/url/Municipio/$(Nombre_municipio_normalizado)
+          - value: http://data.barcelona.cat/municipios/$(Nombre_municipio_normalizado)
             type: iri
       
 
   categoria:
     sources: 
       - ['rawdataset_actividades_barcelona-updated.csv~csv']
-    s: http://data.barcelona.cat/actividades/Categoria/$(Etiquetas)
+    s: http://data.barcelona.cat/categorias/$(Etiquetas)
     po:
-      - [a, base:Categoria]
+      - [a, node:Categoria]
       - [att:nombreCategoria, $(Etiquetas), xsd:string]
       
   organizador:
     sources: 
       - ['rawdataset_actividades_barcelona-updated.csv~csv']
-    s: http://data.barcelona.cat/url/Organizador/$(Organizadores_normalizado)
+    s: http://data.barcelona.cat/organizadores/$(Organizadores_normalizado)
     po:
-      - [a, url:Organizador]
+      - [a, node:Organizador]
+      - [att:nombreOrganizador, $(Organizadores_normalizado), xsd:string]
       - p: owl:sameAs
         o:
           - value: $(URL_Organizadores)
@@ -68,12 +68,13 @@ mappings:
   municipio:
     sources: 
       - ['rawdataset_actividades_barcelona-updated.csv~csv']
-    s: http://data.barcelona.cat/url/Municipio/$(Nombre_municipio_normalizado)
+    s: http://data.barcelona.cat/municipios/$(Nombre_municipio_normalizado)
     po:
-      - [a, url:Municipio]
+      - [a, node:Municipio]
+      - [att:nombreMunicipio, $(Nombre_municipio_normalizado), xsd:string]
       - p: rel:isContained
         o:
-          - value: http://data.barcelona.cat/url/Comarca/$(Comarca_normalizada)
+          - value: http://data.barcelona.cat/comarcas/$(Comarca_normalizada)
             type: iri
       - p: owl:sameAs
         o:
@@ -83,9 +84,10 @@ mappings:
   comarca:
     sources: 
       - ['rawdataset_actividades_barcelona-updated.csv~csv']
-    s: http://data.barcelona.cat/url/Comarca/$(Comarca_normalizada)
+    s: http://data.barcelona.cat/comarcas/$(Comarca_normalizada)
     po:
-      - [a, url:Comarca]
+      - [a, node:Comarca]
+      - [att:nombreComarca, $(Comarca_normalizada), xsd:string]
       - p: owl:sameAs
         o:
           - value: $(URL_Comarca)

@@ -339,5 +339,31 @@
       "positiva_droga"
     ],
     "description": "Remove duplicate rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "grel:if(isBlank(value), null, value.trim().toLowercase() == \"s\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna positiva_alcohol usando la expresión grel:if(isBlank(value), null, value.trim().toLowercase() == \"s\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_droga",
+    "expression": "grel:if(isBlank(value), null, value.trim().toLowercase() == \"s\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna positiva_droga usando la expresión grel:if(isBlank(value), null, value.trim().toLowercase() == \"s\")"
   }
 ]

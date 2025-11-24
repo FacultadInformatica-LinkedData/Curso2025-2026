@@ -1,0 +1,59 @@
+# queries-with-links.sparql
+# Validation of linked data between local dataset and external sources
+
+PREFIX ns1: <http://example.org/accidents/>
+PREFIX ns2: <http://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# 1 Check that links (owl:sameAs) exist
+
+SELECT ?subject ?same
+WHERE {
+  ?subject owl:sameAs ?same .
+}
+LIMIT 20
+
+
+
+# 2 Count total number of linked resources
+
+
+SELECT (COUNT(?same) AS ?totalLinks)
+WHERE {
+  ?subject owl:sameAs ?same .
+}
+
+
+
+# 3 Verify that links connect to Wikidata resources
+
+
+SELECT ?subject ?wikidata
+WHERE {
+  ?subject owl:sameAs ?wikidata .
+  FILTER(CONTAINS(STR(?wikidata), "wikidata.org"))
+}
+LIMIT 20
+
+
+
+# 4 Show accidents with linked districts (by owl:sameAs)
+
+SELECT ?accident ?district ?wikidata
+WHERE {
+  ?accident ns2:addressLocality ?district ;
+            owl:sameAs ?wikidata .
+}
+LIMIT 20
+
+
+
+# 5 Optional: Check for broken or missing links
+
+SELECT ?accident
+WHERE {
+  ?accident a ns2:TrafficAccident .
+  FILTER NOT EXISTS { ?accident owl:sameAs ?anyLink . }
+}
+LIMIT 20

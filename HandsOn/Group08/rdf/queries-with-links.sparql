@@ -1,0 +1,39 @@
+PREFIX ns: <http://bcn-mobility-air.org/ontology/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+
+SELECT DISTINCT ?EntityURI ?Name ?WikidataLink
+WHERE {
+  ?EntityURI a ns:District ;
+             ns:name ?Name ;
+             owl:sameAs ?WikidataLink .
+}
+ORDER BY ?Name
+LIMIT 10
+
+SELECT DISTINCT ?EntityURI ?Name ?WikidataLink
+WHERE {
+  ?EntityURI a ns:Neighborhood ;
+             ns:name ?Name ;
+             owl:sameAs ?WikidataLink .
+}
+ORDER BY ?Name
+LIMIT 10
+
+SELECT DISTINCT ?EntityURI ?Name ?WikidataLink
+WHERE {
+  ?EntityURI a ns:Pollutant ;
+             ns:name ?Name ;
+             owl:sameAs ?WikidataLink .
+}
+ORDER BY ?Name
+LIMIT 10
+
+SELECT DISTINCT ?EntityURI ?Name ?WikidataLink
+WHERE {
+  ?EntityURI a ns:RoadSegment ;
+             ns:name ?Name ;
+             owl:sameAs ?WikidataLink .
+}
+ORDER BY ?Name
+LIMIT 10
+

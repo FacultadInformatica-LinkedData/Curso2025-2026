@@ -7,10 +7,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
-@prefix base: <http://data.barcelona.cat/actividades/> .
 @prefix att: <http://data.barcelona.cat/att/> .
 @prefix rel: <http://data.barcelona.cat/rel/> .
-@prefix url: <http://data.barcelona.cat/url/> .
+@prefix node: <http://data.barcelona.cat/node/> .
 @prefix wd: <http://www.wikidata.org/wiki/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 
@@ -29,23 +28,23 @@ map:map_categoria_000 rml:logicalSource map:source_001 ;
 map:map_comarca_000 rml:logicalSource map:source_004 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "comarca" ;
-	rr:predicateObjectMap map:pom_022, map:pom_023 ;
+	rr:predicateObjectMap map:pom_024, map:pom_025, map:pom_026 ;
 	rr:subjectMap map:s_004 .
 
 map:map_municipio_000 rml:logicalSource map:source_003 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "municipio" ;
-	rr:predicateObjectMap map:pom_019, map:pom_020, map:pom_021 ;
+	rr:predicateObjectMap map:pom_020, map:pom_021, map:pom_022, map:pom_023 ;
 	rr:subjectMap map:s_003 .
 
 map:map_organizador_000 rml:logicalSource map:source_002 ;
 	rdf:type rr:TriplesMap ;
 	rdfs:label "organizador" ;
-	rr:predicateObjectMap map:pom_017, map:pom_018 ;
+	rr:predicateObjectMap map:pom_017, map:pom_018, map:pom_019 ;
 	rr:subjectMap map:s_002 .
 
 map:om_000 rdf:type rr:ObjectMap ;
-	rr:constant base:Actividad ;
+	rr:constant node:Actividad ;
 	rr:termType rr:IRI .
 
 map:om_001 rml:reference "Titulo" ;
@@ -104,19 +103,19 @@ map:om_011 rml:reference "Tipo" ;
 	rr:termType rr:Literal .
 
 map:om_012 rdf:type rr:ObjectMap ;
-	rr:template "http://data.barcelona.cat/actividades/Categoria/{Etiquetas}" ;
+	rr:template "http://data.barcelona.cat/categorias/{Etiquetas}" ;
 	rr:termType rr:IRI .
 
 map:om_013 rdf:type rr:ObjectMap ;
-	rr:template "http://data.barcelona.cat/url/Organizador/{Organizadores_normalizado}" ;
+	rr:template "http://data.barcelona.cat/organizadores/{Organizadores_normalizado}" ;
 	rr:termType rr:IRI .
 
 map:om_014 rdf:type rr:ObjectMap ;
-	rr:template "http://data.barcelona.cat/url/Municipio/{Nombre_municipio_normalizado}" ;
+	rr:template "http://data.barcelona.cat/municipios/{Nombre_municipio_normalizado}" ;
 	rr:termType rr:IRI .
 
 map:om_015 rdf:type rr:ObjectMap ;
-	rr:constant base:Categoria ;
+	rr:constant node:Categoria ;
 	rr:termType rr:IRI .
 
 map:om_016 rml:reference "Etiquetas" ;
@@ -125,30 +124,45 @@ map:om_016 rml:reference "Etiquetas" ;
 	rr:termType rr:Literal .
 
 map:om_017 rdf:type rr:ObjectMap ;
-	rr:constant url:Organizador ;
+	rr:constant node:Organizador ;
 	rr:termType rr:IRI .
 
-map:om_018 rml:reference "URL_Organizadores" ;
+map:om_018 rml:reference "Organizadores_normalizado" ;
 	rdf:type rr:ObjectMap ;
-	rr:termType rr:IRI .
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
 
-map:om_019 rdf:type rr:ObjectMap ;
-	rr:constant url:Municipio ;
+map:om_019 rml:reference "URL_Organizadores" ;
+	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_020 rdf:type rr:ObjectMap ;
-	rr:template "http://data.barcelona.cat/url/Comarca/{Comarca_normalizada}" ;
+	rr:constant node:Municipio ;
 	rr:termType rr:IRI .
 
-map:om_021 rml:reference "URL_Municipio" ;
+map:om_021 rml:reference "Nombre_municipio_normalizado" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_022 rdf:type rr:ObjectMap ;
+	rr:template "http://data.barcelona.cat/comarcas/{Comarca_normalizada}" ;
+	rr:termType rr:IRI .
+
+map:om_023 rml:reference "URL_Municipio" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
-map:om_022 rdf:type rr:ObjectMap ;
-	rr:constant url:Comarca ;
+map:om_024 rdf:type rr:ObjectMap ;
+	rr:constant node:Comarca ;
 	rr:termType rr:IRI .
 
-map:om_023 rml:reference "URL_Comarca" ;
+map:om_025 rml:reference "Comarca_normalizada" ;
+	rdf:type rr:ObjectMap ;
+	rr:datatype xsd:string ;
+	rr:termType rr:Literal .
+
+map:om_026 rml:reference "URL_Comarca" ;
 	rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
@@ -207,21 +221,30 @@ map:pm_017 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
 map:pm_018 rdf:type rr:PredicateMap ;
-	rr:constant owl:sameAs .
+	rr:constant att:nombreOrganizador .
 
 map:pm_019 rdf:type rr:PredicateMap ;
-	rr:constant rdf:type .
-
-map:pm_020 rdf:type rr:PredicateMap ;
-	rr:constant rel:isContained .
-
-map:pm_021 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
 
-map:pm_022 rdf:type rr:PredicateMap ;
+map:pm_020 rdf:type rr:PredicateMap ;
 	rr:constant rdf:type .
 
+map:pm_021 rdf:type rr:PredicateMap ;
+	rr:constant att:nombreMunicipio .
+
+map:pm_022 rdf:type rr:PredicateMap ;
+	rr:constant rel:isContained .
+
 map:pm_023 rdf:type rr:PredicateMap ;
+	rr:constant owl:sameAs .
+
+map:pm_024 rdf:type rr:PredicateMap ;
+	rr:constant rdf:type .
+
+map:pm_025 rdf:type rr:PredicateMap ;
+	rr:constant att:nombreComarca .
+
+map:pm_026 rdf:type rr:PredicateMap ;
 	rr:constant owl:sameAs .
 
 map:pom_000 rdf:type rr:PredicateObjectMap ;
@@ -320,23 +343,35 @@ map:pom_023 rdf:type rr:PredicateObjectMap ;
 	rr:objectMap map:om_023 ;
 	rr:predicateMap map:pm_023 .
 
+map:pom_024 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_024 ;
+	rr:predicateMap map:pm_024 .
+
+map:pom_025 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_025 ;
+	rr:predicateMap map:pm_025 .
+
+map:pom_026 rdf:type rr:PredicateObjectMap ;
+	rr:objectMap map:om_026 ;
+	rr:predicateMap map:pm_026 .
+
 map:rules_000 <http://rdfs.org/ns/void#exampleResource> map:map_actividad_000, map:map_categoria_000, map:map_comarca_000, map:map_municipio_000, map:map_organizador_000 ;
 	rdf:type <http://rdfs.org/ns/void#Dataset> .
 
 map:s_000 rdf:type rr:SubjectMap ;
-	rr:template "http://data.barcelona.cat/actividades/Actividad/{ID}" .
+	rr:template "http://data.barcelona.cat/actividades/{ID}" .
 
 map:s_001 rdf:type rr:SubjectMap ;
-	rr:template "http://data.barcelona.cat/actividades/Categoria/{Etiquetas}" .
+	rr:template "http://data.barcelona.cat/categorias/{Etiquetas}" .
 
 map:s_002 rdf:type rr:SubjectMap ;
-	rr:template "http://data.barcelona.cat/url/Organizador/{Organizadores_normalizado}" .
+	rr:template "http://data.barcelona.cat/organizadores/{Organizadores_normalizado}" .
 
 map:s_003 rdf:type rr:SubjectMap ;
-	rr:template "http://data.barcelona.cat/url/Municipio/{Nombre_municipio_normalizado}" .
+	rr:template "http://data.barcelona.cat/municipios/{Nombre_municipio_normalizado}" .
 
 map:s_004 rdf:type rr:SubjectMap ;
-	rr:template "http://data.barcelona.cat/url/Comarca/{Comarca_normalizada}" .
+	rr:template "http://data.barcelona.cat/comarcas/{Comarca_normalizada}" .
 
 map:source_000 rml:referenceFormulation ql:CSV ;
 	rml:source "rawdataset_actividades_barcelona-updated.csv" ;

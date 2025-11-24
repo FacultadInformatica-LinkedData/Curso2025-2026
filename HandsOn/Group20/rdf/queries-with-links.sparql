@@ -1,39 +1,41 @@
 ################################################################################
 # PREFIXES
 ################################################################################
-PREFIX ns:  <https://data.smartcitymadrid.es/ontology/parking#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ################################################################################
 # QUERY 9 - First ten parkings linked to Wikidata
 ## Retrieves the first ten parkings that have been linked to Wikidata entities via owl:sameAs
-## Results are ordered by the parking identifier
+## Results are ordered by the parking identifier (dcterms:identifier)
 ################################################################################
-SELECT ?id ?name ?wikidata
+SELECT DISTINCT ?id ?name ?wikidata
 WHERE {
-  ?parking a ns:Parking ;
-           ns:hasId ?id ;
-           ns:hasName ?name ;
-           owl:sameAs ?wikidata .
-  FILTER(CONTAINS(STR(?wikidata), "wikidata.org/entity/"))
+  ?p a schema:ParkingFacility ;
+     dcterms:identifier ?id ;
+     schema:name ?name ;
+     owl:sameAs ?wikidata .
+  FILTER(STRSTARTS(STR(?wikidata), "https://www.wikidata.org/entity/"))
 }
-ORDER BY xsd:integer(?id)
+ORDER BY ASC(xsd:integer(?id))
 LIMIT 10
 
 ################################################################################
 # QUERY 10 - First ten parkings with linked municipalities in Wikidata
 ## Retrieves the first ten parkings with their linked municipalities in Wikidata
-## Results are ordered by the parking identifier
+## Results are ordered by the parking identifier (dcterms:identifier)
 ################################################################################
-SELECT ?id ?name ?town
+SELECT DISTINCT ?id ?name ?city ?wikidataCity
 WHERE {
-  ?parking a ns:Parking ;
-           ns:hasId ?id ;
-           ns:hasName ?name ;
-           ns:hasTown ?townLink .
-  ?townLink owl:sameAs ?town .
-  FILTER(CONTAINS(STR(?town), "wikidata.org/entity/"))
+  ?p a schema:ParkingFacility ;
+     dcterms:identifier ?id ;
+     schema:name ?name ;
+     schema:address ?pAddr .
+  ?pAddr schema:addressLocality ?city .
+  ?city owl:sameAs ?wikidataCity .
+  FILTER(STRSTARTS(STR(?wikidataCity), "https://www.wikidata.org/entity/"))
 }
-ORDER BY xsd:integer(?id)
+ORDER BY ASC(xsd:integer(?id))
 LIMIT 10

@@ -1,0 +1,405 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q123705",
+        "name": "neighborhood"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "longitud",
+          "propertyName": "coordinate location",
+          "propertyID": "P625"
+        },
+        {
+          "column": "latitud",
+          "propertyName": "coordinate location",
+          "propertyID": "P625"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column nom_cabina to type Q123705"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ciutadella",
+                "l": "Ciutadella"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Ciutadella",
+    "judgment": "matched",
+    "match": {
+      "id": "Q941385",
+      "name": "Ciutat Vella",
+      "types": [
+        "Q790344",
+        "Q676050"
+      ],
+      "score": 55.55555555555556
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ciutat Vella (Q941385) para las celdas que contienen \"Ciutadella\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Eixample",
+                "l": "Eixample"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Eixample",
+    "judgment": "matched",
+    "match": {
+      "id": "Q64124",
+      "name": "Eixample",
+      "types": [
+        "Q790344",
+        "Q3321844"
+      ],
+      "score": 55.55555555555556
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Eixample (Q64124) para las celdas que contienen \"Eixample\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Gràcia",
+                "l": "Gràcia"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Gràcia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q852697",
+      "name": "Gràcia",
+      "types": [
+        "Q790344"
+      ],
+      "score": 55.55555555555556
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Gràcia (Q852697) para las celdas que contienen \"Gràcia\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Palau Reial",
+                "l": "Palau Reial"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Palau Reial",
+    "judgment": "matched",
+    "match": {
+      "id": "Q959944",
+      "name": "Les Corts",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Les Corts (Q959944) para las celdas que contienen \"Palau Reial\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Poblenou",
+                "l": "Poblenou"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Poblenou",
+    "judgment": "matched",
+    "match": {
+      "id": "Q250935",
+      "name": "Sant Martí",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Sant Martí (Q250935) para las celdas que contienen \"Poblenou\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sants",
+                "l": "Sants"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Sants",
+    "judgment": "matched",
+    "match": {
+      "id": "Q753075",
+      "name": "Sants-Montjuïc",
+      "types": [
+        "Q790344",
+        "Q2983893"
+      ],
+      "score": 31.11111111111111
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Sants-Montjuïc (Q753075) para las celdas que contienen \"Sants\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina",
+          "expression": "value",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Vall Hebron",
+                "l": "Vall Hebron"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nom_cabina",
+    "similarValue": "Vall Hebron",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1771488",
+      "name": "Horta-Guinardó",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Horta-Guinardó (Q1771488) para las celdas que contienen \"Vall Hebron\" en la columna nom_cabina"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "nom_cabina",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P1082",
+          "name": "population"
+        }
+      ]
+    },
+    "columnInsertIndex": 1,
+    "description": "Extender datos en el índice 1 basado en la columna nom_cabina"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "nom_cabina: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "nom_cabina",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "nom_cabina",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P17",
+          "name": "country"
+        },
+        {
+          "id": "P373",
+          "name": "Commons category"
+        }
+      ]
+    },
+    "columnInsertIndex": 1,
+    "description": "Extender datos en el índice 1 basado en la columna nom_cabina"
+  }
+]

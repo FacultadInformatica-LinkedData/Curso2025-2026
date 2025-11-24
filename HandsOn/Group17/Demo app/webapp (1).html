@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Green Zones and Tress WebApp</title>
+<style>
+  body { font-family: Arial; margin: 20px; }
+  select, button { padding: 10px; margin: 5px 0; font-size: 14px; }
+  table { margin-top: 20px; border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 8px; }
+  th { background: #eee; }
+</style>
+</head>
+
+<body>
+
+<h1>🌳 Green Zones & Trees – WebApp</h1>
+<p>Selecciona un boton de la lista y ejecútalo para ver los resultados.</p>
+
+<!-- ---------- SELECTOR DE CONSULTAS ---------- -->
+<label><b>Consulta:</b></label> 
+<select id="querySelector">
+  <option value="treecounts">Listar todos los datos</option>
+  <option value="parks">Parques con nombre y su enlace a Wikidata</option>
+  <option value="species">Especies y nombres científicos junto con su cantidad</option>
+  <option value="countTrees">Número de árboles por parque en orden descendente</option>
+  <option value="missingTreeCounts">Buscar filas incompletas</option>
+  <option value="mostCommonSpecies">Muestra las especies mas frecuentes entre todos los parques</option> 
+</select>
+
+<button id="runQueryBtn">Ejecutar consulta</button>
+<!-- ---------- RESULTADO EN TABLA ---------- -->
+<div id="results">Aquí aparecerán los resultados...</div>
+
+<h2>Información de consulta:</h2>
+<textarea id="logBox" rows="10" cols="100" readonly style="font-family: monospace;"></textarea>
+
+<script>
+// URL proxy
+const endpoint = "http://localhost:5000/sparql";
+
+// Consultas SPARQL
+const QUERIES = {
+  treecounts: `
+    SELECT ?treecount ?park ?species ?numTrees
+    WHERE {
+      ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> ;
+                 <http://group17.project/madrid-parks/ontology/inPark> ?park ;
+                 <http://group17.project/madrid-parks/ontology/ofSpecies> ?species ;
+                 <http://group17.project/madrid-parks/ontology/numberOfTrees> ?numTrees .
+    }
+  `,
+  parks: `
+    SELECT ?park ?parkName ?wikidata
+    WHERE {
+      ?park a <http://group17.project/madrid-parks/ontology/Park> ;
+            <http://group17.project/madrid-parks/ontology/parkName> ?parkName .
+      OPTIONAL {
+        ?park <http://www.w3.org/2002/07/owl#sameAs> ?wikidata .
+        FILTER(STRSTARTS(STR(?wikidata), "http://www.wikidata.org/entity/") ||
+               STRSTARTS(STR(?wikidata), "https://www.wikidata.org/entity/"))
+      }
+    }
+  `,
+  species: `
+    SELECT ?name (SUM(?numTrees) AS ?totalTrees)
+WHERE {
+  ?species a <http://group17.project/madrid-parks/ontology/Species> ;
+           <http://group17.project/madrid-parks/ontology/scientificName> ?name .
+
+  ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> ;
+             <http://group17.project/madrid-parks/ontology/ofSpecies> ?species ;
+             <http://group17.project/madrid-parks/ontology/numberOfTrees> ?numTrees .
+}
+GROUP BY ?name
+ORDER BY DESC(?totalTrees)
+  `,
+  countTrees: `
+    SELECT ?park ?parkName (SUM(?numTrees) AS ?totalTrees)
+WHERE {
+  ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> ;
+             <http://group17.project/madrid-parks/ontology/inPark> ?park ;
+             <http://group17.project/madrid-parks/ontology/numberOfTrees> ?numTrees .
+
+  ?park <http://group17.project/madrid-parks/ontology/parkName> ?parkName .
+}
+GROUP BY ?park ?parkName
+ORDER BY DESC(?totalTrees)
+  `,
+  missingTreeCounts: `
+    SELECT ?treecount
+    WHERE {
+      ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> .
+      FILTER NOT EXISTS { ?treecount <http://group17.project/madrid-parks/ontology/inPark> ?park }
+      FILTER NOT EXISTS { ?treecount <http://group17.project/madrid-parks/ontology/ofSpecies> ?species }
+    }
+  `,
+  mostCommonSpecies: `
+    SELECT ?name (COUNT(?treecount) AS ?numOccurrences) 
+         (GROUP_CONCAT(?parkName; SEPARATOR=", ") AS ?parks)
+  WHERE {
+    ?treecount a <http://group17.project/madrid-parks/ontology/TreeCount> ;
+               <http://group17.project/madrid-parks/ontology/ofSpecies> ?species ;
+               <http://group17.project/madrid-parks/ontology/inPark> ?park .
+
+    ?species <http://group17.project/madrid-parks/ontology/scientificName> ?name .
+    ?park <http://group17.project/madrid-parks/ontology/parkName> ?parkName .
+  }
+  GROUP BY ?name
+  ORDER BY DESC(?numOccurrences)
+  `
+};
+
+// ---------- FUNCION PARA EJECUTAR CONSULTAS ----------
+async function runQuery(query) {
+  const resultsDiv = document.getElementById("results");
+  const logBox = document.getElementById("logBox");
+
+  resultsDiv.innerHTML = "Ejecutando consulta...";
+  logBox.value = "";
+
+  function log(msg) {
+    logBox.value += msg + "\n";
+    console.log(msg);
+  }
+
+  try {
+    log("Enviando consulta al proxy...");
+    log(query);
+
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/sparql-query",
+        "Accept": "application/sparql-results+json"
+      },
+      body: query
+    });
+
+    log("HTTP Status: " + response.status);
+
+    if (!response.ok) {
+      const text = await response.text();
+      log("Error: " + text);
+      resultsDiv.innerHTML = "Error:<br>" + text;
+      return;
+    }
+
+    const data = await response.json();
+    log("Respuesta recibida.");
+    showResults(data);
+
+  } catch (err) {
+    log("Error fetch: " + err);
+    resultsDiv.innerHTML = "Error de conexión: " + err;
+  }
+}
+
+// ---------- MOSTRAR RESULTADOS ----------
+function showResults(data) {
+  const vars = data.head.vars;
+  let html = "<table><tr>";
+  vars.forEach(v => html += `<th>${v}</th>`);
+  html += "</tr>";
+
+  data.results.bindings.forEach(row => {
+    html += "<tr>";
+    vars.forEach(v => html += `<td>${row[v]?.value ?? ""}</td>`);
+    html += "</tr>";
+  });
+
+  html += "</table>";
+  document.getElementById("results").innerHTML = html;
+}
+
+// ---------- BOTÓN PARA EJECUTAR DESDE EL SELECT ----------
+document.getElementById("runQueryBtn").onclick = () => {
+  const key = document.getElementById("querySelector").value;
+  runQuery(QUERIES[key]);
+};
+
+// ---------- BOTÓN PARA LA NUEVA CONSULTA ----------
+document.getElementById("btn-mostCommonSpecies").onclick = () =>
+  runQuery(QUERIES.mostCommonSpecies);
+
+</script>
+
+</body>
+</html>

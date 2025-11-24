@@ -67,7 +67,7 @@ owl:versionInfo a owl:AnnotationProperty .
 
 <https://data.example.org/transport/bcn/metro/ontology#hasServiceType> a owl:ObjectProperty ;
     rdfs:label "has service type" ;
-    rdfs:domain <https://data.example.org/transport/bcn/metro/ontology#MetroLine> ;
+    rdfs:domain <https://data.example.org/transport/bcn/metro/ontology#StationLine> ;
     rdfs:range <https://data.example.org/transport/bcn/metro/ontology#ServiceType> .
 
 <https://data.example.org/transport/bcn/metro/ontology#hasStation> a owl:ObjectProperty ;
@@ -157,6 +157,16 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:label "relates to" ;
     rdfs:domain <https://data.example.org/transport/bcn/metro/ontology#StationLine> ;
     rdfs:range <https://data.example.org/transport/bcn/metro/ontology#Station> .
+
+<https://data.example.org/transport/bcn/metro/ontology#serviceDestination> a owl:DatatypeProperty ;
+    rdfs:label "service destination" ;
+    rdfs:domain <https://data.example.org/transport/bcn/metro/ontology#ServiceType> ;
+    rdfs:range xsd:string .
+
+<https://data.example.org/transport/bcn/metro/ontology#serviceOrigin> a owl:DatatypeProperty ;
+    rdfs:label "service origin" ;
+    rdfs:domain <https://data.example.org/transport/bcn/metro/ontology#ServiceType> ;
+    rdfs:range xsd:string .
 
 <https://data.example.org/transport/bcn/metro/ontology#servesLine> a owl:ObjectProperty ;
     rdfs:label "serves line" ;

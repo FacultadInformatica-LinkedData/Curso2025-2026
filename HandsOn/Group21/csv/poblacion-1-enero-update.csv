@@ -1,1072 +1,1072 @@
 fecha,cod_municipio,municipio,cod_distrito,distrito,cod_barrio,barrio,num_personas,num_personas_hombres,num_personas_mujeres
-2024-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,145.411,73.734,71.677
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,156.559,73.311,83.248
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,119.757,54.339,65.418
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,149.778,66.374,83.404
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,148.111,66.86,81.251
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,166.211,76.072,90.139
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,141.984,62.918,79.066
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-el pardo,253.898,119.721,134.177
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,125.223,58.121,67.102
-2024-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,250.396,116.437,133.959
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,274.406,128.997,145.409
-2024-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,149.113,70.801,78.312
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puente de vallecas,253.048,120.53,132.518
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,95.123,43.412,51.711
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudad lineal,230.035,105.836,124.199
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,205.182,97.439,107.743
-2024-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,167.952,80.563,87.389
-2024-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villa de vallecas,122.337,59.153,63.184
-2024-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,89.772,43.49,46.282
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,san blas-canillejas,166.583,78.823,87.76
-2024-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,49.612,23.837,25.775
-2024-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,24.332,12.008,12.324
-2024-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,48.59,25.475,23.115
-2024-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,11.171,5.523,5.648
-2024-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,18.739,9.497,9.242
-2024-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,34.073,16.85,17.223
-2024-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,8.506,4.381,4.125
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.668,10.538,12.13
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.475,16.823,19.652
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,20.256,9.242,11.014
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.858,9.712,10.146
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,29.465,13.888,15.577
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palos de la frontera,25.79,12.112,13.678
-2024-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,2.047,996,1.051
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,33.743,15.154,18.589
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,19.025,8.854,10.171
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,22.774,10.454,12.32
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,22.01,9.723,12.287
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,35,los jeronimos,6.934,3.245,3.689
-2024-01-01T00:00:00Z,28079,madrid,3,retiro,36,nino jesus,15.271,6.909,8.362
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.845,7.136,8.709
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,30.381,13.219,17.162
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuente del berro,21.449,9.433,12.016
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,42.905,19.531,23.374
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,21.506,9.315,12.191
-2024-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,17.692,7.74,9.952
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,51,el viso,17.545,7.917,9.628
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,36.961,16.53,20.431
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudad jardin,18.928,8.402,10.526
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,32.014,14.453,17.561
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nueva espana,25.043,11.312,13.731
-2024-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,17.62,8.246,9.374
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellas vistas,30.531,14.018,16.513
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatro caminos,35.723,16.02,19.703
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,21.256,9.619,11.637
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,24.09,11.272,12.818
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,27.798,13.024,14.774
-2024-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,26.813,12.119,14.694
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,23.533,10.421,13.112
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,24.931,11.111,13.82
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,25.328,11.491,13.837
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.992,8.841,11.151
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,75,rios rosas,27.962,12.261,15.701
-2024-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,20.238,8.793,11.445
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,el pardo,3.46,1.729,1.731
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.498,1.591,1.907
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,44.844,20.857,23.987
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,46.543,21.173,25.37
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,la paz,32.343,15.008,17.335
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,66.87,31.99,34.88
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,36.744,17.679,19.065
-2024-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,el goloso,19.596,9.694,9.902
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casa de campo,12.946,6.047,6.899
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,24.987,11.492,13.495
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudad universitaria,16.876,7.835,9.041
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,31.614,14.578,17.036
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,7.451,3.491,3.96
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,el plantio,3.156,1.467,1.689
-2024-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,28.193,13.211,14.982
-2024-01-01T00:00:00Z,28079,madrid,10,latina,101,los carmenes,18.423,8.757,9.666
-2024-01-01T00:00:00Z,28079,madrid,10,latina,102,puerta del angel,45.513,21.325,24.188
-2024-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,38.072,17.835,20.237
-2024-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,68.973,31.619,37.354
-2024-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,20.657,9.511,11.146
-2024-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatro vientos,6.417,3.192,3.225
-2024-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,52.341,24.198,28.143
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,23.466,10.873,12.593
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,35.513,16.394,19.119
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,san isidro,42.184,19.962,22.222
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vista alegre,50.153,23.083,27.07
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puerta bonita,38.781,18.36,20.421
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,51.04,24.74,26.3
-2024-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,33.269,15.585,17.684
-2024-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,23.482,11.01,12.472
-2024-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,14.851,7.207,7.644
-2024-01-01T00:00:00Z,28079,madrid,12,usera,123,san fermin,24.51,11.716,12.794
-2024-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,23.927,11.389,12.538
-2024-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,27.873,13.169,14.704
-2024-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,15.298,7.166,8.132
-2024-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,19.172,9.144,10.028
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,36.851,17.711,19.14
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,san diego,49.339,23.856,25.483
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomeras bajas,41.755,19.533,22.222
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomeras sureste,44.396,21.125,23.271
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,29.746,13.96,15.786
-2024-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,50.961,24.345,26.616
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,9.208,4.24,4.968
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.421,3.069,3.352
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,26.378,12.105,14.273
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,media legua,17.787,8.073,9.714
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,18.0,8.189,9.811
-2024-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,17.329,7.736,9.593
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,52.223,23.931,28.292
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblo nuevo,65.874,30.575,35.299
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,26.762,12.145,14.617
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,la concepcion,22.256,10.138,12.118
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,san pascual,19.019,8.67,10.349
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,san juan bautista,13.12,6.159,6.961
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.81,3.063,3.747
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.672,717,955
-2024-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,22.299,10.438,11.861
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,7.018,3.442,3.576
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,15.455,7.422,8.033
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,40.44,18.793,21.647
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinar del rey,53.313,24.503,28.81
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostol santiago,15.842,7.541,8.301
-2024-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,73.114,35.738,37.376
-2024-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverde alto, c.h. villaverde",50.266,24.101,26.165
-2024-01-01T00:00:00Z,28079,madrid,17,villaverde,172,san cristobal,18.87,9.411,9.459
-2024-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,22.375,10.81,11.565
-2024-01-01T00:00:00Z,28079,madrid,17,villaverde,174,los rosales,39.648,19.005,20.643
-2024-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,36.793,17.236,19.557
-2024-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,casco historico de vallecas,41.984,20.266,21.718
-2024-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santa eugenia,24.168,11.57,12.598
-2024-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanche de vallecas,56.185,27.317,28.868
-2024-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,casco historico de vicalvaro,37.018,17.76,19.258
-2024-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.693,8.425,9.268
-2024-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,17.868,8.65,9.218
-2024-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,el canaveral,17.193,8.655,8.538
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,30.158,14.293,15.865
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,9.965,4.59,5.375
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,9.749,4.564,5.185
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,26.28,12.416,13.864
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,30.838,14.734,16.104
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,18.196,8.867,9.329
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,29.943,13.922,16.021
-2024-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,el salvador,11.454,5.437,6.017
-2024-01-01T00:00:00Z,28079,madrid,21,barajas,211,alameda de osuna,19.875,9.484,10.391
-2024-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.949,990,959
-2024-01-01T00:00:00Z,28079,madrid,21,barajas,213,casco historico de barajas,7.625,3.658,3.967
-2024-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,12.4,5.878,6.522
-2024-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.763,3.827,3.936
-2024-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.460.491,1.620.768,1.839.723
-2023-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,139.687,70.77,68.917
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,153.304,71.754,81.55
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,117.918,53.458,64.46
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,145.702,64.452,81.25
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,144.796,65.245,79.551
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,160.002,72.938,87.064
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,138.204,61.149,77.055
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-el pardo,248.443,116.944,131.499
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,121.757,56.357,65.4
-2023-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,241.672,112.093,129.579
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,262.339,122.632,139.707
-2023-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,142.746,67.538,75.208
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puente de vallecas,241.603,114.542,127.061
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,92.814,42.212,50.602
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudad lineal,220.345,100.759,119.586
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,198.391,94.1,104.291
-2023-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,159.038,76.131,82.907
-2023-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villa de vallecas,117.501,56.726,60.775
-2023-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,83.804,40.58,43.224
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,san blas-canillejas,161.219,76.154,85.065
-2023-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,48.646,23.332,25.314
-2023-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,23.501,11.557,11.944
-2023-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,46.204,24.094,22.11
-2023-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,10.816,5.35,5.466
-2023-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,18.219,9.261,8.958
-2023-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,32.783,16.269,16.514
-2023-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,8.164,4.239,3.925
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.385,10.421,11.964
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.069,16.616,19.453
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,19.761,8.992,10.769
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.468,9.508,9.96
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,28.575,13.463,15.112
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palosdemoguer,25.097,11.797,13.3
-2023-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,1.949,957,992
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,33.027,14.809,18.218
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,18.832,8.699,10.133
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,22.649,10.393,12.256
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,21.492,9.568,11.924
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,35,losjeronimos,6.825,3.177,3.648
-2023-01-01T00:00:00Z,28079,madrid,3,retiro,36,ninojesus,15.093,6.812,8.281
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.444,6.966,8.478
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,29.477,12.872,16.605
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuentedelberro,20.929,9.129,11.8
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,41.964,19.006,22.958
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,20.969,9.056,11.913
-2023-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,16.919,7.423,9.496
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,51,elviso,17.274,7.81,9.464
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,36.027,16.072,19.955
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudadjardin,18.513,8.234,10.279
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,31.47,14.159,17.311
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nuevaespana,24.466,11.05,13.416
-2023-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,17.046,7.92,9.126
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellasvistas,29.355,13.428,15.927
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatrocaminos,34.753,15.537,19.216
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,20.57,9.239,11.331
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,23.057,10.688,12.369
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,26.573,12.442,14.131
-2023-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,25.694,11.604,14.09
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,22.959,10.157,12.802
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,24.19,10.831,13.359
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,24.621,11.147,13.474
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.418,8.567,10.851
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,75,riosrosas,27.163,11.828,15.335
-2023-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,19.853,8.619,11.234
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,elpardo,3.421,1.716,1.705
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.41,1.559,1.851
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,44.341,20.597,23.744
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,45.61,20.72,24.89
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,lapaz,32.192,14.964,17.228
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,64.757,30.851,33.906
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,35.676,17.16,18.516
-2023-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,elgoloso,19.036,9.377,9.659
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casadecampo,12.767,5.958,6.809
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,24.497,11.207,13.29
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudaduniversitaria,16.364,7.603,8.761
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,30.484,14.001,16.483
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,7.156,3.339,3.817
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,elplantio,3.044,1.413,1.631
-2023-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,27.445,12.836,14.609
-2023-01-01T00:00:00Z,28079,madrid,10,latina,101,loscarmenes,17.903,8.484,9.419
-2023-01-01T00:00:00Z,28079,madrid,10,latina,102,puertadelangel,43.292,20.165,23.127
-2023-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,36.749,17.156,19.593
-2023-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,66.588,30.384,36.204
-2023-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,19.75,9.111,10.639
-2023-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatrovientos,6.122,3.068,3.054
-2023-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,51.268,23.725,27.543
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,22.721,10.491,12.23
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,33.883,15.556,18.327
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,sanisidro,40.368,18.969,21.399
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vistaalegre,47.727,21.823,25.904
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puertabonita,36.798,17.349,19.449
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,49.151,23.733,25.418
-2023-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,31.691,14.711,16.98
-2023-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,23.085,10.9,12.185
-2023-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,14.39,6.987,7.403
-2023-01-01T00:00:00Z,28079,madrid,12,usera,123,sanfermin,23.598,11.246,12.352
-2023-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,22.834,10.755,12.079
-2023-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,26.579,12.531,14.048
-2023-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,14.382,6.681,7.701
-2023-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,17.878,8.438,9.44
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,35.399,16.976,18.423
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,sandiego,45.104,21.593,23.511
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomerasbajas,40.477,18.947,21.53
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomerassureste,43.162,20.491,22.671
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,28.741,13.471,15.27
-2023-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,48.72,23.064,25.656
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,8.814,4.035,4.779
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.339,3.029,3.31
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,26.12,11.962,14.158
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,medialegua,17.323,7.828,9.495
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,17.333,7.876,9.457
-2023-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,16.885,7.482,9.403
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,50.218,22.868,27.35
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblonuevo,62.84,28.982,33.858
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,25.469,11.449,14.02
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,concepcion,20.941,9.402,11.539
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,sanpascual,18.327,8.349,9.978
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,sanjuanbautista,12.445,5.813,6.632
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.569,2.973,3.596
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.622,691,931
-2023-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,21.914,10.232,11.682
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,6.922,3.404,3.518
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,15.041,7.211,7.83
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,39.786,18.485,21.301
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinardelrey,52.031,23.825,28.206
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostolsantiago,15.435,7.344,8.091
-2023-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,69.176,33.831,35.345
-2023-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverdealto,cascohistoricodevillaverde",47.817,22.826,24.991
-2023-01-01T00:00:00Z,28079,madrid,17,villaverde,172,sancristobal,17.27,8.586,8.684
-2023-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,21.316,10.306,11.01
-2023-01-01T00:00:00Z,28079,madrid,17,villaverde,174,losrosales,37.808,18.121,19.687
-2023-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,34.827,16.292,18.535
-2023-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,cascohistoricodevallecas,40.417,19.413,21.004
-2023-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santaeugenia,23.876,11.381,12.495
-2023-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanchedevallecas,53.208,25.932,27.276
-2023-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,cascohistoricodevicalvaro,35.519,17.009,18.51
-2023-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.471,8.33,9.141
-2023-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,17.76,8.589,9.171
-2023-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,elcanaveral,13.054,6.652,6.402
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,28.765,13.56,15.205
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,9.555,4.375,5.18
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,9.126,4.258,4.868
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,25.354,11.932,13.422
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,30.751,14.727,16.024
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,17.399,8.495,8.904
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,29.067,13.528,15.539
-2023-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,elsalvador,11.202,5.279,5.923
-2023-01-01T00:00:00Z,28079,madrid,21,barajas,211,alamedadeosuna,19.685,9.397,10.288
-2023-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.902,965,937
-2023-01-01T00:00:00Z,28079,madrid,21,barajas,213,cascohistoricodebarajas,7.384,3.519,3.865
-2023-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,12.049,5.702,6.347
-2023-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.626,3.749,3.877
-2023-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.339.931,1.559.866,1.780.065
-2022-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,139.682,70.986,68.696
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,152.638,71.466,81.172
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,117.672,53.445,64.227
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,145.457,64.343,81.114
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,144.371,65.08,79.291
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,157.433,71.636,85.797
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,137.287,60.867,76.42
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-el pardo,246.281,115.955,130.326
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,120.36,55.501,64.859
-2022-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,237.048,109.928,127.12
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,255.514,119.381,136.133
-2022-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,140.808,66.532,74.276
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puente de vallecas,235.638,111.748,123.89
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,92.39,42.095,50.295
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudad lineal,213.905,97.357,116.548
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,195.017,92.532,102.485
-2022-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,153.829,73.598,80.231
-2022-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villa de vallecas,114.817,55.58,59.237
-2022-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,79.328,38.437,40.891
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,san blas-canillejas,158.783,75.082,83.701
-2022-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,48.404,23.275,25.129
-2022-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,23.417,11.568,11.849
-2022-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,46.444,24.271,22.173
-2022-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,10.828,5.345,5.483
-2022-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,18.015,9.221,8.794
-2022-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,32.861,16.349,16.512
-2022-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,8.117,4.232,3.885
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.456,10.436,12.02
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.038,16.635,19.403
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,19.734,8.994,10.74
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.469,9.543,9.926
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,28.243,13.296,14.947
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palosdemoguer,25.078,11.766,13.312
-2022-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,1.62,796,824
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,32.745,14.613,18.132
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,18.715,8.675,10.04
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,22.78,10.514,12.266
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,21.377,9.541,11.836
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,35,losjeronimos,6.926,3.237,3.689
-2022-01-01T00:00:00Z,28079,madrid,3,retiro,36,ninojesus,15.129,6.865,8.264
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.647,7.044,8.603
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,29.441,12.84,16.601
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuentedelberro,20.848,9.087,11.761
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,41.721,18.925,22.796
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,20.785,8.997,11.788
-2022-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,17.015,7.45,9.565
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,51,elviso,17.181,7.767,9.414
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,35.963,16.07,19.893
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudadjardin,18.41,8.181,10.229
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,31.463,14.188,17.275
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nuevaespana,24.366,11.015,13.351
-2022-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,16.988,7.859,9.129
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellasvistas,28.995,13.231,15.764
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatrocaminos,34.471,15.436,19.035
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,20.282,9.097,11.185
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,22.594,10.391,12.203
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,26.14,12.277,13.863
-2022-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,24.951,11.204,13.747
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,22.659,10.058,12.601
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,23.972,10.77,13.202
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,24.495,11.063,13.432
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.358,8.557,10.801
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,75,riosrosas,26.901,11.798,15.103
-2022-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,19.902,8.621,11.281
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,elpardo,3.382,1.683,1.699
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.346,1.513,1.833
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,43.887,20.379,23.508
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,45.354,20.645,24.709
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,lapaz,32.346,15.059,17.287
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,63.651,30.328,33.323
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,35.24,16.92,18.32
-2022-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,elgoloso,19.075,9.428,9.647
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casadecampo,12.804,5.929,6.875
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,24.165,11.035,13.13
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudaduniversitaria,16.22,7.489,8.731
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,29.802,13.602,16.2
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,7.048,3.283,3.765
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,elplantio,2.998,1.384,1.614
-2022-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,27.323,12.779,14.544
-2022-01-01T00:00:00Z,28079,madrid,10,latina,101,loscarmenes,17.543,8.302,9.241
-2022-01-01T00:00:00Z,28079,madrid,10,latina,102,puertadelangel,41.401,19.113,22.288
-2022-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,36.062,16.887,19.175
-2022-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,65.833,30.086,35.747
-2022-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,19.337,8.97,10.367
-2022-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatrovientos,5.966,2.996,2.97
-2022-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,50.906,23.574,27.332
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,22.214,10.23,11.984
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,33.3,15.283,18.017
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,sanisidro,39.391,18.5,20.891
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vistaalegre,46.474,21.208,25.266
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puertabonita,35.395,16.647,18.748
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,47.815,23.152,24.663
-2022-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,30.925,14.361,16.564
-2022-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,22.996,10.827,12.169
-2022-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,14.25,6.915,7.335
-2022-01-01T00:00:00Z,28079,madrid,12,usera,123,sanfermin,23.46,11.185,12.275
-2022-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,22.499,10.522,11.977
-2022-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,26.139,12.293,13.846
-2022-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,14.022,6.571,7.451
-2022-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,17.442,8.219,9.223
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,34.69,16.591,18.099
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,sandiego,42.91,20.534,22.376
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomerasbajas,39.935,18.722,21.213
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomerassureste,42.54,20.218,22.322
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,28.249,13.31,14.939
-2022-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,47.314,22.373,24.941
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,8.719,3.968,4.751
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.354,3.057,3.297
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,26.297,12.113,14.184
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,medialegua,17.377,7.845,9.532
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,17.044,7.746,9.298
-2022-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,16.599,7.366,9.233
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,47.801,21.5,26.301
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblonuevo,61.935,28.582,33.353
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,24.183,10.748,13.435
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,concepcion,20.44,9.122,11.318
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,sanpascual,17.546,7.914,9.632
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,sanjuanbautista,12.287,5.731,6.556
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.338,2.865,3.473
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.607,696,911
-2022-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,21.768,10.199,11.569
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,6.933,3.387,3.546
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,14.948,7.16,7.788
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,39.708,18.425,21.283
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinardelrey,51.844,23.784,28.06
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostolsantiago,15.374,7.343,8.031
-2022-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,66.21,32.433,33.777
-2022-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverdealto,cascohistoricodevillaverde",46.156,22.013,24.143
-2022-01-01T00:00:00Z,28079,madrid,17,villaverde,172,sancristobal,16.64,8.223,8.417
-2022-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,20.813,10.087,10.726
-2022-01-01T00:00:00Z,28079,madrid,17,villaverde,174,losrosales,37.319,17.918,19.401
-2022-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,32.901,15.357,17.544
-2022-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,cascohistoricodevallecas,39.578,18.971,20.607
-2022-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santaeugenia,24.11,11.515,12.595
-2022-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanchedevallecas,51.129,25.094,26.035
-2022-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,cascohistoricodevicalvaro,35.086,16.925,18.161
-2022-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.431,8.321,9.11
-2022-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,17.867,8.666,9.201
-2022-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,elcanaveral,8.944,4.525,4.419
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,28.171,13.29,14.881
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,9.274,4.271,5.003
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,8.71,4.062,4.648
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,24.96,11.724,13.236
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,30.887,14.84,16.047
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,16.971,8.27,8.701
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,28.541,13.318,15.223
-2022-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,elsalvador,11.269,5.307,5.962
-2022-01-01T00:00:00Z,28079,madrid,21,barajas,211,alamedadeosuna,19.662,9.412,10.25
-2022-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.895,967,928
-2022-01-01T00:00:00Z,28079,madrid,21,barajas,213,cascohistoricodebarajas,7.351,3.531,3.82
-2022-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,11.895,5.622,6.273
-2022-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.601,3.743,3.858
-2022-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.286.662,1.534.824,1.751.838
-2021-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,141.236,71.881,69.355
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,154.243,72.0,82.243
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,118.557,53.8,64.757
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,146.016,64.54,81.476
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,145.7,65.599,80.101
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,159.849,72.752,87.097
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,138.667,61.313,77.354
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-elpardo,247.692,116.52,131.172
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,120.834,55.588,65.246
-2021-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,240.155,111.209,128.946
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,258.633,120.6,138.033
-2021-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,142.454,67.23,75.224
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puentedevallecas,239.057,113.355,125.702
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,93.81,42.662,51.148
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudadlineal,216.818,98.514,118.304
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,193.228,91.585,101.643
-2021-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,154.808,73.947,80.861
-2021-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villadevallecas,114.733,55.606,59.127
-2021-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,75.485,36.497,38.988
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,sanblas-canillejas,160.258,75.788,84.47
-2021-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,50.077,24.171,25.906
-2021-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,23.584,11.632,11.952
-2021-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,47.238,24.767,22.471
-2021-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,10.787,5.379,5.408
-2021-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,18.208,9.291,8.917
-2021-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,33.426,16.692,16.734
-2021-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,7.993,4.12,3.873
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.596,10.446,12.15
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.395,16.741,19.654
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,20.077,9.118,10.959
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.572,9.574,9.998
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,28.374,13.352,15.022
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palosdemoguer,25.785,12.059,13.726
-2021-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,1.444,710,734
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,33.067,14.808,18.259
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,18.653,8.61,10.043
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,23.051,10.636,12.415
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,21.558,9.549,12.009
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,35,losjeronimos,6.928,3.232,3.696
-2021-01-01T00:00:00Z,28079,madrid,3,retiro,36,ninojesus,15.3,6.965,8.335
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.629,7.048,8.581
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,29.479,12.82,16.659
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuentedelberro,20.963,9.155,11.808
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,41.939,18.991,22.948
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,20.864,9.029,11.835
-2021-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,17.142,7.497,9.645
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,51,elviso,17.349,7.811,9.538
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,36.303,16.219,20.084
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudadjardin,18.618,8.306,10.312
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,31.642,14.214,17.428
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nuevaespana,24.697,11.15,13.547
-2021-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,17.091,7.899,9.192
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellasvistas,29.465,13.461,16.004
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatrocaminos,34.817,15.717,19.1
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,20.541,9.217,11.324
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,22.738,10.47,12.268
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,26.625,12.414,14.211
-2021-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,25.663,11.473,14.19
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,22.948,10.106,12.842
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,24.26,10.884,13.376
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,24.628,11.029,13.599
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.546,8.667,10.879
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,75,riosrosas,27.216,11.977,15.239
-2021-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,20.069,8.65,11.419
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,elpardo,3.443,1.723,1.72
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.356,1.511,1.845
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,44.383,20.584,23.799
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,45.97,20.963,25.007
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,lapaz,33.005,15.368,17.637
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,64.042,30.504,33.538
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,34.565,16.52,18.045
-2021-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,elgoloso,18.928,9.347,9.581
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casadecampo,13.066,6.058,7.008
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,24.162,10.974,13.188
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudaduniversitaria,16.175,7.417,8.758
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,30.091,13.744,16.347
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,6.856,3.163,3.693
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,elplantio,2.916,1.336,1.58
-2021-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,27.568,12.896,14.672
-2021-01-01T00:00:00Z,28079,madrid,10,latina,101,loscarmenes,17.577,8.338,9.239
-2021-01-01T00:00:00Z,28079,madrid,10,latina,102,puertadelangel,41.982,19.344,22.638
-2021-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,36.576,17.056,19.52
-2021-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,66.968,30.626,36.342
-2021-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,19.579,9.029,10.55
-2021-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatrovientos,5.874,2.926,2.948
-2021-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,51.599,23.89,27.709
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,22.695,10.471,12.224
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,33.656,15.385,18.271
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,sanisidro,39.728,18.584,21.144
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vistaalegre,47.082,21.44,25.642
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puertabonita,35.947,16.868,19.079
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,48.008,23.176,24.832
-2021-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,31.517,14.676,16.841
-2021-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,23.095,10.88,12.215
-2021-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,14.141,6.842,7.299
-2021-01-01T00:00:00Z,28079,madrid,12,usera,123,sanfermin,23.838,11.382,12.456
-2021-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,22.516,10.543,11.973
-2021-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,26.623,12.435,14.188
-2021-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,14.336,6.733,7.603
-2021-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,17.905,8.415,9.49
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,35.239,16.925,18.314
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,sandiego,43.574,20.793,22.781
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomerasbajas,40.468,18.959,21.509
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomerassureste,42.924,20.429,22.495
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,28.736,13.508,15.228
-2021-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,48.116,22.741,25.375
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,8.972,4.081,4.891
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.371,3.045,3.326
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,26.658,12.289,14.369
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,medialegua,17.66,7.992,9.668
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,17.29,7.841,9.449
-2021-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,16.859,7.414,9.445
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,48.411,21.721,26.69
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblonuevo,62.731,28.931,33.8
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,24.621,10.931,13.69
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,concepcion,20.727,9.205,11.522
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,sanpascual,17.823,8.017,9.806
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,sanjuanbautista,12.484,5.828,6.656
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.367,2.857,3.51
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.58,687,893
-2021-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,22.074,10.337,11.737
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,6.891,3.36,3.531
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,14.835,7.049,7.786
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,40.281,18.757,21.524
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinardelrey,52.494,24.116,28.378
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostolsantiago,15.473,7.338,8.135
-2021-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,63.254,30.965,32.289
-2021-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverdealto,cascohistoricodevillaverde",46.637,22.18,24.457
-2021-01-01T00:00:00Z,28079,madrid,17,villaverde,172,sancristobal,16.986,8.345,8.641
-2021-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,20.722,10.048,10.674
-2021-01-01T00:00:00Z,28079,madrid,17,villaverde,174,losrosales,37.79,18.145,19.645
-2021-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,32.673,15.229,17.444
-2021-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,cascohistoricodevallecas,40.241,19.284,20.957
-2021-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santaeugenia,24.288,11.635,12.653
-2021-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanchedevallecas,50.204,24.687,25.517
-2021-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,cascohistoricodevicalvaro,35.548,17.141,18.407
-2021-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.546,8.35,9.196
-2021-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,17.961,8.752,9.209
-2021-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,elcanaveral,4.43,2.254,2.176
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,28.451,13.46,14.991
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,9.359,4.3,5.059
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,8.885,4.091,4.794
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,24.642,11.61,13.032
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,31.534,15.121,16.413
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,17.098,8.284,8.814
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,28.925,13.556,15.369
-2021-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,elsalvador,11.364,5.366,5.998
-2021-01-01T00:00:00Z,28079,madrid,21,barajas,211,alamedadeosuna,19.657,9.43,10.227
-2021-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.918,988,930
-2021-01-01T00:00:00Z,28079,madrid,21,barajas,213,cascohistoricodebarajas,7.504,3.593,3.911
-2021-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,13.334,6.379,6.955
-2021-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.664,3.781,3.883
-2021-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.312.310,1.545.157,1.767.153
-2020-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,140.473,71.127,69.346
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,155.66,72.6,83.06
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,120.406,54.517,65.889
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,147.854,65.22,82.634
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,147.551,66.424,81.127
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,161.313,73.358,87.955
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,140.866,62.136,78.73
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-elpardo,249.973,117.64,132.333
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,121.683,55.975,65.708
-2020-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,242.139,112.282,129.857
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,260.196,121.317,138.879
-2020-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,142.894,67.346,75.548
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puentedevallecas,240.867,114.235,126.632
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,95.614,43.585,52.029
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudadlineal,219.867,99.966,119.901
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,193.264,91.659,101.605
-2020-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,154.318,73.639,80.679
-2020-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villadevallecas,114.512,55.51,59.002
-2020-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,74.048,35.795,38.253
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,sanblas-canillejas,161.222,76.252,84.97
-2020-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,50.01,24.149,25.861
-2020-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,23.593,11.628,11.965
-2020-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,47.048,24.497,22.551
-2020-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,10.771,5.365,5.406
-2020-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,18.021,9.161,8.86
-2020-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,33.418,16.581,16.837
-2020-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,7.622,3.895,3.727
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.908,10.593,12.315
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.922,17.045,19.877
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,20.287,9.199,11.088
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.81,9.671,10.139
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,28.233,13.216,15.017
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palosdemoguer,26.289,12.276,14.013
-2020-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,1.211,600,611
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,33.767,15.108,18.659
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,18.785,8.655,10.13
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,23.354,10.765,12.589
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,21.993,9.699,12.294
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,35,losjeronimos,7.046,3.293,3.753
-2020-01-01T00:00:00Z,28079,madrid,3,retiro,36,ninojesus,15.461,6.997,8.464
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.846,7.132,8.714
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,29.945,13.012,16.933
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuentedelberro,21.249,9.285,11.964
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,42.306,19.146,23.16
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,21.211,9.111,12.1
-2020-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,17.297,7.534,9.763
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,51,elviso,17.433,7.843,9.59
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,36.94,16.509,20.431
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudadjardin,18.893,8.415,10.478
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,32.042,14.388,17.654
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nuevaespana,25.015,11.347,13.668
-2020-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,17.228,7.922,9.306
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellasvistas,29.895,13.646,16.249
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatrocaminos,35.192,15.832,19.36
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,20.835,9.391,11.444
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,23.003,10.551,12.452
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,26.545,12.346,14.199
-2020-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,25.843,11.592,14.251
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,23.329,10.235,13.094
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,24.704,11.025,13.679
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,25.023,11.161,13.862
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.838,8.795,11.043
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,75,riosrosas,27.569,12.132,15.437
-2020-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,20.403,8.788,11.615
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,elpardo,3.472,1.724,1.748
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.308,1.5,1.808
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,44.938,20.899,24.039
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,46.855,21.379,25.476
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,lapaz,33.644,15.754,17.89
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,64.668,30.772,33.896
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,34.046,16.222,17.824
-2020-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,elgoloso,19.042,9.39,9.652
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casadecampo,13.201,6.114,7.087
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,24.423,11.074,13.349
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudaduniversitaria,16.395,7.483,8.912
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,30.405,13.918,16.487
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,6.957,3.197,3.76
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,elplantio,2.799,1.29,1.509
-2020-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,27.503,12.899,14.604
-2020-01-01T00:00:00Z,28079,madrid,10,latina,101,loscarmenes,17.736,8.39,9.346
-2020-01-01T00:00:00Z,28079,madrid,10,latina,102,puertadelangel,42.362,19.529,22.833
-2020-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,36.783,17.091,19.692
-2020-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,67.418,30.925,36.493
-2020-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,19.848,9.216,10.632
-2020-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatrovientos,5.881,2.958,2.923
-2020-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,52.111,24.173,27.938
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,23.001,10.566,12.435
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,33.681,15.389,18.292
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,sanisidro,40.023,18.71,21.313
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vistaalegre,47.602,21.731,25.871
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puertabonita,35.932,16.822,19.11
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,48.01,23.198,24.812
-2020-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,31.947,14.901,17.046
-2020-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,23.173,10.898,12.275
-2020-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,14.154,6.846,7.308
-2020-01-01T00:00:00Z,28079,madrid,12,usera,123,sanfermin,24.001,11.441,12.56
-2020-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,22.179,10.362,11.817
-2020-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,27.128,12.673,14.455
-2020-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,14.412,6.773,7.639
-2020-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,17.847,8.353,9.494
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,35.516,17.076,18.44
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,sandiego,43.899,20.957,22.942
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomerasbajas,40.91,19.205,21.705
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomerassureste,43.164,20.61,22.554
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,28.968,13.56,15.408
-2020-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,48.41,22.827,25.583
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,9.355,4.274,5.081
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.435,3.074,3.361
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,27.232,12.595,14.637
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,medialegua,17.951,8.185,9.766
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,17.519,7.935,9.584
-2020-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,17.122,7.522,9.6
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,48.891,21.942,26.949
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblonuevo,63.521,29.399,34.122
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,25.151,11.12,14.031
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,concepcion,21.153,9.374,11.779
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,sanpascual,18.107,8.152,9.955
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,sanjuanbautista,12.725,5.923,6.802
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.519,2.938,3.581
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.555,667,888
-2020-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,22.245,10.451,11.794
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,6.839,3.318,3.521
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,14.939,7.119,7.82
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,40.838,19.028,21.81
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinardelrey,53.162,24.529,28.633
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostolsantiago,15.555,7.365,8.19
-2020-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,61.931,30.3,31.631
-2020-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverdealto,cascohistoricodevillaverde",46.749,22.228,24.521
-2020-01-01T00:00:00Z,28079,madrid,17,villaverde,172,sancristobal,16.898,8.222,8.676
-2020-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,20.026,9.704,10.322
-2020-01-01T00:00:00Z,28079,madrid,17,villaverde,174,losrosales,38.107,18.336,19.771
-2020-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,32.538,15.149,17.389
-2020-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,cascohistoricodevallecas,40.956,19.656,21.3
-2020-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santaeugenia,24.684,11.833,12.851
-2020-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanchedevallecas,48.872,24.021,24.851
-2020-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,cascohistoricodevicalvaro,35.666,17.22,18.446
-2020-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.834,8.478,9.356
-2020-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,18.15,8.867,9.283
-2020-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,elcanaveral,2.398,1.23,1.168
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,28.698,13.574,15.124
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,9.342,4.26,5.082
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,8.874,4.108,4.766
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,24.692,11.612,13.08
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,31.794,15.253,16.541
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,17.299,8.395,8.904
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,29.047,13.607,15.44
-2020-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,elsalvador,11.476,5.443,6.033
-2020-01-01T00:00:00Z,28079,madrid,21,barajas,211,alamedadeosuna,19.82,9.533,10.287
-2020-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.9,975,925
-2020-01-01T00:00:00Z,28079,madrid,21,barajas,213,cascohistoricodebarajas,7.683,3.688,3.995
-2020-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,12.853,6.151,6.702
-2020-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.754,3.802,3.952
-2020-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.334.730,1.554.732,1.779.998
-2019-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,134.881,67.829,67.052
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,153.83,71.631,82.199
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,119.379,54.098,65.281
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,146.148,64.395,81.753
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,145.865,65.565,80.3
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,157.937,71.632,86.305
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,139.448,61.308,78.14
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-elpardo,246.021,115.797,130.224
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,119.423,54.934,64.489
-2019-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,238.154,110.401,127.753
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,253.04,117.802,135.238
-2019-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,139.501,65.781,73.72
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puentedevallecas,234.77,111.183,123.587
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,94.609,43.209,51.4
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudadlineal,216.27,98.37,117.9
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,188.267,89.307,98.96
-2019-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,148.883,71.017,77.866
-2019-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villadevallecas,110.436,53.675,56.761
-2019-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,72.126,34.848,37.278
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,sanblas-canillejas,158.166,74.743,83.423
-2019-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,48.972,23.653,25.319
-2019-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,22.923,11.213,11.71
-2019-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,45.259,23.39,21.869
-2019-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,10.484,5.235,5.249
-2019-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,17.153,8.675,8.478
-2019-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,31.725,15.567,16.158
-2019-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,7.337,3.749,3.588
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.766,10.543,12.223
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.785,16.943,19.842
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,19.993,9.064,10.929
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.652,9.629,10.023
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,27.658,12.88,14.778
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palosdemoguer,25.801,11.999,13.802
-2019-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,1.175,573,602
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,33.571,14.992,18.579
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,18.474,8.532,9.942
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,23.306,10.798,12.508
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,21.646,9.517,12.129
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,35,losjeronimos,7.039,3.285,3.754
-2019-01-01T00:00:00Z,28079,madrid,3,retiro,36,ninojesus,15.343,6.974,8.369
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.734,7.074,8.66
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,29.649,12.836,16.813
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuentedelberro,21.071,9.197,11.874
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,41.609,18.809,22.8
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,20.961,9.04,11.921
-2019-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,17.124,7.439,9.685
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,51,elviso,17.302,7.783,9.519
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,36.651,16.374,20.277
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudadjardin,18.642,8.233,10.409
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,31.733,14.218,17.515
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nuevaespana,24.657,11.166,13.491
-2019-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,16.88,7.791,9.089
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellasvistas,29.146,13.292,15.854
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatrocaminos,34.608,15.58,19.028
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,20.513,9.201,11.312
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,22.642,10.314,12.328
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,26.021,12.082,13.939
-2019-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,25.007,11.163,13.844
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,22.891,10.062,12.829
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,24.455,10.888,13.567
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,24.696,10.958,13.738
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.807,8.726,11.081
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,75,riosrosas,27.382,11.982,15.4
-2019-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,20.217,8.692,11.525
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,elpardo,3.454,1.704,1.75
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.265,1.481,1.784
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,44.508,20.743,23.765
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,46.419,21.206,25.213
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,lapaz,33.765,15.8,17.965
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,63.201,30.031,33.17
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,32.898,15.704,17.194
-2019-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,elgoloso,18.511,9.128,9.383
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casadecampo,12.991,5.963,7.028
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,24.093,10.907,13.186
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudaduniversitaria,16.26,7.398,8.862
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,29.722,13.637,16.085
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,6.726,3.109,3.617
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,elplantio,2.808,1.301,1.507
-2019-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,26.823,12.619,14.204
-2019-01-01T00:00:00Z,28079,madrid,10,latina,101,loscarmenes,17.397,8.183,9.214
-2019-01-01T00:00:00Z,28079,madrid,10,latina,102,puertadelangel,41.73,19.189,22.541
-2019-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,36.09,16.771,19.319
-2019-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,66.351,30.451,35.9
-2019-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,19.281,8.981,10.3
-2019-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatrovientos,5.748,2.909,2.839
-2019-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,51.557,23.917,27.64
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,22.403,10.23,12.173
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,33.051,15.125,17.926
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,sanisidro,38.957,18.196,20.761
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vistaalegre,45.975,20.896,25.079
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puertabonita,34.86,16.318,18.542
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,47.055,22.737,24.318
-2019-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,30.739,14.3,16.439
-2019-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,22.837,10.765,12.072
-2019-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,13.808,6.697,7.111
-2019-01-01T00:00:00Z,28079,madrid,12,usera,123,sanfermin,23.666,11.31,12.356
-2019-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,21.439,10.043,11.396
-2019-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,26.353,12.3,14.053
-2019-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,13.968,6.509,7.459
-2019-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,17.43,8.157,9.273
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,34.698,16.677,18.021
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,sandiego,41.664,19.833,21.831
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomerasbajas,40.166,18.886,21.28
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomerassureste,42.594,20.253,22.341
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,28.35,13.234,15.116
-2019-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,47.298,22.3,24.998
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,9.137,4.185,4.952
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.334,3.03,3.304
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,27.26,12.646,14.614
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,medialegua,17.871,8.166,9.705
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,17.139,7.779,9.36
-2019-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,16.868,7.403,9.465
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,48.099,21.619,26.48
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblonuevo,62.111,28.83,33.281
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,24.622,10.882,13.74
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,concepcion,20.856,9.245,11.611
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,sanpascual,18.13,8.154,9.976
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,sanjuanbautista,12.487,5.81,6.677
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.387,2.864,3.523
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.568,654,914
-2019-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,22.01,10.312,11.698
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,6.79,3.318,3.472
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,14.911,7.155,7.756
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,40.578,18.919,21.659
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinardelrey,52.691,24.277,28.414
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostolsantiago,15.418,7.29,8.128
-2019-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,57.879,28.348,29.531
-2019-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverdealto,cascohistoricodevillaverde",45.204,21.488,23.716
-2019-01-01T00:00:00Z,28079,madrid,17,villaverde,172,sancristobal,16.052,7.834,8.218
-2019-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,18.87,9.11,9.76
-2019-01-01T00:00:00Z,28079,madrid,17,villaverde,174,losrosales,37.587,18.071,19.516
-2019-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,31.17,14.514,16.656
-2019-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,cascohistoricodevallecas,40.28,19.417,20.863
-2019-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santaeugenia,24.328,11.692,12.636
-2019-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanchedevallecas,45.828,22.566,23.262
-2019-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,cascohistoricodevicalvaro,34.816,16.781,18.035
-2019-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.638,8.388,9.25
-2019-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,18.142,8.894,9.248
-2019-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,elcanaveral,1.53,785,745
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,27.918,13.142,14.776
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,9.157,4.181,4.976
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,8.575,3.968,4.607
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,24.211,11.327,12.884
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,31.677,15.213,16.464
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,16.693,8.142,8.551
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,28.584,13.404,15.18
-2019-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,elsalvador,11.351,5.366,5.985
-2019-01-01T00:00:00Z,28079,madrid,21,barajas,211,alamedadeosuna,19.526,9.391,10.135
-2019-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.851,952,899
-2019-01-01T00:00:00Z,28079,madrid,21,barajas,213,cascohistoricodebarajas,7.565,3.648,3.917
-2019-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,12.388,5.916,6.472
-2019-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.642,3.746,3.896
-2019-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.266.126,1.521.178,1.744.948
-2018-01-01T00:00:00Z,28079,madrid,1,centro,1,centro,132.352,66.32,66.032
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,2,arganzuela,152.907,71.039,81.868
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,3,retiro,119.011,53.863,65.148
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,4,salamanca,145.268,63.94,81.328
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,5,chamartin,144.894,65.144,79.75
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,6,tetuan,155.967,70.725,85.242
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,7,chamberi,138.418,60.825,77.593
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,8,fuencarral-elpardo,242.928,114.433,128.495
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,9,moncloa-aravaca,117.835,54.243,63.592
-2018-01-01T00:00:00Z,28079,madrid,10,latina,10,latina,235.785,109.392,126.393
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,11,carabanchel,248.22,115.525,132.695
-2018-01-01T00:00:00Z,28079,madrid,12,usera,12,usera,136.978,64.582,72.396
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,13,puentedevallecas,230.488,109.044,121.444
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,14,moratalaz,94.261,43.203,51.058
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,15,ciudadlineal,214.463,97.301,117.162
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,16,hortaleza,183.93,87.338,96.592
-2018-01-01T00:00:00Z,28079,madrid,17,villaverde,17,villaverde,145.523,69.552,75.971
-2018-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,18,villadevallecas,107.649,52.352,55.297
-2018-01-01T00:00:00Z,28079,madrid,19,vicalvaro,19,vicalvaro,70.962,34.461,36.501
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,20,sanblas-canillejas,156.149,73.922,82.227
-2018-01-01T00:00:00Z,28079,madrid,21,barajas,21,barajas,47.836,23.136,24.7
-2018-01-01T00:00:00Z,28079,madrid,1,centro,11,palacio,22.515,10.978,11.537
-2018-01-01T00:00:00Z,28079,madrid,1,centro,12,embajadores,44.63,23.031,21.599
-2018-01-01T00:00:00Z,28079,madrid,1,centro,13,cortes,10.531,5.265,5.266
-2018-01-01T00:00:00Z,28079,madrid,1,centro,14,justicia,16.578,8.334,8.244
-2018-01-01T00:00:00Z,28079,madrid,1,centro,15,universidad,30.897,15.04,15.857
-2018-01-01T00:00:00Z,28079,madrid,1,centro,16,sol,7.201,3.672,3.529
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,21,imperial,22.719,10.531,12.188
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,22,acacias,36.751,16.926,19.825
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,23,chopera,19.799,8.919,10.88
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,24,legazpi,19.252,9.446,9.806
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,25,delicias,27.473,12.736,14.737
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,26,palosdemoguer,25.748,11.919,13.829
-2018-01-01T00:00:00Z,28079,madrid,2,arganzuela,27,atocha,1.165,562,603
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,31,pacifico,33.601,15.0,18.601
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,32,adelfas,18.345,8.427,9.918
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,33,estrella,23.238,10.796,12.442
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,34,ibiza,21.472,9.384,12.088
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,35,losjeronimos,7.075,3.315,3.76
-2018-01-01T00:00:00Z,28079,madrid,3,retiro,36,ninojesus,15.28,6.941,8.339
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,41,recoletos,15.756,7.091,8.665
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,42,goya,29.604,12.812,16.792
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,43,fuentedelberro,20.747,9.043,11.704
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,44,guindalera,41.259,18.57,22.689
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,45,lista,20.956,9.023,11.933
-2018-01-01T00:00:00Z,28079,madrid,4,salamanca,46,castellana,16.946,7.401,9.545
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,51,elviso,17.145,7.764,9.381
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,52,prosperidad,36.522,16.302,20.22
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,53,ciudadjardin,18.487,8.146,10.341
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,54,hispanoamerica,31.373,14.006,17.367
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,55,nuevaespana,24.496,11.124,13.372
-2018-01-01T00:00:00Z,28079,madrid,5,chamartin,56,castilla,16.871,7.802,9.069
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,61,bellasvistas,28.75,13.056,15.694
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,62,cuatrocaminos,34.254,15.458,18.796
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,63,castillejos,20.363,9.209,11.154
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,64,almenara,22.421,10.209,12.212
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,65,valdeacederas,25.571,11.835,13.736
-2018-01-01T00:00:00Z,28079,madrid,6,tetuan,66,berruguete,24.608,10.958,13.65
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,71,gaztambide,22.666,9.929,12.737
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,72,arapiles,24.335,10.792,13.543
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,73,trafalgar,24.523,10.922,13.601
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,74,almagro,19.799,8.737,11.062
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,75,riosrosas,27.049,11.82,15.229
-2018-01-01T00:00:00Z,28079,madrid,7,chamberi,76,vallehermoso,20.046,8.625,11.421
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,81,elpardo,3.456,1.689,1.767
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,82,fuentelarreina,3.234,1.437,1.797
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,83,penagrande,44.412,20.719,23.693
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,84,pilar,46.094,21.107,24.987
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,85,lapaz,33.783,15.826,17.957
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,86,valverde,61.941,29.476,32.465
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,87,mirasierra,32.058,15.329,16.729
-2018-01-01T00:00:00Z,28079,madrid,8,fuencarral-el pardo,88,elgoloso,17.95,8.85,9.1
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,91,casadecampo,12.9,5.935,6.965
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,92,argüelles,23.992,10.89,13.102
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,93,ciudaduniversitaria,16.097,7.314,8.783
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,94,valdezarza,29.418,13.458,15.96
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,95,valdemarin,6.56,3.018,3.542
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,96,elplantio,2.72,1.287,1.433
-2018-01-01T00:00:00Z,28079,madrid,9,moncloa-aravaca,97,aravaca,26.148,12.341,13.807
-2018-01-01T00:00:00Z,28079,madrid,10,latina,101,loscarmenes,17.192,8.102,9.09
-2018-01-01T00:00:00Z,28079,madrid,10,latina,102,puertadelangel,41.397,19.061,22.336
-2018-01-01T00:00:00Z,28079,madrid,10,latina,103,lucero,35.488,16.491,18.997
-2018-01-01T00:00:00Z,28079,madrid,10,latina,104,aluche,65.961,30.254,35.707
-2018-01-01T00:00:00Z,28079,madrid,10,latina,105,campamento,18.983,8.828,10.155
-2018-01-01T00:00:00Z,28079,madrid,10,latina,106,cuatrovientos,5.662,2.87,2.792
-2018-01-01T00:00:00Z,28079,madrid,10,latina,107,águilas,51.102,23.786,27.316
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,111,comillas,22.248,10.164,12.084
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,112,opanel,32.492,14.796,17.696
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,113,sanisidro,38.554,17.967,20.587
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,114,vistaalegre,45.008,20.48,24.528
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,115,puertabonita,33.933,15.942,17.991
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,116,buenavista,46.216,22.332,23.884
-2018-01-01T00:00:00Z,28079,madrid,11,carabanchel,117,abrantes,29.769,13.844,15.925
-2018-01-01T00:00:00Z,28079,madrid,12,usera,121,orcasitas,22.555,10.634,11.921
-2018-01-01T00:00:00Z,28079,madrid,12,usera,122,orcasur,13.572,6.576,6.996
-2018-01-01T00:00:00Z,28079,madrid,12,usera,123,sanfermin,23.209,11.111,12.098
-2018-01-01T00:00:00Z,28079,madrid,12,usera,124,almendrales,20.986,9.824,11.162
-2018-01-01T00:00:00Z,28079,madrid,12,usera,125,moscardo,25.726,11.971,13.755
-2018-01-01T00:00:00Z,28079,madrid,12,usera,126,zofio,13.697,6.371,7.326
-2018-01-01T00:00:00Z,28079,madrid,12,usera,127,pradolongo,17.233,8.095,9.138
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,131,entrevias,33.986,16.314,17.672
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,132,sandiego,40.267,19.037,21.23
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,133,palomerasbajas,39.669,18.614,21.055
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,134,palomerassureste,42.12,20.115,22.005
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,135,portazgo,27.908,13.033,14.875
-2018-01-01T00:00:00Z,28079,madrid,13,puente de vallecas,136,numancia,46.538,21.931,24.607
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,141,pavones,9.081,4.174,4.907
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,142,horcajo,6.326,3.031,3.295
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,143,marroquina,27.378,12.742,14.636
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,144,medialegua,17.757,8.09,9.667
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,145,fontarron,16.902,7.73,9.172
-2018-01-01T00:00:00Z,28079,madrid,14,moratalaz,146,vinateros,16.817,7.436,9.381
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,151,ventas,47.744,21.405,26.339
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,152,pueblonuevo,61.16,28.3,32.86
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,153,quintana,24.373,10.743,13.63
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,154,concepcion,20.803,9.181,11.622
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,155,sanpascual,18.068,8.1,9.968
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,156,sanjuanbautista,12.433,5.782,6.651
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,157,colina,6.288,2.835,3.453
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,158,atalaya,1.575,656,919
-2018-01-01T00:00:00Z,28079,madrid,15,ciudad lineal,159,costillares,22.019,10.299,11.72
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,161,palomas,6.738,3.292,3.446
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,162,piovera,14.723,7.042,7.681
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,163,canillas,40.627,18.933,21.694
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,164,pinardelrey,52.274,24.119,28.155
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,165,apostolsantiago,15.271,7.25,8.021
-2018-01-01T00:00:00Z,28079,madrid,16,hortaleza,166,valdefuentes,54.297,26.702,27.595
-2018-01-01T00:00:00Z,28079,madrid,17,villaverde,171,"villaverdealto,cascohistoricodevillaverde",44.299,21.139,23.16
-2018-01-01T00:00:00Z,28079,madrid,17,villaverde,172,sancristobal,15.498,7.527,7.971
-2018-01-01T00:00:00Z,28079,madrid,17,villaverde,173,butarque,18.268,8.859,9.409
-2018-01-01T00:00:00Z,28079,madrid,17,villaverde,174,losrosales,36.975,17.874,19.101
-2018-01-01T00:00:00Z,28079,madrid,17,villaverde,175,ángeles,30.483,14.153,16.33
-2018-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,181,cascohistoricodevallecas,39.74,19.128,20.612
-2018-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,182,santaeugenia,24.295,11.672,12.623
-2018-01-01T00:00:00Z,28079,madrid,18,villa de vallecas,183,ensanchedevallecas,43.614,21.552,22.062
-2018-01-01T00:00:00Z,28079,madrid,19,vicalvaro,191,cascohistoricodevicalvaro,34.2,16.585,17.615
-2018-01-01T00:00:00Z,28079,madrid,19,vicalvaro,192,valdebernardo,17.637,8.434,9.203
-2018-01-01T00:00:00Z,28079,madrid,19,vicalvaro,193,valderrivas,18.18,8.952,9.228
-2018-01-01T00:00:00Z,28079,madrid,19,vicalvaro,194,elcanaveral,945,490,455
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,201,simancas,27.242,12.851,14.391
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,202,hellin,8.941,4.093,4.848
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,203,amposta,8.346,3.851,4.495
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,204,arcos,23.939,11.203,12.736
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,205,rosas,31.56,15.197,16.363
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,206,rejas,16.315,8.008,8.307
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,207,canillejas,28.519,13.371,15.148
-2018-01-01T00:00:00Z,28079,madrid,20,san blas-canillejas,208,elsalvador,11.287,5.348,5.939
-2018-01-01T00:00:00Z,28079,madrid,21,barajas,211,alamedadeosuna,19.446,9.356,10.09
-2018-01-01T00:00:00Z,28079,madrid,21,barajas,212,aeropuerto,1.794,922,872
-2018-01-01T00:00:00Z,28079,madrid,21,barajas,213,cascohistoricodebarajas,7.336,3.55,3.786
-2018-01-01T00:00:00Z,28079,madrid,21,barajas,214,timon,11.75,5.651,6.099
-2018-01-01T00:00:00Z,28079,madrid,21,barajas,215,corralejos,7.51,3.657,3.853
-2018-01-01T00:00:00Z,28079,madrid,Todos,todos,Todos,todos,3.221.824,1.500.340,1.721.484
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,145411,73734,71677
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,156559,73311,83248
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,119757,54339,65418
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,149778,66374,83404
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,148111,6686,81251
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,166211,76072,90139
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,141984,62918,79066
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-el Pardo,253898,119721,134177
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,125223,58121,67102
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,250396,116437,133959
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,274406,128997,145409
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,149113,70801,78312
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puente De Vallecas,253048,12053,132518
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,95123,43412,51711
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudad Lineal,230035,105836,124199
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,205182,97439,107743
+2024-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,167952,80563,87389
+2024-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villa De Vallecas,122337,59153,63184
+2024-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,89772,4349,46282
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,San Blas-canillejas,166583,78823,8776
+2024-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,49612,23837,25775
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,24332,12008,12324
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,4859,25475,23115
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,11171,5523,5648
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,18739,9497,9242
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,34073,1685,17223
+2024-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,8506,4381,4125
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22668,10538,1213
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36475,16823,19652
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,20256,9242,11014
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,19858,9712,10146
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,29465,13888,15577
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palos De La Frontera,2579,12112,13678
+2024-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,2047,996,1051
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,33743,15154,18589
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,19025,8854,10171
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,22774,10454,1232
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,2201,9723,12287
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Los Jeronimos,6934,3245,3689
+2024-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Nino Jesus,15271,6909,8362
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15845,7136,8709
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,30381,13219,17162
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuente Del Berro,21449,9433,12016
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,42905,19531,23374
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,21506,9315,12191
+2024-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,17692,774,9952
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,El Viso,17545,7917,9628
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,36961,1653,20431
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudad Jardin,18928,8402,10526
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,32014,14453,17561
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nueva Espana,25043,11312,13731
+2024-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,1762,8246,9374
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellas Vistas,30531,14018,16513
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatro Caminos,35723,1602,19703
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,21256,9619,11637
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,2409,11272,12818
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,27798,13024,14774
+2024-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,26813,12119,14694
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,23533,10421,13112
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,24931,11111,1382
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,25328,11491,13837
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19992,8841,11151
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Rios Rosas,27962,12261,15701
+2024-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,20238,8793,11445
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,El Pardo,346,1729,1731
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,3498,1591,1907
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,44844,20857,23987
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,46543,21173,2537
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,La Paz,32343,15008,17335
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,6687,3199,3488
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,36744,17679,19065
+2024-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,El Goloso,19596,9694,9902
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casa De Campo,12946,6047,6899
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,24987,11492,13495
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudad Universitaria,16876,7835,9041
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,31614,14578,17036
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,7451,3491,396
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,El Plantio,3156,1467,1689
+2024-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,28193,13211,14982
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Los Carmenes,18423,8757,9666
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puerta Del Angel,45513,21325,24188
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,38072,17835,20237
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,68973,31619,37354
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,20657,9511,11146
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatro Vientos,6417,3192,3225
+2024-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,52341,24198,28143
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,23466,10873,12593
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,35513,16394,19119
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,San Isidro,42184,19962,22222
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vista Alegre,50153,23083,2707
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puerta Bonita,38781,1836,20421
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,5104,2474,263
+2024-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,33269,15585,17684
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,23482,1101,12472
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,14851,7207,7644
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,123,San Fermin,2451,11716,12794
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,23927,11389,12538
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,27873,13169,14704
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,15298,7166,8132
+2024-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,19172,9144,10028
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,36851,17711,1914
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,San Diego,49339,23856,25483
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomeras Bajas,41755,19533,22222
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomeras Sureste,44396,21125,23271
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,29746,1396,15786
+2024-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,50961,24345,26616
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,9208,424,4968
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6421,3069,3352
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,26378,12105,14273
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Media Legua,17787,8073,9714
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,180,8189,9811
+2024-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,17329,7736,9593
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,52223,23931,28292
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblo Nuevo,65874,30575,35299
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,26762,12145,14617
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,La Concepcion,22256,10138,12118
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,San Pascual,19019,867,10349
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,San Juan Bautista,1312,6159,6961
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,681,3063,3747
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,1672,717,955
+2024-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,22299,10438,11861
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,7018,3442,3576
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,15455,7422,8033
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,4044,18793,21647
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinar Del Rey,53313,24503,2881
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostol Santiago,15842,7541,8301
+2024-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,73114,35738,37376
+2024-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverde Alto, C.H. Villaverde",50266,24101,26165
+2024-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,San Cristobal,1887,9411,9459
+2024-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,22375,1081,11565
+2024-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Los Rosales,39648,19005,20643
+2024-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,36793,17236,19557
+2024-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Casco Historico De Vallecas,41984,20266,21718
+2024-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santa Eugenia,24168,1157,12598
+2024-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanche De Vallecas,56185,27317,28868
+2024-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Casco Historico De Vicalvaro,37018,1776,19258
+2024-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17693,8425,9268
+2024-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,17868,865,9218
+2024-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,El Canaveral,17193,8655,8538
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,30158,14293,15865
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,9965,459,5375
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,9749,4564,5185
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,2628,12416,13864
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,30838,14734,16104
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,18196,8867,9329
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,29943,13922,16021
+2024-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,El Salvador,11454,5437,6017
+2024-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alameda De Osuna,19875,9484,10391
+2024-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,1949,990,959
+2024-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Casco Historico De Barajas,7625,3658,3967
+2024-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,124,5878,6522
+2024-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,7763,3827,3936
+2024-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3460491,1620768,1839723
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,139687,7077,68917
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,153304,71754,8155
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,117918,53458,6446
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,145702,64452,8125
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,144796,65245,79551
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,160002,72938,87064
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,138204,61149,77055
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-el Pardo,248443,116944,131499
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,121757,56357,654
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,241672,112093,129579
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,262339,122632,139707
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,142746,67538,75208
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puente De Vallecas,241603,114542,127061
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,92814,42212,50602
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudad Lineal,220345,100759,119586
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,198391,941,104291
+2023-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,159038,76131,82907
+2023-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villa De Vallecas,117501,56726,60775
+2023-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,83804,4058,43224
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,San Blas-canillejas,161219,76154,85065
+2023-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,48646,23332,25314
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,23501,11557,11944
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,46204,24094,2211
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,10816,535,5466
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,18219,9261,8958
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,32783,16269,16514
+2023-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,8164,4239,3925
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22385,10421,11964
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36069,16616,19453
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,19761,8992,10769
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,19468,9508,996
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,28575,13463,15112
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palosdemoguer,25097,11797,133
+2023-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,1949,957,992
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,33027,14809,18218
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,18832,8699,10133
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,22649,10393,12256
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,21492,9568,11924
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Losjeronimos,6825,3177,3648
+2023-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Ninojesus,15093,6812,8281
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15444,6966,8478
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,29477,12872,16605
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuentedelberro,20929,9129,118
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,41964,19006,22958
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,20969,9056,11913
+2023-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,16919,7423,9496
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,Elviso,17274,781,9464
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,36027,16072,19955
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudadjardin,18513,8234,10279
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,3147,14159,17311
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nuevaespana,24466,1105,13416
+2023-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,17046,792,9126
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellasvistas,29355,13428,15927
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatrocaminos,34753,15537,19216
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,2057,9239,11331
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,23057,10688,12369
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,26573,12442,14131
+2023-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,25694,11604,1409
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,22959,10157,12802
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,2419,10831,13359
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,24621,11147,13474
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19418,8567,10851
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Riosrosas,27163,11828,15335
+2023-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,19853,8619,11234
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,Elpardo,3421,1716,1705
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,341,1559,1851
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,44341,20597,23744
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,4561,2072,2489
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,Lapaz,32192,14964,17228
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,64757,30851,33906
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,35676,1716,18516
+2023-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,Elgoloso,19036,9377,9659
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casadecampo,12767,5958,6809
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,24497,11207,1329
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudaduniversitaria,16364,7603,8761
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,30484,14001,16483
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,7156,3339,3817
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,Elplantio,3044,1413,1631
+2023-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,27445,12836,14609
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Loscarmenes,17903,8484,9419
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puertadelangel,43292,20165,23127
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,36749,17156,19593
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,66588,30384,36204
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,1975,9111,10639
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatrovientos,6122,3068,3054
+2023-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,51268,23725,27543
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,22721,10491,1223
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,33883,15556,18327
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,Sanisidro,40368,18969,21399
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vistaalegre,47727,21823,25904
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puertabonita,36798,17349,19449
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,49151,23733,25418
+2023-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,31691,14711,1698
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,23085,109,12185
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,1439,6987,7403
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,123,Sanfermin,23598,11246,12352
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,22834,10755,12079
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,26579,12531,14048
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,14382,6681,7701
+2023-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,17878,8438,944
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,35399,16976,18423
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,Sandiego,45104,21593,23511
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomerasbajas,40477,18947,2153
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomerassureste,43162,20491,22671
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,28741,13471,1527
+2023-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,4872,23064,25656
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,8814,4035,4779
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6339,3029,331
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,2612,11962,14158
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Medialegua,17323,7828,9495
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,17333,7876,9457
+2023-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,16885,7482,9403
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,50218,22868,2735
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblonuevo,6284,28982,33858
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,25469,11449,1402
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,Concepcion,20941,9402,11539
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,Sanpascual,18327,8349,9978
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,Sanjuanbautista,12445,5813,6632
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,6569,2973,3596
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,1622,691,931
+2023-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,21914,10232,11682
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,6922,3404,3518
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,15041,7211,783
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,39786,18485,21301
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinardelrey,52031,23825,28206
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostolsantiago,15435,7344,8091
+2023-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,69176,33831,35345
+2023-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverdealto,cascohistoricodevillaverde",47817,22826,24991
+2023-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,Sancristobal,1727,8586,8684
+2023-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,21316,10306,1101
+2023-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Losrosales,37808,18121,19687
+2023-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,34827,16292,18535
+2023-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Cascohistoricodevallecas,40417,19413,21004
+2023-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santaeugenia,23876,11381,12495
+2023-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanchedevallecas,53208,25932,27276
+2023-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Cascohistoricodevicalvaro,35519,17009,1851
+2023-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17471,833,9141
+2023-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,1776,8589,9171
+2023-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,Elcanaveral,13054,6652,6402
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,28765,1356,15205
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,9555,4375,518
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,9126,4258,4868
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,25354,11932,13422
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,30751,14727,16024
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,17399,8495,8904
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,29067,13528,15539
+2023-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,Elsalvador,11202,5279,5923
+2023-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alamedadeosuna,19685,9397,10288
+2023-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,1902,965,937
+2023-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Cascohistoricodebarajas,7384,3519,3865
+2023-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,12049,5702,6347
+2023-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,7626,3749,3877
+2023-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3339931,1559866,1780065
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,139682,70986,68696
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,152638,71466,81172
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,117672,53445,64227
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,145457,64343,81114
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,144371,6508,79291
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,157433,71636,85797
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,137287,60867,7642
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-el Pardo,246281,115955,130326
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,12036,55501,64859
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,237048,109928,12712
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,255514,119381,136133
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,140808,66532,74276
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puente De Vallecas,235638,111748,12389
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,9239,42095,50295
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudad Lineal,213905,97357,116548
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,195017,92532,102485
+2022-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,153829,73598,80231
+2022-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villa De Vallecas,114817,5558,59237
+2022-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,79328,38437,40891
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,San Blas-canillejas,158783,75082,83701
+2022-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,48404,23275,25129
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,23417,11568,11849
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,46444,24271,22173
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,10828,5345,5483
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,18015,9221,8794
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,32861,16349,16512
+2022-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,8117,4232,3885
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22456,10436,1202
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36038,16635,19403
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,19734,8994,1074
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,19469,9543,9926
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,28243,13296,14947
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palosdemoguer,25078,11766,13312
+2022-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,162,796,824
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,32745,14613,18132
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,18715,8675,1004
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,2278,10514,12266
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,21377,9541,11836
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Losjeronimos,6926,3237,3689
+2022-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Ninojesus,15129,6865,8264
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15647,7044,8603
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,29441,1284,16601
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuentedelberro,20848,9087,11761
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,41721,18925,22796
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,20785,8997,11788
+2022-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,17015,745,9565
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,Elviso,17181,7767,9414
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,35963,1607,19893
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudadjardin,1841,8181,10229
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,31463,14188,17275
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nuevaespana,24366,11015,13351
+2022-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,16988,7859,9129
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellasvistas,28995,13231,15764
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatrocaminos,34471,15436,19035
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,20282,9097,11185
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,22594,10391,12203
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,2614,12277,13863
+2022-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,24951,11204,13747
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,22659,10058,12601
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,23972,1077,13202
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,24495,11063,13432
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19358,8557,10801
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Riosrosas,26901,11798,15103
+2022-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,19902,8621,11281
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,Elpardo,3382,1683,1699
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,3346,1513,1833
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,43887,20379,23508
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,45354,20645,24709
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,Lapaz,32346,15059,17287
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,63651,30328,33323
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,3524,1692,1832
+2022-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,Elgoloso,19075,9428,9647
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casadecampo,12804,5929,6875
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,24165,11035,1313
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudaduniversitaria,1622,7489,8731
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,29802,13602,162
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,7048,3283,3765
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,Elplantio,2998,1384,1614
+2022-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,27323,12779,14544
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Loscarmenes,17543,8302,9241
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puertadelangel,41401,19113,22288
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,36062,16887,19175
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,65833,30086,35747
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,19337,897,10367
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatrovientos,5966,2996,297
+2022-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,50906,23574,27332
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,22214,1023,11984
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,333,15283,18017
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,Sanisidro,39391,185,20891
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vistaalegre,46474,21208,25266
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puertabonita,35395,16647,18748
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,47815,23152,24663
+2022-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,30925,14361,16564
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,22996,10827,12169
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,1425,6915,7335
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,123,Sanfermin,2346,11185,12275
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,22499,10522,11977
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,26139,12293,13846
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,14022,6571,7451
+2022-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,17442,8219,9223
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,3469,16591,18099
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,Sandiego,4291,20534,22376
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomerasbajas,39935,18722,21213
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomerassureste,4254,20218,22322
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,28249,1331,14939
+2022-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,47314,22373,24941
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,8719,3968,4751
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6354,3057,3297
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,26297,12113,14184
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Medialegua,17377,7845,9532
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,17044,7746,9298
+2022-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,16599,7366,9233
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,47801,215,26301
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblonuevo,61935,28582,33353
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,24183,10748,13435
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,Concepcion,2044,9122,11318
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,Sanpascual,17546,7914,9632
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,Sanjuanbautista,12287,5731,6556
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,6338,2865,3473
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,1607,696,911
+2022-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,21768,10199,11569
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,6933,3387,3546
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,14948,716,7788
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,39708,18425,21283
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinardelrey,51844,23784,2806
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostolsantiago,15374,7343,8031
+2022-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,6621,32433,33777
+2022-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverdealto,cascohistoricodevillaverde",46156,22013,24143
+2022-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,Sancristobal,1664,8223,8417
+2022-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,20813,10087,10726
+2022-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Losrosales,37319,17918,19401
+2022-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,32901,15357,17544
+2022-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Cascohistoricodevallecas,39578,18971,20607
+2022-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santaeugenia,2411,11515,12595
+2022-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanchedevallecas,51129,25094,26035
+2022-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Cascohistoricodevicalvaro,35086,16925,18161
+2022-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17431,8321,911
+2022-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,17867,8666,9201
+2022-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,Elcanaveral,8944,4525,4419
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,28171,1329,14881
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,9274,4271,5003
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,871,4062,4648
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,2496,11724,13236
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,30887,1484,16047
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,16971,827,8701
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,28541,13318,15223
+2022-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,Elsalvador,11269,5307,5962
+2022-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alamedadeosuna,19662,9412,1025
+2022-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,1895,967,928
+2022-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Cascohistoricodebarajas,7351,3531,382
+2022-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,11895,5622,6273
+2022-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,7601,3743,3858
+2022-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3286662,1534824,1751838
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,141236,71881,69355
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,154243,720,82243
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,118557,538,64757
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,146016,6454,81476
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,1457,65599,80101
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,159849,72752,87097
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,138667,61313,77354
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-elpardo,247692,11652,131172
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,120834,55588,65246
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,240155,111209,128946
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,258633,1206,138033
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,142454,6723,75224
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puentedevallecas,239057,113355,125702
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,9381,42662,51148
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudadlineal,216818,98514,118304
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,193228,91585,101643
+2021-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,154808,73947,80861
+2021-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villadevallecas,114733,55606,59127
+2021-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,75485,36497,38988
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,Sanblas-canillejas,160258,75788,8447
+2021-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,50077,24171,25906
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,23584,11632,11952
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,47238,24767,22471
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,10787,5379,5408
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,18208,9291,8917
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,33426,16692,16734
+2021-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,7993,412,3873
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22596,10446,1215
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36395,16741,19654
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,20077,9118,10959
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,19572,9574,9998
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,28374,13352,15022
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palosdemoguer,25785,12059,13726
+2021-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,1444,710,734
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,33067,14808,18259
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,18653,861,10043
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,23051,10636,12415
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,21558,9549,12009
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Losjeronimos,6928,3232,3696
+2021-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Ninojesus,153,6965,8335
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15629,7048,8581
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,29479,1282,16659
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuentedelberro,20963,9155,11808
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,41939,18991,22948
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,20864,9029,11835
+2021-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,17142,7497,9645
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,Elviso,17349,7811,9538
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,36303,16219,20084
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudadjardin,18618,8306,10312
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,31642,14214,17428
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nuevaespana,24697,1115,13547
+2021-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,17091,7899,9192
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellasvistas,29465,13461,16004
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatrocaminos,34817,15717,191
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,20541,9217,11324
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,22738,1047,12268
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,26625,12414,14211
+2021-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,25663,11473,1419
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,22948,10106,12842
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,2426,10884,13376
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,24628,11029,13599
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19546,8667,10879
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Riosrosas,27216,11977,15239
+2021-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,20069,865,11419
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,Elpardo,3443,1723,172
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,3356,1511,1845
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,44383,20584,23799
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,4597,20963,25007
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,Lapaz,33005,15368,17637
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,64042,30504,33538
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,34565,1652,18045
+2021-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,Elgoloso,18928,9347,9581
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casadecampo,13066,6058,7008
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,24162,10974,13188
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudaduniversitaria,16175,7417,8758
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,30091,13744,16347
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,6856,3163,3693
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,Elplantio,2916,1336,158
+2021-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,27568,12896,14672
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Loscarmenes,17577,8338,9239
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puertadelangel,41982,19344,22638
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,36576,17056,1952
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,66968,30626,36342
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,19579,9029,1055
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatrovientos,5874,2926,2948
+2021-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,51599,2389,27709
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,22695,10471,12224
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,33656,15385,18271
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,Sanisidro,39728,18584,21144
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vistaalegre,47082,2144,25642
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puertabonita,35947,16868,19079
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,48008,23176,24832
+2021-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,31517,14676,16841
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,23095,1088,12215
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,14141,6842,7299
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,123,Sanfermin,23838,11382,12456
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,22516,10543,11973
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,26623,12435,14188
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,14336,6733,7603
+2021-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,17905,8415,949
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,35239,16925,18314
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,Sandiego,43574,20793,22781
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomerasbajas,40468,18959,21509
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomerassureste,42924,20429,22495
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,28736,13508,15228
+2021-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,48116,22741,25375
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,8972,4081,4891
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6371,3045,3326
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,26658,12289,14369
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Medialegua,1766,7992,9668
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,1729,7841,9449
+2021-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,16859,7414,9445
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,48411,21721,2669
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblonuevo,62731,28931,338
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,24621,10931,1369
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,Concepcion,20727,9205,11522
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,Sanpascual,17823,8017,9806
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,Sanjuanbautista,12484,5828,6656
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,6367,2857,351
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,158,687,893
+2021-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,22074,10337,11737
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,6891,336,3531
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,14835,7049,7786
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,40281,18757,21524
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinardelrey,52494,24116,28378
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostolsantiago,15473,7338,8135
+2021-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,63254,30965,32289
+2021-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverdealto,cascohistoricodevillaverde",46637,2218,24457
+2021-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,Sancristobal,16986,8345,8641
+2021-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,20722,10048,10674
+2021-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Losrosales,3779,18145,19645
+2021-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,32673,15229,17444
+2021-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Cascohistoricodevallecas,40241,19284,20957
+2021-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santaeugenia,24288,11635,12653
+2021-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanchedevallecas,50204,24687,25517
+2021-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Cascohistoricodevicalvaro,35548,17141,18407
+2021-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17546,835,9196
+2021-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,17961,8752,9209
+2021-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,Elcanaveral,443,2254,2176
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,28451,1346,14991
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,9359,43,5059
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,8885,4091,4794
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,24642,1161,13032
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,31534,15121,16413
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,17098,8284,8814
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,28925,13556,15369
+2021-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,Elsalvador,11364,5366,5998
+2021-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alamedadeosuna,19657,943,10227
+2021-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,1918,988,930
+2021-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Cascohistoricodebarajas,7504,3593,3911
+2021-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,13334,6379,6955
+2021-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,7664,3781,3883
+2021-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3312310,1545157,1767153
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,140473,71127,69346
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,15566,726,8306
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,120406,54517,65889
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,147854,6522,82634
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,147551,66424,81127
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,161313,73358,87955
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,140866,62136,7873
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-elpardo,249973,11764,132333
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,121683,55975,65708
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,242139,112282,129857
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,260196,121317,138879
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,142894,67346,75548
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puentedevallecas,240867,114235,126632
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,95614,43585,52029
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudadlineal,219867,99966,119901
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,193264,91659,101605
+2020-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,154318,73639,80679
+2020-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villadevallecas,114512,5551,59002
+2020-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,74048,35795,38253
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,Sanblas-canillejas,161222,76252,8497
+2020-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,5001,24149,25861
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,23593,11628,11965
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,47048,24497,22551
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,10771,5365,5406
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,18021,9161,886
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,33418,16581,16837
+2020-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,7622,3895,3727
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22908,10593,12315
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36922,17045,19877
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,20287,9199,11088
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,1981,9671,10139
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,28233,13216,15017
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palosdemoguer,26289,12276,14013
+2020-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,1211,600,611
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,33767,15108,18659
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,18785,8655,1013
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,23354,10765,12589
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,21993,9699,12294
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Losjeronimos,7046,3293,3753
+2020-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Ninojesus,15461,6997,8464
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15846,7132,8714
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,29945,13012,16933
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuentedelberro,21249,9285,11964
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,42306,19146,2316
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,21211,9111,121
+2020-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,17297,7534,9763
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,Elviso,17433,7843,959
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,3694,16509,20431
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudadjardin,18893,8415,10478
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,32042,14388,17654
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nuevaespana,25015,11347,13668
+2020-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,17228,7922,9306
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellasvistas,29895,13646,16249
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatrocaminos,35192,15832,1936
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,20835,9391,11444
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,23003,10551,12452
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,26545,12346,14199
+2020-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,25843,11592,14251
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,23329,10235,13094
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,24704,11025,13679
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,25023,11161,13862
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19838,8795,11043
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Riosrosas,27569,12132,15437
+2020-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,20403,8788,11615
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,Elpardo,3472,1724,1748
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,3308,15,1808
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,44938,20899,24039
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,46855,21379,25476
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,Lapaz,33644,15754,1789
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,64668,30772,33896
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,34046,16222,17824
+2020-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,Elgoloso,19042,939,9652
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casadecampo,13201,6114,7087
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,24423,11074,13349
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudaduniversitaria,16395,7483,8912
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,30405,13918,16487
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,6957,3197,376
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,Elplantio,2799,129,1509
+2020-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,27503,12899,14604
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Loscarmenes,17736,839,9346
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puertadelangel,42362,19529,22833
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,36783,17091,19692
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,67418,30925,36493
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,19848,9216,10632
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatrovientos,5881,2958,2923
+2020-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,52111,24173,27938
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,23001,10566,12435
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,33681,15389,18292
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,Sanisidro,40023,1871,21313
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vistaalegre,47602,21731,25871
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puertabonita,35932,16822,1911
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,4801,23198,24812
+2020-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,31947,14901,17046
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,23173,10898,12275
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,14154,6846,7308
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,123,Sanfermin,24001,11441,1256
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,22179,10362,11817
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,27128,12673,14455
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,14412,6773,7639
+2020-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,17847,8353,9494
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,35516,17076,1844
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,Sandiego,43899,20957,22942
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomerasbajas,4091,19205,21705
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomerassureste,43164,2061,22554
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,28968,1356,15408
+2020-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,4841,22827,25583
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,9355,4274,5081
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6435,3074,3361
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,27232,12595,14637
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Medialegua,17951,8185,9766
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,17519,7935,9584
+2020-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,17122,7522,96
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,48891,21942,26949
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblonuevo,63521,29399,34122
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,25151,1112,14031
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,Concepcion,21153,9374,11779
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,Sanpascual,18107,8152,9955
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,Sanjuanbautista,12725,5923,6802
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,6519,2938,3581
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,1555,667,888
+2020-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,22245,10451,11794
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,6839,3318,3521
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,14939,7119,782
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,40838,19028,2181
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinardelrey,53162,24529,28633
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostolsantiago,15555,7365,819
+2020-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,61931,303,31631
+2020-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverdealto,cascohistoricodevillaverde",46749,22228,24521
+2020-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,Sancristobal,16898,8222,8676
+2020-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,20026,9704,10322
+2020-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Losrosales,38107,18336,19771
+2020-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,32538,15149,17389
+2020-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Cascohistoricodevallecas,40956,19656,213
+2020-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santaeugenia,24684,11833,12851
+2020-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanchedevallecas,48872,24021,24851
+2020-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Cascohistoricodevicalvaro,35666,1722,18446
+2020-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17834,8478,9356
+2020-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,1815,8867,9283
+2020-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,Elcanaveral,2398,123,1168
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,28698,13574,15124
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,9342,426,5082
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,8874,4108,4766
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,24692,11612,1308
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,31794,15253,16541
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,17299,8395,8904
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,29047,13607,1544
+2020-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,Elsalvador,11476,5443,6033
+2020-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alamedadeosuna,1982,9533,10287
+2020-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,19,975,925
+2020-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Cascohistoricodebarajas,7683,3688,3995
+2020-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,12853,6151,6702
+2020-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,7754,3802,3952
+2020-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3334730,1554732,1779998
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,134881,67829,67052
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,15383,71631,82199
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,119379,54098,65281
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,146148,64395,81753
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,145865,65565,803
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,157937,71632,86305
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,139448,61308,7814
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-elpardo,246021,115797,130224
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,119423,54934,64489
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,238154,110401,127753
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,25304,117802,135238
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,139501,65781,7372
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puentedevallecas,23477,111183,123587
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,94609,43209,514
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudadlineal,21627,9837,1179
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,188267,89307,9896
+2019-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,148883,71017,77866
+2019-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villadevallecas,110436,53675,56761
+2019-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,72126,34848,37278
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,Sanblas-canillejas,158166,74743,83423
+2019-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,48972,23653,25319
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,22923,11213,1171
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,45259,2339,21869
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,10484,5235,5249
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,17153,8675,8478
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,31725,15567,16158
+2019-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,7337,3749,3588
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22766,10543,12223
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36785,16943,19842
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,19993,9064,10929
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,19652,9629,10023
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,27658,1288,14778
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palosdemoguer,25801,11999,13802
+2019-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,1175,573,602
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,33571,14992,18579
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,18474,8532,9942
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,23306,10798,12508
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,21646,9517,12129
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Losjeronimos,7039,3285,3754
+2019-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Ninojesus,15343,6974,8369
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15734,7074,866
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,29649,12836,16813
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuentedelberro,21071,9197,11874
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,41609,18809,228
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,20961,904,11921
+2019-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,17124,7439,9685
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,Elviso,17302,7783,9519
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,36651,16374,20277
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudadjardin,18642,8233,10409
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,31733,14218,17515
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nuevaespana,24657,11166,13491
+2019-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,1688,7791,9089
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellasvistas,29146,13292,15854
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatrocaminos,34608,1558,19028
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,20513,9201,11312
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,22642,10314,12328
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,26021,12082,13939
+2019-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,25007,11163,13844
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,22891,10062,12829
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,24455,10888,13567
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,24696,10958,13738
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19807,8726,11081
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Riosrosas,27382,11982,154
+2019-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,20217,8692,11525
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,Elpardo,3454,1704,175
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,3265,1481,1784
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,44508,20743,23765
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,46419,21206,25213
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,Lapaz,33765,158,17965
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,63201,30031,3317
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,32898,15704,17194
+2019-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,Elgoloso,18511,9128,9383
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casadecampo,12991,5963,7028
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,24093,10907,13186
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudaduniversitaria,1626,7398,8862
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,29722,13637,16085
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,6726,3109,3617
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,Elplantio,2808,1301,1507
+2019-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,26823,12619,14204
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Loscarmenes,17397,8183,9214
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puertadelangel,4173,19189,22541
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,3609,16771,19319
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,66351,30451,359
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,19281,8981,103
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatrovientos,5748,2909,2839
+2019-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,51557,23917,2764
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,22403,1023,12173
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,33051,15125,17926
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,Sanisidro,38957,18196,20761
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vistaalegre,45975,20896,25079
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puertabonita,3486,16318,18542
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,47055,22737,24318
+2019-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,30739,143,16439
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,22837,10765,12072
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,13808,6697,7111
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,123,Sanfermin,23666,1131,12356
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,21439,10043,11396
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,26353,123,14053
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,13968,6509,7459
+2019-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,1743,8157,9273
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,34698,16677,18021
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,Sandiego,41664,19833,21831
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomerasbajas,40166,18886,2128
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomerassureste,42594,20253,22341
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,2835,13234,15116
+2019-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,47298,223,24998
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,9137,4185,4952
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6334,303,3304
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,2726,12646,14614
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Medialegua,17871,8166,9705
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,17139,7779,936
+2019-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,16868,7403,9465
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,48099,21619,2648
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblonuevo,62111,2883,33281
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,24622,10882,1374
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,Concepcion,20856,9245,11611
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,Sanpascual,1813,8154,9976
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,Sanjuanbautista,12487,581,6677
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,6387,2864,3523
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,1568,654,914
+2019-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,2201,10312,11698
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,679,3318,3472
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,14911,7155,7756
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,40578,18919,21659
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinardelrey,52691,24277,28414
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostolsantiago,15418,729,8128
+2019-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,57879,28348,29531
+2019-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverdealto,cascohistoricodevillaverde",45204,21488,23716
+2019-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,Sancristobal,16052,7834,8218
+2019-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,1887,911,976
+2019-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Losrosales,37587,18071,19516
+2019-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,3117,14514,16656
+2019-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Cascohistoricodevallecas,4028,19417,20863
+2019-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santaeugenia,24328,11692,12636
+2019-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanchedevallecas,45828,22566,23262
+2019-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Cascohistoricodevicalvaro,34816,16781,18035
+2019-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17638,8388,925
+2019-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,18142,8894,9248
+2019-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,Elcanaveral,153,785,745
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,27918,13142,14776
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,9157,4181,4976
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,8575,3968,4607
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,24211,11327,12884
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,31677,15213,16464
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,16693,8142,8551
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,28584,13404,1518
+2019-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,Elsalvador,11351,5366,5985
+2019-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alamedadeosuna,19526,9391,10135
+2019-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,1851,952,899
+2019-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Cascohistoricodebarajas,7565,3648,3917
+2019-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,12388,5916,6472
+2019-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,7642,3746,3896
+2019-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3266126,1521178,1744948
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,1,Centro,132352,6632,66032
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,2,Arganzuela,152907,71039,81868
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,3,Retiro,119011,53863,65148
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,4,Salamanca,145268,6394,81328
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,5,Chamartin,144894,65144,7975
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,6,Tetuan,155967,70725,85242
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,7,Chamberi,138418,60825,77593
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,8,Fuencarral-elpardo,242928,114433,128495
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,9,Moncloa-aravaca,117835,54243,63592
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,10,Latina,235785,109392,126393
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,11,Carabanchel,24822,115525,132695
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,12,Usera,136978,64582,72396
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,13,Puentedevallecas,230488,109044,121444
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,14,Moratalaz,94261,43203,51058
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,15,Ciudadlineal,214463,97301,117162
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,16,Hortaleza,18393,87338,96592
+2018-01-01T00:00:00Z,28079,Madrid,17,Villaverde,17,Villaverde,145523,69552,75971
+2018-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,18,Villadevallecas,107649,52352,55297
+2018-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,19,Vicalvaro,70962,34461,36501
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,20,Sanblas-canillejas,156149,73922,82227
+2018-01-01T00:00:00Z,28079,Madrid,21,Barajas,21,Barajas,47836,23136,247
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,11,Palacio,22515,10978,11537
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,12,Embajadores,4463,23031,21599
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,13,Cortes,10531,5265,5266
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,14,Justicia,16578,8334,8244
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,15,Universidad,30897,1504,15857
+2018-01-01T00:00:00Z,28079,Madrid,1,Centro,16,Sol,7201,3672,3529
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,21,Imperial,22719,10531,12188
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,22,Acacias,36751,16926,19825
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,23,Chopera,19799,8919,1088
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,24,Legazpi,19252,9446,9806
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,25,Delicias,27473,12736,14737
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,26,Palosdemoguer,25748,11919,13829
+2018-01-01T00:00:00Z,28079,Madrid,2,Arganzuela,27,Atocha,1165,562,603
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,31,Pacifico,33601,150,18601
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,32,Adelfas,18345,8427,9918
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,33,Estrella,23238,10796,12442
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,34,Ibiza,21472,9384,12088
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,35,Losjeronimos,7075,3315,376
+2018-01-01T00:00:00Z,28079,Madrid,3,Retiro,36,Ninojesus,1528,6941,8339
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,41,Recoletos,15756,7091,8665
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,42,Goya,29604,12812,16792
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,43,Fuentedelberro,20747,9043,11704
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,44,Guindalera,41259,1857,22689
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,45,Lista,20956,9023,11933
+2018-01-01T00:00:00Z,28079,Madrid,4,Salamanca,46,Castellana,16946,7401,9545
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,51,Elviso,17145,7764,9381
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,52,Prosperidad,36522,16302,2022
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,53,Ciudadjardin,18487,8146,10341
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,54,Hispanoamerica,31373,14006,17367
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,55,Nuevaespana,24496,11124,13372
+2018-01-01T00:00:00Z,28079,Madrid,5,Chamartin,56,Castilla,16871,7802,9069
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,61,Bellasvistas,2875,13056,15694
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,62,Cuatrocaminos,34254,15458,18796
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,63,Castillejos,20363,9209,11154
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,64,Almenara,22421,10209,12212
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,65,Valdeacederas,25571,11835,13736
+2018-01-01T00:00:00Z,28079,Madrid,6,Tetuan,66,Berruguete,24608,10958,1365
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,71,Gaztambide,22666,9929,12737
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,72,Arapiles,24335,10792,13543
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,73,Trafalgar,24523,10922,13601
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,74,Almagro,19799,8737,11062
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,75,Riosrosas,27049,1182,15229
+2018-01-01T00:00:00Z,28079,Madrid,7,Chamberi,76,Vallehermoso,20046,8625,11421
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,81,Elpardo,3456,1689,1767
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,82,Fuentelarreina,3234,1437,1797
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,83,Penagrande,44412,20719,23693
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,84,Pilar,46094,21107,24987
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,85,Lapaz,33783,15826,17957
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,86,Valverde,61941,29476,32465
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,87,Mirasierra,32058,15329,16729
+2018-01-01T00:00:00Z,28079,Madrid,8,Fuencarral-el Pardo,88,Elgoloso,1795,885,91
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,91,Casadecampo,129,5935,6965
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,92,Argüelles,23992,1089,13102
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,93,Ciudaduniversitaria,16097,7314,8783
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,94,Valdezarza,29418,13458,1596
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,95,Valdemarin,656,3018,3542
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,96,Elplantio,272,1287,1433
+2018-01-01T00:00:00Z,28079,Madrid,9,Moncloa-aravaca,97,Aravaca,26148,12341,13807
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,101,Loscarmenes,17192,8102,909
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,102,Puertadelangel,41397,19061,22336
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,103,Lucero,35488,16491,18997
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,104,Aluche,65961,30254,35707
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,105,Campamento,18983,8828,10155
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,106,Cuatrovientos,5662,287,2792
+2018-01-01T00:00:00Z,28079,Madrid,10,Latina,107,Águilas,51102,23786,27316
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,111,Comillas,22248,10164,12084
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,112,Opanel,32492,14796,17696
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,113,Sanisidro,38554,17967,20587
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,114,Vistaalegre,45008,2048,24528
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,115,Puertabonita,33933,15942,17991
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,116,Buenavista,46216,22332,23884
+2018-01-01T00:00:00Z,28079,Madrid,11,Carabanchel,117,Abrantes,29769,13844,15925
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,121,Orcasitas,22555,10634,11921
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,122,Orcasur,13572,6576,6996
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,123,Sanfermin,23209,11111,12098
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,124,Almendrales,20986,9824,11162
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,125,Moscardo,25726,11971,13755
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,126,Zofio,13697,6371,7326
+2018-01-01T00:00:00Z,28079,Madrid,12,Usera,127,Pradolongo,17233,8095,9138
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,131,Entrevias,33986,16314,17672
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,132,Sandiego,40267,19037,2123
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,133,Palomerasbajas,39669,18614,21055
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,134,Palomerassureste,4212,20115,22005
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,135,Portazgo,27908,13033,14875
+2018-01-01T00:00:00Z,28079,Madrid,13,Puente De Vallecas,136,Numancia,46538,21931,24607
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,141,Pavones,9081,4174,4907
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,142,Horcajo,6326,3031,3295
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,143,Marroquina,27378,12742,14636
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,144,Medialegua,17757,809,9667
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,145,Fontarron,16902,773,9172
+2018-01-01T00:00:00Z,28079,Madrid,14,Moratalaz,146,Vinateros,16817,7436,9381
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,151,Ventas,47744,21405,26339
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,152,Pueblonuevo,6116,283,3286
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,153,Quintana,24373,10743,1363
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,154,Concepcion,20803,9181,11622
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,155,Sanpascual,18068,81,9968
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,156,Sanjuanbautista,12433,5782,6651
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,157,Colina,6288,2835,3453
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,158,Atalaya,1575,656,919
+2018-01-01T00:00:00Z,28079,Madrid,15,Ciudad Lineal,159,Costillares,22019,10299,1172
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,161,Palomas,6738,3292,3446
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,162,Piovera,14723,7042,7681
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,163,Canillas,40627,18933,21694
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,164,Pinardelrey,52274,24119,28155
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,165,Apostolsantiago,15271,725,8021
+2018-01-01T00:00:00Z,28079,Madrid,16,Hortaleza,166,Valdefuentes,54297,26702,27595
+2018-01-01T00:00:00Z,28079,Madrid,17,Villaverde,171,"Villaverdealto,cascohistoricodevillaverde",44299,21139,2316
+2018-01-01T00:00:00Z,28079,Madrid,17,Villaverde,172,Sancristobal,15498,7527,7971
+2018-01-01T00:00:00Z,28079,Madrid,17,Villaverde,173,Butarque,18268,8859,9409
+2018-01-01T00:00:00Z,28079,Madrid,17,Villaverde,174,Losrosales,36975,17874,19101
+2018-01-01T00:00:00Z,28079,Madrid,17,Villaverde,175,Ángeles,30483,14153,1633
+2018-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,181,Cascohistoricodevallecas,3974,19128,20612
+2018-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,182,Santaeugenia,24295,11672,12623
+2018-01-01T00:00:00Z,28079,Madrid,18,Villa De Vallecas,183,Ensanchedevallecas,43614,21552,22062
+2018-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,191,Cascohistoricodevicalvaro,342,16585,17615
+2018-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,192,Valdebernardo,17637,8434,9203
+2018-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,193,Valderrivas,1818,8952,9228
+2018-01-01T00:00:00Z,28079,Madrid,19,Vicalvaro,194,Elcanaveral,945,490,455
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,201,Simancas,27242,12851,14391
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,202,Hellin,8941,4093,4848
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,203,Amposta,8346,3851,4495
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,204,Arcos,23939,11203,12736
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,205,Rosas,3156,15197,16363
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,206,Rejas,16315,8008,8307
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,207,Canillejas,28519,13371,15148
+2018-01-01T00:00:00Z,28079,Madrid,20,San Blas-canillejas,208,Elsalvador,11287,5348,5939
+2018-01-01T00:00:00Z,28079,Madrid,21,Barajas,211,Alamedadeosuna,19446,9356,1009
+2018-01-01T00:00:00Z,28079,Madrid,21,Barajas,212,Aeropuerto,1794,922,872
+2018-01-01T00:00:00Z,28079,Madrid,21,Barajas,213,Cascohistoricodebarajas,7336,355,3786
+2018-01-01T00:00:00Z,28079,Madrid,21,Barajas,214,Timon,1175,5651,6099
+2018-01-01T00:00:00Z,28079,Madrid,21,Barajas,215,Corralejos,751,3657,3853
+2018-01-01T00:00:00Z,28079,Madrid,Todos,Todos,Todos,Todos,3221824,1500340,1721484

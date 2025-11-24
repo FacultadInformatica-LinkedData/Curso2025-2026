@@ -1,0 +1,38 @@
+@prefix : <http://airecalidadbcn.linkeddata.es/g05/resource/> .
+@prefix ont: <http://www.semanticweb.org/abuce/ontologies/2025/9/untitled-ontology-3/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://airecalidadbcn.linkeddata.es/g05/resource/> .
+
+
+<estacion-43> rdf:type ont:Estacion ;
+    ont:stationCode 43 ;
+    ont:name "BCN - Gràcia - Sant Gervasi" ;
+    ont:latitude "41.39840"^^xsd:float ;
+    ont:longitude "2.15340"^^xsd:float .
+
+---
+
+<lectura-20251117-0800-s43> rdf:type ont:Lectura ;
+    ont:madeInStation <estacion-43> ;
+    ont:date "2025-11-17T08:00:00Z" ;
+    ont:quality "Buena" ;
+    ont:no2Value 35 ;
+    ont:no2Quality "Buena" ;
+    ont:o3Value 50 ;
+    ont:o3Quality "Moderada" ;
+    ont:pm10Value 22 ;
+    ont:pm10Quality "Buena" .
+
+
+<lectura-20251117-0900-s43> rdf:type ont:Lectura ;
+    ont:madeInStation <estacion-43> ;
+    ont:date "2025-11-17T09:00:00Z" ;
+    ont:quality "Moderada" ;
+    ont:no2Value 42 ;
+    ont:no2Quality "Moderada" ;
+    ont:o3Value 45 ;
+    ont:o3Quality "Buena" ;
+    ont:pm10Value 28 ;
+    ont:pm10Quality "Buena" .

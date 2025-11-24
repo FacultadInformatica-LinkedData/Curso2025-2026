@@ -1,0 +1,216 @@
+
+# ==Conteo de recursos según la clase (Accidente,persona,vehiculo)==
+
+# Prefixes
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX geo:    <http://www.opengis.net/ont/geosparql#>
+PREFIX ex:     <https://example.org/ontology/>
+PREFIX exacc:  <https://example.org/accidente/>
+PREFIX xobs:   <http://www.opengis.net/def/observationType/OGC-OM/2.0/>
+
+SELECT ?class (COUNT(*) AS ?count)
+WHERE {
+  VALUES ?class { schema:Event schema:Person schema:Vehicle geo:Geometry }
+  ?s rdf:type ?class .
+}
+GROUP BY ?class
+ORDER BY DESC(?count)
+
+
+
+
+# == Número total de accidentes ==
+
+SELECT (COUNT(DISTINCT ?acc) AS ?numAccidentes)
+WHERE {
+  ?acc rdf:type schema:Event .
+}
+
+
+
+
+# == Accidentes por distrito (addressLocality) ==
+
+
+SELECT ?distrito (COUNT(DISTINCT ?acc) AS ?numAccidentes)
+WHERE {
+  ?acc rdf:type schema:Event ;
+       schema:addressLocality ?distrito .
+}
+GROUP BY ?distrito
+ORDER BY DESC(?numAccidentes) ?distrito
+
+
+
+
+# == Distribución según el tipo de accidente ==
+
+
+SELECT ?tipo (COUNT(DISTINCT ?acc) AS ?num)
+WHERE {
+  ?acc rdf:type schema:Event ;
+       ex:accidentType ?tipo .
+}
+GROUP BY ?tipo
+ORDER BY DESC(?num) ?tipo
+
+
+
+
+# == Top 10 vías o calles con más accidentes ==
+
+SELECT ?via (COUNT(DISTINCT ?acc) AS ?num)
+WHERE {
+  ?acc rdf:type schema:Event ;
+       schema:location ?via .
+}
+GROUP BY ?via
+ORDER BY DESC(?num)
+LIMIT 10
+
+
+
+# == Personas según el rol y la gravedad de la lesión ==
+
+SELECT ?rol ?lesion (COUNT(DISTINCT ?p) AS ?numPersonas)
+WHERE {
+  ?p rdf:type schema:Person ;
+     ex:role ?rol ;
+     ex:injury ?lesion .
+}
+GROUP BY ?rol ?lesion
+ORDER BY ?rol DESC(?numPersonas)
+
+
+
+
+# == Conductores y el tipo de vehiculo que conducían ==
+
+SELECT ?persona ?vehiculo ?modelo
+WHERE {
+  ?persona rdf:type schema:Person ;
+           ex:role "Conductor" ;
+           ex:drives ?vehiculo .
+  ?vehiculo rdf:type schema:Vehicle ;
+            schema:vehicleModel ?modelo .
+}
+LIMIT 50
+
+
+
+
+# == Accidentes con geometría ==
+
+SELECT ?acc ?x ?y
+WHERE {
+  ?acc rdf:type schema:Event ;
+       geo:hasGeometry ?geom .
+  ?geom rdf:type geo:Geometry ;
+        xobs:xETRS89 ?x ;
+        xobs:yETRS89 ?y .
+}
+LIMIT 50
+
+
+
+# == Comprobación de que cada accidente tenga un id, un distrito y una fehca ==
+
+
+SELECT ?acc (BOUND(?id) AS ?hasId) (BOUND(?dist) AS ?hasDistrito) (BOUND(?fecha) AS ?hasFecha)
+WHERE {
+  ?acc rdf:type schema:Event .
+  OPTIONAL { ?acc dcterms:identifier ?id }
+  OPTIONAL { ?acc schema:addressLocality ?dist }
+  OPTIONAL { ?acc schema:startDate ?fecha
+             FILTER(CONTAINS(STR(?fecha), "-"))  # yyyy-mm-dd
+           }
+}
+ORDER BY ?hasId ?hasDistrito ?hasFecha
+LIMIT 100
+
+
+
+# == Accidentes con fecha y hora ==
+
+
+SELECT ?acc ?fecha ?hora
+WHERE {
+  ?acc rdf:type schema:Event ;
+       schema:startDate ?val .
+  BIND(STR(?val) AS ?s)
+  BIND(IF(CONTAINS(?s, "-"), ?val, UNDEF) AS ?fecha)
+  BIND(IF(CONTAINS(?s, ":"), ?val, UNDEF) AS ?hora)
+  FILTER(BOUND(?fecha) || BOUND(?hora))
+}
+ORDER BY ?acc
+LIMIT 20
+
+
+
+
+# == Número de personas implicadas por accidente ==
+
+
+SELECT ?acc (COUNT(DISTINCT ?p) AS ?numPersonas)
+WHERE {
+  ?p rdf:type schema:Person ;
+     schema:participantIn ?acc .
+  ?acc rdf:type schema:Event .
+}
+GROUP BY ?acc
+ORDER BY DESC(?numPersonas)
+LIMIT 20
+
+
+
+# == Construccion de puntos GeoSPARQL WKT ==
+
+CONSTRUCT {
+  ?geom a geo:Geometry ;
+        geo:asWKT ?wkt .
+}
+WHERE {
+  ?acc a schema:Event ;
+       geo:hasGeometry ?geom .
+  ?geom a geo:Geometry ;
+        xobs:xETRS89 ?x ;
+        xobs:yETRS89 ?y .
+  BIND(IRI(CONCAT(STR(?geom), "/wkt")) AS ?geomWKT)
+  BIND(STRDT(CONCAT("POINT(", STR(?x), " ", STR(?y), ")"), geo:wktLiteral) AS ?wkt)
+}
+
+
+# == Accidentes según modelo del vehículo ==
+
+SELECT ?modelo (COUNT(DISTINCT ?acc) AS ?numAccidentes)
+WHERE {
+  ?veh a schema:Vehicle ;
+       schema:vehicleModel ?modelo .
+  ?per a schema:Person ;
+       ex:drives ?veh ;
+       schema:participantIn ?acc .
+  ?acc a schema:Event .
+}
+GROUP BY ?modelo
+ORDER BY DESC(?numAccidentes)
+LIMIT 20
+
+
+
+# == Lesiones por distrito ==
+SELECT ?distrito ?lesion (COUNT(DISTINCT ?p) AS ?numPersonas)
+WHERE {
+  ?acc a schema:Event ;
+       schema:addressLocality ?distrito .
+  ?p a schema:Person ;
+     schema:participantIn ?acc ;
+     ex:injury ?lesion .
+}
+GROUP BY ?distrito ?lesion
+ORDER BY ?distrito DESC(?numPersonas)
+
+

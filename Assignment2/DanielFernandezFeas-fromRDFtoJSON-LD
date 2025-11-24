@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "sn": "http://www.ontogrid.net/StickyNote#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "involves": { "@id": "sn:involves", "@type": "@id" },
+    "eventDate": { "@id": "sn:eventDate", "@type": "xsd:date" },
+    "type": "rdf:type"
+  },
+
+  "@graph": [
+
+    { "@id": "sn:Event", "type": "rdfs:Class",
+      "label": { "@value": "Event", "@language": "en" },
+      "comment": { "@value": "A meeting or occurrence involving one or more people.", "@language": "en" }
+    },
+
+    { "@id": "sn:Person", "type": "rdfs:Class",
+      "label": { "@value": "Person", "@language": "en" },
+      "comment": { "@value": "A human participant in events.", "@language": "en" }
+    },
+
+    { "@id": "sn:OscarCorcho", "type": "sn:Person", "label": "Oscar Corcho" },
+    { "@id": "sn:PinarAlper", "type": "sn:Person", "label": "Pinar Alper" },
+    { "@id": "sn:CaroleGoble", "type": "sn:Person", "label": "Carole Goble" },
+
+    { "@id": "sn:event1", "type": "sn:Event", "label": "Event 1" },
+    { "@id": "sn:event2", "type": "sn:Event", "label": "Event 2" },
+
+    { "@id": "sn:event3", "type": "sn:Event", "label": "Event 3",
+      "involves": [ "sn:PinarAlper", "sn:CaroleGoble" ],
+      "eventDate": "2006-05-15"
+    },
+
+    { "@id": "sn:event4", "type": "sn:Event", "label": "Event 4",
+      "involves": "sn:OscarCorcho",
+      "eventDate": "2006-05-16"
+    },
+
+    { "@id": "sn:event5", "type": "sn:Event", "label": "Event 5",
+      "involves": "sn:CaroleGoble",
+      "eventDate": "2006-05-15"
+    }
+  ]
+}

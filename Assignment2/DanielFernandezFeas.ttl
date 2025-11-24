@@ -1,0 +1,60 @@
+@prefix sn:   <http://www.ontogrid.net/StickyNote#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+sn:Event a rdfs:Class ;
+    rdfs:label "Event"@en ;
+    rdfs:comment "A meeting or occurrence involving one or more people."@en .
+
+sn:Person a rdfs:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "A human participant in events."@en .
+
+
+sn:involves a rdf:Property ;
+    rdfs:label "involves" ;
+    rdfs:domain sn:Event ;
+    rdfs:range sn:Person ;
+    rdfs:comment "Indicates the participation of a person in an event." .
+
+sn:eventDate a rdf:Property ;
+    rdfs:label "event date" ;
+    rdfs:domain sn:Event ;
+    rdfs:range xsd:date ;
+    rdfs:comment "Specifies the date in which an event took place." .
+
+
+
+
+sn:OscarCorcho a sn:Person ;
+    rdfs:label "Oscar Corcho" .
+
+sn:PinarAlper a sn:Person ;
+    rdfs:label "Pinar Alper" .
+
+sn:CaroleGoble a sn:Person ;
+    rdfs:label "Carole Goble" .
+
+sn:event1 a sn:Event ;
+    rdfs:label "Event 1" .
+
+sn:event2 a sn:Event ;
+    rdfs:label "Event 2" .
+
+sn:event3 a sn:Event ;
+    rdfs:label "Event 3" ;
+    sn:involves sn:PinarAlper , sn:CaroleGoble ;
+    sn:eventDate "2006-05-15"^^xsd:date .
+
+sn:event4 a sn:Event ;
+    rdfs:label "Event 4" ;
+    sn:involves sn:OscarCorcho ;
+    sn:eventDate "2006-05-16"^^xsd:date .
+
+sn:event5 a sn:Event ;
+    rdfs:label "Event 5" ;
+    sn:involves sn:CaroleGoble ;
+    sn:eventDate "2006-05-15"^^xsd:date .

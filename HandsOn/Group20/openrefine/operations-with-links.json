@@ -5,7 +5,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "zrea",
+    "columnName": "autonomousCommunity",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
@@ -20,7 +20,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconciliar celdas en la columna zrea con el tipo Q10742"
+    "description": "Reconcile cells in column 'autonomousCommunity' with Wikidata type 'Q10742'"
   },
   {
     "op": "core/recon",
@@ -43,7 +43,7 @@
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconciliar celdas en la columna country con el tipo Q6256"
+    "description": "Reconcile cells in column 'country' with Wikidata type 'Q6256'"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -63,7 +63,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Emparejar el elemento Spain (Q29) para las celdas que contienen \"Spain\" en la columna country"
+    "description": "Match the element 'Spain' ('Q29') for cells containing 'Spain' in the 'country' column"
   },
   {
     "op": "core/column-addition",
@@ -74,9 +74,9 @@
     "baseColumnName": "country",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "wiki_data_country",
+    "newColumnName": "wikidataCountry",
     "columnInsertIndex": 10,
-    "description": "Crear la columna wiki_data_country en el índice 10 basada en la columna country usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create the 'wikidataCountry' column in index 10 based on the 'country' column using the expression 'grel:\"https://wikidata.org/entity/\"+cell.recon.match.id'"
   },
   {
     "op": "core/column-addition",
@@ -84,12 +84,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "zrea",
+    "baseColumnName": "autonomousCommunity",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "wiki_data_zrea",
+    "newColumnName": "wikidataAutonomousCommunity",
     "columnInsertIndex": 7,
-    "description": "Crear la columna wiki_data_zrea en el índice 7 basada en la columna zrea usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "description": "Create the 'wikidataAutonomousCommunity' column in index 7 based on the 'autonomousCommunity' column using the expression 'grel:\"https://wikidata.org/entity/\"+cell.recon.match.id'"
   },
   {
     "op": "core/recon",
@@ -97,22 +97,22 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "state",
+    "columnName": "city",
     "config": {
       "mode": "standard-service",
       "service": "https://wikidata.reconci.link/en/api",
       "identifierSpace": "http://www.wikidata.org/entity/",
       "schemaSpace": "http://www.wikidata.org/prop/direct/",
       "type": {
-        "id": "Q3624078",
-        "name": "sovereign state"
+        "id": "Q515",
+        "name": "city"
       },
       "autoMatch": true,
       "batchSize": 10,
       "columnDetails": [],
       "limit": 0
     },
-    "description": "Reconciliar celdas en la columna state con el tipo Q3624078"
+    "description": "Reconcile cells in column 'city' with Wikidata type 'Q515'"
   },
   {
     "op": "core/recon-judge-similar-cells",
@@ -120,67 +120,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "state",
-    "similarValue": "Spain",
-    "judgment": "matched",
-    "match": {
-      "id": "Q29",
-      "name": "Spain",
-      "types": [
-        "Q3624078",
-        "Q1250464",
-        "Q6256",
-        "Q51576574",
-        "Q179671"
-      ],
-      "score": 100
-    },
-    "shareNewTopics": false,
-    "description": "Emparejar el elemento Spain (Q29) para las celdas que contienen \"Spain\" en la columna state"
-  },
-  {
-    "op": "core/column-addition",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "baseColumnName": "state",
-    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
-    "onError": "set-to-blank",
-    "newColumnName": "wiki_data_state",
-    "columnInsertIndex": 16,
-    "description": "Crear la columna wiki_data_state en el índice 16 basada en la columna state usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
-  },
-  {
-    "op": "core/recon",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "town",
-    "config": {
-      "mode": "standard-service",
-      "service": "https://wikidata.reconci.link/en/api",
-      "identifierSpace": "http://www.wikidata.org/entity/",
-      "schemaSpace": "http://www.wikidata.org/prop/direct/",
-      "type": {
-        "id": "Q2074737",
-        "name": "municipality of Spain"
-      },
-      "autoMatch": true,
-      "batchSize": 10,
-      "columnDetails": [],
-      "limit": 0
-    },
-    "description": "Reconciliar celdas en la columna town con el tipo Q2074737"
-  },
-  {
-    "op": "core/recon-judge-similar-cells",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "town",
+    "columnName": "city",
     "similarValue": "Madrid",
     "judgment": "matched",
     "match": {
@@ -194,7 +134,7 @@
       "score": 100
     },
     "shareNewTopics": false,
-    "description": "Emparejar el elemento Madrid (Q2807) para las celdas que contienen \"Madrid\" en la columna town"
+    "description": "Match the element 'Madrid' ('Q2807') for cells containing 'Madrid' in the 'city' column"
   },
   {
     "op": "core/column-addition",
@@ -202,11 +142,24 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "town",
+    "baseColumnName": "city",
     "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
     "onError": "set-to-blank",
-    "newColumnName": "wiki_data_town",
-    "columnInsertIndex": 18,
-    "description": "Crear la columna wiki_data_town en el índice 18 basada en la columna town usando la expresión grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    "newColumnName": "wikidataCity",
+    "columnInsertIndex": 16,
+    "description": "Create the 'wikidataCity' column in index 16 based on the 'city' column using the expression 'grel:\"https://wikidata.org/entity/\"+cell.recon.match.id'"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "lat",
+    "expression": "if(isNonBlank(value), if(isNonBlank(cells['long'].value), 'https://www.openstreetmap.org/?mlat=' + value + '&mlon=' + cells['long'].value + '#map=18/' + value + '/' + cells['long'].value, ''), '')",
+    "onError": "set-to-blank",
+    "newColumnName": "openStreetMapCoordinates",
+    "columnInsertIndex": 15,
+    "description": "Create the 'openStreetMapCoordinates' column in index 15 based on the 'lat' column using the expression 'if(isNonBlank(value), if(isNonBlank(cells['long'].value), 'https://www.openstreetmap.org/?mlat=' + value + '&mlon=' + cells['long'].value + '#map=18/' + value + '/' + cells['long'].value, ''), '')'"
   }
 ]

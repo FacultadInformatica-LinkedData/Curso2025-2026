@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "ex": "http://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@language": "es",
+    "name": "schema:name",
+    "hometown": "schema:homeLocation",
+    "age": { "@id": "schema:age", "@type": "xsd:integer" },
+    "almaMater": "schema:alumniOf",
+    "parents": "schema:parent",
+    "subjects": "ex:subject",
+    "description": "schema:description",
+    "teachers": "ex:teacher"
+  },
+  "@id": "ex:zhiwei-zhang",
+  "@type": "schema:Person",
+  "name": "Zhiwei Zhang",
+  "hometown": { "@type": "schema:Place", "name": "Segovia" },
+  "age": 21,
+  "almaMater": { "@type": "schema:EducationalOrganization", "name": "UPM" },
+  "parents": [
+    { "@type": "schema:Person", "name": "Jorge" },
+    { "@type": "schema:Person", "name": "Laura" }
+  ],
+  "subjects": [
+    {
+      "@id": "ex:course-wsld",               
+      "@type": "schema:Course",
+      "name": "Web Semántica y Linked Data",
+      "teachers": [
+        { "@type": "schema:Person", "name": "CALLEJA IBAÑEZ PABLO" },
+        { "@type": "schema:Person", "name": "CORCHO GARCIA OSCAR" },
+        { "@type": "schema:Person", "name": "GARCIA CASTRO RAUL" },
+        { "@type": "schema:Person", "name": "GARIJO VERDEJO DANIEL" },
+        { "@type": "schema:Person", "name": "IGLESIAS MOLINA ANA" },
+        { "@type": "schema:Person", "name": "SANCHEZ GONZALEZ LUCIA" }
+      ],
+      "description": "Asignatura sobre RDF, RDFS, SPARQL, RDFa y JSON-LD."
+    }
+  ]
+}
