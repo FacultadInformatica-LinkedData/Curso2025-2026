@@ -1,6 +1,7 @@
 @prefix ex:  <http://example.org/iot#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# Tipos de los recursos
 # (Opcional) Tipos de los recursos
 ex:ClassRoom03        a ex:ClassRoom .
 ex:Sensor347          a ex:Sensor .
@@ -20,3 +21,4 @@ ex:Measurement8432
 ex:Table322 ex:hasOwner ex:ETSIInformaticos .
 
 ex:ETSIInformaticos ex:hasName "ETSI Informáticos"@es .
+

@@ -1,0 +1,104 @@
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:    <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:    <http://example.org/accidents/> .
+
+# Fuente lógica
+<#LogicalSource>
+  rml:source "data/2024-Accidentalidad-updated-csv-final.csv" ;
+  rml:referenceFormulation ql:CSV .
+
+# --- TriplesMap 1: Accidentes ---
+<#AccidentMap>
+  rml:logicalSource <#LogicalSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/accidents/{num_expediente}" ;
+    rr:class schema:TrafficAccident
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate schema:date ;
+    rr:objectMap [ rml:reference "fecha" ; rr:datatype xsd:date ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:time ;
+    rr:objectMap [ rml:reference "hora" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:streetAddress ;
+    rr:objectMap [ rml:reference "localizacion" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:streetNumber ;
+    rr:objectMap [ rml:reference "numero" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:addressLocality ;
+    rr:objectMap [ rml:reference "distrito" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs ;
+    rr:objectMap [ rml:reference "wikidata_distrito_uri" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:districtCode ;
+    rr:objectMap [ rml:reference "cod_distrito" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:utmX ;
+    rr:objectMap [ rml:reference "coordenada_x_utm" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:utmY ;
+    rr:objectMap [ rml:reference "coordenada_y_utm" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:alcoholPositive ;
+    rr:objectMap [ rml:reference "positiva_alcohol" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:drugPositive ;
+    rr:objectMap [ rml:reference "positiva_droga" ]
+  ] .
+
+# --- TriplesMap 2: Participaciones ---
+<#ParticipationMap>
+  rml:logicalSource <#LogicalSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/accidents/participation/{id_participacion}" ;
+    rr:class ex:AccidentParticipation
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:inAccident ;
+    rr:objectMap [
+      rr:parentTriplesMap <#AccidentMap> ;
+      rr:joinCondition [
+        rr:child "num_expediente" ;
+        rr:parent "num_expediente"
+      ]
+    ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:vehicleType ;
+    rr:objectMap [ rml:reference "tipo_vehiculo" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:personType ;
+    rr:objectMap [ rml:reference "tipo_persona" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:ageRange ;
+    rr:objectMap [ rml:reference "rango_edad" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate schema:gender ;
+    rr:objectMap [ rml:reference "sexo" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:injurySeverity ;
+    rr:objectMap [ rml:reference "lesividad" ]
+  ] .

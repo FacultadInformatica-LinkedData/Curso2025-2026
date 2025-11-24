@@ -1,0 +1,483 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "num_expediente",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column num_expediente using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column fecha using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column hora using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column localizacion using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "numero",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column numero using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_distrito",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column cod_distrito using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column distrito using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_accidente",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column tipo_accidente using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column estado_meteorológico using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column tipo_vehiculo using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column tipo_persona using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column rango_edad using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column sexo using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "cod_lesividad",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column cod_lesividad using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lesividad",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column lesividad using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column coordenada_x_utm using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column coordenada_y_utm using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column positiva_alcohol using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_droga",
+    "expression": "if(isNull(value), null, value.trim())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column positiva_droga using expression if(isNull(value), null, value.trim())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fecha",
+    "expression": "if(isNull(value), null, toDate(value,'dd/MM/yyyy').toString('yyyy-MM-dd'))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column fecha using expression if(isNull(value), null, toDate(value,'dd/MM/yyyy').toString('yyyy-MM-dd'))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora",
+    "expression": "if(isNull(value), null, value.replace('.',':').replace('h',':'))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column hora using expression if(isNull(value), null, value.replace('.',':').replace('h',':'))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "localizacion",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column localizacion using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "distrito",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column distrito using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_accidente",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column tipo_accidente using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estado_meteorológico",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column estado_meteorológico using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_vehiculo",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column tipo_vehiculo using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipo_persona",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column tipo_persona using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column rango_edad using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "lesividad",
+    "expression": "if(isNull(value), null, value.toTitlecase())",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column lesividad using expression if(isNull(value), null, value.toTitlecase())"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sexo",
+    "expression": "if(isNull(value), null, if(toUppercase(value).match(/^(H|HOMBRE|MASCULINO)$/), 'Hombre', if(toUppercase(value).match(/^(M|MUJER|F|FEMENINO)$/), 'Mujer', 'Desconocido')))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column sexo using expression if(isNull(value), null, if(toUppercase(value).match(/^(H|HOMBRE|MASCULINO)$/), 'Hombre', if(toUppercase(value).match(/^(M|MUJER|F|FEMENINO)$/), 'Mujer', 'Desconocido')))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "if(isNull(value), null, value.replace(',', '.'))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column coordenada_x_utm using expression if(isNull(value), null, value.replace(',', '.'))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_utm",
+    "expression": "if(isNull(value), null, toNumber(value))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column coordenada_x_utm using expression if(isNull(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "if(isNull(value), null, value.replace(',', '.'))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column coordenada_y_utm using expression if(isNull(value), null, value.replace(',', '.'))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_y_utm",
+    "expression": "if(isNull(value), null, toNumber(value))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column coordenada_y_utm using expression if(isNull(value), null, toNumber(value))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_alcohol",
+    "expression": "if(isNull(value), null, if(toUppercase(value).match(/^(S|SI|TRUE|1)$/), 'true', if(toUppercase(value).match(/^(N|NO|FALSE|0)$/), 'false', null)))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column positiva_alcohol using expression if(isNull(value), null, if(toUppercase(value).match(/^(S|SI|TRUE|1)$/), 'true', if(toUppercase(value).match(/^(N|NO|FALSE|0)$/), 'false', null)))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "positiva_droga",
+    "expression": "if(isNull(value), null, if(toUppercase(value).match(/^(S|SI|TRUE|1)$/), 'true', if(toUppercase(value).match(/^(N|NO|FALSE|0)$/), 'false', null)))",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column positiva_droga using expression if(isNull(value), null, if(toUppercase(value).match(/^(S|SI|TRUE|1)$/), 'true', if(toUppercase(value).match(/^(N|NO|FALSE|0)$/), 'false', null)))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "num_expediente",
+    "expression": "cells['num_expediente'].value + '-' + toString(row.index)",
+    "onError": "set-to-blank",
+    "newColumnName": "id_participacion",
+    "columnInsertIndex": 0,
+    "description": "Create column id_participacion at index 0 based on column num_expediente using expression cells['num_expediente'].value + '-' + toString(row.index)"
+  }
+]

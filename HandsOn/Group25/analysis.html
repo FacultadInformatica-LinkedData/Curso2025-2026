@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hands-On 2 — Analysis & Resource Naming Strategy (Group25)</title>
+  <style>
+    body{font:16px/1.5 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:980px;margin:40px auto;padding:0 16px;color:#111}
+    h1,h2,h3{line-height:1.2}
+    code,pre{background:#f6f8fa;border-radius:6px;padding:2px 6px}
+    pre{padding:12px;overflow:auto}
+    table{border-collapse:collapse;width:100%;margin-bottom:1.5rem}
+    th,td{border:1px solid #ddd;padding:8px}
+    th{background:#f2f2f2}
+  </style>
+</head>
+<body>
+  <h1>Hands-On 2 — Data Analysis, Licensing & Resource Naming Strategy</h1>
+  <p><strong>Group:</strong> 25 · <strong>Dataset:</strong> Accidentes de tráfico en la Ciudad de Madrid (2024)</p>
+
+  <h2>1. Análisis del Dataset</h2>
+
+  <h3>1.1 Descripción general</h3>
+  <p>
+    El dataset contiene los <strong>accidentes de tráfico registrados en la Ciudad de Madrid durante el año 2024</strong>, 
+    con información proveniente de la <em>Policía Municipal</em>. Se publica como parte del portal de 
+    <a href="https://datos.madrid.es">datos abiertos del Ayuntamiento de Madrid</a>.
+  </p>
+  <ul>
+    <li><strong>Formato:</strong> CSV (valores separados por comas)</li>
+    <li><strong>Número de registros:</strong> ≈ 40.000 (uno por persona implicada en cada accidente)</li>
+    <li><strong>Periodo temporal:</strong> 01/01/2024 – 31/12/2024</li>
+    <li><strong>Cobertura geográfica:</strong> Municipio de Madrid (21 distritos)</li>
+    <li><strong>Granularidad:</strong> nivel de distrito, sin detalle por barrio</li>
+    <li><strong>Última actualización:</strong> noviembre 2024</li>
+  </ul>
+
+  <h3>1.2 Estructura de datos (según documentación oficial)</h3>
+  <table>
+    <thead>
+      <tr><th>Atributo</th><th>Tipo</th><th>Ejemplo</th><th>Descripción</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>num_expediente</code></td><td>string</td><td>2024S000001</td><td>Identificador único del accidente</td></tr>
+      <tr><td><code>fecha</code></td><td>date</td><td>01/01/2024</td><td>Fecha del accidente</td></tr>
+      <tr><td><code>hora</code></td><td>string</td><td>08:00</td><td>Hora en la que ocurrió el accidente</td></tr>
+      <tr><td><code>localizacion</code></td><td>string</td><td>AVDA. NICETO ALCALA ZAMORA / AUTOV. M-11</td><td>Ubicación textual</td></tr>
+      <tr><td><code>cod_distrito</code></td><td>integer</td><td>16</td><td>Código numérico del distrito</td></tr>
+      <tr><td><code>distrito</code></td><td>string</td><td>HORTALEZA</td><td>Nombre del distrito</td></tr>
+      <tr><td><code>tipo_accidente</code></td><td>string</td><td>Colisión fronto-lateral</td><td>Tipo de accidente</td></tr>
+      <tr><td><code>estado_meteorologico</code></td><td>string</td><td>Lluvia débil</td><td>Condiciones meteorológicas</td></tr>
+      <tr><td><code>tipo_vehiculo</code></td><td>string</td><td>Turismo</td><td>Tipo de vehículo implicado</td></tr>
+      <tr><td><code>tipo_persona</code></td><td>string</td><td>Conductor</td><td>Rol de la persona implicada</td></tr>
+      <tr><td><code>rango_edad</code></td><td>string</td><td>De 25 a 29 años</td><td>Rango de edad</td></tr>
+      <tr><td><code>sexo</code></td><td>string</td><td>Hombre</td><td>Sexo de la persona implicada</td></tr>
+      <tr><td><code>cod_lesividad</code></td><td>integer</td><td>02</td><td>Código de lesividad (según tabla oficial)</td></tr>
+      <tr><td><code>lesividad</code></td><td>string</td><td>Ingreso inferior o igual a 24 horas</td><td>Gravedad de las lesiones</td></tr>
+      <tr><td><code>coordenada_x_utm</code></td><td>float</td><td>444913</td><td>Coordenada X en UTM (EPSG:25830)</td></tr>
+      <tr><td><code>coordenada_y_utm</code></td><td>float</td><td>4474127</td><td>Coordenada Y en UTM (EPSG:25830)</td></tr>
+      <tr><td><code>positiva_alcohol</code></td><td>string</td><td>N</td><td>Prueba de alcohol positiva</td></tr>
+      <tr><td><code>positiva_droga</code></td><td>string</td><td>N</td><td>Prueba de drogas positiva</td></tr>
+    </tbody>
+  </table>
+
+  <h3>1.3 Perfilado de datos</h3>
+  <ul>
+    <li><strong>Fechas:</strong> 2024-01-01 a 2024-12-31</li>
+    <li><strong>Distritos:</strong> 21 valores únicos (Centro, Retiro, Chamartín, etc.)</li>
+    <li><strong>Tipos de accidente:</strong> 7 categorías (colisión doble, múltiple, atropello, etc.)</li>
+    <li><strong>Valores nulos:</strong> principalmente en campos <code>positiva_droga</code> y <code>numero</code>.</li>
+    <li><strong>Duplicados:</strong> posibles repeticiones de <code>num_expediente</code> porque cada registro es una persona implicada.</li>
+  </ul>
+
+  <h2>2. Análisis de Licencia</h2>
+  <ul>
+    <li><strong>Publicador:</strong> Ayuntamiento de Madrid — Dirección General de la Policía Municipal.</li>
+    <li><strong>Titular de derechos:</strong> Ayuntamiento de Madrid.</li>
+    <li><strong>Licencia original:</strong> Reutilización de la información del sector público (RISP), equivalente a <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+    <li><strong>Condiciones:</strong> Requiere atribución de la fuente y fecha de actualización.</li>
+  </ul>
+
+  <h3>2.1 Licencia propuesta para los datos generados</h3>
+  <p>
+    Se propone mantener la licencia <strong>CC BY 4.0</strong>, que permite la reutilización, distribución y adaptación de los datos,
+    siempre que se reconozca la autoría original (Ayuntamiento de Madrid) y la autoría derivada (Group25).
+  </p>
+
+  <h2>3. Estrategia de Nomenclatura de Recursos (RNS)</h2>
+  <h3>3.1 Política de URIs</h3>
+  <pre>
+Base ontology IRI:   http://group25.linkeddata.es/ontology/accidents#
+Base data IRI:       http://group25.linkeddata.es/resource/
+Documentation IRI:   http://group25.linkeddata.es/page/
+  </pre>
+
+  <ul>
+    <li><strong>Dominio:</strong> <code>group25.linkeddata.es</code></li>
+    <li><strong>Patrón:</strong> slash URIs (<code>/resource/</code>) para instancias, hash URIs (<code>#</code>) para términos ontológicos.</li>
+    <li><strong>Negociación de contenido:</strong> Se prevén respuestas 303 → HTML, Turtle, JSON-LD.</li>
+    <li><strong>Codificación:</strong> IDs derivados del campo <code>num_expediente</code> y <code>cod_distrito</code>.</li>
+  </ul>
+
+  <h3>3.2 Patrones de URIs</h3>
+  <pre>
+Accidente     → http://group25.linkeddata.es/resource/accident/{num_expediente}
+Distrito      → http://group25.linkeddata.es/resource/district/{cod_distrito}
+TipoAccidente → http://group25.linkeddata.es/resource/accidentType/{slug}
+Persona       → http://group25.linkeddata.es/resource/person/{num_expediente}_{n}
+Vehiculo      → http://group25.linkeddata.es/resource/vehicle/{id}
+  </pre>
+
+  <h3>3.3 Vocabulários reutilizados</h3>
+  <ul>
+    <li><code>rdf</code>, <code>rdfs</code>, <code>owl</code>, <code>xsd</code></li>
+    <li><code>dcterms:</code> metadatos (title, license, creator)</li>
+    <li><code>schema:</code> entidades generales (Place, Person, Vehicle)</li>
+    <li><code>geo:</code> coordenadas geográficas (latitud/longitud)</li>
+  </ul>
+
+  <h2>4. Validación</h2>
+  <p>Las URIs y ontología se validarán mediante herramientas RDF como <code>Apache Jena riot</code> y <code>rdf-validate</code>. 
+  Las instancias de ejemplo estarán en <code>ontology/accidents-example.ttl</code>.</p>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix rml:  <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:   <http://semweb.mmlab.be/ns/ql#> .
+@prefix cal:  <http://datos.madrid.es/Calidad_Aire#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@base <http://datos.madrid.es/Calidad_Aire/Mapping/> .
+
+#ESTACIÓN
+
+<#TM_Estacion>
+    rml:logicalSource [
+        rml:source "D:\UPM\Semantic Web\Curso2025-2026\HandsOn\Group14\csv\calair-tiemporeal-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://datos.madrid.es/Calidad_Aire/estacion/{ESTACION}" ;
+        rr:class cal:Estacion
+    ] ;
+
+    rr:predicateObjectMap [ rr:predicate cal:ESTACION ; rr:objectMap [ rml:reference "ESTACION" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:CODIGO ; rr:objectMap [ rml:reference "CODIGO" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:PROVINCIA ; rr:objectMap [ rml:reference "PROVINCIA" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:MUNICIPIO ; rr:objectMap [ rml:reference "MUNICIPIO" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:NOMBRE_ESTACION ; rr:objectMap [ rml:reference "NOMBRE_ESTACION" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:DIRECCION_ESTACION ; rr:objectMap [ rml:reference "DIRECCION_ESTACION" ] ] ;
+
+    rr:predicateObjectMap [ rr:predicate cal:ESTACION_LATITUD ; rr:objectMap [ rml:reference "ESTACION_LATITUD" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:ESTACION_LONGITUD ; rr:objectMap [ rml:reference "ESTACION_LONGITUD" ] ] ;
+
+    ### Gases
+    rr:predicateObjectMap [ rr:predicate cal:NO2 ; rr:objectMap [ rml:reference "NO2" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:SO2 ; rr:objectMap [ rml:reference "SO2" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:CO  ; rr:objectMap [ rml:reference "CO" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:PM10 ; rr:objectMap [ rml:reference "PM10" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:PM2_5 ; rr:objectMap [ rml:reference "PM2_5" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:O3 ; rr:objectMap [ rml:reference "O3" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:BTX ; rr:objectMap [ rml:reference "BTX" ] ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate cal:DIR_ESTACION_LINK ;
+        rr:objectMap [ rml:reference "DIR_ESTACION_LINK" ; rr:termType rr:IRI ]
+    ] .
+
+#MEDICIÓN
+
+<#TM_Medicion>
+    rml:logicalSource [
+        rml:source "D:\UPM\Semantic Web\Curso2025-2026\HandsOn\Group14\csv\calair-tiemporeal-updated-with-links.csv" ;
+        rml:referenceFormulation ql:CSV
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://datos.madrid.es/Calidad_Aire/medicion/{ESTACION}-{PUNTO_MUESTREO}-{ANO}-{MES}-{DIA}-{MAGNITUD}" ;
+        rr:class cal:Medicion
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate cal:estaEnEstacion ;
+        rr:objectMap [
+            rr:parentTriplesMap <#TM_Estacion> ;
+            rr:joinCondition [
+                rr:child "ESTACION" ;
+                rr:parent "ESTACION"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [ rr:predicate cal:PUNTO_MUESTREO ; rr:objectMap [ rml:reference "PUNTO_MUESTREO" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:ANO            ; rr:objectMap [ rml:reference "ANO" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:MES            ; rr:objectMap [ rml:reference "MES" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:DIA            ; rr:objectMap [ rml:reference "DIA" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:MAGNITUD       ; rr:objectMap [ rml:reference "MAGNITUD" ] ] ;
+
+    rr:predicateObjectMap [ rr:predicate cal:H01 ; rr:objectMap [ rml:reference "H01" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H02 ; rr:objectMap [ rml:reference "H02" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H03 ; rr:objectMap [ rml:reference "H03" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H04 ; rr:objectMap [ rml:reference "H04" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H05 ; rr:objectMap [ rml:reference "H05" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H06 ; rr:objectMap [ rml:reference "H06" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H07 ; rr:objectMap [ rml:reference "H07" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H08 ; rr:objectMap [ rml:reference "H08" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H09 ; rr:objectMap [ rml:reference "H09" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H10 ; rr:objectMap [ rml:reference "H10" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H11 ; rr:objectMap [ rml:reference "H11" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H12 ; rr:objectMap [ rml:reference "H12" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H13 ; rr:objectMap [ rml:reference "H13" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H14 ; rr:objectMap [ rml:reference "H14" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H15 ; rr:objectMap [ rml:reference "H15" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H16 ; rr:objectMap [ rml:reference "H16" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H17 ; rr:objectMap [ rml:reference "H17" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H18 ; rr:objectMap [ rml:reference "H18" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H19 ; rr:objectMap [ rml:reference "H19" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H20 ; rr:objectMap [ rml:reference "H20" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H21 ; rr:objectMap [ rml:reference "H21" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H22 ; rr:objectMap [ rml:reference "H22" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H23 ; rr:objectMap [ rml:reference "H23" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:H24 ; rr:objectMap [ rml:reference "H24" ] ] ;
+
+    rr:predicateObjectMap [ rr:predicate cal:V01 ; rr:objectMap [ rml:reference "V01" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V02 ; rr:objectMap [ rml:reference "V02" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V03 ; rr:objectMap [ rml:reference "V03" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V04 ; rr:objectMap [ rml:reference "V04" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V05 ; rr:objectMap [ rml:reference "V05" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V06 ; rr:objectMap [ rml:reference "V06" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V07 ; rr:objectMap [ rml:reference "V07" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V08 ; rr:objectMap [ rml:reference "V08" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V09 ; rr:objectMap [ rml:reference "V09" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V10 ; rr:objectMap [ rml:reference "V10" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V11 ; rr:objectMap [ rml:reference "V11" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V12 ; rr:objectMap [ rml:reference "V12" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V13 ; rr:objectMap [ rml:reference "V13" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V14 ; rr:objectMap [ rml:reference "V14" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V15 ; rr:objectMap [ rml:reference "V15" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V16 ; rr:objectMap [ rml:reference "V16" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V17 ; rr:objectMap [ rml:reference "V17" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V18 ; rr:objectMap [ rml:reference "V18" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V19 ; rr:objectMap [ rml:reference "V19" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V20 ; rr:objectMap [ rml:reference "V20" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V21 ; rr:objectMap [ rml:reference "V21" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V22 ; rr:objectMap [ rml:reference "V22" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V23 ; rr:objectMap [ rml:reference "V23" ] ] ;
+    rr:predicateObjectMap [ rr:predicate cal:V24 ; rr:objectMap [ rml:reference "V24" ] ] .
