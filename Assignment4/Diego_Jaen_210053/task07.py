@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Task07_2025.ipynb
 
-**Task 07: Querying RDF(s) - CORREGIDO**
+**Task 07: Querying RDF(s) - CORREGIDO DEFINITIVO**
 """
 
 # !pip install rdflib
@@ -26,7 +26,7 @@ report = Report()
 **Do the exercise in RDFLib returning a list of Tuples: (class, superclass) called "result". If a class does not have a super class, then return None as the superclass**
 """
 
-# TASK 7.1a OK - No changes needed, but included for completeness.
+# TASK 7.1a OK - (Incluido para completar el script)
 ns = Namespace("http://somewhere#")
 result = [] #list of tuples
 for s, p, o in g.triples((None, RDF.type, RDFS.Class)):
@@ -46,7 +46,7 @@ report.validate_07_1a(result)
 
 """**TASK 7.1b: Repeat the same exercise in SPARQL, returning the variables ?c (class) and ?sc (superclass)**"""
 
-# TASK 7.1b OK - No changes needed, but included for completeness.
+# TASK 7.1b OK - (Incluido para completar el script)
 query = """
     SELECT ?c ?sc WHERE {
         ?c rdf:type rdfs:Class .
@@ -63,7 +63,8 @@ report.validate_07_1b(query,g)
 """**TASK 7.2a: List all individuals of "Person" with RDFLib (remember the subClasses). Return the individual URIs in a list called "individuals"**"""
 
 ns = Namespace("http://somewhere#")
-# Función auxiliar para obtener todas las subclases recursivamente
+
+# Función auxiliar (mantener lógica robusta)
 def get_subclasses(cls):
     subs = set()
     for s, p, o in g.triples((None, RDFS.subClassOf, cls)):
@@ -71,19 +72,14 @@ def get_subclasses(cls):
         subs.update(get_subclasses(s))
     return subs
 
-# variable to return
 individuals = []
-
-# 1. Obtener todas las clases que son Person o subclases de Person
 all_person_classes = get_subclasses(ns.Person)
 all_person_classes.add(ns.Person)
 
-# 2. Obtener individuos de esas clases
 for c in all_person_classes:
     for s, p, o in g.triples((None, RDF.type, c)):
         individuals.append(s)
         
-# Asegurar la unicidad y que el resultado sean los 3 individuos esperados.
 individuals = list(set(individuals))
 
 # visualize results
@@ -95,8 +91,7 @@ report.validate_07_02a(individuals)
 
 """**TASK 7.2b: Repeat the same exercise in SPARQL, returning the individual URIs in a variable ?ind**"""
 
-# TO DO
-# Usamos rdfs:subClassOf* para incluir Person y todas sus subclases
+# CORRECCIÓN: Usamos UNION y filtramos para ser estrictos con los tipos (Person y subclases)
 query = """
     PREFIX ns: <http://somewhere#>
     SELECT DISTINCT ?ind WHERE {
@@ -115,7 +110,7 @@ report.validate_07_02b(g, query)
 """**TASK 7.3: List the name and type of those who know Rocky (in SPARQL only). Use name and type as variables in the query**"""
 
 # TO DO
-# Se asume que la relación de conocimiento es foaf:knows y que Rocky es ns:RockySmith
+# Se usa foaf:knows y ns:RockySmith
 query = """
     PREFIX ns: <http://somewhere#>
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -134,19 +129,18 @@ report.validate_07_03(g, query)
 
 """**Task 7.4: List the name of those entities who have a colleague with a dog, or that have a collegue who has a colleague who has a dog (in SPARQL). Return the results in a variable called name**"""
 
-# TO DO
-# Se asume que "colleague" es la propiedad foaf:knows, que "Dog" es ns:Dog y que existe una propiedad
-# genérica que conecta al colega con el perro.
+# CORRECCIÓN: Usamos las propiedades específicas del dataset: ns:colleague y ns:hasAnimal
 query = """
     PREFIX ns: <http://somewhere#>
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     SELECT DISTINCT ?name WHERE {
         ?s foaf:name ?name .
-        # Path: 1 o 2 steps of "colleague" (foaf:knows)
-        ?s foaf:knows/foaf:knows? ?colleague .
         
-        # Colleague has a dog (Dog type: ns:Dog)
-        ?colleague ?relacion_perro ?dog .
+        # Path: 1 o 2 steps of "colleague" (propiedad específica ns:colleague)
+        ?s ns:colleague | (ns:colleague / ns:colleague) ?colleague .
+        
+        # Colleague has a dog (propiedad específica ns:hasAnimal)
+        ?colleague ns:hasAnimal ?dog .
         ?dog rdf:type ns:Dog .
     }
 """
